@@ -32,10 +32,10 @@ To start off, we begin by making a new component.
     * Email `iForgotMyEmail@oh-no.com`
     * Website `https://www.find-me-here-or-not.ch`
     * Add License (whmcs) `No`
-    * License `GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html` file:///media/rumpel/73342ed6-307f-49e0-bfc4-bcd8004340dd/Dokumente/NetFant/ComponentBuilder/Tutorials/Chapter%202/componentSettings1.png
+    * License `GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html` 
 
   * Tab `Libs & Helpers`
-    * Set everything to `No` file:///media/rumpel/73342ed6-307f-49e0-bfc4-bcd8004340dd/Dokumente/NetFant/ComponentBuilder/Tutorials/Chapter%202/componentSettings2.png
+    * Set everything to `No` 
 * Save and close
 
 ## Compiler
