@@ -1,1 +1,1 @@
-Everything you need to know about Component Builder's compiler
+3. Everything you need to know about Component Builder's compiler
