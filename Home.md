@@ -143,6 +143,16 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [29:49](https://youtu.be/OPuCoxPW35s?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=29m49s) **Dynamic Get Where**
 + [30:41](https://youtu.be/OPuCoxPW35s?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=30m41s) **Dynamic Get Ordering**
 # 13. [Adding dynamicGet to a Site View](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
++ [00:24](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=24s) **Checking the Target Datasets**
++ [00:35](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=35s) **Populate Fields from Get's**
++ [01:38](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m38s) **Dynamic Values**
++ [03:29](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m29s) **Inserting Values into View**
++ [06:35](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=6m35s) **Var Dump**
++ [07:45](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=7m45s) **Gets in the Code eg: Preacher.php**
++ [09:17](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=9m17s) **Looking at the Dynamic get**
++ [10:59](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=10m59s) **Preacher View.html.php generated code**
++ [11:50](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m50s) **Checking the target datasets**
++ [13:40](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m40s) **Site Preacher tmpl folder**
 # 14. [Adding Templates and Layouts to a Site View](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 15. [Template Setup](https://youtu.be/khxKeeubhiY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 16. [Layout Setup](https://youtu.be/52OLSZio0F8?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
