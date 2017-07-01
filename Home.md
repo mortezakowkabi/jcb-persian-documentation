@@ -10,18 +10,37 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 # 3. [General Planning](https://youtu.be/gEgwiVNj6N0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 + Planning your component
 # 4. [Field Types](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-+ [01:05](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMR&t=1m5s) **Field types** _Create Field Types Using basic joomla article to explain field types and their relationship within views_
-+ [01:57](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMR&t=1m57s) **List view** _Difference between list view and edit view. Plural and single_
-+ [05:45](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMR&t=5m45s) **Compile error** _Remember to select correct options that suit your build._
-+ [06:35](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMR&t=6m35s) **Install compiled component** _Installing from within component builder, quick link_
-+ [08:04](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMR&t=8m4s) **Admin fields-views edit** _explanation of adding-editing fields_
-+ [09:26](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMR&t=9m26s) **Default field-types** _Default field-types that come shipped within Component_
-+ [12:29](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMR&t=12m29s) **Joomla standard form fields** _Joomla website for standards regarding form fields_
-+ [14:05](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMR&t=14m05s) **XML string format for joomla** _Reusable field types_
-+ [14:45](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMR&t=14m45s) **Text field type example** _Fields within Text field type_
-+ [15:15](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMR&t=15m15s) **Joomla XML example Text Field** _XML example_
-+ [17:43](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMR&t=17m43s) **XML string within compilier** _How XML string is build and compilied within component builder._
++ [01:05](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m5s) **Field types** _Create Field Types Using basic joomla article to explain field types and their relationship within views_
++ [01:57](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m57s) **List view** _Difference between list view and edit view. Plural and single_
++ [05:45](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=5m45s) **Compile error** _Remember to select correct options that suit your build._
++ [06:35](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=6m35s) **Install compiled component** _Installing from within component builder, quick link_
++ [08:04](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=8m4s) **Admin fields-views edit** _explanation of adding-editing fields_
++ [09:26](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=9m26s) **Default field-types** _Default field-types that come shipped within Component_
++ [12:29](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=12m29s) **Joomla standard form fields** _Joomla website for standards regarding form fields_
++ [14:05](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=14m05s) **XML string format for joomla** _Reusable field types_
++ [14:45](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=14m45s) **Text field type example** _Fields within Text field type_
++ [15:15](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=15m15s) **Joomla XML example Text Field** _XML example_
++ [17:43](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=17m43s) **XML string within compilier** _How XML string is build and compilied within component builder._
 # 5. [Basic Fields](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
++ [01:05](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m5s) **New Field Type** _Using text field as example_
++ [01:08](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m8s) **Basic field type** _Using text field as example_
++ [03:16](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m16s) **Data Types** _Basic introduction to data types_
++ [03:35](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m35s) **Indexes Types**
++ [04:29](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=4m29s) **Store Method** _Default, JSON and other options_
++ [08:00](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=8m) **Compiled info in UI** _Explanation of compiled fields_
++ [09:30](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=9m30s) **Store Methods support Encryption** _Encryption of fields supported_
++ [10:50](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=10m50s) **Example E-mail Field** _E-mail field and XML fields example_
++ [14:30](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=14m30s) **Target Fields with custom CSS/Javascript** _Adding custom CSS/javascript to fields, in both edit and list views using Jform and Jquery_
++ [17:52](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=17m52s) **Repeatable field with date** _Adding PHP and Javascript in custom script_
++ [20:29](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=20m29s) **List Field and adding options, Static** _Setting up a static list field_
++ [24:43](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=24m43s) **Radio Button example**
++ [26:57](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=26m57s) **Colour Field example**
++ [28:00](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=28m) **Showon Attrib example**
++ [29:24](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=29m24s) **Category Field example**
++ [32:14](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=32m14s) **Editor Field example**
++ [33:30](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=33m30s) **Media Field example**
++ [34:37](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=34m37s) **Notes Field example**
++ [37:20](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=37m20s) **Translation brief overview**
 # 6. [Admin Views](https://youtu.be/CdSKSCTzmRA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 7. [Advanced Fields](https://youtu.be/VpzYbifqv0M?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 8. [Adding Admin Views to a Component](https://youtu.be/39vY66X7GGU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
