@@ -187,6 +187,10 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [06:20](https://youtu.be/gtdQ1lwB9ds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=6m20s) **Area for Custom Scripting**
 + [07:00](https://youtu.be/gtdQ1lwB9ds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=7m) **Combing multiple data results example**
 # 18. [Adding Site Views to a Component](https://youtu.be/zZ_HJeYL8ps?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
++ [00:30](https://youtu.be/zZ_HJeYL8ps?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=30s) **Using Sermon Dist as Example**
++ [00:42](https://youtu.be/zZ_HJeYL8ps?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=42s) **Settings - Views**
++ [01:25](https://youtu.be/zZ_HJeYL8ps?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m25s) **Adding Site Views Important *Glitch***
++ [02:34](https://youtu.be/zZ_HJeYL8ps?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m34s) **Site View Options (Menu-Metadata-Default View-Access)**
 # 19. [Adding Custom Admin Views to a Component](https://youtu.be/sPEkbuNXwds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 20. [Tweaking MySQL Demo Data](https://youtu.be/wkSLZUEN-RE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 21. [Global Settings of Component Builder](https://youtu.be/LA2WDi8G79E?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
