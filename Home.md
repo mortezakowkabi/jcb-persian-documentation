@@ -222,6 +222,21 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [07:00](https://youtu.be/epA9zv4yWu0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=7m) **Example time-date (custom component)**
 + [08:51](https://youtu.be/epA9zv4yWu0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=8m51s) **JS repeatable field time-date *Important***
 # 23. [How to use email helper in your components.](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
++ [00:25](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=25s) **Example of Email Helper Class**
++ [01:10](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m10s) **Setting Up Email Helper Class**
++ [01:20](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m20s) **Libs - Helpers in Component**
++ [01:50](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m50s) **Settings - Config area**
++ [03:05](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m05s) **In Code Field Names**
++ [03:36](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m36s) **Component Global Options - Mail Configuration**
++ [04:00](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=4m) **Switch Global Mailer Options**
++ [04:12](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=4m12s) **Joomla Global Configuration - Server**
++ [05:10](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=5m10s) **Component Builder Email Switch Options**
++ [05:42](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=5m42s) **DKIM Settings (Encryption)**
++ [07:15](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=7m15s) **Default Global in Code**
++ [08:45](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=8m45s) **DKIM Values in Code**
++ [09:30](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=9m30s) **Error Checking for emails in code**
++ [11:45](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m45s) *Implementated example**
++ [13:56](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m56s) *Above example in code *Worth Watching***
 # 24. [How to setup a store message method along side the email helper class](https://youtu.be/peVNLsAncGY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 25. [How to ensure that a field is not escaped when added to list views.](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 26. [How to change exported values and setup custom import options](https://youtu.be/fau5mZ6naLc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
