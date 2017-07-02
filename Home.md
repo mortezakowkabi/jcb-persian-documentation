@@ -154,6 +154,13 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [11:50](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m50s) **Checking the target datasets**
 + [13:40](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m40s) **Site Preacher tmpl folder**
 # 14. [Adding Templates and Layouts to a Site View](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
++ [00:05](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=5s) **Relationship between templates/layouts in views**
++ [00:47](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=47s) **Preacher View Example**
++ [01:38](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m38s) **Preacher Site View Example**
++ [02:20](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m20s) **Location of Templates**
++ [03:40](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m40s) **Default View in Code**
++ [06:47](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=6m47s) **Quick Layout Example Within View**
++ [08:00](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=8m) **Explantation Templates / Layouts within Joomla**
 # 15. [Template Setup](https://youtu.be/khxKeeubhiY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 16. [Layout Setup](https://youtu.be/52OLSZio0F8?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 17. [Custom Admin Views](https://youtu.be/gtdQ1lwB9ds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
