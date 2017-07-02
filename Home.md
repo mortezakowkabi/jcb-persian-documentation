@@ -162,6 +162,11 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [06:47](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=6m47s) **Quick Layout Example Within View**
 + [08:00](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=8m) **Explantation Templates / Layouts within Joomla**
 # 15. [Template Setup](https://youtu.be/khxKeeubhiY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
++ [00:10](https://youtu.be/khxKeeubhiY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=10s) **Creating Templates**
++ [00:37](https://youtu.be/khxKeeubhiY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=37s) **New - Copying templates**
++ [01:25](https://youtu.be/khxKeeubhiY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m25s) **Language String**
++ [02:20](https://youtu.be/khxKeeubhiY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m20s) **Adding custom script/code to template**
++ [03:10](https://youtu.be/khxKeeubhiY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m10s) **Adding Javascript to template**
 # 16. [Layout Setup](https://youtu.be/52OLSZio0F8?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 17. [Custom Admin Views](https://youtu.be/gtdQ1lwB9ds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 18. [Adding Site Views to a Component](https://youtu.be/zZ_HJeYL8ps?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
