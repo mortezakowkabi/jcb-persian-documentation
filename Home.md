@@ -200,7 +200,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [01:55](https://youtu.be/sPEkbuNXwds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m55s) **Select target view**
 + [02:19](https://youtu.be/sPEkbuNXwds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m19s) **Showing within the component**
 + [03:46](https://youtu.be/sPEkbuNXwds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m46s) **Order Before Selection**
-+ **View rest for how buttons are implemented *Important***
++ **View rest for how buttons are implemented - *Important***
 # 20. [Tweaking MySQL Demo Data](https://youtu.be/wkSLZUEN-RE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 21. [Global Settings of Component Builder](https://youtu.be/LA2WDi8G79E?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 22. [Adding a custom time field](https://youtu.be/epA9zv4yWu0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
