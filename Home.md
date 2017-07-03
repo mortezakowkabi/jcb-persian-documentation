@@ -221,7 +221,8 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [05:19](https://youtu.be/epA9zv4yWu0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=5m19s) **Script JS**
 + [07:00](https://youtu.be/epA9zv4yWu0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=7m) **Example time-date (custom component)**
 + [08:51](https://youtu.be/epA9zv4yWu0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=8m51s) **JS repeatable field time-date *Important***
-# 23. [How to use email helper in your components.](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 23. [How to integrate the Create User Helper Method in your Components](https://youtu.be/ckFakaQ90JY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 24. [How to use email helper in your components.](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 + [00:25](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=25s) **Example of Email Helper Class**
 + [01:10](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m10s) **Setting Up Email Helper Class**
 + [01:20](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m20s) **Libs - Helpers in Component**
@@ -237,19 +238,19 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [09:30](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=9m30s) **Error Checking for emails in code**
 + [11:45](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m45s) **Implementated example**
 + [13:56](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m56s) **Above example in code *Worth Watching***
-# 24. [How to setup a store message method along side the email helper class](https://youtu.be/peVNLsAncGY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 25. [How to setup a store message method along side the email helper class](https://youtu.be/peVNLsAncGY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 + [00:03](https://youtu.be/peVNLsAncGY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3s) **Example in Code**
 + [01:31](https://youtu.be/peVNLsAncGY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m31s) **Code Snippet in Method**
 + [02:17](https://youtu.be/peVNLsAncGY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m17s) **Adding Code to Admin Helper Area**
 + ***Important watch to end***
-# 25. [How to ensure that a field is not escaped when added to list views.](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 26. [How to ensure that a field is not escaped when added to list views.](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 + [00:02](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2s) **Example extra styling in fields**
 + [00:37](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=37s) **Settings - Editing View - PhP Area**
 + [01:05](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m5s) **Settings Values in the code - Add PhP Getitems Method**
 + [02:00](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m) **Looping through data till target found - adding styling**
 + [03:20](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m20s) **Preventing the escaped info**
 + [04:16](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=4m16s) **Field adding escape=false to code**
-# 26. [How to change exported values and setup custom import options](https://youtu.be/fau5mZ6naLc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 27. [How to change exported values and setup custom import options](https://youtu.be/fau5mZ6naLc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 + [00:25](https://youtu.be/fau5mZ6naLc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=25s) **Example Component**
 + [01:00](https://youtu.be/fau5mZ6naLc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m) **Example IP Tables**
 + [01:39](https://youtu.be/fau5mZ6naLc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m39s) **Export feature**
@@ -258,18 +259,18 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [05:06](https://youtu.be/fau5mZ6naLc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=5m6s) **Admin View - PhP - (GetListQuery)**
 + [09:37](https://youtu.be/fau5mZ6naLc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=9m37s) **Import features explained**
 + [10:15](https://youtu.be/fau5mZ6naLc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=10m15s) **Custom Import Tab (default import code)**
-# 27. [How to overwrite the custom fields](https://youtu.be/FHQfIhWHYyQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 28. [How to overwrite the custom fields](https://youtu.be/FHQfIhWHYyQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 + [00:03](https://youtu.be/FHQfIhWHYyQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3s) **Using default fields with custom code**
 + [01:33](https://youtu.be/FHQfIhWHYyQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m33s) **Example of shown default fields in list view**
 + [02:50](https://youtu.be/FHQfIhWHYyQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m50s) **Example created_by field in View**
 + [03:56](https://youtu.be/FHQfIhWHYyQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m56s) **Compiled in code**
 + [05:12](https://youtu.be/FHQfIhWHYyQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=5m12s) **Adding the Fields**
 + [05:45](https://youtu.be/FHQfIhWHYyQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=5m45s) **Adding in tabs (default 15 tab)**
-# 28. [How to filter a list field based on association with another field](https://youtu.be/Z8FLifQOjUk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 29. [How to filter a list field based on association with another field](https://youtu.be/Z8FLifQOjUk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 + [00:02](https://youtu.be/Z8FLifQOjUk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2s) **Explanation of filter fields**
 + [00:45](https://youtu.be/Z8FLifQOjUk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=45s) **Example component with filters**
 + ***Volume to low to fully understand - Will be done over soon***
-# 29. [Automatic import of custom code during compilation in JCB](https://youtu.be/DFMfIl-VkSk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 30. [Automatic import of custom code during compilation in JCB](https://youtu.be/DFMfIl-VkSk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 *Excellent Update to JCB*
 + [00:02](https://youtu.be/DFMfIl-VkSk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2s) **Custom Code**
 + [02:00](https://youtu.be/DFMfIl-VkSk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m) **Example demo compiled**
@@ -282,7 +283,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [10:00](https://youtu.be/DFMfIl-VkSk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=10m) **Looking at the replaced code in editor**
 + [11:40](https://youtu.be/DFMfIl-VkSk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m40s) **Inserting custom code via editor**
 + [13:55](https://youtu.be/DFMfIl-VkSk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m55s) **Checking the custom code tab for new entry before new installation**
-# 30. [JCB manual custom code implementation](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 31. [JCB manual custom code implementation](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 + [00:02](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2s) **Brief explanation**
 + [03:18](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m18s) **Updating code from JCB in the editor**
 + [06:43](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=6m43s) **Github explanation for update and insert issue 37**
@@ -291,12 +292,12 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [13:57](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m57s) **Example Field**
 + [18:55](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=18m55s) **Difference between editor changes and custom code changes**
 + ***Imptortant - Watch till end***
-# 31. [Export & Import of fully mapped components](https://youtu.be/lkE0ZiSWufg?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-# 32. [Translation Manager in JCB explained](https://youtu.be/zzAcVkn_cWU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-# 33. [How to import JCB package using a KEY](https://youtu.be/YgqcZrFnxjc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-# 34. [Setting Site View Permission](https://youtu.be/gWjQjdhYqXI?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-# 35. [Automatic import of custom code during compilation in JCB](https://youtu.be/bRPJTRat158?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-# 36. More coming....
+# 32. [Export & Import of fully mapped components](https://youtu.be/lkE0ZiSWufg?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 33. [Translation Manager in JCB explained](https://youtu.be/zzAcVkn_cWU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 34. [How to import JCB package using a KEY](https://youtu.be/YgqcZrFnxjc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 35. [Setting Site View Permission](https://youtu.be/gWjQjdhYqXI?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 36. [Automatic import of custom code during compilation in JCB](https://youtu.be/bRPJTRat158?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 37. More coming....
 
 I will constantly be adding more tutorials, and would encourage you to support our efforts. 
 ## Buy access to tutorials at [vdm.io](http://vdm.bz/component-builder-tutorials)
