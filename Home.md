@@ -296,7 +296,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 # 33. [Translation Manager in JCB explained](https://youtu.be/zzAcVkn_cWU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 34. [How to import JCB package using a KEY](https://youtu.be/YgqcZrFnxjc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 35. [Setting Site View Permission](https://youtu.be/gWjQjdhYqXI?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-# 36. [Automatic import of custom code during compilation in JCB](https://youtu.be/bRPJTRat158?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# 36. [Auto create SQL updates for Componets in JCB](https://youtu.be/bRPJTRat158?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 37. More coming....
 
 I will constantly be adding more tutorials, and would encourage you to support our efforts. 
