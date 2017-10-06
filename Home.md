@@ -299,5 +299,9 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 # 36. [Auto create SQL updates for Componets in JCB](https://youtu.be/bRPJTRat158?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 # 37. More coming....
 
-I will constantly be adding more tutorials, and would encourage you to support our efforts. 
-## Buy access to tutorials at [vdm.io](http://vdm.bz/component-builder-tutorials)
+> I will constantly be adding more tutorials, and would encourage you to support our efforts. 
+## Come on buy me a coffee :)
+
+- PayPal: paypal.me/payvdm
+- Bitcoin: 1FLxiT6wyxgZ3boeviLkYJ1DRpp41uzpxa
+- Ethereum: 0x243392daa3c9c8bc841fcacf7c7f72541cb16823
