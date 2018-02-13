@@ -12,51 +12,51 @@ Here are some 'tips' when using custom code.
 </tr>
 <tr>
 	<td>New Insert Code</td>
-	<td>`/***[INSERT<>$$$$]***/`</td>
-	<td>`/***[/INSERT<>$$$$]***/`</td>
-	<td>`&lt!--[INSERT<>$$$$]--&gt;`</td>
-	<td>`&lt!--[/INSERT<>$$$$]--&gt;`</td>
+	<td>/***[INSERT<>$$$$]***/</td>
+	<td>/***[/INSERT<>$$$$]***/</td>
+	<td>&lt!--[INSERT<>$$$$]--&gt;</td>
+	<td>&lt!--[/INSERT<>$$$$]--&gt;</td>
 </tr>
 <tr>
 	<td>New Replace Code</td>
-	<td>`/***[REPLACE<>$$$$]***/`</td>
-	<td>`/***[/REPLACE<>$$$$]***/`</td>
-	<td>`&lt!--[REPLACE<>$$$$]--&gt;`</td>
-	<td>`&lt!--[/REPLACE<>$$$$]--&gt;`</td>
+	<td>/***[REPLACE<>$$$$]***/</td>
+	<td>/***[/REPLACE<>$$$$]***/</td>
+	<td>&lt!--[REPLACE<>$$$$]--&gt;</td>
+	<td>&lt!--[/REPLACE<>$$$$]--&gt;</td>
 </tr>
 <tr>
 	<td COLSPAN="5">when JCB adds it back</td>
 </tr>
 <tr>
 	<td>JCB Add Inserted Code</td>
-	<td>`/***[INSERTED$$$$]***///23`</td>
-	<td>`/***[/INSERTED$$$$]***/`</td>
-	<td>`&lt!--[INSERTED$$$$]--&gt;`</td>
-	<td>`&lt!--[/INSERTED$$$$]--&gt;`</td>
+	<td>/***[INSERTED$$$$]***///23</td>
+	<td>/***[/INSERTED$$$$]***/</td>
+	<td>&lt!--[INSERTED$$$$]--&gt;</td>
+	<td>&lt!--[/INSERTED$$$$]--&gt;</td>
 </tr>
 <tr>
 	<td>JCB Add Replaced Code</td>
-	<td>`/***[REPLACED<>$$$$]***///25`</td>
-	<td>`/***[/REPLACED<>$$$$]***/`</td>
-	<td>`&lt!--[REPLACED$$$$]--&gt;`</td>
-	<td>`&lt!--[/REPLACED$$$$]--&gt;`</td>
+	<td>/***[REPLACED<>$$$$]***///25</td>
+	<td>/***[/REPLACED<>$$$$]***/</td>
+	<td>&lt!--[REPLACED$$$$]--&gt;</td>
+	<td>&lt!--[/REPLACED$$$$]--&gt;</td>
 </tr>
 <tr>
 	<td COLSPAN="5">changeing existing custom code</td>
 </tr>
 <tr>
 	<td>Update Inserted Code</td>
-	<td>`/***[INSERTED<>$$$$]***///23`</td>
-	<td>`/***[/INSERTED<>$$$$]***/`</td>
-	<td>`&lt!--[INSERTED<>$$$$]--&gt;`</td>
-	<td>`&lt!--[/INSERTED<>$$$$]--&gt;`</td>
+	<td>/***[INSERTED<>$$$$]***///23</td>
+	<td>/***[/INSERTED<>$$$$]***/</td>
+	<td>&lt!--[INSERTED<>$$$$]--&gt;</td>
+	<td>&lt!--[/INSERTED<>$$$$]--&gt;</td>
 </tr>
 <tr>
 	<td>Update Replaced Code</td>
-	<td>`/***[REPLACED<>$$$$]***///25`</td>
-	<td>`/***[/REPLACED<>$$$$]***/`</td>
-	<td>`&lt!--[REPLACED<>$$$$]--&gt;`</td>
-	<td>`&lt!--[/REPLACED<>$$$$]--&gt;`</td>
+	<td>/***[REPLACED<>$$$$]***///25</td>
+	<td>/***[/REPLACED<>$$$$]***/</td>
+	<td>&lt!--[REPLACED<>$$$$]--&gt;</td>
+	<td>&lt!--[/REPLACED<>$$$$]--&gt;</td>
 </tr>
 
 "//23" and "//25" (or similar id numbers) are the ID of the code in the system don't change it!!!!
