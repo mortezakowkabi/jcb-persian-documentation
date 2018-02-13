@@ -315,6 +315,8 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [11:40](https://youtu.be/DFMfIl-VkSk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m40s) **Inserting custom code via editor**
 + [13:55](https://youtu.be/DFMfIl-VkSk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m55s) **Checking the custom code tab for new entry before new installation**
 
+[[TIPS: Custom Code]]
+
 # 31. [JCB manual custom code implementation](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 + [00:02](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2s) **Brief explanation**
 + [03:18](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m18s) **Updating code from JCB in the editor**
