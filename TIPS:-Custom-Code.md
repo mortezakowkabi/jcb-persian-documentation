@@ -12,7 +12,7 @@ Here are some 'tips' when using custom code.
 </tr>
 <tr>
 	<td>New Insert Code</td>
-	<td>`/***[INSERT<>$$$$]***/`</td>
+	<td>\/***[INSERT<>$$$$]***/</td>
 	<td>`/***[/INSERT<>$$$$]***/`</td>
 	<td>`<!--[INSERT<>$$$$]-->`</td>
 	<td>`<!--[/INSERT<>$$$$]-->`</td>
