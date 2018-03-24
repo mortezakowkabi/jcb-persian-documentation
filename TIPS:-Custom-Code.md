@@ -35,7 +35,7 @@ Here are some 'tips' when using custom code.
 > placeholder must be on its own line
 
 ### New PHP Insert Code
-```php
+```php {.line-numbers}
 $bar = 'easy';
 $foo = 'some code';
 /***[INSERT<>$$$$]***/
@@ -45,7 +45,7 @@ $more = 'more some code';
 ```
 
 ### Existing PHP Insert Code
-```php
+```php {.line-numbers}
 $bar = 'easy';
 $foo = 'some code';
 /***[INSERTED$$$$]***///*23*/
@@ -55,7 +55,7 @@ $more = 'more some code';
 ```
 
 ### Update PHP Insert Code
-```php
+```php {.line-numbers}
 $bar = 'easy';
 $foo = 'some code';
 /***[INSERTED<>$$$$]***///*23*/
@@ -69,7 +69,7 @@ $more = 'more some code';
 > placeholder must be on its own line
 
 ### New PHP Replace Code
-```php
+```php {.line-numbers}
 $bar = 'easy';
 /***[REPLACE<>$$$$]***/
 $foo = 'some code changed';
@@ -78,7 +78,7 @@ $more = 'more some code';
 ```
 
 ### Existing PHP Replace Code
-```php
+```php {.line-numbers}
 $bar = 'easy';
 /***[REPLACED$$$$]***//*25*/
 $foo = 'some code changed';
@@ -87,9 +87,75 @@ $more = 'more some code';
 ```
 
 ### Update PHP Replace Code
-```php
+```php {.line-numbers}
 $bar = 'easy';
 /***[REPLACED<>$$$$]***//*25*/
 $foo = 'some code changed';
 /***[/REPLACED<>$$$$]***/
+$more = 'more some code';
+```
+
+# Insert Examples (HTML)
+
+> placeholder must be on its own line
+
+### New HTML Insert Code
+```html {.line-numbers}
+<div class="easy">
+<?php echo '<a href="'.$item->url.'" title="url" >'; ?>
+<!--[INSERT<>$$$$]--><!--23-->
+<?php echo '<a href="'.$item->new_url.'" title="new url" >'; ?>
+<!--[/INSERT<>$$$$]-->
+</div>
+```
+
+### Existing HTML Insert Code
+```html {.line-numbers}
+<div class="easy">
+<?php echo '<a href="'.$item->url.'" title="url" >'; ?>
+<!--[INSERTED$$$$]--><!--23-->
+<?php echo '<a href="'.$item->new_url.'" title="new url" >'; ?>
+<!--[/INSERTED$$$$]-->
+</div>
+```
+
+### Update HTML Insert Code
+```html {.line-numbers}
+<div class="easy">
+<?php echo '<a href="'.$item->url.'" title="url" >'; ?>
+<!--[INSERTED<>$$$$]--><!--23-->
+<?php echo '<a href="'.$item->new_url.'" title="new url" >'; ?>
+<!--[/INSERTED<>$$$$]-->
+</div>
+```
+
+# Replace Examples (HTML)
+
+> placeholder must be on its own line
+
+### New HTML Replace Code
+```html {.line-numbers}
+<div class="easy">
+<!--[REPLACE<>$$$$]-->
+<?php echo '<a href="'.$item->url.'" title="updated url" >'; ?>
+<!--[/REPLACE<>$$$$]-->
+</div>
+```
+
+### Existing HTML Replace Code
+```html {.line-numbers}
+<div class="easy">
+<!--[REPLACED$$$$]--><!--25-->
+<?php echo '<a href="'.$item->url.'" title="updated url" >'; ?>
+<!--[/REPLACED$$$$]-->
+</div>
+```
+
+### Update HTML Replace Code
+```html {.line-numbers}
+<div class="easy">
+<!--[REPLACED<>$$$$]--><!--25-->
+<?php echo '<a href="'.$item->url.'" title="updated url" >'; ?>
+<!--[/REPLACED<>$$$$]-->
+</div>
 ```
