@@ -19,7 +19,7 @@ Here are some 'tips' when using custom code.
 
 |USAGE|HTML START|HTML END
 |---|---|---|
-|New<br/>Insert Code|`<!--[INSERT<>$$$$]-->`|`<--[/INSERT<>$$$$]-->`|
+|New<br/>Insert Code|`<!--[INSERT<>$$$$]-->`|`<!--[/INSERT<>$$$$]-->`|
 |New<br/>Replace Code|`<!--[REPLACE<>$$$$]-->`|`<--[/REPLACE<>$$$$]-->`|
 ||**WHEN JCB ADDS IT BACK AGAIN**|
 |Existing<br/>Inserted Code|`<!--[INSERTED$$$$]--><!--23-->`|`<--[/INSERTED$$$$]-->`|
