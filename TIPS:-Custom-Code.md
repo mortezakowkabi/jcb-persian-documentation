@@ -20,13 +20,13 @@ Here are some 'tips' when using custom code.
 |USAGE|HTML START|HTML END
 |---|---|---|
 |New<br/>Insert Code|`<!--[INSERT<>$$$$]-->`|`<!--[/INSERT<>$$$$]-->`|
-|New<br/>Replace Code|`<!--[REPLACE<>$$$$]-->`|`<--[/REPLACE<>$$$$]-->`|
+|New<br/>Replace Code|`<!--[REPLACE<>$$$$]-->`|`<!--[/REPLACE<>$$$$]-->`|
 ||**WHEN JCB ADDS IT BACK AGAIN**|
-|Existing<br/>Inserted Code|`<!--[INSERTED$$$$]--><!--23-->`|`<--[/INSERTED$$$$]-->`|
-|Existing<br/>Replaced Code|`<!--[REPLACED$$$$]--><!--25-->`|`<--[/REPLACED$$$$]-->`|
+|Existing<br/>Inserted Code|`<!--[INSERTED$$$$]--><!--23-->`|`<!--[/INSERTED$$$$]-->`|
+|Existing<br/>Replaced Code|`<!--[REPLACED$$$$]--><!--25-->`|`<!--[/REPLACED$$$$]-->`|
 ||**CHANGING EXISTING CUSTOM CODE**|
-|Update<br/>Inserted Code|`<!--[INSERTED<>$$$$]--><!--23-->`|`<--[/INSERTED<>$$$$]-->`|
-|Update<br/>Replaced Code|`<!--[REPLACED<>$$$$]--><!--25-->`|`<--[/REPLACED<>$$$$]-->`|
+|Update<br/>Inserted Code|`<!--[INSERTED<>$$$$]--><!--23-->`|`<!--[/INSERTED<>$$$$]-->`|
+|Update<br/>Replaced Code|`<!--[REPLACED<>$$$$]--><!--25-->`|`<!--[/REPLACED<>$$$$]-->`|
 
 > "`<!--23-->`" and "`<!--25-->`" (or similar id numbers) are the ID of the code in the system don't change it!!!!
 
