@@ -4,7 +4,8 @@
 
 If you have more questions, [use the forum](https://groups.google.com/a/vdm.io/d/forum/jcb)!
 
-The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE) that are already available are:
+The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE) that are already available are listed below. Each is followed by a transcription with screen shots and links inserted where they occur allowing you to follow along and pause the video while exploring resources mentioned in the video and know where they were if the video could not be completed in one sitting. A suggestion is to use the timeline and place it in a copy of the transcript in your editor or mark any locations you may wish to revisit later. THGis also facilitates requests for a written manual. To accompany this, A Word document in a polished developer's manual will accompany this wiki.
+
 # [Intro](https://youtu.be/9evJkBTnKxE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 + Basic introduction
 
