@@ -1,1 +1,0 @@
-directory, folders and files
