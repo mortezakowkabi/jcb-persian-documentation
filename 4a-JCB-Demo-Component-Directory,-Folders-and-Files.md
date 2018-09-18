@@ -4,5 +4,4 @@ To accomplish this, a local installation of Joomla! and only the Demo component 
 
 \\administrator
 
-
 \components
