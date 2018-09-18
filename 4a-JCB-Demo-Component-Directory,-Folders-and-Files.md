@@ -4,34 +4,4 @@ To accomplish this, a local installation of Joomla! and only the Demo component 
 
 \administrator
 	\components
-		\com_demo
-			\assets
-				\css
-					\admin.css
-					\dashboard.css
-					\index.html
-					\look.css
-					\looks.css
-				\images
-					\icons
-						\index.html
-					\import.gif
-					\index.html
-				\js
-					\admin.js
-					\index.html
-			\controllers
-				\index.html
-				\demo.php
-				\import.php
-				\look.php
-				\looks.php
-			\helpers
-				\html
-					\batch.php
-					\index.html
-				\ExcelPHP
-				demo.php
-				headercheck.php
-				index.html
-				PHPExcel.php
+
