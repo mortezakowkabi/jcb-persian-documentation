@@ -193,8 +193,12 @@ To accomplish this, a local installation of Joomla! and only the Demo component 
 			\js
 				\index.html
 			\uikit-v2
-			\index.html
-\controller.php
-\demo.php
-\index.html
+			\index.html  
+
+\controller.php  
+
+\demo.php  
+
+\index.html  
+
 \router.php>
