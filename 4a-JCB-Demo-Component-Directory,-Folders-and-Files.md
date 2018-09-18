@@ -201,4 +201,4 @@ To accomplish this, a local installation of Joomla! and only the Demo component 
 
 \index.html  
 
-\router.php>
+\router.php
