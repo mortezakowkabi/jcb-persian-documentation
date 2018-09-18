@@ -112,7 +112,8 @@ To accomplish this, a local installation of Joomla! and only the Demo component 
 			\demo.ini
 			\demo.sys.ini
 	\index.php
-\components
+\components  
+
 	\com_demo
 		\assets
 			\css
