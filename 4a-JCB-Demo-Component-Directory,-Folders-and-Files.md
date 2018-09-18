@@ -6,4 +6,4 @@ To accomplish this, a local installation of Joomla! and only the Demo component 
 	\components\
 		\com_demo\
 			\assets\
-				\css\
+				\css
