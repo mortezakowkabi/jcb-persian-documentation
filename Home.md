@@ -4,11 +4,13 @@ Welcome to the Joomla-Component-Builder wiki!
 
 > These tutorials will give you a basic understanding on how JCB works!
 
-A revision of this page to include timelines for all videos and documentation to accompany the videos is underway titled [Developing with Joomla Component Builder](https://github.com/vdm-io/Joomla-Component-Builder/wiki/1. Developing-with-Joomla-Component-Builder). It is a work in progress and anticipated completion date is early next year . Chapters 1 - 71 have been transcribed from the corresponding videos, are in their raw format and are being edited. The fifth chapter, [5. Field Types](https://github.com/vdm-io/Joomla-Component-Builder/wiki/5. Field Types) is being edited and is near completion while we add timelines for the videos preceding it and following it. I'll do short updates here on progress.
+A revision of this page to include timelines for all videos and documentation to accompany the videos is underway. Anticipated completion date is early next year. Chapters 1 through 71 have been transcribed from the corresponding videos. They are presented here in a very raw format and are being edited.
+
+For an example of what the finished chapters will look like the fifth chapter, [5. Field Types](https://github.com/vdm-io/Joomla-Component-Builder/wiki/5. Field Types) is being edited and is near completion while we add timelines for the videos preceding it and following it. Then we'll backtrack and do the first four chapters. I'll do short updates here on progress.
 
 If you have more questions, [use the forum](https://groups.google.com/a/vdm.io/d/forum/jcb)!
 
-The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE) that are already available are listed below. We will be editing this soon to correspond with each chapter in the documentation and in the same order.
+The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE) that are already available are listed below. We will be editing this soon to correspond with each chapter in the documentation and to in the same order.
 
 # [Intro](https://youtu.be/9evJkBTnKxE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 + Basic introduction
