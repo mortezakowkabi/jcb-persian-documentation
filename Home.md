@@ -10,7 +10,7 @@ For an example of what the finished chapters will look like the [fifth chapter](
 
 If you have more questions, [use the forum](https://groups.google.com/a/vdm.io/d/forum/jcb).
 
-The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE) that are already available are listed below. We will be editing this soon to correspond with each chapter in the documentation and to in the same order.
+The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE) that are already available are listed below. We will be editing this soon to correspond with each chapter in the documentation and to be in the same order.
 
 # [Intro](https://youtu.be/9evJkBTnKxE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 + Basic introduction
