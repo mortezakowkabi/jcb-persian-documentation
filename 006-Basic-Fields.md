@@ -1,6 +1,6 @@
 # Basic Fields
 
-In this tutorial we will look at creating fields. There are two groups. Easy, plain, or common field types which we will be looking at first,  and advanced field types which are primarily your custom field types, which we'll look at only after we had covered the admin views and how you connect fields to views. [00:00:15](https://www.youtube.com/watch?v=9NO2rKnC6Ug&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m15s) It's quite important because those custom field types only make sense if you see the relationship between views and fields.
+In this tutorial we will look at creating fields. There are two groups. Easy, plain, or common field types which we will be looking at first, and advanced field types which are primarily your custom field types, which we'll look at only after we had covered the admin views and how you connect fields to views. [00:00:15](https://www.youtube.com/watch?v=9NO2rKnC6Ug&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m15s) It's quite important because those custom field types only make sense if you see the relationship between views and fields.
 
 First we'll look at the more common field types. Not all of them, of course. I'm just going illustrate to you a text field type and a list field type. [00:00:54](https://www.youtube.com/watch?v=9NO2rKnC6Ug&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m54s) All the other sort of fields follow the same kind of implementation.
 
