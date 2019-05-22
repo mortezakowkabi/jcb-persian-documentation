@@ -1,7 +1,7 @@
 
 # Introduction to Joomla Component Builder
 
-Hi, Welcome. My name is Llewellyn van der Merwe. I'm the developer of Component Builder for Joomla.  I would be giving you instructions how to use it.
+Welcome. My name is Llewellyn van der Merwe and I am the developer of the Component Builder for Joomla. I would be giving you instructions how to use it.
 
 ### Easy And Quickly To Do Code - Focus On Custom Code
 
