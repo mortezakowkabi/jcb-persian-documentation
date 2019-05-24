@@ -45,7 +45,7 @@ The tab structure. We call these tabs. (See video.) [00:19:27](https://www.youtu
 
 * **Example: Preacher**
 
-In 'Preacher' I set up two tabs: one called 'Details' and one called 'Sermons.' [00:20:32](https://www.youtube.com/watch?v=CdSKSCTzmRA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h20m32s) So there are two tabs in 'Preacher' which means that if you were to open the 'Preacher' back end view the first one would be called settings and the second one will be called sermons. You'd also then see 'Publishing' and 'Permissions' at the end.
+In 'Preacher' I set up two tabs: one called 'Details' and one called 'Sermons.' [00:20:32](https://www.youtube.com/watch?v=CdSKSCTzmRA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h20m32s) So there are two tabs in 'Preacher' which means that if you were to open the 'Preacher' back end view the first one would be called settings and the second one will be called sermons.
 
 * **Fields Linking**
 
