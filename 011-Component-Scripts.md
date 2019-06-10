@@ -1,10 +1,10 @@
 # COMPONENT SCRIPTS
 
-Hi now next we be looking at the scripts tab. Here is an area where you most probably add a lot of custom scripting. This area is focused on giving your area an interface to add custom scripting to your component in a global way. You can have custom scripting per admin back end view. [00:00:28](https://www.youtube.com/watch?v=xY9TWQrF8AQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m28s) You can also do that within the global scope with regards to many certain values. The one thing that is nice to have here is, you can add create user helper method to the component. 
+Now we will look at the scripts tab. Here is an area where you might add a lot of custom scripting. This area is focused on giving your area an interface to add custom scripting to your component in a global way. You can have custom scripting per admin back end view. [00:00:28](https://www.youtube.com/watch?v=xY9TWQrF8AQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m28s) You can also do that within the global scope with regards to certain values and add create user helper method to the component.
 
 ### Create User Helper Method
 
-Now the 'user helper method' is simply code. If you do not know how to write PHP this method will be of no use to you at all. [00:00:54](https://www.youtube.com/watch?v=xY9TWQrF8AQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m54s) If you do, then this method will come in very handy. Let me illustrate that to you. If you click this 'yes', I have a component in which I've already implemented this feature, and it's called the 'cost-benefit projection tool'. If you click on companies, you can actually click 'new'. [00:01:19](https://www.youtube.com/watch?v=xY9TWQrF8AQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m19s) It has an area for you to create a company. 
+The 'user helper method' is simply code. If you don't know how to write PHP this method will be of no use to you. [00:00:54](https://www.youtube.com/watch?v=xY9TWQrF8AQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m54s) If you do, this method will come in very handy. Let me illustrate that to you. I have a component in which I've already implemented this feature. It's called the 'cost-benefit projection tool'. If you click on companies, you can click 'new'. [00:01:19](https://www.youtube.com/watch?v=xY9TWQrF8AQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m19s) It has an area for you to create a company.
 
 ### Example Helper Method(Create User)
 
