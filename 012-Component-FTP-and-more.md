@@ -14,7 +14,7 @@ It is a place to give a lot of information to those who are using your applicati
 
 ### Markdown Info
 
-Then if you want to know more about markdown, then you can open this link here(Markdown-Cheatsheet). That is looking at the README area. 
+Then if you want to know more about markdown, then you can open this link: https://www.markdownguide.org/cheat-sheet/  . That is looking at the README area. 
 
 ### Admin - Site Views Adding Editing
 
