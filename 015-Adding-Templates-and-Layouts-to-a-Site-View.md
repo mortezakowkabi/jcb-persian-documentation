@@ -10,9 +10,7 @@ If we go to our example, (component, sermon distributor, view, preacher, and tem
 
 ### Preacher Site View Example
 
-The Default file is the main file. [00:01:20](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m20s) We call this the site view. (See video.) Everything in this file is built in the side view. Open the site view. This code here is in default view. This is added to that default file. (See video.) It says default view. [00:01:50](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m50s)
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+The Default file is the main file. [00:01:20](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m20s) We call this the site view. (See video.) Everything in this file is built in the side view. Open the site view. This code here is in default view. This is added to that default file. (See video.) It says default view. [00:01:50](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m50s)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 ### Location Of Templates
 
