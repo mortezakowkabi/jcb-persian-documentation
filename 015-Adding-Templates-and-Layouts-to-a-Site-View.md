@@ -2,15 +2,17 @@
 
 ### Relationship Between Templates/Layouts In Views
 
-Hi now that we've added a dynamic get to a site view, and we have looked at how to access the data sets through the examples snippets. We need to understand how layouts and templates link into site views. Basically to know [00:00:21](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m21s) what is the site view in the code? What is the templates? What is the layout in the code itself? How Joomla load those things? 
+Now that we added a dynamic get to a site view and looked at how to access the data sets through the examples snippets, we need to understand how layouts and templates link into site views; to know what the site view in the code, the templates, and the layout in the code itself is How Joomla do load these things?  [00:00:21](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m21s)
 
 ### Preacher View Example
 
-If we go to our example, component, sermon [00:00:39](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m39s) distributor, and then view, and preacher, template or Tmpl. You see that there is a default.php file, [00:00:58](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m58s) there is a default_preacherbox.php, default_preacherpanel.php, default_preachersmall.php files. A whole list of them. Those are all templates. The reason why we call them templates, it's because of the method by which they are included into the default file. 
+If we go to our example, (component, sermon distributor, view, preacher, and template or Tmpl) there are default.php, default_preacherbox.php, default_preacherpanel.php, and default_preachersmall.php files. [00:00:58](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m58s) There is a whole list of them.They are all templates. They are called templates because of the method by which they are included into the default file.
 
 ### Preacher Site View Example
 
-The Default file is the main file. [00:01:20](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m20s) That's what we call the site view. So everything inside of this file, is actually build in the side view. Let's open the site view. All this code here is in default view. From here to there(see video) is added to that default file. So you see it says default view. [00:01:50](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m50s) 
+The Default file is the main file. [00:01:20](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m20s) We call this the site view. (See video.) Everything in this file is built in the side view. Open the site view. This code here is in default view. This is added to that default file. (See video.) It says default view. [00:01:50](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m50s)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 ### Location Of Templates
 
