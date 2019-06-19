@@ -2,35 +2,20 @@
 
 ### Creating Templates
 
-In the previous tutorial we looked at setting up of templates and layout to a site view. Inside the site view is loaded, 'preacherpanel', 'preachersmall','preacherbox'. If you go to Templates it may be seen how it works.  [00:00:27](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m27s)  
+In the previous tutorial we looked at setting up templates and layouts to a site view. Loaded inside the site view is 'preacherpanel', 'preachersmall','preacherbox'. If you go to Templates, you may see how this works. [00:00:27](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m27s)  
 
 ### New - Copying Templates
 
-Click on new to start with a new template. An old one may be copied by selecting the template you would like to copy. Click on batch, there is a copy feature and click process and it will be copied. [00:00:49](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m49s) Open Preacher panel. Preacher panel is an HTML area. If PHP is preferred then go into the PHP and go out again. Text placeholders may be added, which helps us to ensure that the text itself is translatable. You can just use normal English text like that 'sermon count', and  'total downloads'. 
-[00:01:16](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m16s)
+Click on new to start with a new template. (An old one may be copied by selecting the template you would like to copy.) Click on batch. There is a copy feature; click process, and it will be copied. [00:00:49](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m49s) Open Preacher panel. (Preacher panel is an HTML area.) If PHP is preferred, go into the PHP and out again. Text placeholders may be added helping us to ensure the text itself is translatable. You can use normal English text. (See video.) [00:01:16](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m16s)
 
-
-
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-
-
-
-
-
-
-
-
-
- 
 ### Language String
 
-Component Builder will add these strings to the language file for you. You don't need to be concerned. At this stage it only does your British English language file. If you need to add more languages, you need to look up the documentation of adding languages to a third-party extension, [00:01:44](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m44s) and do that same implementation. Here(Layouts Code Snippets) we see that you can add layouts to this template by using any of the snippets to this template.  You can add other templates to it. You can use templates inside of templates. You could have use layouts as well so more or less the same behavior as in site view. 
+Component Builder will add these strings to the language file for you. You don't need to be concerned; it only does the British English language file. If you need to add more languages, check documentation of adding languages to a third-party extension  and do the same implementation. [00:01:44](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m44s) At Layouts Code Snippets you can add layouts to the template by using any of the snippets. You can add other templates to it, and you can use templates inside of templates as well as layouts. The behavior is more or less the same as in site view.
 
 ### Adding Custom Script/Code to Template
 
-You also have your snippet box, [00:02:15](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m15s) which you can make use of adding script quickly to your page. We see that the script that I just looked at in the preacher panel, if we go to the code, preacher panel, it is exactly the same script that you seeing here(code).  [00:02:46](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m46s) 
+You have a snippet box that you can make use of by adding script quickly to your page. [00:02:15](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m15s) If we go to the code the script looked at in the preacher panel is the same script here. (See video.) [00:02:46](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m46s)
 
 ### Adding JavaScript To Template
 
-There are a few exciting points here. One of them is a side note in your details tab, in the template area here at the bottom. You can add JavaScript with your normal script tags. You can just add your JavaScript in there.  [00:03:13](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m13s) It will work and be loaded into the page through this little snippet. That's a nice thing to know. You still have access as I said before to all the global 'this' field values, like you can see there. [00:03:35](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m35s) You can access those quite easily. That is how to set up a template, is the same kind of conventions as setting up a site view. Except that this is not the main view, it is a template used somewhere in a main view through adding this code snippet with Joomla class get template method. [00:04:02](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m02s) Then basically load template as the method that is being used with that name. Then it adds it to your component site view as well as adds the code to it and everything else. That is a template. next up we will look at a layout. [00:04:29](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m29s) It really get excited there.
+In your details tab in the template area there is a side note. You can add JavaScript with your normal script tags. [00:03:13](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m13s) It will be loaded into the page through this little snippet. You still have access to all the global 'this' field values. (See video.) [00:03:35](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m35s) You can access them easily. The same kind of conventions as setting up a site view is used to set up a template, except that this is not the main view. It is a template used somewhere in a main view through adding the code snippet with Joomla class get template method. [00:04:02](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m02s) Load template as the method used with that name. It adds it to your component site view and adds the code to it and everything else. [00:04:29](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m29s)
