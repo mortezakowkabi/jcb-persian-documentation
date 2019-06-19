@@ -2,7 +2,7 @@
 
 ### Relationship Between Templates/Layouts In Views
 
-Now that we added a dynamic get to a site view and looked at how to access the data sets through the examples snippets, we need to understand how layouts and templates link into site views; to know what the site view in the code, the templates, and the layout in the code itself is How Joomla do load these things?  [00:00:21](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m21s)
+Now that we added a dynamic get to a site view and looked at how to access the data sets through the examples snippets, we need to understand how layouts and templates link into site views; to know what the site view in the code, the templates, and the layout in the code itself is and how Joomla do load these things?  [00:00:21](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m21s)
 
 ### Preacher View Example
 
@@ -10,15 +10,33 @@ If we go to our example, (component, sermon distributor, view, preacher, and tem
 
 ### Preacher Site View Example
 
-The Default file is the main file. [00:01:20](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m20s) We call this the site view. (See video.) Everything in this file is built in the side view. Open the site view. This code here is in default view. This is added to that default file. (See video.) It says default view. [00:01:50](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m50s)>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+The Default file is the main file. [00:01:20](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m20s) We call this the site view. (See video.) Everything in this file is built in the side view. Open the site view. This code here is in default view. This is added to that default file. (See video.) It says default view. [00:01:50](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m50s)
 
 ### Location Of Templates
 
-The way it adds to templates, it's with this snippet that says 'thisloadtemplatepreacherpanel'. You can get these snippets at the bottom of the site view. If you were to scroll down, you first will see the layout snippets and then after them the template snippets. You would scroll down to the one you have [00:02:19](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m19s) made by looking at these names. And then here is  preacher, grid, list, table, panel, box, small. That is the snippets that you will use. [00:02:37](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m37s) You might sometimes change the way, possibly stay in the php instead of going out into the HTML. By the way that is what is happening up here if you look at the code. From time to time, I go out of the php(?>), I go into the php, with that tag(<?php), I go out of the php with that(>?). Then I go in again(<?), may go out again(>?), [00:03:04](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m04s) and then I stay out that. I'm basically in HTML. So here is our HTML, and then this part here is 'uikit class' and the implementation. Then I go back into [00:03:20](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m20s) php and I go out again, and here is HTML again. That is a way that you can work with php in the view. 
+The way it adds to templates, is with this snippet that says 'thisloadtemplatepreacherpanel'. These snippets are at the bottom of the site view. If you scroll down, you first will see the layout snippets and then after them the template snippets. [00:02:19](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m19s) Then scroll down to the one you that have created by looking at these names. Then it shows  'preacher', 'grid', 'list', 'table', 'panel', 'box', 'small'. That is the snippets that are needed. [00:02:37](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m37s) You might sometimes change the way, possibly stay in the PHP instead of going out into the HTML. That is what is happening if you look at the code. From time to time, you go out of the PHP '?>',  go into the PHP, with that tag '<?php',  go out of the PHP with that '>?'. Then  go in again '<?', may go out again '>?', and then stay out.  [00:03:04](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m04s) Having here pure HTML,(See video) and then this part here is 'uikit class' and the implementation. Then going back into  PHP and go out again, and HTML is found here again. That is how PHP can be used in the view. [00:03:20](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m20s)
 
 ### Default View In Code
 
-If we are going to look at this in the code, and we open that default.php file, you see that exactly what is placed there. So basically we end with php(>?) there [00:03:45](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m45s) Then we go into php(<?) again. Here is the same text that we just looked at in that editor. That text gets placed here and then through these snippets, it includes the template. I'm using a global setting here. I'm checking how this global setting is set in the components global settings. I'm checking what type of display has been set. On the basis of that, I either show this template or that one or that one(see video) [00:04:22](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m22s) in your template view you have access to the same global fields or class fields and public class methods as you have in the default view. 
+Look at this in the code, and open that 'default.php' file, and see exactly what is placed there. So we end with PHP'>?' and go into PHP'<?' again. [00:03:45](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m45s) Here is the same text as in that editor. That text gets placed here and then through these snippets, it includes the template. A global setting is used here. Then check how this global setting is set in the components global settings. Check what type of display has been set. On that basis, either this template is shown or that one etc.(see video) [00:04:22](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m22s) In the template view you have access to the same global fields or class fields and public class methods as you have in the default view.<<<<<<<<<<<<<<<< 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 In the default view we have access to 'this preacher' but the same is true of templates. These are the templates that I've just opened. And you see I'm using the same 'this params' here, and 'this preacher' website. I am using the same global class fields or values depends on how you want to call it. That is true of your templates. [00:05:07](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m07s) So If we go back to our interface the way that component builder knows that it needs to add this template to this site view(see video), is simply because of this code snippet. You place code snippet in there, and you'll go look in the template list for a template with this name(loadTemplatepreacherpanel). It will simply add it to that site view. What I mean add, add it to this [00:05:35](https://www.youtube.com/watch?v=6VBbi3Rl2eY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m35s) template in the right folder. You can by doing that, add your templates to the site view. We will look at setting up templates. 
 
