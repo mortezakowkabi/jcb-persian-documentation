@@ -6,9 +6,16 @@ Very similar to Site Views, Custom Admin Views has some nice features as well al
 
 
 
-### Component Builder Custom Admin View From Above
+### Component Builder Custom Admin View 
 
-What I want to show you here is simply how a custom admin view will look. I'm going to click on one, this is all dumb information, [00:02:07](https://www.youtube.com/watch?v=gtdQ1lwB9ds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m07s) let's open ClientM. You have this big area where you could put a lot of html and php. You have some custom buttons that you can add. I will show you that. All of this in the white area is simply done in the custom view. If I was to click around I've got a menu here at the side. All of this is done inside of the custom area [00:02:44](https://www.youtube.com/watch?v=gtdQ1lwB9ds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m44s) of the component. Which is now the custom admin view. That is how it will look. It has different value sets, and you can from here add an edit button. Since we've linked it to a specific client or company or one item in that list, [00:03:10](https://www.youtube.com/watch?v=gtdQ1lwB9ds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m10s) we can click on edit. From here we go right into the companies data and edit it. What is nice if we were to click close here, it take us back to that exact result page. You can then go and look at the implementation what you've done. [00:03:35](https://www.youtube.com/watch?v=gtdQ1lwB9ds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m35s) That is just simply showing you how a custom admin view could look. Let's go back to the companies list or we could go back to dashboard. Look at component builder, we looked at company results and we open it. Here is all php and html on my page doing all the work. As you might expect I'm loading [00:04:05](https://www.youtube.com/watch?v=gtdQ1lwB9ds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m05s) templates directly from here. 
+This is how a Custom Admin View will look.(See video) All this information that is displayed serves only as example. [00:02:07](https://www.youtube.com/watch?v=gtdQ1lwB9ds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m07s) If 'ClientM' is opened, this large area is displayed where a lot of HTML and PHP can be placed. There is some custom buttons that may be added. All of this in the white area is simply done in the Custom View. There is a menu on the left side. All of this is done inside the custom area of the component.[00:02:44](https://www.youtube.com/watch?v=gtdQ1lwB9ds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m44s) Which is now the custom admin view.(See video) It has different value sets, and from here can a edit button be added. Since it has been linked it to a specific client or company or one item in that list,  you can click on 'edit'.[00:03:10](https://www.youtube.com/watch?v=gtdQ1lwB9ds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m10s) From here the companies data can be accessed and editted. The convenience is that if 'close' has been clicked, it opens again that exact result page. All the implementation that has been done is displayed there. [00:03:35](https://www.youtube.com/watch?v=gtdQ1lwB9ds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m35s) That is how a Custom Admin View can look.
+
+Returning to the Companies list and from there to the Dashboard and then take a look at Component Builder, and open 'Company Results'. On this page is the PHP and HTML and a lot of templates are directly loaded here. [00:04:05](https://www.youtube.com/watch?v=gtdQ1lwB9ds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m05s) <<<<<<<<<<<<<
+
+
+
+
+   
 
 ### Add Custom Button Sample
 
