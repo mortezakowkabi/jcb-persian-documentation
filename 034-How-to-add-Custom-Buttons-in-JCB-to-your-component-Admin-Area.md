@@ -1,7 +1,7 @@
 # HOW TO ADD CUSTOM BUTTONS IN JCB TO YOUR COMPONENT ADMIN AREA
 
 
-Hi, I want to demonstrate to you [00:00:03](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m03s) how to add a button to your components admin list area or in the edit area of the view. I possibly have touched on this in previous tutorials but I thought let's make one tutorial that deals with that. I have a blank install of JCB here, I've got this demo component installed [00:00:33](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m33s) or mapped. I've been installed it into this website. 
+Hi, I want to demonstrate to you how to add a button to your components admin list area or in the edit area of the view. I possibly have touched on this in previous tutorials but I thought let's make one tutorial that deals with that. I have a blank install of JCB here, I've got this demo component installed [00:00:33](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m33s) or mapped. I've been installed it into this website. 
 
 ### Joomla Demo Dashboard - Look 
 
