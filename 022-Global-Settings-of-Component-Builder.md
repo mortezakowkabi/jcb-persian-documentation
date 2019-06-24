@@ -2,27 +2,31 @@
 
 ### Options Button For Global Configurations
 
-Concerning the options area of Component Builder.[00:00:19](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m19s) Open Component Builder Dashboard: It's accessible through the 'options' button. Only users with permission will be able to see this button'options', if they are in a different group than that global administrator the 'options' button will not be visible.[00:00:41](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m41s)   Those permissional structures can be changed as needed. Click on options and this will open 'Component Builder configurations'. Here are some important switches. These areas(See video) could added to your own details if you would like to have it displayed in the components front-end. [00:01:13](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m13s)<<<<<<<<<<<<<<<<<<<<<<<<,
+Concerning the options area of Component Builder.[00:00:19](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m19s) Open Component Builder Dashboard: It's accessible through the 'options' button. Only users with permission will be able to see this button'options', if they are in a different group than that global administrator the 'options' button will not be visible.[00:00:41](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m41s)   Those permissional structures can be changed as needed. Click on options and this will open 'Component Builder configurations'. Here are some important switches. These areas(See video) could added to your own details if you would like to have it displayed in the components front-end. [00:01:13](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m13s)
 
 ### Check In Timer
 
-Then there is a switch here at check in timer. We build it into component builder the option to check in the items every so often. And here you can check if an item have been locked out for 5 hours, it brings it back in, 12 hours, 24 hours, every second day, once a week, or never. The check in timer is set here(see video). And you can change it to whatever is best suited to your system. [00:01:47](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m47s) 
+Build into Component Builder is the option 'Check in timer' to check-in items. Here can be checked if an item has been locked out for 5 hours, it brings it back in, 12 hours, 24 hours, every second day , once a week, or never. The check in timer is set here(see video). [00:01:47](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m47s) 
 
 ### Enable Version
 
-Then enabling version, version control, is what this area is all about. You can disable it by simply saying no, or enable it by yes. You can say how many versions should be kept of the item. If 0 all versions will be saved, so 0 means everything. You can limit it [00:02:17](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m17s) to prevent your system from of being overloaded with data in the database. 
+The version can be disabled by simply clicking 'no', or enable it by 'yes'. The quantity of versions which needs to be kept of the item may be set.  If '0'is set, all versions will be saved. It can be limited to prevent your system from being overloaded with data in the database. [00:02:17](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m17s)
 
-### Minify JS 
+### Minify JS(JavaScript) 
 
-Then you have minify JS feature. Basically all the JS that is being built in a component builder can be changed to be minified. [00:02:40](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m40s) While you are in production, you can export your components without minifying the JS. In the files and in the footers of the documents. But the moment you feel that you've reached the place where minification is necessary and you want to use it, then you'd simply trip the switch here(click yes), that would minify JS, which is your JavaScript in the component [00:03:07](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m07s) while it's being complied.  
+All the JS that has been built in Component Builder can be changed to be 'Minified'. [00:02:40](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m40s) While in production, components can be exported without minifying the JS in the files and in the footers of the documents. If minification becomes necessary, simply click 'yes', that would minify JS, which is your JavaScript in the component while it's being complied.  [00:03:07](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m07s)
 
 ### Contributor Info
 
-And then just some details my wife being involved in discussing, she is a Java developer, helping me look at some of the implementations, as well as my own details. Like I said you can add more contributors here and they will show up [00:03:32](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m32s) in the dashboard underneath contributors. 
+You can add more contributors here and they will show up in the dashboard underneath contributors.[00:03:32](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m32s)  
 
 ### UiKit Settings
 
-Then the UiKit settings. This is primarily for the back end at the moment being implemented in certain areas. This is only needed most of the time in the front-end framework of your component. I've added it to component builder simply that if  [00:04:00](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m00s) at some point I decide to start adding a front end shop for the components that's being developed. That's part of what we possibly would design eventually is a front end distributing software, that was built by component builder. You could install this and then run it from your, it's like factory with a front end basically. That is still in planning. We still looking at some of the security risks since so far we've been encouraging people to use the [00:04:35](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m35s) component builder offline and not online. So we not even sure how this will work. Possibly we might end up with two components. 
+The UiKit settings is primarily for the back end , which at the moment is being implemented in certain areas. This is only needed most of the time in the front-end framework of the component. VDM has added it to Component Builder simply that if at some point it is decided to start adding a front end shop for the components that's being developed.[00:04:00](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m00s) That's part of front end distributing software that possibly will be designed eventually. You could install this and then run it. It is like factory with a front end. That is still in planning. As there might be some security risks, users are advised to use the Component Builder offline.
+[00:04:35](https://www.youtube.com/watch?v=LA2WDi8G79E&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m35s) <<<<<<<
+
+
+  
 
 ### Encryption Settings _Key Important_
 
