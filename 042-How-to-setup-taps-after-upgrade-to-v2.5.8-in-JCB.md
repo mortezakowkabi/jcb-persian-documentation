@@ -1,5 +1,6 @@
 # HOW TO SETUP TABS AFTER UPGRADE TO v2.5.8 IN JCB
 
+### In Settings - Add Tabs
 
 Hi. I would like to quickly give you a tutorial on how to do the Tabs. I realize there's been a little change and how Tabs are made. [00:00:10](https://www.youtube.com/watch?v=NFp_CtE0LZI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m10s) You can go to Admin View, and open the Admin View. In the Admin View, you have a place called Settings. If you scroll down a little, you can create Tabs. You could create any amount of Tabs. Let's say 'Many' click save, then you have 4 Tabs. The change we've made is, if you go to the [00:00:45](https://www.youtube.com/watch?v=NFp_CtE0LZI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m45s) the Fields, first save those Tabs because if you don't save them they're not in the database. 
 
