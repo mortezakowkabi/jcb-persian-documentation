@@ -1,8 +1,11 @@
 # HOW TO USE EMAIL HELPER IN YOUR COMPONENTS
 
 * ### Example Of Email Helper Class
+
+The Email Helper Class is a class that gets added to components Helper area and is therefore available on every page with which Emails can be send. For example:  Take a look at the Helper Class by going to a component that has it included and at 'Helpers'. [00:00:25](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m25s) The filename is usually the component name: 'Email'. As may be seen, it is in the basic abstract class. That takes Joomla's E-mailer, which is 'Jmail' and gets an instance of it, [00:00:48](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m48s) and adds it to mail and then loads in the variables that's required.<<<<<<<<<<<<<<<<<<<<<<<
+
+
  
-Hi, I want to show you how to use the emailing helper class in your component. The email helper class is a class that gets added to your components helper area. And therefore available on every page. Which you can then send emails. We could look at the helper class by going to a component that has it [00:00:25](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m25s) included. Then into helpers. The filename is usually the component name: Email. I've opened it already. As you can see it's in the basic abstract class. That takes Joomla's emailer, which is this Jmail. It gets an instance of it, [00:00:48](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m48s) and adds it to mail and then loads in the variables that's required. We'll come back to this in a moment. 
 
 ### Setting Up Email Helper Class
 
