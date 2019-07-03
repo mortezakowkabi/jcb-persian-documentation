@@ -26,7 +26,7 @@ If it is set to 'On' it may be decided whether there is need to override the glo
 
 ### Joomla Global Configuration - Server
 
-If Global Configurations is opened, and then the Server, and then Mail Settings. These are the main or the Global Settings that will be used in any component that does not add  these settings in their config. [00:04:40](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m40s)
+If Global Configurations is opened, and then the Server, and then Mail Settings. These are the main or the Global Settings that will be used in any component that does not add these settings in their config. [00:04:40](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m40s)
 
 If those fields had not been created and added to the component, but the button was used in order to add the Helper class to the component, the result will be that it will fall back to these settings in the Joomla default area. These 'Main Settings' are the values that should be overrided.
 
@@ -36,15 +36,29 @@ If those fields had not been created and added to the component, but the button 
 
 ### DKIM Settings (Encryption)
 
-The DKIM area is the more advanced area which allows encryption and to authenticate emails that has been send.  This is helpful to show people that receive these emails that it not spam. Because of the advanced nature of this some research on this will be helpful. These are the values that usually would be required: Private key, Public key etc.(see video). If this 'Enable DKIM' is set to 'No', it will not be used. Please ensure to add the values when it is set to 'Yes', otherwise it still will not be used. [00:06:25](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m25s) So that values need to be created as  Component Builder will not do it.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+The DKIM area is the more advanced area which allows encryption and to authenticate emails that has been send.  This is helpful to show people that receive these emails that it not spam. Because of the advanced nature of this some research on this will be helpful. These are the values that usually would be required: Private key, Public key etc.(see video). If this 'Enable DKIM' is set to 'No', it will not be used. Please ensure to add the values when it is set to 'Yes', otherwise it still will not be used. [00:06:25](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m25s) So that values need to be created as  Component Builder will not do it.
 
 ### Default Global In Code
 
-To explain to you on the code level, basically it gets from the configuration, the mailer function. Then it checks whether it's global. If it is global, then it implements Joomla's values. If it's not global, it implements your components values. [00:07:38](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m38s) That is basically what it will do. Now you can read through the code, but the most important area really is this(send) area. To know what is all the various options that you have in the signature to send out mail. So it's able to really send out a lot of mail but nonetheless you're also need to consider [00:08:04](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m04s) your servers own limitations. Since we don't want you to spam people. We do not override those values. We are simply using the Joomla default Helper jmailer. And it is been extended from another class. There are a lot of features in here. If you want to know more about them you can read up on the jmailer [00:08:35](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m35s) Class from Joomla. As well as read through this code here and see how we implemented it. 
+On the code level(See video), it gets the 'mailer' function from the configuration and checks whether it is Global. If it is, then it implements Joomla's values. If it's not global, it implements your components values. [00:07:38](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m38s)  Read through the code, the most important area is this 'send' area to see all the various options in the signature to send out mail. [00:08:04](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m04s) It is able to send large quantities of mail but nonetheless your servers limitations should be considered. To avoid spams to be send, this values has not been overrided. The Joomla default Helper 'jmailer' is simply been used which has been extended from another class.(See video) [00:08:35](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m35s). 
+More information about the 'jmailer' Class may be found at Joomla.
 
 ### DKIM Values In Code
 
-These(see video) are the dkim values that you would need in your component to be able to use the dkim encryption. But you could also read up on this and check out this function here, up till there, in its way that it's implementing these features. It obviously is adding it to the mailer and most of the work is done in the mailer. [00:09:05](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m05s) It's basically adding the data to the mailer and the mailer takes care of the rest. Here it sends it off. 
+These(see video) are the DKIM values that would be needed in the component to be able to use the DKIM encryption. Do some research on this and check how this function implements these features. It gets added to the '$mailer' and most of the work is done in the '$mailer'. [00:09:05](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m05s) It adds the data to the mailer and the mailer takes care of the rest and it is send out.<<<<<<<<<<<<<<<<<< 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Error Checking For Emails In Code
 
