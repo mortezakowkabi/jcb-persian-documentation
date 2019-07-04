@@ -1,12 +1,15 @@
 # HOW TO SETUP A STORE MESSAGE METHOD ALONG SIDE THE EMAIL HELPER CLASS
 
 * ### Example In Code
-
-Hi, I've already done a tutorial how to use the email helper in your components. In that tutorial I actually do touch upon the storing of messages. Or emails for that matter once it's been sent. I would like to look at that again. For those of you that may just be wanting to know. [00:00:24](https://www.youtube.com/watch?v=peVNLsAncGY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m24s) At this stage you should know that the email helper class is added to the helper folder of your components back end. It's usually called your components name and then email, that's the email helper class. To use it in the custom script you could use the 3 brackets '[[[component]]]email' and send. [00:00:59](https://www.youtube.com/watch?v=peVNLsAncGY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m59s) That is how you would construct your script. I will show that as well in the tutorial as we going to in more depths of how to use the email helper. 
+In a previous tutorial on the Email Helper, mention had been made of storing messages or emails once it has been send. [00:00:24](https://www.youtube.com/watch?v=peVNLsAncGY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m24s) At this stage it is important to know that the Email Helper Class is added to the Helper folder of the components back end. It's usually called the component's name, 'Jobtracking' and 'Email', that's the Email Helper class. To use it in the Custom Script three brackets may be used, '[[[component]]]email' and send. [00:00:59](https://www.youtube.com/watch?v=peVNLsAncGY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m59s) That is how to construct script. 
 
 ### Code Snippet In Method
 
-At the very bottom of this class in the send method, [00:01:21](https://www.youtube.com/watch?v=peVNLsAncGY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m21s) there is a little snippet, it is quite significant as it may seem, it actually gives you a great ability. Because the result of the email that was sent is placed in sendemail. This result is passed to the method as well. First it looks in your helper class [00:01:47](https://www.youtube.com/watch?v=peVNLsAncGY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m47s) which is usually a component name, helper, that's the helper class whether this method exists in that class. This method will not exist unless you write it. The area where you would have to write this method, is in the component. There is an area called [00:02:13](https://www.youtube.com/watch?v=peVNLsAncGY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m13s) admin helper. 
+At the bottom of this class in the 'Send' method, [00:01:21](https://www.youtube.com/watch?v=peVNLsAncGY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m21s) there is a snippet, thought insignificant as it may seem, it is very beneficial, as may be seen, the result of the email that was sent is placed in 'sendEmail' and this result is transferred to the method as well. [00:01:47](https://www.youtube.com/watch?v=peVNLsAncGY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m47s) First it does a search in the Helper class  (which is usually a component name, 'Helper', which is the Helper Class) whether this method exists in that class.
+
+ This method will not exist unless it is manually written in the component area. The area where this method should be written , is in the component(In the Component Builder Dashboard) in an area called Admin Helper.[00:02:13](https://www.youtube.com/watch?v=peVNLsAncGY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m13s)<<<<<<<<<<<<<<<<<<<<
+
+ 
 
 ### Adding Code To Admin Helper Area
 
