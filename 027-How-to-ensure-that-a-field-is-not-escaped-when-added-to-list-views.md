@@ -1,16 +1,21 @@
 # HOW TO ENSURE THAT A FIELD IS NOT ESCAPED WHEN ADDED TO LIST VIEWS
 
 * ### Example Extra styling In Fields
+Occationally there is a need to add extra styling to a List View
+Hi. Sometimes one would like to add extra styling like this [00:00:06](https://www.youtube.com/watch?v=bfl0l3AoLKU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m06s) The problem though is that by default all of these field values are being escaped. 
 
-Hi. Sometimes one would like to add extra styling like this [00:00:06](https://www.youtube.com/watch?v=bfl0l3AoLKU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m06s) or like that to a listview. The problem though is that by default all of these field values are being escaped. And so if you would like to add, let's say this kind of styling to a field view, let me show you how I did it. 
+How is this kind of styling added to a field?
 
 ### Settings - Editing View - PHP Area
 
-In the job order admin view area, if you go to php, [00:00:39](https://www.youtube.com/watch?v=bfl0l3AoLKU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m39s) there is a method called add PHP(getitems Method - before translation fix & decryption). This happens before the translation fix or the decryption of any field. This is not the ideal place. 
+In the Job Order Admin View area, in PHP, [00:00:39](https://www.youtube.com/watch?v=bfl0l3AoLKU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m39s) there is a method called 'Add PHP(getitems Method - before translation fix & decryption)'. This happens before the translation fix or the decryption of any field. This is not the ideal place. 
 
 ### Settings Values In The Code - Add PHP Area
 
-We usually would add it after that was done, but in this case I did it before. I am setting up a value that when I want to use danger, when I want to use warning. Simply using  [00:01:15](https://www.youtube.com/watch?v=bfl0l3AoLKU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m15s) the getDate and modifying it by the danger time and the warning time from the job tracking configuration values. This is a configuration field that I've added to the component and it's names are: warning time and danger time. And the default is 3 weeks, 1 week. This is the dates that I would use. 
+Usually this would be added after that was done, but in this case it was done before. [00:01:15](https://www.youtube.com/watch?v=bfl0l3AoLKU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m15s) A value is set up when 'danger' or 'warning' need to be applied, simply by using the getDate and modifying it by the danger time and the warning time from the job tracking configuration values. This is a configuration field that has been added to the component and it's names are: 'warning time' and 'danger time' where the default is 3 weeks, 1 week. This is the dates that is going to be used.<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+ 
 
 ### Looping Through Data Till Target Found - Adding Styling
 
