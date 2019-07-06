@@ -2,19 +2,17 @@
 
 * ### Example Components
 
-How to change the values that are being exported and to have a Custom Import option with an import of the data.  Component Builder allows you to have import and export function by default in all the list views of the components. [00:00:35](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m35s) The component called IP Data is used to take a IP address and translate it to determine from which country it came and then a costing update is performed on your website based on that IP Data.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+A short explanation of how to change the values that are being exported and to have a Custom Import option with an import of the data.  Component Builder allows you to have import and export function by default in all the List Views of the components. [00:00:35](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m35s) The component called IP Data is used to take a IP address and translate it to determine from which country it came and then a costing update is performed on your website based on that IP Data.
 
+ * ### Example IP Tables
 
-
- 
-
-* ### Example IP Tables
-
-So I'm going to have us look at for example, the IP Tables. [00:01:07](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m07s) And as you can see we are able to see the cntry value, that is the country, and the registry, who this IP Table belongs to. The Range, that is being reflected. 
+Select IP Tables which is on the IP Table Dashboard. [00:01:07](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m07s)  The 'CNTRY' value may be seen, that is the country, and the 'REGISTRY', which indicates to who the IP table belongs and the range,'IP from'/'IP to' is being reflected. 
 
 ### Export Feature
 
-Now if you click export without selecting any values, it will give you this warning(Please first make a selection from the list). [00:01:35](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m35s) You can only export the values that are selected. If you want to export them all you need to change this value to all. In some cases, if the table is too big, that means you might not be able to export them all at once. Anyway exporting the data in such big quantities is not really ideal. I would say anything beyond 3000 items, rather go to MySQL, get a dump file. It's not ideal to use that kind of quantity with in Joomla. Although we have often seen the listview being used for up to [00:02:16](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m16s) 10000 items and quite complex inheritance in structure. We're talking about the import and export now and that's quite different. Let's say we want to export this, but let's say for some reason instead of us wanting to see this zzz or AUS value, we want to instead see the country name. That would be a simple implementation of what I'm trying to explain. [00:02:51](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m51s) 
+If 'Export Data' has been clicked without selecting any values, it will give this warning: 'Please first make a selection from the list'. [00:01:35](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m35s) Only export values that had been selected. If  all needs to be exported, change this value to 'all'. In some instances, if the table is too long, it is not possible to export all the values at once.<<<<<<< 
+
+  Anyway exporting the data in such big quantities is not really ideal. I would say anything beyond 3000 items, rather go to MySQL, get a dump file. It's not ideal to use that kind of quantity with in Joomla. Although we have often seen the listview being used for up to [00:02:16](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m16s) 10000 items and quite complex inheritance in structure. We're talking about the import and export now and that's quite different. Let's say we want to export this, but let's say for some reason instead of us wanting to see this zzz or AUS value, we want to instead see the country name. That would be a simple implementation of what I'm trying to explain. [00:02:51](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m51s) 
 
 ### Exported Example In XLS Format
 
