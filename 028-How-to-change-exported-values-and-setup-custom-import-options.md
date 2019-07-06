@@ -12,15 +12,13 @@ Select IP Tables which is on the IP Table Dashboard. [00:01:07](https://www.yout
 
 If 'Export Data' has been clicked without selecting any values, it will give this warning: 'Please first make a selection from the list'. [00:01:35](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m35s) Only export values that had been selected. If  all needs to be exported, change this value to 'all'. In some instances, if the table is too long, it is not possible to export all the values at once.
 
-Exporting the data in large quantities is not advisable in Joomla.  If quantities exceeds 3000 items, Rather go to MySQL and get a dump file. [00:02:16](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m16s) Although it is often seen that the Listview is being used for up to 10000 items and quite complex inheritance in structure is involved. But in this instance having the import and export in mind, makes it quite different. If for this purpose this need to be exported but for some reason this zzz or AUS value should be replaced by the country name.  [00:02:51](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m51s) 
-
-
-
-<<<<<<<<<<<<<<<<
+Exporting the data in large quantities is not advisable in Joomla.  If quantities exceeds 3000 items, rather go to MySQL and get a dump file. [00:02:16](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m16s) Although it is often seen that the Listview is being used for up to 10000 items, quite complex inheritance in structure is involved. But in this instance having the import and export in mind, makes it quite different. If for example this need to be exported but for some reason this 'ZZZ' or 'AUS' value should instead be replaced by the country name, the following would be a simple implementation of how to perform it.  [00:02:51](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m51s) 
 
 ### Exported Example In XLS Format
 
-So if you would click export now, save this. We've exported it, and instead it put these AUS values here, and some other values from the database, all nicely exported. That's what you would expect. But if you wanted this to be a different value when you export it, then you can do the following. 
+Click 'Export', save this(Opening Ip_tables). It has been exported, all these AUS values are displayed, and some other values from the database as expected. But if it is suppose to be a different value when it is exported, then the take the next step.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,
+
+ 
 
 ### Export Data In Code
 
