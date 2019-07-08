@@ -2,7 +2,7 @@
 
 * ### Example Components
 
-A short explanation of how to change the values that are being exported and to have a Custom Import option with an import of the data.  Component Builder allows you to have import and export function by default in all the List Views of the components. [00:00:35](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m35s) The component called IP Data is used to take a IP address and translate it to determine from which country it came and then a costing update is performed on your website based on that IP Data.
+A short explanation of how to change the values that are being exported and to have a Custom Import option with an import of the data.  Component Builder allows you to have a Import and Export function by default in all the List Views of the components. [00:00:35](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m35s) The component called IP Data is used to take a IP address and translate it to determine from which country it came and then a costing update is performed on your website based on that IP Data.
 
  * ### Example IP Tables
 
@@ -10,7 +10,7 @@ Select IP Tables which is on the IP Table Dashboard. [00:01:07](https://www.yout
 
 ### Export Feature
 
-If 'Export Data' has been clicked without selecting any values, it will give this warning: 'Please first make a selection from the list'. [00:01:35](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m35s) Only export values that had been selected. If  all needs to be exported, change this value to 'all'. In some instances, if the table is too long, it is not possible to export all the values at once.
+If 'Export Data' has been clicked without selecting any values, it will give this warning: 'Please first make a selection from the list'. [00:01:35](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m35s) Only values that had been selected may be exported. If all have to be exported, change this value to 'all'. In some instances, if the table is too long, it is not possible to export all the values at once.
 
 Exporting the data in large quantities is not advisable in Joomla.  If quantities exceeds 3000 items, rather go to MySQL and get a dump file. [00:02:16](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m16s) Although it is often seen that the Listview is being used for up to 10000 items, quite complex inheritance in structure is involved. But in this instance having the import and export in mind, makes it quite different. If for example this need to be exported but for some reason this 'ZZZ' or 'AUS' value should instead be replaced by the country name, the following would be a simple implementation of how to perform it.  [00:02:51](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m51s) 
 
