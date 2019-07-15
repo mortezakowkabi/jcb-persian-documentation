@@ -2,9 +2,13 @@
 
 ### Be Prepared to Build Components in Component Builder
 
+[00:00:00](https://www.youtube.com/watch?v=gEgwiVNj6N0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+
 When you want to build a component in Component Builder you need to be prepared. You would need to know what to build and what the database structure is that you want to set up. If you want a good understanding of the table and of the database and how to have it mapped, these are essential things you need to know. If you do not know that, I can give you pointers on some of the things you will need. At the same time, I will try to explain why you need to know these things.
 
 ### Use Demo Components To Build Back End Views
+
+[00:00:49](https://www.youtube.com/watch?v=gEgwiVNj6N0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m49s)
 
 We are using Sermon Distributor, which is a component that I have developed for Distributing Sermons. [00:00:58](https://www.youtube.com/watch?v=gEgwiVNj6N0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m58s) Use the demo component that are demonstrating how to build components. You need to know what you are going to call it. (This one is called Sermon Distributor.) You would need to know back end views.[00:01:19](https://www.youtube.com/watch?v=gEgwiVNj6N0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m19s)  The back end views in Joomla must be tightly connected to the database. [00:01:37](https://www.youtube.com/watch?v=gEgwiVNj6N0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m37s)
 
