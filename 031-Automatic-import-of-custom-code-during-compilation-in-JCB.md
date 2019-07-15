@@ -2,7 +2,9 @@
 
 ### Custom Code
 
-A very smart new feature has lately been added to Component Builder that's called custom code.[00:00:12](https://www.youtube.com/watch?v=DFMfIl-VkSk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m12s)  It is stored next to Dynamic Get. You'd hardly ever need to go in here, unless you want to look at what is already been stored and make changes in the UI. Most of the time the changes will be done in the editor. 
+[00:00:00](https://www.youtube.com/watch?v=DFMfIl-VkSk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+ 
+A very smart new feature has lately been added to Component Builder that's called custom code. It is stored next to Dynamic Get. You'd hardly ever need to go in here, unless you want to look at what is already been stored and make changes in the UI. Most of the time the changes will be done in the editor. 
 
 **What is the purpose of this new feature?**
 [00:00:39](https://www.youtube.com/watch?v=DFMfIl-VkSk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m39s)
