@@ -5,13 +5,19 @@ Welcome. My name is Llewellyn van der Merwe and I am the developer of the Compon
 
 ### Component Builder was Built for Developers Who Know PHP
 
+[00:00:18](https://www.youtube.com/watch?v=9evJkBTnKxE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m18s)
+
 Component Builder was built for those who know PHP. If you are not familiar with PHP, there are some places to get help like [Lynda.com](https://www.lynda.com/) and Udemy. You could go to their websites, search for PHP, and you would find courses that would help you on your way. To get acquainted with CSS JavaScript HTML, you need to visit these websites. It was not developed for those who have no developing skills. I actually developed it for myself as a developer of components, so that I could easily and quickly get most of the code done, while I could focus on the actual custom code which goes beyond the norm. This is what it is really made to do.
 
 ### API Understanding of Joomla is Needed
 
+[00:01:29](https://www.youtube.com/watch?v=9evJkBTnKxE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m29s)
+
 If you don't have much knowledge of the Joomla API, it's not that difficult to get an understanding as long as you are able to read PHP. To learn more, open a Joomla website, go to libraries, start reading the classes. You can even go to Joomla's own components. Go to a Joomla install, then to components and to content manager. Look at the folder structures, open them, and you will see the controllers, the models, and the views. Open a view, open the script itself and read through it. If you are using NetBeans, you can hold onto a function like this one (getLayout) and press Ctrl+Shift. It will show you where in your Joomla website that function is declared. [00:02:34](https://www.youtube.com/watch?v=9evJkBTnKxE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m34s) You can open that file, and open source in editor. You can learn how codes interconnects to each other by just looking at Joomla's own components. [00:02:58](https://www.youtube.com/watch?v=9evJkBTnKxE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m58s) (See video.) [00:03:21](https://www.youtube.com/watch?v=9evJkBTnKxE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m21s)
 
 ### Ways of Implementation
+
+[00:03:55](https://www.youtube.com/watch?v=9evJkBTnKxE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m55s)
 
 My aim is not to reinvent things but to stick to the conventions as far as possible. As I become aware of better ways of implementation I would like to add that again. So if you know a better way of doing it, please communicate with me. I would gladly update, include, and change whatever is needed.
 
