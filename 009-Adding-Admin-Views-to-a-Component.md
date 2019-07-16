@@ -2,19 +2,19 @@
 
 [00:00:00](https://www.youtube.com/watch?v=39vY66X7GGU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s) 
 
-We've looked at setting up admin views and creating fields for admin views. We've looked at setting up field types and how to use field types to create fields. Now we'll look at setting the admin views to the component and all that can  be done to the component. [00:00:28](https://www.youtube.com/watch?v=39vY66X7GGU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m28s) First we will look at adding the admin views to a component. Go to components, sermon distributor, and settings. There you will see admin views. [00:00:59](https://www.youtube.com/watch?v=39vY66X7GGU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m59s)
+We've looked at setting up admin views and creating fields for admin views. We've looked at setting up field types and how to use field types to create fields. Now we'll look at setting the admin views to the component and all that can  be done to the component. [00:00:28](https://www.youtube.com/watch?v=39vY66X7GGU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m28s) First we will look at adding the admin views to a component. Go to components, sermon distributor, and settings. There you will see admin views. 
 
 ### Sermon Component Setting as Example
 
 [00:01:05](https://www.youtube.com/watch?v=39vY66X7GGU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m05s) 
 
-To connect admin views to your component go to settings and open this button here. (See video.) Select an option and click 'next'. Do the next one. If you have a lot of admin views, type in the name of the admin view. [00:01:33](https://www.youtube.com/watch?v=39vY66X7GGU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m33s)
+To connect admin views to your component go to settings and open this button here. (See video.) Select an option and click 'next'. Do the next one. If you have a lot of admin views, type in the name of the admin view. 
 
 ### Adding Views Setting Icons
 
 [00:01:39](https://www.youtube.com/watch?v=39vY66X7GGU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m39s) 
 
-Type in the name 'Sermon'. These icons here which have been mentioned previously, are the icons from Joomla called Joomla Standard Icomoon Fonts. (See video.) [00:02:02](https://www.youtube.com/watch?v=39vY66X7GGU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m02s) If you select an icon here, 'Joomla', it will show you that icon (see video) but only during the selection face. That is the icon that is going to be used for the view in the right. Look at the icon (top right) as we click through component builder; it gets updated. [00:02:24](https://www.youtube.com/watch?v=39vY66X7GGU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m24s)
+Type in the name 'Sermon'. These icons here which have been mentioned previously, are the icons from Joomla called Joomla Standard Icomoon Fonts. (See video.) [00:02:02](https://www.youtube.com/watch?v=39vY66X7GGU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m02s) If you select an icon here, 'Joomla', it will show you that icon (see video) but only during the selection face. That is the icon that is going to be used for the view in the right. Look at the icon (top right) as we click through component builder; it gets updated. 
 
 ### Settings Switch Admin Menu
 
