@@ -28,7 +28,7 @@ If you want to know more about markdown, you can open this link: https://www.mar
 
 [00:03:06](https://www.youtube.com/watch?v=hzbZlLl-xlA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m06s)
 
-This admin view area and the site view area is a place where you can create new admin views.  Realize that if you create a new admin view it's not necessarily linked to this component. You still need to link it in settings under admin view. This is a place to create admin views or edit existing admin views that are linked to this component. The same applies to site views. It's an easy way to gain access to editing the site views that are already linked to this application. [00:03:51](https://www.youtube.com/watch?v=hzbZlLl-xlA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m51s)
+This admin view area and the site view area is a place where you can create new admin views.  Realize that if you create a new admin view it's not necessarily linked to this component. You still need to link it in settings under admin view. This is a place to create admin views or edit existing admin views that are linked to this component. The same applies to site views. It's an easy way to gain access to editing the site views that are already linked to this application.
 
 ### FTP Info - Updating Component
 
