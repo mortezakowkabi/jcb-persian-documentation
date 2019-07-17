@@ -16,7 +16,7 @@ The way to export a component is to simply click on 'Export Components'. Select 
 
 [00:01:40](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m40s)
  
-Let me show that in the code. There is a method called 'smartExportBuilder'. The 'SmartExportBuilder' gets fired at the very end of the compilation or rather the build. Where all the data has now been extracted from the database  and it's now one big array of objects. In this function called 'getSmartExport', is where this data extrusion takes place. 
+Let me show that in the code. There is a method called 'smartExportBuilder'. The 'SmartExportBuilder' gets fired at the very end of the compilation or rather the build. Where all the data has now been extracted from the database  and it is now one large array of objects. This data extrusion takes place in the function called 'getSmartExport'. 
 
 ### Export Key
 
@@ -55,9 +55,12 @@ To demonstrate the importing of this(JCB_smartPackage.zip) data set, a blank web
  
 ### Two Features - Force Local Update - Use Key
 
-[00:11:13](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m13s) <<<<<<<<<<<<<<<<
+[00:11:13](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m13s) 
 
-We have two features here. This force local update, what it will do, is on normal circumstances if you do a import, the import function looks at the data that are currently in this JCB install. For example we're talking about field types, fields, admin views and site views. [00:11:42](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m42s) If it finds a site view that is being installed, that is already in the current database, it looks at the last modified date, and then by that determines whether the current installed version is newer. If it's newer it will by default ignore the new data and not install it. Sometimes you might get a package where you would like to force that it updates the current data even though it may be all the data. So this is why we have the switch, you can then click yes to force the update. [00:12:20](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m20s) We have a key for this package, so we'll leave this to yes. I'll just come over here(Joomla Components) and copy that key. This key will then always be necessary if you're importing this package. That will be it and we'll click continue. It might take a time since this is quite a huge dataset. You could just patiently wait. At last it is installed, it tells us that the install is being successful. You might get these warnings. 
+There is two features. This 'Force Local Update' may be explained as follow. If under normal circumstances an import is done, the import function looks at the data that are currently in this JCB install. For example: Field types, Fields, Admin views and Site views is involved. [00:11:42](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m42s) If it finds a site view that is being installed, that is already in the current database, it looks at the last modified date, and then by that determines whether the current installed version is the most recent. If it is the latest version, it will by default ignore the new data and not install it. Sometimes you may get a package, which make it necessary to force it to update the current data even though it may include all the data. This is the function of the 'Force Local Update' switch. Click 'yes' to force the update. [00:12:20](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m20s)<<<<<<<<<<< 
+
+
+We have a key for this package, so we'll leave this to yes. I'll just come over here(Joomla Components) and copy that key. This key will then always be necessary if you're importing this package. That will be it and we'll click continue. It might take a time since this is quite a huge dataset. You could just patiently wait. At last it is installed, it tells us that the install is being successful. You might get these warnings. 
 
 ### Warnings - Remapped
 
