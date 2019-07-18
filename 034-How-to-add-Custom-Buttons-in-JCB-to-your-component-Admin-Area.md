@@ -1,17 +1,27 @@
-# HOW TO ADD CUSTOM BUTTONS IN JCB TO YOUR COMPONENT ADMIN AREA
+# HOW TO ADD CUSTOM BUTTONS IN JCB TO THE COMPONENT ADMIN AREA
 
+[00:00:00](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 
-Hi, I want to demonstrate to you how to add a button to your components admin list area or in the edit area of the view. I possibly have touched on this in previous tutorials but I thought let's make one tutorial that deals with that. I have a blank install of JCB here, I've got this demo component installed [00:00:33](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m33s) or mapped. I've been installed it into this website. 
+How to add a button to the Components Admin List area or in the Edit area of the view. Possibly this had been touched on in previous tutorials but this tutorial will specifically deals with it. Here is a blank install of JCB, and this demo component had been installed or mapped.  It had been installed into this website. 
 
-### Joomla Demo Dashboard - Look 
+### Joomla Demo Dashboard - Look
+ 
+[00:00:38](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m38s)
+ 
+If 'Looks' is opened; it seems that everything is as it should, so an item can be created . (See video) (In Description;  'Give it some details'). Click save and close, and we have an item. There is a whole bunch of buttons and if you go into the test, there is also a bunch of buttons. [00:01:19](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m19s) All of them are usually there, those are the default buttons. The aim is to create buttons in these areas without custom coding,  of course it could be done  with custom coding, but there is a way to do it in JCB. Go back to the Admin Views and open the Admin View called 'Look'. When the Custom Buttons area may be seen, click on that, and say 'yes' to 'Add Custom Button'. 
 
-If I go to looks, it just looks as it should and we can create an item. See video - the Give it some details. Now we click save and close, and we have an item. You will see there's a whole bunch of buttons and if you go into the test, there's also a bunch of buttons. [00:01:19](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m19s) All of them are usually there, those are the default buttons. So what do you want to do if you want to create buttons in these areas without custom coding, you can of course do it with custom coding, but there is a JCB way to do it in JCB. Let's go back to our admin views. And then we open the admin view called look. And you'll see there's custom buttons area, I click on that [00:02:02](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m02s) We say yes we want to add custom button. 
+### PHP Controller Method - List View Controller Method
 
-### Controller Method - List View Controller Method
-
-You would see that it opens control methods, and also list view controller methods. You need to understand the MVC. Your controller, your model, again your controller and your model. Each view has two controllers two models. Because it has a list view and edit view. [00:02:32](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m32s) The list view has its own controller and model. The edit view has his own controller and model, so depending on where you placing the button. It will affect which model and which controller you need to use. I'm not going to explain much about the PHP being placed in these blocks, because that should be something you know how to do. If you don't you need to learn, you need to study to work with Joomla API. [00:03:02](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m02s) 
+[00:02:05](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m05s)
+ 
+You would see that it opens PHP (Controller Methods), and also PHP List View (Controller Methods). It is necessary to understand the MVC, the controller, the model, again the controller and the model. Each view has two controllers and two models. Because it has a List view and Edit view. [00:02:32](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m32s) The List view has its own controller and model. The Edit view has his own controller and model, so depending on where the button is placed. It will affect which model and which controller is needed. Not much will be explained about the PHP being placed in these blocks, since it is accepted that you are familiar with Joomla API. 
 
 ### Custom Button
+
+[00:03:07](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m07s)<<<<<<<<<<<<<
+
+
+
 
 * ### Icon - Joomla Standard Icomoon Fonds
 
