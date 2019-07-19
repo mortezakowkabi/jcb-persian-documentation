@@ -14,34 +14,14 @@ If 'Looks' is opened; it seems that everything is as it should, so an item can b
 
 [00:02:05](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m05s)
  
-You would see that it opens PHP (Controller Methods), and also PHP List View (Controller Methods). It is necessary to understand the MVC, the controller, the model, again the controller and the model. Each view has two controllers and two models. Because it has a List view and Edit view. [00:02:32](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m32s) The List view has its own controller and model. The Edit view has his own controller and model, so depending on where the button is placed. It will affect which model and which controller is needed. Not much will be explained about the PHP being placed in these blocks, since it is accepted that you are familiar with Joomla API. 
+You would see that it opens PHP (Controller Methods), and also PHP List View (Controller Methods). It is necessary to understand the MVC, the controller, the model, again the controller and the model. Each view has two controllers and two models. Because it has a List view and Edit view. [00:02:32](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m32s) The List view has its own controller and model. The Edit view has his own controller and model, so depending on where the button is placed. It will affect which model and which controller is needed. Assuming that you are familiar with Joomla API, not much will be explained about the PHP being placed in these blocks
 
 ### Custom Button
 
-[00:03:07](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m07s)<<<<<<<<<<<<<
+[00:03:07](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m07s)
 
-
-
-
-* ### Icon - Joomla Standard Icomoon Fonds
-
-So you do a custom button, you'd click on adding a button. Here's your icon you can select any of the icons these are the default Joomla icons that they use also called Icon, Icomoon or something. So you can use that. 
-
-* ### Name of the Button
-
-Then the name of the button, what you want to call it? I'm just going to call it test for now.
-
-* ### Target Controller Method - Controller Method Name
-
-Then the name of the controller method. So I'm going to call that [00:03:39](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m39s) getTested. 
-
-* ### Target - Set the Target View Type
-
-We'll decide is this going to be an edit view, a single view target, a list view or both where must this button show up. So I'm going to do list. 
-
-* ### Type - For List Target
-
-If it's a list view, [00:04:02](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m02s) then we could decide whether this is only a function. Now when it is a selection, it means that you need to select some items. Then click the button for it to submit those ids of the selected items. If it is a only a function you don't need to select anything. When you click the button, function it will be triggered, [00:04:30](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m30s) which doesn't require you to give it any information. So it's going to do something, And you need to be able to code that. I'm just going to use the default. The default is very much like selection but it behave differently. [00:04:57](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m57s) I think the best way to do this is select one of the options, compile the component and go look at the code. 
+At the Custom Button option, click on 'add'. At 'Icon-Joomla Standard Icomoom Fonts' any of the default Joomla icons may be selected and be used. Then the 'Name' of the button, call it test for now. Then the name of the Controller method may be called 'getTested'.[00:03:39](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m39s)  
+To set the Target View Type: Decide whether this going to be an edit view, a single view target, a list view or both, where this button should show up. In this instance, 'list' is selected. If it is a List view, then it could be decided whether this is only a function.[00:04:02](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m02s) Now when it is a selection, it means that it is necessary to select some items. Then click the button for it to submit those IDs of the selected items. If it is only a function it is not necessary to select anything. If the button is clicked, a function will be triggered, which does not require that any information should be given to it.[00:04:30](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m30s) Whatever the result, you need to be able to code that. The 'Default' will be used. The default is very much like selection but it behave differently. [00:04:57](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m57s) The best way to do this is to select one of the options, compile the component and go look at the code.<<<<<<<<< 
 
 ### PHP (Controller Method)
 
