@@ -2,7 +2,7 @@
 
 [00:00:00](https://www.youtube.com/watch?v=zzAcVkn_cWU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00ms)
 
-JCB has again been expanded to include a language translation feature. We are very grateful for one of the contributors who have extended the code base for this. We are working together to insure that it remains stable. Those that have been following the process on GitHub, will know how much time and effort had been put into this. So this is a quick explanation of how this will work. 
+JCB has again been expanded to include a language translation feature. One of our contributors had extended the code base for this and we are collaborating to insure that it remains stable. Those that have been following the process on GitHub, will know how much time and effort had been put into this. So this is a quick explanation of how this will work. 
 
 ### JCB Builds English File For You
 
