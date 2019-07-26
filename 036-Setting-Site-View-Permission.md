@@ -31,8 +31,12 @@ Let's look at it at code level. Here is the access file of Sermon Distributor, a
 [00:08:04](https://www.youtube.com/watch?v=gWjQjdhYqXI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m04s)
 Now if we go back to the Sermon Distributor component, and again open the Site views, this time I changed it so that it does not have access. It is saved that way. Go to the compiler, compile Sermon Distributor and install. Let's go back to the code. It may be seen that it does not have any of that checks in the Preachers file only in the category file. [00:08:57](https://www.youtube.com/watch?v=gWjQjdhYqXI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m57s)  It still redirects to Preachers, which in effect means that this one will no longer give any errors, but it will show these ('COM_SERMONDISTRIBUTOR_NOT_AUTHORISED_TO_VIEW_CATECORIES'),'errors'); errors, which relates to the fact that they cannot see the categories. An advancement that we might consider, is to add a field to the component, where the user can change these errors to show maybe a message of how to purchase access. 
 
-### Custom Code Implementation
+**Custom Code Implementation**
 
 [00:09:35](https://www.youtube.com/watch?v=gWjQjdhYqXI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m35s)
 
-At this stage JCB does have the the option to customize any section of code by using what is known as the Custom Code Implementation. For more detail on this feature, please go to YouTube where it is explained how to change this whole code block and how to use your own implementation upon these measures. [00:10:10](https://www.youtube.com/watch?v=gWjQjdhYqXI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m10s) This was a demonstration how to manage the different permission structures for JCB regarding the site front-end. If you do not want that control, simply just put it off.
+At this stage JCB does have the the option to customize any section of code by using what is known as the Custom Code Implementation. For more detail on this feature, please go to YouTube where it is explained how to change this whole code block and how to use your own implementation upon these measures. [00:10:10](https://www.youtube.com/watch?v=gWjQjdhYqXI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m10s)
+
+This was a demonstration how to manage the different permission structures for JCB regarding the site front-end and if you do not need that control, simply just put it off.
+
+ 
