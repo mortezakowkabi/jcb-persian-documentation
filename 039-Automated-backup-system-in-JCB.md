@@ -26,33 +26,49 @@ The API user will primarily be used for the ID that is used in the permission st
 
 ### CronJob Tab
 
-[00:06:17](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m17s)<<<<
+[00:06:17](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m17s)
 
-When we go to the CronJob tab, we will see that there is some basic instructions for those of you who are familiar with CronJobs. I suppose everything is self explanatory. Those who are not I would suggest you Google around, find some tutorials, read up, make sure what you're doing, [00:06:40](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m40s) and that you're comfortable by setting up a CronJob. There are various ways for you to trigger this URL. The system currently detects whether your system  can run curl request. If it can't it will fall back on the weget option. Assuming that JCB is installed in an environment that allows these two functions to work. If not you can simply take the URL, and run it in a CronJob in a manner that is [00:07:16](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m16s) applicable to your system. And know that this URL triggers the backup to start. When the backup is finished, it tells you the same message that you will get if you run the backup by clicking backup here. You will see there is a green message that pops up, saying yes the backup was done, the email was sent. [00:07:42](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m42s) Those are the only messages that also gets returned upon this URL. We currently throwing that responds away. But you could add it to a log, depending on how regularly this CronJobs is running. There isn't the date currently. I think [00:08:06](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m06s) it might make sense for us to add a date. But at this stage there isn't one. If you're running in a firewall, your Joomla website has a firewall installed like RS firewall, then you might need to adapt your curl request to behave like a real browser. Here is a post on https://stackoverflow.com that could help you understand more about that. 
+In the 'CronJob' tab, is some basic instructions for those who are familiar with CronJobs and if not, Google around, find some tutorials, read up, make sure that you are able to set up a CronJob. [00:06:40](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m40s) There are various ways to trigger this URL. The system currently detects whether your system can run 'curl' request and if not, it will fall back on the 'weget' option. Assuming that JCB is installed in an environment that allows these two functions to work and if not, simply take the URL, and run it in a CronJob in a manner that is applicable to your system. [00:07:16](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m16s)  This URL triggers the backup to start. When the backup is finished, it gives the same message that you will get if you run the backup by clicking 'Backup' (See video). There is a green message that pops up, indicates: 'Yes the backup was done and the email was sent'. [00:07:42](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m42s) Those are the only messages that gets returned on this URL. Currently that response gets thrown away. It may be added to a log, depending on how regularly this 'CronJobs' is running. Currently there is not any date.  [00:08:06](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m06s) It might make sense for us to add a date. In case you run into a firewall, Joomla website has a firewall installed like RS firewall, then it is necessary to adapt the 'curl' request to behave like a real browser. This post on https://stackoverflow.com may be of some help. 
 
 ### Cronjob Backup Folder Path
 
-Currently the [00:08:39](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m39s) Cronjob Backup Folder path is set here. It currently backups to a local folder. As I said we will add an FTP option here. We will still work out how we can do that and still have it secure. Joomla doesn't by default encrypt fields in the Global Configuration of your component. That's might be part of what makes it difficult for us to implement this [00:09:11](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m11s) here. 
+ [00:08:36](https://www.youtube.com/watchv=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m36s) 
+ 
+Currently the 'Cronjob Backup Folder Path' is set here(See video). It currently backups to a local folder. As mentioned previously an FTP option is going to be add here. Joomla does not by default encrypt fields in the Global Configuration of the component. 
 
 ### Email (Backup Key)
+ 
+[00:09:13](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m13s) 
 
-The point is currently it stores it into a local folder, and it Emails the backup key to the email address that you set in here. Now make sure that email address is secure and that it is safe because the keys are being sent to it. 
+Currently it stores it into a local folder, and it Emails the backup key to the email address that have been set in here(See Video). Make sure that email address is secure and that it is safe because the keys are being sent to it. 
 
 ### Package Name Placeholders
 
-Now here is a naming structure for your file by default. It adds only up till the day, so it will [00:09:45](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m45s) make backups all through the day, but overwrite the file every time unless you add an hour, then it'll only per hour overwrite it. If you add a minute, it will never overwrite it, because it will be a different minute every time. That is to rename your package and to see how much of the backups you want to keep. 
+[00:09:33](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m33s)
+
+Here is a naming structure for your file by default. It adds only up till the day, so it will  make backups all through the day, but overwrite the file every time unless you add an hour, then it will only per hour overwrite it. If a minute is added , it will never overwrite it, because it will be a different minute every time. That is to rename the package and to see how much of the backups you want to keep. 
 
 ### Mail Configuration Area
 
-If we go to the mail configuration area, you will see that it is currently set to use the Global Mail Configuration which is your Joomla default. [00:10:23](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m23s) Now I would advise that you use a very secure method of sending the emails. Either SMTP overwriting the SMTP settings. If you use the Global ones then overwrite or insured that your Global Email settings in Joomla is also using SMTP that runs through an SSL and is secure. 
+[00:10:13](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m13s)
+
+In the mail configuration area, it may be seen that it is currently set to use the Global Mail Configuration which is the Joomla default.
+**NB. Use a very secure method of sending the emails.** Either SMTP overwriting the SMTP settings. If the Global ones are used, then overwrite or insure that the Global Email settings in Joomla is also using SMTP that runs through an SSL, and that it is secure. 
 
 ### DKIM
+ 
+[00:10:54](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m54s)
 
-The DKIM is also a added feature which can increase [00:11:00](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m00s) trust and security of your emails. 
+The DKIM is also a added feature which can increase trust and security of your emails. 
 
 ### Company Details
 
-Then there is the Company details, which at this stage is important to add, since it will also become part of the backup package. We will look at that again when we restore a backup to show you where this information comes up. [00:11:28](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m28s) That is some of the settings you need to first set within your Global Configuration. Now once you've set those settings, Company settings, your CronJob settings, your local path, the email, the name, and your API user, you can save and close this area and we can start looking at a component to [00:11:54](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m54s) see this feature in action. Now since this is a default JCB install, there's only one component. It's the demo component. 
+[00:11:10](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m10s)
+
+Then there is the Company details, which at this stage is important to add, since it will also become part of the backup package.<<<<<<<<<<
+
+
+ We will look at that again when we restore a backup to show you where this information comes up. [00:11:28](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m28s) That is some of the settings you need to first set within your Global Configuration. Now once you've set those settings, Company settings, your CronJob settings, your local path, the email, the name, and your API user, you can save and close this area and we can start looking at a component to [00:11:54](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m54s) see this feature in action. Now since this is a default JCB install, there's only one component. It's the demo component. 
 
 ### Set An Export Key
 
