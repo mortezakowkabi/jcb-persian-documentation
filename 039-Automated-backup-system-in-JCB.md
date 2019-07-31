@@ -65,14 +65,17 @@ The DKIM is also a added feature which can increase trust and security of your e
 
 [00:11:10](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m10s)
 
-Then there is the Company details, which at this stage is important to add, since it will also become part of the backup package.<<<<<<<<<<
-
-
- We will look at that again when we restore a backup to show you where this information comes up. [00:11:28](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m28s) That is some of the settings you need to first set within your Global Configuration. Now once you've set those settings, Company settings, your CronJob settings, your local path, the email, the name, and your API user, you can save and close this area and we can start looking at a component to [00:11:54](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m54s) see this feature in action. Now since this is a default JCB install, there's only one component. It's the demo component. 
+Then there is the Company details, which at this stage is important to add, since it will also become part of the backup package. We will look at that again when we restore a backup to show you where this information comes up. [00:11:28](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m28s) That is some of the settings that first need to be set within the Global Configuration(See video). Once it is set, Company settings, CronJob settings,  Local path, the Email, the Name, and the API user, you can save and close this area and then look at a component to see this feature in action. [00:11:54](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m54s) Since this is a default JCB install, there is only one component; The Demo Component. 
 
 ### Set An Export Key
 
-Now usually the demo component doesn't have an encryption key. I'll open it, and [00:12:18](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m18s) I've set it. You come and set an export key in at least one of the components that will be part of the backup. If any one of the components that are being backup have an export key, it will encrypt all the components with that export key. If multiple one's have an export key, it will combine those keys [00:12:47](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m47s) to use as the encryption key. It hashes those keys so the actual key is not what is actually being used. The actual key that's being used is the one that will be emailed out to that trusted email address. We'll save and close the demo component. 
+[00:12:10](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m10s)
+
+Usually the Demo Component does not have an encryption key. Open it. It had been set on a previous occasion. Set an Export key in at least one of the components that will be part of the backup. If any one of the components that are being backup have an Export key, it will encrypt all the components with that Export key. If multiple ones have an Export key, it will combine those keys to be used as the encryption key.[00:12:47](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m47s)  It hashes those keys so the actual key is not what is being used. The actual key that is being used is the one that will be emailed to that trusted email address. Save and close the Demo Component. <<<<
+
+
+
+
 
 ### Backup Manually
 
