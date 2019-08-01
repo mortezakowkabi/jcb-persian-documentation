@@ -2,11 +2,17 @@
 
 ### Question About Help Menu Integration For JCB Components
 
-Hi. Recent question came up that was asking about help menu integration for JCB Components. You will see the JCB itself has this Help Document area. I have not had the time to expand upon this Help Document area as much as I would like to. Maybe in the future we would still expand on it. It is a feature that is very easily added to any other JCB Component. 
+[00:00:00](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+
+Recently an inquiry about Help Menu integration for JCB Components has been made. As may be seen JCB has this Help Document area. Time does not allow to expand upon this Help Document area, perhaps it may be done in future. It is a feature that is very easily added to any other JCB Component. 
 
 ### Purchased Sermon Distributor Key
 
-If you have purchased the Sermon Distributor Package. [00:00:46](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m46s)  There is a place, one of the repositories on the VDM data, I called JCB-Packages. You go to vdm-io, and then JCB-Packages on GitHub. One of the package is Sermon Distributor. You can download this package but before you haven't purchased a key for it, you can't use it. [00:01:18](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m18s) To get a key you would click on this link http://vdm.bz/jcb-packages. This will take you to a place on our website where you can purchase the Sermon Distributor Package. [00:01:46](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m46s) You can also go to vdm.io which is our website. Open 'Home' and then under Services, you can also find JCB-Packages. If you click on that it will take you to the same place. There are a few packages available which is a fully mapped components [00:02:13](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m13s) inside of JCB. If you purchase this you would get information and code and everything which will help you install the Sermon Distributor Package. I'm going to install the Sermon Distributor Package on this demo website that I am using. I'm not going to demonstrate how I did that, because if you purchase the package you would have all the instructions how to do this once you have installed the Sermon Distributor Package. 
+[00:00:39](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m39s)
+
+If you have not purchased the Sermon Distributor Package, there is a place, one of the repositories on the VDM data, called JCB-Packages. Go to vdm-io, and then JCB-Packages on GitHub. One of the packages is Sermon Distributor. This package can be downloaded but it can only be used when a key is purchased for it. [00:01:18](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m18s) This key may be obtained at this link:  http://vdm.bz/jcb-packages. It may also be obtained via our website: vdm.io . Open 'Home' and then under Services, to find JCB-Packages. There are a few packages available which are fully mapped components in JCB.[00:02:13](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m13s)<<<<<<<<
+
+  If you purchase this you would get information and code and everything which will help you install the Sermon Distributor Package. I'm going to install the Sermon Distributor Package on this demo website that I am using. I'm not going to demonstrate how I did that, because if you purchase the package you would have all the instructions how to do this once you have installed the Sermon Distributor Package. 
 
 ### New Admin View - Help Document
 
