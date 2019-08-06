@@ -3,6 +3,7 @@
 ### Checking The Target Dataset
 
 [00:00:00](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m57s)
+(_Click on this time links to see Youtube video_)
 
 Now that we have the dynamicGet in place, let's add it to a site view and look at the initial implementation. Go to site view and click on new. Since we already have what you created, we will just open preacher.
 
