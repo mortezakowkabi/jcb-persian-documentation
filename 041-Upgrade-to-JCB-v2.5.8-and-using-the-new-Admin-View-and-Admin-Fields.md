@@ -42,17 +42,21 @@ I have found that it sometimes does not convert every single value, and because 
 
 [00:08:46](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m46s)
 
-Another thing that had been done, because you most probably will not open every view or every Admin View. Even in the new admins fields the same had been done. In the Admin fields, it has been ensured that that update is there, and the same with the Admin field conditions, it is there as well.[00:09:09](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m09s)<<<<
+Another thing that had been done, because you most probably will not open every view or every Admin View. Even in the new admins fields the same had been done. In the Admin fields, it has been ensured that that update is there, and the same with the Admin field conditions, it is there as well.[00:09:09](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m09s)
 
-But there is one more place where we also add these checks and that's in the Compiler. So even if you didn't go and open any of these views and you just went straight to the Compiler, and try to compile any of your Components, the Compiler now been adapted to instead use the new Sub Form Structure within it's compilation. [00:09:38](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m38s) 
+But there is one more place where these checks are added and that is in the Compiler. Even if you did not open any of these views and went straight to the Compiler, and try to compile any of your Components, the Compiler  has now been adapted to instead use the new Sub Form Structure within its compilation.  
 
 * ### Checking
 
-Within the Get file where most of these sub forms are now needed, we have in the 'getAdminViewclass' method and you will see we are checking whether it's still in a Repeatable Field. If it is, we convert it. [00:10:04](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m04s) Again store it to the update object while it's getting this one admin view at the very end. Every where it's doing it check, if it's not being converted. 
+[00:09:38](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m38s)
+
+Within the Get file where most of these sub forms are now needed, we have in the 'getAdminViewclass' method and it may be seen that we are checking whether it is still in a Repeatable Field. If it is, we convert it. [00:10:04](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m04s) Again store it to the update object while it is getting this one Admin view at the very end. Every where it is doing it, it checks, if it is not being converted. 
 
 * ### Converts
 
-It converts it and sets it back to the data set, and to ensure that we store it back into the database, this little string '$objectUpdate->addpermissions=json_encode($bucket);. So it goes on doing it everywhere where we [00:10:30](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m30s) expect to find values that still may have been missed. 
+[00:10:15](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m15s)
+<<< 
+It converts it and sets it back to the data set, and to ensure that we store it back into the database, this little string '$objectUpdate->addpermissions=json_encode($bucket);. So it goes on doing it everywhere where we expect to find values that still may have been missed. 
 
 * ### Updates
 
