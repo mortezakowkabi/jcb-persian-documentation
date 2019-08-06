@@ -55,8 +55,8 @@ Within the Get file where most of these sub forms are now needed, we have in the
 * ### Converts
 
 [00:10:15](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m15s)
-<<< 
-It converts it and sets it back to the data set, and to ensure that we store it back into the database, this little string '$objectUpdate->addpermissions=json_encode($bucket);. So it goes on doing it everywhere where we expect to find values that still may have been missed. 
+ 
+It converts it and sets it back to the data set, and this string '$objectUpdate->addpermissions=json_encode($bucket);is used to ensure that it gets stored in the database. So it does everywhere where values still may be expected to have been missed. <<
 
 * ### Updates
 
