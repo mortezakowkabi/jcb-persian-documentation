@@ -1,6 +1,7 @@
 # HOW TO ADD CUSTOM BUTTONS IN JCB TO THE COMPONENT ADMIN AREA
 
 [00:00:00](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+(_Click on this time links to see Youtube video_)
 
 How to add a button to the Components Admin List area or in the Edit area of the view. Possibly this had been touched on in previous tutorials but this tutorial will specifically deals with it. Here is a blank install of JCB, and this demo component had been installed or mapped.  It had been installed into this website. 
 
