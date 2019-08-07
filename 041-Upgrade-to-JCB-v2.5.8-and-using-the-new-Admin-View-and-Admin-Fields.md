@@ -68,13 +68,15 @@ If any updates are found at the very end of this function, a update should be ru
 
 [00:11:50](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m50s)
 
-Getting back to the Install. Open this Admin View - 'Look', and then install the upgrade.  Select it, it has not been released yet, so this is a pre-demostration.  A file is selected from my computer(See video). Since it is quite a huge data set it may take a while for the installation to be completed. [00:12:47](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m47s) In this case the upgrade to version 2.5.8 has been successful. <<<
+Getting back to the Install. Open this Admin View - 'Look', and then install the upgrade.  Select it, it has not been released yet, so this is a pre-demostration.  A file is selected from my computer(See video). Since it is quite a huge data set it may take a while for the installation to be completed. [00:12:47](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m47s) In this case the upgrade to version 2.5.8 has been successful. 
 
 ### New Field And Conditions View
 
 [00:12:55](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m55s)
 
-If that Admin View is opened which looked like this(see video) and now refresh it, it should look like that(see video). It has moved  these Fields to the side. There is now a Settings Field and as you can see all the data is just been updated and moved to Sub Form values. Same with the Tabs. Going to Field and Conditions, that is how the new Field and Conditions View looks like. Due to many reasons we could not keep the Sub Form Fields within the Admin View, [00:13:38](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m38s) especially when you start having more than 50 Admin Fields, which in my case, I have quite a few of those, it's not advisable. Because it causes a tremendous slow down on page load. I mean imagine each of these lines are 1 - 13 Fields. If you start having a lot of those Fields which you could have up to 800, [00:14:09](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m09s) by the limit we've set, it really takes a long time to load that into the page. 
+If that Admin View is opened and then refreshed, the changes will be seen(see video). There is now a Settings Field and as may be seen, all the data has been updated and moved to Sub Form values. The same with Tabs. Going to Field and Conditions, it may also be seen how the new Field and Conditions View looks like. [00:13:32](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m32s) Due to many reasons it is not advisable to keep the Sub Form Fields within the Admin View, especially when there are more than 50 Admin Fields, because it causes a tremendous slow down on page load. Taken into consideration that each of these lines are 1 - 13 fields and if you start having a lot of those Fields<<<<<<
+
+ which you could have up to 800, [00:14:09](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m09s) by the limit we've set, it really takes a long time to load that into the page. 
 
 ### How The Field And Conditions View Works?
 
