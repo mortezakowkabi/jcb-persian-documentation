@@ -3,6 +3,7 @@
 ### Demonstration - Creating, Updating And Adding Database Tables
 
 [00:00:00](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+(_Click on this time links to see Youtube video_)
 
 I would like to give you a explanation as well as demonstration of how JCB deals with Joomla's implementation when it regards to creating of Database tables, as well as updating them or even adding more. Joomla is a way of doing this through specific file convention within your components file structure package. JCB is also been designed to detect changes in your components development [00:00:37](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m37s) and create those files for you. The best way to illustrate this is let's compile a component. We have Sermon Distributor. Let's going to compile that for us. Then we'll go to the zip file, unzip it. Have a look at it, and see those files extracted here. [00:01:04](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m04s) Inside of this(com_sermondistributor) we have an admin folder and inside admin folder a sql folder. Here(installmysql.uft8.sql) is the first file of interest that's what Joomla uses to build a database upon the first install of the component. 
 
