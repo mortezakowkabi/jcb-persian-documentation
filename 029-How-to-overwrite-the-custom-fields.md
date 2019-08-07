@@ -3,6 +3,7 @@
  ### Using Default Fields With Custom Code
 
 [00:00:00](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+(_Click on this time links to see Youtube video_)
 
 It may happen that you would prefer to use some of the default fields in a different manner than that of Component Builder's way of implementation. What is the default fields? [00:00:12](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m12s) If you go to add a new Admin View or to an Admin View that already exists, it may be seen that there is this note above Adding Fields. It indicates that the 'ID', the 'asset_id', the 'state', the 'access', the 'ordering', the 'created_by', the 'date_created', 'modified_by', 'date_modified', 'checked_out', 'Check_out_time', 'version', 'hits', 'metakey',  'metadescription', and 'metadata' has already been added to the view. [00:00:41](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m41s) These are the default fields that always gets added to the view even if you do not create them. In fact it is not necessary to create them. Sometimes you might want to display some of these fields in a different area of the application. Currently the ID field and the State field is the only fields that are being shown by default in the List view. [00:01:20](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m20s)
 
