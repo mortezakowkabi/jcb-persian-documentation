@@ -3,6 +3,7 @@
 ### MySQL tweaking in the component area
 
 [00:00:00](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+(_Click on this time links to see Youtube video_)
 
 Open a component (in this instance, 'Editting a component'). Go to 'settings', and you'll find a 'MySQL' tweak. What is its function? If you have multiple versions of a component and partly demo relating to a certain version of it and implementation of items and you do not want those items included in another version, there is the 'MySQL' tweak area where a specific view can be selected. [00:00:43](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m43s)
 
