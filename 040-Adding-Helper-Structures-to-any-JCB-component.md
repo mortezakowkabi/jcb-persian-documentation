@@ -3,7 +3,7 @@
 ### Question About Help Menu Integration For JCB Components
 
 [00:00:00](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on this time links to see Youtube video_)
+(_Click on these time links to see Youtube video_)
 
 Recently an inquiry about Help Menu integration for JCB Components has been made. As may be seen JCB has this Help Document area. Time does not allow to expand upon this Help Document area, perhaps it may be done in future. It is a feature that is very easily added to any other JCB Component. 
 
