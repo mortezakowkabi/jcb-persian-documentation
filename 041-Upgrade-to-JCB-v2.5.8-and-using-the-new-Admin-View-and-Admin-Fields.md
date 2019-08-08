@@ -101,7 +101,7 @@ Then a field can also be created . Creating a field will not necessarily add it 
 
 [00:16:53](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m53s)
 
-There is one heads up concerning something that is a little different to how things were done previously. Close and go out of this Admin View. It may be mentioned that here(buttons below a view) is a shortcut to get to the Admin Fields without opening the Admin View and then the Admin Fields. If the right button is used, it will automatically open the Admin Fields. Changes may be made and it is linked to the Look Admin View and it is same with the Conditions. The second button is for conditions. 
+There is one heads up concerning something that is a little different to how things were done previously. Close and go out of this Admin View. It may be mentioned that here(buttons below a view) is a shortcut to get to the Admin Fields without opening the Admin View and then the Admin Fields. If the right button is used, it will automatically open the Admin Fields. Changes may be made and it is linked to the Look Admin View and the same applies to the Conditions. The second button is for conditions. 
 
 ### Create New Admin View: Adding - Single Record Name, List Record Name, Short Description, System Name
 
