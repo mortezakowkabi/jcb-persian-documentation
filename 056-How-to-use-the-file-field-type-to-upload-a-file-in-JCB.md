@@ -3,7 +3,7 @@
 ### Add/Upload A File Field To A Component
 
 [00:00:00](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on this time links to see Youtube video_)
+(_Click on these time links to see Youtube video_)
 
 We want to add a file field to a component and upload a file. [00:00:12](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m12s) I'm going to use this Demo component. It got a few Admin Views, we've got the area Look. I got a Site View, Looks and Looking. I'm going to add this field to the Look Admin View. I first need to create the field [00:00:32](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m32s) and we need to look at the steps that will need to implement. Currently JCB doesn't out of the box address this. We might think of doing this maybe in the future but because of some of the security risks, it's best you do this yourself. [00:00:54](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m54s) Because then at least you're under control and the risk is really yours and not put anyone else at risk. 
 
