@@ -47,7 +47,7 @@ Not much has changed in the Component in regards to where what is located, but h
 
 [00:07:00](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m00s)
 
-The contributor has been moved down so it may be done on the page. But for most of the other Repeatable Fields it had been moved to their own Tables. 
+The Contributors has been moved down so it may be done on the page. But for most of the other Repeatable Fields it had been moved to their own Tables. 
 
 ### Moved Component Files And Folders To Joint Table
 
