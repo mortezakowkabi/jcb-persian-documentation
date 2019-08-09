@@ -41,21 +41,25 @@ The upgrade should be quite simple. Go to updates in the managing area. See that
 
 [00:06:09](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m09s)
 
-Not much has changed in the Component in regards to where what is located,<<<
-
- but how to interact with it is been moved. For example the Component Updates if you see it has a button 'Edit component update for this joomla component', if you click, it's going to ask if you first save everything before you continue. [00:06:30](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m30s) If you've done so, then click 'OK' and it opens the area where you then would do your updates. Usually it was in a model that popped up, and you could change it right there on the same page. Now you simply go to another view and is doing the same. The same goes with your Admin View, Custom View, Site View, and everything else. 
+Not much has changed in the Component in regards to where what is located, but how to interact with it has been moved. For example: The Component Updates has a button 'Edit component update for this joomla component',and if it is clicked, it is going to ask if everything is saved before you continue. [00:06:30](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m30s) If that was done, click 'OK' and it will open the area where the updates can be done. Usually it was in a model that popped up, and it was possible to change it on the same page. Now you may go to another view and it will do the same. This applies to the Admin View, Custom View, Site View, and everything else. 
 
 ### Contributor Moved Down - Do On Page 
 
-The contributor we've moved down so you could [00:07:03](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m03s) do them on the page. But for most of the other Repeatable Fields we've moved them to their own Tables. 
+[00:07:00](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m00s)
+
+The contributor has been moved down so it may be done on the page. But for most of the other Repeatable Fields it had been moved to their own Tables. 
 
 ### Moved Component Files And Folders To Joint Table
 
-The Files and the Folders we've moved to a joint table. If you were to click on 'Edit component files folders for this joomla component' you should be able to easily add some Files to your Component or Folders. All found within this [00:07:29](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m29s) Structure as it's explained here in the note. The same is true of all the other areas. 
+[00:07:11](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m11s)
+
+The Fields and the Folders had been moved to a joint table. If this 'Edit component files folders for this Joomla component' is selected it will be easy to add some files to the Component or Folders, all found within this Structure as it is explained in the note. The same applies to all the other areas. 
 
 ### Moved Admin Views To Its Own Tab
 
-We've moved the Admin Views to its own tab. You could access them via this button (In Settings - edit component admin views for this joomla component) or via this one(Admin View Tab) [00:07:54](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m54s) In Editing the Joomla Component area you would see your changes. You could also from here directly edit the Admin View that you've linked. It will be able to edit the Admin View directly out of your Component area. That's a nice new feature which [00:08:15](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m15s) I suppose will come in very handy. That is the new upgrade as it targets the majority of the changes in the Joomla Component Area. We do have a lot of data checks all around JCB at this stage. That if during the upgrade we might have missed a Field in not converting it to the new Sub Form layout. Then when opening a view, it runs through all those Fields, and make sure that it's been [00:08:54](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m54s)  changed and converted. If by any means you didn't get around to opening the views, and you go here to the Compiler, and would click compile. It does that again, it runs through all the Fields and it makes sure that it's in the right format. Therefore you're compiling should work just as before. 
+[00:07:42](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m42s)
+ 
+The Admin Views has been moved to its own tab. It may be accessed via the button 'In Settings - edit component admin views for this Joomla component' or via the button 'Linked Admin View-Edit ' [00:07:54](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m54s) In Editing the Joomla Component area it is possible to see your changes and from here directly edit the Admin View that has been linked. It will be able to edit the Admin View directly out of your Component area. That is a nice new feature which will come in very handy. [00:08:15](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m15s) That is the new upgrade as it targets the majority of the changes in the Joomla Component Area. If we might have missed a field during the upgrade by not converting it to the new Sub Form layout; there is a lot of data checks all around JCB at this stage which; when a view is opened, runs through all those Fields, and make sure that it has been changed and converted. [00:08:54](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m54s)If by any means you did not get around to open the views, and go to the Compiler, and click compile. It does that again, it runs through all the Fields and it makes sure that it is in the right format. Therefore the compiling should work as before.<<< 
 
 ### New Feature - Translation Checker
 
