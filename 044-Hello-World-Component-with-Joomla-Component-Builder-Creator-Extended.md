@@ -64,22 +64,19 @@ First go to the Joomla Website and log in. Then install JCB. Simply go to 'Manag
 
 [00:10:35](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m35s)
 
-If you do not find a Component in the search, this 'Component Builder' is the Component. Then you could go down to an area called 'Tools', and then 'Developing Tools'. [00:11:06](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m06s) JCB is one of the listed Developing Tools. Here it is only listed as a Component Builder. You can click on that, and simply click install. This 'Install' will then grab a URL from GitHub. [00:11:33](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m33s) The Joomla Installer may also be used, and simply click install. How fast it will take will depend on your own network. This is quite a big file, and in certain areas it might be a limitation if used outside of a local developing environment. <<<
-
-
-
+If you do not find a Component in the search, this 'Component Builder' is the Component. Then you could go down to an area called 'Tools', and then 'Developing Tools'. [00:11:06](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m06s) JCB is one of the listed Developing Tools. Here it is only listed as a Component Builder. You can click on that, and simply click install. This 'Install' will then grab a URL from GitHub. [00:11:33](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m33s) The Joomla Installer may also be used, and simply click install. How fast it will take will depend on your own network. This is quite a big file, and in certain areas it might be a limitation if used outside of a local developing environment. 
 
 ### Need To Understand and Setup Components: Field Types, Fields, Views
 
 [00:11:57](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m57s) 
 
-We've got JCB installed. There's just a few small things that we need to lay down as foundation stones in understanding how most Joomla Components are constructed. We're going to build a Component called Hello World. The way to setup a component is you need to first understand Field Types. [00:12:31](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m31s) Then you need to setup the Fields you'll need, and then you need to setup the Views that you want in your Component. 
+Now that JCB is installed there are some things that need to be understood concerning the way most Joomla Components are constructed. We are going to build a Component called 'Hello World'. The way to setup a component is to first understand Field Types. [00:12:31](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m31s) Then the Fields need to be set up and then the Views that is needed in your Component. 
 
 ### Views Mapped Back To Database - Admin Views
 
 [00:12:40](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m40s)
 
-These Views also map back to the database. These are what we call Admin Views. Your Admin Views have Fields and Fields are your Database Columns. Admin Views are your Database Tables, [00:12:59](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m59s) Fields are your Database Columns. And these are your Field Types. You got a Text Field, Radio, List, Multiple Selection, Checkbox, a Date Field. You got many types of Fields. Each Field independently is linked to a type, but there are some Database Settings within each Field [00:13:24](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m24s) as it gets linked into the Admin View. Since the Fields form the Columns of the Tables of the Admin Views. This is how you setup a Component. 
+These Views also map back to the database. These are what is called Admin Views. Admin Views have Fields and Fields are the Database Columns. Admin Views are the Database Tables, [00:12:59](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m59s) Fields are the Database Columns and these are the Field Types(Please see video). There is a Text Field, Radio, List, Multiple Selection, Checkbox, a Date Field. There are many types of Fields. Each Field independently is linked to a type, but there are some Database Settings within each Field as it gets linked into the Admin View , since the Fields form the Columns of the Tables of the Admin Views. This is how a Component is setup.<<<<<<< 
 
 ### First Build The Back End Then Add In The Front End
 
