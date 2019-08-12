@@ -37,7 +37,7 @@ It is necessary to start with the basics. That is to build a Hello World Tutoria
 
 [00:06:23](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m23s)
 
-There are two principals to mention before we start. One is patience, the other is perseverance. Within any programming career these are invaluable principals. [00:06:49](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m49s) This is what has made JCB possible and this is also what would make you successful in using JCB.[00:07:17](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m17s)  It is not a component which is claimed to have no internal conflicts or inconsistencies but it is most certainly a component with which I have developed countless mini program components which I am maintaining. 
+There are two principals to mention before we start. One is patience, the other is perseverance. Within any programming career these aspects are invaluable. [00:06:49](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m49s) This is what has made JCB possible and this is also what would make you successful in using JCB.[00:07:17](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m17s)  It is not a component which is claimed to have no internal conflicts or inconsistencies but it is most certainly a component with which I have developed countless mini program components which I am maintaining. 
 
 ### Basic Steps To Understand How To Build
             * Self Explanatory
