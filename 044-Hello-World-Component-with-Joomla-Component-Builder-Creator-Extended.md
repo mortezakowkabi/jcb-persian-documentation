@@ -72,35 +72,37 @@ If you do not find a Component in the search, this 'Component Builder' is the Co
 
 Now that JCB is installed there are some things that need to be understood concerning the way most Joomla Components are constructed. We are going to build a Component called 'Hello World'. The way to setup a component is to first understand Field Types. [00:12:31](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m31s) Then the Fields need to be set up and then the Views that are needed in your Component. 
 
-### Views Mapped Back To Database - Admin Views
+### Views Mapped Back to Database - Admin Views
 
 [00:12:40](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m40s)
 
-These Views also map back to the database. These are what is called Admin Views. Admin Views have Fields and Fields are the Database Columns. Admin Views are the Database Tables, [00:12:59](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m59s) Fields are the Database Columns and these are the Field Types(Please see video). There is a Text Field, Radio, List, Multiple Selection, Checkbox, a Date Field. There are many types of Fields. Each Field independently is linked to a type, but there are some Database Settings within each Field as it gets linked into the Admin View , since the Fields form the Columns of the Tables of the Admin Views. This is how a Component is setup.<<<<<<< 
+These Views also map back to the database. These are what is called Admin Views. Admin Views have Fields and Fields are the Database Columns. Admin Views are the Database Tables, [00:12:59](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m59s) Fields are the Database Columns and these are the Field Types(Please see video). There is a Text Field, Radio, List, Multiple Selection, Checkbox, a Date Field. There are many types of Fields. Each Field independently is linked to a type, but there are some Database Settings within each Field as it gets linked into the Admin View , since the Fields form the Columns of the Tables of the Admin Views. This is how a Component is setup.
 
-### First Build The Back End Then Add In The Front End
+### First Build the Back End then Add in the Front End
 
 [00:13:34](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m34s)
 
-Once you setup a component, then you are done with what we would call the back end. The back end of the component is what always needed to be done first. Well you could [00:13:49](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m49s) argue differently, but the point is within JCB you'd first build the back end, and then only add in the front end. 
+Once a component have been setup, then you are done with what we would call the back end. [00:13:49](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m49s) With JCB the back end of the component should be build first, and then only add in the front end. 
 
-### Front End Have Not Its Own Database
+### Front End have not its own Database
 
 [00:13:58](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m58s)
 
-The front end doesn't have its own Database. It pulls it's data from the back end Database. Having explained some of that, let's show you this in action. 
+The front end does not have its own Database. It pulls its data from the back end Database. Having explained some of that, let's show this in action. 
 
-### JCB Can Be Extended
+### JCB can be Extended
 
 [00:14:15](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m15s) 
 
-In JCB it ships with quite a lot of Fieldtypes. We open the Fieldtypes area. You'll see that there are many Fieldtypes already setup. JCB is built in a way that it can be extended. Like Sub Form is a new Fieldtype which was recently introduced into Joomla Community. It also replaces an old Fieldtype called Repeatable Fields. 
+In JCB it ships with quite a lot of Fieldtypes. Open the Fieldtypes area. There are many Fieldtypes already setup. JCB is built in a way that it can be extended. Like Sub Form is a new Fieldtype which was recently introduced into Joomla Community. It also replaces an old Fieldtype called Repeatable Fields. 
 
-### Joomla discontinuing Repeatable Fields - Migrate Repeatable Fields To Sub Form Fields
+### Joomla Discontinuing Repeatable Fields - Migrate Repeatable Fields to Sub Form Fields
 
 [00:14:40](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m40s)
 
-Repeatable Fields is a Fieldtype I would encourage you not to use anymore. Since most of you might know JCB used Repeatable Fields quite excessively, [00:14:49](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m49s) and yet due to the fact that Joomla is now discontinuing this Fieldtype, we had to migrate all of our Repeatable Fields to Sub Form Fields and it was an amazing huge process. Part of the reason why I'm redoing the Hello World tutorial, is because of the fact that Sub Forms are now being used all across JCB. There's been a little few changes and how things are implemented. 
+It is advisable not to use Repeatable Fields anymore.<<<<<<<<<<<<<<
+
+ Since JCB used Repeatable Fields quite excessively, [00:14:49](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m49s) and yet due to the fact that Joomla is now discontinuing this Fieldtype, we had to migrate all of our Repeatable Fields to Sub Form Fields and it was an amazing huge process. Part of the reason why I'm redoing the Hello World tutorial, is because of the fact that Sub Forms are now being used all across JCB. There's been a little few changes and how things are implemented. 
 
 ### Add New Fieldtypes
 
