@@ -3,7 +3,7 @@
 [00:00:00](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 (_Click on these time links to see Youtube video_)
 
-Cost-benefit projection will be used as our component. 
+Cost-Benefit projection will be used as our component. 
 
 ### Settings - Custom Admin View
 
