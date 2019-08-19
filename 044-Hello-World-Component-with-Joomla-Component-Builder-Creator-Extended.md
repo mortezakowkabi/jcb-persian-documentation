@@ -265,13 +265,13 @@ There is a Check-in timer in Options and it can be changed to 5 hours, the one t
 
 [00:48:16](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h48m16s)
 
-Now if the Admin area is done, continue to the front end where I will illustrate how to view greetings that were created on the front end, how to edit greetings that were created and how to add more greetings from the front end to this component. Close the components edit area. <<<<<
+Now if the Admin area is done, continue to the front end where I will illustrate how to view greetings that were created on the front end, how to edit greetings that were created and how to add more greetings from the front end to this component. Close the components edit area. 
 
 ### Two Dynamic Gets Created - Return A List Of Greetings 
 
 [00:48:42](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h48m42s)
 
-First, a Dynamic Get should be created. There are two ways to get to the Dynamic Get area. One is to click on 'Add Dynamic Get'and the other way would be via the submenu and then click New.<<<<<<< We're going to need two Dynamic Gets. We going to need one to return a list of greetings. And then we'll need one to return one greeting. The one Dynamic Get is going to return for us all the greetings that are available and published. The second one is when we click on one of those greetings it should open only that greeting. We going to use the name as who is being greeted, and then the greeting will only show when we click on the name and then show that individual's greeting. That's part of how we think about this at this stage. 
+First, a Dynamic Get should be created. There are two ways to get to the Dynamic Get area. One is to click on 'Add Dynamic Get' and the other way would be via the submenu and then click New.  Two Dynamic Gets are needed; one to return a list of greetings and one to return a single greeting. The one Dynamic Get is going to return all the greetings that are available and published. The second one is when one of those greetings is clicked it should open only that greeting. The 'Name' is going to be used as who is being greeted, and then the greeting will only show when we click on the name and then show that individuals' greeting.,,,,,>>>>>
 
 ### Adding Edit/create Buttons Controlled By Permissions Structure Of JCB
 
