@@ -177,7 +177,7 @@ Go to Fields and Conditions. There you will be able to link, Linked Fields and c
 
 [00:29:45](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h29m45s) 
 
-We're just going to create a Linked Fields. Linked Fields are the Fields that we created previously. Click on create. It is going to ask if we are sure that all our work has been saved in the Admin View. If it not and OK is clicked, it will be lost.[00:30:06](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h30m06s) It will open an area where you can link Fields to your Admin View. This looks very similar to the pop-up in Repeatable Fields, except that it is its own View now. If the green button is clicked, it opens an area where you select the Fields that need to be used.
+We're just going to create a Linked Fields. Linked Fields are the Fields that we created previously. Click on create. It is going to ask if we are sure that all our work has been saved in the Admin View. If it not and OK is clicked, it will be lost. [00:30:06](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h30m06s) It will open an area where you can link Fields to your Admin View. This looks very similar to the pop-up in Repeatable Fields, except that it is its own View now. If the green button is clicked, it opens an area where you select the Fields that need to be used.
 
  * ### Example Name(Text) Field
 
@@ -253,29 +253,25 @@ Now the Component can be installed by clicking this 'install com_hello_world_v2_
 
 There is no image showing because a Component image has not been selected. (See video). Go back, and clear the temporary folder. [00:45:01](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h45m01s) For example, the Demo Components Image is selected as our Hello World Component. In the Component, there is an area to select an Image. Save and close again. Go back to the Compiler and compile it again and click 'Install'. Now there is a new Component in this Joomla Website. Open in a new tab. [00:45:45](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h45m45s) The Component has now been installed. It has a Greetings Tab and an Add Greetings Tab. There are no images selected for it. Going back to the Admin Views and then to Greetings and first click on Greetings as an Admin View. There is a place for Icons and the Add Icon. [00:46:13](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h46m13s) Select the bucket as the 'Icon' for 'Greetings' and another bucket with a little green plus is added for 'Add a Greeting'. Click Save and Close.
 
-'Greetings' is set up and I am going to compile it again. [00:46:39](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h46m39s) Usually, when a change has been made, it should be compiled in the Compiler and then installed and it should then show in the Component. When it gets a little bit more advanced, we do not only look at the Component in Joomla [00:47:03](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h47m03s) but also look at the code. The two icons are in place. If I click Add Greeting, we see the Name and Greetings. There are also all these other fields added by default. So the created and the Metadata and the Permissions are all in place. That is how you would set up a basic Hello World Component.<<<<<<<<<<
+'Greetings' is set up and I am going to compile it again. [00:46:39](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h46m39s) Usually, when a change has been made, it should be compiled in the Compiler and then installed and it should then show in the Component. When it gets a little bit more advanced, we do not only look at the Component in Joomla [00:47:03](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h47m03s) but also look at the code. The two icons are in place. If I click Add Greeting, we see the Name and Greetings. There are also all these other fields added by default. So the created and the Metadata and the Permissions are all in place. That is how you would set up a basic Hello World Component.
 
-
-
- 
-
-### Hello World Configuration
+ ### Hello World Configuration
 
 [00:47:34](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h47m34s)
 
-If we go to the options we will see that it has Check-in timer and you can change it to 5 hours what I explained the checks in the items. We also have the history version enabled and set to remember 10 versions of any item created as a greeting. We also have the Permission structure in place which includes the Greeting [00:48:04](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h48m04s) Access, Greetings Batch Use, Dashboard Add and so forth which all the switches related to the greetings area. 
+There is a Check-in timer in Options and it can be changed to 5 hours, the one that checks in the items. The history version is enabled and set to remember 10 versions of any item created as a greeting.[00:47:57](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h47m57s) The Permission structure is in place which includes the Greeting, Access, Greetings Batch Use, Dashboard Add and so forth which are all the switches related to the greetings area. 
 
 ### From the Front End to The Component - How To View, Edit, Add Greetings
 
 [00:48:16](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h48m16s)
 
-Now that we have the Admin area basically done, let's continue to the front end. I'm going to illustrate to you on the front end how to view greetings that were created, how to edit greetings that were created, and how to add more greetings from the front end to this component. Let's close out of the components edit area. 
+Now if the Admin area is done, continue to the front end where I will illustrate how to view greetings that were created on the front end, how to edit greetings that were created and how to add more greetings from the front end to this component. Close the components edit area. <<<<<
 
-### Two Dynamic Gets Created - First One Return A List Of Greetings 
+### Two Dynamic Gets Created - Return A List Of Greetings 
 
 [00:48:42](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h48m42s)
 
-The first thing we need to do we need to create what is known as a Dynamic Get. There two ways to get to the Dynamic Get area. One is to click on this Add Dynamic Get. The others would be in the submenu to go to Dynamic Gets and then click New. We're going to need two Dynamic Gets. We going to need one to return a list of greetings. And then we'll need one to return one greeting. The one Dynamic Get is going to return for us all the greetings that are available and published. The second one is when we click on one of those greetings it should open only that greeting. We going to use the name as who is being greeted, and then the greeting will only show when we click on the name and then show that individual's greeting. That's part of how we think about this at this stage. 
+First, a Dynamic Get should be created. There are two ways to get to the Dynamic Get area. One is to click on 'Add Dynamic Get'and the other way would be via the submenu and then click New.<<<<<<< We're going to need two Dynamic Gets. We going to need one to return a list of greetings. And then we'll need one to return one greeting. The one Dynamic Get is going to return for us all the greetings that are available and published. The second one is when we click on one of those greetings it should open only that greeting. We going to use the name as who is being greeted, and then the greeting will only show when we click on the name and then show that individual's greeting. That's part of how we think about this at this stage. 
 
 ### Adding Edit/create Buttons Controlled By Permissions Structure Of JCB
 
