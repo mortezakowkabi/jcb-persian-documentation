@@ -283,19 +283,19 @@ In this area is the full greeting. An Edit button is going to be added and a Cre
 
  [00:50:23](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h50m23s)
 
-First, use a Back-end View which is related to the component. Select that Back-end View, It shows Greetings(first). The system name is what is used in the dropdowns. Select Greetings(first). This one(getType) is going to bring back a 'getlistQuery'. We do not want any Pagination.(See video) We do not need the 'asset id'. [00:50:59](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h50m59s) Leave the 'created by' and the 'created', take out the 'modified', the 'version' may be left. The 'hits' and the 'ordering' are fine. The greeting is most certainly not needed in a list, only the name is needed. Give it a 'Name' as identification when the Site View is set up. We call this List [00:51:35](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h51m35s) Greetings and in brackets (Name only) so that weArea will know this is what it is. Going to save that. You didn't need to save it. 
+First, use a Back-end View which is related to the component. Select that Back-end View, It shows Greetings(first). The system name is what is used in the dropdowns. Select Greetings(first). This one(getType) is going to bring back a 'getlistQuery'. We do not want any Pagination.(See video) We do not need the 'asset id'. [00:50:59](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h50m59s) Leave the 'created by' and the 'created', take out the 'modified', the 'version' may be left. The 'hits' and the 'ordering' are fine. The greeting is most certainly not needed in a list, only the name is needed. Give it a 'Name' as identification when the Site View is set up. Call this List Greetings and in brackets (Name only) so that weArea will know this is what it is. Although it can be saved it is not necessary to do it. 
 
 ### Tweaking The Data Without Saving
 
 [00:51:47](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h51m47s)
 
-We could have just gone right into tweaking the data without saving. What the data tweak gives us is, it gives us a little bit of control on the writing that JCB will do regarding this query. For example, we want it to be ordered. The ordering is called a.ordering. We want to order it ascending by the order set in the database. 
+You can just go right into tweaking the data without saving. The data tweak gives a little bit of control on the writing that JCB will do regarding this query. For example, if it should be ordered. The ordering is called 'a.ordering'. We want to order it ascending by the order set in the database. 
 
 ### Filter To Add
 
 [00:52:22](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h52m22s)
 
-The other filter we want to add is we want to make sure that it only returns a.published items. In the 'Where' area we placed a.published and we say equal in Comparison Operators, and 1 in Value Key, so only published values will be returned. There are some other features around the tweak area which I suppose goes beyond just in the normal Hello World Component, but there are tutorials about this on YouTube in that playlist that I've already referred to quite a few times. 
+Another filter is added to make sure that it only returns 'a.published' items. In the 'Where' area we placed 'a.published' and select 'Equal' in 'Comparison Operators', and '1' in 'Value Key', so only published values will be returned. There are some other features around the tweak area which I suppose goes beyond just in the normal Hello World Component, but there are tutorials about this on YouTube in that playlist that I've already referred to quite a few times. <<<<<<<
 
 ### Joint Area
 
