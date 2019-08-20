@@ -314,28 +314,28 @@ Please go and watch the tutorial on Dynamic Get on GitHub.
 
 [00:55:52](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h55m52s)
 
-In the Dynamic Get all the values are selected that we want and can limit it. The tweak is in place and the limiting factors. It is not necessary to join it to any other tables, these values simply need to be returned.[00:56:09](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h56m09s) We could have added the username values if we wanted to. We want it to show who created this and say 'Created by', go to 'Joint', click on the 'Joint Database Tables' not 'Joint View Tables' because we want to use the 'User table' and want a single item returned and on 'Field' it will be 'a.created_by' and in the 'Joint Field' it will be 'b.id'. The 'Username' is needed but not the ID, it is already there, so only the 'user_name' is necessary. [00:57:19](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h57m19s)  Use 'greeted_by', it is the one sending the greeting. Save and close. Now there is two 'Dynamic Gets', a 'Listgreeting', and a 'greeting'.<<<<<<<<<<<<
+In the Dynamic Get all the values are selected that we want and can limit it. The tweak is in place and the limiting factors. It is not necessary to join it to any other tables, these values simply need to be returned.[00:56:09](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h56m09s) We could have added the username values if we wanted to. We want it to show who created this and say 'Created by', go to 'Joint', click on the 'Joint Database Tables' not 'Joint View Tables' because we want to use the 'User table' and want a single item returned and on 'Field' it will be 'a.created_by' and in the 'Joint Field' it will be 'b.id'. The 'Username' is needed but not the ID, it is already there, so only the 'user_name' is necessary. [00:57:19](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h57m19s)  Use 'greeted_by', it is the one sending the greeting. Save and close. Now there is two 'Dynamic Gets', a 'Listgreeting', and a 'greeting'. This is what you need to build first. Look in the Database to get the necessary data for the page. [00:57:54](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h57m54s) What would you want the people to see on the page? By that determine what data you are going to use from the Database and give identifiable system names because the next thing to do is to create a Site View. 
 
-
-
-<<<<<<<<<
-
-
-
-This is what you need to build first. Again starting at the Database looking at what is the data I want [00:57:54](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h57m54s) on the page? What do I want to show the people looking at the page? By that determining what the data is going to grab from the Database and giving it identifiable system names. 
-
-### Next To Do - Create A Site View
+### Create A Site View
 
 [00:58:12](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h58m12s)
 
-The next thing to do is to create a Site View. There is such a thing as layouts and templates. That all can work together with Site Views. I'm not going to demonstrate it. If you want to know more about that look at the tutorials on YouTube.
+There are Layouts and Templates that all can work together with Site Views. (Look at tutorials on YouTube).
 
 ### Site View - Greetings
 * ### System Name
 
 [00:58:30](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h58m30s)
 
-I'm going to build two Site Views. The first Site View we are going to call the System Name Greetings. We going to give it a Name called Greetings. 
+I am going to build two Site Views. The first Site View is called the 'System Name Greetings'. Give it a Name called 'Greetings'. <<<<<<<<<<<<
+
+
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
 
 * ### Name In Code
 
