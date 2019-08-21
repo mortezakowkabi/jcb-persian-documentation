@@ -376,7 +376,7 @@ Go to Site Views and click Create Linked Site Views. Then select 'Greeting Site 
 
 If we go back to compiling our Component no changes are being done to the Database. 
 
-* ### Heads Up - When Updating Your Component It Automatically Updates The Database
+* ###  When Updating Your Component It Automatically Updates The Database
 
 If you are adding new tables, JCB will add the tables to a Sequel Update so that when you update the Component, it automatically updates the Database. But it is still important to check that it does, for there could be a reason that it assumes that it is not necessary. Therefore I have tried to put things in place so that it will pick up what you have added, either a field or a new view to the Component and that the Component now needs to increment a version and release a table update. [01:08:11](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h08m11s)  But sometimes that is not happening and then if you update your Component, the Database is not necessarily being updated. **Make sure that the database is updated.** For the most part, JCB will take care of that. Since this upgrade, we have only added a front end. We have not touched the Database, everything is just as before. 
 
@@ -394,21 +394,12 @@ When you add a front end Site View and set that default to be public and if it i
 
 [01:09:53](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h09m53s)
 
-Before Greetings can be added to the Site Menu let us first write a few greetings. With at least four Greetings in place, continue then and add that List View to a Front end Site View. Then go to Menus and to Main Menu. Select the Menu Type. Click on the previous Component; 'Hello World Greetings'. Greeting is set as the HOME of this website. Save and close. [01:10:54](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h10m54s) There are HOME and Hello World Greetings. That should mean that if we click on this preview(demonstration button) of the front end of the Site, the Greetings should be seen . It will show that 'The page isn't redirecting properly'. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-
-
-
-
-
-
-
-
+Before Greetings can be added to the Site Menu let us first write a few greetings. With at least four Greetings in place, continue then and add that List View to a Front end Site View. Then go to Menus and to Main Menu. Select the Menu Type. Click on the previous Component; 'Hello World Greetings'. Greeting is set as the HOME of this website. Save and close. [01:10:54](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h10m54s) There are HOME and Hello World Greetings. That should mean that if we click on this preview(demonstration button) of the front end of the Site, the Greetings should be seen . It will show that 'The page isn't redirecting properly'. 
 ### Set Front Site View To Have Access Control
 
 [01:11:13](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h11m13s)
 
-The reason is like I explained we set the Front Site View that it should have Access control. Which means you can control who sees this page. It is not open to everyone but you can say only this group can see it, or only that group can see it. Since we haven't set that and by default doesn't allow anyone. Now we set that it's by default should be public, but like I explained when I gave you that heads up, [01:11:49](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h11m49s) it only sets the default the first time the Component is installed. It is the way you should ship the Component. If you only add that feature later, you need to do Custom Scripting in the script area. Which is beyond Hello World Component tutorial to update a Database and ensure that this view is public. 
+The reason is the Front Site View had been set to have Access control. Since it was not set therefore by default does not allow anyone. Now set it that it should by default be public. [01:11:49](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h11m49s) It is the way you should ship the Component. If you only add that feature later, you need to do Custom Scripting in the Script area which is beyond this Hello World Component to update a Database and ensure that this view is public. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 ### Manual Way To Change Access Control
 
