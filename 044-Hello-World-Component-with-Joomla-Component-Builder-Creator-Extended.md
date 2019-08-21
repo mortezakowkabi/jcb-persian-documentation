@@ -369,21 +369,7 @@ Now a Site View is going to be added to our Component. It might be asked why the
 
 [01:06:23](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h06m23s) 
 
-Go to Site Views and click Create Linked Site Views. Then select 'Greeting Site View'. Indicate, 'Yes' to be able to 'Add Menu' to the front of your website with this view. It should use 'Has Metadata'. It is going to be this 'Component Default View'.  Access should be controlled. We will look at that again, but I want that 'Access' that its default is 'Public'. Save and close. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Go to Site Views and click Create Linked Site Views. Then select 'Greeting Site View'. Indicate, 'Yes' to be able to 'Add Menu' to the front of your website with this view. It should use 'Has Metadata'. It is going to be this 'Component Default View'.  Access should be controlled. We will look at that again, but I want that 'Access' that its default is 'Public'. Save and close. 
 ### Compiling The Component*  
 
 [01:07:09](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h07m09s)
@@ -392,13 +378,21 @@ If we go back to compiling our Component no changes are being done to the Databa
 
 * ### Heads Up - When Updating Your Component It Automatically Updates The Database
 
-I need to give you a heads up here. If you're adding new tables, JCB is build to know that and add the tables to a Sequel Update. Which when you update the Component, it automatically updates the Database. But it's still important for you to check that it does this. For there could be a reason that it thinks that it's not necessary. Yet I tried to build enough places, things in place so that it will pick up that you've added [01:08:05](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h08m05s) either a field or a new view to the Component and that the Component now needs to increment a version and release a table update. But sometimes that is not happening and then if you update your Component, the Database is not being updated necessarily. So that's just something you need to keep your finger on, make sure that it happens. For the most part, JCB will take care of that. Since this upgrade, we have only added a front end. We haven't touched the Database, everything about that, it is just the way it was before. 
+If you are adding new tables, JCB will add the tables to a Sequel Update so that when you update the Component, it automatically updates the Database. But it is still important to check that it does, for there could be a reason that it assumes that it is not necessary. Therefore I have tried to put things in place so that it will pick up what you have added, either a field or a new view to the Component and that the Component now needs to increment a version and release a table update. [01:08:11](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h08m11s)  But sometimes that is not happening and then if you update your Component, the Database is not necessarily being updated. **Make sure that the database is updated.** For the most part, JCB will take care of that. Since this upgrade, we have only added a front end. We have not touched the Database, everything is just as before. 
 
 ### Compiling The Component(continue)*
 
 [01:08:41](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h08m41s)
 
-We can without any concerns just Compile and re-install the Component. And then go and add it to the front. We can look at what has happened. 
+Without any concerns, the Component can be Compiled and re-installed and then be added to the front.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,
+
+
+
+
+
+
+
+
 
 ### Heads Up - Default Gets Set The First Time Component Gets Installed
 
