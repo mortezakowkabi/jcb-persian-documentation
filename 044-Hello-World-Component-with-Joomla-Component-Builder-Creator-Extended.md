@@ -4,7 +4,7 @@
 
 [00:00:00](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)(_Click on these time links to see Youtube video_)
 
-This is a tutorial on how to build a Hello World Component with Joomla Component Builder. Joomla Component Builder is a Joomla Component which helps you to develop Joomla Components quite easily. I originally developed this application or extension for myself that I can maintain the code in a very consistent and shareable way. 
+This is a tutorial on how to build a Hello World Component with Joomla Component Builder. Joomla Component Builder is a Joomla Component which helps you to develop Joomla Components quite easily. I originally developed this application or extension for myself that I can maintain the code in a very consistent and shareable way  
 
 * ### Changes in one place - Compiled in all Components
 
@@ -357,26 +357,34 @@ We want the 'Listgreetings' and so this 'Listgreetings' gives us a few Snippets.
 
 [01:03:58](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h03m58s)
 
-By looping through those items, these two strings that have been found is all we need.<<<<<<<
-
-
-
-
-A List View may be selected. _ We are busy working on adding the Bootstrap Library to JCB. At the moment we got UIkit version 2 linked to JCB and I have selected the List option for this Uikit. Uikit is a library developed by YOOtheme. Bootstrap has been decided on and so we are migrating to Bootstrap._  We are going to loop over the items. Show the name. Nothing is yet clickable, nothing is editable. It is to get you introduced to using Site Views. Save and close. 
+By looping through those items, these two strings that have been found is all we need. A List View may be selected. ( _We are busy working on adding the Bootstrap Library to JCB. At the moment we got UIkit version 2 linked to JCB and I have selected the List option for this Uikit. Uikit is a library developed by YOOtheme. Bootstrap has been decided on and so we are migrating to Bootstrap_ ).  Loop over the items. Nothing is yet clickable, nothing is editable. It is only an introduction to Site Views. Save and close. 
 
 ### Back To Component Add Site View
 
 [01:05:18](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h05m18s)
 
-Now we going to go back to our Component and we are going to add the Site View to it. You might ask why don't we just add the Component to the Site View when we create the Site View? That was an idea that I did play with. But because of Database relationships and all kinds of reasons I felt that the better approach would be to link Site Views at the Component area instead of at the Site area. This gives us the option to use Site Views quite easily within other Components. That was the idea behind it We might rethink this and we might reshuffle this in the future. I mean this is the first time I build such a Component called JCB. Who knows what happens if we start refactoring it in a more Advancement program is get involved. It might become even far better than it is now. [01:06:20](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h06m20s) This is how it works at the moment. 
+Now a Site View is going to be added to our Component. It might be asked why the Component is not added to the Site View when the Site View has initially been created. I have considered such a possibility, but because of Database relationships and other reasons, felt that a better approach would be to link the Site Views at the Component area, instead of at the Site area. This gives us the option to use Site Views quite easily within other Components. 
 
 ### Creating A Site View
 
 [01:06:23](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h06m23s) 
 
-So you go to Site Views and click Create Linked Site Views. Then you select that Greeting Site View. You say yes I want to be able to Add Menu to the front of my website with this view. I want this view to use Has Metadata. It is going to be this Component Default View. I wanted to control Access. We will look at that again, but I want that Access that its default is Public. This is again making use of all the options and save and close. 
+Go to Site Views and click Create Linked Site Views. Then select 'Greeting Site View'. Indicate, 'Yes' to be able to 'Add Menu' to the front of your website with this view. It should use 'Has Metadata'. It is going to be this 'Component Default View'.  Access should be controlled. We will look at that again, but I want that 'Access' that its default is 'Public'. Save and close. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-### Compiling The Component*
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Compiling The Component*  
 
 [01:07:09](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h07m09s)
 
@@ -400,7 +408,7 @@ Just a heads up. When you add a front end Site View and you set that to default 
 
 [01:09:53](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h09m53s)
 
-Before you can add the Greetings to a Site Menu. We've got at least four Greetings in place. We can add that list view to an Front and Site view. We go to Menus and go to Main Menu. Select the menu type. Click Hello World Greetings that was the previous Component. We've got Greeting set as the HOME of this website. We going to click save and close. [01:10:54](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h10m54s) There we go. We've got HOME and Hello World Greetings. That should mean that if we click on this preview(demonstration button) the front end of the Site, we should see the Greetings. It's going to say 'The page isn't redirecting properly'. 
+Before you can add the Greetings to a Site Menu. We've got at least four Greetings in place. We can add that list view to a Front and Site view. We go to Menus and go to Main Menu. Select the menu type. Click Hello World Greetings that was the previous Component. We've got Greeting set as the HOME of this website. We going to click save and close. [01:10:54](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h10m54s) There we go. We've got HOME and Hello World Greetings. That should mean that if we click on this preview(demonstration button) the front end of the Site, we should see the Greetings. It's going to say 'The page isn't redirecting properly'. 
 
 ### Set Front Site View To Have Access Control
 
