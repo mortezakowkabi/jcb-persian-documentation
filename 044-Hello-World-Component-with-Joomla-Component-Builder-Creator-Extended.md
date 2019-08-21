@@ -362,7 +362,7 @@ By looping through those items, these two strings that have been found is all we
 
 
 
- I could grab a list view(select a snippet). We are busy working on adding the Bootstrap Library to JCB. At the moment we got UIkit version 2 linked to JCB. And I've selected the list option for this Uikit. Uikit is a library developed by YOOtheme. If you do not know UiKit I would encourage you to go Google that and then [01:04:46](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h04m46s) you'll see it's quite a nice library to use. We have voted that Bootstrap is the better one and so we are migrating to Bootstrap. We will still support UiKit as much as we can. We are going to loop over the items. Show the name. Nothing is yet clickable, nothing is editable. It is to get you introduced to using Site Views. Save and close. 
+A List View may be selected. _ We are busy working on adding the Bootstrap Library to JCB. At the moment we got UIkit version 2 linked to JCB and I have selected the List option for this Uikit. Uikit is a library developed by YOOtheme. Bootstrap has been decided on and so we are migrating to Bootstrap._  We are going to loop over the items. Show the name. Nothing is yet clickable, nothing is editable. It is to get you introduced to using Site Views. Save and close. 
 
 ### Back To Component Add Site View
 
