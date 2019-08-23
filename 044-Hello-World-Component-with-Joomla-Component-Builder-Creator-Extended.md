@@ -475,11 +475,7 @@ Return to the front and click on this link 'James', it opens and gives us the na
 
 [01:33:07](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h33m07s)
 
-The next step is to make these items editable. I am going to copy and paste most of the code from the Admin area and to copy the string(see video) as well as these few lines and use some of these(see video).<<<<<<<<<<
-
-
-
- 
+The next step is to make these items editable. I am going to copy and paste most of the code from the Admin area and to copy the string(see video) as well as these few lines and use some of these(see video).
 
 ### Checkout Value Needs To Be Set On Page
 
@@ -497,27 +493,24 @@ The option to edit the item is added in both the List as well as the Single view
 
 [01:34:52](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h34m52s)
 
-In the Site view of the List area I am going to PHP and add PHP (custom view script). It says add PHP script to the head of the file. Paste this link in here and it may be seen that it has this view 'greetings', and the task is 'greeting edit'. That is the task and it is going to be available in the edit variable. That is the first part of the code we want up on the page. [01:35:29](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h35m29s) Now for the rest of it go back to the Admin View again, the back end. We need to grab these as well( follow on video). Before grabbing them let's open the corresponding site view to look at some of the code. Here is the 'greetings'. [01:35:55](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h35m55s) Open this 'view.html.php' and see that the user is already being loaded onto the page. This is the '$this.>items'. It is always good for you to go and look at the code the JCB is writing. Seeing the code is what makes you familiar with how things work and also helps you to detect when something does not work and how to fix it. >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+In the Site view of the List area I am going to PHP and add PHP (custom view script). It says add PHP script to the head of the file. Paste this link in here and it may be seen that it has this view 'greetings', and the task is 'greeting edit'. That is the task and it is going to be available in the edit variable. That is the first part of the code we want up on the page. [01:35:29](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h35m29s) Now for the rest of it go back to the Admin View again, the back end. We need to grab these as well( follow on video). Before grabbing them let's open the corresponding site view to look at some of the code. Here is the 'greetings'. [01:35:55](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h35m55s) Open this 'view.html.php' and see that the user is already being loaded onto the page. This is the '$this.>items'. It is always good for you to go and look at the code the JCB is writing. Seeing the code is what makes you familiar with how things work and also helps you to detect when something does not work and how to fix it. 
 
-
-
-
-
-
-
-
-
-
-
-
-
- [01:36:29](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h36m29s)  Since we know that the user is on the page and we go to the default_body.php area. We see that it's accessing the user in the same way. Using this($this.>user) as an object, user and ask him whether it has authority on the core [01:36:48](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h36m48s) managed to check in. Then also it checks and gets the check out user details. We'll see why in a moment. But we don't have the check out user on the page.   
+ [01:36:29](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h36m29s)  Since the 'user' is on the page and it is seen in the Site Admin area that it is accessing the user in the same way. Using this($this.>user) as an object and ask him whether it has authority on the core 'manage' to check-in.  [01:36:48](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h36m48s)Then it also checks and gets the checkout user details.  The checkout user is not on the page.   
 
 ### Update Dynamic Gets
 
 [01:37:06](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h37m06s)
 
-What we going to do it's we going to quickly also get those values by going to the Dynamic Get and making sure that those values get brought to the page as well. We go to ListGreetings and again like before we just copy all those values and just tweak away and then back. The values we now want to make sure also comes along is basically I see it's a value that it doesn't by itself add to the selection. [01:37:44](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h37m44s) But you can add it in because you know it is in the Database. It's just that this View Table Selection only shows at this stage the actual values that it knows belongs to the view. I need to update this in JCB. It is a little tweak which I haven't done. So it's not showing the checked_out and checked_out by values. You can type it in.  [01:38:16](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h38m16s) Those values will also be brought to the front of this view. The checked_out and the checked_out time, we don't need the check_out_time. Only the check_out, basically who checked it out. [01:38:43](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h38m43s) Save and close. We've updated our Dynamic Get and that means our values are on the page and we can move our code into place. 
+We are going to get those values by going to the Dynamic Get and make sure that those values get brought to the page as well. Go to 'ListGreetings' and again like before copy all those values and just tweak away and then back. The values that are needed to make sure are not by itself added to the selection.(See Video) [01:37:44](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h37m44s) You can add the values that are needed because you know it is in the Database. This View Table Selection only shows at this stage the actual values what it knows belongs to the view. I need to update this in JCB by a little tweak which I have not done. So it is not showing the 'checked_out' and 'checked_out by' values. You can type it in.  [01:38:16](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h38m16s) Those values will also be brought to the front of this view. The 'checked_out' and the 'checked_out time', we do not need the 'check_out_time'. Only the 'check_out', basically who checked it out. [01:38:43](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h38m43s) Save and close. The Dynamic Get has been updated and that means the values are on the page and can move our code into place. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+
+
+
+
+
+
 
 ### Editing Echoing Edit Link
 
