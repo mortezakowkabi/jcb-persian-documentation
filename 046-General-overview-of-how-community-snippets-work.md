@@ -64,19 +64,19 @@ Then if there is a Snippet Out of Date. For instance, someone contributed to the
 
 [00:07:57](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m57s)
 
-Then there is the New tab. Now the New tab could be a little bit misleading because in this example that I'm giving you, I went and I deleted a Snippet from my Database. Since that Snippet already exists in the community, the system then detects that snippet isn't here so it must be new. That's how it worked out. Now you could click on this Get Snippet and it will say:  [00:08:28](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m28s) Are you sure you would like to add this new JCB community snippet to your local snippets? You say: OK. Then it goes to GitHub, gets the snippet and moves it to your Database. You are done. This Snippet is no longer New. If you click New you'll see no New Snippets. It is also been added locally. 
+Then there is the New tab. Now the New tab could be a little bit misleading because, in this example, I went and deleted a Snippet from my Database. Since that Snippet already exists in the community, the system then detects that snippet is not here so it must be new. That is how it worked out. Now you could click on this Get Snippet and it will say:  [00:08:28](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m28s) 'Are you sure you would like to add this new JCB community snippet to your local snippets'? You say: 'OK'. Then it goes to GitHub, gets the snippet and moves it to your Database. You are done. This Snippet is no longer New. If you click New you will see no New Snippets. It has also been added locally. 
 
 ### Snippets - Diverged
 
 [00:08:49](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m49s)
 
-Then Diverged Snippets is where there is a discrepancy in both the creation date as well as the modified date.  And then those snippets will show up in Diverged and they can be updated in the same way. If you have made a change to a Snippet in your local environment and then you've realized that changes haven't been good, it's better to return back to the old Community version. 
+Then Diverged Snippets is where there is a discrepancy in both the creation date as well as the modified date.  Those snippets will show up in 'Diverged' and they can be updated in the same way. If you have made a change to a Snippet in your local environment and then you have realized that changes have not been good, it is better to return to the old Community version. 
 
 ### Snippets - Ahead
 
 [00:09:18](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m18s)
 
-Then you would come to Ahead. I've made a little change to this specific Snippet. They'll tell you that the Snippet is Ahead and if you click on it, they'll show you what that would mean. You can then click on Get snippet, to revert back to the old one, and that's what it will tell you. Are you sure you would like to update your local snippet to this older JCB community snippet? You can say Cancel. I like the new snippet I don't want to update it and just ignore it. But if you want to go back then there is this option [00:09:51](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m51s) to do so. If this is a good Snippet you might want to consider sharing it with the rest of us. That would be to do the sharing snippet and go through those tutorials in knowing how that works. 
+Then go to 'Ahead'. A little change has been made to this specific Snippet. They will tell you that the Snippet is 'Ahead' and if you click on it, they will show you what that would mean. You can then click on Get snippet, to revert back to the old one, and that is what it will indicate. 'Are you sure you would like to update your local snippet to this older JCB community snippet?' You can say, 'Cancel'. I like the new snippet I do not want to update it and just ignore it. But if you want to return, then there is this option to do so. [00:09:51](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m51s)  If this is a good Snippet you might want to consider sharing it with the rest of us. That would be to do the sharing snippet and go through those tutorials in knowing how that works.<<<<< 
 
 ### Bulk Tool
 
