@@ -5,13 +5,16 @@
 [00:00:00](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 (_Click on these time links to see Youtube video_)
 
-I would like to give you a tutorial on the new Snippet Manager and how it works. We are very excited to announce that we have added a community concept to the Snippets in JCB. Previously you could create your own Snippets and then if you would to create a Custom Admin View, a Site View, a Template or a Layout, [00:00:25](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m25s) you could access the Snippets through a drop down. Let me demonstrate that quickly. Now in a Site View, if I were to click on one of these Snippets, you will see it loads the Snippet here. You can copy it from here, and you can then place it in your code [00:00:44](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m44s) and so it is possible to load many Snippets. 
+This is a tutorial on the new Snippet Manager and how it works. We have added a community concept to the Snippets in JCB. Previously you could create your own Snippets and then if you would to create a Custom Admin View, a Site View, a Template or a Layout,  you could access the Snippets through a drop down. [00:00:25](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m25s) Let me demonstrate that quickly. Now in a Site View, if I were to click on one of these Snippets, you will see it loads the Snippet. You can copy it, and can then place it in your code and so it is possible to load many Snippets. 
 
 ### New Snippet Area
 
 [00:00:50](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m50s)
 
-Now currently we already looking at the new Snippets Area. You will see that we have the type of the Snippet first, then the name of the Snippet and then the library [00:01:04](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m04s) the snippet belongs to. Once you've selected the Snippet again and updates:  the name of the Snippet(text truncate), the type of Snippet(Common), and the library it belongs to(see more details(UitKit v2). Usually this library is a link, it'll open you to the actual documentation on that library's website of the specific Snippet. So that's all as it used to be, nothing fancy, nothing much different. 
+Looking at the new Snippets Area, the type of the Snippet may be seen, then the name of the Snippet and then the library the snippet belongs to. [00:01:04](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m04s)  Once you have selected the Snippet it again  updates:  the name of the Snippet(text truncate), the type of Snippet(Common), and the library it belongs to(see more details(UitKit v2). Usually this library is a link, it will open the actual documentation on that library's website of the specific Snippet, all as it used to be. <<<<<<<<<<<<<<<<<
+
+
+
 
 ### Local And Community Snippets
 
