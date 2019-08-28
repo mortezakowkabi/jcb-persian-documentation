@@ -89,22 +89,20 @@ Let me take another Snippet and just make a little improvement to it. I am going
 
 [00:18:12](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h18m12s)
 
-Next thing share snippets. I made it compile a zip file so that it is easier to move around. We could argue that we might want to just have it zip or move. Rather move the files right into your local cloned folder. Maybe we should add a switch here in the Global Options that could give the option to select the one or the other depending on what is most convenient for you. [00:18:52](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h18m52s) I am going take the snippet '/media/host/Dropbox/sandbox/joomla/tmp/snippets' and unzip it into that repository that has been cloned. (see video). First, unzip it. There are those three files(see video) that we want to make part of the repository. The repository is cloned right into my user folder. [00:19:23](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h19m23s)  Go to that folder and cut this (Please follow on video). Cut and then paste it into that folder. One file gets updated and asks if it already contains a file? When a file is improved, it should be replaced. [00:19:49](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h19m49s) Therefore click 'Replace'. Now that you have added those two new files and have replaced one of them, the third one will now have this FooTable, the Tables version, and it is also at the Layout version. [00:20:09](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h20m09s) One of them needs to go there should be no duplicates. Remove this one but do not remove it via the interface. Use Git to remove the file so that you can also add a message so that when you make a pull request and see our files removed that we will know why you did it. Then it will become a discussion. This will be demonstrated in the next tutorial.<<<<<<<<
+Next thing share snippets. I made it compile a zip file so that it is easier to move around. We could argue that we might want to just have it zip or move. Rather move the files right into your local cloned folder. Maybe we should add a switch here in the Global Options that could give the option to select the one or the other depending on what is most convenient for you. [00:18:52](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h18m52s) I am going take the snippet '/media/host/Dropbox/sandbox/joomla/tmp/snippets' and unzip it into that repository that has been cloned. (see video). First, unzip it. There are those three files(see video) that we want to make part of the repository. The repository is cloned right into my user folder. [00:19:23](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h19m23s)  Go to that folder and cut this (Please follow on video). Cut and then paste it into that folder. One file gets updated and asks if it already contains a file? When a file is improved, it should be replaced. [00:19:49](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h19m49s) Therefore click 'Replace'. Now that you have added those two new files and have replaced one of them, the third one will now have this FooTable, the Tables version, and it is also at the Layout version. [00:20:09](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h20m09s) One of them needs to go there should be no duplicates. Remove this one but do not remove it via the interface. Use Git to remove the file so that you can also add a message so that when you make a pull request and see our files removed that we will know why you did it. Then it will become a discussion. This will be demonstrated in the next tutorial.
 
-
-
-
-
-
-
-
- 
-
-### Back To Command Line - git status To See What Happened
+ ### Back To Command Line - git status To See What Happened
 
 [00:20:39](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h20m39s)
 
-Let's get back to the command line. We can say git status to see what happened. We see one has been modified and these two have been added(see video). The first thing we want to do is remove the one that we don't want. Because we have chosen to leave spaces within our file names, you'll need to put in the file name in quotations to ensure that it [00:21:10](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h21m10s) did not misunderstand what you doing. We will do a git rm(for remove), and then the file name 'FooTable - (Layout) FooTable.json'. You could click tab after typing FooTable about there and then Layout and it grabs the name for you. Then click enter. It is removed. 
+Back to the command line. Say git status to see what happened. One has been modified and these two have been added(see video). The first thing is to remove the one that is not needed. Because we have chosen to leave spaces within our file names, then put the file name in quotations to ensure that it does not misinterpret what you doing.[00:21:10](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h21m10s)  Then do a git 'rm'(remove), then the file name 'FooTable - (Layout) FooTable.json'. You could click tab after typing FooTable and then Layout and it grabs the name. Then click enter. Now it is removed.<<<<<< 
+
+
+
+
+
+
+
 
 ### Commit Message
 
