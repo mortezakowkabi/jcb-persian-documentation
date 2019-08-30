@@ -1,19 +1,20 @@
 # MAKING A PULL REQUEST AT JOOMLA COMPONENT BUILDER SNIPPETS
 
-### Should Be Able To Do: Updating Snippets, Forking, Cloning, Unzipping A Package, Updating Files, Committing Changes With Messages, Pushing It Up, Ensure Your Branch Is In Sync With Upstream Branch
 
-* Watch Previous Tutorial 
+### Process of taking Committed Changes to the Forked Version
 
 [00:00:00](https://www.youtube.com/watch?v=vQ-yxVtc-Co&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 (_Click on these time links to see Youtube video_)
 
-I'm going to demonstrate to you the process of taking your committed changes to your forked version. It's this one, not the master branch. It is going to be a little different for you because I am an administrator of the master branch. I'll see things that you maybe won't see. But more or less you should be able to make a pull request and if you're not able to please let us know so that I can make sure that you're able to do that.  [00:00:41](https://www.youtube.com/watch?v=vQ-yxVtc-Co&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m41s) There will be more guys involved in managing these Snippets. It's not only myself that will be responding to issues but for most part, if there is really a holdup, I'll come in and help make sure that everything works as we expect. You should be able to after having done what we've explained in the previous tutorial, [00:01:08](https://www.youtube.com/watch?v=vQ-yxVtc-Co&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m08s) updating the snippets, getting out a forked version Of the repository, cloning it down offline, and then unzipping the package into that repository, updating those files, committing those changes with messages. Then pushing it up here after you have ensured that your branch is in sync with the upstream branch. If you don't understand, please go back, watch that tutorial, it is the previous one in the playlist on YouTube.[00:01:40](https://www.youtube.com/watch?v=vQ-yxVtc-Co&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m40s)
+This is a demonstration of the process of taking your committed changes to the forked version. The 'vdm-io/Joomla-Component-Builder-Snippets' is used and not the master branch. If this is a little different for you, I (as the administrator of the master branch) would like to assist you if there is really a holdup. [00:00:41](https://www.youtube.com/watch?v=vQ-yxVtc-Co&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m41s) For the most part it will not be only me that will respond to issues but also other people out there involved in managing these Snippets.  
+
+[00:01:05](https://www.youtube.com/watch?v=vQ-yxVtc-Co&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m05s)   NB. You should be able to after having done what has been explained in the previous tutorial too, update the snippets, get out a forked version of the repository, clone it down offline, and to unzip the package into that repository, update those files and commit those changes with messages. Then to push it up here after you have ensured that your branch is in sync with the upstream branch. If you do not understand, please go back, watch that tutorial, it is the previous one in the playlist on YouTube.[00:01:40](https://www.youtube.com/watch?v=vQ-yxVtc-Co&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m40s)
  
 ### Your Messages Was Committed
 
 [00:01:43](https://www.youtube.com/watch?v=vQ-yxVtc-Co&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m43s)
 
-This one will be the first steps of doing a pull request. Once you are in your repository on GitHub and you have push your changes up here, you'll see the message 'This branch is 4 commits ahead of vdm-io:master.'  and be able to click on Pull request. We've done that. 
+This one will be the first step of doing a pull request. Once you are in your repository on GitHub and you have to push your changes up here, you'll see the message 'This branch is 4 commits ahead of vdm-io:master.'  and be able to click on Pull request. We've done that. 
 
 ### Identifies If Forked
 
