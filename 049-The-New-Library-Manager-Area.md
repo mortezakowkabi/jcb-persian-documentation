@@ -17,48 +17,54 @@ How it used to work. If we go to Joomla Component and open Demo component. Three
 
 [00:01:34](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m34s)
 
-There is a new feature called, 'Dynamic'. That is part of what we will need to look at. Dynamic means that it is added in, on the bases of the views that are linked to the Component. [00:01:50](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m50s) The old way of doing it had been to indicate in the component if UiKit and FooTable should be added and as well as the version you would prefer, or if you want it with the UiKit you could set that it adds both versions. Now with the improvements, this can be set to Dynamic which turns off the global adding of the Uikit Component and then falls back unto the new implementation. Leave it on the way it was.  That was the first way of actually implementing some library. 
+There is a new feature called, 'Dynamic'. That is part of what we will need to look at. Dynamic means that it is added in, on the bases of the views that are linked to the Component. [00:01:50](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m50s) The old way of doing it had been to indicate in the component if UiKit and FooTable should be added and as well as the version you would prefer, or if you want it with the UiKit you could set that it adds both versions. Now with the improvements, this can be set to Dynamic which turns off the global adding of the Uikit Component and then falls back to the new implementation. Leave it on the way it was.  That was the first way of actually implementing some library. 
 
 ### Second Way - Scale It
 
 [00:02:35](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m35s)
 
-The second way which was the way that you could scale it. Go to Settings, there is 'Component files folders' that could be added, and click 'Edit component files folders for this joomla component' and indicate that you want to add a library that is not already part of JCB. Say for instance you want to add Bootstrap. You would say there is a folder in your component on the administrator components,  component builder, custom folder, and inside that folder, you would place the folder for Bootstrap. [00:03:05](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m05s) If it is not there then just refresh this page. I added a folder to this custom folder called 'Bootstrap'. Refresh this and click 'add', then there we have it. [00:03:36](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m36s) Select Bootstrap to be added to the media folder. Since no change of the folder name is made, we will just leave that as it is and this folder is moved into the media folder. That is how it had been done in the past. Save and close. Having added the files to the component, go to the View. [00:04:03](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m03s)<<<<<<<<
+The second way which was the way that you could scale it. Go to Settings, there is 'Component files folders' that could be added and click 'Edit component files folders for this Joomla component' and indicate that you want to add a library that is not already part of JCB. Say for instance you want to add Bootstrap. You would say there is a folder in your component on the administrator components,  component builder, custom folder, and inside that folder, you would place the folder for Bootstrap. [00:03:05](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m05s) If it is not there then just refresh this page. I added a folder to this custom folder called 'Bootstrap'. Refresh this and click 'Add', then there we have it. [00:03:36](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m36s) Select Bootstrap to be added to the media folder. Since no change of the folder name is made, we will just leave that as it is and this folder is moved into the media folder. That is how it had been done in the past. Save and close. Having added the files to the component, go to the View. [00:04:03](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m03s)
 
-
-
- If we go to Site View, and this Looks View, you will have to in the Looks View set that it uses, this is the new implementations I'm going to undo that, and just say in the Add PHP (custom document script) area, you would add this snippet in here, so you add a script. Now that you add the Bootstrap v4 folder to media. [00:04:36](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m36s) But when it gets installed to Joomla, it creates a component folder and put the files in there. If you do not know how that will work out, add the folder, install it onto Joomla website and go look in the media folder to get the correct path. And save and close. That's how you would in the past have extended JCB to use other libraries then what's built into JCB. I illustrated that simply so you'll know that we could have done this before, but it was a little bit more complicated [00:05:13](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m13s) as the way it's going to work now. 
+ To Site View, and to this Looks View, there you would add this snippet in the Add PHP (custom document script) area, so you add a script. If you add the Bootstrap v4 folder to media and [00:04:36]when it gets installed to Joomla, it creates a component folder and put the files in there. (https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m36s) If you do not know how that will work out, add the folder, install it on the Joomla website and look in the media folder to get the correct path. Save and close. That is how you would in the past have extended JCB to use other libraries that were built into JCB. I illustrated that simply so you will know that we could have done this before, but it was a little bit more complicated as the way it is going to work now. 
 
 ### New Changes Made - Can Remove Files
 
 [00:05:17](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m17s)
 
-With the new changes we've made, you can remove the files. If you have done this, this manual way you can remove these files. Save and close. [00:05:35](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m35s) You don't need to add them this way anymore. They will be added in another way. 
+With the new changes which have been made, the files can be removed. If you have done this, the manual way, you can remove these files. Save and close. [00:05:35](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m35s) You do not need to add them this way anymore. They will be added in another way. 
 
 ### Starting At Libraries
 
 [00:05:43](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m43s)
 
-I'm going to demonstrate the other way by starting at the Libraries area. Closing out of the Component, I'm going to Libraries. You see that with the upgrade there's now a Bootstrap 4 Library, Uikit 3, Uikit 2, FooTable 2 and FooTable 3 and a No Library. [00:06:06](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m06s) Which is only necessary when you create a Snippet which doesn't belong to any Library, just your Snippet that you want to use. The Snippets are now directly linked to these Libraries. 
+I am going to demonstrate the other way by starting at the Libraries area. Closing out of the Component, and go to Libraries. With the upgrade, there is now a Bootstrap 4 Library, Uikit 3, Uikit 2, FooTable 2 and FooTable 3 and a No Library. [00:06:06](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m06s) Which is only necessary when you create a Snippet which does not belong to any Library, only the Snippet that you would like to use. The Snippets are now directly linked to these Libraries. 
 
 ### These Six Libraries Should Not Be Changed - Behavior Can Be Changed
 
 [00:06:22](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m22s) 
 
-These six Libraries which been shipped with JCB, should not be changed in relation to its Name, or it's Type. [00:06:33](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m33s) But you can change its behavior. The behavior is the file behavior. There are various file behaviors. Let's open Bootstrap to show you some of those. 
+These six Libraries which have been shipped with JCB, should not be changed in relation to its Name, or its Type. [00:06:33](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m33s) But its behavior can be changed. The behavior is file behavior. There are various file behaviors. Let's open Bootstrap to show you some of those. 
 
 ### Bootstrap Set To Always Add
 
 [00:06:44](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m44s)
 
-The moment Bootstrap is set on 'Always Add' and it is linking in a content distribution network link 'https://maxcdn.bootstrapcdn.com/4.0.0-alpha.6'js/bootstrap.min.js'. It says that it should add it as a link. You can change that, you can say no I don't want to add it as a link. [00:07:04](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m04s) You can edit this. Without making any changes to the link you can change Type to Local. And what JCB will then do is during compilation it will download these files and add them into the component as Local files, which would then be used instead as the link, which I think is quite nice. 
+The moment Bootstrap is set on 'Always Add' and it is linking in a content distribution network link 'https://maxcdn.bootstrapcdn.com/4.0.0-alpha.6'js/bootstrap.min.js'. It says that it should add it as a link. You can change that, that it should not be added as a link. [00:07:04](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m04s) You can edit this without making any changes to the link. You can change Type to Local and during compilation, JCB will download these files and add them into the component as Local files, which would then be used instead as the link.<<<<<<<< 
+
+
+
+
+
+
+
+
 
 ### Library Level - Add Files And Folders From The Same Custom Files
 
 [00:07:32](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m32s) 
 
 
-You could also do the same thing with Custom Files and Folders as we did previously. You could add Files from the same Custom Files and also Folders. Those are the same kind of implementation except it's now done on a Library level so that even Library gets added to a View, as I will show you in a moment. You automatically use these files so that means [00:08:01](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m01s) you don't need to do it per Component. You will do it per Library and as you link the Libraries to Views, it'll automatically incorporate these files into your component, which makes it a little bit less effort, you just set it up once and thereafter you could just reuse. 
+You could also do the same thing with Custom Files and Folders as we did previously. You could add Files from the same Custom Files and also Folders. Those are the same kind of implementation except it's now done on a Library level so that even the Library gets added to a View, as I will show you in a moment. You automatically use these files so that means [00:08:01](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m01s) you don't need to do it per Component. You will do it per Library and as you link the Libraries to Views, it'll automatically incorporate these files into your component, which makes it a little bit less effort, you just set it up once and thereafter you could just reuse. 
 
 ### Behaviors: Conditions, Custom Script, and Do not Add
 
