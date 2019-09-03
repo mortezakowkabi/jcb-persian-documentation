@@ -12,34 +12,39 @@ A quick overview of the new implementation that we have added to JCB that allows
 
 [00:00:51](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m51s)
 
-JCB does not really work with placeholders when it comes to these translation strings. It works directly with the English string because the placeholders in the INI file are, for example, this word 'BACK'( `COM-EXPERTDATABASE-BACK`) [00:01:13](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m13s)  This English word(`back`) might end up being used in multiple views, the same English word, but with a different placeholder. [00:01:37](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m37s) What we did instead was to ensure that you always translate this specific English string only once, we will only add the string and wherever it reoccurs, will replace the string itself. <<<<<<<<
-
-
-
-
-
+JCB does not really work with placeholders when it comes to these translation strings. It works directly with the English string because the placeholders in the INI file are, for example, this word 'BACK'( `COM-EXPERTDATABASE-BACK`) [00:01:13](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m13s)  This English word(`back`) might end up being used in multiple views, the same English word, but with a different placeholder. [00:01:37](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m37s) What we did instead was to ensure that you always translate this specific English string only once, we will only add the string and wherever it reoccurs, will replace the string itself. 
 
 ### 1. Need To Translate Create New Once
 
 [00:02:06](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m06s)
 
-When you think about Create New, Create New is used in many places over in relation to these placeholders. But you only need to translate Create New once. We will add it. The compiler will add it correctly in every other place where it belongs. [00:02:32](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m32s) That's the first thing you need to keep in mind. 
+When you think about Create New, Create New is used in many places over in relation to these placeholders. But you only need to translate Create New once. We will add it. The compiler will add it correctly in every other place where it belongs.  That is the first thing you need to keep in mind. 
 
 ### 2. Translate Strings: Back, Cancel or Close Once - It is Used In Many Components
 
-The second thing which is almost as important, is that you often have strings that are across multiple components. The string 'back' for example again or 'cancel' or 'close'. It is not only used in one component is used in many components. And so we also said to Ourselves we want to still just translate close once. [00:03:00](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m00s) Then in every other component where it's used, it will automatically be used. When we go to JCB, if you have a fresh install of JCB, and you scroll down and your open Language Translations, you will see that there are no values there. Same as if you opened Languages there are also no values there. 
+[00:02:36](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m36s)
+
+The second thing which is almost as important is that you often have strings that are across multiple components. The string '`back`' for example again or '`cancel`' or '`close`'. It is not only used in one component but in many components but we want to still translate `close` once. [00:03:00](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m00s) Then in every other component where it is used, it will automatically be used. If you have a fresh installation of JCB, and you scroll down and open Language Translations, there are no values and the same when Languages are opened, there are also no values. <<<<<<<<<
+
+
+
 
 ### JCB Populate Dynamically The Language Translation, English Strings - Where Does It Get Them?
 
 [00:03:26](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h30m26s)
 
-If you want to have JCB populate the translation, the English strings. Where does it get them? It gets them from your fields and from your site views, [00:03:38](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m38s) and from any other place, either your admin view or any other place where you use Translation strings. Then it populates dynamically the Language Translation. You don't ever need to click New to create any, it creates it for you. 
+If you want to have JCB to populate the translation. Where does it get the English strings? It gets them from the Fields and from the Site views, and from any other place, either the Admin View or any other place where you use Translation strings. [00:03:38](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m38s) Then it dynamically populates the Language Translation. It is never necessary to click 'New' to create any. 
 
 ### The Way To Populate The Language Translation
 
 [00:03:59](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m59s)
 
-The way to do that if you would go to the compiler [00:04:04](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m04s) You select the component that you would like to compile. You click compile and you need to do that only once. You can just clear that out again. You don't need to use it. If we go back to Language Translations, suddenly there's a whole bunch of strings, and it also tells you that it hasn't been translated and all. We got almost 249 strings. Like I said close will only be shown up once. [00:04:37](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m37s) It is so with every other string. If we then open Demo, you will see that you cannot edit the English string. We've had a request that people would like to edit the string. It doesn't really make sense because if the string is being used in a field, how would we be able to know that their relationship needs to change? [00:05:06](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m06s) For example if you update a string, JCB needs to know in that field it needs to update the label. There's no way for us to determine that. You'd change the string and it won't be useful. Because JCB on compilation will detect that this string doesn't exist, and it will just create it again. 
+Go to the compiler and select the component that you would like to compile. Click compile and you need to do that only once and clear that out again. Return to the Language Translations, there are almost 249 strings, and  it has not been translated and all.  Like I said 'close' will only show up once. [00:04:37](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m37s) It is so with every other string. If Demo is opened, it can be seen that the English string cannot be edited. There had been a request that people would like to edit the string. It does not really make sense because if the string is being used in a field, how would we be able to know that their relationship needs to change? [00:05:06](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m06s) For example if you update a string, JCB needs to know in that field it needs to update the label. There is no way for us to determine that. If the string is changed and it will not be useful because JCB on compilation will detect that this string does not exist, and it will create it again. <<<<<<<<
+
+
+
+
+
 
 ### The Way To Change A String - Where it was Created - Fields, Site View, Admin View 
 
