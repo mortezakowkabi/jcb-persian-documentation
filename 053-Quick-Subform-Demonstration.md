@@ -7,7 +7,7 @@
 
 I recently had this request on the Forum by Marco, regarding some help with subforms.
 
- "How to generate a subform itself writing in JCB. Where to find the XML. Detail in relation to repeated subform fields in view. How the data of the subform is populated. How posted data of a subform is validated. [00:00:32](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m32s) How data of a subform is processed and persisted. My assumption is that the above is done as part of JCB and would not require manual construction of xml files. I did googled but found an answer to no avail." 
+ "How to generate a subform itself from within JCB. Where to find the XML detail in relation to repeated subform fields in view. How the data of the subform is populated. How posted data of a subform is validated. [00:00:32](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m32s) How data of a subform is processed and persisted. My assumption is that the above is done as part of JCB and would not require manual construction of xml files. I did googled but found an answer to no avail." 
 
 At the moment we have only made tutorials about Repeatable Fields. [00:01:01](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m01s) Repeatable Fields as such has been discontinued. A tutorial about subforms has not been made yet. 
 
@@ -15,19 +15,22 @@ At the moment we have only made tutorials about Repeatable Fields. [00:01:01](ht
 
 [00:01:13](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m13s)
 
-First thing first subforms have fields in them that much we know. If we going to go to component for example we open this(Demo) admin view. We are looking at a subform, this is a subform. Each of these little fields is a field in the subform. It's only an ID which you need to add to create [00:01:44](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m44s) the subform. What you will do if your first create what this(View) is a Custom field that grabs values out of the admin view, you create that View. This(Icon) is a list field, you create list field. This is a checkbox, you create these fields first. 
+Subforms have fields in them. For example, go to component and open this(Demo) Admin view. This is a subform(Follow on video). Each of these little fields is a field in the subform. It is only an ID which you need to add to create the subform.[00:01:44](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m44s)  First create a Custom field that grabs values out of the Admin view. This(Icon) is a list field, to create a list field and this is a checkbox, etc.   First create these fields. 
 
 ### First Create A New Field 
 
 [00:02:06](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m06s)
 
-That's the first thing you do, you create a field you want to use in the subform. For our purposes I'm going to use existing fields just to demonstrate. We have Description, Mobile, Name. We got a few fields. [00:02:27](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m27s) First we want to create a new field. I'm going to first open that we have both open and get the IDs. Then click New, then  select Subform, it populates your XML for you. 
+That is the first thing to do, create a field you want to use in the subform. For instance, I am going to use existing fields just as demonstration. There are Description, Mobile, Name, etc.  [00:02:27](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m27s) First we want to create a new field. First open it that we have both open to get the IDs. Then click New, then select Subform, and it populates the XML. 
 
 ### Look At The Tutorials - YouTube - Joomla Component Builder
 
 [00:02:51](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m51s)
 
-Now something tells me that if you haven't looked at all the tutorials that is available on YouTube, then a lot of this will not even make sense of what I'm doing, where I'm doing it, and all that. For those that maybe just seeing this video and not watched any of the other tutorials, please go to YouTube and type in Joomla Component Builder and try to find the playlist. There's old playlist full of tutorials. Start at the top working through way down. It so many tutorials many hours that I have spent trying to teach, [00:03:37](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m37s) and guide people in using this component. I know those tutorials will make you quite able to build amazing things. I'm going to just leave this options, the option list. 
+If you have not looked at all the tutorials that is available on YouTube, then a lot of this will not make sense.<<<<<<<<
+
+
+ For those that maybe just seeing this video and not watched any of the other tutorials, please go to YouTube and type in Joomla Component Builder and try to find the playlist. There's old playlist full of tutorials. Start at the top working through way down. It so many tutorials many hours that I have spent trying to teach, [00:03:37](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m37s) and guide people in using this component. I know those tutorials will make you quite able to build amazing things. I'm going to just leave this options, the option list. 
 
 ### Formsource
 
