@@ -3,26 +3,27 @@
 [00:00:00](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 (_Click on these time links to see Youtube video_)
 
-Great news!
-
-I think the option that we've put in place especially for those of you that have really purchase some JCB packages, like the Advanced Demo Component or the Sermon Distributor Component, this will be excellent news.
+This VDM package option that has been put in place will be great news for those who have purchased some of the JCB packages, like the Advanced Demo Component or the Sermon Distributor Component.
 
 ### Demonstration And Suggestions Of future Changes On Import Component Area
 
 [00:00:20](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m20s)
 
-Let me demonstrate what we've  done and also makes suggestions of future changes on the import components area 
-there is an extra tab. With this tab you can easily import paid or free Components [00:00:39](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m39s) that we distribute. It's called the VDM packages. It took a moment to load it, it does take a while because at the moment it queries GitHub and checks and gets a list of all the latest packages. If we updated GitHub it will automatically show the new packages. [00:01:01](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m01s)  We will be adding more free options. We are planning to add some more free packages. At the moment there is only 2. Most of them are paid. You can buy any of these packages and use it in anyway you like. 
+To demonstrate what had been done and also makes suggestions for future changes on the import components area 
+there is an extra tab. With this tab paid or free Components that we distribute can easily be imported. [00:00:39](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m39s)  It is called the **VDM packages**. It will take a while to load it since it queries GitHub and checks and gets a list of all the latest packages.  If GitHub is updated it will automatically show the new packages. [00:01:01](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m01s)  At the moment there are two free packages and we are planning to add some more.
 
 ### Hello World And Demo Version Is For Free
 
 [00:01:24](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m24s)
 
-The Hello World is free and the Demo version is free. You could, yes you can get any of these and if you've already purchased Sermon Distributor version, you can just select it here. Because JCB is constantly improving and so Sermon Distributor is also improving. We are making changes to Sermon Distributor and if you want to update yours or even if you have played with it and you want to reset it, but know remember [00:01:52](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m52s) if you got a reset it, it will reset everything including every field and even Field Types. Do keep that in mind that if you install this package over the existing one, [00:02:07](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m07s) it will revert everything back, what is great though, is that Joomla keeps history. If you put your history on for the JCB component, so that means you could  take a step back and some of those areas if you want it. That's just a little side note. 
+The Hello World and the Demo versions are free. You can get any of these and if you have purchased the Sermon Distributor version, just select it. Since JCB is constantly improving and with it Sermon Distributor, we are making changes to Sermon Distributor and if you want to update yours or even if you have played with it and you want to reset it, but **remember if you have to reset it, it will reset everything including every field and even Field Types.** [00:01:52](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m52s) Do keep that in mind that if you install this package over the existing one, it will revert everything back, what is great though, is that Joomla keeps history. [00:02:07](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m07s) If you put your history on for the JCB component, you could take a step back to some of those areas.<<<<<<<<<<<<
 
-### Install By Clicking Get Package - Read All Information That Is Given
 
-[00:02:22](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m22s)
+
+ 
+### Install By Clicking Get Package - Read All Information That Is Given 
+
+[00:02:22](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m22s) 
 
 You select the package you want to install and then click on Get Package. This will take a while as it's downloading it from GitHub. Please make sure to read all these things I didn't even go through that but [00:02:37](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m37s) you should read all of these packages, all that is written there. You should end up at the page which we usually would shows you who made the package. If you still didn't get the key, you could click on this 'sermondistributor' link to go buy the key, [00:02:55](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m55s) and get it for any of the other packages as well or before getting here, there's a link that says buy packages, you could also click on those and then select the package you like. Here it'll show you the component that is being installed which is says is   [00:03:12](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m12s) SERMON DISTRIBUTOR 2.0.2 which is the latest version. You then add your key here. Which I will do in a moment and then click Continue. Which then makes it install. 
 
