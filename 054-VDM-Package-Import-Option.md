@@ -3,20 +3,19 @@
 [00:00:00](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 (_Click on these time links to see Youtube video_)
 
-This VDM package option that has been put in place will be great news for those who have purchased some of the JCB packages, like the Advanced Demo Component or the Sermon Distributor Component.
-
-### Demonstration And Suggestions Of future Changes On Import Component Area
+This VDM package option that has been put in place will be great news for those who have purchased some of the JCB packages, like the Advanced Demo Component and the Sermon Distributor Component.
 
 [00:00:20](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m20s)
 
-To demonstrate what had been done and also makes suggestions for future changes on the import components area 
-there is an extra tab. With this tab paid or free Components that we distribute can easily be imported. [00:00:39](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m39s)  It is called the **VDM packages**. It will take a while to load it since it queries GitHub and checks and gets a list of all the latest packages.  If GitHub is updated it will automatically show the new packages. [00:01:01](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m01s)  At the moment there are two free packages and we are planning to add some more.
+This is a demonstration of what had been done and also some suggestions for future changes in the import components area. An extra tab has been added by which paid or free components can easily be imported. [00:00:39](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m39s)  It is called the **VDM packages**.
 
-### Hello World And Demo Version Is For Free
+ It will take a while to load it since it queries GitHub and checks and gets a list of all the latest packages.  If GitHub is updated it will automatically show the new packages. [00:01:01](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m01s)  At the moment Hello World and the Demo versions are free packages and we are planning to add some more. 
+
+### If Sermon Distributor is Reset - Everything Gets Reset
 
 [00:01:24](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m24s)
 
-The Hello World and the Demo versions are free. You can get any of these and if you have purchased the Sermon Distributor version, just select it. Since JCB is constantly improving and with it Sermon Distributor, we are making changes to Sermon Distributor and if you want to update yours or even if you have played with it and you want to reset it, but **remember if you have to reset it, it will reset everything including every field and even Field Types.** [00:01:52](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m52s) Do keep that in mind that if you install this package over the existing one, it will revert everything back, what is great though, is that Joomla keeps history. [00:02:07](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m07s) If you put your history on for the JCB component, you could take a step back to some of those areas.
+If you have already purchased the Sermon Distributor version, just select it. Since JCB is constantly improving and with it Sermon Distributor, we are making changes to Sermon Distributor and if you want to update yours or even if you have played with it and you want to reset it, but **remember if you have to reset it, it will reset everything including every field and even Field Types.** [00:01:52](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m52s) Do keep that in mind that if you install this package over the existing one, it will revert everything back, what is great though, is that Joomla keeps history. [00:02:07](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m07s) If you put your history on for the JCB component, you could take a step back to some of those areas.
 
 ### Install By Clicking Get Package - Read All Information That Is Given 
 
