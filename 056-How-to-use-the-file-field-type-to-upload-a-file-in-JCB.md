@@ -17,9 +17,7 @@ If a file is uploaded the Fieldtypes you need to use already exist. So if you go
 
 [00:02:30](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m30s)
 
-I might as well add it now and place it under 'Size', and add that new attributes. Select 'accept', the value and to leave it to be in 'image' and can be changed.<<<<<<<<<<
-
- Let's give it some information as regarding description. Copy that and place in here(see video). We got this new attribute set. Those of you running the latest release of JCB, might already have this there. It only gets added if you do a fresh install. It doesn't update the database with these values. [00:03:15](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m15s) Save and close. We got a file types set. 
+I might as well add it now and place it under 'Size', and add that new attributes. Select 'accept', the value and to leave it to be in 'image' and it can be changed. Give it some information as regarding description. Copy that and place in here(see video). We got this new attribute set. Those of you running the latest release of JCB, might already have this there. It only gets added if you do a fresh install. It does not update the database with these values. [00:03:15](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m15s) Save and close. We got a file types set.<<<<<<< 
 
 ### Beginning Of Setting Up The File Field Type
 
