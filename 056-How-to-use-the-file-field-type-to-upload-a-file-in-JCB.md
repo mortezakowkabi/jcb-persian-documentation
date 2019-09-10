@@ -31,7 +31,7 @@ If we go to Fields and we select the file, you will see that it gives you the Fi
 
 Now go to our Admin View, and that is this 'Look'. I'm going to go directly to its fields, I could add that File Field type.  [00:05:21](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m21s) Let's do it in the more area, add it in the bottom. Add 'Imag'e and we will see there are quite a few files. 'Image', it should say 'Image[file]'. That should do it. [00:05:50](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m50s) Let's make the Alignment full width for now. Then in Order in Edit one.  Save and close. If we should open the Admin View, we should see the new Field has been added and it is set to being in the Full Width in Tab, and 'More' in Tab.[00:06:15](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m15s)  We could now compile the component as a beginning to see how it will work out. Compile it, and then install it. Then have a look at it. [00:06:39](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m39s) 
 
-Let us say create a new demo. Go to 'More'. Here we see the file. So it is telling us File(one). We have a problem, there are two fields with the same name 'image'. I will have to go change this. [00:07:06](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m06s) I'm going to uninstall this.  Then go back to the fields because it is the last one I have created. Let's go to the end, 'image', and lets change the name [00:07:36](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m36s) to 'banner'. I think we will use 'banner' and we will call Name on top of the page also 'Banner'. The field type is file, but will use the label 'banner' and save and close. 
+Let us say create a new demo. Go to 'More'. Here we see the file. So it is telling us File(one). We have a problem, there are two fields with the same name 'image'. I will have to go change this. [00:07:06](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m06s) I'm going to uninstall this.  Then go back to the fields because it is the last one I have created. Let's go to the end, 'image', and lets change the name [00:07:36](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m36s) to 'banner'. I think we will use 'banner' and we will call Name on top of the page also 'Banner'. The field type is 'file', but will use the label 'banner' and save and close. 
 
 Now let's try again. You know if you have [00:08:06](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m06s) two of the same fields meaning exactly the same name JCB automatically calls the one image(one), the other one image(two), and that is not good practice. It usually does not come out right in events, especially with history, because it is only tracking one field. When it checks the history, that field name does not match any field. [00:08:34](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m34s) When it comes to the history and the updating of the database automatically as you add new fields using the same field multiple times is not recommended. 
 
@@ -53,7 +53,7 @@ I am going into my editor and to the Admin area of this component and of this vi
 
 [00:13:07](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m07s)
 
-We are going to `var_dump` some values just to the screen when we click save in the UI to see what happened. One is the actual `$data` that is available, and the other is this we get the `$input`. Check in `files`, to see what we do have there in the input of the application. Save these changes then go back to the website and just click save. We have got a dump, now if yours does not look like this, it might be because you do not have XD bug installed on your server. 
+We are going to `var_dump` some values just to the screen when we click save in the UI to see what happened. One is the actual `$data` that is available, and the other is this we get the `$input`. Check-in `files`, to see what we do have there in the input of the application. Save these changes then go back to the website and just click save. We have got a dump, now if yours does not look like this, it might be because you do not have XD bug installed on your server. 
 
 ### Add Some Formatting 
 
@@ -67,13 +67,13 @@ You would then want to add some formatting, something like this '`echo <pre>`', 
 
 [00:15:58](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m58s)
 
-Going back to the code. There is a nice `Get` function. We can just say `jform` if you remember that is where the data is, and if we want all the values back as an `array` or that it should be `null` if there is none existing. Save that and then just upload the file again to see how does it look. It should be done again because some of the previous values are actually gone. Click save again, and there is a little different array, But more useful and easier to parse. 
+Going back to the code. There is a nice `Get` function. We can just say `jform` if you remember that is where the data is, and if we want all the values back as an `array` or that it should be `null` if none is existing. Save that and then just upload the file again to see how does it look. It should be done again because some of the previous values are gone. Click save again, and there is a little different array, But more useful and easier to parse. 
 
 ### Next Step - If Array Exist
 
 [00:16:42](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m42s) 
 
-And now we can take the next step to actually check this array exists. There is a function or a class in Joomla which already does all of this for you. Let's just copy some of those functions. 
+And now we can take the next step to check this array exists. There is a function or a class in Joomla which already does all of this for you. Let's just copy some of those functions. 
 
 ### Copy Function 'getPackageFromUpload' - Adapt It To Our Needs - Change Function Name To 'myUploadFunction' 
 
@@ -85,34 +85,35 @@ Let's copy the function and adapt it to our needs and just put it into our class
 
 [00:19:58](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h19m58s)
 
-It is going to check if we got a set of files here. It is going to check if that `($userfile)` is an `!is_array`. If it is not, it want to say no file was selected or no file was uploaded. We can just type that in. If at this point we detect any errors, we basically want to erase those errors and break out of this upload. So let's see `UPLOADERROR`, `WARNINGUPLOADERROR`. I suppose we need to go look at these language strings in the language file of the installer to correctly translate these but I am not going to do that but just going to say `error`. <<<<<<<<<<
-
-
-
-
+It is going to check if we got a set of files here. It is going to check if that `($userfile)` is an `!is_array`. If it is not, it want to say no file was selected or no file was uploaded. We can just type that in. If at this point we detect any errors, we want to erase those errors and break out of this upload. So let's see `UPLOADERROR`, `WARNINGUPLOADERROR`. I suppose we need to go look at these language strings in the language file of the installer to correctly translate these but I am not going to do that but just going to say `error`.
 ### Checking The Upload Size
 
 [00:21:02](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h21m02s)
 
-What we want to check here, is our upload size. We want to make sure that our upload size is what we expected. Is the maximum upload size too small in the php.ini, and that's really what happening here. Again it will give an error saying 'file to large'. The same here, it's checking again, this time it first checked whether it's in the INI files. Here it checks the file size that there is a file size. We can again say [00:21:57](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h21m57s) 'Upload error' again you should just check what is the actual file language string and replace that with the English version. 
+What needs to be checked here, is the upload size. We want to make sure that our upload size is what we expected. `Is the maximum upload size too small in the php.ini`, and that is really what is happening here. Again it will give an error saying '`file too large`'. The same here, it is checking again, this time it first checked whether it is in the INI files. Here it checks the file size and that there is a file size. We can again say [00:21:57](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h21m57s) '`Upload error`' and you should just check what is the actual file language string and replace that with the English version. 
 
 ### Build An Appropriate Path, Create The Path, Create Temporal Source - Move File With Jfile Upload
 
 [00:22:08](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h22m08s)
 
-Then we build appropriate path. We take the filename, create the path, we create this temporal SRC which is source path. And then we move the file with the Jfile upload. Now at this point the file is being uploaded to the server. [00:22:34](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h22m34s) There are still validation to do. In our script what we just grabbed from the uploader class, we do this unpack. We don't need to unpack, we want to do some other things here which are more appropriate for our purpose. 
+ We `//Build appropriate paths` . We take the filename, create the path and create this `$tmp_src` which is the source path and then we move the file with the `JFile::upload`. Now at this point, the file is being uploaded to the server. [00:22:34](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h22m34s) There is still validation to do in our script that we just grabbed from the uploader class, we do this unpack. We do not need to unpack, we want to do some other things here which are more appropriate for our purpose.  
 
 ### 'Unpack the downloaded package file' Replaced By A Little Function 'checkUpload'
 
 [00:22:57](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h22m57s)
 
-First thing, I'm going to move the get classes function up a few lines, and also make sure to have the folder class available in case. Then I'm going to clean the name, so that everything is fine and well and anywhere later we might not have any issues. We still have what we did here before. This 'Unpack the downloaded package file' is going to be replaced with a little function which I started writing called 'checkUpload'. I'm going to change this function as one of my own functions which I've already adapted for other projects and in the past. Like you've seen I have already move this one out. [00:23:38](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h23m38s) That one can stay like that. 
+First thing, is to move the get classes function up a few lines, and also make sure to have the folder class available in the case and then going to clean the name, so that there should not later be any issues. We still have what we had here before. This '`Unpack the downloaded package file`' is going to be replaced with a short function which I wrote called '`checkUpload`' and going to change this function as one of my functions which I have already adapted for other projects in the past. As you may see I have already moved this one out. [00:23:38](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h23m38s) That one can stay like that. (See video) <<<<<<<<<<
+
+
+
+
+
 
 ### Do A Little Check-up - Set To False Or True
 
 [00:23:41](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h23m41s)
 
-Over here(see video) we are going to just do a little check-up to make sure that the package which we are going to give back and which were used to store in a database and all the rest is. Here we just going to grab the result of this which basically going to be true or false and we going to check if it's false, we going to say 'Upload failed'. If we still going to do this check. Now we've got this 'checkUpload' in place and we first going to get the format from the file. 
+Over here(see video) we are going to just do a little check-up to make sure that the package which we are going to give back and which were used to store in a database and all the rest is. Here we just going to grab the result of this which going to be true or false and we going to check if it's false, we going to say 'Upload failed'. If we still going to do this check. Now we've got this 'checkUpload' in place and we first going to get the format from the file. 
 
 ### Use Custom Script To Validate Our Format
 
