@@ -69,7 +69,7 @@ Admin View. The admin back-end doesn't work as the Site Views where we could sel
 
 ### setfile Method - Image - Documents - Media
 
-[00:17:32(https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m48s)
+[00:17:32](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m48s)
 
 I can show you some of these Snippets and then take it further. There's in the Custom Buttons area, there is the getVDM which I have  explained. Again we have some custom script. That's all that we have there. In the JavaScript area, we again have setfile which is part of the script that will have to look at. You will see I'm using setfile on different places, because we have image, documents and media. [00:18:15](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h18m15s) They are all using the setfile method. It is a JavaScript function, and is declared in this customScript. 
 
