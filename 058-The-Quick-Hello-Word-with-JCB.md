@@ -1,6 +1,6 @@
 # THE QUICK HELLO WORLD WITH JCB
 
-### Install Hello World Component For Free Package
+### Installation Of A Hello World Component For Free 
 
 [00:00:00](https://www.youtube.com/watch?v=MEKs1c7LfO8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 
