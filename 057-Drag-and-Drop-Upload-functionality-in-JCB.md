@@ -4,7 +4,7 @@
 
 [00:00:00](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m09s)(_Click on these time links to see Youtube video_)
 
-This tutorial deals with the Drag and Drop Automated Crop Functionality, which could also be used instead of this implementation(how to use the file field type to upload a file in JCB). This implementation would be much more limited. [00:00:47](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m47s) A crop can be done with this(how to use the file field type to upload a file in JCB) as well, and since it has not been demonstrated before it it will be done in this tutorial. There is a link to this library that I am going to use below this video. 
+This tutorial deals with the Drag and Drop Automated Crop Functionality, which could also be used instead of this implementation(how to use the file field type to upload a file in JCB). This implementation would be much more limited. [00:00:47](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m47s) A crop can be done with this(how to use the file field type to upload a file in JCB) as well, and since it has not been demonstrated before it will be done in this tutorial. There is a link to this library that I am going to use below this video. 
 
 ### UIKit - Very Nice File Uploading Front-end
 
@@ -22,7 +22,7 @@ This is the JavaScript that we will be using. It has a nice progress bar and eve
 
 [00:05:40](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m40s)
 
-If you save it or not, the file is added to that item. If it is a new item which means no ID, we will add a hidden field to the form. The actual value is returned that must go to the database, and is put in that hidden field. When the item is saved, it stores it in the correct place. That is the approach that will be demonstrated step-by-step with an existing component that is out there and which is in use.  It is available in JCB.<<<<<< 
+If you save it or not, the file is added to that item. If it is a new item which means no ID, we will add a hidden field to the form. The actual value is returned that must go to the database, and is put in that hidden field. When the item is saved, it stores it in the correct place. That is the approach that will be demonstrated step-by-step with an existing component that is out there and which is in use.  It is available in JCB. 
 
 ### New - Import JCB Packages
 
@@ -38,7 +38,7 @@ There is a new Import JCB Packages. Either click on Import JCB Packages go to Jo
 
 [00:07:44](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m44s) 
 
-It has a method of getting a hash, a checksum of the package. You can make sure that it tells you that the package PASSED checksum validation! On this point the package is on your server. You can click cancel and that will delete the package from your server. On the top of the page it tells you that the validation is passed. The actual package that we are distributing is the one you've now have. You can verify that by clicking on this link http://raw.githubusevomponent.com/vdm-oi/JCB-Packages/master/JCB_helloWorld.sha. It should open a simple text string. This text string should be the same [00:08:32](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m32s) as the one you see In Data Importer. That is just a heads up and its an area which we started adding some checksum validation. It's not military grade but it's fair enough. I think anyone trying to stand in the middle of this, He's going to make quite crazy gymnastics  to take care of. 
+It has a method of getting a hash, a checksum of the package. You can make sure that it tells you that  ' _This package PASSED checksum validation!_ '.  On this point, the package is on your server. You can click 'Cancel' and that will delete the package from your server. On the top of the page it tells you that the validation is passed. The actual package that we are distributing is the one you have now. You can verify that by clicking on this link http://raw.githubusevomponent.com/vdm-oi/JCB-Packages/master/JCB_helloWorld.sha. It should open a simple text string. This text string should be the same as the one you see In Data Importer. [00:08:32](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m32s)  That is just a heads up and its an area where we started to add some checksum validation. It is not military grade but it is fair enough. <<<<<<
 
 ### Imported Package - Quiet - Force Local Update
 
