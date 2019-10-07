@@ -388,6 +388,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 
 # [Setting Site View Permission](https://youtu.be/gWjQjdhYqXI?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
+
 # [Auto create SQL updates for Components in JCB](https://youtu.be/bRPJTRat158?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
 # [Setup Site Edit View in JCB](https://youtu.be/tmB22d9dQ4M?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
