@@ -358,6 +358,18 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [14:55](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=14m54s) **Mapped Components**
 
 # [How to add Custom Buttons in JCB to your component Admin Area]
++ [00:38](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m38s)
++
++
++
++
++
++
++
++
++
++
++
 
 # [Translation Manager in JCB explained](https://youtu.be/zzAcVkn_cWU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 + [00:49](https://www.youtube.com/watch?v=zzAcVkn_cWU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m49s) **JCB Builds English File**
