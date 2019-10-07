@@ -335,9 +335,9 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + ***Imptortant - Watch till end***
 
 # [Export & Import of fully mapped components](https://youtu.be/lkE0ZiSWufg?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-+ **Various Linked Concepts to A component is Exported**
-+ **Two Ways to Export A Component - Encrypted And Non Encrypted**
-+ **Smart Export Builder**
++ [00:00](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Various Linked Concepts to A component is Exported**
++ [01:09](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m09s) **Two Ways to Export A Component - Encrypted And Non Encrypted**
++ [01:40](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m40s) **Smart Export Builder**
 + **Export Key - Encrypt All Components**
 + **If Any Key - Implode The array**
 + **Exporting A Component - Generating A Key**
