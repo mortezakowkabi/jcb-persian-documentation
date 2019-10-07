@@ -393,6 +393,12 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [09:35](https://www.youtube.com/watch?v=gWjQjdhYqXI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=09m35s) **Custom Code Implementation**
 
 # [Auto create SQL updates for Components in JCB](https://youtu.be/bRPJTRat158?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
++ [00:38](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m38s) **JCB Builds tables For Views On Installation**
++ [01:47](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m47s) **Manually Adding New SQL Statements** 
++ [02:35](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m35s) **Adding A New View/New Table To Component**
++ [03:51](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m351s) **System Checking The History If There Is A New Table**
++ [05:44](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=05m44s) **Adding New Field To Existing View**
++ [07:23](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m23s) **If Building A Component It Have History**
 
 # [Setup Site Edit View in JCB](https://youtu.be/tmB22d9dQ4M?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
