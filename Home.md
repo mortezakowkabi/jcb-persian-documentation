@@ -401,6 +401,12 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [07:23](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m23s) **If Building A Component It Have History**
 
 # [Setup Site Edit View in JCB](https://youtu.be/tmB22d9dQ4M?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
++ [01:50](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m50s) **How To Add Editing Area**
++ [03:30](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m30s) **Two Switches** 
++ [04:21](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=04m21s) **Demo Component - Settings**
++ [06:05](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=06m05s) **Code - Controller - Model - View**
++ [07:51](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m51s) **Manually Add Links**
++ [11:19](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m19s) **Add A Button To Create New Looks**
 
 # [Automated backup system in JCB](https://youtu.be/GUWZaODo_IM?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
