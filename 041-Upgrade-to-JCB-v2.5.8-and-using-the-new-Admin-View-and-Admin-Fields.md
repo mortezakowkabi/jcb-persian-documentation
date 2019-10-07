@@ -2,7 +2,8 @@
 
 ### JCB removing Repeatable Fields
 
-[00:00:00](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)(_Click on these time links to see Youtube video_)
+[00:00:00](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+(_Click on these time links to see Youtube video_)
 
 For example, Joomla is installed here with JCB Joomla Component Builder 2.5.6. Here is quite a lot of Components that have been imported from another JCB and all of them is functioning. For convenience sake, Joomla has decided to get rid of this Repeatable Field, which pops up into a little model. It is being systemically removed from JCB.[00:00:54](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m54s)  It has already been done in other areas of JCB. Like in the Language Translation area. If any of these Language strings is opened(a'-ZA.ng-NA)Demo-used in 21), it may be seen that we already have the Repeatable Field set up.  
 
