@@ -335,8 +335,16 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + ***Imptortant - Watch till end***
 
 # [Export & Import of fully mapped components](https://youtu.be/lkE0ZiSWufg?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-+
-
++ **Various Linked Concepts to A component is Exported**
++ **Two Ways to Export A Component - Encrypted And Non Encrypted**
++ **Smart Export Builder**
++ **Export Key - Encrypt All Components**
++ **If Any Key - Implode The array**
++ **Exporting A Component - Generating A Key**
++ **Importing Componentw - JCB_smartPackage.zip**
++ **Two Features - Force Local Update - Use Key**
++ **Warnings - Remapped**
++ **Mapped Components**
 
 
 # [Translation Manager in JCB explained](https://youtu.be/zzAcVkn_cWU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
