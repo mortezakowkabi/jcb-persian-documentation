@@ -457,6 +457,8 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [17:35](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=17m35s) **Create New Admin View: Adding - Single Record Name, Short Description, System Name**
 
 # [How to setup taps after upgrade to v2.5.8 in JCB](https://youtu.be/NFp_CtE0LZI?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
++ [00:00](https://www.youtube.com/watch?v=NFp_CtE0LZI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **In Settings - Add Tabs**
++ [00:52](https://www.youtube.com/watch?v=NFp_CtE0LZI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m52s) **Tabs Menu - Dropdown**
 
 # [Major Release of JCB v2.6.0](https://youtu.be/MQrLBYhvGyA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
