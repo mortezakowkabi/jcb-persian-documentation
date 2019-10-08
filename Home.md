@@ -651,7 +651,7 @@ Add Files And Folders From The Same Custom Files**
 + [17:24](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=17m24s) **Demonstration - Adding The Library**
 + [18:04](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=18m04s) **Uikit v2 Set To Fall Back To Build-in Option, Uikit v3 Set To Fall Back To Always Add**
 + [21:19](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=21m19s) **Using Custom Script in Behavior**
-+ [22:38](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=22m38s) **HeaderCheck**
++ [22:38](https:updates//www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=22m38s) **HeaderCheck**
 + [23:13](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=23m13s) **Uikit Bundle**
 + [27:02](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=27m02s) **Implementing The Get Option For Libraries**
 + [28:15](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=28m15s) **Linking To Views**
@@ -660,7 +660,8 @@ Add Files And Folders From The Same Custom Files**
 
 # [Easy Translation via excel](https://youtu.be/q5NwKGnOHoQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
-# [Dynamic Router Implementation Explained](https://youtu.be/hYycPLbaMos?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Dynamic Router Implementation Explained](https://youtu.be/hYycPLbaMos?
+list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
 # [Automated database updates in Joomla during development of a component](https://youtu.be/zN2M15fzf_M?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
