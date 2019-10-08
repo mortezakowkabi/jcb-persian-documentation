@@ -461,6 +461,20 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [00:52](https://www.youtube.com/watch?v=NFp_CtE0LZI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m52s) **Tabs Menu - Dropdown**
 
 # [Major Release of JCB v2.6.0](https://youtu.be/MQrLBYhvGyA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
++ [00:00](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Removing All Repeatable Fields In Joomla Component Area**
++ [02:03](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m03s) **Changes Only Affects The Component Area**
++ [02:20](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m20s) **Upgrade: Compiler Import/Export Of JCB Packages**
++ [02:47](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m47s) **Suggestion - Clean your Browser Cache And Browser Memory**
++ [03:29](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m29s) **Dynamic Get Area Some Conflicts**
++ [05:13](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=05m13s) **Update in Managing Area**
++ [06:09](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=06m09s) **Edit Component Update**
++ [07:00](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m00s) **Contributor Moved Down - Do On Page**
++ [07:11](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m11s) **Moved Component Files And Folders To Joint Table**
++ [07:42](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m42s) **Moved Admin Views To Its Own Tab**
++ [09:19](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=09m19s) **New Feature - Translation Checker**
++ [10:08](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=10m08s) **Becomes Active If Language Is Setup**
++ [10:48](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=10m48s) **Not An Error Only A Miss Configuration**
++ [11:39](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m39s) **Percentage Of Translation Required Can Be Changed**
 
 # [Hello World Component with Joomla Component Builder/Creator - Extended](https://youtu.be/IQfsLYIeblk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
