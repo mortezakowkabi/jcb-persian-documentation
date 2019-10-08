@@ -561,6 +561,16 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [01:45:55](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h45m55s) **Demonstrated - List Items, Open Individual Items, Create New Items**
 
 # [Adding your own rule validation to a field in JCB](https://youtu.be/Z6-ggKtX35o?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
++ [01:55](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m55s) **Select Fieldtype To Add Validation - Textarea**
++ [03:03](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m03s) **Custom Validation Rule**
++ [01:55](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m55s)
++ [01:55](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m55s)
++ [01:55](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m55s)
++ [01:55](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m55s)
++ [01:55](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m55s)
++ [01:55](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m55s)
+
+
 
 # [General overview of how community snippets work](https://youtu.be/qr4I1jeCp7I?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
