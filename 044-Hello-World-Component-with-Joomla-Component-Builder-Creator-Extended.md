@@ -114,7 +114,7 @@ Here you can see all the Fieldtypes that I have set up in JCB already. You could
 
 The way a Fieldtype work is that it helps you set up what is known as the Properties. The property has a Name, it has a Default value, it is either Adjustable or not Adjustable. It is Mandatory or not Mandatory and Translatable. It can be given a Description, that when the Fieldtype is used you can always come back to this. This information can be gathered from going through the Joomla Core Libraries. [00:16:49](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m49s) Because Fieldtypes are only mapping Joomla's implementation of Fieldtypes. If a Fieldtype is opened that has already been created like the Text field, it may be seen that these properties are already there and in place. The Fieldtype is 'text'. The 'name' is 'any text'. When we say that the type is 'text', then this is not adjustable, but if it is adjustable, it can be ticked. [00:17:18](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m18s) It is most certainly Mandatory.  Most of the Fieldtypes had been created already and are ready to be used.
 
-### Creating Fieldstypes
+### Creating Fieldtypes
 
 [00:17:42](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m42s)
 
