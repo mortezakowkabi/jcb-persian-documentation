@@ -689,6 +689,13 @@ Add Files And Folders From The Same Custom Files**
 + [12:39](https://www.youtube.com/watch?v=hYycPLbaMos&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=12m39s) **Resolving Category**
 
 # [Automated database updates in Joomla during development of a component](https://youtu.be/zN2M15fzf_M?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
++ [00:00](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Demonstration - Creating, Updating And Adding Database Tables**
++ [01:17](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m17s) **Runs Only On Fresh Install - thereafter It Will Not Run Again**
++ [02:44](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m44s) **Making Changes - JCB Updates**
++ [03:3](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m034s) **Add A New View - JCB Combines These Values In One Update**
++ [06:09](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=06m09s) **Component Automatically Incremented Its Version Number**
++ [07:24](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m24s) **Some Places That The Behavior May Not Function As Expected**
++ [08:02](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=08m02s) **Example - Only Way To Start History - Open It - Save And Close It**
 
 # [Quick Subform Demonstration](https://youtu.be/3j4xPQC4apI?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
