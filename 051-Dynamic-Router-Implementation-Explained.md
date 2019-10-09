@@ -63,7 +63,7 @@ The first one is Sermon (series id). In Custom Script scroll down to the bottom,
 
 So wherever this is going to be used, this Dynamic Get would be replaced with that specific site view's value. That is to give a heads up about the placeholder and that is what makes it dynamic, that you can use it in any site view and it will automatically write this because the display of the page is based on the database request which is built in the URL by the name of the view as well as the ID of the element. If multiple variables are being passed [00:11:32](https://www.youtube.com/watch?v=hYycPLbaMos&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m32s) to the URL, you can update that and replace multiple values. In this one, the default option will resolve the issue because remember these two values were not the same. 
 
-### JCB Change sview to sermon
+### JCB Change view to sermon
 
 [00:11:56](https://www.youtube.com/watch?v=hYycPLbaMos&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m56s)
 
