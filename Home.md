@@ -831,6 +831,14 @@ custom Dashboard To Your Component**
 
 # Proposed Collaborative Workflow in JCB
 
+# [How To Install JCB Packages](https://youtu.be/PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
++ [00:00](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Two Ways To Get To The Installing View - Import JCb Packages Icon OR Joomla Component - Import Packages**
++ [01:20](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m20s) **Make Sure Of Integrity Of The Package**
++ [02:28](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m28s) **Tutorial Explaining Why We Will Do Things The Way We Do**
++ [05:19](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=05m19s) **Choose Merge - Change In Package / Force Local Update Works Only If Merge Is Selected**
++ [06:05](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=06m05s) **See All Import Information**
++ [07:04](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m04s) **Component Being Imported**
+
 # More coming....
 
 > I will constantly be adding more tutorials, and would encourage you to support our efforts. 
