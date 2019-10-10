@@ -731,6 +731,37 @@ Add Files And Folders From The Same Custom Files**
 + [18:12](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=18m12s) **Warning Area**
 
 # [How to use the file field type to upload a file in JCB](https://youtu.be/o482sK4DxkM?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
++ [00:00](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Add/Upload A File To A Component** 
++ [01:06](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m06s) **Fieldtypes - File - Shows Attributes, values, some description, info**
++ [02:30](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m30s) **Adding New Attributes**
++ [03:19](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m19s) **Beginning Of Setting Up The File Field Type**
++ [04:54](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=04m54s) **Add File Field Type - Image(file)**
++ [09:56](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=09m56s) **Needs To Be A Server Side - Needs To Validate, Move Back, Check The File - Make Sure: It's Correct File, Secure The File, and Then Place The Files Path Back Into Fields**
++ [11:27](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m27s) **Code Editor - Joomla Mount, Administrator, Components, Demo, Models, Look.php**
++ [13:07](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m07s) **Var_dump Some Values - One Is The Available Data, Second One Is Getting The Input**
++ [13:59](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m59s) **Add Some Formatting**
++ [15:58](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=15m58s) **Get Function - Jform Where Data Is**
++ [16:42](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=16m42s) **Next Step - IF Array Exist**
++ [16:58](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=16m58s) **Copy Function 'getPackagesFromUpload' - Adapt It To Our Needs - Change Function Name To 'myUploadFunction'**
++ [19:58](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=19m58s) **Checking If Userfile Is In Array**
++ [21:02](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=21m02s) **Checking The Upload Size**
++ [22:08](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=22m08s) **Build An Appropriate Path, Create The Path, Create Temporal Source, - Move File With Jfile Upload**
++ [22:57](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=22m57s) **'Unpack the download package file'Replaced By A Little Function 'çheckUpload'**
++ [23:41](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=23m41s) **Do A Little Check-up - Set To False Or True** 
++ [24:32](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=24m32s) **Use Custom Script To Validate Our Format**
++ [26:40](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=26m40s) **Passes The Destination Where We Moved The File**
++ [28:07](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=28m07s) **Pass A Package Back**
++ [30:16](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=30m16s) **Create Remove File**
++ [33:33](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=33m33s) **Dump Code on GitHub as Gist**
++ [37:14](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=37m14s) **Moving The File To Its Final Location**
++ [38:00](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=38m00s) **More Values - Instead Passing Userfile Pass The Whole Array**
++ [40:48](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=40m48s) **Using Constants**
++ [44:31](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=44m31s) **Successfully Saved - Show No File Detected - Might Show The File Currently In Database**
++ [46:09](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=46m09s) **Grab Custom Scripting And Add It To The Component In JCB**
++ [48:43](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=48m43s) **Adding The Script To The Save Method**
++ [50:13](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=50m13s) **Add Script To View File Or Add Javascript To View Footer**
++ [53:30](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=53m30s) **To Know Where The Values Are?**
++ [58:59](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=58m59s) **Changing Of Image - Won't Remove Old One**
 
 # [Drag and Drop Upload functionality in JCB](https://youtu.be/UvzDyVQyHDI?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
