@@ -716,9 +716,19 @@ Add Files And Folders From The Same Custom Files**
 + [07:39](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m39s) **Suggestion - Community Tab**
 
 # [Dynamic File and Folder Inclusion concept](https://youtu.be/_c7wzW075lA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-+ 
-
-
++ [00:00](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Introducing To A Feature - Adding Files, Folders As Code Of File To Your System**
++ [02:24](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m24s) **New Area - Advance**
++ [02:53](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Note - Adding Files**
++ [04:29](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=04m29s) **Need To Set The Target Path And Relation To Zip Package**
++ [05:53](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=05m53s) **JCB Detects You Are Not Targeting Normal Folders - Add A Little Script To Script Install**
++ [09:13](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=09m13s) **Heads Up - Consider With Whom You Are Shatring Packages Part Of Security**
++ [09:49](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=09m49s) **Use EXTERNALCODE Snippet**
++ [12:38](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=12m38s) **Specific Piece Of Text Dynamically Added To The Back End Of Component Builder**
++ [13:19](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m19s) **When Compiled - It Should Tell You Have Added The EXTERNALCODE To Your Component**
++ [14:34](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=14m34s) **When Compile Two Messages Are Revelant To The Issue** _(First Message)_
++ [15:51](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=15m51s) _(Second Message)_
++ [16:16](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=16m16s) **Do As Note Says: Check If It Is The Correct Code**
++ [18:12](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=18m12s) **Warning Area**
 
 # [How to use the file field type to upload a file in JCB](https://youtu.be/o482sK4DxkM?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
