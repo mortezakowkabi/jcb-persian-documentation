@@ -830,7 +830,7 @@ custom Dashboard To Your Component**
 + [01:36](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m36s) **Illustration - Change The Prefix**
 
 # [Add your own JCB packages to the JCB Community Directory](https://www.youtube.com/watch?v=8FplwKKa708&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-[00:00:00](https://www.youtube.com/watch?v=8FplwKKa708&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
++ [00:00](https://www.youtube.com/watch?v=8FplwKKa708&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s)
 
 
 # Proposed Collaborative Workflow in JCB
