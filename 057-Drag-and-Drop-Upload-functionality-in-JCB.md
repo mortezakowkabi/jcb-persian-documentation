@@ -2,7 +2,7 @@
 
 ### Drag and Drop Automated Crop Functionality
 
-[00:00:00](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m09s)(_Click on these time links to see Youtube video_)
+[00:00:00](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)(_Click on these time links to see Youtube video_)
 
 This tutorial deals with the Drag and Drop Automated Crop Functionality, which could also be used instead of this implementation(how to use the file field type to upload a file in JCB). This implementation would be much more limited. [00:00:47](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m47s) A crop can be done with this(how to use the file field type to upload a file in JCB) as well, and since it has not been demonstrated before it will be done in this tutorial. There is a link to this library that I am going to use below this video. 
 
