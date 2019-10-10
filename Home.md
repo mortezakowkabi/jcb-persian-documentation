@@ -838,6 +838,7 @@ custom Dashboard To Your Component**
 + [05:19](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=05m19s) **Choose Merge - Change In Package / Force Local Update Works Only If Merge Is Selected**
 + [06:05](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=06m05s) **See All Import Information**
 + [07:04](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m04s) **Component Being Imported**
++ [08:04](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=08m04s) **Takes Awhile To Update - Updating IDs, Views, Fields**
 
 # More coming....
 
