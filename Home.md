@@ -829,6 +829,8 @@ custom Dashboard To Your Component**
 + [00:56](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m56s) **Link To A List Of HTML Character Entities**
 + [01:36](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m36s) **Illustration - Change The Prefix**
 
+# Proposed Collaborative Workflow in JCB
+
 # More coming....
 
 > I will constantly be adding more tutorials, and would encourage you to support our efforts. 
