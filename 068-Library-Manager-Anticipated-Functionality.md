@@ -1,6 +1,6 @@
 # LIBRARY MANAGER ANTICIPATED FUNCTIONALITY
 
-### Talk About The Expected Or Anticipated New Library Feature That Being Added To JCB
+### Talk About The Expected Or Anticipated New Library Feature That Is Being Added To JCB
 
 [00:00:00](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 (Click on these time links to see Youtube video)
