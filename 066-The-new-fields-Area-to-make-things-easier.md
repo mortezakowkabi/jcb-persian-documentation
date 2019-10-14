@@ -7,7 +7,7 @@
 
 I would like to explain a little bit more about all the changes that had been made to the field area. The field area is really the foundation a great part of your component. It is what causes many of the behavior and concepts which is in your views. The field area had been a difficult area to change and it is still in progress. The interface most probably will not change much, [00:00:38](https://www.youtube.com/watch?v=26x_Sc8jbp8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m38s) just little tweaks here and there. The back-end of how we deal with the data will certainly be improved. 
 
-### A Quick Recap how It used To Look 
+### A Quick Recap How It Used To Look 
 
 [00:00:46](https://www.youtube.com/watch?v=26x_Sc8jbp8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m46s)
 
