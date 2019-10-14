@@ -897,6 +897,12 @@ Request**
 + [08:06](https://www.youtube.com/watch?v=26x_Sc8jbp8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=08m06s) **Display Option**
 + [08:53](https://www.youtube.com/watch?v=26x_Sc8jbp8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=08m53s) **Validate Option**
 
+# [Adding Language String To Your Component And Get The Language Placeholder For Dynamic Use](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+
++ [00:00](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Quick Tip How To Add String To Your Component**
++ [01:32](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m32s) **Want The Placeholder To Be Generated**
++ [03:11](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m11s) **Looking In The Code**
+
 # More coming....
 
 > I will constantly be adding more tutorials, and would encourage you to support our efforts. 
