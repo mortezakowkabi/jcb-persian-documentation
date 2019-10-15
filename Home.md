@@ -912,22 +912,21 @@ Request**
 
 # [Join Fields In The Admin List View With Field Relations](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 + [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Feature Effects How JCB Builds**
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
-+ [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **
++ [01:27](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m27s) **What The Feature Is All About?**
++ [02:35](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m35s) **Demonstration - New Feature - Field Relations**
++ [03:43](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m43s) **Area Column - Three Places - Model(before modelling), Model(after modelling), View**
++ [04:27](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=04m27s) **Looking In The Code**
++ [06:52](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=06m52s) **Some Changes Targeting Model Area - Joint Type - Concatenation With Glue Option**
++ [08:53](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=08m53s) **More Changes - Instead Of Using Default Glue Option Do Code Option**
++ [13:28](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m28s) **Only Target The Name List Field Once**
++ [14:44](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=14m44s) **Create Preacher Email Address**
++ [15:53](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=15m53s) **Targeting The View**
++ [18:32](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=18m32s) **Demonstration**
++ [19:07](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=19m07s) **Going To The Code(see video)**
++ [21:17](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=21m17s) **Preacher Field - Two Fields - Name And Description**
++ [22:15](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=22m15s) **Demonstration - Combining Preacher With Name Row**
+
+
 
 # More coming....
 
