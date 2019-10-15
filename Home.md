@@ -933,6 +933,13 @@ Request**
 + [05:00](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=05m00s) **Placeholders - Helper, Compiler, Infusion**
 + [07:03](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m03s) **Suggestion - Save As... - Give Your Name - Save - New File**
 
+# [Reuse Custom Code](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
++ [00:00](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **How To Use Code Across JCB By Taking Advantages Of A New Feature**
++ [01:12](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m12s) **Pull Up A Docker Image Of Joomla**
++ [03:00](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m00s) **Looking At Examples - GetVieweID**
++ [05:55](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=05m55s) **Another Way To Reuse - getFilePath**
+
+
 
 
 # More coming....
