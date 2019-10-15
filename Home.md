@@ -939,8 +939,15 @@ Request**
 + [03:00](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m00s) **Looking At Examples - GetVieweID**
 + [05:55](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=05m55s) **Another Way To Reuse - getFilePath**
 
-
-
+# [Setup Local Development Environment With Bitnami](https://www.youtube.com/watch?v=zpS52k89YcI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
++ [00:00](https://www.youtube.com/watch?v=zpS52k89YcI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Bitnami - Distributor Of Images**
++ [00:43](https://www.youtube.com/watch?v=zpS52k89YcI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m43s) **Installing Bitnami Joomla Stack**
++ [02:54](https://www.youtube.com/watch?v=zpS52k89YcI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m54s) **Download - Using Windows/Mac/Linux**
++ [06:20](https://www.youtube.com/watch?v=zpS52k89YcI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=06m20s) **Run The Installer - PHP, MySQL, Joomla With Its Database**
++ [08:10](https://www.youtube.com/watch?v=zpS52k89YcI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=08m10s) **Access Joomla - Joomla Website - Administrator - Login**
++ [09:13](https://www.youtube.com/watch?v=zpS52k89YcI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=09m13s) **JCB Installed - Grab Packages - Importing Packages**
++ [10:40](https://www.youtube.com/watch?v=zpS52k89YcI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=10m40s) **Doing Everything That Is Expected**
++ [12:40](https://www.youtube.com/watch?v=zpS52k89YcI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=12m40s) **New Feature - phpMyAdmin**
 
 # More coming....
 
