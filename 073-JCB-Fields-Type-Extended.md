@@ -4,7 +4,7 @@
 
 ### Custom Fields Connect a table from one View to another
 
-[00:01:34](https://www.youtube.com/watch?v=91iIAuHZj38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m34s)
+[00:01:31](https://www.youtube.com/watch?v=91iIAuHZj38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m31s)
 
  First of all Custom Fields is a way to connect a table  from another view of course into another view. Then you can have more than one Custom Field in a table and you can do that to build relationships. You could even take different tables and [00:02:04](https://www.youtube.com/watch?v=91iIAuHZj38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m04s) create a different combined list of values.
 
