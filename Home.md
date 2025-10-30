@@ -12,7 +12,7 @@ If you have more questions, [discussions](https://github.com/vdm-io/Joomla-Compo
 
 The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE) that are already available are listed below. We will be editing this soon to correspond with each chapter in the documentation and to be in the same order.
 
-# [Intro](https://git.vdm.dev/joomla/Component-Builder/wiki/002-Intro-to-JCB
+# [Intro](https://git.vdm.dev/joomla/Component-Builder/wiki/002-Intro-to-JCB)
 + Basic introduction
 
 # [Installation](https://git.vdm.dev/joomla/Component-Builder/wiki/003-Installation-of-JCB)
@@ -55,7 +55,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [34:37](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=34m37s) **Notes Field example**
 + [37:20](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=37m20s) **Translation brief overview**
 
-# [Admin Views](https://git.vdm.dev/joomla/Component-Builder/wiki/007-Admin-Views
+# [Admin Views](https://git.vdm.dev/joomla/Component-Builder/wiki/007-Admin-Views)
 + [01:05](https://youtu.be/CdSKSCTzmRA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m5s) **Admin Views/ Naming convention**
 + [03:00](https://youtu.be/CdSKSCTzmRA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m) **Example View Preacher**
 + [04:35](https://youtu.be/CdSKSCTzmRA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=4m35s) **View Icons**
