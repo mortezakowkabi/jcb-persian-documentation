@@ -1,7 +1,7 @@
 # How to Add Custom Buttons in JCB to Your Component Admin Area
 
-This guide explains how to **add custom buttons** to your Joomla Component Builder (JCB) components — both in **List Views** and **Edit Views** — using JCB’s interface without custom PHP overrides.
-You’ll also learn how these buttons integrate with **controllers, models**, and Joomla’s **permission system**, following MVC principles.
+This guide explains how to **add custom buttons** to your Joomla Component Builder (JCB) components — both in **List Views** and **Edit Views** — using JCB's interface without custom PHP overrides.
+You'll also learn how these buttons integrate with **controllers, models**, and Joomla's **permission system**, following MVC principles.
 
 > *Based on the video tutorial: [How to Add Custom Buttons in JCB to Your Component Admin Area](https://www.youtube.com/watch?v=VyBxWpJWb40)*
 > (*Click on timestamps to jump to that moment in the video.*)
@@ -41,7 +41,7 @@ Your goal will be to add **new custom buttons** here using JCB.
 1. In JCB, go to **Admin Views**.
 2. Open the desired view (e.g., `Look`).
 3. Locate the **Custom Buttons** section.
-4. Click **“Yes”** when asked to add a custom button.
+4. Click **"Yes"** when asked to add a custom button.
 
 ---
 
@@ -59,7 +59,7 @@ Depending on where your button appears, JCB will automatically place the PHP met
 * Buttons in the **list view** affect multiple records.
 * Buttons in the **edit view** act on a single item.
 
-> **Tip:** Familiarity with Joomla’s MVC API helps you understand how the generated PHP logic fits together.
+> **Tip:** Familiarity with Joomla's MVC API helps you understand how the generated PHP logic fits together.
 
 ---
 
@@ -69,10 +69,10 @@ Depending on where your button appears, JCB will automatically place the PHP met
 
 Follow these steps to add your first custom button:
 
-1. In **Custom Buttons**, click **“Add”**.
+1. In **Custom Buttons**, click **"Add"**.
 2. Set:
 
-   * **Icon:** Choose from Joomla’s default *Icomoon* icons.
+   * **Icon:** Choose from Joomla's default *Icomoon* icons.
    * **Name:** For example, `Test`.
    * **Controller Method Name:** For example, `getTested`.
 3. **Target View Type:** Choose where the button appears:
@@ -194,7 +194,7 @@ public function performWork($data)
 
 Return `true` or `false` to trigger Joomla messages in the controller.
 
-> **Best practice:** Use Joomla’s `enqueueMessage()` to show feedback to users.
+> **Best practice:** Use Joomla's `enqueueMessage()` to show feedback to users.
 
 ---
 
@@ -206,8 +206,8 @@ Return `true` or `false` to trigger Joomla messages in the controller.
 2. Compile and install the component.
 3. Test:
 
-   * **List View:** “Test” button redirects correctly.
-   * **Edit View:** “Work” button triggers your model method.
+   * **List View:** "Test" button redirects correctly.
+   * **Edit View:** "Work" button triggers your model method.
 4. Inspect the generated files:
 
    * `controllers/looks.php` → list view controller
@@ -238,14 +238,14 @@ After installation:
 [00:19:43](https://www.youtube.com/watch?v=VyBxWpJWb40&t=00h19m43s)
 
 JCB integrates permission checks automatically.
-Each custom button has an **ACL switch** that respects Joomla’s permission settings.
+Each custom button has an **ACL switch** that respects Joomla's permission settings.
 
 If a user lacks permission:
 
 * The button is hidden from the toolbar.
 * Even direct URL execution is blocked at the controller level.
 
-> Always use Joomla’s ACL check:
+> Always use Joomla's ACL check:
 
 ```php
 if (!JFactory::getUser()->authorise('core.edit', 'com_demo'))

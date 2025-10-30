@@ -9,7 +9,7 @@
 
 ## Overview
 
-In this tutorial, we explore how to create and configure a **Dynamic Get** in **Joomla Component Builder (JCB)**. The **Dynamic Get** allows you to dynamically fetch data from your component’s backend views or even other installed components.
+In this tutorial, we explore how to create and configure a **Dynamic Get** in **Joomla Component Builder (JCB)**. The **Dynamic Get** allows you to dynamically fetch data from your component's backend views or even other installed components.
 
 Using the *Sermon Distributor* component as an example, this guide demonstrates how to create a `preacher` get method, configure joins, filters, and pagination, and see how it translates into PHP code during compilation.
 
@@ -21,9 +21,9 @@ Using the *Sermon Distributor* component as an example, this guide demonstrates 
 
 1. Go to **Dynamic Get Builder** in JCB.
 2. Begin with a new or existing Dynamic Get.
-3. Select your **Source** type. Usually, you’ll start with **“Back-end view”**, as it provides the most direct integration with your component’s data.
+3. Select your **Source** type. Usually, you'll start with **"Back-end view"**, as it provides the most direct integration with your component's data.
 
-> **Tip:** Selecting “Back-end view” ensures stability since the “Joomla Database” option may not yet be fully reliable for all components.
+> **Tip:** Selecting "Back-end view" ensures stability since the "Joomla Database" option may not yet be fully reliable for all components.
 
 ---
 
@@ -33,8 +33,8 @@ Using the *Sermon Distributor* component as an example, this guide demonstrates 
 
 There are three main data source options:
 
-1. **Back-end View** – Recommended. Pulls data directly from one of your component’s views.
-2. **Joomla Database** – Enables fetching data from *any* component’s database tables.
+1. **Back-end View** – Recommended. Pulls data directly from one of your component's views.
+2. **Joomla Database** – Enables fetching data from *any* component's database tables.
 
    * Use with caution: complex table structures or relationships can cause issues.
 3. **Custom Get** – Lets you add your own PHP logic manually or let JCB generate it for you.
@@ -44,7 +44,7 @@ There are three main data source options:
 When using **Custom Get**, you can either:
 
 * Write the PHP code yourself, or
-* Use “Custom - dropdown” to have JCB generate the structure for you automatically.
+* Use "Custom - dropdown" to have JCB generate the structure for you automatically.
 
 ---
 
@@ -88,7 +88,7 @@ You may, however, add multiple `getcustom` or `getcustoms` methods.
 
 When using `getlistquery`, you can enable or disable pagination.
 
-* **Yes** → Limits the results based on Joomla’s **Global List Limit** (set under *System → Global Configuration → Default List Limit*).
+* **Yes** → Limits the results based on Joomla's **Global List Limit** (set under *System → Global Configuration → Default List Limit*).
 * **No** → Returns all results (useful for AJAX calls).
 
 If pagination is enabled, JCB automatically generates pagination code for both the **model** and **view**, producing standard page navigation such as `1, 2, 3`.
@@ -109,7 +109,7 @@ You can join your main data source with:
 * **Categories (cb_categories)**
 * **Other component views**
 
-For instance, adding a *category field* automatically integrates Joomla’s category system into your component.
+For instance, adding a *category field* automatically integrates Joomla's category system into your component.
 
 ### 6.2 – Joint View Tables
 
@@ -145,7 +145,7 @@ Observe how JCB writes:
 * Joins (`series`, `preacher`, `statistics`)
 * Aliases and return objects
 
-It uses Joomla’s **Database API** to safely quote and join values, creating an array of selected fields and their aliases.
+It uses Joomla's **Database API** to safely quote and join values, creating an array of selected fields and their aliases.
 
 ---
 
@@ -207,7 +207,7 @@ You can use these global variables in your PHP code without manually retrieving 
 
 ---
 
-## Step 11: “Where” and “Ordering” Logic
+## Step 11: "Where" and "Ordering" Logic
 
 [00:29:48](https://www.youtube.com/watch?v=OPuCoxPW35s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h29m48s)
 

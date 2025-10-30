@@ -1,7 +1,7 @@
 # Adding Helper Structures to Any JCB Component
 
 This guide walks you through the process of integrating **Helper Structures**—such as help documentation—into any Joomla Component Builder (JCB) component.
-It is based on the official tutorial video *“Adding Helper Structures to Any JCB Component”* and expanded for clarity, accuracy, and completeness.
+It is based on the official tutorial video *"Adding Helper Structures to Any JCB Component"* and expanded for clarity, accuracy, and completeness.
 
 ---
 
@@ -61,7 +61,7 @@ Save and close the new Admin View.
 
 1. Navigate to **Compiler**.
 2. Compile your demo component (`com_demo`).
-3. Install the newly compiled ZIP file through Joomla’s **Extension Manager**.
+3. Install the newly compiled ZIP file through Joomla's **Extension Manager**.
 
 > Ensure that the component is **not already installed** before compiling; otherwise, database conflicts may occur.
 
@@ -92,7 +92,7 @@ This links the help content to an **external page** (such as documentation or vi
 For simple, internal help content, choose **Text** and enter the instructions directly.
 Example:
 
-> “This is the help you need.”
+> "This is the help you need."
 
 Save and close the record.
 
@@ -177,7 +177,7 @@ Now you can compile the component successfully even if it is uninstalled.
 **[00:16:04](https://www.youtube.com/watch?v=nw9YPu9emws&t=964s)**
 
 After recompiling, open the new ZIP file and check the `install.mysql.utf8.sql` file.
-You’ll see that your **Dump Data** has been properly inserted, confirming that the Help Document data is now hardcoded into the install script.
+You'll see that your **Dump Data** has been properly inserted, confirming that the Help Document data is now hardcoded into the install script.
 
 ---
 
@@ -212,7 +212,7 @@ You have now learned how to:
 
 1. Add a **Help Document Admin View** to any component.
 2. Configure and target help entries to specific views.
-3. Link help data to your component’s database.
+3. Link help data to your component's database.
 4. Use **Dump** mode to preserve data for compilation.
 5. Understand how JCB auto-detects and integrates help structures.
 

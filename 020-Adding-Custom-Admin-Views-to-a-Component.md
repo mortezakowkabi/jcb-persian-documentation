@@ -6,7 +6,7 @@
 
 In Joomla Component Builder (JCB), *Custom Admin Views* allow developers to create dynamic and flexible administrative views inside their components. These views enhance the backend interface by providing additional dashboard sections, menu links, and functionality such as custom buttons and result displays.
 
-In this example, we’ll use the **Cost-Benefit Projection** component to demonstrate how to add and configure *Custom Admin Views* in JCB.
+In this example, we'll use the **Cost-Benefit Projection** component to demonstrate how to add and configure *Custom Admin Views* in JCB.
 
 ---
 
@@ -16,7 +16,7 @@ In this example, we’ll use the **Cost-Benefit Projection** component to demons
 2. Navigate to **Settings → Custom Admin Views**.
 3. Click **New** to create a new Custom Admin View.
 
-You’ll notice that a *Custom Admin View* has more configuration options than a *Site View*. This is because the admin side is designed to be more dynamic and integrated into Joomla’s administrative interface.
+You'll notice that a *Custom Admin View* has more configuration options than a *Site View*. This is because the admin side is designed to be more dynamic and integrated into Joomla's administrative interface.
 
 ---
 
@@ -33,7 +33,7 @@ Each Custom Admin View can be associated with a **menu icon** and can appear in 
 These settings control how your view will appear and how users will access it from the backend.
 
 > **Tip:**
-> Use distinctive icons for each Custom Admin View to make navigation intuitive. JCB supports Joomla’s standard icon classes.
+> Use distinctive icons for each Custom Admin View to make navigation intuitive. JCB supports Joomla's standard icon classes.
 
 ---
 
@@ -54,7 +54,7 @@ This ensures that the Custom Admin View interacts correctly with the targeted vi
 
 ## **4. Linking the Custom Admin View Inside the Component**
 
-After configuration, open your component’s **Dashboard** or **Target View** (for example, *Companies*) and check the new button or icon that appears.
+After configuration, open your component's **Dashboard** or **Target View** (for example, *Companies*) and check the new button or icon that appears.
 
 When correctly configured:
 
@@ -66,14 +66,14 @@ This dynamic linking is handled automatically by JCB once the target and placeme
 
 ---
 
-## **5. Using “Order Before” Options**
+## **5. Using "Order Before" Options**
 
 The **Order Before** fields are used when your Custom Admin View is added to a **Main Menu** or **Submenu**.
 
 These fields define where your new menu item should appear relative to existing items.
 For example:
 
-* If you select *Dashboard (list of records)* as “Order Before”, your new view will appear directly before the dashboard link in the admin menu.
+* If you select *Dashboard (list of records)* as "Order Before", your new view will appear directly before the dashboard link in the admin menu.
 
 This step ensures your admin interface remains logically organized.
 
@@ -87,14 +87,14 @@ Custom Admin Views often include **custom buttons** that trigger specific action
 2. Scroll to the **Custom Buttons** section.
 3. Define PHP logic for each button as needed (for example: `editCompany`, `gotoCompany`).
 
-These buttons interact with the component’s controller logic. You can define whether each button targets a *single item* or operates at a *list level*.
+These buttons interact with the component's controller logic. You can define whether each button targets a *single item* or operates at a *list level*.
 
 > **Technical Note:**
 > JCB generates the PHP code for these buttons in your component. You can inspect the generated code after compiling to understand or adjust the behavior further.
 
 ---
 
-## **7. The “Combined Results” Example**
+## **7. The "Combined Results" Example**
 
 In the *Cost-Benefit Projection* example:
 
@@ -118,7 +118,7 @@ This enables data filtering or aggregation based on user selection.
 
 To achieve this:
 
-1. In your Custom Admin View’s **Dynamic GET (Data Query)** section, access the selected IDs using PHP:
+1. In your Custom Admin View's **Dynamic GET (Data Query)** section, access the selected IDs using PHP:
 
    ```php
    $input = JFactory::getApplication()->input;
@@ -128,13 +128,13 @@ To achieve this:
 3. Use `$ids` in your SQL query or data model to fetch the relevant dataset.
 
 In JCB, this is typically implemented in the **getListQuery()** method of the model.
-You can modify or extend it via the Dynamic GET builder to suit your component’s logic.
+You can modify or extend it via the Dynamic GET builder to suit your component's logic.
 
 ---
 
 ## **9. Testing and Troubleshooting**
 
-If your view or buttons don’t appear as expected:
+If your view or buttons don't appear as expected:
 
 * Reopen the Custom Admin View and double-check placement options.
 * Ensure the **Target View** is properly set.
@@ -149,7 +149,7 @@ Experimenting is part of the learning process. Adjust placements and settings, r
 
 When compiled:
 
-* **Main Menu** items appear at the top of your component’s admin interface.
+* **Main Menu** items appear at the top of your component's admin interface.
 * **Submenu** items appear on the left-hand side when viewing a specific section.
 * **Dashboard (list of records)** items serve as quick-access buttons or reports on the main component page.
 

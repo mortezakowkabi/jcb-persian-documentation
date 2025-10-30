@@ -9,11 +9,11 @@
 
 **[00:00:01](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h00m01s)**
 
-The *Automatic Import of Custom Code* is one of JCB’s most innovative features, designed to make managing and reusing custom code across your component easy and efficient.
+The *Automatic Import of Custom Code* is one of JCB's most innovative features, designed to make managing and reusing custom code across your component easy and efficient.
 
-When enabled, this feature allows JCB to automatically detect and extract custom scripts that you’ve added directly into your compiled component (inside your Joomla installation), and import those scripts back into the JCB database on the next compilation.
+When enabled, this feature allows JCB to automatically detect and extract custom scripts that you've added directly into your compiled component (inside your Joomla installation), and import those scripts back into the JCB database on the next compilation.
 
-This ensures that any manual edits you’ve made to your installed component’s codebase are preserved and synchronized with your JCB component data.
+This ensures that any manual edits you've made to your installed component's codebase are preserved and synchronized with your JCB component data.
 
 ---
 
@@ -30,7 +30,7 @@ However, it evolved into two complementary systems:
 
 ---
 
-### 2.1 Why Line Numbers Aren’t Used
+### 2.1 Why Line Numbers Aren't Used
 
 **[00:01:43](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h01m43s)**
 
@@ -50,7 +50,7 @@ The number of surrounding lines used for this fingerprint may vary but typically
 
 **[00:03:01](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h03m01s)**
 
-Inside JCB’s compiler system, the function responsible for scanning and syncing custom code is:
+Inside JCB's compiler system, the function responsible for scanning and syncing custom code is:
 
 ```php
 searchfilecontent()
@@ -58,10 +58,10 @@ searchfilecontent()
 
 This function is part of the **Aget** compiler file. It:
 
-* Reads your component’s PHP or JavaScript source files.
+* Reads your component's PHP or JavaScript source files.
 * Detects placeholder tags.
 * Collects the lines between those placeholders.
-* Stores that code in JCB’s database for reuse during recompilation.
+* Stores that code in JCB's database for reuse during recompilation.
 
 **[00:04:27](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h04m27s)**
 To prevent excessive memory usage, JCB ensures that the fingerprint array never exceeds 10 lines.
@@ -125,7 +125,7 @@ This option allows developers to define reusable custom code snippets within JCB
 **[00:12:47](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h12m47s)**
 
 1. Open the **Custom Code** section in JCB.
-2. Create a new custom script and select **“JCB Manual”** as the method.
+2. Create a new custom script and select **"JCB Manual"** as the method.
 3. Copy the provided **placeholder**, for example:
 
    ```
@@ -139,9 +139,9 @@ This option allows developers to define reusable custom code snippets within JCB
 
 **[00:13:52](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h13m52s)**
 
-Let’s say you have a drag-and-drop field for uploading images, containing JavaScript for UI behavior. Instead of duplicating the script across multiple fields, you can:
+Let's say you have a drag-and-drop field for uploading images, containing JavaScript for UI behavior. Instead of duplicating the script across multiple fields, you can:
 
-* Move the script to JCB’s Custom Code area.
+* Move the script to JCB's Custom Code area.
 * Replace dynamic text like `image`, `teaser`, etc., with **arg placeholders**.
 * Use `(((customcode)))` to call it wherever needed.
 
@@ -190,7 +190,7 @@ Future updates aim to unify both systems — allowing JCB to reimport dynamic co
 Additional placeholders for dynamic naming include:
 
 * `(((view)))` → replaced with the current view name (lowercase).
-* `[[[Component]]]` → replaced with your component’s name (uppercase).
+* `[[[Component]]]` → replaced with your component's name (uppercase).
 
 Example use case:
 
@@ -215,7 +215,7 @@ After setting up custom code and placeholders:
    * Confirm that ARGs have been replaced.
    * Check that the script appears in the intended position.
 
-The example component used in the tutorial was **“Registry”**, demonstrating field-level script injection during compilation.
+The example component used in the tutorial was **"Registry"**, demonstrating field-level script injection during compilation.
 
 ---
 
@@ -232,7 +232,7 @@ The example component used in the tutorial was **“Registry”**, demonstrating
 
 ### Tip
 
-If you often reuse complex JavaScript or PHP snippets across views, fields, or layouts — store them in JCB’s **Custom Code Manager**. It dramatically reduces redundancy and keeps your component consistent during updates.
+If you often reuse complex JavaScript or PHP snippets across views, fields, or layouts — store them in JCB's **Custom Code Manager**. It dramatically reduces redundancy and keeps your component consistent during updates.
 
 ---
 

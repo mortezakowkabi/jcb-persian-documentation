@@ -53,7 +53,7 @@ With this new feature, **JCB automatically detects and generates SQL update scri
 * A new **view** (and thus a new table) is added.
 * A new **field** is added to an existing table.
 
-Let’s walk through a practical example.
+Let's walk through a practical example.
 
 ---
 
@@ -64,7 +64,7 @@ Let’s walk through a practical example.
 ### Steps:
 
 1. Open your component in JCB.
-2. Add a new **Admin View** called **“Help Documents”**.
+2. Add a new **Admin View** called **"Help Documents"**.
 3. Adjust the defaults (set its order, label, etc.).
 4. Click **Save**.
 
@@ -83,12 +83,12 @@ Next:
 
 During compilation, JCB:
 
-* Checks the **component’s change history**.
+* Checks the **component's change history**.
 * Identifies structural updates (new tables or fields).
 * Automatically generates the SQL required for these changes.
 * Increments the **component version** accordingly.
 
-Once the new component is installed, the new “Help Documents” view appears and its corresponding table is fully functional.
+Once the new component is installed, the new "Help Documents" view appears and its corresponding table is fully functional.
 The **Version Updates** tab confirms that:
 
 * Version `1.4.1` added the new table.
@@ -127,7 +127,7 @@ To ensure auto SQL updates function correctly, JCB needs **component history**.
 
 * New components automatically record history as you save each view and field.
 * Imported or demo components **might lack history**.
-  → In this case, open each view and **click “Save”** to initialize history tracking.
+  → In this case, open each view and **click "Save"** to initialize history tracking.
 
 History allows JCB to compare current and previous versions, so it knows what SQL changes to generate.
 
@@ -166,7 +166,7 @@ The **Auto SQL Update** feature simplifies JCB component evolution by:
 
 1. Always **save each view and field** before compiling.
 2. **Recompile** after any structural change.
-3. **Check the “Version Updates”** tab to verify SQL changes.
+3. **Check the "Version Updates"** tab to verify SQL changes.
 4. **Test installation** to ensure the new fields and tables are working.
 
 ---
@@ -176,4 +176,4 @@ The **Auto SQL Update** feature simplifies JCB component evolution by:
 This automation makes JCB even more powerful — capable of **writing your SQL updates for you**.
 It saves time, prevents errors, and ensures your components remain consistent and upgradeable.
 
-> “Auto SQL generation makes JCB one of the most advanced Joomla development tools — handling database evolution dynamically and intelligently.”
+> "Auto SQL generation makes JCB one of the most advanced Joomla development tools — handling database evolution dynamically and intelligently."

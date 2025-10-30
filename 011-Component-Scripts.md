@@ -1,6 +1,6 @@
 # **Component Scripts — Joomla Component Builder Tutorial**
 
-📹 [Watch the video on YouTube](https://www.youtube.com/watch?v=xY9TWQrF8AQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+[Watch the video on YouTube](https://www.youtube.com/watch?v=xY9TWQrF8AQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 (*Click on any timestamp below to jump to that moment in the video.*)
 
 ---
@@ -10,7 +10,7 @@
 In this tutorial, we explore the **Scripts tab** in **Joomla Component Builder (JCB)**.
 This section enables developers to add **custom global scripting** to their components — including helper methods, CSS, JavaScript libraries, MySQL dumps, and dashboard data integration.
 
-These options empower you to extend your component’s functionality **without modifying the core JCB logic**, allowing better control and maintainability.
+These options empower you to extend your component's functionality **without modifying the core JCB logic**, allowing better control and maintainability.
 
 ---
 
@@ -35,11 +35,11 @@ This tab is designed primarily for developers who wish to inject logic directly 
 
 [00:00:47](https://www.youtube.com/watch?v=xY9TWQrF8AQ&t=00h00m47s)
 
-The **User Helper Method** allows you to write **custom PHP functions** that extend your component’s functionality.
+The **User Helper Method** allows you to write **custom PHP functions** that extend your component's functionality.
 
 > **Note:**
 > This feature is for developers comfortable with PHP.
-> JCB will not generate logic automatically — you’ll need to script it.
+> JCB will not generate logic automatically — you'll need to script it.
 
 ### **Example: Creating a User Automatically**
 
@@ -47,10 +47,10 @@ The **User Helper Method** allows you to write **custom PHP functions** that ext
 
 Using the **Cost-Benefit Projection Tool** as an example:
 
-* In the “Company” admin view, when adding a new company, if a user isn’t selected but an email is entered, the component can **automatically create a Joomla user**.
+* In the "Company" admin view, when adding a new company, if a user isn't selected but an email is entered, the component can **automatically create a Joomla user**.
 * The helper method defines how this user is created and linked.
 
-This behavior is triggered inside the controller’s `postSaveHook()` method.
+This behavior is triggered inside the controller's `postSaveHook()` method.
 
 ---
 
@@ -58,7 +58,7 @@ This behavior is triggered inside the controller’s `postSaveHook()` method.
 
 [00:02:38](https://www.youtube.com/watch?v=xY9TWQrF8AQ&t=00h02m38s)
 
-In the component’s admin view:
+In the component's admin view:
 
 1. Go to **Admin View → PHP tab**.
 2. Locate the `postSaveHook` method.
@@ -72,8 +72,8 @@ if (!$userExists) {
 }
 ```
 
-* The `[[[Component]]]` placeholder will be replaced by your component’s codename.
-* The helper method `create_user` is defined in your component’s helper class.
+* The `[[[Component]]]` placeholder will be replaced by your component's codename.
+* The helper method `create_user` is defined in your component's helper class.
 
 ---
 
@@ -106,7 +106,7 @@ This method:
 
 * Generates a password if none exists.
 * Creates and saves the Joomla user.
-* Returns the new user’s ID.
+* Returns the new user's ID.
 
 [00:06:41](https://www.youtube.com/watch?v=xY9TWQrF8AQ&t=00h06m41s)
 
@@ -126,7 +126,7 @@ You can enable popular CSS/JS frameworks with a toggle:
 These libraries are automatically included in your media folder and linked in your component.
 
 > **Tip:**
-> You don’t need to manually enqueue them — JCB handles that dynamically.
+> You don't need to manually enqueue them — JCB handles that dynamically.
 
 ---
 
@@ -223,7 +223,7 @@ This is useful for:
 
 [00:14:23](https://www.youtube.com/watch?v=xY9TWQrF8AQ&t=00h14m23s)
 
-**Dashboard Methods** let you show dynamic data directly on the component’s backend dashboard — no extra view needed.
+**Dashboard Methods** let you show dynamic data directly on the component's backend dashboard — no extra view needed.
 
 Example: Display usage statistics.
 
@@ -238,7 +238,7 @@ public function getUsageData()
 Convention:
 
 * Methods starting with `get` automatically become available as `$this->usagedata`.
-* The “get” prefix is dropped, and the remaining part is made lowercase.
+* The "get" prefix is dropped, and the remaining part is made lowercase.
 
 So `getUsageData()` → `$this->usagedata`.
 

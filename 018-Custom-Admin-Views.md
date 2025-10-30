@@ -1,8 +1,8 @@
 # CUSTOM ADMIN VIEWS
 
-and follow the existing documentation tone and layout you’ve used throughout your Joomla Component Builder (JCB) series.
+and follow the existing documentation tone and layout you've used throughout your Joomla Component Builder (JCB) series.
 
-Here’s the final integrated, professionally formatted Markdown documentation for **Custom Admin Views** — complete with accurate workflow explanations, enhanced clarity, timestamps, and up-to-date Joomla Component Builder details.
+Here's the final integrated, professionally formatted Markdown documentation for **Custom Admin Views** — complete with accurate workflow explanations, enhanced clarity, timestamps, and up-to-date Joomla Component Builder details.
 
 ---
 
@@ -19,7 +19,7 @@ Custom Admin Views in **Joomla Component Builder (JCB)** are specialized backend
 
 While **Site Views** are focused on frontend presentation, **Custom Admin Views** allow you to build highly interactive, PHP-driven, and permission-controlled admin interfaces.
 
-In this example, we’ll reference the **Cost-Benefit Projection** component, which uses Custom Admin Views to visualize company health data and intervention impact.
+In this example, we'll reference the **Cost-Benefit Projection** component, which uses Custom Admin Views to visualize company health data and intervention impact.
 
 ---
 
@@ -39,7 +39,7 @@ These views display data accessible only to users with specific permissions.
 [00:01:04](https://www.youtube.com/watch?v=gtdQ1lwB9ds&t=00h01m04s)
 
 From the admin panel, under **Companies**, each company entry includes an icon to open its result data.
-Additionally, there’s a **“Combined Results”** button that dynamically appears — this is automatically created by JCB.
+Additionally, there's a **"Combined Results"** button that dynamically appears — this is automatically created by JCB.
 
 [00:01:36](https://www.youtube.com/watch?v=gtdQ1lwB9ds&t=00h01m36s)
 
@@ -79,7 +79,7 @@ To create a new Custom Admin View:
 6. Optionally link **fields**, **layouts**, or **template files**.
 7. Save the view.
 
-Once compiled, JCB automatically generates the PHP controller and view files in the component’s `admin/views/` folder.
+Once compiled, JCB automatically generates the PHP controller and view files in the component's `admin/views/` folder.
 
 ---
 
@@ -93,7 +93,7 @@ You can add **custom toolbar buttons** within your Custom Admin View. These butt
 2. Click **Add**.
 3. Configure:
 
-   * **Icon** – Choose from Joomla’s built-in icons.
+   * **Icon** – Choose from Joomla's built-in icons.
    * **Name** – Example: `Edit Company`.
    * **Controller Method** – Example: `editcompany`.
    * **Target Type** – Select whether the button applies to a **single item**, a **list**, or **both**.
@@ -130,7 +130,7 @@ If no model script is needed, use comment placeholders (`//`) to suppress warnin
 
 [00:05:47](https://www.youtube.com/watch?v=gtdQ1lwB9ds&t=00h05m47s)
 
-The `editcompany` method, for example, follows Joomla’s convention for opening items securely, including CSRF token validation and permission checks.
+The `editcompany` method, for example, follows Joomla's convention for opening items securely, including CSRF token validation and permission checks.
 
 [00:06:13](https://www.youtube.com/watch?v=gtdQ1lwB9ds&t=00h06m13s)
 
@@ -142,7 +142,7 @@ The `editcompany` method, for example, follows Joomla’s convention for opening
 
 JCB provides specific **code insertion areas** for Custom Admin Views, where you can safely add custom scripting.
 
-If you’re unsure where a particular code snippet executes:
+If you're unsure where a particular code snippet executes:
 
 1. Compile your component.
 2. Search for the snippet text within the generated component files.

@@ -13,7 +13,7 @@
 
 The **Custom Code** feature in Joomla Component Builder (JCB) is a powerful addition that allows developers to seamlessly integrate their manually written code into the component workflow. This feature works alongside the **Dynamic Get** system and ensures that any custom modifications added to compiled components are automatically tracked, stored, and re-applied on subsequent compilations.
 
-You will rarely need to edit these custom code entries directly in JCB’s UI. Instead, most editing happens inside your preferred **code editor** (e.g., VS Code, PHPStorm, Sublime Text).
+You will rarely need to edit these custom code entries directly in JCB's UI. Instead, most editing happens inside your preferred **code editor** (e.g., VS Code, PHPStorm, Sublime Text).
 
 ---
 
@@ -45,8 +45,8 @@ This system prevents you from losing your changes when recompiling.
 
 To test the feature:
 
-1. Open your Joomla site’s root directory in a code editor.
-2. Navigate to `administrator/components/com_demo` (assuming you’re using the **Demo Component**).
+1. Open your Joomla site's root directory in a code editor.
+2. Navigate to `administrator/components/com_demo` (assuming you're using the **Demo Component**).
 3. Open a main PHP file such as `index.php`.
 4. Add some simple custom scripting or comments.
 
@@ -85,7 +85,7 @@ To **replace** existing code:
 Once compiled, JCB updates these placeholders:
 
 * It changes `[INSERT<>$$$$]` to `[INSERTED<>$$$$23]`, where `23` is the **custom code ID** in JCB.
-* **Do not modify this number.** It’s critical for future compilations.
+* **Do not modify this number.** It's critical for future compilations.
 
 > **Tip:**
 > If you later modify your code, re-add the diamond brackets `<>` to indicate that JCB should update the stored version.
@@ -99,7 +99,7 @@ Once compiled, JCB updates these placeholders:
 There are a few important limitations when using custom code tags:
 
 * **Spacing:** Custom code blocks must be at least **6–8 lines apart**.
-* **Fingerprinting:** JCB creates a **fingerprint** (context snapshot) of a few lines before and after your insertion. If that context changes too much, JCB won’t recognize where to re-insert the code.
+* **Fingerprinting:** JCB creates a **fingerprint** (context snapshot) of a few lines before and after your insertion. If that context changes too much, JCB won't recognize where to re-insert the code.
 * If the fingerprint changes, JCB will:
 
   * Skip reinsertion and display a **warning** during compilation.
@@ -113,7 +113,7 @@ There are a few important limitations when using custom code tags:
 
 **[00:08:00](https://www.youtube.com/watch?v=DFMfIl-VkSk&t=00h08m00s)**
 
-1. Open the **Demo Component’s** main file.
+1. Open the **Demo Component's** main file.
 2. Add your replacement tags:
 
    ```php
@@ -125,7 +125,7 @@ There are a few important limitations when using custom code tags:
 
 After compilation, check the **Custom Code** tab in JCB:
 
-* You’ll see your entry listed with its **path** and **fingerprint hashes**.
+* You'll see your entry listed with its **path** and **fingerprint hashes**.
 * The interface shows both **start** and **end** fingerprints for replacements.
 
 ---
@@ -189,7 +189,7 @@ JCB will automatically detect the change and update its stored version in the da
 If the code surrounding your insertion or replacement changes:
 
 * JCB may not find the original fingerprint.
-* The system will **insert the code escaped** (disabled), so it doesn’t break your component.
+* The system will **insert the code escaped** (disabled), so it doesn't break your component.
 * This ensures your manually added code is never lost or misplaced.
 
 For replacements, this process is more complex because the replaced code might not be removed automatically. Always review warnings in the compiler output.
@@ -202,7 +202,7 @@ For replacements, this process is more complex because the replaced code might n
 
 When your component is ready for **distribution**:
 
-1. In JCB, switch the component to **“Production mode.”**
+1. In JCB, switch the component to **"Production mode."**
 2. On the next compilation, JCB will:
 
    * Remove all placeholder tags.

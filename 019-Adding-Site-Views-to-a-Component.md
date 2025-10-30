@@ -30,7 +30,7 @@ Site Views in JCB define what users see on the front end of your Joomla componen
 To add or manage Site Views:
 
 * Go to the **Custom Admin Views** and **Site Views** sections.
-* Click **“Add Custom Admin View”** if you need new ones (Sermon Distributor, for example, has none).
+* Click **"Add Custom Admin View"** if you need new ones (Sermon Distributor, for example, has none).
 * Move on to **Site Views** to configure your public-facing component views.
 
 ---
@@ -62,12 +62,12 @@ Each Site View in JCB offers **four key switches**:
 
 | Option           | Description                                                       | Typical Use                                                  |
 | :--------------- | :---------------------------------------------------------------- | :----------------------------------------------------------- |
-| **Menu**         | Adds this Site View as a selectable menu item in Joomla.          | Allows users to link the view from Joomla’s menu system.     |
+| **Menu**         | Adds this Site View as a selectable menu item in Joomla.          | Allows users to link the view from Joomla's menu system.     |
 | **Metadata**     | Enables metadata (title, description, keywords) for this page.    | For SEO and browser metadata display.                        |
 | **Default View** | Sets this view as the fallback (default) page for your component. | Used when no specific view is requested or access is denied. |
 | **Access**       | Enables access control (permissions and groups).                  | Restricts who can view specific pages or data.               |
 
-Let’s break down each option below.
+Let's break down each option below.
 
 ---
 
@@ -79,10 +79,10 @@ When **Menu = Yes**, JCB automatically creates an XML definition so Joomla recog
 After compiling the component:
 
 1. Go to **Menus → Add New Menu Item** in Joomla.
-2. Under **Select Menu Item Type**, your component’s view (e.g., “List of Sermons”) will now appear.
+2. Under **Select Menu Item Type**, your component's view (e.g., "List of Sermons") will now appear.
 3. Selecting it will link the front-end display directly to that Site View.
 
-> 💡 **Tip:** This saves time — you don’t have to manually write XML for Joomla menu types.
+> 💡 **Tip:** This saves time — you don't have to manually write XML for Joomla menu types.
 
 ---
 
@@ -100,7 +100,7 @@ When **Metadata = Yes**, JCB adds metadata-handling scripts to your generated vi
    `/components/com_yourcomponent/views/viewname/view.html.php`
 4. Check that metadata is loaded and assigned properly.
 
-If the data isn’t present, Joomla won’t display metadata even if the switch is enabled.
+If the data isn't present, Joomla won't display metadata even if the switch is enabled.
 
 > 💡 **Tip:** Always verify that the model returns metadata for your Site View items.
 
@@ -108,16 +108,16 @@ If the data isn’t present, Joomla won’t display metadata even if the switch 
 
 ### [00:04:53](https://www.youtube.com/watch?v=zZ_HJeYL8ps&t=00h04m53s) – Default View Option
 
-The **Default View** acts as the component’s **home page** or fallback route.
+The **Default View** acts as the component's **home page** or fallback route.
 
 **Guidelines:**
 
 * You can **only have one default view** per component.
-* When Joomla can’t determine which view to load, it automatically redirects to this one.
-* It’s also used as the fallback when a user lacks permission to access other views.
+* When Joomla can't determine which view to load, it automatically redirects to this one.
+* It's also used as the fallback when a user lacks permission to access other views.
 
 Example:
-If your default view is **Preachers**, and a user visits a restricted “Sermon” view, they will be redirected back to “Preachers” with a message.
+If your default view is **Preachers**, and a user visits a restricted "Sermon" view, they will be redirected back to "Preachers" with a message.
 
 > ⚠️ **Important:** Do not select multiple default views. Only one should be active.
 
@@ -131,7 +131,7 @@ The **Access** switch enables permission control for each Site View.
 Allows JCB to include the necessary access tables so that:
 
 * Users only see views they have permission for.
-* Joomla’s Access Levels (Public, Registered, Special, etc.) are respected.
+* Joomla's Access Levels (Public, Registered, Special, etc.) are respected.
 
 **Implementation Details:**
 
@@ -139,13 +139,13 @@ Allows JCB to include the necessary access tables so that:
 * Uses **user groups** and **access levels** to control who can view what.
 * When this option is checked, JCB ensures the access fields and logic are built into your component.
 
-> 💡 **Tip:** Always configure access levels in Joomla after installation to match your component’s logic.
+> 💡 **Tip:** Always configure access levels in Joomla after installation to match your component's logic.
 
 ---
 
 ## [00:06:32](https://www.youtube.com/watch?v=zZ_HJeYL8ps&t=00h06m32s) – Final Step: Compile and Test
 
-Once you’ve configured your Site Views:
+Once you've configured your Site Views:
 
 1. Click **Save & Close** in JCB.
 2. Go to **Component Builder → Compile** and compile your component.
@@ -176,7 +176,7 @@ Once you’ve configured your Site Views:
 ## Helpful Tips
 
 * Always **reopen the Site View editor** before saving if selections appear off.
-* Use **Menu = Yes** to expose the view to Joomla’s menu manager.
+* Use **Menu = Yes** to expose the view to Joomla's menu manager.
 * Only **one Default View** should ever be active.
 * Use **Access Control** wisely to protect sensitive pages.
 * After major changes, **recompile and reinstall** the component to apply updates.

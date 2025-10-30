@@ -40,7 +40,7 @@ $viewKey = 'preacher';
 $item = $displayData; // the specific item passed from Dynamic Get
 ```
 
-You can then customize the layout’s output based on the `$viewKey`.
+You can then customize the layout's output based on the `$viewKey`.
 
 ---
 
@@ -125,7 +125,7 @@ This lets one template be reused for multiple site views without duplicating fil
 [00:05:46](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h05m46s)
 
 The placeholder `[[[sview]]]` ensures dynamic insertion of the site view name.
-It draws values from the **component’s global parameters** — for example, `sermon_list_style`.
+It draws values from the **component's global parameters** — for example, `sermon_list_style`.
 
 The template will then automatically adjust based on the current view (Preacher, Series, or Category).
 
@@ -135,9 +135,9 @@ The template will then automatically adjust based on the current view (Preacher,
 
 [00:07:17](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h07m17s)
 
-These settings are defined in your component’s **config.xml** file.
+These settings are defined in your component's **config.xml** file.
 
-Inside, you’ll find parameters like:
+Inside, you'll find parameters like:
 
 * `preacher_list_style`
 * `series_list_style`
@@ -145,7 +145,7 @@ Inside, you’ll find parameters like:
 
 These determine the display behavior per view.
 
-By searching for `sermon_list_display`, you’ll see how JCB uses the same logic for each view dynamically.
+By searching for `sermon_list_display`, you'll see how JCB uses the same logic for each view dynamically.
 
 ---
 
@@ -159,7 +159,7 @@ Layouts work like templates but offer **more flexibility**:
 * You can reuse them across multiple site views.
 * They can handle any data passed in via `$displayData`.
 
- **Tip:** If you’re unfamiliar with PHP, it’s fine to handle display logic directly in the site view. Layouts are meant for cleaner, modular development.
+ **Tip:** If you're unfamiliar with PHP, it's fine to handle display logic directly in the site view. Layouts are meant for cleaner, modular development.
 
 ---
 
@@ -220,4 +220,4 @@ echo JLayoutHelper::render('sub.layout.name', $subData);
 * Keep all **layout files modular** — one per display concept.
 * Reference **global parameters** in `config.xml` to standardize look and feel.
 * When in doubt, check `$displayData` to see what data is available.
-* Reuse layouts to maintain **DRY** (Don’t Repeat Yourself) principles.
+* Reuse layouts to maintain **DRY** (Don't Repeat Yourself) principles.

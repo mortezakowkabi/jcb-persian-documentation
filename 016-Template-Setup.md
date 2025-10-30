@@ -7,9 +7,9 @@
 
 ## Overview
 
-Templates in **Joomla Component Builder (JCB)** are reusable layout structures that can be applied across site or admin views. They allow you to define and reuse HTML or PHP blocks that dynamically pull data from your component’s views and fields.
+Templates in **Joomla Component Builder (JCB)** are reusable layout structures that can be applied across site or admin views. They allow you to define and reuse HTML or PHP blocks that dynamically pull data from your component's views and fields.
 
-In this tutorial, we’ll cover:
+In this tutorial, we'll cover:
 
 1. Creating new templates
 2. Copying and modifying existing templates
@@ -23,7 +23,7 @@ In this tutorial, we’ll cover:
 
 [00:00:00](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 
-In the previous tutorial, we explored how to set up templates and layouts for a **site view**. Inside a typical site view—like `preacherpanel`, `preachersmall`, or `preacherbox`—you’ll find templates loaded to define how data is displayed.
+In the previous tutorial, we explored how to set up templates and layouts for a **site view**. Inside a typical site view—like `preacherpanel`, `preachersmall`, or `preacherbox`—you'll find templates loaded to define how data is displayed.
 
 To view or modify these, go to:
 **JCB → Templates**
@@ -61,7 +61,7 @@ By default, it manages **British English (en-GB)** entries.
 
 If you need additional languages:
 
-* Follow Joomla’s standard approach for adding language overrides.
+* Follow Joomla's standard approach for adding language overrides.
 * Copy the English file to your target language (e.g., `fr-FR.com_yourcomponent.ini`).
 * Translate each line accordingly.
 
@@ -84,11 +84,11 @@ This behavior is consistent with how layouts and templates are handled in Joomla
 [00:02:13](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m13s)
 
 Each template includes a **Snippet Box**, which allows you to quickly insert scripts or inline logic.
-For example, you can add a small PHP or JavaScript block relevant to your template’s data display.
+For example, you can add a small PHP or JavaScript block relevant to your template's data display.
 
-The **Preacher Panel** example in the video shows how inline script can enhance a view’s interactivity.
+The **Preacher Panel** example in the video shows how inline script can enhance a view's interactivity.
 
-**Best Practice:** Keep business logic in your view’s model or controller, and use snippets only for minor UI behavior.
+**Best Practice:** Keep business logic in your view's model or controller, and use snippets only for minor UI behavior.
 
 ---
 
@@ -96,20 +96,20 @@ The **Preacher Panel** example in the video shows how inline script can enhance 
 
 [00:02:46](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m46s)
 
-In the **Details** tab of your template, you’ll find a note about adding JavaScript.
+In the **Details** tab of your template, you'll find a note about adding JavaScript.
 
 To include JS:
 
 1. Wrap your code in `<script>` tags.
-2. It will automatically load into your component’s frontend page.
+2. It will automatically load into your component's frontend page.
 
 [00:03:13](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m13s)
 
-You still have full access to all **global “this” field values**—meaning your JS can interact dynamically with JCB’s runtime data.
+You still have full access to all **global "this" field values**—meaning your JS can interact dynamically with JCB's runtime data.
 
 [00:03:35](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m35s)
 
-Templates use the same setup conventions as **site views**, except that they are **not standalone views**. Instead, templates are included **within** a main view via Joomla’s `getTemplate()` method.
+Templates use the same setup conventions as **site views**, except that they are **not standalone views**. Instead, templates are included **within** a main view via Joomla's `getTemplate()` method.
 
 ---
 

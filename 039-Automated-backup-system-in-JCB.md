@@ -9,11 +9,11 @@
 
 [00:00:00](https://www.youtube.com/watch?v=GUWZaODo_IM&t=00h00m00s)
 
-The automated backup system is part of JCB’s **Extension API**, enabling operations via a URL request — including creating a full backup of your JCB components.
+The automated backup system is part of JCB's **Extension API**, enabling operations via a URL request — including creating a full backup of your JCB components.
 
 The API extension introduces new automation possibilities. The first implemented feature is the **automated backup**, which allows exporting and securely storing your components either manually or via a CronJob.
 
-> **Note:** JCB’s development community is discussing additional API features on GitHub.
+> **Note:** JCB's development community is discussing additional API features on GitHub.
 
 ---
 
@@ -84,7 +84,7 @@ If neither command works, you can manually call the provided **CronJob URL** on 
 
 When triggered successfully:
 
-* A green confirmation message appears — “Backup completed and email sent.”
+* A green confirmation message appears — "Backup completed and email sent."
 * This output may optionally be logged in future versions.
 
 > **Tip:** If your site uses a firewall (e.g., RSFirewall), you may need to configure the request to behave like a normal browser request. Refer to related StackOverflow discussions for `curl` adjustments.
@@ -131,7 +131,7 @@ This naming convention lets you manage how frequently older backups are replaced
 
 In the **Mail Configuration tab**, you can choose between:
 
-* Joomla’s **Global Mail Configuration**, or
+* Joomla's **Global Mail Configuration**, or
 * A custom **SMTP setup** for backup emails.
 
 > Always use **SMTP with SSL/TLS** for secure transmission of backup keys.
@@ -147,7 +147,7 @@ Enabling **DKIM (DomainKeys Identified Mail)** adds an extra layer of authentici
 
 [00:11:10](https://www.youtube.com/watch?v=GUWZaODo_IM&t=00h11m10s)
 
-Fill out **Company Details** under JCB’s Global Configuration.
+Fill out **Company Details** under JCB's Global Configuration.
 These details become part of the backup metadata and appear when restoring the package.
 
 Ensure the following are set before saving:
@@ -223,4 +223,4 @@ To confirm success:
 3. Compile and install it.
 4. Check that all fields, views, and settings are intact.
 
-> You have now successfully configured, automated, and tested JCB’s backup and restore process.
+> You have now successfully configured, automated, and tested JCB's backup and restore process.

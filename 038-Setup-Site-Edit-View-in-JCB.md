@@ -10,10 +10,10 @@ Learn how to configure and enable editing for an **Admin View** on the **front-e
 
 JCB enables linking an **Admin View** (the backend editing interface) to the **front-end** of your Joomla website so that users can edit or submit data from the site.
 
-1. **Compile and install** your component using JCB’s compiler.
+1. **Compile and install** your component using JCB's compiler.
 2. Open your installed component in Joomla.
-3. In this example, the **Demo Component** contains an Admin View called **“Looks”**.
-4. If you open the *List View* for “Looks”, you’ll find fields such as:
+3. In this example, the **Demo Component** contains an Admin View called **"Looks"**.
+4. If you open the *List View* for "Looks", you'll find fields such as:
 
    * Email
    * Mobile phone
@@ -32,16 +32,16 @@ These fields collectively form what JCB calls an **Admin View** — a structure 
 
 To make the Admin View editable from the site front-end:
 
-1. Go to the **Permissions tab** in your component’s view configuration.
-2. You’ll see controls for:
+1. Go to the **Permissions tab** in your component's view configuration.
+2. You'll see controls for:
 
    * **Global permissions** (set in *Options*)
    * **Local permissions** (per view)
 
 For example:
 
-* If the public users should be able to **submit new items**, set **“Create”** to *Allow*.
-* To let them **edit their own submissions**, also set **“Edit Own”** and **“Edit State”** to *Allow*.
+* If the public users should be able to **submit new items**, set **"Create"** to *Allow*.
+* To let them **edit their own submissions**, also set **"Edit Own"** and **"Edit State"** to *Allow*.
 
 > **Tip:** These permissions apply both globally and locally per view. Make sure both are configured correctly if edits are not visible on the site.
 
@@ -70,7 +70,7 @@ Now enable JCB to generate the code for the Site Edit View.
 
 2. In the **Settings** tab, open the configuration that lists all linked Admin Views.
 
-3. Ensure **“Edit/Create Site View”** is set to **Yes**.
+3. Ensure **"Edit/Create Site View"** is set to **Yes**.
 
    * This tells JCB to automatically generate a **Site View**, **Model**, and **Controller** for this Admin View.
    * The front-end form will then be available for editing or creating items.
@@ -109,16 +109,16 @@ The generated code is similar to the backend but adapted for the front-end. It i
 To enable users to access and edit specific items from the site:
 
 1. Go to **JCB → Site Views**.
-2. You’ll see:
+2. You'll see:
 
    * `Looks` (list view)
    * `Looking` (possibly a related view)
 
-Since the “Look” site edit view was auto-generated, you do not need to create it again. However, you must manually create **links** to it.
+Since the "Look" site edit view was auto-generated, you do not need to create it again. However, you must manually create **links** to it.
 
 3. Open **Dynamic GETs** in JCB.
-4. Locate the dynamic get entries for “Looks” and “Looking”.
-5. Edit the “Looks” Dynamic Get — in its **Custom Script** area, check for code that looks like this:
+4. Locate the dynamic get entries for "Looks" and "Looking".
+5. Edit the "Looks" Dynamic Get — in its **Custom Script** area, check for code that looks like this:
 
    ```php
    if ($cando->get('core.edit')) {
@@ -147,7 +147,7 @@ To let users create new items from the front end:
 
 3. Place this button before your list or table of items in the Site View.
 
-This adds a “New Look” button that loads the front-end creation form.
+This adds a "New Look" button that loads the front-end creation form.
 
 ---
 
@@ -181,8 +181,8 @@ This method:
 
 If front-end editing or creation does not work:
 
-* Check the **Authorise** setting for your Site View (“Looks”).
-* Ensure the **Permissions structure** is correctly aligned with your component’s logic.
+* Check the **Authorise** setting for your Site View ("Looks").
+* Ensure the **Permissions structure** is correctly aligned with your component's logic.
 
 Remember:
 
@@ -194,8 +194,8 @@ Remember:
 
 By following these steps, you have:
 
-* Enabled a Site Edit View for an Admin View (“Look”)
+* Enabled a Site Edit View for an Admin View ("Look")
 * Allowed users to edit and create records on the front end
-* Controlled access via JCB’s built-in permission system
-* Added manual links to handle “Edit” and “New” functionality
+* Controlled access via JCB's built-in permission system
+* Added manual links to handle "Edit" and "New" functionality
 * Understood how `getAction()` manages permissions dynamically

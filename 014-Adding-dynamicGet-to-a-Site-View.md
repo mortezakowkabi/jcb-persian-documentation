@@ -18,11 +18,11 @@ This setup will allow you to connect the previously created DynamicGet methods t
 
 ---
 
-### Populate Fields From Get’s
+### Populate Fields From Get's
 
 [00:00:32](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m32s)
 
-On the right-hand side of the Site View editor, you’ll find **three key fields** for populating DynamicGet methods:
+On the right-hand side of the Site View editor, you'll find **three key fields** for populating DynamicGet methods:
 
 1. **Custom DynamicGets** –
 
@@ -78,7 +78,7 @@ Each code block can be copied easily:
 
 [00:03:36](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m36s)
 
-Use the **Dynamic Values** code within your view’s PHP template to display the retrieved data.
+Use the **Dynamic Values** code within your view's PHP template to display the retrieved data.
 For instance, in the Preacher view:
 
 * Ensure you have a valid Preacher object.
@@ -106,7 +106,7 @@ Each Custom Get provides a data structure that defines how its results are packe
 For example:
 
 * A method named `numbersermons` would make its data available as `$this->numbersermons`.
-* This structure may vary depending on how you modify your component’s custom code.
+* This structure may vary depending on how you modify your component's custom code.
 
 > **Tip:** Use Dynamic Values to preview how the data would look before making custom modifications.
 
@@ -141,7 +141,7 @@ To see how Custom Gets become available in your Site View, open the **model file
 [00:07:55](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m55s)
 
 Inside the model, locate the `getListQuery()` method.
-Here you’ll see how the main and joined tables are defined:
+Here you'll see how the main and joined tables are defined:
 
 * `sermon` as `a`
 * `series` as `c`
@@ -154,7 +154,7 @@ These joins determine how data is retrieved, filtered, and returned to the view.
 
 [00:08:41](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m41s)
 
-Back in the JCB interface, you’ll notice that the main DynamicGet (e.g., `sermon (preacher.id) getlist`) matches the structure used in this model.
+Back in the JCB interface, you'll notice that the main DynamicGet (e.g., `sermon (preacher.id) getlist`) matches the structure used in this model.
 
 ---
 
@@ -198,7 +198,7 @@ Selecting the corresponding DynamicGet in JCB shows that the variables match the
 
 [00:11:48](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m48s)
 
-Inspecting deeper in the code, you’ll notice keys such as `idsermonstatisticsE`, which represent array values containing further subarrays.
+Inspecting deeper in the code, you'll notice keys such as `idsermonstatisticsE`, which represent array values containing further subarrays.
 
 [00:12:03](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m03s)
 
