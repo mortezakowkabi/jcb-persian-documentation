@@ -2,7 +2,7 @@
 
 (*Click on the timestamp links to open the YouTube video at the correct moment.*)
 
-## Introduction – How To Build a Component
+## Introduction - How To Build a Component
 
 [00:00:00](https://www.youtube.com/watch?v=t6Eux157428&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 
