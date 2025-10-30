@@ -1,4 +1,4 @@
-# Building a "Hello World" Component with Joomla Component Builder v5
+# Building a "Hello World" Component with Joomla Component Builder
 
 *(Complete Beginner Walkthrough)*
 
