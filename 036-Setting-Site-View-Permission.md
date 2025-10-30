@@ -166,7 +166,7 @@ For more detailed customization examples, see JCB's dedicated tutorial on **Cust
 
 ---
 
-## ** Best Practices**
+## **Best Practices**
 
 * Always define a **Default View** to prevent redirect loops.
 * Use **Custom Post-Flight scripts** to remind or enforce permission settings.
