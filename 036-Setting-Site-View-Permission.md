@@ -1,8 +1,7 @@
 # **Setting Site View Permission in Joomla Component Builder**
 
 > **Tutorial Reference:**
-> Video: *Setting Site View Permission*
-> Timestamped Sections Included from Transcript
+> Video: *Setting Site View Permission* [00:00:00](https://www.youtube.com/watch?v=gWjQjdhYqXI&t=00h00m00s)
 > *(Click timestamps to view specific parts of the video)*
 
 ---
@@ -175,8 +174,3 @@ For more detailed customization examples, see JCB's dedicated tutorial on **Cust
 * Customize error messages for better UX.
 * Use **Custom Code Implementations** for complex access logic.
 * Test your compiled component's front-end behavior after installation.
-
----
-
-**End of Documentation**
-**Tutorial Reference:** *Joomla Component Builder - Setting Site View Permission (036)*

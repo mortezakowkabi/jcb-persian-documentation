@@ -300,15 +300,3 @@ JCB can **generate test data dumps** to preload your component with sample recor
 
 > **Benefit:**
 > Saves time during testing since you can reinstall your component with demo data preloaded.
-
----
-
-## **16. Summary**
-
-Admin Views form the **core structure** of any JCB component.
-They link fields, define permissions, manage linked data relationships, and allow fine-grained UI control through tabs, conditions, and dynamic scripts.
-
-**Next Step:**
-Proceed to **Site Views**, where you'll learn how frontend data display connects with these backend configurations.
-
----

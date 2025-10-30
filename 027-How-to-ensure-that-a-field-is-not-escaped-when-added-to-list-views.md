@@ -132,10 +132,3 @@ You should now see proper visual output - for example, dates highlighted in red 
 
 You have now learned how to make a Joomla Component Builder field render HTML output directly in the list view by disabling escaping.
 This technique is useful for visual indicators such as colored statuses, badges, or other styled data representations within your Joomla admin interface.
-
----
-
-**Video Reference:**
-[How to Ensure That a Field Is Not Escaped When Added to List Views](https://www.youtube.com/watch?v=bfl0l3AoLKU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-
----

@@ -22,7 +22,7 @@ JCB automatically handles:
 
 ## 1. Automatic English Language File Generation
 
-⏱ [00:00:49](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=49s)
+[00:00:49](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=49s)
 
 JCB is built as an English-first component builder. Whenever you define **fields, templates, or views**, JCB automatically detects and extracts **translatable text**.
 
@@ -48,7 +48,7 @@ This happens throughout the compiler-for admin views, site views, and templates-
 
 ## 2. Placeholder Conversion with `JText`
 
-⏱ [00:01:25](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=85s)
+[00:01:25](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=85s)
 
 In templates and layouts, whenever you wrap text in a `JText` call, like:
 
@@ -64,7 +64,7 @@ JCB's parser automatically captures the English string and ensures it's added to
 
 ## 3. Adding Additional Languages
 
-⏱ [00:02:43](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=163s)
+[00:02:43](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=163s)
 
 Developers requested multi-language support so that JCB can compile multiple translation files.
 Now you can define **multiple language tags** (e.g., `fr-FR`, `de-DE`, `es-ES`) and JCB will generate separate `.ini` files automatically.
@@ -84,7 +84,7 @@ Now you can define **multiple language tags** (e.g., `fr-FR`, `de-DE`, `es-ES`) 
 
 ## 4. Internal Code Flow for Language Extraction
 
-⏱ [00:03:50](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=230s)
+[00:03:50](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=230s)
 
 The main logic resides in the `a_Get.php` class, in a function called `setLangStrings()`.
 
@@ -105,7 +105,7 @@ At compilation, JCB places each language key/value pair into the proper file for
 
 ## 5. Adding Strings to Language Files
 
-⏱ [00:06:04](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=364s)
+[00:06:04](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=364s)
 
 When compilation reaches the final stage:
 
@@ -142,7 +142,7 @@ These functions reside in `a_Get.php` (open-source).
 
 ## 7. Reintegrating Translations During Compilation
 
-⏱ [00:09:13](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=553s)
+[00:09:13](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=553s)
 
 After fetching translations, JCB injects them back into the compiled component.
 During build, each string is evaluated and merged into the `.ini` files corresponding to its target language.
@@ -158,7 +158,7 @@ JCB will automatically:
 
 ## 8. Purging Unused Strings
 
- [00:10:05](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=605s)
+[00:10:05](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=605s)
 
 When field names or descriptions change, some old strings may no longer be needed.
 JCB uses a **smart purge mechanism** to manage this.
@@ -214,7 +214,7 @@ Each component's Translation tab lets you:
 
 ### B. Via Global "Language Translations"
 
-⏱ [00:14:03](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=843s)
+[00:14:03](https://www.youtube.com/watch?v=zzAcVkn_cWU&t=843s)
 
 Alternatively, open **Components → Language Translations** to manage **all component strings together**.
 

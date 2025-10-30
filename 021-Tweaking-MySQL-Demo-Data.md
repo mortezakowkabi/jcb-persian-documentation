@@ -68,7 +68,7 @@ When you open this tweak feature:
 For example, in an Admin View, IDs `33` and `42` may have been included from the database.
 These are controlled directly through the MySQL tweak.
 
-> ⚙️ **Control Data Inclusion:**
+> **Control Data Inclusion:**
 > The tweak system is **ID-based**, allowing you to define which records are packaged into your component.
 
 ---
@@ -141,5 +141,3 @@ It will have no effect on your build output.
 
 > **Pro Tip:**
 > MySQL Tweaks are especially powerful when used in **multi-version component development**, helping you maintain clean data separation between production and demo builds.
-
----

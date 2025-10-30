@@ -39,7 +39,7 @@ To add or manage Site Views:
 
 You may notice that some Site View checkboxes or toggles appear **unselected** even though you selected and saved them earlier.
 
-### ⚠️ Important
+### Important
 
 This is a **Joomla JavaScript glitch** - not an issue with JCB.
 
@@ -52,7 +52,7 @@ This is a **Joomla JavaScript glitch** - not an issue with JCB.
 2. The selections should now appear correctly.
 3. Avoid saving while the boxes are unchecked - this would save `null` values and cause unexpected results.
 
-> 💡 **Tip:** The same issue can occasionally occur in Admin Views. Always double-check before saving.
+> **Tip:** The same issue can occasionally occur in Admin Views. Always double-check before saving.
 
 ---
 
@@ -82,7 +82,7 @@ After compiling the component:
 2. Under **Select Menu Item Type**, your component's view (e.g., "List of Sermons") will now appear.
 3. Selecting it will link the front-end display directly to that Site View.
 
-> 💡 **Tip:** This saves time - you don't have to manually write XML for Joomla menu types.
+> **Tip:** This saves time - you don't have to manually write XML for Joomla menu types.
 
 ---
 
@@ -102,7 +102,7 @@ When **Metadata = Yes**, JCB adds metadata-handling scripts to your generated vi
 
 If the data isn't present, Joomla won't display metadata even if the switch is enabled.
 
-> 💡 **Tip:** Always verify that the model returns metadata for your Site View items.
+> **Tip:** Always verify that the model returns metadata for your Site View items.
 
 ---
 
@@ -119,7 +119,7 @@ The **Default View** acts as the component's **home page** or fallback route.
 Example:
 If your default view is **Preachers**, and a user visits a restricted "Sermon" view, they will be redirected back to "Preachers" with a message.
 
-> ⚠️ **Important:** Do not select multiple default views. Only one should be active.
+> **Important:** Do not select multiple default views. Only one should be active.
 
 ---
 
@@ -139,7 +139,7 @@ Allows JCB to include the necessary access tables so that:
 * Uses **user groups** and **access levels** to control who can view what.
 * When this option is checked, JCB ensures the access fields and logic are built into your component.
 
-> 💡 **Tip:** Always configure access levels in Joomla after installation to match your component's logic.
+> **Tip:** Always configure access levels in Joomla after installation to match your component's logic.
 
 ---
 
@@ -157,7 +157,7 @@ Once you've configured your Site Views:
    * Access restrictions.
    * Default view redirection.
 
-> ✅ **Result:** Your Site Views are now active, accessible, and properly configured.
+> **Result:** Your Site Views are now active, accessible, and properly configured.
 
 ---
 
@@ -184,6 +184,5 @@ Once you've configured your Site Views:
 ---
 
 **Video Reference:**
-🎥 *Watch the full tutorial on YouTube:*
+*Watch the full tutorial on YouTube:*
 [Adding Site Views to a Component - Joomla Component Builder](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-

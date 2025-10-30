@@ -1,12 +1,4 @@
-# CUSTOM ADMIN VIEWS
-
-and follow the existing documentation tone and layout you've used throughout your Joomla Component Builder (JCB) series.
-
-Here's the final integrated, professionally formatted Markdown documentation for **Custom Admin Views** - complete with accurate workflow explanations, enhanced clarity, timestamps, and up-to-date Joomla Component Builder details.
-
----
-
-# CUSTOM ADMIN VIEWS
+# Custom Admin Views
 
 [00:00:00](https://www.youtube.com/watch?v=gtdQ1lwB9ds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 (*Click on these time links to see YouTube video.*)

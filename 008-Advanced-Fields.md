@@ -276,11 +276,9 @@ When using **radio buttons** in repeatable fields:
 
 ---
 
-### ✅ Final Notes
+### Final Notes
 
 * Always **compile** your component after adding or editing custom fields.
 * Test your field logic by inspecting the compiled PHP files.
 * Use JCB's placeholders (`###component###`) to maintain flexibility when renaming components.
 * For more examples or troubleshooting, refer to the JCB forums or GitHub discussions.
-
----

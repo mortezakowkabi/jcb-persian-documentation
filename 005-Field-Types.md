@@ -227,11 +227,11 @@ For example:
 
 ## 15. Best Practices
 
-✅ **Keep default field types intact.**
-✅ **Use Joomla naming conventions.**
-✅ **Group fields logically in views (tabs, sections).**
-✅ **Compile often** to catch XML or mapping errors early.
-✅ **Use demo data** to understand field structure before creating complex types.
+**Keep default field types intact.**
+**Use Joomla naming conventions.**
+**Group fields logically in views (tabs, sections).**
+**Compile often** to catch XML or mapping errors early.
+**Use demo data** to understand field structure before creating complex types.
 
 ---
 
@@ -239,7 +239,3 @@ For example:
 
 JCB automates the complex XML, MVC, and API mappings Joomla! needs to build robust components.
 Field types are at the heart of this process - understanding how they link to fields, views, and XML output will help you design efficient and scalable components.
-
-> Next step: [Using Field Types in Fields →](#)
-
----

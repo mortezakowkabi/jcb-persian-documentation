@@ -3,9 +3,6 @@
 ### Tutorial Reference
 
 [Video: Basic Fields](https://www.youtube.com/watch?v=9NO2rKnC6Ug&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-Transcript Source: *006-Basic-Fields.md*
-Duration: ~39 minutes
-
 ---
 
 ## Overview
@@ -342,13 +339,3 @@ You have now learned how to create and configure **basic fields** in Joomla Comp
 * Data storage methods (Default, JSON, Base64).
 * Conditional visibility (Showon).
 * Adding scripts and translations.
-
-Next, we move on to **connecting fields to views** - the foundation for building the component's backend interface.
-
----
-
-**End of Section 06: Basic Fields**
-
-> *For deeper Joomla field references, consult the Joomla Developer Documentation (`/libraries/src/Form/Field/`).*
-
----

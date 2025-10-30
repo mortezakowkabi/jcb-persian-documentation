@@ -3,9 +3,6 @@
 ## 10 - Component Settings
 
 > **Video Source:** [Component Settings](https://www.youtube.com/watch?v=V2WkTjNFjvo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-> **Duration:** ~29 minutes
-> **Focus:** Understanding and customizing component-level settings within Joomla Component Builder (JCB).
-
 ---
 
 ## Introduction
@@ -256,5 +253,3 @@ In this tutorial, we explored:
 * Using conventions to link backend settings with frontend menus
 
 Understanding these **component-level settings** allows you to create **powerful, flexible**, and **professionally structured** Joomla components.
-
----

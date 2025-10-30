@@ -1,10 +1,6 @@
 # How to Use the Email Helper in Your Components
 
 **Tutorial Reference:** [Video - How to Use Email Helper in Your Components](https://www.youtube.com/watch?v=tp6mMUTOF2Y)
-**Component Example:** Learning Manager & Job Tracking System
-**Estimated Time:** ~18 minutes
-
----
 
 ## 1. Introduction to the Email Helper Class
 

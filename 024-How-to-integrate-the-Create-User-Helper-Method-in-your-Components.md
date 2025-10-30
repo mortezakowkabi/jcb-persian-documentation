@@ -1,9 +1,6 @@
 # How to Integrate the Create User Helper Method in Your Components
 
 **Tutorial Source:** [Joomla Component Builder Tutorial Series](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-**Example Component:** *Expert Database (com_expertdatabase)*
-**Transcript-based Documentation:** with timestamps for reference
-
 ---
 
 ## 1. Overview

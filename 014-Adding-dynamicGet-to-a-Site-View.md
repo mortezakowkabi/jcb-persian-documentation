@@ -1,9 +1,5 @@
 # ADDING DYNAMICGET TO A SITE VIEW
 
-(*Based on JCB Tutorial Video and Transcript*)
-
----
-
 ### Checking The Target Dataset
 
 [00:00:00](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m57s)

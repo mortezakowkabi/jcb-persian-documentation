@@ -266,5 +266,3 @@ When implemented correctly:
 * Use consistent naming for fields (e.g., `country`, `region`) to avoid confusion.
 * JCB compiles all Ajax methods into one file (`models/ajax.php`) - no need to manually add multiple controllers.
 * If targeting another component's table, ensure you know the association field name.
-
----
