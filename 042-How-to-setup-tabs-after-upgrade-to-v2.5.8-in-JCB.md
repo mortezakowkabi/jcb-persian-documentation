@@ -12,7 +12,7 @@ It reflects the latest JCB interface and workflows, particularly within the **Ad
 In JCB v2.5.8, the way **Tabs** are configured inside an **Admin View** has slightly changed.
 Tabs help organize fields into logical sections within the backend of your Joomla component, making your admin interface cleaner and more user-friendly.
 
-Tabs are now defined in the **Admin View’s Settings** area and linked to fields through their **Tab selection dropdown**.
+Tabs are now defined in the **Admin View's Settings** area and linked to fields through their **Tab selection dropdown**.
 
 ---
 
@@ -27,7 +27,7 @@ Tabs are now defined in the **Admin View’s Settings** area and linked to field
 3. Locate the area called **Tabs**.
 4. Click the **Add (+)** button to create a new tab entry.
 5. Name your tabs appropriately (e.g., `General`, `Options`, `Advanced`, `Permissions`).
-6. After entering all desired tab names, **click “Save”**.
+6. After entering all desired tab names, **click "Save"**.
 
 > **Tip:** Tabs are only stored in the database after saving.
 > If you forget to save, your tabs will not appear in the dropdown list later.
@@ -56,12 +56,12 @@ When you later compile and install your component, the backend form will display
 
 [00:01:29](https://www.youtube.com/watch?v=NFp_CtE0LZI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m29s)
 
-If no tabs are defined in the Admin View’s **Settings**, JCB automatically defaults to showing all fields under a single tab called **Details**.
+If no tabs are defined in the Admin View's **Settings**, JCB automatically defaults to showing all fields under a single tab called **Details**.
 
 This means:
 
 * The form will not show multiple tabs.
-* All fields will appear in the “Details” section.
+* All fields will appear in the "Details" section.
 
 To have more than one tab, you must add them in the **Tab Setup Options** as described above.
 
@@ -86,7 +86,7 @@ After setting up your tabs and assigning fields:
 
 1. Click **Compile** in JCB to build your component package.
 2. Install the generated `.zip` file in your Joomla site.
-3. Open the component’s backend view to confirm your tabs appear as expected.
+3. Open the component's backend view to confirm your tabs appear as expected.
 
 You should now see your fields grouped neatly under each tab, just as defined in your Admin View.
 

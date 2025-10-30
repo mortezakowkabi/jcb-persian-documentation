@@ -12,7 +12,7 @@
 
 [00:00:00](https://www.youtube.com/watch?v=V2WkTjNFjvo&t=00h00m00s)
 
-Once you’ve added your admin views to the component, JCB provides additional configuration areas known as **Component Settings**. This is where you manage **global configuration fields**, **custom admin menus**, **folders**, and **compiler integration**.
+Once you've added your admin views to the component, JCB provides additional configuration areas known as **Component Settings**. This is where you manage **global configuration fields**, **custom admin menus**, **folders**, and **compiler integration**.
 
 Custom admin menus control the structure of backend menus, while the **component settings** area defines configuration options that apply globally across your component.
 
@@ -30,7 +30,7 @@ This compiler view requires:
 * A **view**
 * Helper and script files
 
-Inside the JCB infrastructure, there’s a folder called **custom**. This is where you place files and folders that should be included in your component’s compilation.
+Inside the JCB infrastructure, there's a folder called **custom**. This is where you place files and folders that should be included in your component's compilation.
 
 > **Tip:** Do not remove default content in the `/custom` folder. JCB uses these files automatically during compilation depending on your setup.
 
@@ -68,10 +68,10 @@ Use the **Custom Admin Menus** section to define new backend menu items not gene
 
 **Example Workflow:**
 
-1. Create a new custom admin menu named **“Compiler”**.
+1. Create a new custom admin menu named **"Compiler"**.
 2. Set the **code name** to `compiler`.
 3. Choose an appropriate **icon**.
-4. Specify its placement, e.g., “before component”.
+4. Specify its placement, e.g., "before component".
 
 [00:05:17](https://www.youtube.com/watch?v=V2WkTjNFjvo&t=00h05m17s)
 You can configure whether it appears as:
@@ -88,7 +88,7 @@ You can configure whether it appears as:
 
 [00:07:27](https://www.youtube.com/watch?v=V2WkTjNFjvo&t=00h07m27s)
 
-The **Config Area** in the Component Settings defines your **global configuration fields**, accessible under “Options” in the backend component menu.
+The **Config Area** in the Component Settings defines your **global configuration fields**, accessible under "Options" in the backend component menu.
 
 ### Example: Sermon Distributor Component
 
@@ -119,8 +119,8 @@ This is useful for documenting who helped develop the component.
 
 [00:10:33](https://www.youtube.com/watch?v=V2WkTjNFjvo&t=00h10m33s)
 
-You can enable **UIkit** integration directly within the component’s settings.
-When enabled, UIkit is included automatically throughout your component’s admin and site views.
+You can enable **UIkit** integration directly within the component's settings.
+When enabled, UIkit is included automatically throughout your component's admin and site views.
 
 ---
 
@@ -128,7 +128,7 @@ When enabled, UIkit is included automatically throughout your component’s admi
 
 [00:11:06](https://www.youtube.com/watch?v=V2WkTjNFjvo&t=00h11m06s)
 
-To add a new field to your component’s configuration:
+To add a new field to your component's configuration:
 
 1. Go to **Fields** in JCB.
 2. Create a new field (remember its **system name**).
@@ -167,7 +167,7 @@ If a **Config Tab** name matches a **frontend view name**, JCB will automaticall
 * Config tab: `preachers`
 * Site view: `preachers`
 
-This allows global settings to be overridden in specific menu items, similar to Joomla’s built-in article settings.
+This allows global settings to be overridden in specific menu items, similar to Joomla's built-in article settings.
 
 [00:17:07](https://www.youtube.com/watch?v=V2WkTjNFjvo&t=00h17m07s)
 
@@ -180,7 +180,7 @@ This allows global settings to be overridden in specific menu items, similar to 
 Each site view has a corresponding **`default.xml`** file that defines available parameters.
 When a Config Tab matches the site view name, JCB automatically adds those parameters to the XML.
 
-If something doesn’t appear as expected, inspect this file in your site view template.
+If something doesn't appear as expected, inspect this file in your site view template.
 
 ---
 
@@ -190,7 +190,7 @@ If something doesn’t appear as expected, inspect this file in your site view t
 
 When creating a site view:
 
-* If you **set “Add as Menu” to Yes**, JCB will generate the `default.xml` file automatically.
+* If you **set "Add as Menu" to Yes**, JCB will generate the `default.xml` file automatically.
 * If set to **No**, the menu XML file will not exist.
 
 Setting tabs to the same name as your view ensures field mapping and unique configurations for each menu item.
@@ -201,7 +201,7 @@ Setting tabs to the same name as your view ensures field mapping and unique conf
 
 [00:21:50](https://www.youtube.com/watch?v=V2WkTjNFjvo&t=00h21m50s)
 
-In your component’s PHP view files (`view.html.php`), parameters can be accessed via Joomla’s `get()` methods.
+In your component's PHP view files (`view.html.php`), parameters can be accessed via Joomla's `get()` methods.
 
 ```php
 $params = $this->state->get('params');
@@ -212,7 +212,7 @@ This retrieves:
 
 * Menu parameters
 * Component parameters
-* Global fallbacks (if menu is set to “Use Global”)
+* Global fallbacks (if menu is set to "Use Global")
 
 > **Important:** Field names in config must be **unique**. Reused names can cause conflicts when retrieving params.
 
@@ -236,7 +236,7 @@ These values are managed globally and accessed dynamically in the frontend view.
 
 [00:28:44](https://www.youtube.com/watch?v=V2WkTjNFjvo&t=00h28m44s)
 
-JCB’s **MySQL Tweak** feature lets you **exclude or modify dummy data** during export.
+JCB's **MySQL Tweak** feature lets you **exclude or modify dummy data** during export.
 This is particularly useful if you manage **multiple versions** of the same extension at different pricing tiers.
 
 You can control which data gets included when compiling each version.

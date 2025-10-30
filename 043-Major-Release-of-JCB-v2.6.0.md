@@ -12,7 +12,7 @@ This documentation explains the key changes, provides upgrade guidance, and clar
 
 [00:00:00](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h00m00s)
 
-Repeatable fields were once widely used in JCB’s Component Area to manage collections of related values. However, these fields have now been **entirely replaced** with **SubForm fields** and dedicated tables.
+Repeatable fields were once widely used in JCB's Component Area to manage collections of related values. However, these fields have now been **entirely replaced** with **SubForm fields** and dedicated tables.
 
 ### Why the Change Was Necessary
 
@@ -84,7 +84,7 @@ If this feature does not work as expected:
 
 ---
 
-## **6. Upgrading via Joomla’s Management Area**
+## **6. Upgrading via Joomla's Management Area**
 
 [00:05:13](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h05m13s)
 
@@ -93,7 +93,7 @@ To perform the upgrade:
 1. Navigate to **Components → Joomla Component Builder → Updates**.
 2. Confirm that the **v2.6.0** update is available.
 3. Click **Update**.
-4. Once complete, return to JCB and verify that it shows **“up-to-date.”**
+4. Once complete, return to JCB and verify that it shows **"up-to-date."**
 
 No manual migration steps are necessary — the upgrade process handles conversions automatically.
 
@@ -109,7 +109,7 @@ While the layout of the Component Edit area remains familiar, interaction patter
 
 * **Modal-based editors** (used for updates, views, etc.) are now replaced by **dedicated views**.
 * When editing updates, admin views, or site views, JCB will open these in full-page views for better control.
-* You’ll be prompted to save all changes before switching views.
+* You'll be prompted to save all changes before switching views.
 
 This improves stability and editing precision across multiple areas.
 
@@ -122,7 +122,7 @@ This improves stability and editing precision across multiple areas.
 * **Contributors**: Now editable directly within the main Component page.
 * **Component Files and Folders**:
   These have been moved to a **joint table**, improving performance and simplifying file management.
-  Use the “Edit component files/folders” button to manage these resources directly.
+  Use the "Edit component files/folders" button to manage these resources directly.
 
 ---
 
@@ -139,7 +139,7 @@ Buttons such as:
 
 allow you to access and modify admin views instantly without returning to the main component list.
 
-During upgrades, JCB automatically checks each view for old field formats and converts them to the new SubForm layout. If a view hasn’t been opened or compiled since upgrading, you can trigger this process manually:
+During upgrades, JCB automatically checks each view for old field formats and converts them to the new SubForm layout. If a view hasn't been opened or compiled since upgrading, you can trigger this process manually:
 
 > Go to **Compiler → Compile Component**
 > JCB will re-scan all fields and apply necessary format conversions.
@@ -174,7 +174,7 @@ If you encounter a message about the **Backup folder**, it likely means the **Ba
 This is **not an error**, but a **misconfiguration**.
 To fix it:
 
-1. Go to JCB’s **Options → Folder Paths**.
+1. Go to JCB's **Options → Folder Paths**.
 2. Set a distinct path for the **Backup Folder**.
 
 ---

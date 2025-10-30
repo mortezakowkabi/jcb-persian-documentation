@@ -3,7 +3,7 @@
 [Watch Full Tutorial on YouTube](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
 This guide explains how to **fork**, **clone**, and **contribute** JCB community snippets through GitHub, using the **Snippet Manager**.
-By following these steps, you’ll be ready to make a pull request and contribute your own or improved snippets to the Joomla Component Builder (JCB) community.
+By following these steps, you'll be ready to make a pull request and contribute your own or improved snippets to the Joomla Component Builder (JCB) community.
 
 ---
 
@@ -25,7 +25,7 @@ This process involves:
 
 [00:00:18](https://www.youtube.com/watch?v=0hgHeQVTLOk&t=00h00m18s)
 
-You’ll need:
+You'll need:
 
 * A **GitHub account**.
 * Basic understanding of **Git**.
@@ -58,9 +58,9 @@ git clone git@github.com:YourUserName/Joomla-Component-Builder-Snippets.git
 cd Joomla-Component-Builder-Snippets
 ```
 
-> **Tip:** Use SSH for security if you’re familiar with SSH keys; otherwise, use HTTPS.
+> **Tip:** Use SSH for security if you're familiar with SSH keys; otherwise, use HTTPS.
 
-After cloning, you’ll see all files locally. Avoid editing them directly — instead, make all snippet modifications within **Joomla Component Builder** and export them properly.
+After cloning, you'll see all files locally. Avoid editing them directly — instead, make all snippet modifications within **Joomla Component Builder** and export them properly.
 
 ---
 
@@ -76,7 +76,7 @@ You can:
 
 ### Naming Convention (Critical)
 
-Each exported snippet’s file name follows a strict convention:
+Each exported snippet's file name follows a strict convention:
 
 ```
 Library Name - (Type) Snippet Name.json
@@ -96,7 +96,7 @@ Uikit v2 - (Common) Animation slide-top reverse.json
 
 Changing any will create a **new snippet** and possibly cause duplicates.
 
-> **Tip:** Before submitting, confirm the snippet’s type and naming convention match community standards.
+> **Tip:** Before submitting, confirm the snippet's type and naming convention match community standards.
 
 ---
 
@@ -210,7 +210,7 @@ This uploads all commits, additions, and deletions to your forked repository on 
 
 After refreshing your GitHub page, it should display:
 
-> “This branch is X commits ahead of vdm-io:master.”
+> "This branch is X commits ahead of vdm-io:master."
 
 You are now ready to create a **pull request** (covered in the next tutorial).
 

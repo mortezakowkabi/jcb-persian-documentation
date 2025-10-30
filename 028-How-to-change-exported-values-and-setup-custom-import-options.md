@@ -27,7 +27,7 @@ In this tutorial, you will learn:
 
 [00:00:35](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h00m35s)
 
-We’ll use the **IP Data** component as an example.
+We'll use the **IP Data** component as an example.
 This component tracks IP addresses, translates them into countries, and updates cost data based on IP regions.
 
 ### Example: IP Tables View
@@ -49,7 +49,7 @@ In the *IP Tables* dashboard, typical fields include:
 When clicking **Export Data**, note the following behavior:
 
 * If **no rows are selected**, JCB warns:
-  *“Please first make a selection from the list.”*
+  *"Please first make a selection from the list."*
 * To export **all records**, select *All* in the list view options.
 
 > **Tip:**
@@ -66,7 +66,7 @@ While JCB List Views can handle up to 10,000 items, complex relationships can sl
 
 [00:02:51](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h02m51s)
 
-You may want to replace certain database codes (like “AUS”) with full names (“Australia”) during export.
+You may want to replace certain database codes (like "AUS") with full names ("Australia") during export.
 This can be done programmatically in the **getExportData** method.
 
 ---
@@ -102,7 +102,7 @@ You can use it to **target custom code** that modifies the export output.
 To modify export behavior, go to:
 
 **Admin View → PHP Tab → Add PHP (getListQuery - JModelList)**
-Set **“Yes”** to enable PHP customization.
+Set **"Yes"** to enable PHP customization.
 
 Code added here is injected into **both**:
 
@@ -133,7 +133,7 @@ You can verify occurrences of `$_export` across List Models to see where export-
 
 [00:07:25](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h07m25s)
 
-Don’t include **HTML formatting** (like color or styling) in export data.
+Don't include **HTML formatting** (like color or styling) in export data.
 The export process should focus purely on **raw values**, not presentation.
 
 ---
@@ -161,14 +161,14 @@ This ensures the data is changed **only** during export and not in normal list v
 
 [00:09:32](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h09m32s)
 
-JCB’s **Import feature** allows data to be brought back into a component via CSV or XLS files.
+JCB's **Import feature** allows data to be brought back into a component via CSV or XLS files.
 
 [00:09:40](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h09m40s)
 
 * If an **ID** exists in the file, JCB updates the record.
 * If the **ID** is missing, JCB creates a new record.
 
-If you want to import data based on **non-ID fields** (like a username or reference code), you’ll need a **custom import script**.
+If you want to import data based on **non-ID fields** (like a username or reference code), you'll need a **custom import script**.
 
 ---
 
@@ -184,12 +184,12 @@ In the **Admin View**, go to the **Custom Import** tab and set:
 Custom Import: Yes
 ```
 
-This loads JCB’s default import script into editable areas.
+This loads JCB's default import script into editable areas.
 
 [00:10:38](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h10m38s)
 
 > **Warning:**
-> Only modify this if you’re familiar with PHP and import logic.
+> Only modify this if you're familiar with PHP and import logic.
 > Otherwise, practice basic PHP or MySQL courses first (e.g., on Lynda.com or Udemy).
 
 ---
@@ -255,13 +255,13 @@ This flexibility allows complex integrations like:
 * Always **backup** your component before changing export/import code.
 * Test export data using small datasets first.
 * Avoid running custom imports on production before validating in a test environment.
-* Use **MySQL tools** for massive imports beyond Joomla’s memory limits.
+* Use **MySQL tools** for massive imports beyond Joomla's memory limits.
 
 ---
 
 ### Final Thoughts
 
 This feature set makes JCB exceptionally powerful for large-scale data management.
-By mastering custom **export and import scripting**, you can make your Joomla components behave like professional, data-driven systems adaptable to any client’s needs.
+By mastering custom **export and import scripting**, you can make your Joomla components behave like professional, data-driven systems adaptable to any client's needs.
 
 ---

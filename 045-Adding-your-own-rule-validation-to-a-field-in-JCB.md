@@ -6,7 +6,7 @@ This guide explains how to **create and apply a custom validation rule** to a fi
 
 ## Overview
 
-Validation rules ensure that field values meet certain conditions **before being saved** to the database. JCB supports Joomla’s built-in validation system and allows developers to add **custom rules** using JFormRule classes.
+Validation rules ensure that field values meet certain conditions **before being saved** to the database. JCB supports Joomla's built-in validation system and allows developers to add **custom rules** using JFormRule classes.
 
 In this guide, we will:
 
@@ -26,7 +26,7 @@ In this guide, we will:
 3. Locate the **Greetings** field (usually of type `Textarea`).
 4. Check the field attributes — if the `validation` option is missing, it can be added manually in the Fieldtype configuration.
 
-> 💡 *Tip: If your JCB version doesn’t have the “validation” property available, you can edit the field type directly to add it.*
+> 💡 *Tip: If your JCB version doesn't have the "validation" property available, you can edit the field type directly to add it.*
 
 ---
 
@@ -45,7 +45,7 @@ In this guide, we will:
    * **Description:** *(A rule to validate this field before saving.)*
 4. Save and close.
 
-Now, when editing a field using this fieldtype, you’ll see a **Validate** option available.
+Now, when editing a field using this fieldtype, you'll see a **Validate** option available.
 
 ---
 
@@ -65,7 +65,7 @@ Now, when editing a field using this fieldtype, you’ll see a **Validate** opti
 
 4. Save and close.
 
-> JCB supports Joomla’s built-in validation rules (like `email`, `url`, etc.), but custom rules can be defined as **form rules** by adding your own PHP class.
+> JCB supports Joomla's built-in validation rules (like `email`, `url`, etc.), but custom rules can be defined as **form rules** by adding your own PHP class.
 
 ---
 
@@ -101,7 +101,7 @@ Now, when editing a field using this fieldtype, you’ll see a **Validate** opti
 
 ---
 
-## 5. Register the Rule in JCB’s Custom Files
+## 5. Register the Rule in JCB's Custom Files
 
 [00:06:03](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m03s)
 
@@ -137,7 +137,7 @@ Add these placeholders to your rule file for automatic branding during compilati
 
 * `###BOM###` — ensures the correct file header format.
 * `###component###` — replaced with the actual component name.
-* `###LICENSE###` — replaced with your component’s license text.
+* `###LICENSE###` — replaced with your component's license text.
 
 ---
 
@@ -160,10 +160,10 @@ Add these placeholders to your rule file for automatic branding during compilati
 
 * Go to **Components → Hello World → Greetings → New**.
 * Enter a short string (less than 10 characters).
-* Click **Save** — you’ll see:
+* Click **Save** — you'll see:
   `Warning: Invalid Field: Greetings`
 
-If this doesn’t trigger:
+If this doesn't trigger:
 
 * Ensure the validation name and filename are **all lowercase** (`strlenten`).
 
@@ -173,7 +173,7 @@ If this doesn’t trigger:
 
 [00:12:33](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m33s)
 
-You can show a custom error message instead of Joomla’s default.
+You can show a custom error message instead of Joomla's default.
 
 ### Option A — Add Message Inside PHP Rule:
 

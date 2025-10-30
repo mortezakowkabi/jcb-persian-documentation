@@ -39,7 +39,7 @@ If you want users to enter a time such as `05:15`, you can:
 
 [00:01:23](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h01m23s)
 
-To validate the time format properly, you’ll create a custom Joomla Form Rule.
+To validate the time format properly, you'll create a custom Joomla Form Rule.
 
 ### Steps:
 
@@ -63,7 +63,7 @@ To validate the time format properly, you’ll create a custom Joomla Form Rule.
 
    [00:02:43](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h02m43s)
 
-5. In your **component’s model XML** (e.g., `models/forms/item.xml`), add:
+5. In your **component's model XML** (e.g., `models/forms/item.xml`), add:
 
    ```xml
    <field name="event_time" type="text" label="Event Time" validate="time" filter="string" />
@@ -99,12 +99,12 @@ To improve user experience, you can add JavaScript validation to the field to re
 Example steps:
 
 1. Add a **unique class or ID** to your field.
-2. Include JavaScript in your **view’s footer script area** (accessible in JCB’s View Scripts section).
+2. Include JavaScript in your **view's footer script area** (accessible in JCB's View Scripts section).
 3. The script should allow only numbers and a colon (`:`).
 
 [00:05:37](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h05m37s)
 
-You can use the field’s ID (e.g., from your browser’s Inspector) to target it directly:
+You can use the field's ID (e.g., from your browser's Inspector) to target it directly:
 
 ```js
 document.getElementById('jform_event_time').addEventListener('input', function() {
@@ -127,7 +127,7 @@ To overcome this, JCB includes a **custom DateTime picker** integrated through J
 
 ### Key Steps:
 
-1. Use a **custom JavaScript file** added in JCB’s **Scripts** section.
+1. Use a **custom JavaScript file** added in JCB's **Scripts** section.
 2. Loop through each repeatable instance using JavaScript or PHP to attach the picker dynamically.
 3. Example (simplified):
 
@@ -181,7 +181,7 @@ If you wish to contribute or request help documentation for your component, cont
 * Use **text fields** with custom **form rules** for time input.
 * Implement **Regex-based validation** in PHP and **character restriction** in JavaScript.
 * For **repeatable fields**, ensure dynamic initialization using JavaScript loops.
-* Explore **Component Builder’s script integration** for full control.
+* Explore **Component Builder's script integration** for full control.
 * Leverage the **JCB Wiki** for learning and contributing.
 
 ---

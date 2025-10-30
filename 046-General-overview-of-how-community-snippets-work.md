@@ -1,4 +1,4 @@
-# General Overview of How Community Snippets Work in Joomla Component Builder
+S# General Overview of How Community Snippets Work in Joomla Component Builder
 
 This guide explains how the **Community Snippets system** works in **Joomla Component Builder (JCB)**. The new system introduces a **community concept**, allowing users to **share, import, and maintain** code snippets collaboratively within the JCB ecosystem.
 
@@ -34,8 +34,8 @@ The Snippets interface shows:
 
 Selecting a Snippet displays:
 
-* The snippet’s **type**, **library**, and **name**
-* A **link** to the library’s external documentation (if available)
+* The snippet's **type**, **library**, and **name**
+* A **link** to the library's external documentation (if available)
 
 This helps identify and reuse snippets efficiently during development.
 
@@ -66,7 +66,7 @@ Each snippet includes **contributor information**:
 
 When you create a new snippet, JCB automatically fills in your contributor details (set in **Global Options → Company Tab**).
 
-You can’t edit contributor details of existing snippets — those are fixed to maintain credit integrity.
+You can't edit contributor details of existing snippets — those are fixed to maintain credit integrity.
 
 > **Tip:** If contributor names are missing, update your contributor database under *Snippets → Contributor Area*.
 
@@ -76,7 +76,7 @@ You can’t edit contributor details of existing snippets — those are fixed to
 
 [00:03:58](https://www.youtube.com/watch?v=qr4I1jeCp7I&t=00h03m58s)
 
-Ensure your snippets are **mapped the same way** as the community’s:
+Ensure your snippets are **mapped the same way** as the community's:
 
 * **Name**
 * **Type**
@@ -91,12 +91,12 @@ If you rename or alter them, JCB treats your snippet as *new* instead of *update
 
 [00:04:48](https://www.youtube.com/watch?v=qr4I1jeCp7I&t=00h04m48s)
 
-Use the **“Get Snippets”** area to:
+Use the **"Get Snippets"** area to:
 
 * **Share** your local snippets with the community.
 * **Download** snippets shared by others.
 
-When you click **“Share Snippets”**, JCB:
+When you click **"Share Snippets"**, JCB:
 
 1. Packages your selected snippets.
 2. Stores them at `/media/host/Dropbox/sandbox/joomla/tmp/snippets.zip`.
@@ -117,7 +117,7 @@ These resources help you learn version control, forking, and pull requests.
 
 ---
 
-## 8. How “Get Snippets” Works
+## 8. How "Get Snippets" Works
 
 [00:06:07](https://www.youtube.com/watch?v=qr4I1jeCp7I&t=00h06m07s)
 
@@ -148,7 +148,7 @@ You can import the new version to stay current.
 
 [00:07:57](https://www.youtube.com/watch?v=qr4I1jeCp7I&t=00h07m57s)
 Lists snippets that exist in the community but not locally.
-Click **“Get Snippet”** to import them into your JCB.
+Click **"Get Snippet"** to import them into your JCB.
 
 ### d. Diverged
 
@@ -223,7 +223,7 @@ When you create a new snippet:
 
 1. JCB checks if a snippet with the same *Name*, *Type*, and *Library* exists.
 2. If not, it assigns your details as the contributor.
-3. If yes, it retains the original contributor’s data.
+3. If yes, it retains the original contributor's data.
 
 ---
 
@@ -231,7 +231,7 @@ When you create a new snippet:
 
 [00:15:48](https://www.youtube.com/watch?v=qr4I1jeCp7I&t=00h15m48s)
 
-When you’ve created or improved snippets:
+When you've created or improved snippets:
 
 1. Select them in the list.
 2. Click **Share Snippets** to generate a shareable package.

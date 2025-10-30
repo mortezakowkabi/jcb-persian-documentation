@@ -10,7 +10,7 @@ This guide explains how to **submit your snippet contributions** to the official
 
 A pull request (PR) allows you to submit your **committed changes** from your **forked version** of the `vdm-io/Joomla-Component-Builder-Snippets` repository back to the official repository.
 
-* You’ll be contributing to the **Snippets library** used by the JCB community.
+* You'll be contributing to the **Snippets library** used by the JCB community.
 * The JCB team and other community managers will review and merge valid contributions.
 * Always work on your **own forked repository** rather than the master branch.
 
@@ -28,7 +28,7 @@ Before you create a PR, make sure you have:
 4. **Committed** all your changes with clear commit messages.
 5. **Synchronized your branch** with the upstream (master) branch to avoid conflicts.
 
-> 💡 **Tip:** If you’re unsure about forking or syncing your repository, watch the **previous tutorial** in the playlist before proceeding.
+> 💡 **Tip:** If you're unsure about forking or syncing your repository, watch the **previous tutorial** in the playlist before proceeding.
 
 ---
 
@@ -39,12 +39,12 @@ Before you create a PR, make sure you have:
 Once your commits are ready and pushed to GitHub:
 
 * Go to your forked repository.
-* You’ll see a message like:
+* You'll see a message like:
 
   ```
   This branch is 4 commits ahead of vdm-io:master.
   ```
-* Click **“Pull request”** to start the PR process.
+* Click **"Pull request"** to start the PR process.
 
 ---
 
@@ -57,7 +57,7 @@ GitHub will show:
 * **Base repository:** `vdm-io/Joomla-Component-Builder-Snippets (master)`
 * **Head repository:** your fork and branch
 
-If GitHub shows **“Able to merge”**, everything is ready.
+If GitHub shows **"Able to merge"**, everything is ready.
 
 You can also review:
 
@@ -79,7 +79,7 @@ You can also review:
 
 Start small. Submit a few snippets at a time, especially if this is your first contribution.
 
-* Avoid submitting **large bulk changes** unless you’re a trusted contributor.
+* Avoid submitting **large bulk changes** unless you're a trusted contributor.
 * Smaller PRs are easier to review and merge quickly.
 
 ---
@@ -88,14 +88,14 @@ Start small. Submit a few snippets at a time, especially if this is your first c
 
 [00:04:41](https://www.youtube.com/watch?v=vQ-yxVtc-Co&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m41s)
 
-1. Click **“Create pull request”**.
+1. Click **"Create pull request"**.
 2. Provide a **title** and **description** summarizing the contribution.
 
 ### Example:
 
 **Title:**
 
-> “Added Accordion Snippet and Updated FooTable Layouts”
+> "Added Accordion Snippet and Updated FooTable Layouts"
 
 **Description:**
 
@@ -119,7 +119,7 @@ Only administrators can manage the following fields:
 * **Projects**
 * **Milestones**
 
-You don’t need to fill these out — the JCB maintainers will handle it.
+You don't need to fill these out — the JCB maintainers will handle it.
 
 ---
 
@@ -130,7 +130,7 @@ You don’t need to fill these out — the JCB maintainers will handle it.
 Use your **commit messages** as a foundation for your pull request description.
 
 1. Review your pull request summary before submission.
-2. Click **“Create pull request”** once everything looks good.
+2. Click **"Create pull request"** once everything looks good.
 
 After submission:
 
@@ -149,10 +149,10 @@ Once approved by at least **two reviewers**, your pull request can be merged.
 
 Admins have several merge options:
 
-* Click **“Merge pull request”** directly on GitHub.
+* Click **"Merge pull request"** directly on GitHub.
 * If there are conflicts, advanced admins may resolve them using **command line tools**.
 
-For conflicts, follow GitHub’s **“command-line instructions”** link to learn how to merge manually.
+For conflicts, follow GitHub's **"command-line instructions"** link to learn how to merge manually.
 
 ---
 
@@ -162,7 +162,7 @@ For conflicts, follow GitHub’s **“command-line instructions”** link to lea
 
 Once merged:
 
-* The new or updated snippets become visible in **JCB’s Snippet Get area**.
+* The new or updated snippets become visible in **JCB's Snippet Get area**.
 * Other users can now download and use them directly from JCB.
 
 This streamlined integration keeps community snippets synced through GitHub without requiring manual database updates.
@@ -196,6 +196,6 @@ When you contribute snippets:
 * Your **name** is associated with the change in Git history.
 * This allows you to **gain recognition** within the JCB community.
 
-> 🏗️ “Share your snippets, help others, and make Joomla Component Builder stronger!”
+> 🏗️ "Share your snippets, help others, and make Joomla Component Builder stronger!"
 
 ---

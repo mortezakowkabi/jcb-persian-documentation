@@ -14,9 +14,9 @@ Access to these settings is available through the **Options** button in the Comp
 3. The **Global Configurations** window will open.
 
 Only users with proper permissions (usually Super Users or Administrators) can view and modify these options.
-If the “Options” button is missing, adjust your Joomla user group permissions.
+If the "Options" button is missing, adjust your Joomla user group permissions.
 
-Inside the configuration window, you’ll find several key tabs:
+Inside the configuration window, you'll find several key tabs:
 
 * **Global**
 * **UiKit Settings**
@@ -64,7 +64,7 @@ If your component is used frequently or stores large amounts of data, limiting s
 
 [00:02:25](https://www.youtube.com/watch?v=LA2WDi8G79E&t=00h02m25s)
 
-JCB can automatically compress and minify all JavaScript files during the component’s compilation.
+JCB can automatically compress and minify all JavaScript files during the component's compilation.
 
 * **Yes** – Minify JS files (recommended for production environments).
 * **No** – Keep JS files unminified (recommended for development).
@@ -91,7 +91,7 @@ This feature helps in maintaining proper credit and tracking development collabo
 UiKit is a front-end framework that JCB optionally supports in both backend and frontend development.
 
 Currently, UiKit is primarily implemented in limited backend areas.
-It is intended for potential future use in JCB’s frontend component structure (for example, when building frontend interfaces or dashboards).
+It is intended for potential future use in JCB's frontend component structure (for example, when building frontend interfaces or dashboards).
 
 You can safely leave these settings unchanged unless you are specifically working with UiKit-based front-end functionality.
 
@@ -114,7 +114,7 @@ Important notes:
 * If the key is removed, encrypted data will become permanently inaccessible.
 * Always store this key securely in an offline or backup location.
 
-This feature enhances the overall security of your component’s stored data.
+This feature enhances the overall security of your component's stored data.
 
 ---
 
@@ -138,7 +138,7 @@ These are designed for moving compiler-related folders outside of the web-access
 
 [00:06:50](https://www.youtube.com/watch?v=LA2WDi8G79E&t=00h06m50s)
 
-JCB integrates with Joomla’s Access Control List (ACL) system, providing extensive permission management for your components.
+JCB integrates with Joomla's Access Control List (ACL) system, providing extensive permission management for your components.
 
 Modern Joomla versions (3.5 and later) introduced Ajax-based saving, which allows JCB to update permissions without needing to reload the page or save the full configuration manually.
 
@@ -166,12 +166,12 @@ If needed, assign specific groups the **Configure Options Only** permission, all
 
 [00:10:05](https://www.youtube.com/watch?v=LA2WDi8G79E&t=00h10m05s)
 
-The **Preacher** view in the *Sermon Distributor* component is an example of how JCB’s permission structures operate.
+The **Preacher** view in the *Sermon Distributor* component is an example of how JCB's permission structures operate.
 
 In JCB, you can define whether permissions use:
 
 * `view.edit` – to create view-specific control (e.g., `preacher.edit`)
-* `core.edit` – to apply Joomla’s global edit/delete rules
+* `core.edit` – to apply Joomla's global edit/delete rules
 
 After compiling and installing the component, open **Options → Permissions** in Joomla to confirm that these new permission rules appear for the relevant views.
 
@@ -191,7 +191,7 @@ To enable field-level control:
 4. Save and close.
 5. Recompile and install the component.
 
-After installation, a new permission entry appears in Joomla’s **Permissions** tab (e.g., *Preacher edit name*).
+After installation, a new permission entry appears in Joomla's **Permissions** tab (e.g., *Preacher edit name*).
 This allows you to grant or restrict edit rights to specific user groups.
 
 To remove a field-level permission:

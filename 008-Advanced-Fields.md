@@ -9,13 +9,13 @@
 ## Overview
 
 Joomla Component Builder (JCB) supports a variety of field types, including **basic**, **dynamic**, and **custom advanced fields**.
-This guide focuses on **advanced fields**, explaining how to extend Joomla’s field functionality by building custom PHP-driven fields, handling global parameters, repeatable field sets, and linking data dynamically across views.
+This guide focuses on **advanced fields**, explaining how to extend Joomla's field functionality by building custom PHP-driven fields, handling global parameters, repeatable field sets, and linking data dynamically across views.
 
 Advanced fields allow you to:
 
 * Dynamically populate options using PHP logic
 * Reference global component settings
-* Extend Joomla’s default field types
+* Extend Joomla's default field types
 * Create repeatable structures
 * Restrict or filter data dynamically (e.g., user or preacher lists)
 
@@ -27,7 +27,7 @@ Advanced fields allow you to:
 
 ### Purpose
 
-This field type dynamically lists files from a **local directory**, based on your component’s global settings.
+This field type dynamically lists files from a **local directory**, based on your component's global settings.
 
 ### Steps
 
@@ -35,8 +35,8 @@ This field type dynamically lists files from a **local directory**, based on you
 
 2. In the **XML field definition**, write custom PHP to:
 
-   * Read the folder path from your component’s **global settings** (e.g., `localfolder`).
-   * Check if the folder exists; if not, create it using Joomla’s `JFolder` class.
+   * Read the folder path from your component's **global settings** (e.g., `localfolder`).
+   * Check if the folder exists; if not, create it using Joomla's `JFolder` class.
    * Retrieve all file names and populate them into an **options array**.
 
 3. Return this array to Joomla for rendering as a drop-down list.
@@ -55,7 +55,7 @@ When enabling **multiple selections**, ensure that the field is stored as `JSON`
 
 ---
 
-## 2. Building a “Sermon Preacher” Custom Field
+## 2. Building a "Sermon Preacher" Custom Field
 
 [00:05:32 → 00:06:56](https://www.youtube.com/watch?v=VpzYbifqv0M&t=00h05m32s)
 
@@ -74,7 +74,7 @@ This example demonstrates a field that displays a list of **preachers** from the
 
 [00:07:02 → 00:09:04](https://www.youtube.com/watch?v=VpzYbifqv0M&t=00h07m02s)
 
-Custom fields in JCB typically **extend Joomla’s native `JFormField` classes** such as:
+Custom fields in JCB typically **extend Joomla's native `JFormField` classes** such as:
 
 * `JFormFieldList`
 * `JFormFieldUser`
@@ -233,7 +233,7 @@ Repeatable fields are containers holding multiple sub-fields.
 
 1. Create the fields you want to repeat.
 2. Note their **field IDs** from the right-hand column.
-3. Add a new field of type **repeatable**, and list the IDs (comma-separated) in the **“Fields”** input.
+3. Add a new field of type **repeatable**, and list the IDs (comma-separated) in the **"Fields"** input.
 
 **Note:** You cannot nest repeatable fields, but you can include advanced custom fields inside them.
 
@@ -243,7 +243,7 @@ Repeatable fields are containers holding multiple sub-fields.
 
 [00:44:41 → 00:46:02](https://www.youtube.com/watch?v=VpzYbifqv0M&t=00h44m41s)
 
-Use Joomla’s [Icomoon font icons](https://docs.joomla.org/J3.x:Joomla_Standard_Icomoon_fonts) to customize buttons.
+Use Joomla's [Icomoon font icons](https://docs.joomla.org/J3.x:Joomla_Standard_Icomoon_fonts) to customize buttons.
 
 Example:
 
@@ -259,7 +259,7 @@ Example:
 
 When using **radio buttons** in repeatable fields:
 
-* Remove the **CSS “button” class**.
+* Remove the **CSS "button" class**.
 * Use the **dot-style radio** (`Searchable Yes/No`) instead of button-style to avoid rendering issues.
 
 ---
@@ -268,7 +268,7 @@ When using **radio buttons** in repeatable fields:
 
 | Concept                   | Key Insight                                           |
 | ------------------------- | ----------------------------------------------------- |
-| **Custom Field Types**    | Extend Joomla’s list fields for dynamic data          |
+| **Custom Field Types**    | Extend Joomla's list fields for dynamic data          |
 | **Global Integration**    | Access component-level settings using helpers         |
 | **Repeatable Structures** | Combine multiple fields in one repeatable container   |
 | **Dynamic PHP Logic**     | Populate dropdowns or filter data dynamically         |
@@ -280,7 +280,7 @@ When using **radio buttons** in repeatable fields:
 
 * Always **compile** your component after adding or editing custom fields.
 * Test your field logic by inspecting the compiled PHP files.
-* Use JCB’s placeholders (`###component###`) to maintain flexibility when renaming components.
+* Use JCB's placeholders (`###component###`) to maintain flexibility when renaming components.
 * For more examples or troubleshooting, refer to the JCB forums or GitHub discussions.
 
 ---

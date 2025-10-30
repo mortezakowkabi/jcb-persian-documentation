@@ -41,7 +41,7 @@ In the JCB admin interface:
 
 [00:02:11](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h02m11s)
 
-This command tells JCB to automatically include the “Create User” function in your helper class during compilation for both site and admin areas.
+This command tells JCB to automatically include the "Create User" function in your helper class during compilation for both site and admin areas.
 
 ---
 
@@ -75,7 +75,7 @@ $new = array(
 
 [00:03:26](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h03m26s)
 
-The helper method leverages Joomla’s built-in **User Registration Model**, creating the user via the standard Joomla API.
+The helper method leverages Joomla's built-in **User Registration Model**, creating the user via the standard Joomla API.
 
 It simplifies the process but **does not automatically assign users to groups**—that must be handled manually after creation.
 
@@ -85,12 +85,12 @@ It simplifies the process but **does not automatically assign users to groups**�
 
 [00:04:30](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h04m30s)
 
-Let’s use the **Experts** admin view as an example.
+Let's use the **Experts** admin view as an example.
 
 When creating a new Expert:
 
 1. Navigate to **Expert Database → Experts → New**.
-2. You’ll find a field labeled **Expert**, which allows you to select users within a specific group.
+2. You'll find a field labeled **Expert**, which allows you to select users within a specific group.
 3. Below it, a **Create User** button appears.
 
 [00:05:26](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h05m26s)
@@ -139,7 +139,7 @@ public function createUser()
 
 These methods:
 
-* Retrieve form data using Joomla’s input filter.
+* Retrieve form data using Joomla's input filter.
 * Validate and sanitize values.
 * Call the Helper method to create the user.
 
@@ -157,7 +157,7 @@ If you improve any of these functions, you can **fork the JCB project on GitHub*
 [00:14:17](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h14m17s)
 
 > **Note:** The `createUser()` method **does not** automatically add users to a Joomla User Group.
-> You’ll need to handle that logic in your component or through post-creation hooks.
+> You'll need to handle that logic in your component or through post-creation hooks.
 
 ---
 

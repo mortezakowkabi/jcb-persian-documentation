@@ -9,7 +9,7 @@ This tutorial explains the new **Library Manager** area in Joomla Component Buil
 ## 1. Understanding Libraries in JCB
 
 Libraries are external frameworks or tools that enhance your Joomla components.
-Previously, JCB supported three prebuilt libraries—**UiKit**, **FooTable**, and **No Library**—that could be toggled via the “Add UiKit” and “Add FooTable” options in the component settings.
+Previously, JCB supported three prebuilt libraries—**UiKit**, **FooTable**, and **No Library**—that could be toggled via the "Add UiKit" and "Add FooTable" options in the component settings.
 
 Now, with the **Library Manager**, libraries are handled dynamically and linked directly to specific **views**, allowing for greater flexibility and reuse across components.
 
@@ -28,7 +28,7 @@ However, this method was limited. Adding a new library required creating a folde
 administrator/components/com_componentbuilder/custom/
 ```
 
-You would then manually place the library files (for example, Bootstrap) inside a custom folder and refresh the component’s configuration. These files were then copied to the media directory when compiling.
+You would then manually place the library files (for example, Bootstrap) inside a custom folder and refresh the component's configuration. These files were then copied to the media directory when compiling.
 
 This approach worked but required manual configuration and duplicated effort for each component.
 
@@ -50,7 +50,7 @@ By setting a library to *Dynamic*, the global inclusion is turned off, and JCB a
 [00:05:43](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m43s)
 
 Open the **Libraries** section in JCB.
-You’ll find several predefined libraries:
+You'll find several predefined libraries:
 
 * **Bootstrap 4**
 * **UiKit 2**
@@ -75,7 +75,7 @@ Each library has configurable **File Behaviors** that control how its assets are
 * **Custom Script** – write your own PHP logic to include files dynamically.
 * **Do Not Add** – exclude files completely.
 
-You can switch between CDN links and local files by changing the **Type** field from “Link” to “Local.”
+You can switch between CDN links and local files by changing the **Type** field from "Link" to "Local."
 When compiling, JCB downloads and embeds the necessary files automatically.
 
 ---
@@ -98,10 +98,10 @@ Conditions are currently being developed, but their purpose is to allow selectiv
 You can:
 
 1. Create custom configuration fields in JCB.
-2. Link them to a library using “Library Config.”
+2. Link them to a library using "Library Config."
 3. Use those fields to toggle specific files dynamically during runtime.
 
-For example, a “Use Bootstrap” radio field could determine whether Bootstrap scripts are added to the page.
+For example, a "Use Bootstrap" radio field could determine whether Bootstrap scripts are added to the page.
 
 ---
 
@@ -125,7 +125,7 @@ This gives developers full control to write logic-driven inclusions and extend l
 To use a library in your component:
 
 1. Go to **Site Views**.
-2. Open a specific view (e.g., “Looks”).
+2. Open a specific view (e.g., "Looks").
 3. Select a library such as **Bootstrap v4** from the Library dropdown.
 
 Once selected, JCB filters the available **Snippets** to match that library.
@@ -143,7 +143,7 @@ You can import snippets for each library directly from the community:
 2. Choose a library (e.g., Bootstrap v4).
 3. Import snippets individually or use **Get All New Snippets** to bulk import all available snippets.
 
-Installed snippets will then appear under that library’s Snippets list, ready for use in your views.
+Installed snippets will then appear under that library's Snippets list, ready for use in your views.
 
 ---
 
@@ -209,7 +209,7 @@ Each view or layout can have multiple libraries attached, or even a bundle, depe
 [00:29:01](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h29m01s)
 
 The older library implementation in **Libs & Helpers** still works for backward compatibility.
-If you set a component to “Add UiKit 2 and 3” or “Add FooTable 2,” JCB continues to handle them globally.
+If you set a component to "Add UiKit 2 and 3" or "Add FooTable 2," JCB continues to handle them globally.
 However, the **Dynamic** method is recommended for new components as it gives you finer control and better scalability.
 
 ---

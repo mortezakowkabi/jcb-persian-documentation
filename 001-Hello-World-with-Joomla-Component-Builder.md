@@ -1,4 +1,4 @@
-# Building a “Hello World” Component with Joomla Component Builder v5
+# Building a "Hello World" Component with Joomla Component Builder v5
 
 *(Complete Beginner Walkthrough)*
 
@@ -11,9 +11,9 @@
 [01:55](https://youtu.be/1KBBtQUxMTc?t=115)
 
 This tutorial teaches you how to build a fully working Joomla component from scratch using **Joomla Component Builder (JCB)**.
-You’ll start with the simplest setup — a **“Hello World”** greeting — and end with a dynamic site view where you can list, view, and even edit those greetings from the frontend.
+You'll start with the simplest setup — a **"Hello World"** greeting — and end with a dynamic site view where you can list, view, and even edit those greetings from the frontend.
 
-**What you’ll do:**
+**What you'll do:**
 
 1. Install JCB
 2. Create a new field (`greeting`)
@@ -30,7 +30,7 @@ Download the latest JCB release from [VDM GitHub Releases](https://github.com/vd
 
 [02:46](https://youtu.be/1KBBtQUxMTc?t=166)
 
-Fields define the data columns your component will use. Here you’ll create a simple text field that stores greetings.
+Fields define the data columns your component will use. Here you'll create a simple text field that stores greetings.
 
 ### Steps
 
@@ -54,7 +54,7 @@ Fields define the data columns your component will use. Here you’ll create a s
 >
 > * `VARCHAR(255)` stores short text.
 > * `NOT NULL` makes it required.
-> * `Modelling Method` controls data handling (JSON, base64, etc.) — “Default” is fine here.
+> * `Modelling Method` controls data handling (JSON, base64, etc.) — "Default" is fine here.
 
 ---
 
@@ -62,7 +62,7 @@ Fields define the data columns your component will use. Here you’ll create a s
 
 [03:51](https://youtu.be/1KBBtQUxMTc?t=263)
 
-The **Admin View** connects fields to a database table and creates Joomla’s backend management screens.
+The **Admin View** connects fields to a database table and creates Joomla's backend management screens.
 
 ### Steps
 
@@ -89,7 +89,7 @@ This admin view manages greeting records in the backend.
 
 ---
 
-## 3. Create the Component “World”
+## 3. Create the Component "World"
 
 [04:55](https://youtu.be/1KBBtQUxMTc?t=295)
 
@@ -137,11 +137,11 @@ When done, click **Install** to add it directly to Joomla.
 ### Verify the Admin Area
 
 * Navigate to **Components → Hello World → Greetings**.
-* Click **New**, enter “Hi there James Sable”, and **Save & Close**.
-* Reopen, change to “Hi there Michael”, save, and check **Versions**.
+* Click **New**, enter "Hi there James Sable", and **Save & Close**.
+* Reopen, change to "Hi there Michael", save, and check **Versions**.
   [09:55](https://youtu.be/1KBBtQUxMTc?t=595)
 
-You’ll see version control and permissions working automatically.
+You'll see version control and permissions working automatically.
 
 ---
 
@@ -226,7 +226,7 @@ JCB lets you quickly build frontend pages (site views) to display data.
 
 [24:00](https://youtu.be/1KBBtQUxMTc?t=1440)
 
-If your new views don’t appear publicly:
+If your new views don't appear publicly:
 
 1. Uninstall the component.
 2. Reinstall it fresh — JCB applies public access on first install.
@@ -248,7 +248,7 @@ To keep existing data:
 3. (Optional) Set as **Home**
 4. **Save & Close**, then view the site.
 
-You’ll see “Hi there Michael”.
+You'll see "Hi there Michael".
 
 ---
 
@@ -294,7 +294,7 @@ In the template:
 ```
 
 Recompile and Install.
-If you click **Edit** without permission, Joomla shows “Not permitted.”
+If you click **Edit** without permission, Joomla shows "Not permitted."
 Login as an authorized user to see the edit form.
 
 ---
@@ -322,7 +322,7 @@ Use these to show or hide buttons depending on user rights in your templates.
 
 ## Result
 
-You’ve now built a Joomla component that supports:
+You've now built a Joomla component that supports:
 
 * Admin field definitions and database integration
 * Dynamic Gets and site views

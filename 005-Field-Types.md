@@ -81,7 +81,7 @@ When compiling your component in JCB, make sure to configure the **Global Settin
 * Ensure Git repository options are set (if using automatic pushing).
 * If not, deselect repository actions before compiling.
 
-If you encounter a warning like “Could not move file to Git repository,” it usually indicates that repository paths are unset — not an actual compile error.
+If you encounter a warning like "Could not move file to Git repository," it usually indicates that repository paths are unset — not an actual compile error.
 
 [06:35](https://youtu.be/OhLzvThDXls?t=395)
 Once compiled, click **Install** to deploy the component directly into your Joomla instance.
@@ -111,7 +111,7 @@ Inside **Admin Views**, JCB displays the fields mapped to that view.
 You can:
 
 * **Edit existing fields** directly in the view editor.
-* **Add new fields** using the “Add Field” button.
+* **Add new fields** using the "Add Field" button.
 
 This structure lets you manage many fields across multiple components efficiently.
 JCB stores each field definition and links it to the corresponding view.
@@ -142,9 +142,9 @@ JCB allows developers to create **custom field types** mapped to Joomla’s fiel
 ### Example use cases:
 
 * Extending Joomla’s repeatable field.
-* Adding custom attributes or logic (e.g., “Show On” conditions).
+* Adding custom attributes or logic (e.g., "Show On" conditions).
 
-The **“Show On”** option controls field visibility based on other field values — a JCB enhancement on top of Joomla’s native functionality.
+The **"Show On"** option controls field visibility based on other field values — a JCB enhancement on top of Joomla’s native functionality.
 
 > **Pro Tip:**
 > When adding new field types, always match Joomla’s standard naming and property conventions to ensure compatibility.
@@ -181,7 +181,7 @@ Example:
 Adding new attributes in JCB automatically appends them to the XML string used during compilation.
 
 [14:45](https://youtu.be/OhLzvThDXls?t=885)
-Each field type in JCB shows which **fields** use it — for instance, multiple text fields can share the “Text” field type definition.
+Each field type in JCB shows which **fields** use it — for instance, multiple text fields can share the "Text" field type definition.
 
 ---
 

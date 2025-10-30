@@ -1,4 +1,4 @@
-# Building a “Hello World” Component with Joomla Component Builder v5
+# Building a "Hello World" Component with Joomla Component Builder v5
 
 *(Complete Beginner Walkthrough)*
 
@@ -11,9 +11,9 @@
 [01:55](https://youtu.be/1KBBtQUxMTc?t=115)
 
 This tutorial teaches you how to build a fully working Joomla component from scratch using **Joomla Component Builder (JCB)**.
-You’ll start with the simplest setup – a **“Hello World”** greeting – and end with a dynamic site view where you can list, view, and even edit those greetings from the frontend.
+You'll start with the simplest setup – a **"Hello World"** greeting – and end with a dynamic site view where you can list, view, and even edit those greetings from the frontend.
 
-**What you’ll do:**
+**What you'll do:**
 
 1. Install JCB
 2. Create a new field (`greeting`)
@@ -30,7 +30,7 @@ Download the latest JCB release from [VDM GitHub Releases](https://github.com/vd
 
 [02:46](https://youtu.be/1KBBtQUxMTc?t=166)
 
-Fields define the data columns your component will use. Here you’ll create a simple text field that stores greetings.
+Fields define the data columns your component will use. Here you'll create a simple text field that stores greetings.
 
 ### Steps
 
@@ -44,7 +44,7 @@ Fields define the data columns your component will use. Here you’ll create a s
 
    * **Data Type** → Select `VARCHAR`
    * **Length** → `255` (typical for short text)
-   * **Null Switch** → choose `NOT NULL` (so it can’t be empty)
+   * **Null Switch** → choose `NOT NULL` (so it can't be empty)
    * **Modelling Method** → `Default`
 
      > *This defines how JCB models the field data in generated code.*
@@ -56,7 +56,7 @@ Fields define the data columns your component will use. Here you’ll create a s
 >
 > * `VARCHAR(255)` stores short text.
 > * `NOT NULL` makes it required.
-> * `Modelling Method` lets you choose JSON/base64/encryption options, but “Default” is fine here.
+> * `Modelling Method` lets you choose JSON/base64/encryption options, but "Default" is fine here.
 
 ---
 
@@ -64,7 +64,7 @@ Fields define the data columns your component will use. Here you’ll create a s
 
 [03:51](https://youtu.be/1KBBtQUxMTc?t=263)
 
-The **Admin View** connects fields to a database table and creates Joomla’s backend management screens.
+The **Admin View** connects fields to a database table and creates Joomla's backend management screens.
 
 ### Steps
 
@@ -91,7 +91,7 @@ This admin view will manage records of greetings in the backend.
 
 ---
 
-## 3. Create the Component “World”
+## 3. Create the Component "World"
 
 [04:55](https://youtu.be/1KBBtQUxMTc?t=295)
 
@@ -141,9 +141,9 @@ When done, click **Install** to add it directly to Joomla.
 ### Verify the Admin Area
 
 * Go to **Components → Hello World → Greetings**.
-* Click **New**, enter “Hi there James Sable”, then **Save & Close**.
-* Re-open, change it to “Hi there Michael”, save, and check **Versions**.
-  You’ll see automatic version control and permission handling.
+* Click **New**, enter "Hi there James Sable", then **Save & Close**.
+* Re-open, change it to "Hi there Michael", save, and check **Versions**.
+  You'll see automatic version control and permission handling.
   [09:55](https://youtu.be/1KBBtQUxMTc?t=595)
 
 ---
@@ -239,7 +239,7 @@ Dynamic Gets define what data each site view retrieves.
 
 [24:00](https://youtu.be/1KBBtQUxMTc?t=1440)
 
-If your new views don’t appear publicly:
+If your new views don't appear publicly:
 
 1. Uninstall the component.
 2. Re-install it fresh – JCB applies public access on first install.
@@ -260,7 +260,7 @@ To keep existing data:
 2. **Menu Item Type** → Component → Hello World → `Greeting`.
 3. Optionally set as **Home**.
 4. **Save & Close**, then view the site.
-   You’ll see “Hi there Michael”.
+   You'll see "Hi there Michael".
 
 ---
 
@@ -305,7 +305,7 @@ Recompile and install.
    ```
 3. Recompile and Install.
 
-If you click **Edit** without permission, Joomla shows a “not permitted” message.
+If you click **Edit** without permission, Joomla shows a "not permitted" message.
 Login as an authorized user to see the edit form.
 
 ---
@@ -329,7 +329,7 @@ Use it to show/hide buttons based on user rights in your templates.
 
 Congratulations 🎉
 
-In under 30 minutes you’ve built a component that supports:
+In under 30 minutes you've built a component that supports:
 
 * Admin field definitions and database integration
 * Dynamic Gets and site views

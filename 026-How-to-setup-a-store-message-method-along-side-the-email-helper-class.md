@@ -20,7 +20,7 @@ This tutorial shows how to:
 
 [00:00:24](https://www.youtube.com/watch?v=peVNLsAncGY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m24s)
 
-The **Email Helper Class** is automatically placed inside your component’s backend helper folder.
+The **Email Helper Class** is automatically placed inside your component's backend helper folder.
 Its path follows this pattern:
 
 ```
@@ -44,7 +44,7 @@ This syntax instructs JCB to locate and execute the email helper class dynamical
 
 ---
 
-## 3. The “Send” Method and Its Role
+## 3. The "Send" Method and Its Role
 
 [00:01:17](https://www.youtube.com/watch?v=peVNLsAncGY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m17s)
 
@@ -60,7 +60,7 @@ This check is performed using:
 if (method_exists('JobtrackingHelper', 'storeMessage'))
 ```
 
-This ensures the `storeMessage()` method is only called if it has been explicitly defined in your component’s **Admin Helper**.
+This ensures the `storeMessage()` method is only called if it has been explicitly defined in your component's **Admin Helper**.
 
 ---
 
@@ -72,7 +72,7 @@ This ensures the `storeMessage()` method is only called if it has been explicitl
 
 1. Open **Joomla Component Builder**.
 2. Go to your component.
-3. Navigate to **“Libs & Helpers”** in the left-hand menu.
+3. Navigate to **"Libs & Helpers"** in the left-hand menu.
 4. Scroll down to **Add PHP (admin_helper)**.
 
 [00:02:47](https://www.youtube.com/watch?v=peVNLsAncGY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m47s)
@@ -98,7 +98,7 @@ Typical parameters include:
 
 * `$subject` – The subject line of the sent email.
 * `$body` – The body content of the message.
-* `$recipient` – The recipient’s email address.
+* `$recipient` – The recipient's email address.
 * `$headers` – Optional headers used in the email.
 * `$attachments` – Any attached files.
 
@@ -110,7 +110,7 @@ You only need to handle the first **four values** in most cases.
 
 [00:04:17](https://www.youtube.com/watch?v=peVNLsAncGY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m17s)
 
-The Email Helper’s `send()` method checks for the existence of `storeMessage()` and, if found, passes the relevant variables:
+The Email Helper's `send()` method checks for the existence of `storeMessage()` and, if found, passes the relevant variables:
 
 ```php
 if (method_exists('JobtrackingHelper', 'storeMessage')) {
@@ -131,7 +131,7 @@ If it **does exist**, it executes the `storeMessage()` method—allowing you to 
 To associate stored messages with specific Joomla users:
 
 * Use the `getVar()` method from the **User Class**.
-* Match the email recipient to the user’s record and retrieve the user ID.
+* Match the email recipient to the user's record and retrieve the user ID.
 
 Example:
 
@@ -172,7 +172,7 @@ The `storeMessage()` method gives you complete control to:
 * Always **define `storeMessage()`** in your Admin Helper if you plan to track or store emails.
 * Use **default parameter values (`= null`)** to prevent runtime errors.
 * Employ the `method_exists()` check to ensure safe execution.
-* Combine this approach with Joomla’s native **logging or database storage** methods for reliability.
+* Combine this approach with Joomla's native **logging or database storage** methods for reliability.
 * Keep your code modular—avoid placing logic directly in the Email Helper.
 
 ---

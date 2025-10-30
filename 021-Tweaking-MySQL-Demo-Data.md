@@ -10,9 +10,9 @@
 ## Overview
 
 In Joomla Component Builder (JCB), **MySQL Tweaks** provide a flexible way to control which demo or dummy data gets included when compiling your component.
-This is especially helpful when maintaining **multiple versions** of the same component, where some versions require example data and others don’t.
+This is especially helpful when maintaining **multiple versions** of the same component, where some versions require example data and others don't.
 
-This guide uses the **“Editing a Component”** example to explain how the MySQL tweak works, how to use it effectively, and when to ignore it.
+This guide uses the **"Editing a Component"** example to explain how the MySQL tweak works, how to use it effectively, and when to ignore it.
 
 ---
 
@@ -28,9 +28,9 @@ This guide uses the **“Editing a Component”** example to explain how the MyS
 
 If your component has **multiple versions**, and some of them include demo data related to specific views or datasets, the MySQL tweak allows you to **include or exclude** that data per version.
 
-This setting is particularly useful if you’ve linked your view to a **dummy data table** or another database source.
+This setting is particularly useful if you've linked your view to a **dummy data table** or another database source.
 
-> **Tip:** This feature is only applicable when a **database connection** has been established between your component’s view and a data source in MySQL.
+> **Tip:** This feature is only applicable when a **database connection** has been established between your component's view and a data source in MySQL.
 
 ---
 
@@ -38,13 +38,13 @@ This setting is particularly useful if you’ve linked your view to a **dummy da
 
 [00:01:07](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m07s)
 
-For example, if you open one of JCB’s internal views, such as **Field Types**, and connect it to MySQL:
+For example, if you open one of JCB's internal views, such as **Field Types**, and connect it to MySQL:
 
 * Select **Yes** under *MySQL connection*.
 * Choose the relevant database table.
-* JCB will automatically **pull the field type data** into your component’s **build file**.
+* JCB will automatically **pull the field type data** into your component's **build file**.
 
-This ensures all your component’s data definitions are consistently included in the compiled output.
+This ensures all your component's data definitions are consistently included in the compiled output.
 
 ---
 
@@ -59,9 +59,9 @@ To customize this behavior, use the **Tweaking Feature** in the settings.
 
 When you open this tweak feature:
 
-* You’ll see several configurable options (e.g., *Custom Admin*, *MySQL to View Table*).
-* Some values may be set to **“No”**, meaning that data is excluded from the build.
-* If **MySQL** is enabled in a view, this section lets you specify **which IDs** from that view’s database should be included.
+* You'll see several configurable options (e.g., *Custom Admin*, *MySQL to View Table*).
+* Some values may be set to **"No"**, meaning that data is excluded from the build.
+* If **MySQL** is enabled in a view, this section lets you specify **which IDs** from that view's database should be included.
 
 [00:02:19](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m19s)
 
@@ -113,7 +113,7 @@ After setting your ID list, toggle **Include = Yes** to activate the tweak.
 
 [00:04:46](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m46s)
 
-If your component **does not include dummy or demo data**, there’s no need to configure the MySQL tweak.
+If your component **does not include dummy or demo data**, there's no need to configure the MySQL tweak.
 It will have no effect on your build output.
 
 > **Ignore Unused Tweaks:**
@@ -137,7 +137,7 @@ It will have no effect on your build output.
 * Access the **MySQL tweak** in component **Settings**.
 * Connect your view to MySQL if you want to include real or demo data.
 * Use **comma-delimited ID lists** to specify which entries to include.
-* Skip this step entirely if your component doesn’t use demo or example data.
+* Skip this step entirely if your component doesn't use demo or example data.
 
 > **Pro Tip:**
 > MySQL Tweaks are especially powerful when used in **multi-version component development**, helping you maintain clean data separation between production and demo builds.

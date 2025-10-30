@@ -20,7 +20,7 @@ There are two categories of fields in JCB:
 1. **Common (Basic) Field Types** – These are standard Joomla fields such as text, list, radio, editor, color, category, etc.
 2. **Advanced (Custom) Field Types** – These are specialized or dynamic fields that interact with other component data. These are covered in later tutorials after admin and site views are introduced.
 
-> **Tip:** Before creating custom fields, it’s important to understand how fields and views are connected within JCB.
+> **Tip:** Before creating custom fields, it's important to understand how fields and views are connected within JCB.
 
 ---
 
@@ -50,7 +50,7 @@ Each field corresponds to a MySQL column type, such as:
 You can change these data types in JCB.
 This flexibility allows developers to design more **complex and scalable** database structures.
 
-> **Note:** This feature is meant for developers with SQL experience. JCB empowers advanced customization rather than limiting you to “no-code” constraints.
+> **Note:** This feature is meant for developers with SQL experience. JCB empowers advanced customization rather than limiting you to "no-code" constraints.
 
 ---
 
@@ -85,7 +85,7 @@ The **store method** defines how data is stored in the database:
 > **Example:**
 >
 > * A checkbox field with multiple values should use JSON.
-> * Tag fields are handled differently and don’t require JSON encoding.
+> * Tag fields are handled differently and don't require JSON encoding.
 
 JCB automatically ensures checkbox data is stored as valid JSON, even if Joomla does not handle it correctly natively.
 
@@ -105,7 +105,7 @@ If a field is not working as expected, open the compiled files to locate and ins
 
 [00:10:28](https://www.youtube.com/watch?v=9NO2rKnC6Ug&t=628s)
 
-Let’s create an **email field** as an example:
+Let's create an **email field** as an example:
 
 | Setting      | Value          |
 | ------------ | -------------- |
@@ -158,7 +158,7 @@ These scripts follow the field wherever it is used in views, allowing reusable d
 
 [00:17:49](https://www.youtube.com/watch?v=9NO2rKnC6Ug&t=1069s)
 
-Joomla’s default system doesn’t support certain field types (like Date) inside **Repeatable Fields**.
+Joomla's default system doesn't support certain field types (like Date) inside **Repeatable Fields**.
 However, JCB allows advanced customization using inline PHP and JS in the **field script area**.
 
 Example (simplified):
@@ -198,7 +198,7 @@ Example:
 If the value and label are the same, you can omit the pipe (`|`).
 
 > **Dynamic Lists:**
-> Later tutorials will show how to make lists populate dynamically from other tables using JCB’s advanced field features.
+> Later tutorials will show how to make lists populate dynamically from other tables using JCB's advanced field features.
 
 ---
 
@@ -225,7 +225,7 @@ Avoid quotation marks inside values. Use HTML entities instead (e.g., `&quot;`).
 The color field allows color picking with a default value.
 
 * Type: `Color`
-* Label: e.g., “Select Color”
+* Label: e.g., "Select Color"
 * Name: lowercase identifier (e.g., `text_color`)
 
 If you change the type manually, JCB ignores it because the color field is **locked** to its predefined settings.
@@ -249,7 +249,7 @@ Or for multiple values:
 view:[1,4]
 ```
 
-> JCB also extends Joomla’s default *showon* with its own **advanced conditional system**, allowing more complex dependencies between fields.
+> JCB also extends Joomla's default *showon* with its own **advanced conditional system**, allowing more complex dependencies between fields.
 
 ---
 
@@ -257,10 +257,10 @@ view:[1,4]
 
 [00:29:18](https://www.youtube.com/watch?v=9NO2rKnC6Ug&t=1758s)
 
-To add Joomla’s native **Category** support:
+To add Joomla's native **Category** support:
 
 * Field Type: `Category`
-* Extension: Your component’s name (e.g., `com_example`)
+* Extension: Your component's name (e.g., `com_example`)
 
 You can also target a specific view:
 
@@ -268,7 +268,7 @@ You can also target a specific view:
 com_example.viewname
 ```
 
-> This automatically integrates Joomla’s category management system into your component.
+> This automatically integrates Joomla's category management system into your component.
 
 ---
 
@@ -284,7 +284,7 @@ You can configure:
 * Whether to show or hide editor buttons
 * Filter options
 
-These settings follow Joomla’s standard form behavior.
+These settings follow Joomla's standard form behavior.
 
 ---
 
@@ -320,7 +320,7 @@ Each field attribute can be marked as **Translatable**.
 When enabled, JCB automatically:
 
 1. Converts the label or value into a language constant.
-2. Adds it to your component’s language file.
+2. Adds it to your component's language file.
 3. Replaces the XML label/value with the language string.
 
 Example:
@@ -343,7 +343,7 @@ You have now learned how to create and configure **basic fields** in Joomla Comp
 * Conditional visibility (Showon).
 * Adding scripts and translations.
 
-Next, we move on to **connecting fields to views** — the foundation for building the component’s backend interface.
+Next, we move on to **connecting fields to views** — the foundation for building the component's backend interface.
 
 ---
 

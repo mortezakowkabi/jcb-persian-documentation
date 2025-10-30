@@ -39,8 +39,8 @@ However, this is **not the ideal location** to modify the data for HTML renderin
 
 **Timestamp:** [00:00:58](https://www.youtube.com/watch?v=bfl0l3AoLKU&t=00h00m58s)
 
-The setup involves **configuration fields** that define “warning” and “danger” time thresholds (for example, *3 weeks* and *1 week*).
-These configuration values are used in logic that determines when a field’s display should change visually — for instance, changing a job date to red when overdue.
+The setup involves **configuration fields** that define "warning" and "danger" time thresholds (for example, *3 weeks* and *1 week*).
+These configuration values are used in logic that determines when a field's display should change visually — for instance, changing a job date to red when overdue.
 
 This logic typically involves:
 
@@ -60,7 +60,7 @@ For example, you might:
 * Add a red class for overdue jobs.
 * Add a yellow class for upcoming deadlines.
 
-The code uses a **helper class method** called `fancyDate()` to format SQL dates (e.g., `2025-04-02`) into readable formats like “2 April 2025”.
+The code uses a **helper class method** called `fancyDate()` to format SQL dates (e.g., `2025-04-02`) into readable formats like "2 April 2025".
 
 However, once the component is compiled and loaded, the HTML tags applied by this method are **escaped** and displayed as plain text (e.g., `&lt;span class="danger"&gt;Overdue&lt;/span&gt;`).
 
@@ -74,7 +74,7 @@ This happens because the **Joomla escape method** (`htmlspecialchars()`) runs on
 
 To allow HTML output in your list view:
 
-1. Open your **component’s backend view** in JCB.
+1. Open your **component's backend view** in JCB.
 
    * Navigate to **Admin Views → Fields**.
    * Locate the relevant field (e.g., `job_status`).
@@ -91,7 +91,7 @@ To allow HTML output in your list view:
 
 **Timestamp:** [00:04:09](https://www.youtube.com/watch?v=bfl0l3AoLKU&t=00h04m09s)
 
-During compilation, JCB will now instruct Joomla not to escape that field’s output, allowing your HTML to render correctly.
+During compilation, JCB will now instruct Joomla not to escape that field's output, allowing your HTML to render correctly.
 
 ---
 
@@ -124,7 +124,7 @@ You should now see proper visual output — for example, dates highlighted in re
 
 * **Avoid unescaped user input.** Only disable escaping for fields whose content is system-controlled (e.g., generated programmatically or from trusted sources).
 * **Use helper classes** like `fancyDate()` to format and sanitize data before output.
-* **Test thoroughly** to confirm that your HTML renders correctly and doesn’t introduce layout issues.
+* **Test thoroughly** to confirm that your HTML renders correctly and doesn't introduce layout issues.
 
 ---
 

@@ -11,7 +11,7 @@
 [00:00:00](https://www.youtube.com/watch?v=CdSKSCTzmRA&t=00h00m00s)
 
 In this lesson, we explore how to set up **Admin Views** in Joomla Component Builder (JCB).
-Admin Views are the **foundation of your component’s database structure** — every Admin View corresponds to a **database table** that defines how your component’s data is stored and managed.
+Admin Views are the **foundation of your component's database structure** — every Admin View corresponds to a **database table** that defines how your component's data is stored and managed.
 
 Before this stage, you should already understand:
 
@@ -35,7 +35,7 @@ Each Admin View in JCB uses three name identifiers:
 | **System Name** | Unique name to differentiate similar views | `com_sermondistributor_preacher` |
 
 > **Tip:**
-> If you create two components that both have a “preacher” Admin View, use the **System Name** to differentiate them (e.g., include the component name).
+> If you create two components that both have a "preacher" Admin View, use the **System Name** to differentiate them (e.g., include the component name).
 
 This naming system enables **version control** and allows you to reuse Admin Views across different components.
 
@@ -77,7 +77,7 @@ Icons appear on the admin dashboard for each view.
 
 [00:06:15](https://www.youtube.com/watch?v=CdSKSCTzmRA&t=00h06m15s)
 
-JCB integrates Joomla’s Access Control List (ACL) but extends it with **granular, per-view permissions**.
+JCB integrates Joomla's Access Control List (ACL) but extends it with **granular, per-view permissions**.
 
 ### Common Permission Types
 
@@ -87,7 +87,7 @@ JCB integrates Joomla’s Access Control List (ACL) but extends it with **granul
 | **core.create** / **view.create** | Allow new records                     |
 | **core.delete** / **view.delete** | Allow deletion                        |
 | **core.edit.state**               | Change publish/unpublish state        |
-| **core.edit.own**                 | Edit only one’s own records           |
+| **core.edit.own**                 | Edit only one's own records           |
 | **core.access**                   | View-only access                      |
 | **core.batch.use**                | Control access to batch operations    |
 
@@ -139,7 +139,7 @@ Example: *Preacher → Sermons.*
 4. Enable **Add New Button** if you want to allow new child entries from within the parent view.
 
 > **Tip:**
-> Make sure the database relationships match — the child table should store the parent’s ID.
+> Make sure the database relationships match — the child table should store the parent's ID.
 
 ---
 
@@ -211,7 +211,7 @@ Use:
 * **Condition Field:** controlling field
 * **Value:** trigger value
 
-This system extends Joomla’s basic “ShowOn” logic and compiles into custom JavaScript automatically.
+This system extends Joomla's basic "ShowOn" logic and compiles into custom JavaScript automatically.
 
 ---
 
@@ -225,12 +225,12 @@ Used when **multiple conditions** must be true.
 * **Chain** – all conditions must be true
 
 > **Example:**
-> Show “Dropbox Auto Note” only if:
+> Show "Dropbox Auto Note" only if:
 >
 > * Source = Dropbox
 > * Built Option = Automatic
 
-JCB’s compiler generates all necessary JavaScript logic automatically.
+JCB's compiler generates all necessary JavaScript logic automatically.
 
 ---
 
@@ -309,6 +309,6 @@ Admin Views form the **core structure** of any JCB component.
 They link fields, define permissions, manage linked data relationships, and allow fine-grained UI control through tabs, conditions, and dynamic scripts.
 
 **Next Step:**
-Proceed to **Site Views**, where you’ll learn how frontend data display connects with these backend configurations.
+Proceed to **Site Views**, where you'll learn how frontend data display connects with these backend configurations.
 
 ---

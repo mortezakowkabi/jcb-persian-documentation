@@ -7,8 +7,8 @@
 
 ## **Overview**
 
-In this tutorial, we’ll explore how to **add admin views** to a component using **Joomla Component Builder (JCB)**.
-You’ll learn how to connect your created admin views to your component, configure visibility settings, enable key Joomla features like **Auto Check-In**, **Version History**, **Import/Export**, and **Front-End Editing**, and understand how these affect your workflow and generated component.
+In this tutorial, we'll explore how to **add admin views** to a component using **Joomla Component Builder (JCB)**.
+You'll learn how to connect your created admin views to your component, configure visibility settings, enable key Joomla features like **Auto Check-In**, **Version History**, **Import/Export**, and **Front-End Editing**, and understand how these affect your workflow and generated component.
 
 This section assumes that you have already:
 
@@ -28,7 +28,7 @@ This section assumes that you have already:
 4. Repeat this process for each view you wish to attach.
 
 **Tip:**
-If you have many admin views, type the view’s name in the search bar to locate it quickly.
+If you have many admin views, type the view's name in the search bar to locate it quickly.
 
 ---
 
@@ -39,11 +39,11 @@ If you have many admin views, type the view’s name in the search bar to locate
 When you assign an admin view, you can set an **icon** to represent it in the backend interface.
 
 * JCB uses **Joomla Standard Icomoon Fonts** for these icons.
-* When selecting an icon, you’ll see a preview immediately.
-* The icon you choose appears in the Joomla Administrator’s component sidebar and dashboard.
+* When selecting an icon, you'll see a preview immediately.
+* The icon you choose appears in the Joomla Administrator's component sidebar and dashboard.
 
 **Tip:**
-Choose icons that visually match your view’s purpose (e.g., a document icon for “Articles,” a user icon for “Authors”).
+Choose icons that visually match your view's purpose (e.g., a document icon for "Articles," a user icon for "Authors").
 
 ---
 
@@ -51,10 +51,10 @@ Choose icons that visually match your view’s purpose (e.g., a document icon fo
 
 [00:02:29](https://www.youtube.com/watch?v=39vY66X7GGU&t=00h02m29s)
 
-JCB gives you switches to control how each view appears in your component’s admin menu.
+JCB gives you switches to control how each view appears in your component's admin menu.
 
 * **Admin Menu:**
-  Enable this if you want the view to appear in the Joomla sidebar (under your component’s menu).
+  Enable this if you want the view to appear in the Joomla sidebar (under your component's menu).
 
 ---
 
@@ -67,7 +67,7 @@ JCB gives you switches to control how each view appears in your component’s ad
 * **Dashboard (Add Record):**
   Adds a button that allows quick creation of new records directly from the component dashboard.
 
-If you prefer not to show “Add Record” on the dashboard, set it to **No**.
+If you prefer not to show "Add Record" on the dashboard, set it to **No**.
 
 ---
 
@@ -88,10 +88,10 @@ You can include or exclude a view from the **submenu** (the collapsible navigati
 This feature automatically checks in items that have been checked out for longer than a defined period.
 
 * Enable **Auto Check-In** in your admin view settings.
-* Configure the timeout duration in your component’s **Global Settings** under “Auto Check-In Period.”
+* Configure the timeout duration in your component's **Global Settings** under "Auto Check-In Period."
 
 **Example:**
-If a user forgets to close an item, JCB’s auto-check-in feature will automatically release the lock after a set time.
+If a user forgets to close an item, JCB's auto-check-in feature will automatically release the lock after a set time.
 
 ---
 
@@ -104,7 +104,7 @@ The **History Component** integration allows Joomla to track every change made t
 **Steps to Use Version History:**
 
 1. Enable **Keep History** in the Admin View.
-2. Edit an item (e.g., “Preacher → A Capella Music”).
+2. Edit an item (e.g., "Preacher → A Capella Music").
 3. Click **Versions** at the top toolbar.
 4. You can:
 
@@ -120,7 +120,7 @@ You can also define how many historical versions Joomla keeps for each item.
 
 [00:14:23](https://www.youtube.com/watch?v=39vY66X7GGU&t=00h14m23s)
 
-If your view’s data will appear on the front end, enable **Metadata** support.
+If your view's data will appear on the front end, enable **Metadata** support.
 
 * Metadata adds SEO-related data (title, description, keywords) to your pages.
 * While less crucial for search engines today, it still improves content organization and social sharing previews.
@@ -133,7 +133,7 @@ Enable metadata for content views that represent unique or indexable front-end p
 
 [00:15:37](https://www.youtube.com/watch?v=39vY66X7GGU&t=00h15m37s)
 
-The **Access Switch** enables Joomla’s standard access-level dropdown (e.g., *Public*, *Registered*, *Special*).
+The **Access Switch** enables Joomla's standard access-level dropdown (e.g., *Public*, *Registered*, *Special*).
 
 This helps restrict content visibility based on user roles or groups.
 
@@ -148,14 +148,14 @@ This helps restrict content visibility based on user roles or groups.
 
 JCB can automatically add **Import/Export** functionality to each admin view.
 
-* Toggle **Export/Import Data** to “Yes” to enable it.
+* Toggle **Export/Import Data** to "Yes" to enable it.
 * After compilation, each admin list view will have:
 
   * An **Export** button (download CSV data).
   * An **Import** button (upload and map CSV data to database fields).
 
 **Note:**
-Encrypted fields require care — imported data won’t automatically re-encrypt unless handled manually.
+Encrypted fields require care — imported data won't automatically re-encrypt unless handled manually.
 
 ---
 
@@ -163,7 +163,7 @@ Encrypted fields require care — imported data won’t automatically re-encrypt
 
 [00:18:20](https://www.youtube.com/watch?v=39vY66X7GGU&t=00h18m20s)
 
-This is one of JCB’s most powerful features.
+This is one of JCB's most powerful features.
 When enabled, it allows **front-end editing** of your admin data.
 
 ### **How It Works**
@@ -176,7 +176,7 @@ When enabled, it allows **front-end editing** of your admin data.
 3. You can then add menu links or modules to expose the front-end editing interface.
 
 **Example:**
-A “Company” admin view, when enabled, generates a front-end page where logged-in users can:
+A "Company" admin view, when enabled, generates a front-end page where logged-in users can:
 
 * Edit company data.
 * Add new records (if permitted).
@@ -184,7 +184,7 @@ A “Company” admin view, when enabled, generates a front-end page where logge
 Permissions are enforced automatically — if a user lacks permission to edit certain fields, those will not appear in their form.
 
 **Important:**
-JCB generates the front-end code but doesn’t automatically create menu links.
+JCB generates the front-end code but doesn't automatically create menu links.
 You must manually link these site views via Joomla menu items or custom templates.
 
 ---
@@ -204,10 +204,10 @@ Adjust these numbers to organize your admin panel logically (for example, list v
 
 ## **Conclusion**
 
-Adding and configuring admin views is a critical part of JCB’s workflow.
-Through these settings, you can define how each view behaves in the backend and, optionally, how it integrates with your site’s front end.
+Adding and configuring admin views is a critical part of JCB's workflow.
+Through these settings, you can define how each view behaves in the backend and, optionally, how it integrates with your site's front end.
 
-By following these steps, you’ll ensure your component:
+By following these steps, you'll ensure your component:
 
 * Is user-friendly for administrators.
 * Supports Joomla-native features like auto check-in and version history.
@@ -217,6 +217,6 @@ By following these steps, you’ll ensure your component:
 ---
 
 **Next Steps:**
-Continue to the next tutorial on **Site Views** and **Dynamic GET Integration** to learn how to connect front-end data operations and extend your component’s dynamic functionality.
+Continue to the next tutorial on **Site Views** and **Dynamic GET Integration** to learn how to connect front-end data operations and extend your component's dynamic functionality.
 
 ---

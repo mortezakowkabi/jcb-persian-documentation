@@ -8,7 +8,7 @@
 
 ## Overview
 
-In many Joomla components, you may need to **filter the options of one list field based on another field’s value**.
+In many Joomla components, you may need to **filter the options of one list field based on another field's value**.
 A common use case is limiting the **Region** list to only show the regions belonging to a selected **Country**.
 
 This guide demonstrates how to achieve this dynamically in **Joomla Component Builder (JCB)** using a combination of:
@@ -25,7 +25,7 @@ You will learn how to connect two related fields, fetch data via Ajax, and dynam
 
 **Timestamp:** [00:00:00](https://www.youtube.com/watch?v=Z8FLifQOjUk&t=00h00m00s)
 
-The objective is to **limit a dropdown (list) field** based on another field’s value — for example:
+The objective is to **limit a dropdown (list) field** based on another field's value — for example:
 
 * When selecting a **Country**, only the corresponding **Regions** are loaded.
 * When a Country is **unselected**, the Region field should also reset.
@@ -34,7 +34,7 @@ This enhances usability and ensures data consistency.
 
 ---
 
-## 2. Example Scenario: Country and Region in “Job Tracking” Component
+## 2. Example Scenario: Country and Region in "Job Tracking" Component
 
 **Timestamp:** [00:00:43](https://www.youtube.com/watch?v=Z8FLifQOjUk&t=00h00m43s)
 
@@ -47,8 +47,8 @@ Example setup:
 When creating or editing a client:
 
 * Selecting a country loads only its related regions.
-* If a country has no regions, a “Create a Region” option appears.
-* If the country does have regions, it shows “Select a Region.”
+* If a country has no regions, a "Create a Region" option appears.
+* If the country does have regions, it shows "Select a Region."
 
 ---
 
@@ -84,7 +84,7 @@ To improve UX, show a loader while the dropdown updates:
 jQuery("#loading").show();
 ```
 
-This class can use Joomla’s built-in spinner or your custom loader.
+This class can use Joomla's built-in spinner or your custom loader.
 
 Then, clear existing options from the Region list before repopulating:
 
@@ -142,7 +142,7 @@ function setRegion(data) {
 
 If no regions exist for a country:
 
-* Display “Create a Region”
+* Display "Create a Region"
 * Optionally, open the modal to create one
 
 ```javascript
@@ -156,9 +156,9 @@ var create_a_region = "Create a Region";
 
 **Timestamp:** [00:12:22](https://www.youtube.com/watch?v=Z8FLifQOjUk&t=00h12m22s)
 
-If your list field includes a “Create” or “Edit” button:
+If your list field includes a "Create" or "Edit" button:
 
-* Ensure the JS function name follows JCB’s naming convention:
+* Ensure the JS function name follows JCB's naming convention:
   `regionButton()` if your field name is `region`.
 * Run a correction routine if necessary after repopulating the list.
 
@@ -229,11 +229,11 @@ Both the **Country** and **Region** fields are **Custom List Fields** created in
 ### Field: Region
 
 * **Type:** List
-* **Button:** `True` (to allow “Create” option)
+* **Button:** `True` (to allow "Create" option)
 * **Source Table:** Regions
 * **Dynamic Label:** Can use PHP in XML definition for field label or description
 
-You can add inline PHP in the XML or within the “Type PHP” area of the field definition.
+You can add inline PHP in the XML or within the "Type PHP" area of the field definition.
 
 > **Best Practice:**
 > Keep most logic in the Admin View (JavaScript + Ajax),
@@ -271,7 +271,7 @@ When implemented correctly:
 * Always sanitize input and validate returned data.
 * Use consistent naming for fields (e.g., `country`, `region`) to avoid confusion.
 * JCB compiles all Ajax methods into one file (`models/ajax.php`) — no need to manually add multiple controllers.
-* If targeting another component’s table, ensure you know the association field name.
+* If targeting another component's table, ensure you know the association field name.
 
 ---
 

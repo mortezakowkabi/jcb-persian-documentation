@@ -13,11 +13,11 @@
 The **Email Helper Class** in Joomla Component Builder (JCB) is a reusable class located in the **Helpers** section of a component. It enables developers to easily send emails from within any part of their component.
 
 * The helper file is usually named `email.php`.
-* It extends JCB’s abstract helper class.
-* It uses Joomla’s built-in mailer (`JMail`) to prepare and send messages.
+* It extends JCB's abstract helper class.
+* It uses Joomla's built-in mailer (`JMail`) to prepare and send messages.
 
 **How It Works:**
-When an email is sent, the helper creates an instance of Joomla’s mailer, loads the necessary variables, and sends the message with the proper configuration.
+When an email is sent, the helper creates an instance of Joomla's mailer, loads the necessary variables, and sends the message with the proper configuration.
 
 ---
 
@@ -30,7 +30,7 @@ When an email is sent, the helper creates an instance of Joomla’s mailer, load
 3. Turn **Add Email Helper** to **Yes**.
 
 > **Note:**
-> Enabling this adds the Email Helper class to your component, but it doesn’t automatically implement email functionality. You’ll still need to configure the related settings and fields.
+> Enabling this adds the Email Helper class to your component, but it doesn't automatically implement email functionality. You'll still need to configure the related settings and fields.
 
 ---
 
@@ -38,12 +38,12 @@ When an email is sent, the helper creates an instance of Joomla’s mailer, load
 
 **[00:01:47](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h01m47s)**
 
-To customize your component’s email settings, you must add **custom configuration fields**.
+To customize your component's email settings, you must add **custom configuration fields**.
 
-1. Go to your component’s **Settings** > **Config Area**.
+1. Go to your component's **Settings** > **Config Area**.
 2. Click **Add Config Field**.
 3. Scroll down to find the **Mail Configuration** section.
-4. Recreate the mail-related fields similar to those in Joomla’s Global Configuration (found in `configuration.xml`).
+4. Recreate the mail-related fields similar to those in Joomla's Global Configuration (found in `configuration.xml`).
 
 These include:
 
@@ -55,7 +55,7 @@ These include:
 * DKIM fields (optional but recommended)
 
 > **Tip:**
-> You can review Joomla’s default configuration file to match field names correctly. The “name” attribute is the key identifier used in code.
+> You can review Joomla's default configuration file to match field names correctly. The "name" attribute is the key identifier used in code.
 
 ---
 
@@ -67,9 +67,9 @@ Each config field includes:
 
 * **Name** – used in the code (e.g., `mailer`, `smtp_host`)
 * **Label** – visible in the UI
-* **Description** – explains the field’s purpose
+* **Description** – explains the field's purpose
 
-When writing code, ensure the **field name** matches exactly with what’s declared in your component’s XML.
+When writing code, ensure the **field name** matches exactly with what's declared in your component's XML.
 
 ---
 
@@ -77,14 +77,14 @@ When writing code, ensure the **field name** matches exactly with what’s decla
 
 **[00:03:35](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h03m35s)**
 
-In your component’s **Options** tab, you’ll find a **Mail Configuration** section.
+In your component's **Options** tab, you'll find a **Mail Configuration** section.
 Here, you can:
 
 * Enable/disable mailing via the **Mailer Switch** (`On` or `Off`)
-* Override Joomla’s global mail settings (if desired)
+* Override Joomla's global mail settings (if desired)
 * Set DKIM configuration for email authentication
 
-If you choose **Global**, the component will use Joomla’s default mail settings.
+If you choose **Global**, the component will use Joomla's default mail settings.
 
 ---
 
@@ -92,7 +92,7 @@ If you choose **Global**, the component will use Joomla’s default mail setting
 
 **[00:04:10](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h04m10s)**
 
-If you haven’t configured your component’s mail fields, JCB will use the **Joomla Global Configuration → Server → Mail Settings**.
+If you haven't configured your component's mail fields, JCB will use the **Joomla Global Configuration → Server → Mail Settings**.
 
 These include:
 
@@ -130,10 +130,10 @@ To use DKIM:
    * Selector
    * Domain
 
-If DKIM is set to “Yes” but values are missing, it won’t be applied.
+If DKIM is set to "Yes" but values are missing, it won't be applied.
 
 > **Recommendation:**
-> Review Joomla’s `JMail` DKIM documentation for advanced implementation details.
+> Review Joomla's `JMail` DKIM documentation for advanced implementation details.
 
 ---
 
@@ -141,8 +141,8 @@ If DKIM is set to “Yes” but values are missing, it won’t be applied.
 
 **[00:07:15](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h07m15s)**
 
-Within your helper code, the mailer is obtained from the component’s configuration.
-If `mailer` is set to **global**, Joomla’s configuration is used. Otherwise, the component’s custom settings apply.
+Within your helper code, the mailer is obtained from the component's configuration.
+If `mailer` is set to **global**, Joomla's configuration is used. Otherwise, the component's custom settings apply.
 
 The **`send()`** method handles:
 
@@ -152,7 +152,7 @@ The **`send()`** method handles:
 * Error handling and logging
 
 > **Performance Tip:**
-> Although capable of sending multiple emails at once, always consider your server’s limitations to avoid spam issues.
+> Although capable of sending multiple emails at once, always consider your server's limitations to avoid spam issues.
 
 ---
 
@@ -161,7 +161,7 @@ The **`send()`** method handles:
 **[00:08:40](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h08m40s)**
 
 The DKIM values are injected into the `$mailer` instance before sending.
-JCB uses Joomla’s extended `JMailer` class, allowing you to configure advanced mail options securely.
+JCB uses Joomla's extended `JMailer` class, allowing you to configure advanced mail options securely.
 
 ---
 
@@ -170,7 +170,7 @@ JCB uses Joomla’s extended `JMailer` class, allowing you to configure advanced
 **[00:09:12](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h09m12s)**
 
 The helper includes built-in error handling.
-If sending fails, it checks whether your component’s helper (`componentnamehelper.php`) has a **`storeMessage()`** method.
+If sending fails, it checks whether your component's helper (`componentnamehelper.php`) has a **`storeMessage()`** method.
 
 This custom method:
 

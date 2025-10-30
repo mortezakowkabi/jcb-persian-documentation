@@ -15,13 +15,13 @@ You can now **export language strings**, send them to translators, and **import*
 
 [00:00:51](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m51s)
 
-JCB does **not** rely on placeholders (like `COM_MYCOMPONENT_BACK`). Instead, it directly uses the **English string** (e.g., “Back”).
+JCB does **not** rely on placeholders (like `COM_MYCOMPONENT_BACK`). Instead, it directly uses the **English string** (e.g., "Back").
 
 * The same word (e.g., *back*) may appear in multiple contexts or views.
 * JCB intelligently ensures that you **translate each unique English string only once**, regardless of how many times it appears.
 
 **Example:**
-The word *“Create New”* is used in many admin and site views, but JCB only requires you to translate it once.
+The word *"Create New"* is used in many admin and site views, but JCB only requires you to translate it once.
 
 ---
 
@@ -42,9 +42,9 @@ When compiling your component:
 
 * JCB gathers English strings from **fields**, **site views**, and **admin views**.
 * These are dynamically populated in the **Language Translations** area.
-* You do not need to manually click “New” — the compiler handles it.
+* You do not need to manually click "New" — the compiler handles it.
 
-**Pro Tip:** If you run the compiler once and then revisit “Language Translations,” you’ll see all strings listed, ready for translation.
+**Pro Tip:** If you run the compiler once and then revisit "Language Translations," you'll see all strings listed, ready for translation.
 
 ---
 
@@ -55,7 +55,7 @@ When compiling your component:
 If you need to change a string, **edit it at its source**:
 
 * Go to the **Field**, **Admin View**, or **Site View** where the string was created.
-* Update the English string (e.g., changing “Demo” to “Demoo”).
+* Update the English string (e.g., changing "Demo" to "Demoo").
 * Recompile your component.
 * The old string will be automatically removed, and the new one will appear in Language Translations.
 
@@ -72,7 +72,7 @@ You must first create the language(s) you want to translate into:
 3. Enter the **Language Name** (e.g., Afrikaans) and **Tag** (e.g., `af-ZA`).
 4. Save and publish it.
 
-If you’re unsure of the correct language tag, visit [Joomla’s translation page](https://community.joomla.org/translations.html) to find the proper code (e.g., `nl-NL` for Dutch).
+If you're unsure of the correct language tag, visit [Joomla's translation page](https://community.joomla.org/translations.html) to find the proper code (e.g., `nl-NL` for Dutch).
 
 ---
 
@@ -83,12 +83,12 @@ If you’re unsure of the correct language tag, visit [Joomla’s translation pa
 To translate a string:
 
 1. Open **Language Translations**.
-2. Select the English string (e.g., “Author”).
+2. Select the English string (e.g., "Author").
 3. Choose your target **Language** (e.g., Afrikaans).
-4. Enter the translated value (e.g., “Outeur”).
+4. Enter the translated value (e.g., "Outeur").
 5. Save and close.
 
-From now on, every instance of “Author” will use the Afrikaans translation automatically.
+From now on, every instance of "Author" will use the Afrikaans translation automatically.
 
 ---
 
@@ -133,7 +133,7 @@ When importing:
 3. JCB will automatically map spreadsheet columns to database fields.
 4. Review and confirm the import.
 
-If you have multiple languages but only wish to import one, add the column header **“Ignore This Column”** above the ones to skip.
+If you have multiple languages but only wish to import one, add the column header **"Ignore This Column"** above the ones to skip.
 
 **Note:** If JCB cannot match an English string (due to changes), that line will be ignored.
 
@@ -157,7 +157,7 @@ After successful import:
 
 [00:15:38](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m38s)
 
-If **more than 50%** of a component’s strings have been translated, JCB automatically adds that language to the compiled component.
+If **more than 50%** of a component's strings have been translated, JCB automatically adds that language to the compiled component.
 
 You can adjust this threshold:
 
