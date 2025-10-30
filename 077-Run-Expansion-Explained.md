@@ -191,3 +191,5 @@ If you do not require it, you can safely ignore it. But for power users managing
 | **Outputs**       | Installed components, log messages, no package downloads |
 | **Default State** | Disabled                                                 |
 | **Future Use**    | Integration for team workflows & automated builds        |
+
+---

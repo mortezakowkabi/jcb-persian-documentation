@@ -92,3 +92,5 @@ Building a component needs these kinds of things [00:22:51](https://www.youtube.
 [00:23:50](https://www.youtube.com/watch?v=gEgwiVNj6N0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h23m50s)
 
 In the next tutorials, we will start looking at field types, and how to use field types to create fields. [00:23:56](https://www.youtube.com/watch?v=gEgwiVNj6N0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h23m56s) We will progress to eventually ending up with having this component fully functional and working. We will be illustrating all of these fields as they relate to these back end views that are linked to database tables.  [00:24:22](https://www.youtube.com/watch?v=gEgwiVNj6N0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h24m22s) Hopefully that will give a good enough insight and understanding of how all this should be done.
+
+---

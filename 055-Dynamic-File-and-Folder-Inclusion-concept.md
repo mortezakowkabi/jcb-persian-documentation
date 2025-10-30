@@ -3,10 +3,6 @@
 ### Tutorial Reference
 
 **Video:** "Dynamic File and Folder Inclusion Concept"
-**Transcript Source:** `055-Dynamic-File-and-Folder-Inclusion-concept.md`
-**Purpose:** To explain how to dynamically include external files, folders, and code into your Joomla Component Builder (JCB) components.
-**Video Timestamp Reference:** Each section includes timestamps for cross-reference with the tutorial.
-
 ---
 
 ## 1. Introduction to Dynamic Inclusion
@@ -217,3 +213,5 @@ However, with great flexibility comes great responsibility:
 * Keep external inclusions **version-controlled** via GitHub.
 * Periodically **recompile and verify hashes** to maintain component integrity.
 * Never use EXTERNALCODE from unverified or public sources.
+
+---

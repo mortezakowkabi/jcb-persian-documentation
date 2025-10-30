@@ -261,3 +261,5 @@ Community input is encouraged - open suggestions and issues on [GitHub](https://
 
 The **Translation Manager** in Joomla Component Builder automates one of the most time-consuming parts of multilingual component development.
 By centralizing all translation logic, string detection, and purging within JCB, developers can focus on functionality while maintaining fully translatable extensions.
+
+---

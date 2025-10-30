@@ -251,3 +251,5 @@ Once you've set up your component, you are ready to proceed with **building the 
 Remember: Always start with admin views, then move to site views for a complete Joomla component structure.
 
 [00:19:06](https://www.youtube.com/watch?v=hzbZlLl-xlA&t=00h19m06s)
+
+---

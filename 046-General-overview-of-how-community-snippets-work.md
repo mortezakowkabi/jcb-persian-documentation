@@ -1,4 +1,4 @@
-S# General Overview of How Community Snippets Work in Joomla Component Builder
+# General Overview of How Community Snippets Work in Joomla Component Builder
 
 This guide explains how the **Community Snippets system** works in **Joomla Component Builder (JCB)**. The new system introduces a **community concept**, allowing users to **share, import, and maintain** code snippets collaboratively within the JCB ecosystem.
 

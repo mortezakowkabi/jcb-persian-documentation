@@ -281,3 +281,5 @@ You have now learned how to:
 | 3    | Add logic inside the controller and model   |
 | 4    | Compile and test in Joomla                  |
 | 5    | Implement permission checks                 |
+
+---

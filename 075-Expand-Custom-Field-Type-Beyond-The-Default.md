@@ -233,3 +233,5 @@ You can view or dump this replace array to inspect available placeholders.
 | **Compiler Role**    | Replaces placeholders and builds field files dynamically |
 | **Reusable**         | Yes - can be used across multiple components             |
 | **Best Practice**    | Keep field generic and well-commented for reuse          |
+
+---

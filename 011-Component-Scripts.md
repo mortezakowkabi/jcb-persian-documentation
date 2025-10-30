@@ -305,3 +305,5 @@ If used wisely, it turns JCB into a **powerful rapid application framework** cap
 | Global Admin Event | Run scripts across backend pages     |
 | MySQL Dump         | Load default data                    |
 | Dashboard Methods  | Display dynamic data in admin panel  |
+
+---

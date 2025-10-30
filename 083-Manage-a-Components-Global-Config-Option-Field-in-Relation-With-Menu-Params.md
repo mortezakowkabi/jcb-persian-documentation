@@ -227,3 +227,5 @@ If you encounter issues or have feature requests:
 | Both Global + Menu | *(blank)*         | Both          |
 | Global Config only | `config`          | Global Config |
 | Menu Params only   | `menu`            | Menu Options  |
+
+---

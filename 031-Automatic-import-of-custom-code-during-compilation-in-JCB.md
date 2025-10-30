@@ -231,3 +231,5 @@ This ensures your distributed component is clean and ready for deployment.
 * Use the diamond brackets `<>` when you want JCB to detect an update.
 * Test your custom code with a **Demo Component** before production use.
 * Monitor the **Custom Code** tab for all extracted and managed scripts.
+
+---

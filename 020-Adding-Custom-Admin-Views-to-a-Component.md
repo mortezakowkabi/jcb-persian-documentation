@@ -160,3 +160,5 @@ Use these strategically to create a clean, user-friendly backend layout for your
 ## **Conclusion**
 
 Adding Custom Admin Views in Joomla Component Builder empowers developers to design rich, interactive administrative interfaces. By properly setting menu placement, target views, and dynamic data handling, you can build professional back-end dashboards and management tools without manually writing all the boilerplate code.
+
+---

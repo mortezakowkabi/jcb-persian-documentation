@@ -267,3 +267,5 @@ For reference, you can find the final PHP upload logic as a GitHub Gist provided
 * Use `JFile` and `JFolder` classes to move and clean files securely.
 * Add helper methods to keep your model clean and reusable.
 * Use JCB's **Custom PHP sections** to safely include custom logic during compilation.
+
+---

@@ -235,3 +235,5 @@ By linking a **DynamicGet** to a **Site View**:
 * Display results dynamically through your view templates and layouts.
 
 > **Next Step:** Experiment by creating your own Custom Gets, attach them to different Site Views, and review the generated model code to understand how JCB automates this data flow.
+
+---

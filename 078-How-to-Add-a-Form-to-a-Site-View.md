@@ -1,10 +1,5 @@
 # How to Add a Form to a Site View
 
-*Tutorial 078 - Joomla Component Builder Documentation*
-*Based on video transcript and latest JCB methods*
-
----
-
 ## Introduction
 
 > [00:00:10](https://www.youtube.com/watch?v=UVICsD82oWk&t=00h00m10s)
@@ -275,3 +270,5 @@ This is an ideal reference for building your own dynamic site forms.
 > [00:30:00](https://www.youtube.com/watch?v=UVICsD82oWk&t=00h30m00s)
 
 By following these steps, you can safely and efficiently add forms to your JCB Site Views-leveraging Joomla's MVC structure and JCB's automation while maintaining security and clean architecture.
+
+---

@@ -239,3 +239,5 @@ For example:
 
 JCB automates the complex XML, MVC, and API mappings Joomla! needs to build robust components.
 Field types are at the heart of this process - understanding how they link to fields, views, and XML output will help you design efficient and scalable components.
+
+---

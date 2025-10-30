@@ -217,3 +217,5 @@ You have now learned how to:
 5. Understand how JCB auto-detects and integrates help structures.
 
 This process makes your components more **user-friendly** and **self-documented**, reducing support requests and improving the user experience.
+
+---

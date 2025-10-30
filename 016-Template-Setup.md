@@ -138,3 +138,5 @@ This is how your template becomes part of the main component view, ensuring that
 * Language strings are managed automatically for English but can be extended.
 * Code snippets and JS can be safely added for UI customization.
 * Templates are linked to main views via the Joomla `loadTemplate()` method.
+
+---

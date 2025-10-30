@@ -34,3 +34,5 @@ When JCB compiles your component, it creates these files automatically - for exa
 
 ```xml
 <addfieldpath path="administrator/components/com_example/models/fields" />
+
+---

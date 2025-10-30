@@ -1,8 +1,7 @@
 # Setup Local Development Environment with Bitnami
 
 > **Video Reference:** [YouTube Tutorial](https://www.youtube.com/watch?v=zpS52k89YcI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-> **Duration:** ~14 minutes
-> **Purpose:** Learn how to quickly set up a self-contained Joomla development environment using Bitnami - ideal for Joomla Component Builder (JCB) development.
+Learn how to quickly set up a self-contained Joomla development environment using Bitnami - ideal for Joomla Component Builder (JCB) development.
 
 ---
 
@@ -236,3 +235,5 @@ To uninstall:
 * Easy file access for debugging and component editing.
 * Built-in phpMyAdmin and service control.
 * Ideal for **local JCB component creation and testing**.
+
+---

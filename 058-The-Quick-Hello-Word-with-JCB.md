@@ -174,3 +174,5 @@ From here, you can begin customizing your Hello World component:
 **Conclusion:**
 The "Quick Hello World" is an essential first step to understanding JCB's workflow - from importing a package to deploying it live.
 With these steps mastered, you're ready to build and customize your own Joomla components confidently.
+
+---

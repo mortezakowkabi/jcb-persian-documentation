@@ -239,3 +239,4 @@ If you often reuse complex JavaScript or PHP snippets across views, fields, or l
 Would you like me to format this as a **publish-ready JCB documentation page** (with front matter, intro, and consistent style used in previous manuals from your project)?
 That would make it ready for inclusion in your JCB Docs series.
 
+---

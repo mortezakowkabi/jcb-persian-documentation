@@ -175,3 +175,5 @@ Custom Admin Views in JCB enable you to:
 * Reuse **layouts and templates** across multiple views.
 
 They are powerful for displaying advanced data, combining results, or building specialized dashboards directly in your Joomla admin area.
+
+---

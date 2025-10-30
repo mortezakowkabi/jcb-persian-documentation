@@ -226,3 +226,5 @@ If previously mapped correctly, the component will behave identically on the new
 
 The **Export-Import of Fully Mapped Components** feature in Joomla Component Builder greatly simplifies the process of **sharing**, **backing up**, and **migrating** complex JCB projects.
 By preserving all linked structures and assets, developers can confidently move complete projects between installations with minimal effort.
+
+---

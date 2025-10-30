@@ -3,10 +3,6 @@
 ## **Overview**
 
 **Video Source:** [VDM Tutorials - Drag and Drop Upload Functionality in JCB](https://www.youtube.com/watch?v=UvzDyVQyHDI)
-**Duration:** ~1h19m
-**Purpose:** Learn how to implement drag-and-drop file uploading with automated image cropping in JCB using UIkit and custom JavaScript/PHP integration.
-**Last Updated:** 2025
-
 This guide explains how to build a dynamic drag-and-drop file uploader within JCB's component structure, including server-side Ajax handling, automated image cropping, and secure file storage.
 
 ---
@@ -261,9 +257,3 @@ This advanced drag-and-drop upload system provides:
 * **Joomla Component Builder:** [https://joomlacomponentbuilder.com](https://joomlacomponentbuilder.com)
 
 ---
-
-### **End of Tutorial**
-
-**Runtime:** 01:19:07
-**Author:** Vast Development Method (VDM)
-**Subject:** Implementing Drag-and-Drop File Upload Functionality in JCB Components

@@ -141,3 +141,5 @@ It will have no effect on your build output.
 
 > **Pro Tip:**
 > MySQL Tweaks are especially powerful when used in **multi-version component development**, helping you maintain clean data separation between production and demo builds.
+
+---

@@ -177,3 +177,5 @@ This automation makes JCB even more powerful - capable of **writing your SQL upd
 It saves time, prevents errors, and ensures your components remain consistent and upgradeable.
 
 > "Auto SQL generation makes JCB one of the most advanced Joomla development tools - handling database evolution dynamically and intelligently."
+
+---

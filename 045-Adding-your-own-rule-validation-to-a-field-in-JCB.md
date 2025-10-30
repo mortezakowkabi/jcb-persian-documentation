@@ -1,9 +1,5 @@
 # Adding Your Own Rule Validation to a Field in Joomla Component Builder (JCB)
 
-This guide explains how to **create and apply a custom validation rule** to a field within a Joomla Component Builder (JCB) component. It follows the workflow shown in the JCB tutorial video and reflects the current JCB v2.6.0 workflow.
-
----
-
 ## Overview
 
 Validation rules ensure that field values meet certain conditions **before being saved** to the database. JCB supports Joomla's built-in validation system and allows developers to add **custom rules** using JFormRule classes.
@@ -26,7 +22,7 @@ In this guide, we will:
 3. Locate the **Greetings** field (usually of type `Textarea`).
 4. Check the field attributes - if the `validation` option is missing, it can be added manually in the Fieldtype configuration.
 
-> 💡 *Tip: If your JCB version doesn't have the "validation" property available, you can edit the field type directly to add it.*
+> *Tip: If your JCB version doesn't have the "validation" property available, you can edit the field type directly to add it.*
 
 ---
 
@@ -39,9 +35,9 @@ In this guide, we will:
 3. Add a new attribute:
 
    * **Name:** `validate`
-   * **Adjustable:** ✅ Yes
-   * **Required:** ❌ No
-   * **Translatable:** ❌ No
+   * **Adjustable:** Yes
+   * **Required:** No
+   * **Translatable:** No
    * **Description:** *(A rule to validate this field before saving.)*
 4. Save and close.
 
@@ -192,9 +188,9 @@ return false;
 2. Add a new attribute:
 
    * **Name:** `message`
-   * **Changeable:** ✅ Yes
-   * **Translatable:** ✅ Yes
-   * **Optional:** ✅ Yes
+   * **Changeable:** Yes
+   * **Translatable:** Yes
+   * **Optional:** Yes
    * **Description:** *(Displayed when validation fails.)*
 3. Save and close.
 4. In your **Greetings** field XML, add:

@@ -213,3 +213,5 @@ By following these steps, you'll ensure your component:
 * Supports Joomla-native features like auto check-in and version history.
 * Provides flexible access and import/export capabilities.
 * Can extend seamlessly to the front-end for site-level editing.
+
+---

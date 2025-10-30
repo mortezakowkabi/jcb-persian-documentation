@@ -183,3 +183,5 @@ You'll now see that:
 ## Summary
 
 Overwriting default fields in Joomla Component Builder provides flexibility in how information is displayed across your component's backend views. Whether you need to reposition fields, show additional metadata, or customize their labels, following this structured method ensures your changes persist through future compiles and updates.
+
+---

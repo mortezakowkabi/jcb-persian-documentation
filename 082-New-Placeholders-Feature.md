@@ -196,3 +196,5 @@ It empowers developers to:
 * Dynamically adjust text or code values based on context.
 
 As JCB continues to evolve, placeholders will play a key role in improving component interoperability and developer productivity.
+
+---

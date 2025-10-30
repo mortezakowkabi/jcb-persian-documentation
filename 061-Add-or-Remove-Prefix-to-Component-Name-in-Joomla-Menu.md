@@ -11,7 +11,7 @@ This tutorial explains the new Joomla Component Builder (JCB) feature that allow
 In earlier versions of JCB, components automatically included a prefix symbol (like a small arrow) before their name in the Joomla admin menu. For example, your component might appear as:
 
 ```
-➤ Component Builder
+Component Builder
 ```
 
 With the new feature, you can now **customize or remove this prefix** entirely.

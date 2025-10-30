@@ -254,3 +254,5 @@ You can now:
 | 6    | Recompile Component                | JCB Compiler     |
 | 7    | Edit Template to Display Fields    | Site Template    |
 | 8    | Test and Adjust Display            | Joomla Front-End |
+
+---

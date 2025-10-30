@@ -199,3 +199,5 @@ By following these steps, you have:
 * Controlled access via JCB's built-in permission system
 * Added manual links to handle "Edit" and "New" functionality
 * Understood how `getAction()` manages permissions dynamically
+
+---

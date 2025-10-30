@@ -165,3 +165,5 @@ By following proper save-compile-update workflows, you can maintain robust, vers
 [00:10:16](https://www.youtube.com/watch?v=zN2M15fzf_M)
 
 This automated process streamlines Joomla component development, minimizing errors and aligning perfectly with Joomla's standard database update behavior.
+
+---

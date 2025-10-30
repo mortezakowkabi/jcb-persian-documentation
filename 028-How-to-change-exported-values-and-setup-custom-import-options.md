@@ -259,3 +259,5 @@ This flexibility allows complex integrations like:
 
 This feature set makes JCB exceptionally powerful for large-scale data management.
 By mastering custom **export and import scripting**, you can make your Joomla components behave like professional, data-driven systems adaptable to any client's needs.
+
+---

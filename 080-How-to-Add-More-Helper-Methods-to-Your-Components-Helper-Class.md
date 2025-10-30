@@ -230,3 +230,5 @@ However, for simple helper methods, it's usually better to add them directly to 
 Adding helper methods is a fundamental technique in Joomla Component Builder development. It enables you to centralize functionality, reuse logic efficiently, and maintain cleaner component code.
 
 Experiment with both built-in helper areas and global events to determine the structure that best fits your project.
+
+---

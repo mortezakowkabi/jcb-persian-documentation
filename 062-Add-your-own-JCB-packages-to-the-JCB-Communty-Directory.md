@@ -83,7 +83,7 @@ To contribute a package:
 2. **Clone** your forked version to your development environment.
 3. Add your JCB package to your cloned repository.
 
-> 💡 **Tip:**
+> **Tip:**
 > You'll need a Linux or compatible environment that supports Bash to run the `hash.sh` script later in this process.
 
 ---

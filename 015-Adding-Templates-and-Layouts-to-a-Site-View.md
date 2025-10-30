@@ -183,3 +183,5 @@ By combining templates and layouts effectively:
 * Templates have access to `$this` and all global view properties.
 * Layouts require explicit variable passing.
 * Joomla's conventions govern how templates and layouts can be nested.
+
+---

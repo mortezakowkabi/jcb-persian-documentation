@@ -28,7 +28,7 @@ Before you create a PR, make sure you have:
 4. **Committed** all your changes with clear commit messages.
 5. **Synchronized your branch** with the upstream (master) branch to avoid conflicts.
 
-> 💡 **Tip:** If you're unsure about forking or syncing your repository, watch the **previous tutorial** in the playlist before proceeding.
+> **Tip:** If you're unsure about forking or syncing your repository, watch the **previous tutorial** in the playlist before proceeding.
 
 ---
 
@@ -69,7 +69,7 @@ You can also review:
   FooTable - (Layout) FooTable.json → FooTable - (Table) FooTable.json
   ```
 
-> ✅ **Good practice:** Write clear and concise commit messages to make review easier and faster.
+> **Good practice:** Write clear and concise commit messages to make review easier and faster.
 
 ---
 
@@ -103,7 +103,7 @@ Start small. Submit a few snippets at a time, especially if this is your first c
 > * Updated FooTable snippet layout to table type
 > * Improved usage description field
 
-> 🧭 In future, JCB may include predefined naming conventions and templates for pull request titles.
+> In future, JCB may include predefined naming conventions and templates for pull request titles.
 
 ---
 
@@ -137,7 +137,7 @@ After submission:
 * Wait for admins to review.
 * They may ask questions or request clarifications before merging.
 
-> 🧠 **Note:** The review process ensures quality control and consistent naming and documentation across all community snippets.
+> **Note:** The review process ensures quality control and consistent naming and documentation across all community snippets.
 
 Once approved by at least **two reviewers**, your pull request can be merged.
 
@@ -185,7 +185,7 @@ Example:
 
 This will mark it as **non-existent** in your snippet repository.
 
-> ✨ **Goal:** To make snippet sharing easy and collaborative without complex database updates.
+> **Goal:** To make snippet sharing easy and collaborative without complex database updates.
 
 ---
 
@@ -196,6 +196,6 @@ When you contribute snippets:
 * Your **name** is associated with the change in Git history.
 * This allows you to **gain recognition** within the JCB community.
 
-> 🏗️ "Share your snippets, help others, and make Joomla Component Builder stronger!"
+> "Share your snippets, help others, and make Joomla Component Builder stronger!"
 
 ---

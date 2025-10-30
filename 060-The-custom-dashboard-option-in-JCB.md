@@ -1,9 +1,6 @@
 # The Custom Dashboard Option in Joomla Component Builder (JCB)
 
 > **Tutorial Reference:** [Video 60 - The Custom Dashboard Option in JCB](https://www.youtube.com/watch?v=tU7TeYn1Djo)
-> **Timestamped Transcript Integrated**
-> **Updated for:** Latest JCB Version (2025)
-
 ---
 
 ## Overview
@@ -157,7 +154,7 @@ Once done:
 * The original JCB dashboard is restored.
 * All dashboard files are re-added automatically.
 
-> 💡 **Tip:** Switching between dashboards doesn't harm your component.
+> **Tip:** Switching between dashboards doesn't harm your component.
 > You can safely experiment with different layouts or restore defaults anytime.
 
 ---

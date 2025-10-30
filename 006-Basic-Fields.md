@@ -339,3 +339,5 @@ You have now learned how to create and configure **basic fields** in Joomla Comp
 * Data storage methods (Default, JSON, Base64).
 * Conditional visibility (Showon).
 * Adding scripts and translations.
+
+---

@@ -184,3 +184,5 @@ A typical use case might be an automated **notification system**:
 * When a user action triggers an email (e.g., job update or form submission),
 * The message is sent using the Email Helper,
 * Then stored via `storeMessage()` for audit tracking or later review.
+
+---

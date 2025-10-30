@@ -186,3 +186,5 @@ Once you've configured your Site Views:
 **Video Reference:**
 *Watch the full tutorial on YouTube:*
 [Adding Site Views to a Component - Joomla Component Builder](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+
+---

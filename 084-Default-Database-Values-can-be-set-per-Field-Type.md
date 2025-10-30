@@ -128,3 +128,5 @@ Once saved, these configurations automatically apply each time you create new fi
 This feature makes it easy to maintain a **consistent and efficient workflow** when designing components in Joomla Component Builder. Setting **default database values per field type** eliminates repetitive setup work and ensures your database structures stay uniform across all components.
 
 By taking a few minutes to configure your most-used field types, you can significantly speed up component development in JCB.
+
+---

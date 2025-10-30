@@ -32,7 +32,7 @@ You'll need:
 
 The official JCB Snippets repository is hosted at:
 
-👉 [https://github.com/vdm-io/Joomla-Component-Builder-Snippets](https://github.com/vdm-io/Joomla-Component-Builder-Snippets)
+[https://github.com/vdm-io/Joomla-Component-Builder-Snippets](https://github.com/vdm-io/Joomla-Component-Builder-Snippets)
 
 ### Forking the Repository
 
@@ -223,16 +223,5 @@ You are now ready to create a **pull request** (covered in the next tutorial).
 * Write **clear and descriptive commit messages**.
 * Use **separate commits** for new, improved, and moved snippets.
 * Keep your fork regularly **synced** with upstream before submitting pull requests.
-
----
-
-### Helpful Links
-
-* **Official JCB Snippets Repository:**
-  [https://github.com/vdm-io/Joomla-Component-Builder-Snippets](https://github.com/vdm-io/Joomla-Component-Builder-Snippets)
-* **Git Quick Start (Udemy):**
-  [https://www.udemy.com/git-quick-start/](https://www.udemy.com/git-quick-start/)
-* **Uikit Accordion Docs:**
-  [https://getuikit.com/docs/accordion](https://getuikit.com/docs/accordion)
 
 ---

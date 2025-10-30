@@ -1,10 +1,6 @@
 # Quick Subform Demonstration
 
 **Tutorial Source:** [YouTube - Quick Subform Demonstration](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
-**Author:** Joomla Component Builder Team
-**Purpose:** Learn how to create and implement subforms in Joomla Component Builder (JCB).
-**Difficulty Level:** Beginner to Intermediate
-
 ---
 
 ## 1. Introduction - Community Request

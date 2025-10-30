@@ -183,3 +183,5 @@ If you wish to contribute or request help documentation for your component, cont
 * For **repeatable fields**, ensure dynamic initialization using JavaScript loops.
 * Explore **Component Builder's script integration** for full control.
 * Leverage the **JCB Wiki** for learning and contributing.
+
+---

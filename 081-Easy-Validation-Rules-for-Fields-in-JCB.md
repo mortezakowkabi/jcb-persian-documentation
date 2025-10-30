@@ -247,3 +247,5 @@ JCB's **Validation Rule** system streamlines validation logic across your compon
 You can now create, reuse, and maintain validation rules efficiently - with full automatic integration during compilation.
 
 This ensures clean, reliable data validation that follows Joomla's standards while remaining easy to extend and maintain.
+
+---

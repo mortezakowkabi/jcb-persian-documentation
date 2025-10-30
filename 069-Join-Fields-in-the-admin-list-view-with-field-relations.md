@@ -7,7 +7,7 @@
 Joomla Component Builder (JCB) version **2.8** introduced a powerful new feature: **Field Relations** for joining fields directly within the **Admin List View**.
 This allows you to **combine multiple field values into a single display column** while keeping the ability to **filter and search** using those same fields.
 
-> ⚠️ If you've used **custom scripting** in your component list views before upgrading, note that the new build structure may affect your custom code placement. After upgrading, review and reinsert any custom code snippets where needed.
+> If you've used **custom scripting** in your component list views before upgrading, note that the new build structure may affect your custom code placement. After upgrading, review and reinsert any custom code snippets where needed.
 
 ---
 
@@ -98,7 +98,7 @@ if (!empty($item->{1222})) {
 }
 ```
 
-> 💡 **Tip:** Once you confirm which field IDs map to which values, remove JCB's generated comments for cleaner output.
+> **Tip:** Once you confirm which field IDs map to which values, remove JCB's generated comments for cleaner output.
 
 You can use any valid PHP logic or even call functions for advanced behavior.
 

@@ -1,10 +1,6 @@
 # Dynamic Router Implementation Explained
 
 **Video Reference:** [Dynamic Router Implementation Explained on YouTube](https://www.youtube.com/watch?v=hYycPLbaMos)
-**Tutorial Source:** Joomla Component Builder (JCB) Official Series
-**Component Example:** `com_sermondistributor`
-**Duration:** ~15 minutes
-
 ---
 
 ## Overview
@@ -225,3 +221,5 @@ Developers are encouraged to contribute via JCB's **GitHub repository** to refin
 * Avoid editing `router.php` manually unless necessary.
 * Always recompile and reinstall to apply changes.
 * Stay updated with new JCB releases for smarter routing logic.
+
+---

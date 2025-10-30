@@ -221,3 +221,5 @@ echo JLayoutHelper::render('sub.layout.name', $subData);
 * Reference **global parameters** in `config.xml` to standardize look and feel.
 * When in doubt, check `$displayData` to see what data is available.
 * Reuse layouts to maintain **DRY** (Don't Repeat Yourself) principles.
+
+---

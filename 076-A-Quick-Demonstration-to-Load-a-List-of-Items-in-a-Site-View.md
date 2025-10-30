@@ -256,3 +256,5 @@ This same process can be used to create similar "All Items" views for any entity
 * Config fields map to XML definitions in `/admin/config.xml`.
 * Use `JRoute::_()` for SEF-compliant links.
 * Pagination defaults are managed through Joomla's core `pagination.php`.
+
+---

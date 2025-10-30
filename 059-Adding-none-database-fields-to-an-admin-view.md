@@ -149,8 +149,3 @@ If your use case doesn't involve these scenarios, you can safely continue using 
 * Remember: these fields are **excluded** from database schema generation and must be **explicitly processed** during save.
 
 ---
-
-**Tutorial Reference:**
-*"Adding None Database Fields to an Admin View" - JCB Official Tutorial*
-*Video Duration: ~5 minutes*
-*Based on latest Joomla Component Builder version and Admin View UI.*

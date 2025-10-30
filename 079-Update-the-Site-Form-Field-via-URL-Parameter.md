@@ -296,3 +296,5 @@ This method ensures:
 * Cleaner integration with Joomla.
 * Automated controller/model code generation.
 * Maintainable, secure frontend form handling.
+
+---

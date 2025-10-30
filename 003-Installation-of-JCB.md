@@ -175,3 +175,5 @@ The tutorial will continue by exploring **Field Types** in detail as the next st
 | 3    | Install on test Joomla site    | Test on a blank installation to confirm success              |
 | 4    | Upgrade to paid version        | Either uninstall free version or import database data        |
 | 5    | Verify field types             | Confirm that additional field types are available            |
+
+---

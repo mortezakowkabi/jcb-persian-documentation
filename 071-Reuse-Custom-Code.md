@@ -217,9 +217,3 @@ you can dramatically improve efficiency and reduce maintenance overhead.
 * Always **recompile your component** after updating custom code to apply changes.
 
 ---
-
-## Related Tutorials
-
-* [Dynamic File and Folder Inclusion](#)
-* [Automated Database Updates in JCB](#)
-* [Drag-and-Drop Upload Functionality](#)
