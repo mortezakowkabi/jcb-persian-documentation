@@ -72,7 +72,7 @@ To test your component, it's best practice to install it on a **fresh Joomla ins
 
 [00:05:19](https://www.youtube.com/watch?v=t6Eux157428&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m19s)
 
-If you start with the **free version** of JCB and later upgrade to a **paid version**, note that the **core functionality remains identical**—the difference lies only in the **database data** included.
+If you start with the **free version** of JCB and later upgrade to a **paid version**, note that the **core functionality remains identical**-the difference lies only in the **database data** included.
 
 Paid versions include additional preloaded datasets such as more field types, demo components, and configuration examples. You can integrate this data manually if needed.
 
