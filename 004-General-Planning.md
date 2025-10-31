@@ -1,4 +1,4 @@
-# GENERAL PLANNING
+# General Planning
 
 ### Be Prepared to Build Components in Component Builder
 

@@ -1,6 +1,4 @@
-# JCB MANUAL CUSTOM CODE
-
-### Brief Explanation
+# JCB Manual Custom Code
 
 [00:00:01](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m01s)
 (_Click on these time links to see Youtube video_)

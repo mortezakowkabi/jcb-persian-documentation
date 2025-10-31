@@ -1,4 +1,4 @@
-# ADDING DYNAMICGET TO A SITE VIEW
+# Adding dynamicGet to a Site View
 
 ### Checking The Target Dataset
 

@@ -267,7 +267,7 @@ You have now learned how to:
 * Manage **permissions** securely.
 * Reuse this feature for automations, validations, and shortcuts.
 
-> 🧭 **Tip:**
+> **Tip:**
 > Experiment with different button types and methods - JCB handles the Joomla MVC integration, letting you focus purely on your custom logic.
 
 ---

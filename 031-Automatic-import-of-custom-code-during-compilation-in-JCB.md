@@ -1,6 +1,4 @@
-# AUTOMATIC IMPORT OF CUSTOM CODE DURING COMPILATION IN JCB
-
-### Custom Code
+# Automatic Import of Custom Code During Compilation In JCB
 
 [00:00:00](https://www.youtube.com/watch?v=DFMfIl-VkSk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 (_Click on these time links to see Youtube video_)

@@ -98,7 +98,7 @@ Then use JavaScript or controller logic to process the form task.
 
 ## 4. Adding a Custom Button in JCB
 
-> 🕒 **[00:05:38](https://www.youtube.com/watch?v=UVICsD82oWk&t=338s)**
+> **[00:05:38](https://www.youtube.com/watch?v=UVICsD82oWk&t=338s)**
 
 You can add a **custom button** directly within JCB.
 
@@ -129,7 +129,7 @@ After compiling, check the generated:
 
 ## 5. Understanding the Controller Logic
 
-> 🕒 **[00:07:18](https://www.youtube.com/watch?v=UVICsD82oWk&t=438s)**
+> **[00:07:18](https://www.youtube.com/watch?v=UVICsD82oWk&t=438s)**
 
 Each form submission triggers a **controller method**.
 

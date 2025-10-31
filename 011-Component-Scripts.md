@@ -1,4 +1,4 @@
-# **Component Scripts - Joomla Component Builder Tutorial**
+# **Component Scripts**
 
 [Watch the video on YouTube](https://www.youtube.com/watch?v=xY9TWQrF8AQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 (*Click on any timestamp below to jump to that moment in the video.*)

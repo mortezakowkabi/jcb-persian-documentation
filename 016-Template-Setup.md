@@ -1,4 +1,4 @@
-# TEMPLATE SETUP
+# Template Setup
 
 **Tutorial Reference:** [Watch on YouTube](https://www.youtube.com/watch?v=khxKeeubhiY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 (*Click timestamps below to jump to specific moments in the video*)

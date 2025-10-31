@@ -1,4 +1,4 @@
-# Tutorial 76: A Quick Demonstration to Load a List of Items in a Site View
+# A Quick Demonstration to Load a List of Items in a Site View
 
 This tutorial demonstrates how to build and configure a **List View** in Joomla Component Builder (JCB) using both **Dynamic GET** and **AJAX (FooTable)** methods. It also covers how to integrate the list into a Site View, adjust templates, and manage configuration fields - following the exact Joomla Component Builder workflow.
 

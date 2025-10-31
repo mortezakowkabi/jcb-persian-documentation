@@ -1,4 +1,4 @@
-# COMPONENT FTP AND MORE
+# Component FTP and More
 
 (*Based on [YouTube Video](https://www.youtube.com/watch?v=hzbZlLl-xlA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)*)
 (*Click on timestamps to jump to specific sections in the video.*)
