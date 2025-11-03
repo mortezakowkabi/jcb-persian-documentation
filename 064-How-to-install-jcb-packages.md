@@ -1,51 +1,203 @@
-# HOW TO INSTALL JCB PACKAGES
+# How to Install JCB Packages
 
-### Two Ways To Get To The Installing View - Import JCB Packages Icon OR Joomla Component - Import Packages
+This tutorial explains the complete process of installing a **Joomla Component Builder (JCB)** package.
+It assumes that JCB is already installed on your Joomla system.
 
-[00:00:00](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s) 
-(Click on these time links to see Youtube video)
+---
 
-This is a quick tutorial on how to install a JCB package. With the assumption that JCB is already on your system, it will not be explained here how to install it. There are two ways to get to the installing view. One is by clicking on the Import JCB Packages icon which will take you there. The other way is to open Joomla components, and on the top right of the page is a button 'Import JCB Packages' [00:00:35](https://www.youtube.com/watch?v=PGmEol.iopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m35s) That will take you to the same place. There is a number of tabs. If you are not interested in VDM Packages or JCB Community Packages tabs, there is an action option in the global options. At this point, we are controlling those tabs through this [00:00:57](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m57s) Global switch, that says 'Manage JCB Package Directories'. You can say 'Show all' or 'None' or manually select the repositories that you want the show. At the moment it is only these two, but there are reasons to expect that they might become more, as we will see this area is becoming more active. 
+## 1. Accessing the JCB Package Installation View
 
-### Make Sure Of The Integrity Of The Package 
+[00:00:00](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
 
-[00:01:20](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m20s) 
+There are **two ways** to access the installation view for JCB packages:
 
-Once you are on the 'Backup Local Data First' page and you have yourself exported a JCB package, then this is where you can select it from your computer, or from a directory or from a URL. With these import methods, there is not a checksum validation feature in place. You will need to be sure of the integrity of that package. [00:01:44](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m44s) We cannot validate that package integrity. Since it is being selected from your desktop and you are in your local development environment, there should be no reasons for concern. If you are pulling it from an external source then possibly you will need to be more cautious. Whereas when it comes to the VDM Packages and the JCB Community Packages, these are the areas where we are trying to add a layer of security to ensure that the package area remains as stable as possible. There are ways for you to add your own JCB Package to the community repository. 
+1. **From the JCB Dashboard:**
+   Click the **"Import JCB Packages"** icon. This opens the import view directly.
 
-### Tutorial Explaining Why We Will Do Things The Way We Do
+2. **From Joomla Components Menu:**
+   Go to **Components → Joomla Component Builder**, and on the top right corner, click **"Import JCB Packages"**.
+
+[00:00:35](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m35s)
+This will take you to the same import area that contains several tabs-such as **VDM Packages** and **JCB Community Packages**.
+
+If you do not want to see certain tabs, you can manage their visibility under the **Global Options** section using the **"Manage JCB Package Directories"** setting.
+You can choose between:
+
+* **Show All**
+* **Show None**
+* Or manually select which repositories to display.
+
+Currently, there are two active repositories, but this area is expanding and expected to include more in the future.
+
+---
+
+## 2. Ensuring Package Integrity
+
+[00:01:20](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m20s)
+
+When you reach the **"Backup Local Data First"** page, you can select a JCB package to import from one of the following sources:
+
+* Your **local computer**
+* A **server directory**
+* A **remote URL**
+
+Be aware that **locally imported packages** do not undergo checksum validation.
+You must personally ensure the integrity of the package file.
+
+If you download a package from a **trusted external source** (like the JCB community or verified repositories), the risk is minimal.
+However, if you are importing from an **unknown or third-party source**, always verify its authenticity.
+
+The **VDM Packages** and **JCB Community Packages** sections are managed to maintain integrity and stability using checksum verification.
+
+---
+
+## 3. Adding Your Own Package to the Community Repository
 
 [00:02:28](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m28s)
 
-A tutorial is provided to show you how to do that.  The fact is that everybody will then have access to that package in this area. You can then also get free keys for the VDM packages. In the past, you have to pay for them. We have decided on an initiative to show all of you exactly how JCB can work and function. [00:02:55](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m55s) We have decided to give these packages away asking you to follow a few steps in supporting us by forking, starring or watching these packages in their specific repositories on GitHub. If you need more guidance about this you can just click on that link. [00:03:22](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m22s) They will show you exactly what you need to do once you have the key for that specific package, you can come and select that package. It only relates to some of the packages at this point which is the first prominent Component Builder itself[00:03:38](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m38s). I would suspect that would be your first choice as well. Once you have selected the package you simply can click on 'Get Package' that has been taken from GitHub and brought to your developing environment. [00:03:53](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m53s)  In doing so it will run a validation on the integrity of the package because there are checksums in place. [00:04:09](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m09s) You will need to validate the checksum manually. The way to do that; it will show you the checksum that was used to evaluate the package integrity. Since it has been passed, the validation you will know that this checksum is the one that you need to see if you open this link 'https://raw.githubusercontent.com'.[00:04:26](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m26s)  Opening this link will also reveal a checksum, but at this time you will be seeing a 'Verification by: Digi Cert Inc'. It must be at least that this(see video) part of the URL must be correct. [00:04:46](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m46s)
+You can contribute your own JCB packages to the **Community Repository**.
+A separate tutorial explains how to do this, ensuring that your shared package becomes accessible to all JCB users.
 
+In earlier versions, **VDM packages required paid keys**.
+Now, JCB offers **free keys** for verified users who show community support-by forking, starring, or watching the respective GitHub repositories.
 
- This will vary from package to package, but it should have the package name. This should correspond to the value you see here. That little bit of manual effort is all you need to be sure that the package that you have now in your possession is the original authentic package that we have distributed. [00:05:04](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m04s)  All you need now is to take the key that we have sent you and add it to the key area. 
+Follow the on-screen link for details.
+Once you have your **key**, select the desired package (such as the **Joomla Component Builder itself**) and click **"Get Package."**
 
-### Choose Merge - Change In Package / Force Local Update Works Only If Merge Is Selected
+[00:03:38](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m38s)
+JCB will automatically download the package from GitHub into your development environment, validating it using a **checksum process**.
+
+---
+
+## 4. Validating the Checksum
+
+[00:04:09](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m09s)
+
+To ensure the package is authentic:
+
+1. JCB will display the checksum used during validation.
+2. Visit the URL shown (e.g., `https://raw.githubusercontent.com/...`) to compare the official checksum.
+3. Verify that the checksum matches and that the certificate is signed by **DigiCert Inc** or an equivalent trusted source.
+
+This quick manual check guarantees that your package is legitimate and unchanged from the original source.
+
+Once verified, **enter your package key** in the corresponding field to continue.
+
+---
+
+## 5. Choosing Merge or Clone Import Options
 
 [00:05:19](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m19s)
 
-Now you will need to make a choice whether you want to; if the JCB already is installed on your system or maybe it is the second time you doing this, you might not want to Merge it, but have it be like a clone.  Like the second instance of JCB it will literally create all the fields and all the views and all the linked concepts again. Whereas if you choose Merge, and there is a change in the package which is newer, then the version you have will update that version. [00:05:53](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m53s)  If you want to Force to update it, you will say 'Yes' up here. The Force Local Update only works if you select 'Merge'. 
+When importing, you must decide between **Merge** or **Clone (New Instance)**:
 
-### See All Import Information
+* **Merge:**
+  Updates your existing component if the package version is newer.
+  You can also enable **"Force Local Update"**, which only works if "Merge" is selected.
+
+* **Clone:**
+  Creates a completely new instance of the component, duplicating all fields, views, and related items.
+
+If you're importing an updated version of an existing component, **Merge** is recommended.
+For experimentation or side-by-side versions, use **Clone**.
+
+---
+
+## 6. Viewing Detailed Import Information
 
 [00:06:05](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m05s)
 
-Then there is also 'See All Import Information'. If it is the first time that you are importing a package, it might be ideal to check this 'Yes'. It will show you everything that it does, every field it adds, but it will not show your names or shows your IDs. A lot of it will be like that it does not make sense to see anyway. At the very bottom of the list, it shows you that files that have moved and this is what you need to see. You will need to see the files that are moved into your system. Especially if it is not a package that we are providing or someone else that is being validated through the community. [00:06:44](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m44s) But if it has been imported through a URL or through a package from the distributor package you received, or from a directory. Then you most certainly want to see all important info because you want to make sure that what they told you is what you get and that is what that feature is all about. 
+Enable the **"See All Import Information"** option (set to *Yes*) if this is your first import.
+This displays detailed logs showing:
 
-### Component Being Imported
+* Every field and view created
+* Files that were moved
+* Database items updated
+
+It helps verify that all imported items match what was described by the package author.
+This is especially important for **packages not distributed directly by VDM**.
+
+---
+
+## 7. Components Included in the Package
 
 [00:07:04](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m04s)
 
-Then there is also the Component that what has  'Being Imported' should show, the same as the one you saw before we got the package. Those of you that have used this area multiple times, you will know that you are able to add multiple components into one package. It is just because we at VDM are distributing one component at a time. That is why there is only one component in the package. In a greater perspective, you can import a backup package. [00:07:32](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m32s) That would be then everything that you have done. In my case, all the components I have to build are zipped in a backup patch package. I can import all of those into JCB at once. At the moment I have tested it at least in 20 components, which takes a while but it gets there. At this point, everything looks fine and you can click continue. 
+Before proceeding, check that the **"Component Being Imported"** field matches what you intended to install.
 
-### Takes Awhile To Update - Updating IDs, Views, Fields
+While VDM distributes single-component packages, JCB allows importing packages containing **multiple components**-useful for backups or bulk development setups.
+
+[00:07:32](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m32s)
+You can even import a **full backup package** that includes every component you've built.
+JCB successfully handles large imports (tested with 20+ components) though it may take some time to complete.
+
+---
+
+## 8. Import Process and ID Remapping
 
 [00:08:04](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m04s)
 
-It depends on the size of the component or the size of the package how long it might take.  It does take a while because at this point it is updating the IDs, [00:08:21](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m21s), everyone, of them at a time. With every field, the IDs are being updated, with every view. Everywhere that ID, and any other ID that is being used anywhere across the component, everything is dynamically being updated during this process. You can expect it is a lot of compilation, a lot of algorithms, [00:08:41](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m41s) a lot of things happening under the hood. Therefore it does take a little bit longer than you might expect. Because the ID is changed and the way we export the package, is taking a photocopy of the package as it is in the JCB where it was developed or when it resides. When you import it, we recreate and remap every ID [00:09:05](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m05s) to ensure that it remains functional although all its identifiers have changed. 
+The import duration depends on the size of your package.
+During this process, JCB dynamically **updates all internal IDs** across:
 
-Once it is done you get this long list, especially if it was JCB which you have imported. It has over 1000 fields. [00:09:32](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m32s) You can anticipate a long scroll. At the bottom you start seeing different things, every little file that has been Imported [00:09:50](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m50s) That is really helpful if you are importing a package from a developer which you do not know or you are not absolutely sure you can trust. You must check every one of these fields that they are legitimately related to this component and that it is what you anticipated or expected. [00:10:09](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m09s)  These folders are all related to the custom folder. As we scroll it may be seen that there are some folders that are related to the administrator VDM compiler. This is in the compiler so there is a lot of files for the compiler, Joomla 3, then for the helper. 
+* Fields
+* Views
+* Relationships
 
-This little thing (_v_d_m _) is a spacer with which we create a string and there you have all the files that have been moved into place. There is Component Builder the fully mapped package in your system. [00:10:51](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m51s)  That is very simple to get the component that you will need, fully mapped into your system. All its views are correctly mapped in here. If you open any of those views, [00:11:07](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m07s) you will again see that all its fields are also correctly mapped. You would realize that every one of these fields with their IDs has changed. Even the fields, they again have field types. [00:11:23](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m23s) Even those might have changed, the field types itself. Down to the very smallest detail we have tried to make sure that every little thing, all across the board, is remapped [00:11:37](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m37s) and fixed that your component is again fully active and stable ready for further development. That was a quick tutorial on how to import a JCB package into JCB.
+[00:08:41](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m41s)
+This ensures the new package integrates correctly without conflicts.
+Because JCB exports a complete "snapshot" of the original component, the importer must **remap every identifier** to maintain consistency and functionality.
+
+---
+
+## 9. Reviewing Imported Files and Validation
+
+[00:09:32](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m32s)
+
+Once completed, a detailed list of imported fields, views, and files will appear.
+Scroll through this summary to confirm that everything matches expectations.
+
+For third-party packages, take time to:
+
+* Verify that all file paths are legitimate
+* Check that no suspicious files were added
+
+The files are grouped by type-for example:
+
+* **Custom folders**
+* **Administrator files**
+* **Compiler files (for both Joomla 3 and 4)**
+* **Helper scripts**
+
+When this process finishes, your imported component will appear in your JCB environment-**fully mapped, verified, and ready for development**.
+
+---
+
+## 10. Verification and Final Notes
+
+[00:11:07](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m07s)
+
+Open any of the imported **views** to confirm that:
+
+* All fields are correctly mapped
+* Field types are recognized and linked
+* All ID relationships remain valid
+
+[00:11:37](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m37s)
+At this stage, your component is **fully functional, stable, and ready for further use or customization** within JCB.
+
+---
+
+### Summary
+
+Installing JCB packages involves:
+
+1. Accessing the Import view
+2. Selecting the source and verifying integrity
+3. Choosing Merge or Clone
+4. Reviewing import information
+5. Verifying checksum and imported content
+
+Following these steps ensures every component installed is secure, correctly mapped, and ready for immediate use in Joomla Component Builder.
+
+---

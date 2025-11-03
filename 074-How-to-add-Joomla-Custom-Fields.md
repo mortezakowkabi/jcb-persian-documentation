@@ -1,80 +1,258 @@
-# HOW TO ADD JOOMLA CUSTOM FIELDS
+# How to Add Joomla Custom Fields in Joomla Component Builder (JCB)
 
-### We Have Added Joomla Custom Field Integration
+**Video Tutorial Reference:** [YouTube - How to Add Joomla Custom Fields](https://www.youtube.com/watch?v=n5RBmP0uNCM)
+*(Timestamps throughout this guide correspond to the video above.)*
 
-[00:00:00](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(Click on these time links to see Youtube video)
+---
 
-At last we are happy to announce that we have added Joomla Custom field integration. Joomla Custom fields are the fields that you see on the Users, there are Fields and Field groups. The same under Articles, Fields and Field groups which targets the Articles and all the Users respectively. If you add fields on the articles, when you create an article and it meets the specific criteria, the field will show up and you fill them in, and it shows up on the front end of your website. The whole Field and Field Group concept has an integrative option for third-party components. We have changed JCB enough to allow that kind of field integration in your components. 
+## Overview
 
-### Demonstration
+[00:00:00](https://www.youtube.com/watch?v=n5RBmP0uNCM&t=00h00m00s)
 
-[00:00:52](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m52s)
+Joomla Custom Fields allow you to add additional data input options to Joomla entities such as **articles**, **users**, or **custom components**. Each custom field can be grouped into **Field Groups**, giving structured organization to data entry forms in Joomla.
 
-I'm going to demonstrate how to make use of this. We'll use the normal Demo component, the way to add the fields to your Demo component, is to have Admin Views. You are going to link the field to a Admin View. You can link it to multiple Admin Views. I'm going to demonstrate linking it to the only one called Look. You can click on the Edit,  [00:01:31](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m31s) and go to the area where you link the Look, the View to the component. You will see there's a new field called Joomla Fields. 'Select if the option to add Joomla Fields should be added to the view.' We are going to click that, and all you need to do is, to have it work in a back-end. The front-end have a little bit more tricks to it. That is to be expected because the front-end of JCB components should be unique. 
+With recent updates, **Joomla Component Builder (JCB)** now natively supports **Joomla Custom Field Integration**, enabling developers to include these fields directly in their generated components.
 
-### Compile And Install - To See What Happen - Creating Fields And Field Groups
+---
 
-[00:02:05](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m05s) 
+## 1. Understanding Joomla Custom Fields and Groups
 
-We are going to close out of this and before making any changes to the front-end of the component, I'm going to compile and install it on to the current website to see what happened. We have the compiler. When I compile our component and install it quite simple. We are going to open the component. [00:02:34](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m34s) When we go to Looks, we'll see there are now Looks Fields and Looks Fields Groups. I'm going to create a group, say New. Let's say in the Title: Really Easy, save and close. We have this group called Really Easy. I'm going to create a field. We are going to make it a text field and call it Simple Field. We are going to add it to the Really Easy group, [00:03:05](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m05s) save and close. We have a field, if we will go to Looks and click on New. We will see that it has a new tab called Really Easy. We can click Really Easy and it have Simple Field. In Name we can say: The name and for the field you can give it a value, call it Input Value, [00:03:29](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m29s) save and close. Immediately you have the Input Value stored. You have the name and everything works exactly as expected. It's created a tab. If you've added a field, you can add More Fields to this tab simply by selecting the same group call it More Fields, save and close, we have More Fields. [00:03:57](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m57s) You can go back to the Look, open it. You'll see that  More Fields was also showing up, with more input. That's how the custom field concept works. That is the easy part, adding it to the component. Like I said before, you could add it per Admin View. But usually you would have one view where you at this [00:04:24](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m24s) in the front-end of this component. You will need to do a little bit more because the way that the fields work, is explained as triggering on specific events on the front-end of the component. 
+Before diving into JCB integration, it's important to understand the Joomla custom field system:
 
-### Added The Option To Add Events To Your Site View
+* **Fields** are custom input options (e.g., text, list, image) attached to content.
+* **Field Groups** organize fields into logical sets.
+* In Joomla core, these are found under:
 
-[00:04:42](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m42s)
+  * **Content → Fields**
+  * **Content → Field Groups**
 
-We at JCB have also added the option to add these events to your Site Views. It's a little bit hidden and purposefully that way because we added it to the Dynamic Get area and not in the Site View area. It is because the Dynamic Get is targeting either multiple items or single items. The events are really for single items. It seemed right that we add it there to easily validate and so forth. If we go to Joomla Component [00:05:21](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=75&t=0s&t=00h05m21s) Builder, and go to your Custom or your Dynamic Gets. We want to add it to the Looking because it's a getitem. We will open Looking and you will see that there is this new Content Plugin Events, which you can select. If we go back to the fields area and you open the fields, [00:05:54](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m54s) you will see that it has Options. It have Automatic Display options: Before Display, After Display, After Title, and Do not automatically display. These options is what is used to display the values that is submitted to the field on the front-end of the site. By default [00:06:25](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m25s) it is Before Display but you can change that. In your component you will need to target these four events for the user to make use of these fields. They might decide they want to use the fields in a back-end. [00:06:46](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m46s) It will be related on to this show on. If you do that it will not even show on the back. This is integrative switches. 
+You can now create similar fields directly within your **JCB-generated component**, with full back-end and front-end functionality.
 
-### Need To Target The Switches In Your Custom Code On The Front
+---
 
-[00:07:00](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m00s)
+## 2. Linking Joomla Fields to an Admin View
 
-You will need to target these switches only in your custom code on the front at this point. It's not really that hard to do that. I'll show you why. Back into the Dynamic Get, I'm going to add title, add before display, and add after display, as events. Save and close. That will practically put the code into your component. 
+[00:00:52](https://www.youtube.com/watch?v=n5RBmP0uNCM&t=00h00m52s)
 
-### Showing The Code
+To make Joomla Custom Fields available within a JCB component:
 
-[00:07:30](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m30s)
+1. **Open your component** in JCB.
+2. Go to **Admin Views**.
+3. Select or create an Admin View (e.g., `Look`).
+4. Click **Edit** to open its settings.
+5. Scroll to find the new **"Joomla Fields"** toggle.
+6. Enable this option.
 
-Let me first show you the code, how it looks. In the component root folder, I'm going to components and then I'm going to go to demo, go to views and open looking, open the view.html.php file. The events are going to be added to the display function. Currently as you can see there's nothing. [00:08:02](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m02s) We are going to compile the component and see what changes. A recap, I've added the events to the Dynamic Get. I'm going to the compiler, I'm going to recompile the component and install it to see what those events changes, how it will change the code. If we scroll                           [00:08:27](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m27s) down, we will see that it added the dispatcher to the display. Down here it imports the content plugin(see video). It creates a new object called event. [00:08:49](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m49s) Basically it checks whether your item has parameters. It checks if there is any parameters been passed. That is in your Dynamic Get. You could grab the params column from your items. It's checking if it is there. If it's not there it is going to fall back [00:09:11](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m11s) unto the Globals. If it's there and if it's a Json it will convert it to an array, and have it there or it will fall back to the Global params. It is going to trigger the onContentAfterTitle, and onContentBeforeDisplay, [00:09:32](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m32s) and onContentAfterDisplay. It's going to pass the com_name, the actual view value here. We know that this is setting the context of the event. 
+> **Note:** This adds Joomla Custom Field integration to the Admin View.
+> Multiple Admin Views can support this integration if needed.
 
-### Building A Plugin - Added A Context Field In The Site View - Your Site View Can Change Its Context
+This ensures that custom fields will be available for data entry in the back-end form of that view.
 
-[00:09:51](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=75&t=0s&t=00h09m51s)
+---
 
-You could be building a plugin that is targeting Look and not Looking. If you want to change the context of this specific event that has been passed over. To do that we've also added a Context [00:10:12](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m12s) Field in the Site View. Your Site View can change its Context. Let me show you. We'll open the Site Views, in the Site Views we have that view called Looking. We can open that and we have a new Field called Context. We have Looking selected as our Dynamic Get. Here we can set the Context [00:10:38](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m38s) to suit the Dynamic Get and not fall back to the main code. If you don't add this Context, it will fall back to this code name. But you could say I want the Context to be Look and not Looking, then save and close. If we compile this again, it will update the Contexts of that specific event. Any other event related to that [00:11:06](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m06s) Get, that is really what you want. You'll see it's changed it to Look. So it's still pass the component's name, but the correct context in relation to your event. 
+## 3. Compile and Install the Component
 
-### What Is Going To Happen? 
+[00:02:05](https://www.youtube.com/watch?v=n5RBmP0uNCM&t=00h02m05s)
 
-[00:11:20](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m20s)
+After enabling Joomla Fields:
 
-What's going to happen? Why we want this to be Look? It's because the fields are linked to the  Look Admin View. It is stored in the database under Look Context and not under the Context of Looking. You are having both here on the front. So you couldn't use the name and Look again. You have to use another name. The way to have that same Context called on your title, is to change it like I've just done. I know that's a lot of explanation. Maybe some of you don't even understand [00:12:10](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m10s) what I've just said but those who do will know, this is nice, you can change the Context through the Site View, that you could have the same Context be triggered multiple times as you would have it. It's a little bit of a tweak at the moment. We might bring more automation in, but I know it is a little liberating. You could [00:12:34](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m34s) really be free how you want to do this. But what is going to happen? These events are being triggered and the values are being stored here(see video). Whatever gets thrown back from the plugins, gets placed into this value here(see video). The only custom code that you need to do after fixing up the events being added to the Dynamic Get, updating the Context to target the corrected [00:13:04](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m04s) view. I'll show you once again. Why do I want this to be Look? If we go to our Admin View, we'll see if you open Looks and click The Name, you will see at the top, [00:13:24](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m24s) it says Demo and the View is Look. The Context of these fields(Simple and More Fields) are linked to that 'com_demo' value and that 'look' value. 'com_demo' is always going to be correct. But 'look' could be different and you will need to in your Site View make sure that you are targeting the correct  Context of where these fields are. 
+1. **Compile** your component.
+2. **Install** it on your Joomla site using the JCB compiler's installation process.
 
-### Passing The ID And Context - Joomla Automatically Retrieve The Values - Place Values Inside The String
+Once installed, navigate to your component in the Joomla back-end.
+For example:
 
-[00:13:50](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m50s)
+```
+Components → Demo → Looks
+```
 
-You will be passing the ID and the Context and Joomla will automatically retrieve the values of this fields and place those values for you inside of the object or it will create a string as you will see. It implodes the array into the string and places it in here(see video). [00:14:13](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m13s) All you will need to do is echo out those values in any way you want them to look. You could add it in some diff tags. I'll show you that in a moment. All I wanted to explain is how these events get the field values on the page. [00:14:37](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m37s) Those field values are loaded into these values respectively of its switches which I showed you earlier in setting up the field. 
+You'll now see two new menu items:
 
-### Joomla Website Not Setup To Show Looks - Change It - Demo - Looks
+* **Looks Fields**
+* **Looks Field Groups**
 
-[00:14:50](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m50s)
+---
 
-The Joomla web site currently is not setup to show the Looks. We are going to go to the menu and change that. Go to main menu and I'm going to click on Home. Select Demo, Looks. Save and close. We have Looks on the default page of the website. If we click Joomla Mount it should load and there is The Name. [00:15:29](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m29s) You will see a list of Looks and The Name. If you click on The Name it shows us The Name and it shows there 1 hid. If we refresh that it shows 2 hid. That all works well, but our custom values which we have submitted is not showing up. The Name value is showing up and we could add some [00:15:55](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m55s) Description. This is also going to show up if we refresh the page. There's the Description, click The Name, there is the Description. All is showing up, but the real easy values are not showing up. We want them to be showing up on the page. That's what we are going to do for them. By simply using those [00:16:28](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m28s) event objects. In the code we have the onContentAfterDisplay, onContentBeforeDisplay, and onContentAfterTitle. 
+## 4. Creating Fields and Field Groups
 
-### If You Forget How To Place The Component - Go To com_content open article, view.html.php
+[00:02:34](https://www.youtube.com/watch?v=n5RBmP0uNCM&t=00h02m34s)
 
-[00:16:42](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m42s)
+1. Open **Looks Field Groups**.
+2. Click **New** → Enter a **Title**, e.g., `Really Easy` → Save & Close.
+3. Go to **Looks Fields** → Click **New**.
+4. Choose a **Type** (e.g., `Text`).
+5. Assign it to your `Really Easy` group.
+6. Save & Close.
 
-If you forget how to use this or how to place the component, you can go to com_content and you can also open its article, view.html.php. You would see something very similar. Scroll down, you will see something, unless they've changed it by the time. But at this time the default of Joomla's implementation is very much the same. It's triggering the content and it's also placing it into these values. That means if you go to its template [00:17:19](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m19s) default php, you will see places, you could search for it. You could take this afterDisplayTitle, copy that go to the Default and place it in there(see video). You will see the content is generated by the content plugin event on. It echoes it out.  You could use this code just like that copy, paste it into your component, after the title. The same goes with the other events. With the before display and after display. 
+Now, when creating a new **Look** record, a **new tab** named `Really Easy` will appear with your custom field visible for input.
 
-### Show How To Place Them In Our Component
+You can:
 
-[00:17:58](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m58s)
+* Add multiple fields by assigning them to the same group.
+* Add additional groups to organize fields.
 
-Let me do that quickly. I'm going to grab these and place them into our component. I've copied them to a notepad. I'm going to move them to my other screen. Go back to JCB and go to my component, the Site View of a component. [00:18:23](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h18m23s) Open Looking, in the component we have a whole lot of things happening. We have a article comment and the title. We want the value [00:18:47](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h18m47s) to echo out after the title. We are going to take that first one, which is the event after the title. I'm going to place it between the header and the diff. [00:19:05](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h19m05s) The content is generated by it there and it's onContentAfterTitle. This is the title and it is going to show over here(see video). Then we have another one onContentBeforeDisplay. I would like to think it needs to go first before anything. I want to put that there onBeforeAnythingDisplays. That's way at the top. [00:19:39](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h19m39s) With contentAfterDisplay I want to put that at the very end below everything. That's quite simple. We can do more, we can wrap it in a diff. We can do all kinds of styles to it. But that's the simplest way. 
+> **Example:**
+>
+> * Field Group: `Really Easy`
+> * Fields: `Simple Field`, `More Fields`
 
-### Demonstration - Changing the Display - Before - After - End
+---
 
-[00:20:08](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h20m08s)
+## 5. Adding Field Display Events to the Front-End
 
-I'm going to demonstrate that. Save and close. Compile it, install. Refresh the page. Oops I have some errors, I realized I'm using slightly different names then the ones I copied from the Article Content area. Let me show you that. They are saying in the comment onContentBeforeDisplay and here it's beforeDisplayContent. [00:20:35](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h20m35s) It's a little bit different. I'm using exactly the same. Just a heads up. Use the same as what is in the comment. I'm always trying to keep everything the same. [00:20:55](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h20m55s) Save that, it should work now. Simple Fields, Input Value, More Fields, With More Input. Those values are displayed on the front. If we go back to Editing The Look, we can close this out, go back to the Fields, and let's say With More Fields, you want to change that to display it After Title. Save and go back to the front, refresh this. The one is up here and the other one is after the title(see video). [00:21:28](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h21m28s) Let's say we want Simple Field to show at the very end of our value. Go out of More Fields and go into Simple Field. Change that to After Display. Save and close. You can move the values position. Everyone will move, you will see that Simple Field is below everything. [00:21:55](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h21m55s) Do realize this whole area is the block. That's how the Custom Fields can come to the front. You can also say, I don't want Simple Field area to show up. You can go to the Simple Field, and you can say: Show Label, Hide Label. Save and if you refresh, it will only give you the value. [00:22:20](https://www.youtube.com/watch?v=n5RBmP0uNCM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h22m20s) That's the kind of behavioral integration. That's a quick demonstration of how to use Joomla Custom Fields in your components. How to model those values into the front-end by simply making use of the events. Wow have fun. I'm sure this will make things even more interesting. 
+[00:04:42](https://www.youtube.com/watch?v=n5RBmP0uNCM&t=00h04m42s)
+
+By default, fields work out-of-the-box in the **back-end**, but to display them in the **front-end**, you must use **Joomla content plugin events**.
+
+JCB provides these through the **Dynamic Get Builder**.
+
+### Steps:
+
+1. In JCB, go to **Dynamic GETs**.
+2. Select the **Get Item** for your front-end view (e.g., `Looking`).
+3. Under **Content Plugin Events**, select:
+
+   * `onContentAfterTitle`
+   * `onContentBeforeDisplay`
+   * `onContentAfterDisplay`
+4. Save and close.
+
+These events control when and how Joomla fields are displayed.
+
+---
+
+## 6. Compiling to Inject Event Code
+
+[00:07:30](https://www.youtube.com/watch?v=n5RBmP0uNCM&t=00h07m30s)
+
+After enabling the events:
+
+1. **Recompile** the component in JCB.
+2. **Inspect** the generated code:
+
+   ```
+   components/com_demo/views/looking/view.html.php
+   ```
+3. The display function now includes:
+
+   * Event dispatcher loading
+   * Content plugin triggers:
+
+     * `onContentAfterTitle`
+     * `onContentBeforeDisplay`
+     * `onContentAfterDisplay`
+
+These calls notify Joomla to retrieve and render any assigned custom fields.
+
+---
+
+## 7. Adjusting the Context
+
+[00:09:51](https://www.youtube.com/watch?v=n5RBmP0uNCM&t=00h09m51s)
+
+If your Admin View name differs from your Site View (e.g., `Look` vs `Looking`), you need to adjust the **Context**.
+
+1. Go to **Site Views**.
+2. Open your **front-end view** (e.g., `Looking`).
+3. Locate the new **Context** field.
+4. Set the Context to match the Admin View (`Look`).
+5. Save & Close.
+6. Recompile.
+
+This ensures field data linked to `com_demo.look` displays correctly in the front-end.
+
+> **Tip:**
+> Joomla fields rely on matching context identifiers.
+> Misalignment (e.g., `look` vs `looking`) will prevent field data from displaying.
+
+---
+
+## 8. Displaying Fields in Your Template
+
+[00:16:42](https://www.youtube.com/watch?v=n5RBmP0uNCM&t=00h16m42s)
+
+To output field values in your template:
+
+1. Open your component's **Site View template file**:
+
+   ```
+   components/com_demo/views/looking/tmpl/default.php
+   ```
+2. Use event placeholders where appropriate:
+
+   ```php
+   <?php echo $this->item->event->afterDisplayTitle; ?>
+   <?php echo $this->item->event->beforeDisplayContent; ?>
+   <?php echo $this->item->event->afterDisplayContent; ?>
+   ```
+3. Adjust placement based on where you want fields to appear (before title, after content, etc.).
+4. Save, recompile, and test on the front-end.
+
+---
+
+## 9. Testing and Troubleshooting
+
+[00:20:08](https://www.youtube.com/watch?v=n5RBmP0uNCM&t=00h20m08s)
+
+* If fields don't display:
+
+  * Confirm the **Context** matches.
+  * Ensure the correct **event variables** are used.
+  * Check that **Dynamic GET events** are selected and compiled.
+* You can reposition field output by editing their **Automatic Display** setting:
+
+  * Before Display
+  * After Title
+  * After Display
+  * Do Not Automatically Display
+
+> **Example Adjustment:**
+>
+> * Move "Simple Field" to display after content:
+>
+>   * Open the field in Joomla → set "Automatic Display" to "After Display".
+
+---
+
+## 10. Optional: Hide Field Labels
+
+[00:22:20](https://www.youtube.com/watch?v=n5RBmP0uNCM&t=00h22m20s)
+
+To hide a field label in the front-end display:
+
+1. Edit the field in Joomla.
+2. Set **"Show Label" → "Hide"**.
+3. Save and refresh.
+
+Only the field value will appear on the page.
+
+---
+
+## 11. Final Notes
+
+This integration provides seamless support for Joomla Custom Fields in JCB-generated components.
+You can now:
+
+* Create and manage **Field Groups** and **Fields**.
+* Use **Dynamic GET Events** to trigger field rendering.
+* Control field placement and visibility.
+* Extend functionality through **content plugins** and **custom code**.
+
+> **Tip:** This setup mimics Joomla's native article field behavior, ensuring that your JCB components integrate naturally within the Joomla ecosystem.
+
+---
+
+### Summary Workflow
+
+| Step | Action                             | Area             |
+| ---- | ---------------------------------- | ---------------- |
+| 1    | Enable Joomla Fields in Admin View | JCB Admin View   |
+| 2    | Compile and Install                | JCB Compiler     |
+| 3    | Create Field Groups and Fields     | Joomla Backend   |
+| 4    | Enable Content Plugin Events       | JCB Dynamic GET  |
+| 5    | Adjust Context                     | JCB Site View    |
+| 6    | Recompile Component                | JCB Compiler     |
+| 7    | Edit Template to Display Fields    | Site Template    |
+| 8    | Test and Adjust Display            | Joomla Front-End |
+
+---

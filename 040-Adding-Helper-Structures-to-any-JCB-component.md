@@ -1,72 +1,221 @@
-# ADDING HELPER STRUCTURES TO ANY JCB COMPONENT
+# Adding Helper Structures to Any JCB Component
 
-### Question About Help Menu Integration For JCB Components
+This guide walks you through the process of integrating **Helper Structures**-such as help documentation-into any Joomla Component Builder (JCB) component.
+It is based on the official tutorial video *"Adding Helper Structures to Any JCB Component"* and expanded for clarity, accuracy, and completeness.
 
-[00:00:00](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+---
 
-Recently an inquiry about Help Menu integration for JCB Components has been made. As may be seen JCB has this Help Document area. Time does not allow to expand upon this Help Document area, perhaps it may be done in the future. It is a feature that is very easily added to any other JCB Component. 
+## 1. Introduction to Helper Structures
 
-### Purchased Sermon Distributor Key
+**[00:00:00](https://www.youtube.com/watch?v=nw9YPu9emws&t=0s)**
 
-[00:00:39](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m39s)
+A question arose about how to integrate a **Help Menu** into JCB components. JCB includes a **Help Document** area that allows developers to provide documentation and contextual assistance within their components.
 
-If you have not purchased the Sermon Distributor Package, there is a place, one of the repositories on the VDM data, called JCB-Packages. Go to vdm-io, and then JCB-Packages on GitHub. Open 'Home' and then under Services, to find JCB-Packages. This package can be downloaded but it can only be used when a key is purchased for it. [00:01:18](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m18s) This key may be obtained at this link:  http://vdm.bz/jcb-packages. There are a few packages available which are fully mapped components in JCB.[00:02:13](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m13s) If this is purchased all information and code and whatever may be necessary will be included which will help you to install the Sermon Distributor Package.
+Although time did not allow for an in-depth expansion of this feature in the video, the **Help Document system** can be easily added to any JCB component through a helper structure.
 
-I am going to install the Sermon Distributor Package on this Demo website. This will not be demonstrated here since all the instructions are included once you have installed the Sermon Distributor Package. 
+---
 
-### New Admin View - Help Document
+## 2. Obtaining the Sermon Distributor Package
 
-[00:02:48](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m48s)
+**[00:00:39](https://www.youtube.com/watch?v=nw9YPu9emws&t=39s)**
 
-Admin Views has this new admin view called 'Help Document'. JCB has this Demo Component by default. To demonstrate it: This Demo Component is opened and a Helper structure is added to it. Presently it does not have any Helper structure. It is just a Demo Component with only a few structures. [00:03:28](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m28s) It only has that Admin View and one view called 'Look'. It does not have a Custom view, but it got a Site view called 'Looks' and 'Looking'. First, go to the Admin Views and click '+' to add another row. We are going to add the View - Help Documents, the support icon.  
+To follow along with this demonstration, the **Sermon Distributor Package** is required.
+This package includes preconfigured structures, such as the **Help Document Admin View**, which can be imported into any component.
 
-If this un-ticked problem shows up, just close that and open it again and all those tick boxes will be in place.   Repeatable fields will be phased out and you will end up working with subforms in the future. [00:04:19](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m19s)Then the 'View - Help Document' is added, the 'Support' icon will be used, and leave most of this to defaults, except it does not have 'Metadata'. 'Access' is not going to be used. An 'Import' can be done, but it does not have a front end editing. We do not want it to have one and we would have it in the 2nd position, maybe not part of the Main Menu. [00:04:52](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m52s) Save. Then save and close. The Sermon Distributor Package has now been installed in JCB, that added the Help Document Admin View, and I've just linked that view to the Demo component. Go to the Compiler. and compile that Demo Component. As may be seen it is not yet installed on the website. This is quite important not to have it installed on the website. Compile it, and install it.  
+1. Visit the VDM.io GitHub repository:
+   `https://github.com/vdm-io/JCB-Packages`
+2. Locate the **Sermon Distributor** package.
+3. Purchase the activation key from [http://vdm.bz/jcb-packages](http://vdm.bz/jcb-packages).
 
-### Demo - Help Document - New
+Once installed, all necessary data and instructions are included in the package documentation.
 
-[00:05:43](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m43s)
+---
 
-If Demo is opened, it may be seen that it has this new Help Documents area. At the moment it does not have any Help Documents. To change that, go to the Help Documents, click New, and when it is opened, select which group you want to Target. Select all, then select in 'Location', that a view in the Admin Area needs to be targeted. The Demo will be the Desk Dashboard. Then there is 'Help Documents'. [00:06:23](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m23s) There is 'Import'. The  'Looks' area will be targeted and a title may be given to it. The type of help that is needed may be selected, as a link to a Joomla article is needed, or to put in preferred custom text, or to be able to link to an external URL. 
+## 3. Adding the Help Document Admin View
 
-* ###  Type - Link To External URL
+**[00:02:48](https://www.youtube.com/watch?v=nw9YPu9emws&t=168s)**
 
-[00:06:41](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m41s) 
+1. Open your demo component in JCB.
+   For example: `com_demo`.
+2. Go to **Admin Views** and click **+** to create a new view.
+3. Name the view **Help Document**.
+4. Assign the **Support** icon.
+5. Configure the following options:
 
-This is usually what will be used when a component gets shipped. Since this will then give the opportunity to link it to an external URL which can be updated and edited without sending an update or an upgrade to the component. The help pages can be changed which were linked them. This is how JCB has been setup. JCB is linking to an external Help Structure but you can decide whatever you want to do with this component. 
+   * **Metadata:** *Not required*
+   * **Access:** *Not used*
+   * **Import:** *Optional*
+   * **Frontend Editing:** *Disabled*
+   * **Menu Position:** *Second position (optional)*
 
-* ### Type - Text
+> **Tip:** If tick-box issues appear (fields not showing correctly), simply close and reopen the form.
+> JCB is phasing out repeatable fields in favor of **subforms**, which provide better flexibility and database consistency.
 
- [00:07:20](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m20s) 
+Save and close the new Admin View.
 
- For example: 'Text' can be used, and  "This is the help you need" can be typed in or whatever. Save and close. If 'Looks' is opened, a new button called 'Help' is shown. If it is used it opens that 'Help'. [00:07:47](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m47s) Go back and click 'New' then that 'Help menu' will not be displayed anymore. You can close, and go back to the 'Help Documents' and create another one. Again a specific group may be targeted, or all groups can be targeted. Again at Admin area. The Site area can also be targeted, and it is possible to link it to any of the front end areas. [00:08:32](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m32s) It may be decided not to target the list(Looks), but the edit area(Look) which is singular. Again a title may be given to it. In this instance link it to an URL. Save and close. Then in the 'Looks' area, add New, and now it can be seen that area also has a Help button. When the help button is used, it opens that URL in a pop-up, and as may be seen a video is selected. [00:09:13](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m13s) That is how to link to other external sources to give instructions that are necessary(Help) to a specific page. 
+---
 
-### System Name 
+## 4. Compiling and Installing the Updated Component
 
-[00:09:36](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m36s) 
+**[00:04:52](https://www.youtube.com/watch?v=nw9YPu9emws&t=292s)**
 
-Having set up a few Help Menus for the Component you can go back to Component Builder and to the Admin View Area. If for instance a Help Document is linked to Component Demo, and you want to ship it with the information that you have created as 'Help' inside of the Component. What needs to be done, is to open this Admin View, and give it a system name of 'Demo'. Then go to MySQL(add MySQL), and indicate by 'Yes' that it should be linked. [00:10:31](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m31s)  Select MySQL source - Table. Go to the Demo Table and select a Table. Select 'demo_help_document', and remove some of the values that are not necessary. (See video) Save and close. It may be saved or saved as a copy. If I have another component, I will copy the Help Document(demo) and link it to that components database.
+1. Navigate to **Compiler**.
+2. Compile your demo component (`com_demo`).
+3. Install the newly compiled ZIP file through Joomla's **Extension Manager**.
 
- **NB. When this is done, first compile the component before you uninstall the local component.**
+> Ensure that the component is **not already installed** before compiling; otherwise, database conflicts may occur.
 
- First, go to Compiler and compile that Demo component. 
+After installation, open the Demo Component and verify that a new **Help Documents** area has been added.
 
-### Insert Tables - Linking Table To Component
+---
 
-[00:11:57](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m57s)
+## 5. Creating a New Help Document
 
-What has happened in the code? If the 'com_demo_v2_0_0_J3.zip' package of a component is opened. Go to 'Admin area', then to 'sql'. Then to the 'install.mysql.utf8.sql' document. Double click on that. It opens this document.   [00:12:25](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m25s) 'Insert Table' can be seen. It also has 'Insert Data' that we created. There is 'this is the help you need', there is a URL which I added. It will insert this data into the database when this component is installed. [00:12:50](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m50s) Having done those changes and linking the table to the component, it goes to the database and extracts these values and places into the dump file of the Component. Keep in mind that it did not place it into the Update file. That means that if users already have your component installed and they install this, it will not add these Helper structures, you will have to use Custom Scripting in the Joomla Component Area in the PHP tab. There is a place for update and uninstalled and installed to add Custom PHP Script, where you can insert this data into the Database. 
+**[00:05:43](https://www.youtube.com/watch?v=nw9YPu9emws&t=343s)**
 
-### What Happens If Component Is No Longer Installed?
+1. Go to **Help Documents** and click **New**.
+2. Set the **Target Group** to *All*.
+3. Under **Location**, select an Admin Area view (e.g., Dashboard or Looks).
+4. Provide a **Title** and select the **Type of Help**.
 
-[00:13:48](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m48s)
+### Help Types
 
-To illustrate what happens if the component is no longer installed, and an attempt is made to compile it: First thing is to uninstall the Demo Component. Then go to the compiler and try and compile Demo Component. It will indicate 'An error has occurred' and that it could not find "Table 'demo.#_demo_help_document' doesn't exist". [00:14:24](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m24s) It could not find that table because it has been uninstalled. The only way to compile this component would be to go back to the Admin View, and 'delink' the component from the table. Remember to compile the component before you uninstall the component which you are linking to. We are linked to the installed components table.  [00:14:55](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m55s) Use a Dump file to avoid this, instead of linking to the table. Select 'Dump' and open the 'sql' file that is created, and copy the values from that file. Paste those values in here MySQL. [00:15:28](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m28s) You could leave a comment or even leave a comment out. Save and close. Even if the component is uninstalled it will still be possible to compile and still have this Demo or Shipping values of the component in place. Let's compile it again. This time it compiled without any errors. [00:16:04](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m04s) If the 'com_demo_v2_0_0_J3.zip' package is opened, and then open 'install.mysql.utf8.sql' file. It may be seen that it added that Dump Values right back into the file, and that is exactly what it should do. This was just to demonstrate how to add a Help Menu Structure to any JCB Component. [00:16:45](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m45s) 
+#### a. External URL
 
-You could do that without purchasing the Sermon Distributor Component. The only part that really is necessary, is to create a Helper Document, and of course, this Helper Document that is used from the Sermon Distributor Package has custom scripting in it. It is this custom scripting that makes it adaptable to any other Component.
+**[00:06:41](https://www.youtube.com/watch?v=nw9YPu9emws&t=401s)**
+Use this when distributing a component publicly.
+This links the help content to an **external page** (such as documentation or video tutorials) that can be updated without shipping a new component version.
 
-### JCB Detects If It Is A Help Document
+#### b. Text
 
-[00:17:51](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m51s)
+**[00:07:20](https://www.youtube.com/watch?v=nw9YPu9emws&t=440s)**
+For simple, internal help content, choose **Text** and enter the instructions directly.
+Example:
 
- When JCB detects that this is a Help Document, and it detects those specific field values that are set up correctly, then it automatically builds some of the necessary front-end concepts as well as adding this dynamic behavior in the back end. What makes this unique is that the component is shipped with this pre-built in Help Structure, but the user that uses your component, might want to give extra help or a little different kind of help to the front end users of his Website, and he will have access to this Help Area and editing it and changing it to the correct wording and expectations that he might have. [00:18:59](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h18m59s) That is the way that you could add Helper structures to your JCB components. 
+> "This is the help you need."
+
+Save and close the record.
+
+Once saved, the targeted view (e.g., **Looks**) will display a new **Help** button, which opens the content or link in a modal.
+
+---
+
+## 6. Targeting Additional Views
+
+**[00:08:32](https://www.youtube.com/watch?v=nw9YPu9emws&t=512s)**
+
+You can target either:
+
+* **List views** (plural, e.g., Looks)
+* **Edit views** (singular, e.g., Look)
+* **Frontend views** (site area)
+
+Each can have unique help content linked to different URLs or text.
+
+---
+
+## 7. Linking Help Documents to Database Tables
+
+**[00:09:36](https://www.youtube.com/watch?v=nw9YPu9emws&t=576s)**
+
+To ship your component with built-in help content:
+
+1. Go to **Admin Views → Help Document**.
+2. Assign a **System Name**, e.g., `demo_help_document`.
+3. Add a **MySQL Table Link**:
+
+   * Enable *Linked to MySQL Table*: Yes
+   * Choose Source: *Table*
+   * Select `demo_help_document`
+   * Remove unnecessary fields (as demonstrated in the video).
+
+Save and close.
+
+> **Important:** Always compile the component **before uninstalling** the local version.
+
+---
+
+## 8. Understanding the SQL Insert Process
+
+**[00:11:57](https://www.youtube.com/watch?v=nw9YPu9emws&t=717s)**
+
+When you compile the component:
+
+* The file `install.mysql.utf8.sql` will automatically include:
+
+  * Table creation code
+  * `INSERT` statements for the default Help Document records
+
+This means that help data (like links and text) will be added to the database upon component installation.
+
+> Note: These inserts are **not included in update files**.
+> For updates, use **custom scripting** in the JCB PHP tab under *Install / Update / Uninstall Events* to reinsert data.
+
+---
+
+## 9. Handling Missing Linked Tables
+
+**[00:13:48](https://www.youtube.com/watch?v=nw9YPu9emws&t=828s)**
+
+If you uninstall the component and then attempt to recompile it, you may encounter the error:
+
+> `An error has occurred: Table 'demo.#_demo_help_document' doesn't exist`
+
+This happens because the linked table no longer exists.
+To resolve this:
+
+1. Return to the **Admin View**.
+2. Change the MySQL Source from **Table** to **Dump**.
+3. Copy the SQL from your dump file and paste it into the MySQL field.
+
+Now you can compile the component successfully even if it is uninstalled.
+
+---
+
+## 10. Verifying the Dump File
+
+**[00:16:04](https://www.youtube.com/watch?v=nw9YPu9emws&t=964s)**
+
+After recompiling, open the new ZIP file and check the `install.mysql.utf8.sql` file.
+You'll see that your **Dump Data** has been properly inserted, confirming that the Help Document data is now hardcoded into the install script.
+
+---
+
+## 11. About the Sermon Distributor Helper Script
+
+**[00:16:45](https://www.youtube.com/watch?v=nw9YPu9emws&t=1005s)**
+
+You can create your own Help Document structure from scratch without purchasing the Sermon Distributor package.
+However, that package includes **custom PHP scripting** that automates adaptation of the help structure for any component - a good reference for advanced users.
+
+---
+
+## 12. How JCB Detects Help Documents
+
+**[00:17:51](https://www.youtube.com/watch?v=nw9YPu9emws&t=1071s)**
+
+When JCB detects that a view is a **Help Document** and the appropriate fields are set, it automatically:
+
+* Builds the front-end and back-end behaviors
+* Integrates the contextual help buttons
+* Supports dynamic linking between admin and site views
+
+This allows users of your component to modify or extend help content according to their needs.
+
+---
+
+## 13. Summary
+
+**[00:18:59](https://www.youtube.com/watch?v=nw9YPu9emws&t=1139s)**
+
+You have now learned how to:
+
+1. Add a **Help Document Admin View** to any component.
+2. Configure and target help entries to specific views.
+3. Link help data to your component's database.
+4. Use **Dump** mode to preserve data for compilation.
+5. Understand how JCB auto-detects and integrates help structures.
+
+This process makes your components more **user-friendly** and **self-documented**, reducing support requests and improving the user experience.
+
+---

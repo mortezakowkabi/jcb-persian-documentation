@@ -1,3 +1,231 @@
-# Manage a Components Global Config Option Field 
+# Manage a Component's Global Config Option Field in Relation with Menu Params
 
- I would like to give you the tutorial How to Manage your Global Options Also known as the global configuration options Of a component As some of you may already know [00:00:18](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m18s) The global configuration options is also The same area where you are able to set The menu option Of a specific site View So I'm gonna demonstrate some of that to you We want to actually achieve An understanding on how to Control where which of these Fields Appear [00:00:44](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m44s) You see because you might want to have the field appear in your Global options after component But not in the menu Or you might want to have it Appear in the menu But not in And the global option And so there is ways to achieve that And so I wanna demonstrate that And also give a little general overview because I was looking for the tutorial Where I've done this Before [00:01:09](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m09s) And Yeah it's a classic example of dealing with to many issues in one Tutorial so I actually couldn't find it So I'm gonna redo this and I know it's there somewhere but Ok this will stand out so people find it easily so let's see Joomla components I've got a component to your called member manager If I open it It's also got a lot of config file Fields already setup. So let's look at that. [00:01:43](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m43s) So I've got some Global fields There is a site view called members Which actually also already has A number of fields as you can see here And That means they are actually also we can also look at some of them I'm gonna demonstrate adding one because to me That's most Explanatory Then there's some company value data and stuff ok [00:02:11](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m11s) So there's a lot of config values already here Usually if there is none you're just click on this plus and start adding The fields now It's really in the field that a lot of the control is managed So if I go out of here And I go to the fields And let's let's open some of those Field Like for example [00:02:38](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m38s) We have this members the first one is member display type list so it is this one Let's open that one And so basically see normal Members display type And then Basically nothing Unique Now If I compile this component install it [00:03:08](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m08s) And now let's go look At that component quickly And it's global options We see it has only 1, 2 3 Fields showing here so the 3 field showing here But in our list there are quite a lot more So let's look at some of the fields that don't show up in the config area So like let's see It is panel template Panel [00:03:40](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m40s) panels, panel and then displayed type So That means this table row template isn't there This table template isn't there oh wait Maybe they are Let's see if I change this Oh yeah they are there So there are a few hidden Fields Working along here [00:04:04](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m04s) So let's scroll down Target member types that one isn't there Components 1to1 link to JMM multi custom That one isn't There And this one too many Is also not there ok so let's go look at that in the fields area So here is the component 1 to many linked [00:04:31](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m31s) To JMM Joomla member manager First scroll down I see a few options here For now we'll see that there is in this extra properties area There's a new property added called display And it set to menu I'll be here you can read about this this actual property there are a few And it says display switch for Dynamic placement in relation to the use Of the field in menu and global configuration options [00:05:10](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m10s) So that means if this field gets used in The menu or in Global configuration You can switch it on and off to be either in the one or the other With leaving this blank like not having it in all We'll put it into both Which was the default way used to always work So So the config option will only add the field to the global configuration area Where is the menu will add the field only to the [00:05:43](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m43s) To the menu area Which means this field is only being added To the menu area So let's see if that so So here in the global configuration of the manager it on the members it is not Visible no matter which choice we make here It's still not visible If we select member manager members You see there is a new tab here And here it is actually showing up [00:06:14](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m14s) Component one to one So here it is active where as in the Global config it is not So that is Really as simple as it is In adding a Field To just Menu is to select display And add the string menu here exactly as spelled there [00:06:37](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m37s) Or config now if you want it in both like I said you just leave this out like You don't even need to add anything where is if you want it only in config you would add Config string in the value here Ok so let's do that Let's create a field We say new give it a name Show title Select an option we wanna do radio Radio field [00:07:08](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m08s) Then I'm just gonna add these properties So as name we set show title as label show title Select if the title should be shown and yes no the default being one And for now we gonna leave off any other settings here and just save this Then the going back to our member manager we can open the config And add this new tab in here So we just clicked + here the way we know how to add this tab name Is it must be the exact same name as the site view Where we want the menu Value to be added [00:07:58](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m58s) So So we gonna add the correct site view now we here we selecting the field Which we've just created So I'm going to add it to the cpanel And show title and the default again I'm adding it here as one And we can save and close out of here Now let's compile this component and see what happens and install Now I'm going back to the go configurations We have this tab called cpanel and it says show title [00:08:37](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m37s) And it's yes or no And that's quite to be expected But now going to the menu And instead of selecting Members I'm going to select Cpanel and again shows me this member manager tab but now It says show title and he has this use Global Yes or no So you can use Global just leave that or you could say no [00:09:04](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m04s) Which is a local overwrite Yes would also be a local overwrite So This way Your parameters in your menu It overwrites either falls back to the global setting of the components configuration Or it overwrites it here on this menu level Ok now we want to change the field so it doesn't show up in the menu Which is quite simple we go down here And we [00:09:33](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m33s) Again Select the display option and I wanna it only to be in the config area so we add the word config here And save Then we go back and compile an install this component just again Now back in the menu We need to just refresh this page here Basically make sure we have Cpanel selected And as you can see the values no longer showing here [00:10:02](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m02s) There's no longer that Xtra tab Where is in member manager if I was to refresh this area The cpanel tab is still there and that option is still available Now I can go back and change this from config to Menu Again just save this And go back compile and install Now going back to the menu [00:10:30](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m30s) If I refresh this menu suddenly we have member manager back and has Show title But now you see it no longer has the global option This is a fix in the latest release it's still in staging version 2.9.15 Suppose it will come out in 16 so this is a fix we've noticed that it used to still add global Here While there is no longer a global value So we have fix this But so from here on forward it should be resolved [00:11:04](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m04s) Now if we go back to the global configuration area And we refresh this area Then suddenly the Cpanel tab is gone We we don't see it and that means that the value itself also It's still in the database If you If you've saved it previously and you've done this it's still in the database now the only way to quickly get it out Just click save here Oh and we've got some empty values we need to fill before we can so that's just a little [00:11:38](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m38s) Demonstration From my side on how to adapt The Actual Config of your component This area To be able to add Fields to it Is quite easy but to be able to add this Fields to site views so If I show you this if I say a site view I mean [00:12:02](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m02s) That this component If we would open it In the site views it actually has A site view called cpanel See also members the one we looked at And so The cpanel Is its name If you aren't sure about what that name is you can go to site views And to that specific [00:12:27](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m27s) Site view this name here That says name That is the name of the tag you must use And so That means your Fields behaviour Is literally controlled In the field itself And Yes that means if you would to add this field to multiple components it will be actually behaving Similar [00:12:52](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m52s) In every one of those components Meaning if you've add this to be menu it will only be loaded to menu But if you add this field to a site view or sorry to an admin View It doesn't actually react to this display Value Then then this display property is no longer Really being used It's only Active When it is lined up in a few points that is first that it's belongs to a tab [00:13:27](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m27s) Which also has a site view of the same name Secondly That it Is in the configurations therefore of course So it needs to be a configuration field That belongs to a tab Which has a site view of the same name then these display Property actually kicks in Otherwise it's simply ignored And so you could use this fields in [00:13:55](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m55s) Menus sorry not me in admin views And then this value won't play a role It's only when it becomes a config field Ok well thanks for watching If you still have any questions Or even if you see some Room for improvement Please do not hesitate to communicate with us [00:14:18](https://www.youtube.com/watch?v=dhVVQP4KS3Q&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m18s) Either on the Forum or if it's If you know for sure that this is a feature request or a bug whatever then related to JCB Then please Open an issue on GitHub So look forward to hearing from you take care.
+## Overview
+
+This tutorial explains how to **manage global configuration option fields** in your Joomla Component Builder (JCB) component and how those same fields can be linked to **menu parameters** for specific site views.
+
+You'll learn:
+
+* How global options relate to menu view options.
+* How to control where certain fields appear - either in **Global Config**, **Menu Params**, or **both**.
+* How to use the `display` property in JCB to dynamically assign field visibility.
+
+---
+
+## 1. Understanding Global Configuration Options
+
+**[00:00:18](https://www.youtube.com/watch?v=dhVVQP4KS3Q&t=00h00m18s)**
+
+In Joomla, **Global Configuration Options** define default behaviors for your component. These can later be overridden by **menu parameters** for individual menu items.
+
+> For example, you may want a setting to appear:
+>
+> * Only in your component's *Global Configuration* area.
+> * Only in a *Menu Item's* parameters.
+> * Or in *both*.
+
+JCB allows you to achieve this distinction easily using a `display` property.
+
+---
+
+## 2. Reviewing Existing Configuration Fields
+
+**[00:01:43](https://www.youtube.com/watch?v=dhVVQP4KS3Q&t=00h01m43s)**
+
+Open your component in JCB (for example, **Member Manager**) and locate the **Global Config Fields** area.
+
+1. Navigate to your component in **Components** → **Member Manager**.
+2. Observe existing config fields - these are used in both the component's config and menu options.
+3. If none exist, click **➕ (Add New Field)** to begin.
+
+You'll notice that each field's behavior is largely determined by its **extra properties**, which we'll look at next.
+
+---
+
+## 3. Understanding the `display` Property
+
+**[00:04:31](https://www.youtube.com/watch?v=dhVVQP4KS3Q&t=00h04m31s)**
+
+Each field in JCB's Field Manager has an *Extra Properties* section.
+A key property is **`display`**, which determines where the field appears:
+
+| Property Value | Field Appears In                   |
+| -------------- | ---------------------------------- |
+| *(empty)*      | Both Global Config and Menu Params |
+| `menu`         | Menu Params only                   |
+| `config`       | Global Config only                 |
+
+> **Tip:**
+> Leaving `display` blank is equivalent to the legacy behavior - the field appears in both Global and Menu contexts.
+
+Example:
+
+```text
+display = menu
+```
+
+This setting ensures that the field is visible **only** in menu parameters.
+
+---
+
+## 4. Demonstration: Field Visibility Control
+
+**[00:05:10](https://www.youtube.com/watch?v=dhVVQP4KS3Q&t=00h05m10s)**
+
+When the `display` value is set to **menu**, the field will **not appear** in the Global Configuration area, but **will appear** under a site view's menu parameters.
+
+If you:
+
+* Go to **Global Config** → your component → *members* tab → the field won't be visible.
+* Go to **Menus** → *Add Menu Item* → select the corresponding view → the field **is** visible.
+
+This confirms the field's correct placement.
+
+---
+
+## 5. Creating a New Field for Both Global Config and Menu Params
+
+**[00:07:08](https://www.youtube.com/watch?v=dhVVQP4KS3Q&t=00h07m08s)**
+
+Let's add a new field called **"Show Title"**.
+
+### Steps:
+
+1. Go to **JCB → Fields → New**.
+2. Set:
+
+   * **Name:** `show_title`
+   * **Label:** `Show Title`
+   * **Type:** `Radio`
+   * **Description:** "Select if the title should be shown."
+   * **Options:** Yes / No
+   * **Default:** `1` (Yes)
+3. Leave **`display`** blank to make it appear in both Config and Menu areas.
+4. Save the field.
+
+Next, add this field to your component's **Global Config**.
+
+### Add Field to Config Tab:
+
+1. Open your component (e.g., *Member Manager*).
+2. Click the **Global Config (+)** button.
+3. Create a tab with the same name as the target **site view** (e.g., `cpanel`).
+4. Add your new field `show_title` to this tab.
+5. Save and close.
+
+Compile and install the component to apply the changes.
+
+---
+
+## 6. Verifying the Field in Joomla
+
+**[00:08:37](https://www.youtube.com/watch?v=dhVVQP4KS3Q&t=00h08m37s)**
+
+After installation:
+
+* Open **System → Global Configuration → Member Manager**
+  You'll see a **Cpanel** tab with the new **Show Title (Yes/No)** field.
+* Create or edit a **menu item** linked to this component's site view.
+  Under the **Member Manager** tab, the **Show Title** field also appears, including an option to *"Use Global"*.
+
+> This allows Joomla menu items to **inherit or override** the component's global value.
+
+---
+
+## 7. Restricting a Field to Global Config Only
+
+**[00:09:33](https://www.youtube.com/watch?v=dhVVQP4KS3Q&t=00h09m33s)**
+
+To make a field appear **only in Global Config**:
+
+1. Edit the field in JCB → **Fields Manager**.
+2. Under *Extra Properties*, set:
+
+   ```text
+   display = config
+   ```
+3. Save, compile, and reinstall the component.
+
+### Verify:
+
+* The field **disappears** from the menu item parameters.
+* It **remains visible** in the component's global configuration area.
+
+---
+
+## 8. Restricting a Field to Menu Params Only
+
+**[00:10:30](https://www.youtube.com/watch?v=dhVVQP4KS3Q&t=00h10m30s)**
+
+To move the field exclusively to the **menu area**:
+
+1. Edit the same field again.
+2. Set:
+
+   ```text
+   display = menu
+   ```
+3. Save, compile, and reinstall.
+
+Now:
+
+* The field is **only visible in Menu Params**.
+* It is **hidden** from the Global Config screen.
+
+> **Note:**
+> In JCB version 2.9.15 and later, this behavior has been fixed to properly remove the "Global" reference when the field is menu-only.
+
+---
+
+## 9. Field Naming & Site View Alignment
+
+**[00:12:02](https://www.youtube.com/watch?v=dhVVQP4KS3Q&t=00h12m02s)**
+
+When assigning fields to config tabs, the **tab name must match** the **site view name**.
+
+To find this:
+
+1. Go to **Site Views** in JCB.
+2. Open the desired site view (e.g., `cpanel` or `members`).
+3. Use the **Name** value (not the title) as the **tab name**.
+
+This ensures that menu parameters properly connect to the corresponding site view tab.
+
+---
+
+## 10. Scope and Behavior Notes
+
+**[00:12:52](https://www.youtube.com/watch?v=dhVVQP4KS3Q&t=00h12m52s)**
+
+* The `display` property only applies to **configuration fields** that belong to a tab matching a site view.
+* It does **not** affect **admin views** or regular fields within backend forms.
+* When a field is used across multiple components, its `display` behavior remains consistent in each.
+
+---
+
+## 11. Wrapping Up
+
+**[00:14:18](https://www.youtube.com/watch?v=dhVVQP4KS3Q&t=00h14m18s)**
+
+You've now learned how to:
+
+* Create and configure global fields in JCB.
+* Control their display between Global Config and Menu Params using the `display` property.
+* Correctly assign fields to tabs that align with your site view names.
+
+If you encounter issues or have feature requests:
+
+* Visit the [JCB Forum](https://github.com/vdm-io/Joomla-Component-Builder/discussions)
+* Or open an issue on [GitHub](https://github.com/vdm-io/Joomla-Component-Builder/issues)
+
+---
+
+### **Summary Table**
+
+| Goal               | `display` Setting | Visible In    |
+| ------------------ | ----------------- | ------------- |
+| Both Global + Menu | *(blank)*         | Both          |
+| Global Config only | `config`          | Global Config |
+| Menu Params only   | `menu`            | Menu Options  |
+
+---

@@ -1,190 +1,305 @@
-# PROPOSED COLLABORATIVE WORKFLOW IN JCB
+# **Proposed Collaborative Workflow in Joomla Component Builder (JCB)**
 
-### Permission Area - Checked Out Functionality
+This documentation explains how to collaborate effectively on Joomla Component Builder (JCB) projects using a structured workflow that integrates JCB, GitHub, and JCB Packages.
+Each section includes timestamps linked to the official tutorial video for deeper reference.
+
+---
+
+## **1. Checked-Out Functionality and Permission Area**
 
 [00:00:00](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h00m00s)
-(Click on these time links to see Youtube video)
 
-I want to talk to you about a collaborative workflow. JCB like any other Joomla Component can function in a shared environment quite easily, where you have one website or one system that is online, and people can log in, and can [00:00:22](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h00m22s) edit components. They can click on a component and while they're working on that component, no one else can, because it will in effect lock the component out for them. If we open the list view again, you will see that it is checked out. This functionality [00:00:46](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h00m46s) is available in JCB. Whether it's an admin view, or a field. If your login and someone else opens it up, it checks out the item. People can work together quite easily in a shared environment where they have one JCB, but multiple users. More than that it also has a very strong Permissions structure,[00:01:13](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h01m13s) which if you open the Component Builder Permissions area, you'll see that it has quite a long list.
+JCB supports collaborative development within a shared Joomla environment. When a user opens a component for editing, the system **locks (checks out)** that item-preventing others from editing it simultaneously. Once saved and closed, the component becomes available again.
 
- I suppose longer than one might anticipate, it's a long list of permissions. It means you can have different groups in your Joomla groups regarding Public, Guest, etc, that have access and is allowed to work on only certain areas. [00:01:44](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h01m44s) Your possibilities of setting up a development workflow with JCB in one Joomla website is endless. That was the whole idea. The idea behind here was to make JCB a place where you could have teams work together in Joomla Developing Components. This is the one that's worked from day one, this approach. It's very powerful. [00:02:11](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h02m11s) I've already been told by quite a number of developers that they are using that. They have teams working together on components and it is excellent. 
+This functionality applies to all areas of JCB, including:
 
-### Offline Environment
+* Components
+* Admin and Site Views
+* Fields
+* Layouts
+
+JCB also includes a **comprehensive permissions system**, allowing fine-grained control over who can view, edit, or manage specific areas.
+By assigning user groups in Joomla's Access Control List (ACL), you can enable different levels of contribution.
+
+> **Tip:** You can configure permissions for JCB itself under *Components → Component Builder → Options → Permissions.*
+
+---
+
+## **2. Working in an Offline Development Environment**
 
 [00:02:23](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h02m23s)
 
-We all know JCBs most desirable environment is an offline environment. Where you do development in your own local developing environment. Where you maybe have a virtual machine running, and you can do docker deployments or something like that when you run Joomla and you're safe within your own network. When you do that the collaborative concept of working together with other developers doesn't come to its right. That's what I've been working on. The whole idea of the JCB packages was born out of this need. The need to collaborate with others around a specific component. 
+Although collaborative online environments work well, JCB's preferred setup is a **local (offline) development environment**, such as:
 
-### Area Called Servers - Added The Option SFTP - Create Connections Between Different JCBs
+* XAMPP / LAMP stack
+* Docker containers
+* Virtual machines
+
+Offline development ensures isolation, safety, and speed. However, this limits real-time collaboration.
+To solve this, JCB introduces mechanisms for **sharing and synchronizing component data between different developers**.
+
+---
+
+## **3. The "Servers" Area and SFTP Synchronization**
 
 [00:03:13](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h03m13s)
 
-We've also started working on an area called servers. In which we have added the option for SFTP which is really smart protocol. It's purely PHP. It will function in moving zip files and things around. But the idea would be in the long run [00:03:44](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h03m44s) that we could possibly create connections between different JCBs which could automatically synchronize things almost like they're on the same system. I did have a thread open on that on Github, connecting JCB's with each other to sync development on agreed projects. That was the issue that I opened up, issue 233. 
+A new JCB feature called **Servers** introduces **SFTP connections**, allowing data exchange between remote JCB instances.
+This lays the groundwork for syncing JCB data (like components, views, or fields) between multiple installations - effectively linking teams working on the same component in different environments.
 
-### New Feature - Development Method
+> **Future Goal:** Establish a system where multiple JCB installations automatically synchronize components using secure SFTP transfers.
 
-[00:04:14](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h04m14s) 
+---
 
-There was a discussion between me and one of my coworkers and some others from the community which ended up in saying that this is a premium feature. Although we have put it on the back burner, I am still thinking about taking this and making this a reality. [00:04:42](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h04m42s) 
-So part of doing that is to take a specific area of JCB and that area is the import of JCB packages. To improve this area, synchronization will be nothing else but a JCB package traveling from one to the other, updating each other automatically. To achieve that I started working on a feature that is available in the latest version 2.7 9, [00:05:17](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h05m17s) 'Development Method'. We have called it, the Default, and it is the way that it always used to work. Then there's Expansion. There's a tutorial about this which really explains that you can select specific components that you've developed. Then on the frequency of the [00:05:39](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h05m39s) Cronjob it will build and install this project automatically. That is the first step needing to make that connection between two projects possible. I'm literally talking about different Joomla websites, one is offline and one is online. One that's online to serve like a hub, then everybody that's offline would be pushing the changes to this online and pulling again from it. That is the long-term aim. 
+## **4. Development Method Feature**
 
-### Team Of Developers
+[00:04:14](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h04m14s)
 
-[00:06:18](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h06m1s)
+The **Development Method** (introduced in JCB v2.7.9) adds automation for developers.
+Located under *Global Options → Development Method*, this feature includes two modes:
 
-If you are listening you'd realize where I'm heading. I'm trying to get to the point where I can have a team of developers. All having their offline environments, doing development on the same project, and as they feel they achieved a certain level of stability in the project in a certain area, they can make a pull request to the online environment where JCB is running. Others can review those changes and [00:06:47](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h06m47s) made that component come in as a clone. They can play around with it until they feel this is good enough. It can be merged into the main branch somehow. It's somehow putting Git in an interface. At some point, I became so overwhelmed with the task that I started doing all these other little things that you now see coming about. 
+1. **Default:** Traditional manual compiling and installing.
+2. **Expansion:** Automatically builds and installs selected components based on cron job frequency.
 
-### Added VDM Packages
+This automation helps prepare JCB for seamless project synchronization between local and remote installations-essential for distributed teams.
+
+---
+
+## **5. Multi-Developer Collaboration**
+
+[00:06:18](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h06m18s)
+
+The long-term goal is to enable **multiple developers** to work on the same project from their local environments.
+Each developer can push their changes (after reaching a stable state) to a shared online JCB hub.
+Team members review, test, and merge these changes, just like a Git pull request workflow-but integrated within JCB.
+
+---
+
+## **6. VDM Packages and JCB Package Management**
 
 [00:07:15](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h07m15s)
 
-One of them I have added is a VDM package area, which takes all the packages that we have available online and put them here, easy to get hold of. There are some free ones between them at the moment, like this Demo package. All of the packages that are available on GitHub, the actual Joomla Component of this package, will have the source code link showing up. You can go and look if you select Questions and Answers. 
+The **VDM Packages area** in JCB lists all official and community packages available for import.
+These include both free and premium component blueprints.
+Each package links to:
 
-### JCB Packages Produces Source Code
+* **GitHub source code**
+* **Joomla installable version**
+* **JCB package metadata**
 
-[00:07:56](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h07m56s)
+> **Note:** You can import or export JCB packages to share or reuse components.
+> Each package represents the **JCB-mapped component**, not the compiled Joomla component.
 
-There's a source code area where you can go and look on GitHub to this program and you can take it and install it on Joomla website, to see its functionality and to see its features. That's how you can evaluate the package easily. It means that this JCB package produces this source code, that's what it gets down to.  The current workflow model looks as follows. 
+---
 
-### Mapped Component
+## **7. Understanding the JCB Mapped Component vs. Joomla Component**
 
 [00:08:30](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h08m30s)
 
-First, you need to realize there is the JCB Mapped Component and then there is the Joomla Component. The JCB Mapped Component is the fields, the views, the code, everything inside of JCB that can be moved between [00:08:49](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h08m49s) JCBs being one website one or the other. You can extract a package and give it to someone and he can import it into his JCB. This is what this is. 
+* **JCB Mapped Component** - the blueprint containing all data (fields, views, scripts) inside JCB.
+* **Joomla Component** - the compiled output of that blueprint.
 
-### Joomla Component
+You can edit JCB Mapped Components to generate updated Joomla Components, but changes made directly to the compiled Joomla Component do not affect the JCB data unless you edit through the integrated IDE custom code system.
 
-[00:09:04](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h09m04s)
+---
 
-Whereas the Joomla Component is the produced package which when you compile that Mapped Component it produces a Joomla Component and these are two different things. Although they are the same thing. When I think about the workflow, then JCB Mapped Component is affecting Joomla Component. But Joomla Component cannot effect JCB Mapped Component. You can change JCB Mapped Component, make changes to the package and it would use a different [00:09:35](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h09m35s) result in Joomla Component package. But if you make changes to Joomla Component package, it does not immediately make any difference to JCB Mapped Component package. Unless you make use of what we have called the custom code implementation where you do editing within the IDE. Then, yes, making changes to Joomla Component package will affect JCB Mapped Component. But that's a whole different story, [00:10:00](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h10m00s) and a little bit beyond what I want to explain. When I think about workflow, then I would like to see that we make a change to JCB Mapped Component package. It gets validated by what we have here (Joomla Component) and then everybody updates again this package to be the same as what we decided on. That may not make sense. 
-
-### Demonstration - Example - Questions And Answers
+## **8. Collaborative Example: Questions & Answers Component**
 
 [00:10:26](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h10m26s)
 
-Let me add some arrows and a demonstration of this. I'm going to use Question And Answers Package as an example. If you are going to become a Collaborator on the Question And Answers package. Then you'd first need to go to the source code of it. On GitHub you would go and open the source code, and you will fork this source code. Which would then [00:10:57](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h10m57s) give you the option of making changes to the Question And Answers. But not directly manually but instead through JCB. That means that you will then clone this repository that you have forked down to your local development environment, and doing it as follow. 
+As a practical example, let's use the **Questions & Answers** package.
+To collaborate:
 
-### First - Local Developing  Environment - Options Area - Set Folder Path - Git Path
+1. Go to the package's **GitHub repository** and **fork** it.
+2. Clone your fork locally using Git.
+3. In your JCB installation, **import** the JCB package version of that component.
 
-The first thing you do is you go back to your component where it's installed on your local developing environment, [00:11:26](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h11m26s) open the options area, set the folder path for your Git files. You are going to have a place where all your Git files, the component unzipped, is going to be placed automatically for you. Here you can [00:11:45](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h11m45s) add that. I'm going to place it in my user folder. I'm going to create a folder then call it, Joomla. I have to do this manually. Then inside of that, I'm going to add another folder called 'Git'. I'm going to save this. I'm quickly going to create those folders and show them to you in the command line. I need to first add the [00:12:18](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h12m18s) Company information. Save and close. This is just the language, make sure to put it to 'British' at this stage. It is the best practice. I don't want to have any prefix at this stage.  [00:12:42](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h12m42s) Save and close. We've got our Git path setup. 
+You now have both the Git repository and JCB's internal mapping of the component ready for synchronized development.
 
-### Create Files In Local Developing Environment - Via Command Line
+---
+
+## **9. Setting Up the Local Environment and Git Path**
+
+[00:11:26](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h11m26s)
+
+In JCB:
+
+1. Open *Global Options → Paths*.
+2. Set the **Git Repository Folder Path** (e.g., `/home/user/Joomla/Git`).
+3. Save your settings.
+
+On your local system, create these directories manually if they don't exist:
+
+```bash
+mkdir -p ~/Joomla/Git
+```
+
+Add company and language settings as required, and save the configuration.
+
+---
+
+## **10. Compiling the Component and Linking to GitHub**
 
 [00:12:49](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h12m49s)
 
-I need to create those files in my local developing environment. I'll do that via the command line. First, I will make a directory, then I'm going to change that directory. In that directory, I'm going to create another directory called, 'Git', change that directory as well. This is the directory where my components are going to be placed. At the moment if we look inside this directory, there is really nothing showing. The first time I will compile a component [00:13:34](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h13m34s) and I will say to the compiler to add my files to the Git repository. It's going to create a folder with all the code inside it automatically. You will remember that I cloned this repository on GitHub Joomla Questions And Answers. [00:13:54](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h13m54s) To continue I need to get the JCB package for this installed into my JCB program. The way this is done, we go to the JCB package area and select the Questions And Answers package. We will get the package. [00:14:18](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h14m18s) We add the key. At the moment there are not any components on this install. It's fine to leave '_Merge_' to 'Yes'. I'm going to Force Local Update of anything. We can just check again that it is the right package. It's the correct package. The checksum you can read. There is a checksum for the package and at the moment it seems that everything is fine, you can make a final check by clicking this link(https://raw.githubusercontent.com/vdm.io) [00:14:50](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h14m50s) and make sure that this number is the same as the one seeing on the page. All is good, click continue. There you have it. We've got the component in our system.
+1. Compile the imported component for the first time.
+2. When prompted, choose **"Add to Repository Folder → Yes"**.
+   This automatically generates your component's full source structure inside the Git path.
+3. Navigate to that directory and initialize Git:
 
-### Compile For The First Time - Add To Repository Folder - Yes
+```bash
+cd ~/Joomla/Git/com_questions_and_answers_joomla_3
+git init
+git remote add origin <your_fork_URL>
+git pull origin master
+```
 
-[00:15:07](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h15m07s)
+After this, compiling updates the code automatically.
+Run `git status` and `git diff` to see any JCB-driven changes.
 
-If I compile it for the first time, let me show you that there still is no file whatsoever. I'm going to compile this component and I'm going to say: Add to Repository Folder. [00:15:30](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h15m30s) "Should the zipped package of the component be moved to the local repository folder." We have already set the path for this. It will work. If we say 'Yes' and then compile, we will see that it has been done and it's all well. We can go back to the folder and check it again. We will see that there is a folder with its exact name. If we change it in that folder, we'll see that it is at the moment ls-la. [00:16:03](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h16m03s) There's no Git information. This folder is a source code without any Git connected to it. What we are going to do at this point, we are going to connect the forked version that you have on GitHub [00:16:22](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h16m22s) to these folders. And from now on if you make a change to the component, you'll have to push the changes in this folder to the GitHub Repository. 
+---
 
-### Use Following Commands To Link GitHub To Each Other
-
-[00:16:35](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h16m35s)
-
-The way to link the two to each other is to use the following commands. Making sure that you're in the correct directory `com_questions_and_answers_joomla_3`. You can run the command `rm - fR *`. I know you might say why? We did compile it and now delete everything. Well, unfortunately [00:17:10](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h17m10s) this is the only way to do this without difficulty. First, you need to get the information down from GitHub. You might ask why didn't we just do that first? Because it seemed easier to just let JCB build the folder for you and can use the folder. I'm going to wipe out all the files, if we check there now, no file is there.  
-
-### Starting By Pulling Files Down from GitHub - git init - git remote add orgin
-
-[00:17:35](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h17m35s)
-
-We are going to start by pulling the files down from GitHub. First say: `git init`. Then to add the remote branch and to get the remote branch URL, your type out: `git remote add origin`. Then go to GitHub where you have forked the branch. [00:18:02](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h18m02s) You will get the URL by copying it. You can either use the HTTPS or the SSH which in my case I prefer. Paste it in there and click to save it. If you would check the config information, you'll see that this remote branch has been added. 
-
-### Next - Pull Down The Master Branch - ls-la - git status - git diff
-
-[00:18:24](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t24)
-
-The next thing to do is to pull down the master branch. This is done with: `git pull origin master`. This will now get all the information from GitHub which is the same as what you have behind my command line screen. If we are going to do `Ls-la` we'll see that all the files are back as they should be. We have `git` here as well. My [00:19:01](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h19m01s) command line shows us that we have a git repository and we are on the master branch. That was to get us linked to this repository. Now we can go and compile it again. At the moment if we do `git status`, it should say that everything is fine and clean and there is no difference between these two. But the moment we will do another compile, [00:19:30](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h19m30s) it's going to change the files. If we do: `git status`, we'll see that all these files were modified and we can check to see what was modified by doing: `git diff`, we'll see it added more lines(see video). The compiled version was the 24th of April [00:20:03](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h20m03s) and now it's the 5th of May. Scroll down. Here is another one that has changed. There's some XML that changed. We have made an improvement to the `jsonToString` in JCB. It also updated those functions. We have removed the prefix [00:20:41](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h20m41s) to the name. That's been updated. So you can look through the diff to see all the changes that have been made. The reason why the XML file format is changed is because we are using different XML compiler. I can show you that in a moment. 
-
-### Global Options - Two Ways To Compile XML In JCB - SimleXMLElement - String Manipulation Option
+## **11. XML Compilation Methods in JCB**
 
 [00:21:05](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h21m05s)
 
-In the Global Options there are two ways to compile the XML in JCB. The reason why there are two ways is that some servers don't support this one, this SimpleXMLElement Class option. It doesn't support it and mostly because it doesn't have all the PHP models of things applications activated. What we then have is a String Manipulation option which doesn't use the SimpleXMLElement but does [00:21:41](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h21m41s) replace most of the time and building all these XML field string by string. This one 'String Manipulation' is how JCB started and it is most certainly working very well. I like using it. But it isn't necessarily the best option. It's faster. If we compile it again, [00:22:03](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h22m03s) we will probably see fewer changes to the XML. Because I remember that package did use the String Manipulation option. To exit this just press 'Q' and again to go back in. Let's see what has changed. [00:22:28](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h22m28s) In fact I don't see any XML changes. It's just the date that has changed. It's talking about the build date. This is something we might need to look at because the reason why it's changed, is because we imported it. So your application thinks that your 'build' has only started [00:22:51](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h22m51s) today. We have all the changes which are primarily the build date, and JCB itself has improved. It has improved this variable, determines that external value that's with the JSON string(see video). Remember, I said that we've done a little improvement. It is reflecting the JCB improvements which are the way it should be.
+Under *Global Options → Compilation*, you can choose between two XML methods:
 
-### git add - git commit -am"Updated the component with improvements made to JCB" - git push
+1. **SimpleXMLElement** (faster but requires PHP extensions)
+2. **String Manipulation** (fallback, works on most servers)
+
+> **Recommendation:** Use *String Manipulation* if your server lacks certain PHP modules.
+
+---
+
+## **12. Committing and Pushing Changes**
 
 [00:23:36](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h23m36s)
 
-If we are going to make a pull request, we'll most probably say, 'thank you', because you are updating the JCB improvements to the component. Let's show you how that will work. You would now make a commit. It should look something like this and remember. I always show you the simple easiest way to do it. There are better, maybe difficult ways. `git commit -am"Updated the component with improvements made to JCB"`. Click enter. Obviously you sign [00:24:19](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h24m19s) your commit, and `git push`. At this point, you have made a change to component via your JCB install and you're pushing it back to your forked version of this Joomla Component which is on GitHub. 
+Once changes are verified:
 
-### Refresh Page - One Commit Ahead - Discussion How Many Changes Before Making A Pull Request
+```bash
+git add .
+git commit -am "Updated the component with improvements made to JCB"
+git push
+```
+
+Your fork will now show as *"1 commit ahead"* on GitHub.
+Submit a pull request to the original repository for review.
+
+---
+
+## **13. Handling Pull Requests and Review Process**
 
 [00:24:42](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h24m42s)
 
-If you refresh the page, it'll say that it is 1 commit ahead. Now I think at this point we need to discuss how many changes should you make before you make a Pull Request. If 5-6-7 people make the same changes regarding implementing JCBs improvements, who will be accepted, [00:25:09](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h25m09s) and all those kind of things. I suppose it'll still be ironed out as we go. But at this point, you could click, 'Pull request'. It will automatically take the components and show that it can be merged, then if you click on that Pull request, your comment should usually end up in the title area. We will for every package that we manage, we'll add a Pull request template [00:25:42](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h25m42s) with instructions and how to manage it from here further. At this point, you're saying I've made changes to the JCB package. These are the changes I have made, test it and please let me know if you like what I've done. [00:26:01](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h26m01s) There will be discussions and please do not be discouraged if it doesn't go quickly. There are reasons for us to always go through things quite slowly and thoroughly. I know in our own in-house developing team, things are going quite fast at this point because we have come to a place of understanding each other's perspectives. It goes quickly but working with strangers and people we don't know [00:26:30](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h26m30s) is obviously going to be more difficult and slower. You won't have the option of editing all these values as I do because I actually own this repository. But you most probably will be able to come up to here and put in the necessary information that we will ask for and then click, 'Create Pull Request'. If I did that it will create a pull request and [00:26:57](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h26m57s) the developers will be notified and will start communicating from here. 
+Before submitting multiple pull requests, coordinate with others to avoid duplication.
+Each JCB package managed on GitHub will include a **Pull Request Template** with contributor guidelines.
 
-### What Has Happened So Far
+> **Tip:** Be patient with reviews-community contributions are validated thoroughly for consistency and stability.
 
-[00:27:02](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h27m02s)
+---
 
-Now when this pull request with your changes has been fully accepted and you haven't made further changes to this component, then the next part of the process needs to happen. If I can illustrate what has happened so far, your first forked the component, then you imported components JCB package, you have made changes, in this case, we didn't make changes, but you could have added a new field or a new view. Then compile it. In your local development, you committed to changes to the Git repository. Also linked [00:27:47](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h27m47s) and committed the changes to Git. You have put the changes to the forked version. You have made a Pull request. 
-
-### Contribute To Joomla Component - Finalize - Contribute To JCB Mapped Components
+## **14. Contributing Back to JCB Packages**
 
 [00:27:58](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h27m58s)
 
-The next step is the place where the JCB package manager is going to come into play because you want to contribute the changes not only to the actual Joomla Component which already is this pull request, it's contributing it Joomla Component area of the component. When this has been finalized the next step is to contribute it to the JCB Mapped Component. The Next Step is the crucial one because then everybody who's [00:28:33](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h28m33s) helping to develop, the mapped component get this update via JCB package manager. 
+After your changes are accepted into the **Joomla Component Repository**, replicate them in the **JCB Package Repository**.
 
-### Demonstration On The Next Step
+Steps:
 
-[00:28:42](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h28m42s)
+1. Fork the **vdm-io/JCB-Packages** repository.
+2. Sync your fork with the master branch.
+3. Export your updated JCB package.
+4. Replace the old package in your fork.
+5. Commit and push changes with a reference to the related pull request.
 
-We're going to demonstrate the next step. Let's say at this point your commit has been accepted and merged into the root master branch of the repository. Then it should look like this, it will say: 'Merged'. If we are going to look at Commit it says: Updated the component with the improvements made by JCB. That was the point and the next step must take place, only once the changes you've made have been accepted in the Joomla Component [00:29:20](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h29m20s) source of the project. The Next Step is to do that with JCB package as well. All VDM JCB packages are kept in the JCB packages repository. The next thing you will need to do is you will need to fork this repository. I have already forked this repository a few days ago, but you'll see that [00:29:47](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h29m47s) it's already 4 commits behind the master branch. I can't really do anything until I get in sync again with this master branch. Making any commits now will mess things up and the first thing I'm going to do is make sure that this group, this repository is in sync with the master branch. This repository needs to be cloned down to my local system.  For those of you that have quite a number of repositories and keeping them all in sync, it is a pain. 
+---
 
-### Shell Script - UpdateForks
+## **15. Keeping Forks in Sync**
 
 [00:30:22](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h30m22s)
 
-We have this little shell script UpdateForks which is very useful. Even if you're going to run the shell script itself, you can at least peek at some of the commands, how to get this done. What it does, it runs to get all the repositories that you have forked and then it updates them. There are a number of [00:30:49](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h30m49s) SSH files that you should have a look at. I'm going to open the UpdateRepos.sh. I have the file open and I realize this is not going to work unless you are able to understand 'Bash', you most probably not going to be able to follow this. Let me rather do the commands one at the time [00:31:13](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h31m13s) inside of that Repo. But at least you know that there is a package here and if you do know Bash, then this is most certainly something to try out. It's working very well. I'm using it quite a lot. It's keeping all my forked repositories up to date and in sync with the master branch. If I work with them that are ready and I'm able to jump in and do it.  But it's not that hard to do it manually. 
+To keep your fork up to date:
 
-### First Clone Your Repository
+```bash
+git remote add upstream https://github.com/original_owner/original_repo.git
+git fetch upstream
+git checkout master
+git merge upstream/master
+git push
+```
 
-[00:31:48](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h31m48s)
+> **Optional:** Use a shell script (like `UpdateForks.sh`) to automate syncing across multiple repositories.
 
-If you haven't cloned down the repository to your local developing environment, then you will need to do that first. Nothing of what I'm going to show you will work unless you've done that. There are a few documentations that GitHub has that helps with this quite a lot. If you have Windows or Mac or Linux, you can go to these URLs or type in Google: update my fork Repo and do a search. [00:32:19](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h32m19s) This is a place you want to end up at: you must first configure your Repo to see the remote upstream. Click on that and do this first. We'll come back to this one. First, we are going to check out in our Repo what is the remote branches. We will see that it only has these two remote branches and it fetch and pulls from those. [00:32:52](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h32m52s) Now we want to add the remote branch which is the upstream branch. We are going to use this one `$ git remote add upstream https://github.com/ORIGANL_OWNER/ORIGAL_REPOSITORY.git` and add the original owner. This one is your name `https://github.com/YOUR_USERNAME/YOUR_FORK.git`. This one must be the original owners' name and the original repositories name. Those two values you will need to update. The way to get them is to go back to your Repo [00:33:17](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h33m17s) and click on vdm-io/JCB-Packages value. This should take you to the original branch. You can have it by copying the value from 'Clone or Download'. Then you will type: `git remote add upstream`. [00:33:33](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h33m33s) Like it says there on GitHub. You will use control, shift, v, to paste in a command line. You can also paste with the mouse. There is the repository. I have a little [00:33:54](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h33m54s) change to my SSH which means I use VDM to identify the server name. That is something most of you wouldn't need to do. We'll click enter. 
+---
 
-### Two Remote Branches - First One is The Origin - Second One is the Upstream
+## **16. Exporting and Updating JCB Packages**
 
-[00:34:07](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h34m07s)
+[00:37:06](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h37m06s)
 
-If we do that remote branch we will see that there are two remote branches. The one is the 'origin' and the other one is 'upstream'. Now it is time for the Next Step which is to sync the fork. First, what we will do, we will fetch the upstream. This will fetch the files that have changed from the upstream which at this stage we know [00:34:42](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h34m42s) is the main master branch. To make sure that you are on the Master Branch, we are going to say: `git checkout master`. Next, we are going to [00:35:09](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h35m09s) merge the upstream branch into your master branch. Now this will look differently depending on what happened. But it will give you a bunch of information and then this branch is the local branch and is now in sync with the upstream master branch. To get this [00:35:34](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h35m34s) you also need to update your branch on GitHub. you need to do: git push. This will push the changes back to Git. There are many things that can go wrong, or work out differently in Git. I'm not here to teach you how to use Git. [00:35:57](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h35m57s) If you run into some grey areas or difficult issues, you will need to Google and figure out how to get this done. 
+1. Export your JCB package from within JCB (*Packages → Export*).
+2. Move the exported file to your local JCB-Package repository folder.
+3. Run your `hash.sh` script if available to regenerate hashes.
+4. Commit and push with a reference to the corresponding Joomla Component pull request:
 
-### Illustrating The Workflow Of Developing Components In JCB While Collaborating With Greater Community Around JCB Packages
+```bash
+git commit -am "Updated JCB package with improvements made in JCB ref: vdm-io/joomla-component#1"
+git push
+```
 
-[00:36:05](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h36m05s)
+This links both repositories and ensures traceability between code and JCB data.
 
-This is illustrating the proposed workflow of developing components in JCB while collaborating with the greater community around a JCB package. Those of you that watched the tutorial on how to contribute to the Community Directory of JCB packages, much of what I'm going to explain further is already covered in that previous tutorial. We are almost finished with the circle. [00:36:41](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h36m41s) We started by forking the Joomla component, importing the JCB package. Making changes to that and compiled it, pushed those changes to the Joomla Repo and when those changes were accepted into that Repo, we went to the place where we found the JCB package which is in VDMs case [00:37:06](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h37m06s) the VDM package area. Where if it was a community component, you would follow the explanation given to you in that previous tutorial. At this point what we are going to do is, we are going to export the JCB package, add it to these packages that we have here, run our hash so if we look at this `ls-la`, we have a `hash.sh` file. If we run it now, there should be no changes to the Repo. [00:37:42](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h37m42s) Just as we expected nothing changed. Everything is up to date at the moment and the only file we are going to change is these three files(`questions and answers`), because we are going to update this package by exporting it from JCB with the changes we've made. Since you've contributed those changes to this question and answers, [00:38:09](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h38m09s) Joomla Component Repository, those who are going to validate this push which we're about to make, going back to that repository and make sure that you're not changing things other than we should contribute there. At some point, my anticipation is to build a bot that would validate this for us. At this stage, it will still be a little bit slow, but eventually will speed it up and the validation will happen faster and more efficient. 
+---
 
-### Will Need The Same Key For The Package In The Component As The One The Developer Uses
+## **17. Export Key Synchronization and Trust**
 
 [00:38:42](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h38m42s)
 
-Here in JCB we click on Questions and Answers and there is one little snag here which I realized I haven't resolved. It is that you will need to have the same key for this package set in the admin or rather in the component as the one that the developer uses. That can only be given to you by the original owner of this package. [00:39:13](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h39m13s) Which in this case is me. What does it mean, it means that this export key must be the same one as the one that the package was compiled with originally. If you have imported this and you see a key here, you can be 100 % sure it is not the same key because this is an encrypted field. You are seeing the encrypted value, not the actual key. The actual key was never exported [00:39:45](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h39m45s) un-encrypted, it always remains encrypted. That's why we have the encrypted fields all around JCB. Not because we think it is going to make the database more secure necessarily. When we export and move data around which is secret, stay secret. Only within that specific component developing environment are those keys unique. The way you can have this is you will need to communicate with that developer and ask him permission, whether you can extend on this package and then he will need to manually give you this key. [00:40:22](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h40m22s) I can ask that from myself, I'm going to add that key here to be sure that it is the same key which it originally was compiled with. Those keys are the same and it's the way to tell everyone that you and that other developer are in an agreement. It possibly could happen once your pull request to the Joomla Component's [00:40:53](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h40m53s) Repo has been merged and accepted, that team needs to give you the key. That's how I think it'll work. I'm not a hundred percent sure this is going to be cemented or is going to be changed. But do realize that trust and collaboration go hand in hand. They will need to give you the key. If it's not a JCB package that requires a key, then it is a different story. The same procedure will reply, except the exchange of keys won't be necessary.  Now that you have the key in place, click Questions and Answers, click Export JCB Package. 
+Each JCB package uses a **unique export key**, encrypted for security.
+To collaborate, developers must use the same key, provided by the package's original author.
+Without it, exports won't match or synchronize properly.
 
-### Need To Move The Package Into The Repository
+> **Important:** Keys are encrypted and never exported in plain text.
+> Coordinate directly with the package owner to obtain authorization for shared development.
 
-[00:41:35](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h41m35s)
+---
 
-We now have this package in this folder and we will need to move it into the repository which is also the one we have synchronized with our forked version. I have it here. I'm going to cut [00:41:54](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h41m54s) it from my temporal folder in my Joomla website to this repository, paste it in. It is going to ask if it should be replaced and we're going to say: 'Yes' replace it. There we go, we have the package updated. We can go back to command line and we do [00:42:17](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h42m17s) `git diff`. We'll see that the file had changed. We also need to run the hash file to update it. Now type in: `git status`. [00:42:36](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h42m36s) We'll see if those files have been updated.
-The ID of that could possibly be useful here. It's just to give a heads up and validate that you did first contribute the code to the actual Joomla Component and it was accepted. [00:43:08](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h43m08s) This is the change to the package which also needs to be looked at. In our case, this is the pull request, the URL. I think we are going to use that in our commit message. Use the same commit message. It should look something like this: `git commit -am"Update the component with the improvements made in JCB ref.."` [00:43:45](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h43m45s) then the repositories username or organization name. The repository name with this `#1`, since the pull request was number one. We will submit that and push those changes to our version of the repository.
-
-### Going back To GitHub - Push Was Submitted - Will See A Link
+## **18. Completing the Cycle**
 
 [00:44:24](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h44m24s)
 
-Going back to GitHub then after the push has been submitted and we've looked at this commit. You will see it has a link, and this link is to that issue on GitHub, so it will be easy for us to trace where you have contributed it to the Joomla Component, and why it's all happened to be the same comment message. [00:44:45](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h44m45s) At this stage you would again make a pull request to the master branch where we will review the changes. At this stage, we don't have pull request templates and everything in place, but as soon as they do get to be placed there, then please follow those instructions. We will try to be as thorough as we can. But being a community is always up for discussion and we will try and [00:45:17](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h45m17s) do this the right way. At the moment we can put the 'Ref' in the description and then just again the comment in the title. If it's a long comment then just put a summary, a short one and put the long comment back in here. Then you create the pull request. At this point, the discussion will begin validating to see that you followed all the procedures and that this package is stable and ready to become part of the [00:45:49](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h45m49s) Repo. Once it is accepted, it will be merged into the master branch, become available to the rest of the community. That's at the moment an illustration of what I consider a collaborative workflow in JCB. We were at Next Step [00:46:09](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h46m09s) and we had to move to JCB where they have accepted and merged the changes you made to the Joomla Component. 
+Once both pull requests (to the Joomla Component and JCB Package Repositories) are merged:
 
-### Owner Gave The Key - Trust The Changes - Forked The JCB Packages Repository
+* Your local and forked versions remain synchronized.
+* Other developers can now pull the updated JCB package.
+* The entire community benefits from the improvement cycle.
 
-[00:46:28](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h46m28s)
+---
 
-The owner has given you the original key, because they trust the changes you've made, and you have forked the JCB package repository. Make sure you have it in sync. If it's an old fork, update the key with the key from the owner. Then export it to JCB package, add it to the local Repo with a commit message and the reference as illustrated. Then push the change to your forked Repo and make a pull request. Here is the workflow. This could [00:46:55](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h46m55s) become nicely documented I suppose. Someone can take that upon them to even make some nice chart. I maybe not the correct guy for the job and this might expand and become may be much more advanced or it could be made more simple. This is the explanation of the Collaborative Workflow with external partners around a JCB package. Once this pull request gets merged, we are back, and this 'Forked Joomla Component REPO' is in sync, [00:47:42](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h47m42s) and this 'Fork the JCB Package REPO' is in sync. This will continue and I'll go on and on. Others will contribute and there are some other complexities also in this process. But that is what I can see happening.  
-
-### Import As A Clone Or Import It With Merge
+## **19. Importing Packages: Clone vs. Merge**
 
 [00:48:00](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h48m00s)
 
-I know that when you pull the changes from the previous package, the import of the JCB package, there is the option to import it as a clone or to import it with a merge. The idea would be that you will only import and merge your JCB package with the Global Repo as they accept these pull requests and that you would always stay in sync with what is currently the community version of the package. [00:48:37](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h48m37s) You could import it as a clone and make changes to the Clone and effect that will not affect the main master version. But this all is a trial and error process in which you would teach yourself how that works. My idea is to do that within a blank install, try it out, pull in some of the free version, play around with it until you become confident. [00:49:06](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h49m06s) Then you are able to start contributing, not only to the community packages but also to the VDM packages, to which you've access and help improve those components for everyone. I hope this is insightful and I'm sure there might be things that some of you would not be able to follow and I would encourage you to Google and do some tutorials and [00:49:33](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h49m33s) I'm sure you will manage. 
+When importing JCB packages:
+
+* **Clone Import:** Creates a copy you can modify independently.
+* **Merge Import:** Integrates updates into your existing package.
+
+> **Recommendation:** Use *Merge* for syncing with the community version; use *Clone* for experimentation or forks.
+
+---
+
+## **20. Conclusion**
+
+[00:49:06](https://www.youtube.com/watch?v=zlhFyrCGWik&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&index=63&t=00h49m06s)
+
+The **Collaborative Workflow in JCB** allows multiple developers to:
+
+* Work locally in safe environments.
+* Synchronize progress via GitHub and JCB Packages.
+* Maintain consistency between JCB Mapped Components and compiled Joomla Components.
+
+As JCB continues evolving, this workflow will strengthen automated validation and speed up community-driven component development.
+
+---

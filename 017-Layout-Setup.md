@@ -1,74 +1,225 @@
-# LAYOUT SETUP
+# Layout Setup
 
-### Layouts
+> **Video Tutorial:** [Watch on YouTube](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+> (*Click timestamp links below to jump to specific sections in the tutorial.*)
 
-[00:00:00](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+---
 
-With setting up layouts there are some nice ways to reuse code across multiple templates or site views. We need to know which site view is calling the layout and on which basis we can use global settings related to that specific site view. 
+## Introduction to Layouts
 
-### How Layouts Work With Dynamic Gets
+[00:00:00](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h00m00s)
 
-[00:00:34](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m34s)
+In **Joomla Component Builder (JCB)**, layouts are used to **reuse display code** across multiple templates or site views. This helps maintain consistency and reduces duplication.
 
-I've added a little string in the dynamic get since each dynamic get targets only a specific site view. Open sermon (preacher.id) which would primarily be used in preacher side view. Look at the custom script, where I added a view key called Preacher. Since this dynamic get is only used in the preacher view, when the layout is called and you in your component, you'd only pass one item, not the whole list of items. [00:00:59](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m59s) This specific item calls from Preacher, on which basis you can do a certain implementation to ensure that the layout displays the way you expected. [00:01:24](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m24s)
+Layouts let you:
 
-### How Templates Call Layouts
+* Share display logic between site views.
+* Dynamically adapt to the context (view, data, and global parameters).
+* Simplify template management by separating logic from display.
 
-[00:01:39](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m39s)
+Before creating or using layouts, understand **which site view is calling the layout**, since global settings can vary per view.
 
-Open the template that calls the layout. We want to see the initial setup. One of the templates that illustrate this well is the sermon list. [00:01:54](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m54s) Open sermon list where you'd see that I'm looping through the items then adding some parameters to the item object. One of them is the params, the other takes the description, making sure that it's escaped and no longer than 90 characters. [00:02:26](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m26s) I add that back to the description without the full name, then add the item to the 'JlayoutHelper::render(study class render)(sermonlist item)' as the layout name which will populate the script between the list items that will be placed in an unordered list on the sermon list page. [00:02:46](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m46s)
+---
 
-### Sermon List - Item Layout
+## How Layouts Work with Dynamic GETs
 
-[00:03:08](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m08s)
+[00:00:34](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h00m34s)
 
-Let's look at this specific layout: 'JlayoutHelper::render(study class render)(sermonlist item)'. Look for Sermon list item in layouts. In sermon list item you will see that I'm using the global; the item being passed is placed inside the displayed data. Display data is the item object. [00:03:43](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m43s) Since the parameters are placed in it, you can use the get method with the specific global field name, set in the components global settings.
+Each **Dynamic GET** targets a specific **site view**.
+For example, the `sermon (preacher.id)` dynamic get is designed for the **Preacher** view.
 
-### Using The View Key
+Inside the custom script, you can define a **view key** - in this case, `"Preacher"`.
+This ensures:
 
-[00:03:56](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m56s)
+* Only the relevant item is passed to the layout (not the full list).
+* The layout adapts its display based on the calling view.
 
-Since I'm targeting a specific view, I use the view key, adding it to the string, checking the value for this specific view in the global of the component. [00:04:02](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m02s) On that basis I'm able to make this view dynamic; and can use it through multiple layouts based on that view key. If others want to use the layout in their components extending this one might not work too well, but since we use it for our own component and implementation, it's not too big of a deal. [00:04:31](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m31s) At the same token I am able to check what the view key is. Is it preacher, series, or category? On that basis, I ask different questions and have different implementation of certain values like series name, preacher name, and category.
+```php
+// Example snippet from a layout context
+$viewKey = 'preacher';
+$item = $displayData; // the specific item passed from Dynamic Get
+```
 
-### Layout To Template Custom Scripting
+You can then customize the layout's output based on the `$viewKey`.
 
-[00:05:11](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m11s) 
+---
 
-In the template, go back here and go to custom scripting. (See video.) There is the ''[[[sview]]]' placeholder. The ''[[[sview]]]' placeholder will be replaced with the actual view's name. This is a template since we use a template here. [00:05:32](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m32s) I'm adding the template (this sermon list) to multiple site views, not to one site view. A template can be build and reused in multiple site views simply with this place holder,''[[[sview]]]' which is called site view.
+## How Templates Call Layouts
 
-### Dynamic Custom Views using Template
+[00:01:39](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h01m39s)
 
-[00:05:46](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m46s)
+Templates can call layouts using `JLayoutHelper::render()`.
 
-Since this template has to be dynamic it should dynamically add the site view's name wherever it is added. [00:05:57](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m57s) From the global parameters get the site view 'sermon_list_style'. It will add 'preacher','series', or 'category'. It displays 'category', 'sermons', 'list', 'style'.
+Example - from the **sermon list** template:
 
-### Above In The Code
+[00:01:54](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h01m54s)
 
-[00:06:25](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m25s) 
+The template loops through items, prepares parameters, and passes the data to the layout.
 
-Look at it in the code, 'category', 'preacher' and 'series' open. 'Sermon-grid', 'sermon-list', and 'sermon-table' are added to them all. If 'sermon-list' in 'series' is opened, the 'name' had been changed to 'series'. If 'sermon-list' in 'preacher' is opened, it had been changed to 'preacher'. [00:06:53](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m53s) If it is opened in 'category', 'category' has been added to it. Consequently, the place holder had been dynamically updated by Component Builder.
+```php
+foreach ($this->items as $item) {
+    $item->params = $this->params;
+    $item->description = JHtmlString::truncate($item->description, 90);
+    echo JLayoutHelper::render('sermonlist.item', $item);
+}
+```
 
-### Config.xml
+[00:02:46](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h02m46s)
 
-[00:07:17](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m17s)
+This `JLayoutHelper::render()` call will output each list item based on the selected layout.
 
-Where is it getting these values? In the component in the back end open 'config file' and scroll down. An area called 'preacher_custom_config' can be seen, which is a tab, 'preacher'. [00:07:48](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m48s) In this tab there are 'value_preacher_display', 'preacher_box_contrast', 'preacher_list_style'. Scroll down, and see 'preachers_sermon_count', 'preacher_email', 'preacher_website', 'preacher_sermon_display', and 'preacher_sermon_list_display'. Take the 'sermon_list_display' and search for it across the file.  [00:08:13](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m13s) Make it cap sensitive. There are 3 matches: 'Category' 'Series' and 'Preacher', the three different views making use of the 'series list-style'. [00:08:33](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m33s) The 'series list-style' is then implemented on the basis of the dynamic updating of the string. It gets the style, does a switch statement, and sets it accordingly. This is a nice tool to make a template more dynamic. [00:08:57](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m57s) As already mentioned a template can be built and reused in multiple site views with this place holder,''[[[sview]]]' called site view.
+---
 
-### Layout Concept
+## Sermon List - Item Layout
 
-[00:09:26](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m26s) 
+[00:03:08](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h03m08s)
 
-The layout concept is more or less the same as with templates. It has a layout area in which you place your script; here the key replacing is used. (See video.) If certain Dynamic gets are selected, the liberty is taken to show that we start with display data. But these snippets might not correspond to what you're doing because you can pass anything to a layout. (See video.) We assume that if you're using the dynamic get, you might pass it in this or that way. [00:10:06](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m06s) You can't necessarily copy and paste this. At least when you look at a specific dynamic get you'd know the values in it and can try figuring out which ones to use. You can only use this if you are aware that PHP will do the implementations. [00:10:34](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m34s) If you are not familiar with it, it is not necessary to use layouts. The entire front end may be built in the site view. It will work, although it might be a lengthy script. Layouts and templates had been added for convenience.
+Inside the **sermon list item layout**, JCB passes the `$displayData` object, which represents the current `$item`.
 
-### Layout Custom Script Area
+Example:
 
-[00:11:02](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m02s)
+```php
+$item = $displayData;
+$title = $item->get('title');
+```
 
-In Layouts the same concept of adding custom scripting which will be placed in the head of the file is found. Remember that the global data or the data being passed is in 'display data.' [00:11:14](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m14s) This is an HTML area but you can go into PHP and check some values, on the basis of which you can do the necessary implementations.
+This allows layouts to access all fields, parameters, and global settings through `$displayData`.
 
-### A Note: Use Layout in a Layout
+---
 
-[00:11:32](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m32s)
+## 🗝 Using the View Key
 
-A layout can be used in a layout. You can pass any value. [00:11:42](https://www.youtube.com/watch?v=52OLSZio0F8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m42s) Keep in mind that 'this' does not exist on the layout page. The display data needs to be used as the 'global' or as the 'main object' from which to start your implementation.
+[00:03:56](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h03m56s)
+
+Layouts can use a **view key** to determine which view they are rendering (e.g., Preacher, Series, or Category).
+
+By checking this key, you can create dynamic behavior:
+
+* Show or hide specific data depending on the view.
+* Use different global settings based on `$viewKey`.
+
+This allows flexible reuse of the same layout across multiple contexts.
+
+---
+
+## Layout-Template Integration via Custom Script
+
+[00:05:11](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h05m11s)
+
+In templates, JCB uses placeholders like `[[[sview]]]` to dynamically insert the **site view name**.
+
+Example:
+
+```php
+<div class="[[[sview]]]-list">
+    <!-- Dynamic view-specific layout -->
+</div>
+```
+
+This lets one template be reused for multiple site views without duplicating files.
+
+---
+
+## Dynamic Custom Views Using Templates
+
+[00:05:46](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h05m46s)
+
+The placeholder `[[[sview]]]` ensures dynamic insertion of the site view name.
+It draws values from the **component's global parameters** - for example, `sermon_list_style`.
+
+The template will then automatically adjust based on the current view (Preacher, Series, or Category).
+
+---
+
+## config.xml and Global Parameters
+
+[00:07:17](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h07m17s)
+
+These settings are defined in your component's **config.xml** file.
+
+Inside, you'll find parameters like:
+
+* `preacher_list_style`
+* `series_list_style`
+* `category_list_style`
+
+These determine the display behavior per view.
+
+By searching for `sermon_list_display`, you'll see how JCB uses the same logic for each view dynamically.
+
+---
+
+## Layout Concept Explained
+
+[00:09:26](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h09m26s)
+
+Layouts work like templates but offer **more flexibility**:
+
+* You can include PHP and dynamic logic.
+* You can reuse them across multiple site views.
+* They can handle any data passed in via `$displayData`.
+
+ **Tip:** If you're unfamiliar with PHP, it's fine to handle display logic directly in the site view. Layouts are meant for cleaner, modular development.
+
+---
+
+## Layout Custom Script Area
+
+[00:11:02](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h11m02s)
+
+Each layout in JCB includes a **custom script area** (in the head of the layout file).
+This lets you:
+
+* Add inline PHP or JavaScript.
+* Modify `$displayData` dynamically.
+* Access global settings.
+
+```php
+<?php
+$global = $displayData;
+$paramValue = $global->get('my_field');
+?>
+```
+
+---
+
+## Using a Layout Inside Another Layout
+
+[00:11:32](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h11m32s)
+
+Layouts can **include other layouts** using:
+
+```php
+echo JLayoutHelper::render('sub.layout.name', $subData);
+```
+
+**Important:**
+
+* `$this` is not available inside layouts.
+* Always rely on `$displayData` for passing data between them.
+
+---
+
+## Summary
+
+| Concept            | Purpose                  | Key Reference                                                       |
+| ------------------ | ------------------------ | ------------------------------------------------------------------- |
+| **Layouts**        | Reusable display code    | [00:00:00](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h00m00s) |
+| **Dynamic GET**    | Pass data to layouts     | [00:00:34](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h00m34s) |
+| **Templates**      | Call layouts dynamically | [00:01:39](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h01m39s) |
+| **View Key**       | Identify site view       | [00:03:56](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h03m56s) |
+| **config.xml**     | Define global options    | [00:07:17](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h07m17s) |
+| **Custom Scripts** | Add dynamic logic        | [00:11:02](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h11m02s) |
+| **Nested Layouts** | Layouts inside layouts   | [00:11:32](https://www.youtube.com/watch?v=52OLSZio0F8&t=00h11m32s) |
+
+---
+
+## Pro Tips
+
+* Use **meaningful view keys** to manage logic per site view.
+* Keep all **layout files modular** - one per display concept.
+* Reference **global parameters** in `config.xml` to standardize look and feel.
+* When in doubt, check `$displayData` to see what data is available.
+* Reuse layouts to maintain **DRY** (Don't Repeat Yourself) principles.
+
+---

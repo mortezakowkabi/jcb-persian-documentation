@@ -1,94 +1,269 @@
-# HOW TO USE EMAIL HELPER IN YOUR COMPONENTS
+# How to Use the Email Helper in Your Components
 
-* ### Example Of Email Helper Class
+**Tutorial Reference:** [Video - How to Use Email Helper in Your Components](https://www.youtube.com/watch?v=tp6mMUTOF2Y)
 
-[00:00:00](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+## 1. Introduction to the Email Helper Class
 
-The Email Helper Class is a class added to Components Helper area and, therefore, available on every page with which Emails can be sent. For example: Take a look at the Helper Class by going to a component that has it included and at 'Helpers'. [00:00:25](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m25s) The filename is usually the component name: 'Email'. As may be seen, it is in the basic abstract class. It takes Joomla's E-mailer, 'Jmail', and gets an instance of it, adds it to mail, and then loads in the variables that are required. [00:00:48](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m48s)
+[00:00:00](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h00m00s)
 
-### Setting Up Email Helper Class
+The **Email Helper Class** in Joomla Component Builder (JCB) is a reusable class located in the **Helpers** section of a component. It enables developers to easily send emails from within any part of their component.
 
-[00:01:02](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m02s)
+* The helper file is usually named `email.php`.
+* It extends JCB's abstract helper class.
+* It uses Joomla's built-in mailer (`JMail`) to prepare and send messages.
 
-If this feature is going to be used, the first thing to do when looking at a component on Component Builder Dashboard is to open 'Learning Manager' in Editing the Component area. Go to Libs & Helpers. [00:01:22](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m22s) The 'add email helpers' has been set to 'on'. It places the Helper class in the component but is not implemented anywhere else. So if 'yes' is clicked, it is still necessary to create fields that have to be loaded to the config area.
+**How It Works:**
+When an email is sent, the helper creates an instance of Joomla's mailer, loads the necessary variables, and sends the message with the proper configuration.
 
-### Settings - Config Area
+---
 
-[00:01:47](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m47s)
+## 2. Setting Up the Email Helper Class
 
-In 'Settings' this 'config' area, Adding Custom Config Fields, is found. It gives the ability to add configuration options to the components option area. [00:01:55](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m55s) Click 'config - add', scroll down until the mail configuration and a whole lot of fields may be seen. These fields correspond to the Joomla's default fields. If you want to create these fields, some info is needed in order to create these fields. For example, what their names and content should be. Go and look at the Joomla Global Configuration XML and all the settings in that file may be seen. [00:02:39](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m39s) DKIM implementation is available there.
+[00:01:02](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h01m02s)
 
-### In Code Field Names
+1. From your **Component Builder Dashboard**, open your component (e.g., Learning Manager).
+2. Go to **Libs & Helpers** under the editing section.
+3. Turn **Add Email Helper** to **Yes**.
 
-[00:02:45](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m45s)
+> **Note:**
+> Enabling this adds the Email Helper class to your component, but it doesn't automatically implement email functionality. You'll still need to configure the related settings and fields.
 
-It will be necessary to look in the code to get these field's names. There is a difference between 'name', 'label', and 'description'. [00:03:13](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m13s)  For instance 'name' is the value that will be used in the code. In the code, for example, the word 'mailer' means that the name of the field is called 'Mailer'. The same applies to the name 'field', etc. These are the fields that must be set.
+---
 
-### Component Global Options - Mail Configuration
+## 3. Adding Mail Configuration Fields in Component Settings
 
-[00:03:35](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m35s)
+[00:01:47](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h01m47s)
 
-In the component, there is an 'Options' area, a Mail Configuration, and a DKIM area. [00:03:45](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m45s) It has the 'mailer' status. It is either set to 'Off', so that no emails will go out, or to 'On'.
+To customize your component's email settings, you must add **custom configuration fields**.
 
-### Switch Global Mailer Options
+1. Go to your component's **Settings** > **Config Area**.
+2. Click **Add Config Field**.
+3. Scroll down to find the **Mail Configuration** section.
+4. Recreate the mail-related fields similar to those in Joomla's Global Configuration (found in `configuration.xml`).
 
-[00:03:55](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m55s)
+These include:
 
-If it is set to 'On' it may be decided whether there is a need to override the global variables. The global variables are set in Joomla's components global area.
+* Mailer Type (`mailer`)
+* From Name
+* From Email
+* Reply-To Address
+* SMTP Host, Port, Username, Password, etc.
+* DKIM fields (optional but recommended)
 
-### Joomla Global Configuration - Server
+> **Tip:**
+> You can review Joomla's default configuration file to match field names correctly. The "name" attribute is the key identifier used in code.
 
-[00:04:10](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m10s) 
+---
 
-Open Global Configurations, the Server, and the Mail Settings. These the main or the Global Settings is found that will be used in any component that does not add these settings in their config. [00:04:40](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m40s)
+## 4. Understanding Field Names in Code
 
-If those fields had not been created and added to the component, but the button used in order to add the Helper class to the component, it will fall back to these settings in the Joomla default area. These 'Main Settings' are the values that should be overridden.
+[00:02:45](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h02m45s)
 
-### Component Builder Email Switch Options
+Each config field includes:
 
-[00:05:08](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m08s)
+* **Name** - used in the code (e.g., `mailer`, `smtp_host`)
+* **Label** - visible in the UI
+* **Description** - explains the field's purpose
 
-If, in some way, the component should use other PHP, send mail or SMTP values, then the Global must be set on the Learning Management System Configuration page in the Mail Configuration area. (See video.) That is the function of this area. If Global is used, it will fall back to the Joomla Global. Otherwise, it can be overridden on this level and sent out as you prefer.
+When writing code, ensure the **field name** matches exactly with what's declared in your component's XML.
 
-### DKIM Settings (Encryption)
+---
 
-[00:05:40](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m40s)
+## 5. Configuring the Component Mailer Options
 
-The DKIM area is the more advanced area which allows encryption and authenticates emails that have been sent.  This is helpful showing people receiving these emails that it is not spam. Because of the advanced nature of this, some research on this will be helpful. These are the values that usually would be required: Private key, Public key, etc. (See video.) If this 'Enable DKIM' is set to 'No', it will not be used. Please ensure that the values when it is set to 'Yes' is added, otherwise, it still will not be used. [00:06:25](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m25s) So these values have to be created since Component Builder will not do it.
+[00:03:35](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h03m35s)
 
-### Default Global In Code
+In your component's **Options** tab, you'll find a **Mail Configuration** section.
+Here, you can:
 
-[00:07:15](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m15s)
+* Enable/disable mailing via the **Mailer Switch** (`On` or `Off`)
+* Override Joomla's global mail settings (if desired)
+* Set DKIM configuration for email authentication
 
-On the code level, it gets the 'mailer' function from the configuration and checks whether it is Global. (See video.) If it is, it implements Joomla's values. If it's not global, it implements your component's values. [00:07:38](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m38s)  Read through the code. The most important area is this 'send' area where the various options in the signature to send out mail may be observed. [00:08:04](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m04s) It is able to send large quantities of mail but nonetheless your servers limitations should be considered. To avoid spams to be sent, these values have not been overridden. The Joomla default Helper 'jmailer' has been used which has been extended from another class. (See video.) [00:08:35](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m35s) More information about the 'jmailer' Class may be found at Joomla.
+If you choose **Global**, the component will use Joomla's default mail settings.
 
-### DKIM Values In Code
+---
 
-[00:08:40](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m40s)
+## 6. Joomla Global Mail Settings
 
-These are the DKIM values that would be needed in the component to be able to use the DKIM encryption. (See video.) Do some research on this and check how this function implements these features. It gets added to the '$mailer' and most of the work is done in the '$mailer'. [00:09:05](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m05s) It adds the data to the mailer and the mailer takes care of the rest and it is sent out.
+[00:04:10](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h04m10s)
 
-### Error Checking For Emails In Code
+If you haven't configured your component's mail fields, JCB will use the **Joomla Global Configuration → Server → Mail Settings**.
 
-[00:09:12](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m12s)
+These include:
 
-If, for instance, an error occurred, it verifies whether the component Helper Class (this file 'learningmanagerhelper') has a 'storemessage' variable or method. [00:09:31](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m31s) It can be seen that the 'storemessage' method is in the Helper Class. I wrote this custom method. It may be written anywhere, but the signature should be the same. [00:10:00](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m00s) These 'learningmanager' areas are dynamically updated to your component. (See video.) It uses the component name 'learningmanager' and the component name 'learningmanager'. But 'storemessage' cannot be changed, but takes the 'send email', the 'recipient', the 'subject', the 'body', the 'text only', the 'mode', and indicates that it is 'email'. There may be different types, and, looking at the method, the type could be anything. [00:10:30](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m30s) Different things have to be done on the various types. If the SMS didn't fail, the message must be stored. This kind of feature isn't only used when something didn't work, but also when it did work. If it had been sent, it will be stored. [00:10:57](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m57s) It's a way to store the message so that the users, if they login, can see messages sent to them. That is the function of the Store Message. Custom Method can be updated and changed. (Pause the video, copy it.) If you had written it, make sure that the part, 'storemessage', is the same. [00:11:35](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m35s) That is implementing the Learning Manager Emailer in your component.
+* Global mailer type
+* From address and name
+* SMTP settings
+* DKIM configuration
 
-### Implemented Example
+Any component without its own mail setup will fall back to these Joomla-wide settings.
 
-[00:11:39](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m39s)
+---
 
-Here follows an example of how it is implemented in at least one area. Here is this component, Job Tracking System. It has the function of Add Email Helper. Set it to 'On'. The Admin View in which the email method is used is the 'Job Order' view. In this case, the client must be emailed when a job order had been created. [00:12:21](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m21s) 
+## 7. Component-Level Email Overrides
 
-This is how it is implemented. (See video.) Here is the Job Order. When Email is selected it may be updated to any preferred email. For example, 'testing@vdm.io'. [00:12:45](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m45s) Once the email has been sent, it will be confirmed in the top right. [00:13:11](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m11s) It is this button that sends the document to the client.
+[00:05:08](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h05m08s)
 
-### Above Example In Code
+When the **Global** option is turned **off**, your component can define its own mailer settings (SMTP credentials, mail type, etc.).
+This is especially useful if your component should send emails through a different mail server.
 
-[00:13:40](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m40s)
+---
 
-Go to the code. (Editing the Admin View.) In the 'Job Order' is a JavaScript area. The Send Email function may be seen. It collects a set of values and transfers it to the 'sendEmail server' function, which sends it as a 'json' request to the server. [00:14:20](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m20s) The 'sendEmail' is the 'task'. When it gets a response, it gives the notification.
-  
-There is a PHP area in the 'Job Order'. How to use the Ajax class had been explained in previous tutorials but we will make a brief mention of it again. [00:14:47](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m47s) Here is the input where the controller has to be set up. In the controller, there is 'sendEmail' class defined in this field. (See video.) [00:15:12](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m12s) There are three variables. They should be filtered, transferred to these methods, and logged in 'User' by selecting 'Yes'. Looking at the code, this is the task: 'sendEmail'. It triggers the task and checks for those values, then transfers it to this method, 'sendMail', which is in the model. Go to Models and Ajax. Scroll down to the 'sendEmail'. [00:15:47](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m47s) This is a Custom Script. In closing this, the Ajax method can be seen. This is another Custom method which I wrote. It's called sendEmail. It gets the 'mail', the 'HTML', and the 'type'. It does the necessary cleansing, etc. [00:16:14](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m14s) The Email Helper is requested. Then the 'Send' method is used, the variables are transferred, then set the 'result'. If the result is 'true', the user is notified, otherwise, he receives the 'error'. [00:16:38](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m38s)
+## 8. DKIM Configuration and Encryption
 
-This email body is of great help to build the email. It ensures that it contains the necessary HTML, etc.[00:17:15](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m15s) The HTML and subject can be passed to it. It adds the subject to the email and the necessary places as well as the body($body[]_$html) and is sent in an appropriate way. A custom method is passed which gets the data from the Ajax and then sends it. [00:17:43](https://www.youtube.com/watch?v=tp6mMUTOF2Y&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m43s) That's the tutorial on how to implement sending emails through your component, using the Email Helper Class. The Email Helper Class is available on GitHub in the Component Builder.
+[00:05:40](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h05m40s)
+
+DKIM (DomainKeys Identified Mail) adds authentication to your emails, reducing spam risk.
+
+To use DKIM:
+
+1. Enable **Use DKIM** in your Mail Configuration.
+2. Provide:
+
+   * Private Key
+   * Public Key
+   * Selector
+   * Domain
+
+If DKIM is set to "Yes" but values are missing, it won't be applied.
+
+> **Recommendation:**
+> Review Joomla's `JMail` DKIM documentation for advanced implementation details.
+
+---
+
+## 9. How the Helper Works in Code
+
+[00:07:15](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h07m15s)
+
+Within your helper code, the mailer is obtained from the component's configuration.
+If `mailer` is set to **global**, Joomla's configuration is used. Otherwise, the component's custom settings apply.
+
+The **`send()`** method handles:
+
+* Recipient setup
+* Subject & body content
+* Mailer configuration
+* Error handling and logging
+
+> **Performance Tip:**
+> Although capable of sending multiple emails at once, always consider your server's limitations to avoid spam issues.
+
+---
+
+## 10. Handling DKIM and Mailer in Code
+
+[00:08:40](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h08m40s)
+
+The DKIM values are injected into the `$mailer` instance before sending.
+JCB uses Joomla's extended `JMailer` class, allowing you to configure advanced mail options securely.
+
+---
+
+## 11. Error Checking and Message Storage
+
+[00:09:12](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h09m12s)
+
+The helper includes built-in error handling.
+If sending fails, it checks whether your component's helper (`componentnamehelper.php`) has a **`storeMessage()`** method.
+
+This custom method:
+
+* Logs or stores messages sent through your component.
+* Can also record successful messages for user access.
+
+**Example Signature:**
+
+```php
+storeMessage($recipient, $subject, $body, $type = 'email')
+```
+
+This enables users to later view messages sent to them, creating a full audit trail within your component.
+
+---
+
+## 12. Implementing the Email Helper in a Component
+
+[00:11:39](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h11m39s)
+
+**Example:**
+In the **Job Tracking System**, emails are sent when a **Job Order** is created.
+
+1. Enable **Add Email Helper** in your component settings.
+2. In your **Admin View**, add a **Send Email** button (e.g., in the Job Order form).
+3. The button triggers the `sendEmail` task.
+
+When the user clicks the button:
+
+* The component sends the email to the client (e.g., `testing@vdm.io`).
+* A confirmation message appears in the top-right corner.
+
+---
+
+## 13. Code-Level Implementation Example
+
+[00:13:40](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h13m40s)
+
+The **Job Order** admin view includes a JavaScript function that calls a PHP controller task:
+
+### Frontend JavaScript
+
+```javascript
+function sendEmail() {
+    Joomla.request({
+        url: 'index.php?option=com_joborder&task=sendEmail',
+        method: 'POST',
+        data: { email: recipientEmail },
+        onSuccess: function(response) {
+            Joomla.renderMessages({ success: [response.message] });
+        }
+    });
+}
+```
+
+### Controller (PHP)
+
+```php
+public function sendEmail()
+{
+    $model = $this->getModel('Ajax');
+    $result = $model->sendEmail($this->input);
+    echo json_encode($result);
+    JFactory::getApplication()->close();
+}
+```
+
+### Model Method
+
+```php
+public function sendEmail($input)
+{
+    $mail = Helper::get('email');
+    $result = $mail->send($to, $subject, $body, true);
+    return $result ? ['success' => true] : ['error' => 'Failed to send email'];
+}
+```
+
+This flow:
+
+1. JS triggers the Ajax request.
+2. Controller handles the `sendEmail` task.
+3. Model uses the **Email Helper** to send mail.
+
+---
+
+## 14. Final Notes
+
+[00:17:43](https://www.youtube.com/watch?v=tp6mMUTOF2Y&t=00h17m43s)
+
+The **Email Helper Class** simplifies sending mail within your component while maintaining flexibility and consistency with Joomla standards.
+
+**Benefits:**
+
+* Centralized mail logic
+* Configurable DKIM and SMTP support
+* Seamless integration with Joomla Global Config
+* Extendable logging and message storage
+
+---

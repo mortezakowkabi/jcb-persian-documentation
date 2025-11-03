@@ -1,62 +1,250 @@
-# HOW TO INTEGRATE THE CREATE USER HELPER METHOD IN YOUR COMPONENTS
+# How to Integrate the Create User Helper Method in Your Components
 
-[00:00:00](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+**Tutorial Source:** [Joomla Component Builder Tutorial Series](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+---
 
-What is the User Creation function? It is a part of the code's helper function that is added to the Helper class.
+## 1. Overview
 
-### Helper Class
+[00:00:00](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h00m00s)
 
-[00:00:32](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m32s)
+The **Create User Helper Method** allows your Joomla Component to create Joomla Users dynamically from within your component views or actions. This is done using a built-in JCB Helper Class extension which adds reusable methods accessible across both front-end and back-end of your component.
 
-If the repository is opened, find Joomla Install and go to Administrator. There is a Helper class for the front end of every component as well as for the back end. In a back end in component, there is 'com_expertdatabase'. and under it 'expertdatabase.php'. [00:00:55](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m55s) Go to Helpers. This file is the Helper class. (See video.) If it is opened the abstract 'expertdatabaseHelper' may be seen. This Helper class gets included in the component on every page. If the main back end file with 'expertdatabase' is opened it gets loaded by Joomla first. It includes the Helper file on every page. [00:01:28](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m28s) Everything in the class is available everywhere in the component. Return to the interface, Component Builder Dashboard, and go to components and 'expertdatabase'. Library & Helpers be seen there. The switch 'add create user helper method', is in the 'yes' position. [00:02:11](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m11s) It is the switch that should be used by which Component Builder is commanded that the Helper class, creating Users, should be added to the Helper class of the front and back end of the component. [00:02:44](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m44s) If the area is closed and you return to the code and a simple search for User is done, a few users can be seen, as can 'Create User'.
+This integration is helpful for components like job managers, membership systems, or expert directories-any place where a custom user creation process is needed.
 
-### Create User
+---
 
-[00:03:00](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m00s)
+## 2. Understanding the Helper Class
 
-This is a public static function. It may be called with the class name 'expertdatabasehelper', 'colon', 'colon' and the name of the function: Create User. It is set to '$new'. [00:03:26](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m26s) '$new' has a few variables in it; it is an array. It may be noticed that it has a password in this class: 'password2'. It has a user name, a name, and an e-mail. This class then creates the user. It calls in the Joomla component users. [00:04:00](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m00s) It calls in its registration model and uses the model to create a user. That's what the switch does, adding this class to the component. It may be used in the component. It doesn't just set everything else in place, the developer is still required to add the correct code since everything else is not automatically set in place. 
+[00:00:32](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h00m32s)
 
-### Expert Field
+Each JCB-generated component contains a **Helper Class**-one for the administrator side and one for the site side.
 
-[00:04:30](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m30s)
+You can locate it in:
 
-There is an Admin view called 'Experts'. If there is a need in this view, for example, the option for someone to create a User, this demonstrates how it works.  Go to 'expertdatabase', click on 'Expert' and on 'New'.  [00:04:55](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m55s) A field called 'Expert' may be seen in which you can select users within a specific group. Underneath is the button Create User. It has a pop-up where a user name may be entered. For instance, 'Testing123' may be used for the name as well as the username, and 'Testing123 @vdm.io' as the e-mail and the password. [00:05:26](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m26s) If 'Create' is clicked, it creates and sets it up, sending out the email. Once it's done it informs you that the user was created successfully and the login details had been e-mailed to the user. [00:06:05](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m05s) Then it indicates that it is ready to be selected and 'testing123', which has been created from the user list in the above field, may now be selected. Click on the blue user icon, type in 'testing123' and click 'Search'. 'Enter' may be clicked as the user had now been created. A strange conversion may be noticed. It converted the username's numbers to letters. [00:06:40](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m40s)  This application doesn't allow numbers in the user name, but this integrated user had been connected to an 'Expert'. If you were to click there again, it may still be selected; but once selected, you can not create a new 'Expert' and select the user again. So one profile connects to one user to set up an 'Expert'. [00:07:24](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m24s)
+```
+/administrator/components/com_expertdatabase/helpers/expertdatabase.php
+```
 
-A lot of JavaScript may be noticed on this page. Here this job tracking extension has been written. (See video.) If for example, a new job order has to be created, it can indicate whether it is a new client or an existing one. If it is an existing client, select from the list. [00:08:04](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m04s) If it's new, click 'A New Client'. All the details of the user can be entered and when 'save' is clicked, it creates the user, stores the data in the user table, but not in the job order table, and deletes all these values. (The job order table never stores any user values in the relation of this job order). If this closed, open a 'New client'. The same values can be seen. [00:08:44](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m44s) This is another way to integrate user integration.
+This file defines the main `expertdatabaseHelper` class.
+It is **automatically loaded** by Joomla every time your component runs, ensuring all helper functions are globally available.
 
-### Make Use Of The Ajax Concept
+[00:01:28](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h01m28s)
 
-[00:09:30](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m30s)
+In the JCB admin interface:
 
-In previous tutorials, it had been explained how to make use of the Ajax concept within Component Builder. Here is a quick overview for those of you who would like to understand what happens at code level. How does the code that had been used for an Ajax look? [00:09:26](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m26s)
+1. Open **Component Builder Dashboard** → **Components** → select your component.
+2. Scroll to **Library & Helpers**.
+3. Locate the switch **Add Create User Helper Method** and toggle it **ON**.
 
- Return to the Expert view.
+[00:02:11](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h02m11s)
 
-Within every component that makes use of Ajax, a model and a controller are created. The controller is named 'Ajax.json.php' and the model 'Ajax'. [00:10:04](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m04s) Open the model and the controller. As may be seen the controller gives the register commands within the construct method, adds the tasks to a switch, and makes an attempt to run the task. [00:10:31](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m31s) In the model it gets the model Ajax, then runs the method that corresponds to the task.
+This command tells JCB to automatically include the "Create User" function in your helper class during compilation for both site and admin areas.
 
-It uses the Joomla's default filtering method so that it gets values that have been posted and validates if those values are actually there. The values are then transferred to the model. [00:11:05](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m05s) That is looking at it from a code perspective. Various methods are displayed in the model and some of them are protected and some of them are public. "Getcreateuserfields' are usually the ones that are called from the controller once the Ajax receives the verification level and is verified. Here is the 'createUser' class. [00:11:31](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m31s) Check this user. (It is custom script; Component Builder does not write this.) Return to the user interface, and scroll down to 'Create user fields where 'Create user' is found. What has been written here gets placed into the model. [00:12:07](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m07s) That is the Ajax method. In the Ajax input specific tasks are notated; the task name, specific variables, and the method name. Method Names may be different from the Task Names. Select what should be validated. (Select in the 'Select a Filter' area.) Select whether it should be an integer, float, etc. If there's no value in the 'Default' area get the default value. This is where the controller's information is set up. [00:12:39](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m39s) In PHP Custom Method the custom script may be done. Create user gets data, determines from what view it is, and validates whether this current login user has the permission to the Experts area. Then it converts the data, because it's a JSON set of datasets transferred, checks whether it's an array, and does some other checks.
+---
 
-### Global Helper Class
+## 3. The Create User Function
 
-[00:13:17](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m17s)
+[00:03:00](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h03m00s)
 
-Here is the Global Helper class and methods being used. (See video.) A number of Custom Methods available in that class may be seen. It has been added as freebies and should not necessarily always be used. If anyone can improve on these methods, please make a pull request so that changes may be done. Once the required data had been collected, and the same 'method' received, a 'Create User' is done. (See video.) [00:13:55](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m55s) Get a result('$returned'). If it's not the correct result it should be dealt with accordingly. If it is the correct user it may be added to the user group. Create User does not do this. There is a user group set up in the component. [00:14:17](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m17s)  The user group needs to be set into the correct user group. The return message will indicate if it has been an error or success. The error message can be seen lower down. [00:14:45](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m45s)
+Once enabled, JCB adds a method like this to your helper class:
 
-### Get User Field
+```php
+public static function createUser($new)
+```
 
-[00:14:53](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m53s)
+You can call it using:
 
-When the page loads initially 'getUser' is there. The ID and the data are collected, packed into some HTML, and sent off. This is a PHP site where 'Create user' is done. [00:15:16](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15rm16s) There is an Ajax site in Javascript. As the page loads in the JavaScript, get 'User' with the 'User ID', the User ID from the field and the data is loaded. It shows the data being loaded which can be edited, except here(Username). [00:15:51](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m51s) Numbers can not be added in the username but this may be done. (See video.) It will update it and indicate that it is updated. If there is an error with the email already used it will also show an error. This is how JavaScript is set up. Javascript has been added to the View file. Here 'getUser' and the function is displayed. [00:16:24](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m24s) Usually two functions are used in this case; one on standby and eventually setting up the data into the view. This is how the call structure would usually look in index.php?option=your components name, the task going to the Ajax controller. This 'getUser' is the task. [00:16:54](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m54s) Here can be stipulated in what format you would like the result set returned in. If the result set has to be returned 'raw', which is sometimes the case, there is a 'raw' variable. [00:17:23](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m23s) The 'raw' variable may be set to true; it will give the results set without braces around them, a callback, etc. When calls are made from JavaScript, it usually wants the call back to be added. If calls are made from other JavaScript libraries, you might want the braces around it. But if it is wanted 'raw' which also is the case, add the variable 'raw' to the URL = true and then end up passing it back with 'json_encode'.
+```php
+expertdatabaseHelper::createUser($new);
+```
 
- NB.The format should remain 'json'. [00:17:56](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m56s)
+Where `$new` is an **array** containing user registration data:
 
-### Use Tokens
+```php
+$new = array(
+    'username'  => 'testing123',
+    'name'      => 'Testing 123',
+    'email'     => 'testing123@vdm.io',
+    'password'  => 'mySecretPass',
+    'password2' => 'mySecretPass'
+);
+```
 
-[00:18:01](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h18m01s)
+[00:03:26](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h03m26s)
 
-Always use a token. Have the token on the page. This token is necessary to prevent cross-site scripting. It is recommended to add the token to the page through PHP. [00:18:28](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h18m28s) If work is done in a back end in the admin area, it is not necessary to add the token as it gets added to the page dynamically since the JavaScript areas had been parsed. If it shows 'token' then 'token' has to be there and the token is added. Whereas in the front end, 'token' should be added manually. [00:13:17](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m17s) For various reasons it has not been automated in the front-end so that the variable name can be changed as well. [00:19:03](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h19m03s) Whereas now it is just token, its back end is more secure. Always add a token to the request and check whether the token is there. If it is not, it would not make a request at all. That is how a user is created and how the user concept is integrated into this component.
+The helper method leverages Joomla's built-in **User Registration Model**, creating the user via the standard Joomla API.
 
-If you are not fully equipped to do programming in JavaScript, jQuery or in PHP, this might not completely resolve your questions. This has not been mean to be a user-friendly component as such but a powerful tool to use instead.
+It simplifies the process but **does not automatically assign users to groups**-that must be handled manually after creation.
 
-[00:19:41](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h19m41s) This 'Class' had been added by which a user can be created. [00:20:20](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h20m20s) If my implementation needs some improvement, Component Builder may be forked on GitHub and copied to your repository. The necessary changes can be done to it before pushing it back again. [00:20:47](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h20m47s) The place in Component Builder where this 'Class' is constructed is within the compiler's files. Compiler has quite a few files and a search has to be done. Go to Component Builder, to Helper, and use the compiler. Here are all of its files. A search can be done in there for the function 'Create user'. [00:21:09](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h21m09s)  As it is dynamically added, it is in that area where the adaption and the changes must be done. It can't be edited right in the script, it must be edited in the function where it is added. Search those functions. [00:21:38](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h21m38s) That's how users are created and how they are connected to components. 
+---
+
+## 4. Using the Create User Function in a View
+
+[00:04:30](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h04m30s)
+
+Let's use the **Experts** admin view as an example.
+
+When creating a new Expert:
+
+1. Navigate to **Expert Database → Experts → New**.
+2. You'll find a field labeled **Expert**, which allows you to select users within a specific group.
+3. Below it, a **Create User** button appears.
+
+[00:05:26](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h05m26s)
+
+This opens a modal window where you can enter:
+
+* Username
+* Name
+* Email
+* Password
+
+After submission, Joomla sends a success message confirming that the new user was created and login details were emailed.
+
+[00:06:05](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h06m05s)
+
+Once created, the new user becomes selectable from the user list field in the Expert form.
+
+> **Tip:** Joomla usernames typically cannot contain numbers unless specifically allowed in your configuration or overridden via plugin.
+
+---
+
+## 5. Integrating Create User via AJAX
+
+[00:09:30](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h09m30s)
+
+To create users dynamically without reloading the page, JCB supports **AJAX integration**.
+
+In JCB, an AJAX handler consists of:
+
+* **Controller:** `/controllers/ajax.json.php`
+* **Model:** `/models/ajax.php`
+
+[00:10:04](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h10m04s)
+
+The controller registers and executes AJAX tasks.
+The model defines the corresponding methods such as:
+
+```php
+public function createUser()
+{
+    // custom logic using expertdatabaseHelper::createUser()
+}
+```
+
+[00:11:31](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h11m31s)
+
+These methods:
+
+* Retrieve form data using Joomla's input filter.
+* Validate and sanitize values.
+* Call the Helper method to create the user.
+
+JCB allows you to define these tasks directly in the component builder interface under **Ajax Methods**, mapping them to your PHP functions.
+
+---
+
+## 6. Global Helper Integration
+
+[00:13:17](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h13m17s)
+
+The Global Helper Class in JCB provides reusable functions like `createUser()`, `addToGroup()`, or `getUserField()`.
+If you improve any of these functions, you can **fork the JCB project on GitHub** and submit a pull request.
+
+[00:14:17](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h14m17s)
+
+> **Note:** The `createUser()` method **does not** automatically add users to a Joomla User Group.
+> You'll need to handle that logic in your component or through post-creation hooks.
+
+---
+
+## 7. Retrieving and Displaying User Data
+
+[00:14:53](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h14m53s)
+
+When the page loads, a `getUser` method may retrieve user data using AJAX.
+The PHP backend fetches the user record and returns it as a JSON-encoded response.
+
+[00:15:51](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h15m51s)
+
+In JavaScript:
+
+```javascript
+$.ajax({
+    url: 'index.php?option=com_expertdatabase&task=ajax.getUser&format=json',
+    data: { user_id: selectedUserId },
+    success: function(response) {
+        // Populate the user data into the view
+    }
+});
+```
+
+This allows you to dynamically load, update, and display user info without refreshing the page.
+
+---
+
+## 8. Using Tokens for Security
+
+[00:18:01](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h18m01s)
+
+Always include a **CSRF Token** in every AJAX or form request to prevent cross-site scripting (XSS) attacks.
+
+### In PHP:
+
+```php
+echo JHtml::_('form.token');
+```
+
+### In JavaScript (front-end calls):
+
+```javascript
+data[ '<?php echo JSession::getFormToken(); ?>' ] = 1;
+```
+
+[00:18:28](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h18m28s)
+
+Tokens are automatically handled in the admin area but must be manually added on the front-end.
+
+---
+
+## 9. Extending or Modifying the Create User Helper
+
+[00:20:20](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h20m20s)
+
+If you need to modify the implementation:
+
+1. **Fork JCB** on GitHub.
+2. Locate the **Compiler files** under:
+
+   ```
+   administrator/components/com_componentbuilder/helpers/compiler/
+   ```
+3. Search for the function `createUser`.
+4. Modify its logic to fit your needs.
+
+[00:21:38](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h21m38s)
+
+Because these helper methods are dynamically generated during compilation, you must edit the compiler logic rather than modifying compiled component code directly.
+
+---
+
+## 10. Summary
+
+Integrating the **Create User Helper Method** in JCB:
+
+1. Enable the helper in the **Component > Library & Helpers** area.
+2. Use `yourComponentHelper::createUser($new)` to programmatically create Joomla users.
+3. For dynamic interaction, use **AJAX models** and **controllers**.
+4. Always include **CSRF tokens** for security.
+5. Extend or customize via **Compiler files** for permanent modifications.
+
+---
+
+### Final Note
+
+[00:19:41](https://www.youtube.com/watch?v=ckFakaQ90JY&t=00h19m41s)
+
+This feature demonstrates the power of Joomla Component Builder as a **developer tool**, not just a UI generator.
+It empowers you to integrate dynamic, secure user creation logic directly into your components.
+
+---

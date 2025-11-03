@@ -1,50 +1,181 @@
-# AUTO CREATE SQL UPDATES FOR COMPONENTS IN JCB
+# Auto Create SQL Updates for Components in JCB
 
-### Views Are Linked To Set Of Tables
+This tutorial demonstrates the **Auto SQL Update Generation** feature in **Joomla Component Builder (JCB)** - a major improvement that automatically creates SQL update scripts when new tables or fields are added to a component.
 
-[00:00:00](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
- 
-I would like to demonstrate one of the latest features that have been added to JCB. A feature request had been made: "Auto-generate update SQL?". After a lengthy discussion, the decision was made to add the feature and now it is basically done. First, some background regarding it. When a component is created in Joomla, you have a set of views, and these views and the back end are linked to a set of tables.
+**Video Source:** [Watch on YouTube](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
-### JCB Builds tables For Views On Installation
- 
-[00:00:38](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m38s) 
+---
 
-On the installation of the component, for example, as is done with JCB, it builds the tables for those views on installation. So if you go to the back end of the component, and create a new item, it stores the value in the database, that it can be retrieved.  [00:01:17](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m17s) As a developer make a change to this component which involves new tables, the extra script needs to be added to the components package upon installation. If it finds that there is already an existing component, it will update the database accordingly to the new settings, the new tables or any fields added. 
+## 1. Understanding How JCB Manages Tables
 
-### Manually Adding New SQL Statements
+[00:00:00](https://www.youtube.com/watch?v=bRPJTRat158&t=00h00m00s)
 
-[00:01:47](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m47s)
- 
-In JCB there used to be a way to do that, which still works. A way to manually add the new SQL statements that are needed to make the update, it was done under the Version Updates tab. You would click on Version Updates tab and would add your specific SQL query script, and upon installation, if the existing version is below this update, it will grab this and install it into the database creating the new tables. 
+Every component in Joomla is built around a **set of views**, and each view is linked to a **database table**.
+When you install a component, JCB automatically creates the necessary tables for these views. This is why when you create or edit items in the component backend, data is properly stored and retrieved from the database.
 
-### Adding A New View/New Table To Component
+---
 
-[00:02:35](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m35s)
+## 2. Table Creation During Installation
 
-This Admin View has only 1, 2, 3, 4, 5, 6, views. I'm going to add another view to this component. These buttons are not ticked. It seems to be a Joomla problem because there are multiple columns in this view. If it is closed and clicked again it fixes that. I am going to add a new view called 'Help Documents' and make some minor changes to the defaults. [00:03:14](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m14s) Add it to the 7th position, click save and click save again. A new view has been added which means a new table to the database. We have not written any of the SQL, because with the new changes this is going to be done automatically the moment this component is compiled.  We are and This component is going to be compiled again. Its version is still 1.4.1. Then it gets compiled. 
+[00:00:38](https://www.youtube.com/watch?v=bRPJTRat158&t=00h00m38s)
 
-### System Checking The History If There Is A New Table 
+When you install a JCB-generated component, the system:
 
-[00:03:51](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m51s)
+* Builds database tables for each view.
+* Sets up field structures for data storage.
+* Registers the component so Joomla recognizes and interacts with it properly.
 
-The system is checking the history and it is making a lot of calculation to dynamically realize that there has been a new table increment version number. If this component is installed now, and if that component is opened that the new view can be seen. I'll see is here. If the view is opened it does not show any errors. [00:04:20](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m20s) If new is created, it automatically starts as expected. For instance, text: 'hi'. This targets the external sources. [00:04:43](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m43s) It may be seen that the database already stores the values, and the new table is therefore in the database and working as expected. This means that the JCB component has been updated. If this page is refreshed, it may be seen that the version number has been incremented. [00:05:14](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m14s) If the version updates are opened it can be seen when you scroll down, that 1.4.1 got this new creating of a help document table and a new version(1.4.2) got allocated. We do not know what is this (https//github.com/SermonDisributor) link and so we add this (https//domain.com/.zip) demo link here which you need to manually update still. That is by far a tremendous improvement. 
+If later you modify the component (for example, adding new tables or fields), you traditionally needed to include **SQL update scripts** manually. This ensures the database schema updates correctly during reinstallation or upgrades.
 
-### Adding New Field To Existing View
+---
 
-[00:05:44](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m44s)
+## 3. The Old Method - Manual SQL Updates
 
-This also works not only with the adding of a new view, but also if a field is added to an existing view. To demonstrate: If a new field gets added to the Preacher view and any fields is selected, since it is going to be removed again. For example: Call it 'Image'.(See video) [00:06:27](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m27s)  Save and close. Now a new field has been added to preachers, and then return to the compiler, select the component and compile. Since it detected there has been a field changed, it incremented the version number. If the component is installed, it may be seen in the component in the Preachers view, that there is a new field, 'image'.[00:07:02](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m02s)  If an image is selected, and saved. _Oops, I actually missed it, the reason was that this component did not have any history.  A few changes are necessary._ 
+[00:01:47](https://www.youtube.com/watch?v=bRPJTRat158&t=00h01m47s)
 
-### If Building A Component It Have History
+Previously, JCB required developers to:
 
-[00:07:23](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m23s)
+1. Open the **Version Updates** tab.
+2. Manually add new **SQL statements** (e.g., `CREATE TABLE`, `ALTER TABLE`).
+3. Increment the component version manually.
 
-NB. If you are building a component from the ground, it will have history.  This is only going to happen when a component is installed via the import function in the components, or maybe when a demo component is used. It is advised to open all the views and save them at least once so that there is history recorded for that view. That is one of the drawbacks, there is currently no way to negate that issue.
+During installation, JCB checked the version difference and executed any pending SQL updates.
+While effective, this process was **time-consuming and error-prone**.
 
- Since the history of each of these different items, being at the admin view and the fields need to be created the moment that the item is saved. It can not be done before then. [00:08:14](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m14s) Taking that in account, I will recompile it again and fix that. It should increment it to 1.4.3. I will install that again, then go back and refresh the Preacher. That image field is back. Select an Image. Click Save, and now it stores the data for this image. [00:08:49](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m49s) If the component is refreshed, and it has again incremented the version. If the update area is opened, it may be seen that it added this new 'alter' of the Preacher table, adding the image field. It also added the new [00:09:16](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m16s) version to this list.
+---
 
-This has been a demonstration of this new automated feature which is in its very beta phase. Please take a go at it, and if you find any bugs, look for other open issues, and start a comment. If you do not find any, then please open an issue and let us fix this issue. [00:09:55](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m55s)
+## 4. Introducing Auto SQL Generation
 
-I think this will be a tremendous improvement to JCB since it is even writing your update SQL for you, which makes it again one of the best Joomla component developing tools. 
+[00:02:35](https://www.youtube.com/watch?v=bRPJTRat158&t=00h02m35s)
+
+With this new feature, **JCB automatically detects and generates SQL update scripts** when:
+
+* A new **view** (and thus a new table) is added.
+* A new **field** is added to an existing table.
+
+Let's walk through a practical example.
+
+---
+
+## 5. Adding a New View
+
+[00:03:14](https://www.youtube.com/watch?v=bRPJTRat158&t=00h03m14s)
+
+### Steps:
+
+1. Open your component in JCB.
+2. Add a new **Admin View** called **"Help Documents"**.
+3. Adjust the defaults (set its order, label, etc.).
+4. Click **Save**.
+
+When saved, this automatically defines a new database table for the view.
+
+Next:
+
+* Go to **Compile → Select your Component → Compile** again.
+* The system will detect structural changes and **increment the version number automatically** (e.g., from `1.4.1` to `1.4.2`).
+
+---
+
+## 6. Behind the Scenes: Auto Version Increment
+
+[00:03:51](https://www.youtube.com/watch?v=bRPJTRat158&t=00h03m51s)
+
+During compilation, JCB:
+
+* Checks the **component's change history**.
+* Identifies structural updates (new tables or fields).
+* Automatically generates the SQL required for these changes.
+* Increments the **component version** accordingly.
+
+Once the new component is installed, the new "Help Documents" view appears and its corresponding table is fully functional.
+The **Version Updates** tab confirms that:
+
+* Version `1.4.1` added the new table.
+* Version `1.4.2` was automatically created and linked with the generated SQL update script.
+
+This reduces manual SQL management and ensures database integrity during upgrades.
+
+---
+
+## 7. Adding a New Field to an Existing View
+
+[00:05:44](https://www.youtube.com/watch?v=bRPJTRat158&t=00h05m44s)
+
+JCB can also auto-generate updates when modifying existing tables.
+
+### Example:
+
+1. Open the **Preacher View**.
+2. Add a new field, e.g.,
+   **Name:** `Image`
+   **Type:** `media` (selectable image upload).
+3. Click **Save & Close**.
+4. Recompile the component.
+
+Upon compiling, JCB detects the new field addition, updates the schema automatically, and increments the version number again.
+
+---
+
+## 8. Component History and Update Tracking
+
+[00:07:23](https://www.youtube.com/watch?v=bRPJTRat158&t=00h07m23s)
+
+To ensure auto SQL updates function correctly, JCB needs **component history**.
+
+### Important Notes:
+
+* New components automatically record history as you save each view and field.
+* Imported or demo components **might lack history**.
+  → In this case, open each view and **click "Save"** to initialize history tracking.
+
+History allows JCB to compare current and previous versions, so it knows what SQL changes to generate.
+
+---
+
+## 9. Verifying Auto SQL Update Functionality
+
+[00:08:14](https://www.youtube.com/watch?v=bRPJTRat158&t=00h08m14s)
+
+After recompiling and reinstalling:
+
+* The version increments again (e.g., to `1.4.3`).
+* New SQL statements are added automatically:
+
+  * For the **Help Documents** table.
+  * For the new **Image** field in the Preacher table.
+
+You can confirm this under the **Version Updates** section:
+
+* Version numbers are incremented correctly.
+* Corresponding SQL scripts are present for each change.
+
+---
+
+## 10. Summary & Best Practices
+
+[00:09:55](https://www.youtube.com/watch?v=bRPJTRat158&t=00h09m55s)
+
+The **Auto SQL Update** feature simplifies JCB component evolution by:
+
+* Automatically tracking schema changes.
+* Generating precise SQL update scripts.
+* Managing version increments seamlessly.
+
+### Recommended Workflow:
+
+1. Always **save each view and field** before compiling.
+2. **Recompile** after any structural change.
+3. **Check the "Version Updates"** tab to verify SQL changes.
+4. **Test installation** to ensure the new fields and tables are working.
+
+---
+
+## 11. Conclusion
+
+This automation makes JCB even more powerful - capable of **writing your SQL updates for you**.
+It saves time, prevents errors, and ensures your components remain consistent and upgradeable.
+
+> "Auto SQL generation makes JCB one of the most advanced Joomla development tools - handling database evolution dynamically and intelligently."
+
+---

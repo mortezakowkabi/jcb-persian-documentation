@@ -1,26 +1,145 @@
-# TWEAKING MySQL DEMO DATA
+# Tweaking MySQL Demo Data in Joomla Component Builder
 
-### MySQL tweaking in the component area
+### Video Reference
 
-[00:00:00](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+[00:00:00 - Watch on YouTube](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+(*Click the time links in this document to jump directly to sections in the video.*)
 
-Open a component (in this instance, 'Editting a component'). Go to 'settings', and you'll find a 'MySQL' tweak. What is its function? If you have multiple versions of a component and partly demo relating to a certain version of it and implementation of items and you do not want those items included in another version, there is the 'MySQL' tweak area where a specific view can be selected. [00:00:43](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m43s)
+---
 
-Note: This feature may only be used if you're using this area where we added database connection between the view 'dummy data' and 'view' itself. [00:01:07](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m07s)
+## Overview
 
-If 'Field types', one of Component Builders own views, is opened and connected to the database through 'MySQL'; if 'yes' is added and table selected, then Field types are selected in the database and allows it all to be taken into the 'Build' file. (See video.) 
+In Joomla Component Builder (JCB), **MySQL Tweaks** provide a flexible way to control which demo or dummy data gets included when compiling your component.
+This is especially helpful when maintaining **multiple versions** of the same component, where some versions require example data and others don't.
 
-### Tweaking Feature
+This guide uses the **"Editing a Component"** example to explain how the MySQL tweak works, how to use it effectively, and when to ignore it.
+
+---
+
+## 1. Accessing the MySQL Tweaking Area
+
+[00:00:43](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m43s)
+
+1. Open your component in **Joomla Component Builder**.
+2. Go to the **Settings** tab.
+3. Locate the **MySQL** tweak area.
+
+### What It Does
+
+If your component has **multiple versions**, and some of them include demo data related to specific views or datasets, the MySQL tweak allows you to **include or exclude** that data per version.
+
+This setting is particularly useful if you've linked your view to a **dummy data table** or another database source.
+
+> **Tip:** This feature is only applicable when a **database connection** has been established between your component's view and a data source in MySQL.
+
+---
+
+## 2. Understanding How JCB Uses MySQL Connections
+
+[00:01:07](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m07s)
+
+For example, if you open one of JCB's internal views, such as **Field Types**, and connect it to MySQL:
+
+* Select **Yes** under *MySQL connection*.
+* Choose the relevant database table.
+* JCB will automatically **pull the field type data** into your component's **build file**.
+
+This ensures all your component's data definitions are consistently included in the compiled output.
+
+---
+
+## 3. The Tweaking Feature Explained
 
 [00:01:33](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m33s)
 
-Some of the versions distributed with Component Builder does not have all the field types. They are limited to a certain few field types. To explain what has been done, return to the tweaking feature. With Component Builder open, go to settings. [00:01:57](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m57s) In this tweak feature, added values may be seen; certain of them, like Custom Admin, had been set to 'no'. Do not include the add MySQL (to view table) if it is set in the view. [00:02:19](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m19s) If 'MySQL' was selected in the view it can be controlled which item's actual 'ids' should be included through this feature. As in the Admin View, these two 'ids' (33,42) had been included from the database. They are the 'ids' in the Admin View table. It is ID based. There is the feature including all. (See video.) 
+JCB comes with demo versions where not all field types are available by default.
+To customize this behavior, use the **Tweaking Feature** in the settings.
 
-### ID Based
+[00:01:57](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m57s)
 
-[00:02:46](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m46s)  
+When you open this tweak feature:
 
-It is a function used to indicate what is needed here. (See video.) If 'ids' between 1 and 50 are used, this arrow notation with an equals open bracket (=>) can be used to notate that between 1 and 500 you want to add. [00:03:15](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m15s)  Here, 1,2,3,4or1=>4, a comma is placed, 20, another comma and 40=>90, so in the same comma-delimited list, this notation can be added to show that 1 to 4 has to be included, after 20 is added and all the ids will be grabbed. [00:03:41](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m41s) It eliminate any other ids and only use the ones that had been notated. Here is another example of using 1,4,23,199: it goes on from 597=>604,682=>684. (See video.) [00:04:08](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m08s) It is in the same comma-delimited list, id based; include these by clicking 'yes'. That is what it can be used for. If dummy data or example data had not been included in the component build structure, this area is redundant and not necessary to use it at all. [00:04:46](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m46s) Ignore it if there aren't any data selected.
+* You'll see several configurable options (e.g., *Custom Admin*, *MySQL to View Table*).
+* Some values may be set to **"No"**, meaning that data is excluded from the build.
+* If **MySQL** is enabled in a view, this section lets you specify **which IDs** from that view's database should be included.
 
-This feature helps with the management of dummy data between versions in your applications.
+[00:02:19](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m19s)
+
+For example, in an Admin View, IDs `33` and `42` may have been included from the database.
+These are controlled directly through the MySQL tweak.
+
+> **Control Data Inclusion:**
+> The tweak system is **ID-based**, allowing you to define which records are packaged into your component.
+
+---
+
+## 4. Working with ID-Based Tweaks
+
+[00:02:46](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m46s)
+
+This feature gives you **fine-grained control** over what data gets included by ID.
+
+### Syntax Format
+
+You can specify ranges and individual IDs in a **comma-delimited list**:
+
+```text
+1,2,3,4,20,40=>90
+```
+
+This example includes:
+
+* IDs `1`, `2`, `3`, `4`
+* ID `20`
+* All IDs from `40` through `90`
+
+[00:03:15](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m15s)
+
+You can also mix ranges and discrete IDs, e.g.:
+
+```text
+1=>4, 23, 199, 597=>604, 682=>684
+```
+
+This makes it easy to include **specific datasets** without manually managing each record.
+
+[00:04:08](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m08s)
+
+After setting your ID list, toggle **Include = Yes** to activate the tweak.
+
+---
+
+## 5. When to Ignore the MySQL Tweaking Area
+
+[00:04:46](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m46s)
+
+If your component **does not include dummy or demo data**, there's no need to configure the MySQL tweak.
+It will have no effect on your build output.
+
+> **Ignore Unused Tweaks:**
+> If no data has been selected or connected in your component, this feature can be safely ignored.
+
+---
+
+## 6. Summary
+
+| Purpose                 | Description                                                                   |
+| ----------------------- | ----------------------------------------------------------------------------- |
+| **Control Demo Data**   | Manage which sample or demo data is packaged into your component builds.      |
+| **Version Flexibility** | Exclude data for production versions and include it for demo or dev versions. |
+| **ID-Based Inclusion**  | Include records by listing their database IDs or specifying ranges.           |
+| **Optional Feature**    | Only needed if your component integrates dummy data tables.                   |
+
+---
+
+## Key Takeaways
+
+* Access the **MySQL tweak** in component **Settings**.
+* Connect your view to MySQL if you want to include real or demo data.
+* Use **comma-delimited ID lists** to specify which entries to include.
+* Skip this step entirely if your component doesn't use demo or example data.
+
+> **Pro Tip:**
+> MySQL Tweaks are especially powerful when used in **multi-version component development**, helping you maintain clean data separation between production and demo builds.
+
+---

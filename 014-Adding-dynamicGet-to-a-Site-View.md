@@ -1,69 +1,239 @@
-# ADDING DYNAMICGET TO A SITE VIEW
+# Adding dynamicGet to a Site View
 
 ### Checking The Target Dataset
 
 [00:00:00](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m57s)
-(_Click on these time links to see Youtube video_)
 
-Now that we have the dynamicGet in place, let's add it to a site view and look at the initial implementation. Go to site view and click on new. Since we already have what you created, we will just open preacher.
+Now that the DynamicGet is in place, the next step is to **add it to a Site View** and observe how it functions within the component.
+
+1. Navigate to **Site Views** in Joomla Component Builder.
+2. Click **New** to create a new Site View.
+3. For this example, since a Site View already exists, open the **Preacher** view.
+
+This setup will allow you to connect the previously created DynamicGet methods to your Site View.
+
+---
 
 ### Populate Fields From Get's
 
 [00:00:32](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m32s)
 
-On the right-hand, there are three fields you can populate with your dynamicget methods. The first is where you'd add all the custom dynamicgets. There you can add multiple custom dynamicgets. The second is where you add your main dynamicget as we explained in the dynamicget tutorial. You can add one main get method per site view since it will be built in the model, either as a getitem or getitems. [00:00:57](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m57s) It depends whether the main get it is a list or an individual item. Whatever the case, you may include as many custom dynamicgets as you like. You have this data available in your view. (See video.) These two first fields are used to load the dynamicget to the view.
+On the right-hand side of the Site View editor, you'll find **three key fields** for populating DynamicGet methods:
+
+1. **Custom DynamicGets** -
+
+   * Add one or more custom DynamicGet methods here.
+   * These are additional queries or data sets you might want to use in the same view.
+
+2. **Main DynamicGet** -
+
+   * This is the **primary** DynamicGet method.
+   * Only one main DynamicGet can be added per Site View.
+   * It determines how the model retrieves data (via either `getItem` or `getItems`).
+
+3. **Custom DynamicGets (optional)** -
+
+   * You can include as many custom DynamicGets as needed.
+   * These will provide additional data objects to the view.
+
+> **Tip:** The main DynamicGet determines whether the data retrieved is a list (`getItems`) or a single item (`getItem`).
+
+---
 
 ### Dynamic Values
 
-[00:01:36](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m36s) 
+[00:01:36](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m36s)
 
-The third is used to display. You might want to implement the code of a specific dynamicget option. This one displays main gets; this one customer gets; this both the custom and the main kind of gets. [00:02:04](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m04s) If you select one of these main gets you will see that it shows a list printout of the possible ways you might use the result set. [00:02:32](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m32s) (You can copy 
-each of these by clicking on it; right click and copy or ctrl C and command C to copy the content.) Perhaps you only want to use part of it and not include the echo statement: click from the area where you want to copy and before letting go click on control C or command C. [00:03:05](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m05s) In a mac once you let it go it will select the whole block; if you copy it then, you will copy everything.
+The **third field** in the Site View editor is for **Dynamic Values**.
+These are snippets of code automatically generated to help you implement DynamicGet data in your view.
+
+You can select:
+
+* **Main Gets** - display data from the main DynamicGet.
+* **Custom Gets** - display data from your custom DynamicGets.
+* **Both** - show all DynamicGet options together.
+
+[00:02:04](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m04s)
+
+When you select a main get, it shows a **printout of code examples** demonstrating how to access the result set in your views.
+
+[00:02:32](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m32s)
+
+Each code block can be copied easily:
+
+* **Right-click and copy** or use **Ctrl+C / Cmd+C**.
+* You can also select only a portion of the code (e.g., without the `echo` statement).
+
+[00:03:05](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m05s)
+
+> **Note for macOS users:** Once you release the mouse, macOS may auto-select the full block. To copy a part, press **Cmd+C** before releasing.
+
+---
 
 ### Inserting Values Into View
 
 [00:03:36](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m36s)
 
-We use Dynamic Values code in the default view to display the data in a PHP way. You can get the customerget here. The value is going to be in this preacher. (Make sure you have a preacher.) This block deals with displaying the data related to the information. This one here checks whether the main items are on the page. (See video.) [00:04:08](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m08s) The main items are sermons, preacher.id, getlist, etc. If you go down to the sermon preacher, you'd get list; the values are in items. It's an array. You can loop through it and target the object values. That's what's being done here. First, check whether the values are on the page. [00:04:38](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m38s) If we see that it is there, we make use of templates to display the various layouts. [00:05:01](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m01s)
+Use the **Dynamic Values** code within your view's PHP template to display the retrieved data.
+For instance, in the Preacher view:
+
+* Ensure you have a valid Preacher object.
+* Use the provided code snippet to **check whether the main data items are loaded** on the page.
+* Typical main items include `sermons`, `preacher.id`, or the `getList` dataset.
+
+[00:04:08](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m08s)
+
+These items are stored in arrays (`items`) that can be looped through to display data dynamically.
+
+[00:04:38](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m38s)
+
+Templates are then used to handle different **display layouts** for this data.
+
+---
 
 ### Making Use of Data Being Passed Through to the View
 
 [00:05:19](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m19s)
 
-This data structure is the data structure you can expect from each one of these Custom Gets. (See video.) If you were to take number sermons as the method you want to see, it shows the way that it might be packed into the data set. [00:05:36](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m36s) It'll be found in this 'numbersermons'. It could change depending on the custom implementation in your components custom coding areas. You might move this data from that position to something else. The reality is that Dynamic Values gives you a chance to see how it would have looked without leaving the normal path. 
+Each Custom Get provides a data structure that defines how its results are packed and passed into the view.
+
+[00:05:36](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m36s)
+
+For example:
+
+* A method named `numbersermons` would make its data available as `$this->numbersermons`.
+* This structure may vary depending on how you modify your component's custom code.
+
+> **Tip:** Use Dynamic Values to preview how the data would look before making custom modifications.
+
+---
 
 ### Var Dump
 
 [00:06:13](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m13s)
 
-This is proposing the dataset structure: Ideally, you had this value here, and do this in the code. (See video.) Do a var_dump, exit, do a build, and look at the view to see the structure. [00:06:45](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m45s) If you are finding that this structure isn't working as we expected, this might help map the array and see where which value is found. The same goes for any of the others. Grab that area that you want to peek into, place it in var_dump, do a build, and look at the page in the front of your site. You can see the structure of the object here, whether it's an array, an array with objects, or whatever is placed inside this value set through the dynamic get method. (See video.) [00:07:20](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m20s)
+To understand the structure of your dataset:
 
-### Gets In The Code eg: Preacher.php
+1. Insert a `var_dump()` at the desired data point in your template.
+2. Rebuild the component.
+3. View the output on the frontend to inspect the data structure.
+
+[00:06:45](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m45s)
+
+This helps identify whether the data is an array, object, or nested structure, allowing you to adjust your access logic accordingly.
+
+[00:07:20](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m20s)
+
+Repeat this step for other Custom Gets if needed to verify their data structures.
+
+---
+
+### Gets In The Code (e.g., Preacher.php)
 
 [00:07:33](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m33s)
 
-Let's look at how Custom Gets methods are becoming available in your view by going to the code and looking at some of the implementations that we've done. We've gone to the front of the site. (See video.) [00:07:55](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m55s) We open and use the preacher model. As you scroll down you see that a getListquery. This getlistquery gets sermon as the 'a' table, series as the 'c' table, preacher is the 'd' table, and categories as the 'b' table. [00:08:18](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m18s) Now it looks for value in id, sets it equal to preacher, ensures that the person has access level to the item that's published, and returns it. [00:08:41](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m41s) That is the getListquery in the model. If we go back to our interface, we have sermon (preacher.id)(getlist) as the main. 
+To see how Custom Gets become available in your Site View, open the **model file** - for example, `preacher.php`.
+
+[00:07:55](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m55s)
+
+Inside the model, locate the `getListQuery()` method.
+Here you'll see how the main and joined tables are defined:
+
+* `sermon` as `a`
+* `series` as `c`
+* `preacher` as `d`
+* `categories` as `b`
+
+[00:08:18](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m18s)
+
+These joins determine how data is retrieved, filtered, and returned to the view.
+
+[00:08:41](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m41s)
+
+Back in the JCB interface, you'll notice that the main DynamicGet (e.g., `sermon (preacher.id) getlist`) matches the structure used in this model.
+
+---
 
 ### Looking At The Dynamic Get
 
 [00:09:06](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m06s)
 
-I've opened that dynamic get here. Sermon is set as 'a,' the main table. If you open Join View Table - Add, series is set as 'c' looking for selection values. Preacher is set as 'd', only selection values. Statistics 'e' is a list. It is multiple. [00:09:36](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m36s) These (preacher, series) single ones are part of the list query whereas the multiple of it would have its own method. In the Join DB table add the category as single and 'b' those values. [00:10:01](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m01s) Going back to the code, this is the getListquery in the getitem. After we received the items we look through them in getSermonstatistics and a generated string to ensure no conflicting with other methods on the page. Place the values in 'id sermonsstatisticsE'. [00:10:30](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m30s) This is where the values are placed. (See video.) We have a custom method here. Like we had shown in the dynamic get you can add custom methods and return the items to the page.
+When viewing the DynamicGet definition inside JCB:
+
+* `Sermon` is set as the main table (`a`).
+* `Series` (`c`) and `Preacher` (`d`) are joined for selection values.
+* `Statistics` (`e`) is a **list** join, meaning multiple entries.
+* `Category` (`b`) is added as a **single** join.
+
+[00:10:01](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m01s)
+
+In the code, this configuration appears in `getItem()` and its supporting methods, ensuring that statistics and related data are available for each item.
+
+[00:10:30](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m30s)
+
+Custom methods defined in DynamicGet can also be added to return additional values for use in the Site View.
+
+---
 
 ### Preacher view.html.php Generated Code
 
 [00:10:55](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m55s)
 
-In the page, you have the file, view.html.php. If you open it there is a get items method being used to place the items in items. At the moment we are in the view which means that you can access this set of values inside of that class field. [00:11:26](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m26s) If we go back to our Component Builder, and select that method the items would be corresponding to our code. The id. and the asset_id, etc, are in there.
+In the generated **view.html.php** file for the Preacher view:
+
+* The method `getItems()` retrieves the dataset from the model.
+* These items are then stored as `$this->items` within the view class, making them available for use in your templates.
+
+[00:11:26](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m26s)
+
+Selecting the corresponding DynamicGet in JCB shows that the variables match the generated code fields (like `id`, `asset_id`, etc.).
+
+---
 
 ### Checking The Target Datasets
 
 [00:11:48](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m48s)
 
-If you scroll down there is a 'idsermonstatisticsE' which means that in the array there is a key-value which has another set of array values in it. [00:12:03](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m03s) You can target these data sets by corresponding pointing values. That's just the main get. [00:12:28](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m28s) If we look at the other custom get that has been added, we'll see preacher, a custom method that has been added. It also has a set of values and database structure. (Remember we set it to be linked to the preachers id.) I can check for the id, then set it to id, and return to result. [00:12:53](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m53s) The same goes for the number of downloads. It's also a custom method that set to this view because of the custom get that was added. As we go back to our view.html.php file, those values are respectively being added to preacher number downloads and number sermons. [00:13:21](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m21s) You can use these values in the view by targeting with this number sermons.
+Inspecting deeper in the code, you'll notice keys such as `idsermonstatisticsE`, which represent array values containing further subarrays.
+
+[00:12:03](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m03s)
+
+You can target these datasets by referencing their corresponding keys.
+
+[00:12:28](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m28s)
+
+Each **Custom Get** (such as `preacher` or `numberdownloads`) contributes its own data structure that is accessible from the view.
+
+[00:12:53](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m53s)
+
+In the `view.html.php` file, these values are linked to variables like `$this->preachernumberdownloads` or `$this->numbersermons`.
+
+---
 
 ### Site Preacher Tmpl Folder
 
 [00:13:33](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m33s)
 
-The view itself is under the views preacher inside of the template folder. This main view, or default view, is where the code is on the page. [00:13:50](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m50s) These others are the templates extending the site view. They are extended through layouts available in the layouts folder. [00:14:24](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m24s)
+All Site View templates are stored under:
+`/components/com_yourcomponent/views/preacher/tmpl/`
+
+[00:13:50](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m50s)
+
+The **default.php** file represents the main output layout, while other layout templates (in the `layouts` folder) can extend or override this default layout.
+
+[00:14:24](https://www.youtube.com/watch?v=vEJZe6XqHJE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m24s)
+
+---
+
+## Summary
+
+By linking a **DynamicGet** to a **Site View**:
+
+* You enable JCB to automatically load complex joined data structures into your frontend view.
+* Use **Dynamic Values** to preview and insert code snippets for accessing this data.
+* Inspect datasets using `var_dump()` to understand their structure.
+* Display results dynamically through your view templates and layouts.
+
+> **Next Step:** Experiment by creating your own Custom Gets, attach them to different Site Views, and review the generated model code to understand how JCB automates this data flow.
+
+---

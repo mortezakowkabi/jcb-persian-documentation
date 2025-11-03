@@ -1,22 +1,172 @@
-# ADDING LANGUAGE STRING TO YOUR COMPONENT AND GET THE LANGUAGE PLACEHOLDER FOR DYNAMIC USE
+# Adding Language Strings and Dynamic Placeholders in JCB
 
-### Quick Tip How To Add String To Your Component 
+## Overview
 
 [00:00:00](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(Click on these time links to see Youtube video)
 
-How to add a language string to your component without a language string being immediately added to the Jtext object function which translates it. Let me demonstrate. With a normal language string, you would use Jtext and add your string in there(See Video). When JCB compiles it, it adds that string to your language file. When your component runs, that string is translated because it has a placeholder in its place. You can then have multiple places where the string is used. It is there and works well. The new feature [00:00:59](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m59s) is mostly used when you are dealing with a class and you are working with an array in the class. If you want to have a class method or rather fields that is an array of strings, but you can not use this [00:01:20](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m20s) in the array of a class value. That is one place but there are many places where you could see this in action. 
+This guide explains how to **add a language string** to your component in Joomla Component Builder (JCB) and how to generate a **language placeholder** for **dynamic use** - particularly useful when working within classes or arrays where the direct `JText` call cannot be used.
 
-### Want The Placeholder To Be Generated
+---
+
+## Understanding Language Strings in JCB
+
+When developing Joomla components, you often use the `JText` function to translate strings dynamically. Normally, when JCB compiles your component:
+
+* The string inside `JText` is added to your language file.
+* The placeholder replaces the string in the compiled code.
+* The Joomla system translates that placeholder whenever it's displayed.
+
+Example:
+
+```php
+echo JText::_('COM_MYCOMPONENT_HELLO_WORLD');
+```
+
+During compilation, JCB automatically ensures that `COM_MYCOMPONENT_HELLO_WORLD` is written into the component's language file with its translation text.
+
+---
+
+## When You Need Only the Placeholder
+
+[00:00:59](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m59s)
+
+Sometimes, you may need **only the language placeholder**, not the full translation at compile-time - for instance, when working inside a **class array**.
+
+Example scenario:
+You have a class with an array of field properties (like `listclass`, `escape`, `display`, or `validate`) and you want to reference the translated string later in runtime, not immediately when JCB compiles it.
+
+In such cases, you can't directly use `JText` inside the array, because that would attempt to translate immediately. You need only the **placeholder string** to exist in the compiled code, ready for later translation.
+
+---
+
+## Using the `JustTEXT` Feature
 
 [00:01:32](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m32s)
 
-What you would want to do is you want the placeholder to be generated. You want the string to be added to the language file. But you only want a placeholder as a string to be added to your Script because later in the script, you are going to add it to the Jtext option to translate this placeholder. Often you would run into such a case, well I have. The way we have addressed this with a new name `JustTEXT`. [00:02:16](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m16s) This part looks exactly the same as the `Jtext`.
+To handle this use case, JCB introduces a special keyword:
 
-This almost seems like this is a class but it is not really. It is something that the JCB compiler will pick up. It will convert this, let me show you how it will look when it has been converted. You will see why it makes sense. There are these extra field properties, and it has these keys(listclass, escape, display and validate). I want to use the key to get the string. If we go a little lower in the script, [00:02:49](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m49s) you will see I am looping through that array and the value description. I am only passing it to the Jtext to translate it. That means I want to do this translating later and all I want in this array above is the placeholder string. 
+### `JustTEXT`
 
-### Looking At The Code
+This feature:
+
+* Adds the string to your language file (as JCB normally does).
+* Inserts **only the placeholder** (not the translation) into your PHP script.
+* Allows you to translate it **later in the code** when you decide to call `JText` on it.
+
+This is especially useful for dynamic translation workflows or when looping through arrays where translation occurs after certain conditions are met.
+
+---
+
+## How JCB Compiles It
+
+[00:02:16](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m16s)
+
+`JustTEXT` looks similar to a class or function call, but it's not actually a PHP class or function.
+It's a **marker** recognized by the JCB compiler, which processes it during compilation and replaces it appropriately.
+
+For example:
+
+```php
+JustTEXT::_('COM_MYCOMPONENT_VALIDATION_ERROR');
+```
+
+After compilation, JCB outputs:
+
+```php
+'COM_MYCOMPONENT_VALIDATION_ERROR'
+```
+
+This means the placeholder string is inserted, not translated yet. You can later use it like:
+
+```php
+JText::_($value);
+```
+
+- where `$value` was the placeholder created by `JustTEXT`.
+
+---
+
+## Applying It in Your Class Arrays
+
+[00:02:49](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m49s)
+
+Consider this common example within a class that defines field properties:
+
+```php
+$extra_field_properties = array(
+    'listclass' => JustTEXT::_('COM_MYCOMPONENT_FIELD_LISTCLASS_DESC'),
+    'escape'    => JustTEXT::_('COM_MYCOMPONENT_FIELD_ESCAPE_DESC'),
+    'display'   => JustTEXT::_('COM_MYCOMPONENT_FIELD_DISPLAY_DESC'),
+    'validate'  => JustTEXT::_('COM_MYCOMPONENT_FIELD_VALIDATE_DESC')
+);
+```
+
+After compilation, this becomes:
+
+```php
+$extra_field_properties = array(
+    'listclass' => 'COM_MYCOMPONENT_FIELD_LISTCLASS_DESC',
+    'escape'    => 'COM_MYCOMPONENT_FIELD_ESCAPE_DESC',
+    'display'   => 'COM_MYCOMPONENT_FIELD_DISPLAY_DESC',
+    'validate'  => 'COM_MYCOMPONENT_FIELD_VALIDATE_DESC'
+);
+```
+
+Later in your logic, when looping through this array, you can translate the values dynamically:
+
+```php
+foreach ($extra_field_properties as $key => $description) {
+    echo JText::_($description);
+}
+```
+
+This gives you clean, flexible translation handling while keeping placeholders intact until needed.
+
+---
+
+## Compilation Result Example
 
 [00:03:11](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m11s)
 
-Let me show you that in the code how it comes out.  In the code you will see the extra field properties. You will see it is simply a string. It took away the bracket if you looked at it the way it was. I am going to paste in the one from the code that you can see what it has done. You can see [00:03:40](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m40s) this is what we added in JCB, and what it did in compilation. It added the placeholder string which we can then use down here in our Jtext to translate it to get the specific translated string. That is a way to get the placeholder and to get the string into your language file. [00:04:09](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m09s) That is just a little tip. I know that it is not very obvious. I hope it will come in handy to those of you who want to add language strings to JCB, but you do not want to have it immediately be part of the Jtext object call. You want to have the actual placeholder available for use dynamically. This is the way you can do that.
+When JCB compiles, you'll notice:
+
+* The `JustTEXT` entries are converted to plain string placeholders.
+* The strings are still included in your language `.ini` file.
+* You can use those placeholders later anywhere within your component.
+
+Example snippet before and after compilation:
+
+**Before Compilation:**
+
+```php
+'display' => JustTEXT::_('COM_MYCOMPONENT_FIELD_DISPLAY_DESC'),
+```
+
+**After Compilation:**
+
+```php
+'display' => 'COM_MYCOMPONENT_FIELD_DISPLAY_DESC',
+```
+
+These placeholders remain available for later use with `JText::_()`.
+
+---
+
+## Summary
+
+[00:04:09](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m09s)
+
+To summarize:
+
+* Use `JText::_()` normally when you want **immediate translation**.
+* Use `JustTEXT::_()` when you want **only the placeholder** added, and the **translation deferred**.
+* Both methods ensure your strings are safely written to the language file.
+* `JustTEXT` gives you more control when handling **arrays**, **dynamic content**, or **class-based logic** that processes strings later.
+
+---
+
+### Pro Tip
+
+If you have logic where language strings are used conditionally (for example, inside loops, arrays, or custom functions), `JustTEXT` keeps your code flexible and your translations organized - without forcing early interpretation during compilation.
+
+---

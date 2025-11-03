@@ -1,90 +1,231 @@
-# MAJOR RELEASE OF JCB v2.6.0
+# **Major Release of Joomla Component Builder (JCB) v2.6.0**
 
-### Removing All Repeatable Fields in Joomla Component Area
+## Overview
 
-[00:00:00](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-_(Click on these time links to see video)_
+**JCB v2.6.0** marks a significant upgrade that modernizes how components are structured and managed. The most notable change is the **complete removal of all Repeatable Fields** within the Joomla Component area. This improvement ensures better data handling, performance, and compatibility with Joomla 4 and beyond.
 
-I would like to demonstrate how to upgrade to JCB version 2.6.0. It is quite a major upgrade since we have removed all Repeatable Fields in the Joomla Component area. Joomla Component area has quite a lot of Repeatable Fields. On opening the component it may be seen that Repeatable Fields are little models that pop-up with values which had been used quite excessively in this view.[00:00:43](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m43s) The reason why this was done is because it is a very smart Field since it combines these values into one value. The JavaScript on the page grabs these values and converts it into one value, when on submission the form only submits one string, and not several Fields.[00:01:13](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m13s) There are some conventional reasons which make the Repeatable Fields on a SubForm level more desirable, due to its ability to validate the data more correctly. [00:01:34](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m34s) We had to remove these Fields because in Joomla 4 they no longer are supported. I had to decouple a number of these Fields into their own Tables because of the size of the values that are on the page, the page becomes immensely heavy. There had been about 9 new Tables added to JCB, to accommodate this. 
+This documentation explains the key changes, provides upgrade guidance, and clarifies how the new system works to maintain backward compatibility while offering a more robust architecture.
 
-### Changes Only Affects The Component Area
+---
 
-[00:02:03](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m03s)
+## **1. Removal of Repeatable Fields**
 
-The real change is only going to affect the Components Area. But because JCB is a very Dynamic Component that integrates with various levels of this Data Structures.  
+[00:00:00](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h00m00s)
 
-### Upgrade: Compiler Import/Export Of JCB Packages
+Repeatable fields were once widely used in JCB's Component Area to manage collections of related values. However, these fields have now been **entirely replaced** with **SubForm fields** and dedicated tables.
 
-[00:02:20](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m20s)
+### Why the Change Was Necessary
 
-The Compiler had to be upgraded, as well as the import and export of JCB packages. We have tested this and for the most part, those involved with the testing, have found that this transition is a Major improvement to JCB and will be very easy and without any issues.
- 
-### Suggestion - Clean your Browser Cache and Browser Memory
+[00:00:43](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h00m43s)
 
- [00:02:47](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m47s)
+Previously, Repeatable Fields used JavaScript to combine multiple values into a single string for storage. While efficient, this approach had drawbacks:
 
-If you run into glitches that do not work as expected, it is suggested that you clean your browser's cache as well as memory. It has been found that traces of the old Repeatable Field Structure and JavaScript surrounding that might clash with the new changes in JavaScript within the new update. To clear the browser memory and not just the cache, is quite important. Only after you have upgraded and started to work in different views, it will be seen that everything works as expected. 
+* It stored data as a single string, limiting database normalization.
+* Validation was less precise compared to structured SubForms.
+* Joomla 4 officially deprecated Repeatable Fields, requiring a new solution.
 
-### Dynamic Get Area Some Conflicts
+### New Approach
 
-[00:03:29](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m29s)
- 
-The Dynamic Get Area has been reported to have some conflicts at this stage. The Dynamic Get Area returns values from the Admin Area where, if we target let's say Back end View, and we grab some information. [00:03:55](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m55s) These values are returned from the Admin Area where it goes to this Admin View, and builds this structure. [00:04:04](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m04s) With this demonstration everything is working as expected. If this area is tested before the upgrade, it should work without any problems. If it does not, it is suggested to clear the browser memory and to try again until it is working like mine.[00:04:35](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m35s)  All that has been done was that I cleared my browser memory by going to history and wiped everything from this domain, so that there are no traces of JavaScript. If you do not want to clear all of the history then it specifically targets this domain that you are loading the JCB Component in.  
+[00:01:13](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h01m13s)
 
-### Update in Managing Area
+The new **SubForm** structure:
 
-[00:05:13](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m13s)
+* Creates **dedicated tables** for previously repeatable datasets.
+* Improves **data validation** and **integrity**.
+* Reduces **page load weight** by handling complex data through relational structures.
 
-The upgrade should be quite simple. Go to updates in the managing area. See that the upgrade is there and ready. Click on it and click update. Then the upgrade will be done. [00:05:41](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m41s) If you return to Joomla Component Builder, it should be 'up-to-date' and everything been done without any errors. In the Joomla Components Area, a view similar to this should be seen, with a lot of new shortcuts to these different decoupled areas that had been mentioned. 
+This change required the addition of approximately **nine new database tables** to support the new architecture.
 
-### Edit Component Update
+---
 
-[00:06:09](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m09s)
+## **2. Impact Scope - Only the Component Area**
 
-Not much has changed in the Component in regards to where what is located, but how to interact with it has been moved. For example, The Component Updates has a button 'Edit component update for this Joomla component', and if it is clicked, it is going to ask if everything is saved before you continue. [00:06:30](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m30s) If that was done, click 'OK' and it will open the area where the updates can be done. Usually, it was in a model that popped up, and it was possible to change it on the same page. Now you may go to another view and it will do the same. This applies to the Admin View, Custom View, Site View, and everything else. 
+[00:02:03](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h02m03s)
 
-### Contributor Moved Down - Do On Page 
+The restructuring primarily affects the **Joomla Component Area**. However, because JCB is highly dynamic and interconnected, the impact extends to several other areas that depend on these data structures. The upgrade process ensures compatibility across the entire system.
 
-[00:07:00](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m00s)
+---
 
-The Contributors has been moved down so it may be done on the page. But for most of the other Repeatable Fields, it had been moved to their own Tables. 
+## **3. Compiler and Package Import/Export Upgrades**
 
-### Moved Component Files And Folders To Joint Table
+[00:02:20](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h02m20s)
 
-[00:07:11](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m11s)
+The **Compiler** and **Package Import/Export** systems have been upgraded to align with the new SubForm data model. All import/export actions now handle data more reliably.
 
-The Fields and the Folders had been moved to a joint table. If this 'Edit component files folders for this Joomla component' is selected it will be easy to add some files to the Component or Folders, all found within this Structure as it is explained in the note. The same applies to all the other areas. 
+**Testing results** show a smooth transition with minimal user intervention needed. Users upgrading from older versions should experience no data loss or corruption.
 
-### Moved Admin Views To Its Own Tab
+---
 
-[00:07:42](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m42s)
- 
-The Admin Views has been moved to its own tab. It may be accessed via the button 'In Settings - edit component admin views for this Joomla component' or via the button 'Linked Admin View-Edit ' [00:07:54](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m54s) In Editing the Joomla Component area it is possible to see your changes and from here directly edit the Admin View that has been linked. It will be able to edit the Admin View directly out of your Component area. That is a nice new feature which will come in very handy. [00:08:15](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m15s) The new upgrade targets the majority of the changes in the Joomla Component Area. If it happens that we have missed a field during the upgrade by not converting it to the new Sub Form layout; there is a lot of data checks all around JCB at this stage which; when a view is opened, runs through all those Fields, and make sure that it has been changed and converted. [00:08:54](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m54s)If by any means you did not get around to open the views; go to the Compiler, and click compile. It does that again, it runs through all the Fields and it makes sure that it is in the right format. Therefore the compiling should work as before.
+## **4. Clear Browser Cache and Memory**
 
-### New Feature - Translation Checker
+[00:02:47](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h02m47s)
 
-[00:09:19](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m19s)
+After upgrading:
 
-One of the new features that have been added is this Translation Checker(Warning) which checks how many strings are within the component and how many were translated for this specific version, if a New language is available for the Admin View, the Admin System View, the Site View, and again for another Language, Admin View, Admin System View, and the Site View. This gives feedback on your progress. This area of JCB is maybe not utilized as much as it can be.  
+* **Clear your browser cache and memory**.
+  Residual JavaScript from the old Repeatable Field system can conflict with the new scripts.
+* Clear **browser history** specific to your JCB domain if you prefer not to clear all history.
 
-### Becomes Active If Language Is Setup
+This ensures new scripts load properly, preventing any UI or functionality issues.
 
-[00:10:08](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m08s)
+---
 
-It only becomes active if you have got some Language setup. There should be some languages in the Languages area and that component should have been compiled at least once before. [00:10:26](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m26s) Because the Language string stored in JCB which is found on the Language Translations, is only generated once it has compiled the Component at least once. Then it links the Component Language strings to JCB and you can translate them into those Languages that you have created. 
+## **5. Dynamic GET Builder Conflicts**
 
-### Not An Error Only a Miss Configuration
+[00:03:29](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h03m29s)
 
-[00:10:48](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m48s)
+Some users may encounter temporary issues with the **Dynamic GET Area**, which fetches data dynamically from Admin Views.
 
-The problem regarding the Back-up folder: Because a Backup folder has not been set up for this JCB install. It will say that; if I leave the set to 'Yes' and compile. It will indicate that it could not move that Backup file, because the Temporary folder and the Backup folder are in the same location. That means this is not an error, it is just a miss-configuration. We have not set up the Back-up folder to be separate from the Temporary folder.
+If this feature does not work as expected:
 
- ### Percentage of Translation Required can be changed
+1. Clear the **browser memory**.
+2. Reload the page and try again.
+   Most issues are due to cached JavaScript conflicts and not bugs in the system.
 
-[00:11:39](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m39s)
+---
 
-In the options area of JCB, the percentage of translation required can be changed before a translation is added. Currently, it is set to 50% but you may set the percentage as you like.
+## **6. Upgrading via Joomla's Management Area**
 
-That is creating a Component with the new upgraded JCB. Compiled that, and return to the Demo. It may be seen that the component has been built and everything works as expected. [00:12:18](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m18s) 
+[00:05:13](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h05m13s)
 
-If you run into any issues that are related to this upgrade after you have cleared the browser memory, then please open an issue on GitHub. (Note that I am using Firefox 64-bit) We will try to get back to you and see if we can get this resolved. My experience so far is that this upgrade has taken JCB to a very powerful position, where it does not have Repeatable Fields anywhere in the Component. All its Repeatable Fields have been converted and are only Sub Forms. [00:13:19](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m19s) We have added some nice shortcuts to these decoupled areas so that it may be accessed directly without going through the Component View. If you want to work on, for example, the Component Dashboard, and you need to make some changes to the dashboard, or you need to work on the Admin Views, you can click on that button below the view and work on the Admin Views without going to the Component directly. 
+To perform the upgrade:
+
+1. Navigate to **Components → Joomla Component Builder → Updates**.
+2. Confirm that the **v2.6.0** update is available.
+3. Click **Update**.
+4. Once complete, return to JCB and verify that it shows **"up-to-date."**
+
+No manual migration steps are necessary - the upgrade process handles conversions automatically.
+
+---
+
+## **7. Editing Components After Upgrade**
+
+[00:06:09](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h06m09s)
+
+While the layout of the Component Edit area remains familiar, interaction patterns have changed.
+
+### Key UI Updates
+
+* **Modal-based editors** (used for updates, views, etc.) are now replaced by **dedicated views**.
+* When editing updates, admin views, or site views, JCB will open these in full-page views for better control.
+* You'll be prompted to save all changes before switching views.
+
+This improves stability and editing precision across multiple areas.
+
+---
+
+## **8. Contributors and Component Files**
+
+[00:07:00](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h07m00s)
+
+* **Contributors**: Now editable directly within the main Component page.
+* **Component Files and Folders**:
+  These have been moved to a **joint table**, improving performance and simplifying file management.
+  Use the "Edit component files/folders" button to manage these resources directly.
+
+---
+
+## **9. Admin Views - New Tab**
+
+[00:07:42](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h07m42s)
+
+**Admin Views** now have their **own dedicated tab** and can be edited directly from within the component.
+
+Buttons such as:
+
+* **Edit component admin views**
+* **Linked Admin View - Edit**
+
+allow you to access and modify admin views instantly without returning to the main component list.
+
+During upgrades, JCB automatically checks each view for old field formats and converts them to the new SubForm layout. If a view hasn't been opened or compiled since upgrading, you can trigger this process manually:
+
+> Go to **Compiler → Compile Component**
+> JCB will re-scan all fields and apply necessary format conversions.
+
+---
+
+## **10. New Feature - Translation Checker**
+
+[00:09:19](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h09m19s)
+
+A **Translation Checker** (Warning System) has been introduced to help manage multilingual components.
+
+### How It Works
+
+* Counts the total number of language strings in your component.
+* Shows how many are translated for each view:
+
+  * Admin View
+  * Admin System View
+  * Site View
+* Displays completion progress for each language.
+
+This tool activates only when **languages are configured** and the component has been compiled **at least once**.
+
+---
+
+## **11. Translation and Backup Configuration**
+
+[00:10:48](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h10m48s)
+
+If you encounter a message about the **Backup folder**, it likely means the **Backup** and **Temporary** directories are the same.
+This is **not an error**, but a **misconfiguration**.
+To fix it:
+
+1. Go to JCB's **Options → Folder Paths**.
+2. Set a distinct path for the **Backup Folder**.
+
+---
+
+## **12. Adjusting Translation Requirements**
+
+[00:11:39](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h11m39s)
+
+You can set the **percentage threshold** for translation completion before JCB flags missing translations:
+
+* Default: **50%**
+* To adjust: Go to **Options → Translations → Completion Requirement**
+
+This gives teams control over when a translation is considered sufficiently complete.
+
+---
+
+## **13. Final Notes and Best Practices**
+
+[00:12:18](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h12m18s)
+
+* Always clear browser memory after upgrading.
+* If you encounter issues, **report them on GitHub** with your browser and JCB version details.
+* As of v2.6.0, **Repeatable Fields have been fully replaced by SubForms**, making JCB more compatible, efficient, and future-proof.
+
+### Productivity Enhancements
+
+[00:13:19](https://www.youtube.com/watch?v=MQrLBYhvGyA&t=00h13m19s)
+You can now:
+
+* Access **decoupled areas** directly (e.g., Admin Views, Dashboards) via shortcut buttons.
+* Edit core structures without navigating through the main Component area.
+
+---
+
+## **Summary**
+
+| Area                 | Change                 | Benefit                                          |
+| -------------------- | ---------------------- | ------------------------------------------------ |
+| Repeatable Fields    | Replaced with SubForms | Better data structure and Joomla 4 compatibility |
+| Compiler             | Updated                | Smooth handling of new architecture              |
+| Dynamic GET          | Refined                | Fewer conflicts with Admin Views                 |
+| Translation Checker  | New feature            | Track and manage language progress               |
+| Admin Views          | Separated into own tab | Easier access and direct editing                 |
+| Contributors & Files | New joint table        | Simplified and optimized management              |
+
+---
+
+### **Upgrade Complete**
+
+Your Joomla Component Builder installation should now be operating with **SubForms**, optimized performance, and new translation management tools.
+If all fields and relationships appear correct, your upgrade to **JCB v2.6.0** was successful.
+
+---

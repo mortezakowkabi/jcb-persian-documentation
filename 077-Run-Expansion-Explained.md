@@ -1,3 +1,195 @@
-# RUN EXPANSION EXPLAINED
+# Run Expansion Explained
 
- I'd like to explain a New feature or An old feature that is been revived Somehow In JCB. The feature is now visible [00:00:13](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m13s) On many of the The pages It's called Run expansion Now I realize that When you would click on this at the moment It'll give you an error And it will tell you the expansion failed Please check your settings [00:00:34](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m34s) in the Global options Of JCB under the development tab So you need to basically open these Global options And under the development tab You need to read Some of this Instructions So Development method tab has [00:00:56](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m56s) Now there's new switch called expansion And here is basically the documentation on what expansion is all about Really what has happened in my developing experience Is that We build Multiple components that have a relationship with each other Share classes Share code And files and While you busy working on those components [00:01:30](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m30s) You need to often times Basically compile and install them To test whether Things have broken or everything still stable and so forth So That's what I use the expansion method primarily for but There is a future application of the expansion method Which is not yet been fully realized And When we are able to bring [00:02:01](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m01s) All of that to the To the to the community then I'll make another tutorial in explaining There you know the expansion of expansion Might be too much but For now the expansion method is primarily an option Of selecting multiple components you can see here You can select Multiple Components [00:02:29](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m29s) And Then have them compiled and installed At once And quite Rapidly actually So you could You could say ok I want all of these Components To be moved To The Back-up folder [00:02:50](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m50s) And To repository Folder And Show The custom placeholder And give me a message Not just that it was successful but Everything which was done You could have this run on a cron job Which means [00:03:07](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m07s) It keeps on running in the background Always compiling and installing this over and over and over and That is part of If we If our feature purpose or plans come to pass Then you would see why this Was actually Necessary So this point is maybe in doesn't make That much of sense but for The previous implementation which is what you see here [00:03:38](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m38s) Is to basically just Install and compile Multiple Different Components select the same Different components So we would do this it's gonna ask that Ok there we go save and Close So now we have our expansion components selected [00:04:04](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m04s) If I now click run expansion It says access denied And That is because The expansion works through the API There is a well slowly we are busy developing an API for JCB It's not fully there yet but You know we were busy with it and in the API We need to actually [00:04:31](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m31s) Have a user selected that has Enough permission to actually compile and install components So you need to select A user that has that Level of permission I ask the API user used during the execution Of the Of the Expansion [00:04:51](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m51s) Method Ok so let's try again If we now Do that If you think about how long it would have taken to install Compile and install compile and it's install compile install Each of those Components Individually [00:05:07](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m07s) And The time that it now Took to compile it and in Install it There is a Somewhat of a difference And the fact that it doesn't give you the option to download the package it immediately after compiling it Actually installs it and removes it from the temporary folder so you can see [00:05:28](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m28s) it tells you that all of that It's been done for This component For that one and so forth all the way down here So all these components now who compiled and installed Right into the system in that moment And that's really at the moment What the expansion method is primarily used for like I said we have Some [00:05:52](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m52s) Future plans with this preacher When it comes to integrator developing Concepts where we as teams work together Then there is the possibility that We could Use this feature Even further Ok so that is the expansion method hope this makes Sense I mean if you don't like it or you don't [00:06:21](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m21s) See the need for a it Just ignore it Even if you did set it To use the expansion method It only means that your expansion buttons Will function when you click them By Default JCB ships with the expansion method On In inactive So that if someone clicks here by accident [00:06:44](https://www.youtube.com/watch?v=ozp6m12Fj0o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m44s) It will tell you that the expansion method is disabled and it you should actually Enable it for it to work And I mean that also makes sense right because You don't want the expansion method to trigger Without You Knowing why and what it's doing. Ok well thanks for watching Until next time.
+**Tutorial Reference:** [Run Expansion Explained (YouTube)](https://www.youtube.com/watch?v=ozp6m12Fj0o)
+
+---
+
+## Introduction
+
+The **Run Expansion** feature in Joomla Component Builder (JCB) is a powerful and efficient tool designed to **compile and install multiple components simultaneously**. This feature is especially useful for developers managing several interdependent JCB components that share code, classes, or libraries.
+
+This documentation explains how to **enable, configure, and use** the Run Expansion method, along with practical examples and best practices.
+
+---
+
+## 1. Understanding the Run Expansion Feature
+
+**Timestamp:** [00:00:13 → 00:00:34](https://www.youtube.com/watch?v=ozp6m12Fj0o&t=00h00m13s)
+
+When you click the **Run Expansion** button in JCB, it may initially display an error such as:
+
+> "Expansion failed. Please check your settings in the Global Options of JCB under the Development tab."
+
+This occurs because the feature needs to be properly configured before use.
+
+### Purpose of Run Expansion
+
+Run Expansion allows developers to:
+
+* Compile and install multiple components at once.
+* Automate build processes across related projects.
+* Speed up iterative development and testing workflows.
+
+---
+
+## 2. Enabling Expansion in Global Options
+
+**Timestamp:** [00:00:34 → 00:00:56](https://www.youtube.com/watch?v=ozp6m12Fj0o&t=00h00m34s)
+
+Before using the feature:
+
+1. Navigate to **JCB → Global Options**.
+2. Open the **Development Tab**.
+3. Locate the switch labeled **Expansion**.
+4. Set it to **Enabled**.
+
+This toggle activates the Run Expansion system and reveals additional configuration options for controlling its behavior.
+
+> **Tip:** Read the documentation text within this tab carefully. It provides inline explanations of expansion behavior and how it interacts with JCB's development workflow.
+
+---
+
+## 3. Why Expansion Exists
+
+**Timestamp:** [00:00:56 → 00:02:01](https://www.youtube.com/watch?v=ozp6m12Fj0o&t=00h00m56s)
+
+In complex development setups, you might have multiple JCB components that:
+
+* **Share code** or **reuse classes** across projects.
+* Require **simultaneous recompilation** after shared updates.
+* Depend on each other to remain in sync during development.
+
+Traditionally, this required compiling and installing each component manually - one at a time.
+
+Run Expansion automates this by allowing you to select several components and compile + install them in one go.
+
+---
+
+## 4. Using Run Expansion
+
+**Timestamp:** [00:02:01 → 00:04:04](https://www.youtube.com/watch?v=ozp6m12Fj0o&t=00h02m01s)
+
+### Step-by-Step Usage
+
+1. **Select Multiple Components**
+
+   * In the JCB Components view, check all components you wish to compile and install together.
+
+2. **Set Expansion Parameters**
+
+   * You can define:
+
+     * Whether to **move components to the backup folder**.
+     * Whether to **copy them to the repository folder**.
+     * Whether to **show custom placeholder messages** in output.
+     * Whether to **display full logs** of completed actions.
+
+3. **Run Expansion**
+
+   * Click **Run Expansion** from the toolbar.
+   * If properly configured, JCB will automatically:
+
+     * Compile each selected component.
+     * Install them directly into your Joomla environment.
+     * Clean up temporary build files.
+
+> **Pro Tip:** This feature can be linked to a **cron job** for automated background builds - ideal for continuous integration setups.
+
+---
+
+## 5. API Permissions and Access
+
+**Timestamp:** [00:04:04 → 00:04:51](https://www.youtube.com/watch?v=ozp6m12Fj0o&t=00h04m04s)
+
+If you receive an **"Access Denied"** message when running expansion, it means:
+
+* The Expansion process runs through JCB's **API system**.
+* The **API user** executing the command does **not have sufficient permissions**.
+
+### How to Fix
+
+1. Go to the **API configuration** in JCB.
+2. Select a **user account** with sufficient privileges:
+
+   * Must have permission to **compile and install components**.
+3. Save and try running Expansion again.
+
+This ensures the expansion process can successfully access and manipulate the components on your site.
+
+---
+
+## 6. Performance Comparison
+
+**Timestamp:** [00:05:07 → 00:05:28](https://www.youtube.com/watch?v=ozp6m12Fj0o&t=00h05m07s)
+
+When comparing traditional manual compilation to Run Expansion:
+
+* Manual process: Compile → Install → Repeat for each component.
+* Expansion process: Compiles and installs **all selected components at once**.
+
+This significantly reduces development time.
+
+Additionally:
+
+* Expansion **does not retain the built package** (it is deleted after installation).
+* It logs all performed actions:
+
+  * Which components were compiled.
+  * Which were installed.
+  * Any errors or skipped actions.
+
+---
+
+## 7. Future Applications of Expansion
+
+**Timestamp:** [00:05:52 → 00:06:21](https://www.youtube.com/watch?v=ozp6m12Fj0o&t=00h05m52s)
+
+While the current use case focuses on **multi-component compilation**, the JCB development team envisions future extensions for:
+
+* **Collaborative development** (team-based integrator concepts).
+* **Remote expansion workflows** where builds are synchronized across distributed systems.
+* **Continuous build chains** for shared JCB projects.
+
+---
+
+## 8. Default Behavior and Safety
+
+**Timestamp:** [00:06:21 → 00:06:44](https://www.youtube.com/watch?v=ozp6m12Fj0o&t=00h06m21s)
+
+By default:
+
+* The **Expansion Method is disabled**.
+* Clicking the **Run Expansion** button will show a message:
+
+  > "Expansion method is disabled. Please enable it in Global Options."
+
+This prevents accidental activation and safeguards against unintended multi-component compilations.
+
+> **Recommendation:** Only enable Expansion when you explicitly understand its purpose and intend to use it.
+
+---
+
+## 9. Conclusion
+
+The **Run Expansion** feature in Joomla Component Builder streamlines complex development workflows involving multiple interdependent components. It offers:
+
+* Faster build and installation cycles.
+* Centralized control via API.
+* Future scalability for advanced automation.
+
+If you do not require it, you can safely ignore it. But for power users managing interconnected systems, **Run Expansion** can dramatically boost productivity.
+
+---
+
+### Summary Table
+
+| Feature           | Description                                              |
+| ----------------- | -------------------------------------------------------- |
+| **Purpose**       | Compile and install multiple components at once          |
+| **Location**      | Global Options → Development Tab                         |
+| **Requirements**  | Enabled Expansion toggle, API user with permissions      |
+| **Outputs**       | Installed components, log messages, no package downloads |
+| **Default State** | Disabled                                                 |
+| **Future Use**    | Integration for team workflows & automated builds        |
+
+---

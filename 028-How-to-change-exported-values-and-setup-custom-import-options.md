@@ -1,64 +1,263 @@
-# HOW TO CHANGE EXPORT VALUES AND SETUP CUSTOM IMPORT OPTIONS
+# How to Change Exported Values and Set Up Custom Import Options
 
-[00:00:00](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+**Tutorial Source:** [Watch the video](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
-* ### Example Components
+## Introduction
 
-This is a short explanation on how to change the values being exported and to have a Custom Import option with an import of the data. Component Builder allows you to have an Import and Export function by default in all the ListViews of the components. [00:00:35](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m35s) The component called IP Data is used to take an IP address and translate it to determine from which country it came. Then a costing update is performed on your website based on that IP Data.
+[00:00:00](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h00m00s)
 
- * ### Example IP Tables
+Joomla Component Builder (JCB) provides built-in **Import** and **Export** functionality in all List Views of your components.
+This feature allows you to:
 
-Select IP Tables. (It is on the IP Table Dashboard.) [00:01:07](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m07s)  The 'CNTRY' value may be seen: the country and the 'REGISTRY' which indicates to whom the IP table belongs, and the range, 'IP from'/'IP to' is reflected. 
+* Export selected data from the component backend into formats like `.xls`
+* Import data back into the component for mass updates or migrations
 
-### Export Feature
+In this tutorial, you will learn:
 
-[00:01:26](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m26s)
+1. How to **customize exported values** (e.g., replacing country codes with names)
+2. How to **create custom import logic** (e.g., handling unique identifiers other than IDs)
 
-If 'Export Data' had been clicked without selecting any values it will give a warning. ('Please first make a selection from the list'.) [00:01:35](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m35s) Only values selected may be exported. If all have to be exported change the value to 'all'. In some instances, if the table is too long, it might not possible to export all the values at once.
+---
 
-Exporting data in large quantities is not advisable in Joomla. If quantities exceed 3000 items, go to MySQL instead and get a dump file. [00:02:16](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m16s) Although it is often seen that the Listview is used for up to 10000 items complex inheritance in structure is involved. But in this instance it is different, having the import and export in mind. If, for example, this must be exported but for some reason, this 'ZZZ' or 'AUS' value must instead be replaced by the country name, the following would be a simple implementation of how to perform it.
+## Example Setup: IP Data Component
 
-### Exported Example In XLS Format
+[00:00:35](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h00m35s)
 
-[00:02:51](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m51s) 
+We'll use the **IP Data** component as an example.
+This component tracks IP addresses, translates them into countries, and updates cost data based on IP regions.
 
-Click 'Export' and save this. (Opening Ip_tables). It has been exported, all these AUS values are displayed, as are some other values from the database as expected. But if it is supposed to be a different value than when it is exported, take the next step.
+### Example: IP Tables View
 
- ### Export Data In Code
+[00:01:07](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h01m07s)
 
-[00:03:26](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m26s)
+In the *IP Tables* dashboard, typical fields include:
 
-Component Builder has the 'getExportdata' method in the model. This method has an extra value called '$_export' which is set to 'true'.[00:03:52](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m52s) Targeting this method with custom scripting is one reason why this had been added. But the difficulty is that this part ($group to $query) is custom scripting and has also been added into the actual 'getlistquery'. [00:04:21](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m21s) It is the same custom scripting. In the compiler, the same custom script is added into the 'getlistquery' as into 'getExportdata. The way to know where it gets executed is through the value, '$_export'. [00:04:49](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m49s) This value is not set in the 'listquery' only in the Export Data.
+* `CNTRY` - the country code
+* `REGISTRY` - organization that owns the IP range
+* `IP From` and `IP To` - the IP range values
 
-### Admin View - PHP - (GetListQuery)
+---
 
-[00:04:54](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m54s)
+## Export Feature Overview
 
-The custom scripting is done in the 'Editing the Admin View' area. With the Admin View open, go to PHP and then scroll down until the method 'Add PHP (getListQuery - JModellist)' can be seen. It should be set to 'Yes'. [00:05:43](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m43s) The code placed there is added to both 'getListQuery' and 'exportquery'. If the values that had already been exported must be changed, not the values being shown in the component, it must be done in the same area. Notice that the same code appears in two distinct places. (See video.) [00:06:22](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m22s) If some value must be changed, it can be done by adding another 'lookup' and this '$_export=true'. To see where all this '$_export=true' appears, go to any List model, search, and it may be seen in various places. (See video.) [00:06:55](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m55s)
+[00:01:26](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h01m26s)
 
-Go to the 'getExportdata' area. In the previous tutorial, it had been explained how to add some customization to the values in the 'listview', some HTML. Here it should be determined whether the 'export' is 'set' or whether it is 'true'?
+When clicking **Export Data**, note the following behavior:
 
-NB. Don't add this feature here. [00:07:25](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m25s)
+* If **no rows are selected**, JCB warns:
+  *"Please first make a selection from the list."*
+* To export **all records**, select *All* in the list view options.
 
-Adding this customization of coloring is avoided because it should not be running during the export process. Only the values are needed. Again, see that the export values are used. [00:07:53](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m53s) Those are the places where the export function is involved. By using '$_export' it is possible to identify whether it's an export or not. If it is, changes to the values can be made as necessary. Going back to the back end to show that this PHP area is the place where the query had been done. [00:08:30](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m30s)
+> **Tip:**
+> Avoid exporting very large datasets through Joomla (e.g., over 3,000 items).
+> Instead, use MySQL to export via a **database dump file** for efficiency.
 
-It can be verified whether an export had been done in the area: 'Add PHP(getitems Method-before the translation fix & decryption)'. This can be taken instead of the exclamation. (See video.) If export is '(isset($_export)' and 'true''(isset($_export)&&$_export)', then, in the area below what is necessary may be done if the values must be changed before translation or decryption. Otherwise, it may be made after. [00:09:18](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m18s) After all is done and the values must be changed on export, it may be added.
+[00:02:16](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h02m16s)
 
-### Import Features Explained
+While JCB List Views can handle up to 10,000 items, complex relationships can slow down the process - especially when exporting.
 
-[00:09:32](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m32s)
+---
 
-If a different import type than usual is needed, go to import values, where these figures in the assigned column must be updated. [00:09:40](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m40s) If the ID is left in, it updates; if the ID is removed, it creates. If, for instance, the IDs are not used but these values instead, a custom import concept must be created. Although an attempt had been made to make it simple it still turned out to be complex.
+## Customizing Exported Values
 
-### Custom Import Tab(default import code)
+[00:02:51](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h02m51s)
 
-[00:10:13](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m13s) 
+You may want to replace certain database codes (like "AUS") with full names ("Australia") during export.
+This can be done programmatically in the **getExportData** method.
 
-Go to Custom Import in the Editing Admin View. There is a warning. Below is 'yes' should be selected in the Custom Import option and it will load the actual script into these areas that are used by default in these various concepts. (See video.) [00:10:38](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m38s) If this does not make sense, do not attempt to do it but do a search on courses like lynda.com and Udome, etc instead. [00:11:09](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m09s) Changes may be made to this. For example: take out a portion, do a search, then place something in like 'your name'. Save and compile it. Do a search to see where it appears. [00:11:31](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m31s)
+---
 
-The Default Import method is not completely removed when these kinds of changes are performed. There is a way that these changes can be done and have two Import Methods next to each other. It is not that easy but it is possible. It depends on what is being done in this HTML and PHP view area and in the view. [00:11:59](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m59s) Currently this is set up to do a normal import as is usually done. Changing this will also change the normal Import concept.
+### Step 1: Locate the Export Function
 
-That is how to change the Custom Import concept. Please read through the code. Maybe compile it. [00:12:33](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m33s) See how the default import and concepts work and make changes accordingly.
+[00:03:26](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h03m26s)
 
-I have used this area a lot for various applications. Occasionally there is a user that requires you or a client to import these sets of CSV files which may consist of 4000 or 40000 lines. Only specific values have to be selected. [00:13:06](https://www.youtube.com/watch?v=fau5mZ6naLc&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m06s) In that case this area is definitely what you are looking for since it will make it possible to adapt the Import Concept to accommodate that kind of complexity. That is changing Export values and creating Custom Import values for any field view in the back end of your component.
+Open the model related to your Admin View.
+JCB includes a method called:
+
+```php
+public function getExportData()
+```
+
+This method includes a variable:
+
+```php
+$_export = true;
+```
+
+[00:03:52](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h03m52s)
+
+This variable is set **only** when an export operation occurs.
+You can use it to **target custom code** that modifies the export output.
+
+---
+
+### Step 2: Understanding Custom PHP Injection
+
+[00:04:54](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h04m54s)
+
+To modify export behavior, go to:
+
+**Admin View → PHP Tab → Add PHP (getListQuery - JModelList)**
+Set **"Yes"** to enable PHP customization.
+
+Code added here is injected into **both**:
+
+* `getListQuery`
+* `getExportData`
+
+[00:05:43](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h05m43s)
+
+> **Tip:**
+> The same logic that modifies list view queries can also alter exported data.
+> Use `$_export` checks to distinguish between them.
+
+Example:
+
+```php
+if (isset($_export) && $_export) {
+    // Modify or replace data before export
+}
+```
+
+[00:06:22](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h06m22s)
+
+You can verify occurrences of `$_export` across List Models to see where export-specific logic applies.
+
+---
+
+### Step 3: Avoid Display Formatting in Exports
+
+[00:07:25](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h07m25s)
+
+Don't include **HTML formatting** (like color or styling) in export data.
+The export process should focus purely on **raw values**, not presentation.
+
+---
+
+### Step 4: Modify Data Before or After Translation
+
+[00:08:30](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h08m30s)
+
+You can also use:
+**Admin View → Add PHP (getItems Method - before translation fix & decryption)**
+
+Here you can add logic like:
+
+```php
+if (isset($_export) && $_export) {
+    // Modify values before translation/decryption during export
+}
+```
+
+This ensures the data is changed **only** during export and not in normal list view rendering.
+
+---
+
+## Import Features Overview
+
+[00:09:32](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h09m32s)
+
+JCB's **Import feature** allows data to be brought back into a component via CSV or XLS files.
+
+[00:09:40](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h09m40s)
+
+* If an **ID** exists in the file, JCB updates the record.
+* If the **ID** is missing, JCB creates a new record.
+
+If you want to import data based on **non-ID fields** (like a username or reference code), you'll need a **custom import script**.
+
+---
+
+## Creating a Custom Import Script
+
+[00:10:13](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h10m13s)
+
+### Step 1: Enable Custom Import
+
+In the **Admin View**, go to the **Custom Import** tab and set:
+
+```
+Custom Import: Yes
+```
+
+This loads JCB's default import script into editable areas.
+
+[00:10:38](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h10m38s)
+
+> **Warning:**
+> Only modify this if you're familiar with PHP and import logic.
+> Otherwise, practice basic PHP or MySQL courses first (e.g., on Lynda.com or Udemy).
+
+---
+
+### Step 2: Edit and Customize
+
+[00:11:09](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h11m09s)
+
+You can:
+
+* Add new logic (e.g., map fields differently)
+* Insert extra validation
+* Change how rows are matched and saved
+
+Once edited, click **Save** and **Compile** the component.
+
+---
+
+### Step 3: Test and Verify
+
+[00:11:59](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h11m59s)
+
+After compiling:
+
+* Perform an import test using your modified script.
+* Check if your custom logic (e.g., name lookup or field mapping) works correctly.
+
+> **Tip:**
+> The **default import logic** remains available even when you enable custom import.
+> This means you can maintain **two import modes** side by side.
+
+---
+
+## Advanced Usage Example
+
+[00:13:06](https://www.youtube.com/watch?v=fau5mZ6naLc&t=00h13m06s)
+
+If you need to handle **large CSV imports** (e.g., 4,000 to 40,000 lines) and only specific columns should be imported,
+the Custom Import area gives you full control to script such selective imports.
+
+This flexibility allows complex integrations like:
+
+* Bulk product or user imports
+* External database synchronization
+* Conditional updates
+
+---
+
+## Summary
+
+| Feature                   | Description                            | Key File / Setting              |
+| ------------------------- | -------------------------------------- | ------------------------------- |
+| **Export Customization**  | Modify data before export              | `getExportData()` in List Model |
+| **Export Check Variable** | Used to detect export mode             | `$_export = true`               |
+| **Avoid Formatting**      | Keep export data plain                 | Remove HTML formatting          |
+| **Custom Import Enable**  | Load and edit import logic             | Admin View → Custom Import Tab  |
+| **Dual Import Mode**      | Retain both default and custom imports | Custom + Default active         |
+
+---
+
+## Helpful Tips
+
+* Always **backup** your component before changing export/import code.
+* Test export data using small datasets first.
+* Avoid running custom imports on production before validating in a test environment.
+* Use **MySQL tools** for massive imports beyond Joomla's memory limits.
+
+---
+
+### Final Thoughts
+
+This feature set makes JCB exceptionally powerful for large-scale data management.
+By mastering custom **export and import scripting**, you can make your Joomla components behave like professional, data-driven systems adaptable to any client's needs.
+
+---

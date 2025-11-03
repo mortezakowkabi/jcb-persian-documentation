@@ -1,52 +1,203 @@
-# SETUP SITE EDIT VIEW IN JCB
+# Setup Site Edit View in Joomla Component Builder
 
-### Adding Admin View To Front-End Site
+Learn how to configure and enable editing for an **Admin View** on the **front-end site** using Joomla Component Builder (JCB). This allows users to **create** and **edit** component items directly from the public interface - with permissions controlling who can do what.
 
-[00:00:00](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+---
 
-How to add an Admin View to the front end of your site. There can be editing and submission of the front end of this specific Admin View. The public version of JCB which contains this Demo Version is being used to illustrate this. First, it is compiled and installed to the local Joomla website. Install it, open it. Here is the Demo Version that is publicly available and it has an Admin View called "Looks". [00:01:07](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m07s) If you go to the ListView of the Admin View,  called 'Looks', there is none. Create 'New'. There is a description box in the New view and 'More' item, where you can click, and see some custom fields: 'email', 'mobile phone', 'date of birth', 'image', 'website' and the normal Publish, Permission, Structure for the view, and the name field. Now that is what has been referred to as the Admin view. It is this combination of fields working together in one view. 
+## 1. Add Admin View to the Front-End Site
 
-### How To Add Editing Area
+[00:00:00](https://www.youtube.com/watch?v=tmB22d9dQ4M&t=00h00m00s)
 
-[00:01:50](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m50s)
+JCB enables linking an **Admin View** (the backend editing interface) to the **front-end** of your Joomla website so that users can edit or submit data from the site.
 
-To add an editing area, (these three tabs) to the front end of the site that it will function as a form will be explained. To determine who can be allowed to access the form will depend upon the permissions structure. The permission structure controls who can edit and who can add items to a specific Admin view.  [00:02:14](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m14s) Currently the public cannot edit this, if an item is created they cannot edit it. There is an item level on permissions. If it is closed then it can be seen that there is also a 'Global' control on permissions in 'Options'. The Global control of permissions is also if you want the public to be able to submit to this form, it is necessary to allow them to be able to create. [00:02:46](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m46s)  Set it to 'Allow', and the public is allowed to create. Most components have more than one view. This one has only one; it is called 'Look'. Over here('Look create')  say allow, and if you want them to edit existing submissions. [00:03:13](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m13s)There is the 'Edit state', 'Edit own', 'Created by', all these things in the global spec, as well as in the local edit of the view. 
+1. **Compile and install** your component using JCB's compiler.
+2. Open your installed component in Joomla.
+3. In this example, the **Demo Component** contains an Admin View called **"Looks"**.
+4. If you open the *List View* for "Looks", you'll find fields such as:
 
-### Two Switches 
+   * Email
+   * Mobile phone
+   * Date of birth
+   * Image
+   * Website
+   * Publishing, Permissions, and Structure settings
 
-[00:03:30](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m30s) 
+These fields collectively form what JCB calls an **Admin View** - a structure defining how records are created and edited in your component.
 
-There are two switches. One is a global switch and one that is specifically focusing on the view. If the view cannot be accessed on the front end after it has been created, it is necessary to come back to this area and sort out the permissions for the specific group who should have access to the specific view on a front end. [00:03:57](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m57s) This permission structure is quite intense and extendable. Specific groups can be targeted with specific permissions for every view that JCB builds in the Admin as well as in the Site views. Cancel out, no further changes will be done and it returns to the Demo Component. 
+---
 
-### Demo Component - Settings
+## 2. Add Editing Area to the Front-End
 
-[00:04:21](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m21s) 
+[00:01:50](https://www.youtube.com/watch?v=tmB22d9dQ4M&t=00h01m50s)
 
-In JCB there is a switch that can be flipped for JCB to write the code for the site end of this component. So go back to JCB and to components and open the component. In the component, there is an area called 'Settings' where all the admin views are linked. If that is opened, it may be seen that there is usually this bug in Joomla, which if it is opened for the first time does not reflect the original setting. I usually open it, cancel it, and then open it again and the original setting is back. [00:05:17](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m17s)  You will see that 'Edit/Create Site View' must be set to 'Yes'. If it is set to 'Yes', then it means that it is going to create a Site View of this 'Look' so that it can be edited on the site end and not only in the Admin area and it also means Create items. Save this and then also save and close. Go back to compiler, compile demo. Install it. 
+To make the Admin View editable from the site front-end:
 
-### Code - Controller - Model - View
+1. Go to the **Permissions tab** in your component's view configuration.
+2. You'll see controls for:
 
-[00:06:05](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m05s)
+   * **Global permissions** (set in *Options*)
+   * **Local permissions** (per view)
 
-Looking at the demo websites folder structure in the code, there is a com_demo folder under components. [00:06:19](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m19s) There are the Models as well as the Controllers and the Views. This is the View that was dynamically generated by JCB. The View, the Model, and the Controller are called 'Look'. Open (controller look.php) to see what was the code that was written. [00:06:49](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m49s) It looks very similar to the Admin Area except that it has been slightly modified for the front end and its requirements. As you can see we were adding some CSS classes and JavaScript from the back end. Here is the 'model','getItem', 'getForm', and the Controller.[00:07:16](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m16s)  It shows the code that has been created. The fact that this was created, does not mean that there is a set of links that you can click and edit the forms which was submitted or that there is a link to create any. These things should be done manually.  
+For example:
 
-### Manually Add Links
+* If the public users should be able to **submit new items**, set **"Create"** to *Allow*.
+* To let them **edit their own submissions**, also set **"Edit Own"** and **"Edit State"** to *Allow*.
 
-[00:07:51](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m51s)
+> **Tip:** These permissions apply both globally and locally per view. Make sure both are configured correctly if edits are not visible on the site.
 
-Under site views there are two views, one is called 'Looks' and another one is called 'Looking'. As you can remember the one we looked at here, which I set was automatically generated is called 'Look', so that one is not showing because it was a tick box that created this whole View model and Controller. It is not necessary to build the 'Look' view again but you need to get links to it. [00:08:21](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m21s) In 'Looks' a Dynamic Gets is used, as well as in 'Looking'. Open the Dynamic Get page. There is one called 'Looks' and 'Looking'. Go to the Looks Dynamic Get. It got a custom script area were it is asked whether the items are set or whether there are items. [00:09:10](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m10s) Then loop through them('$cando')(See video), it may be seen in the Helper Class there is a 'getAction' function.
+---
 
-The 'getAction' function inquires whether the current user has the edit option to the specific 'look' item. If it does, it builds in this little script an edit 'look' button and dynamically adds that to the edit link, which is coupled to the item, and then continues on. It dynamically generates the button for 'edit' in the dynamic get. [00:09:48](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m48s) It could have been done anywhere. I decided to do it here because then it gets added to the model, which is more where your logic, for lots of the data structure, should be placed. Go back to the Site Views, open the 'Looks' Site View. It may be seen that the 'Main Get' is set as 'Looks'. If you scroll down, in this area(See video) we are looping through the 'Look' items, and echoing the edit link after the description.[00:10:25](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m25s) That means the link that has been built in the Dynamic Get which is the button, it will either be empty and therefore show nothing. If the user does not have the permission to edit it, or it will show a button. [00:11:04](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m04s) A link has not been added for creating 'New Looks' and the same would be required to do that.  
+## 3. Understand the Two Permission Switches
 
-* ### Add A Button To Create New Looks
+[00:03:30](https://www.youtube.com/watch?v=tmB22d9dQ4M&t=00h03m30s)
 
-[00:11:19](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m19s)
+There are **two main permission switches** that determine front-end access:
 
-The same button script may be used, copy that. Here before the table, a button could be added to create 'New Looks'. All that would need to change is this link here ((index_php?option_com_"Component") that it will have an ID to zero. It will create a 'New Look'.
+1. **Global Switch:** Located under *Options* - controls access across the entire component.
+2. **Local Switch:** Found in each Admin View - controls access for that specific view.
 
-That is how to add an editable Admin view to the site end of your component. [00:11:53](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m53s) Then link it into your Site view, that you can click on a button and edit a specific ID view or create more. Then control that with this 'getAction helper class method', which indicates whether it can be edited. Look at this Helper class in the code. [00:12:23](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m23s) 
+If a front-end edit form does not appear or fails to open, revisit these settings to ensure the appropriate user group (e.g., *Registered* or *Author*) has editing permissions.
 
-For example: In the code, in 'Helpers', open 'demo.php' then scroll down to the method called 'getAction'. [00:12:50](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m50s)  You can go through this logic to see that here are dealt with a number of concepts and we are trying to determine the permission to edit 'own' and to 'create'. It all gets stored and gives it back in the result set. [00:13:17](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m17s) You could also 'echo' out the result, 'var dump' or something in the 'Look' to see exactly what is the result from that structure. 
+---
 
-If we go back to the 'Looks' view and open that model. [00:13:42](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m42s)  It will be seen that the custom scripting that creates the button, gets added from JCB(see video). You could add a 'var_dump'; exit; and take '$cando' [00:14:06](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m06s) and login as any kind of user on the site, then when the page is loaded, it should display the '$cando' list of that specific user group. Also, keep in mind that here is the 'Authorise' setting that is applicable to the Looks Site View and is also controlled in the permission structure. [00:14:33](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m33s) Always keep in mind that there are a lot of permissions automatically being added to components build in JCB. If it appears that things do not function properly, it may be that it had not been kept in mind that there is a permissions structure, and it is necessary to adapt that permissions structure as it is fitting to your project. 
+## 4. Enable Site Edit View in Component Settings
+
+[00:04:21](https://www.youtube.com/watch?v=tmB22d9dQ4M&t=00h04m21s)
+
+Now enable JCB to generate the code for the Site Edit View.
+
+1. Open **JCB → Components** and select your component.
+
+2. In the **Settings** tab, open the configuration that lists all linked Admin Views.
+
+3. Ensure **"Edit/Create Site View"** is set to **Yes**.
+
+   * This tells JCB to automatically generate a **Site View**, **Model**, and **Controller** for this Admin View.
+   * The front-end form will then be available for editing or creating items.
+
+4. Click **Save**, then **Save & Close**.
+
+5. Re-compile your component and re-install it.
+
+---
+
+## 5. Inspect Generated Code: MVC Structure
+
+[00:06:05](https://www.youtube.com/watch?v=tmB22d9dQ4M&t=00h06m05s)
+
+After compilation, check your Joomla installation:
+
+* Navigate to `/components/com_yourcomponent/`
+* You will find:
+
+  * `/controllers/look.php`
+  * `/models/look.php`
+  * `/views/look/`
+
+Each corresponds to the **Model-View-Controller** (MVC) files that JCB created.
+
+The generated code is similar to the backend but adapted for the front-end. It includes necessary scripts, form handling, and layout adjustments suitable for site users.
+
+> **Note:** Although the code is created, JCB does not automatically generate menu links or buttons to access these front-end forms. These need to be added manually.
+
+---
+
+## 6. Add Manual Links to the Front-End
+
+[00:07:51](https://www.youtube.com/watch?v=tmB22d9dQ4M&t=00h07m51s)
+
+To enable users to access and edit specific items from the site:
+
+1. Go to **JCB → Site Views**.
+2. You'll see:
+
+   * `Looks` (list view)
+   * `Looking` (possibly a related view)
+
+Since the "Look" site edit view was auto-generated, you do not need to create it again. However, you must manually create **links** to it.
+
+3. Open **Dynamic GETs** in JCB.
+4. Locate the dynamic get entries for "Looks" and "Looking".
+5. Edit the "Looks" Dynamic Get - in its **Custom Script** area, check for code that looks like this:
+
+   ```php
+   if ($cando->get('core.edit')) {
+       $item->edit_link = '<a href="' . JRoute::_('index.php?option=com_demo&view=look&id=' . (int) $item->id) . '">Edit</a>';
+   }
+   ```
+
+This snippet dynamically adds an **Edit button** for users who have permission.
+The helper method `getAction()` determines whether the logged-in user can edit the specific item.
+
+---
+
+## 7. Add Button to Create New Items
+
+[00:11:19](https://www.youtube.com/watch?v=tmB22d9dQ4M&t=00h11m19s)
+
+To let users create new items from the front end:
+
+1. Copy the edit button script used in the Dynamic Get.
+
+2. Modify the link to point to **ID = 0** (new item):
+
+   ```php
+   <a href="index.php?option=com_demo&view=look&id=0">Create New Look</a>
+   ```
+
+3. Place this button before your list or table of items in the Site View.
+
+This adds a "New Look" button that loads the front-end creation form.
+
+---
+
+## 8. Understand the Helper Class and Permissions Logic
+
+[00:12:23](https://www.youtube.com/watch?v=tmB22d9dQ4M&t=00h12m23s)
+
+JCB automatically adds a helper file to your component, e.g.:
+
+`/components/com_demo/helpers/demo.php`
+
+In this file, locate the method:
+
+```php
+public static function getAction($itemId)
+```
+
+This method:
+
+* Checks user permissions (`core.edit`, `core.edit.own`, `core.create`)
+* Returns an object containing boolean values indicating what the user can do
+* Is used by the dynamic get script to show or hide edit/create links
+
+> **Tip:** You can use `var_dump($cando); exit;` to debug and inspect what actions are available to the logged-in user.
+
+---
+
+## 9. Verify and Adjust Permission Behavior
+
+[00:14:33](https://www.youtube.com/watch?v=tmB22d9dQ4M&t=00h14m33s)
+
+If front-end editing or creation does not work:
+
+* Check the **Authorise** setting for your Site View ("Looks").
+* Ensure the **Permissions structure** is correctly aligned with your component's logic.
+
+Remember:
+
+> JCB automatically injects a comprehensive permission structure into every Admin and Site View it generates. Always verify both **Global** and **Local** permissions before troubleshooting.
+
+---
+
+### Summary
+
+By following these steps, you have:
+
+* Enabled a Site Edit View for an Admin View ("Look")
+* Allowed users to edit and create records on the front end
+* Controlled access via JCB's built-in permission system
+* Added manual links to handle "Edit" and "New" functionality
+* Understood how `getAction()` manages permissions dynamically
+
+---

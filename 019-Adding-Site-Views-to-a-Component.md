@@ -1,46 +1,190 @@
-# ADDING SITE VIEWS TO A COMPONENT
+# Adding Site Views to a Component in Joomla Component Builder (JCB)
 
-Using Sermon Distributor As Example
+Site Views in JCB define what users see on the front end of your Joomla component.
 
-[00:00:00](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+---
 
-Let's look at adding Admin Views and Site Views to Component Builder's component. We will look at the different switches and the features installed for you. First, login. Open Component Builder under Component Builder, then go to components. 
+## [00:00:00](https://www.youtube.com/watch?v=zZ_HJeYL8ps&t=00h00m00s) - Accessing Component Settings
 
-### Settings - Views
+1. **Login to Joomla Administrator.**
+   Open your Joomla backend and log in as an administrator.
 
-[00:00:25](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m25s)
+2. **Navigate to Component Builder.**
+   From the main menu, go to **Components → Component Builder → Components**.
 
-Open Sermon Distributor and go to settings. There is a place for Admin Views. (Adding the Admin Views has already been illustrated.) There's Custom admin views and Site views. Click on 'add custom admin view'. There aren't any added to the component; Sermon Distributor does not have Custom Admin Views. [00:01:01](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m01s)
+3. **Select Your Component.**
+   Open your existing component (for example, *Sermon Distributor*).
 
-### Adding Site Views Important _Glitch_
+4. **Go to the Settings Tab.**
+   Inside your component, locate the **Settings** tab.
+   This is where both **Admin Views** and **Site Views** are managed.
 
-[00:01:11](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m11s) 
+---
 
-It has quite a few Site views. You might open it and see some of the buttons are not selected. Although you selected and saved it previously it doesn't show. This is a glitch in Joomla's own JavaScript. [00:01:25](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m25s) Re-open. (For now, Admin view has the same issue.) Close and open it again, and it will all be selected. Keep a lookout for this; if you make changes and save it with those buttons unchecked, it will not include those values since it will be stored as null and you might get unexpected results. [00:01:56](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m56s) Unfortunately this is not something that can be changed at this stage.
+## [00:00:25](https://www.youtube.com/watch?v=zZ_HJeYL8ps&t=00h00m25s) - Understanding Views
 
-### Site View Options(Menu-Metadata-Default View-Access)
+* **Admin Views:** Used to manage backend data and configuration.
+* **Custom Admin Views:** Allow adding custom pages in the admin area.
+* **Site Views:** Define the structure and data presented on the front end of your Joomla site.
 
-[00:02:21](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m21s)
+To add or manage Site Views:
 
-Go to site view. Close it and open it again. Everything is selected. It has four options. Select the site views and add as many as you like.
+* Go to the **Custom Admin Views** and **Site Views** sections.
+* Click **"Add Custom Admin View"** if you need new ones (Sermon Distributor, for example, has none).
+* Move on to **Site Views** to configure your public-facing component views.
 
-* Menu
+---
 
-Add menu means that this site view will be added to the add menu aspect of Joomla. [00:02:46](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m46s) Go to create a menu and to add a menu item. There is a 'select Type'; if you click on it there are list articles, etc. If you say 'yes' an XML file will be created which allows Joomla to notice that your component needs to be in the list. [00:03:12](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m12s)
+## [00:01:11](https://www.youtube.com/watch?v=zZ_HJeYL8ps&t=00h01m11s) - Fixing the Site Views Selection Glitch
 
-* Metadata
+You may notice that some Site View checkboxes or toggles appear **unselected** even though you selected and saved them earlier.
 
-Add metadata means that this page will make use of the metadata being passed to it. Usually, this means that in your model where you've set up your data, metadata is in the 'items' array or in the 'this' array by the global setting or via the actual item. [00:03:47](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m47s) If you set 'yes' here, and did not set up the data in the model correctly, it won't work. Click 'yes' here. (See video.) Try your best to set up the data in the model, then compile and look in the view .html.php file to see how it collects the metadata. It will still add the script needed to load the metadata into the document. If it doesn't collect it correctly, you'd see it too. [00:04:22](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m22s)
+### Important
 
-* Default View
+This is a **Joomla JavaScript glitch** - not an issue with JCB.
 
-You can only have one default view. (Don't click more than one.). The default view is effective so that when you make a change and the system doesn't know where you want to go it takes you back to the default view. [00:04:53](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m53s) Default view can either be your site default view being 'home page' or, if you are in this component, on 'preachers', for example.
+**How to handle it:**
 
-* Access
+1. If the Site View options look unselected after saving:
 
-Let's say some of these views you have set don't have public user or access, for example, to 'Sermon'. If you try to access the page, the system throws you back to the default view and gives a message that you don't have access. That's what the default view is primarily used for at the moment. It can become more useful as we continue to improve Component Builder. [00:05:37](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m37s)
+   * Close the Site View editor.
+   * Reopen it again.
+2. The selections should now appear correctly.
+3. Avoid saving while the boxes are unchecked - this would save `null` values and cause unexpected results.
 
-Add access makes sure that a user has certain access rights. In an item, you can set the access rights and the view rights. It has multiple implementations. One is access groups, the other is groups. If you want access to this specific view to be monitored, tick that and Component Builder will ensure the access table is there. [00:06:10](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m10s)
+> **Tip:** The same issue can occasionally occur in Admin Views. Always double-check before saving.
 
-After creating the Site view this is how you can add it. Check it and see how it works. [00:06:32](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m32s)
+---
+
+## [00:02:21](https://www.youtube.com/watch?v=zZ_HJeYL8ps&t=00h02m21s) - Exploring Site View Options
+
+Each Site View in JCB offers **four key switches**:
+
+| Option           | Description                                                       | Typical Use                                                  |
+| :--------------- | :---------------------------------------------------------------- | :----------------------------------------------------------- |
+| **Menu**         | Adds this Site View as a selectable menu item in Joomla.          | Allows users to link the view from Joomla's menu system.     |
+| **Metadata**     | Enables metadata (title, description, keywords) for this page.    | For SEO and browser metadata display.                        |
+| **Default View** | Sets this view as the fallback (default) page for your component. | Used when no specific view is requested or access is denied. |
+| **Access**       | Enables access control (permissions and groups).                  | Restricts who can view specific pages or data.               |
+
+Let's break down each option below.
+
+---
+
+### [00:02:46](https://www.youtube.com/watch?v=zZ_HJeYL8ps&t=00h02m46s) - Menu Option
+
+When **Menu = Yes**, JCB automatically creates an XML definition so Joomla recognizes the Site View as a menu type.
+
+**Effect:**
+After compiling the component:
+
+1. Go to **Menus → Add New Menu Item** in Joomla.
+2. Under **Select Menu Item Type**, your component's view (e.g., "List of Sermons") will now appear.
+3. Selecting it will link the front-end display directly to that Site View.
+
+> **Tip:** This saves time - you don't have to manually write XML for Joomla menu types.
+
+---
+
+### [00:03:47](https://www.youtube.com/watch?v=zZ_HJeYL8ps&t=00h03m47s) - Metadata Option
+
+When **Metadata = Yes**, JCB adds metadata-handling scripts to your generated view.
+
+**To make this work properly:**
+
+1. Ensure your model passes metadata fields into the view.
+
+   * Typically found in the `$this->item` or `$this->items` arrays.
+2. Compile your component.
+3. Open the generated file:
+   `/components/com_yourcomponent/views/viewname/view.html.php`
+4. Check that metadata is loaded and assigned properly.
+
+If the data isn't present, Joomla won't display metadata even if the switch is enabled.
+
+> **Tip:** Always verify that the model returns metadata for your Site View items.
+
+---
+
+### [00:04:53](https://www.youtube.com/watch?v=zZ_HJeYL8ps&t=00h04m53s) - Default View Option
+
+The **Default View** acts as the component's **home page** or fallback route.
+
+**Guidelines:**
+
+* You can **only have one default view** per component.
+* When Joomla can't determine which view to load, it automatically redirects to this one.
+* It's also used as the fallback when a user lacks permission to access other views.
+
+Example:
+If your default view is **Preachers**, and a user visits a restricted "Sermon" view, they will be redirected back to "Preachers" with a message.
+
+> **Important:** Do not select multiple default views. Only one should be active.
+
+---
+
+### [00:05:37](https://www.youtube.com/watch?v=zZ_HJeYL8ps&t=00h05m37s) - Access Option
+
+The **Access** switch enables permission control for each Site View.
+
+**Purpose:**
+Allows JCB to include the necessary access tables so that:
+
+* Users only see views they have permission for.
+* Joomla's Access Levels (Public, Registered, Special, etc.) are respected.
+
+**Implementation Details:**
+
+* Access can be handled at both **item** and **view** levels.
+* Uses **user groups** and **access levels** to control who can view what.
+* When this option is checked, JCB ensures the access fields and logic are built into your component.
+
+> **Tip:** Always configure access levels in Joomla after installation to match your component's logic.
+
+---
+
+## [00:06:32](https://www.youtube.com/watch?v=zZ_HJeYL8ps&t=00h06m32s) - Final Step: Compile and Test
+
+Once you've configured your Site Views:
+
+1. Click **Save & Close** in JCB.
+2. Go to **Component Builder → Compile** and compile your component.
+3. Install or update the generated component package in Joomla.
+4. Open your Joomla front end and test:
+
+   * The menu links.
+   * Metadata presence.
+   * Access restrictions.
+   * Default view redirection.
+
+> **Result:** Your Site Views are now active, accessible, and properly configured.
+
+---
+
+## Summary
+
+| Step | Action                                          | Notes                               |
+| :--- | :---------------------------------------------- | :---------------------------------- |
+| 1    | Open your component in JCB.                     | Go to *Settings → Site Views*.      |
+| 2    | Fix unselected toggles if needed.               | Reopen before saving.               |
+| 3    | Configure Menu, Metadata, Default View, Access. | Each adds key functionality.        |
+| 4    | Compile your component.                         | Generates XML and PHP structure.    |
+| 5    | Test in Joomla front end.                       | Confirm menu, access, and metadata. |
+
+---
+
+## Helpful Tips
+
+* Always **reopen the Site View editor** before saving if selections appear off.
+* Use **Menu = Yes** to expose the view to Joomla's menu manager.
+* Only **one Default View** should ever be active.
+* Use **Access Control** wisely to protect sensitive pages.
+* After major changes, **recompile and reinstall** the component to apply updates.
+
+---
+
+**Video Reference:**
+*Watch the full tutorial on YouTube:*
+[Adding Site Views to a Component - Joomla Component Builder](https://www.youtube.com/watch?v=zZ_HJeYL8ps&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+
+---

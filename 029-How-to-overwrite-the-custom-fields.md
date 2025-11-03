@@ -1,40 +1,187 @@
-# HOW TO OVERWRITE THE CUSTOM FIELDS
+# How to Overwrite the Custom Fields
 
- ### Using Default Fields With Custom Code
+**Joomla Component Builder (JCB) Documentation**
+*(Based on the tutorial "How to Overwrite the Custom Fields")*
 
-[00:00:00](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+---
 
-It may happen that you would prefer to use some of the default fields in a different manner than that of Component Builder's way of implementation. What are the default fields? [00:00:12](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m12s) If you add a new Admin View or go to an Admin View that already exists, there is this note above Adding Fields. It indicates that the 'ID', the 'asset_id', the 'state', the 'access', the 'ordering', the 'created_by', the 'date_created', 'modified_by', 'date_modified', 'checked_out', 'Check_out_time', 'version', 'hits', 'metakey',  'metadescription', and 'metadata' has already been added to the view. [00:00:41](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m41s) These are the default fields added to the view even if you do not create them. In fact, it is not necessary to create them. Sometimes you might want to display some of these fields in a different area of the application. Currently, the ID field and the State field are the only fields being shown by default in the List view. [00:01:20](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m20s)
+## Overview
 
-* ### Example Of Default Fields Displayed in List view 
+[00:00:00](https://www.youtube.com/watch?v=FHQfIhWHYyQ&t=00h00m00s)
+In Joomla Component Builder (JCB), certain **default fields** are automatically added to every admin view. However, there are situations where you may want to **customize or reposition these default fields**-for example, showing the *Created By* or *Created Date* fields in a different tab or list view.
 
-In the Experts area the 'Id field', the 'Status field', and the Ordering field are shown. The Ordering field does not show the order number. To be able to move and order it, click on "Up/Down". [00:01:45](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m45s) All that is done by default. The other values are not displayed in the ListView. Once a client requested that it should be possible to see the date on which something had been created as well as the identity of the person who created it. Component Builder then must be adapted so that those things could also be overwritten.
+This guide explains how to safely overwrite these fields, update their placement, and maintain compatibility with JCB's compiler.
 
-This is what has been done: If a field is created in Component Builder, as a field would normally be created and any of these names should be given to it, 'Created by' or 'Created date', but exactly the same name. [00:02:23](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m23s) Then it will overwrite the default.
+---
 
-* ### Example Create_By Field In View
+## 1. Understanding Default Fields
 
-In this specific Job Order view, there is a field 'Created-by'. It may be opened in a new tab. There is also a field 'Created-date'. [00:02:57](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m57s) In this field the 'Name', 'Created_by', and 'User' are the types of fields that are used. The label is 'Created by', and the user that 'Created this' is the description. [00:03:26](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m26s) That's all that is needed for a user type. In the 'Created-date'(which is a calendar type,) 'Created', the date, it was created, the label and some of its defaults are used.
+[00:00:12](https://www.youtube.com/watch?v=FHQfIhWHYyQ&t=00h00m12s)
+When creating or editing an Admin View, JCB automatically includes a set of default fields:
 
-### Compiled In Code
+* `id`
+* `asset_id`
+* `state`
+* `access`
+* `ordering`
+* `created_by`
+* `date_created`
+* `modified_by`
+* `date_modified`
+* `checked_out`
+* `checked_out_time`
+* `version`
+* `hits`
+* `metakey`
+* `metadescription`
+* `metadata`
 
-[00:03:46](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m46s) 
- 
-If these values are unknown it can be seen in the compiled field. [00:03:51](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m51s) Open 'Administrator' in the back end of the component and open the relevant component. If 'Models' is opened, there is a place called 'Forms'. When it is opened, a list of forms may be seen that correspond to the back end views that you have created. In this instance, this 'Job Order' is the one. [00:04:19](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m19s) Open the XML, double click on it and scroll down. 'Modified by' and some of its default can be seen. So this value must be overwritten; these values must be updated or used. [00:04:45](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m45s) 
+These fields exist in every Admin View-even if you don't explicitly add them.
+By default, **only the ID and State fields** appear in the List View.
 
-NB. This is the only part that should not be changed. If it is changed, it will not be known if an attempt has been made to overwrite one of the default fields because it uses the name as the identifier. Back in Editing, the fields that were created was the first part. Close them again.
+---
 
-### Adding The Fields
+## 2. Displaying More Default Fields
 
-[00:05:06](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m06s)
+[00:01:20](https://www.youtube.com/watch?v=FHQfIhWHYyQ&t=00h01m20s)
+In some cases, clients may request additional details in list or edit views (for example, *Created Date* or *Created By*). JCB allows you to **overwrite these default fields** by recreating them manually.
 
-When any other field is needed go to fields. (If 'Settings' is selected in Editing the Admin view.) Those fields can be added. The 'Created-date' and the 'Created-by' is there. Both are added to be shown, as is the position and how it should be treated. It had been set in the 'left tab' of the '15th'.
+### Example
 
-### Adding In Tabs(default 15 tab)
+[00:01:45](https://www.youtube.com/watch?v=FHQfIhWHYyQ&t=00h01m45s)
 
-[00:05:41](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m41s) 
+In the "Experts" view:
 
-If you would like the fields to be displayed in the same place as before, in the Edit view, add it to the '15th' tab. It is unlikely that so many tabs would be created.  
-What is a tab? If you would go to the view, these are tabs 1 2 3 4 5 and 6. Since publishing may vary. [00:06:14](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m14s) It does not make sense to target it in any way directly as the 5th of the 4th. So a high number like 15 is chosen. If number 15 is selected, it will add these two fields in the same place it would have if it had to build it for you. But if for some reason the field should be displayed in a different tab, it may be selected, placed in the 3rd tab, and saved. [00:06:53](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m53s) Compile the components and install them. 1, 2, 3, will appear in the third tab. Indicate in what tab it should now be displayed. Now the 'Create' date no longer shows in the 'Publish' tab. It is only created by what shows up here. (See video.) [00:07:24](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m24s)  The field is moved to a different tab, and displays the field in the List view as well because the fields were added and set to be displayed and added to the third tab. It is moved back to number 15 which is its default place. Save, compile, and install it. [00:08:03](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m03s) Update the component. Refresh the page. It is no longer seen in 'Documents', 'Production', or 'Stock list'. It is back in 'Published', the correct place. There it will be set if it is not overridden, using the 15th tab as the target places it in its default place. If another tab number is used, it removes it from its default place and puts it where it is assigned.
-That is how you can overwrite the Custom Added Fields in the back end view. [00:08:49](https://www.youtube.com/watch?v=FHQfIhWHYyQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m49s)  
+* The `id`, `state`, and `ordering` fields are displayed by default.
+* The ordering column is shown as up/down icons rather than numeric values.
+
+If you wish to display more fields-like *Created By* or *Created Date*-you can overwrite the default ones by creating new fields with **the same names**.
+
+---
+
+## 3. Overwriting Default Fields
+
+[00:02:23](https://www.youtube.com/watch?v=FHQfIhWHYyQ&t=00h02m23s)
+To overwrite any default field:
+
+1. Create a new field in your **Admin View**.
+2. Use the **exact same field name** as the one used by JCB.
+   Example names:
+
+   * `created_by`
+   * `created_date`
+3. Define its **type**, **label**, and **description** according to your design.
+
+### Example - "Created By" Field
+
+[00:02:57](https://www.youtube.com/watch?v=FHQfIhWHYyQ&t=00h02m57s)
+
+* Field type: `user`
+* Name: `created_by`
+* Label: *Created by*
+* Description: *The user who created this record*
+
+### Example - "Created Date" Field
+
+* Field type: `calendar`
+* Name: `created_date`
+* Label: *Created Date*
+* Description: *The date when this record was created*
+
+> **Tip:**
+> Always match the field names exactly. JCB identifies overwrites by comparing names-if they differ, your changes won't take effect.
+
+---
+
+## 4. Reviewing the Compiled Code
+
+[00:03:46](https://www.youtube.com/watch?v=FHQfIhWHYyQ&t=00h03m46s)
+To confirm how JCB compiles your overwritten fields:
+
+1. Open your component's **administrator folder**.
+2. Navigate to `models/forms/`.
+3. Find the XML form matching your Admin View (e.g., `joborder.xml`).
+4. Open it and scroll through to locate your field definitions.
+
+You'll see both default and overwritten field definitions in XML format.
+These are the values JCB uses when building your component.
+
+> **Important:**
+> Do **not** rename the XML nodes for default fields directly in the compiled files.
+> JCB relies on the field name to detect overwrites-modifying them may break this link.
+
+---
+
+## 5. Adding Overwritten Fields in JCB
+
+[00:05:06](https://www.youtube.com/watch?v=FHQfIhWHYyQ&t=00h05m06s)
+Once you've created the custom fields in your Admin View, you need to **add them to the field list** and assign their positions.
+
+1. Go to **Admin Views → [Your View] → Fields tab**.
+2. Click **Add Field** and select the newly created ones (e.g., `created_date`, `created_by`).
+3. Assign them to appear in a specific **tab** and determine whether they should display in list or form views.
+
+---
+
+## 6. Managing Field Placement in Tabs
+
+[00:05:41](https://www.youtube.com/watch?v=FHQfIhWHYyQ&t=00h05m41s)
+JCB organizes the edit form fields into numbered **tabs**.
+Each tab corresponds to a logical grouping of form elements.
+
+* The **15th tab** is reserved for system-related fields (the default placement for "Created By," "Modified By," etc.).
+* You can reassign the tab number to display these fields elsewhere.
+
+### Example
+
+[00:06:14](https://www.youtube.com/watch?v=FHQfIhWHYyQ&t=00h06m14s)
+
+* Set `Tab Number = 3` to move *Created By* to the third tab in the edit form.
+* Save and compile the component.
+* After installation, the *Created By* field will now appear in the third tab.
+
+To restore it to the default system tab:
+
+* Change `Tab Number = 15`
+* Save, compile, and reinstall your component.
+
+> **Note:**
+> Choosing tab 15 ensures JCB places the field in its default "Publishing" section.
+> Any other tab number overrides that location.
+
+---
+
+## 7. Compiling and Testing the Component
+
+[00:08:03](https://www.youtube.com/watch?v=FHQfIhWHYyQ&t=00h08m03s)
+After making all changes:
+
+1. **Save** your view configuration.
+2. **Compile** the component using the JCB compiler.
+3. **Install or update** it in Joomla.
+4. **Refresh** your Admin View to verify the new field placement.
+
+[00:08:49](https://www.youtube.com/watch?v=FHQfIhWHYyQ&t=00h08m49s)
+You'll now see that:
+
+* The fields appear where you've placed them.
+* The overwritten defaults (e.g., *Created By* and *Created Date*) function normally.
+* Their default instances are suppressed, avoiding duplication.
+
+---
+
+## Key Takeaways
+
+* JCB automatically includes default system fields in each view.
+* You can safely **overwrite** these fields by creating custom versions with the same names.
+* Use the **tab number** to control placement.
+* Always **compile and test** your component after overwriting.
+* Do **not** modify compiled XML directly - perform changes within JCB.
+
+---
+
+## Summary
+
+Overwriting default fields in Joomla Component Builder provides flexibility in how information is displayed across your component's backend views. Whether you need to reposition fields, show additional metadata, or customize their labels, following this structured method ensures your changes persist through future compiles and updates.
+
+---

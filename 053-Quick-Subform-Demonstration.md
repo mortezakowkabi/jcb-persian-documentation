@@ -1,56 +1,216 @@
-# QUICK SUBFORM DEMONSTRATION
+# Quick Subform Demonstration
 
-### Request On The Forum
+**Tutorial Source:** [YouTube - Quick Subform Demonstration](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+---
 
-[00:00:00](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+## 1. Introduction - Community Request
 
-I recently had this request on the Forum, regarding some help with subforms.
+**[00:00:00](https://www.youtube.com/watch?v=3j4xPQC4apI&t=0s)**
 
- "How to generate a subform itself from within JCB. Where to find the XML detail in relation to repeated subform fields in view. How the data of the subform is populated. How posted data of a subform is validated. [00:00:32](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m32s) How data of a subform is processed and persisted. I assume that the above is done as part of JCB and would not require manual construction of XML files. I did google but found an answer to no avail." 
+A community member asked for guidance on how to generate and handle subforms in Joomla Component Builder (JCB), specifically:
 
-At the moment we have only made tutorials about Repeatable Fields. [00:01:01](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m01s) Repeatable Fields as such has been discontinued. A tutorial about subforms has not been made yet. 
+* How to generate a subform directly within JCB.
+* Where to find the XML details for repeated subform fields.
+* How subform data is populated, validated, and saved.
 
-### Subforms - Create Fields You Want To Use
+They assumed this functionality was automated within JCB, without needing manual XML editing.
+While earlier tutorials covered *repeatable fields*, those have since been **discontinued** and replaced by the more powerful **subform field type**.
 
-[00:01:13](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m13s)
+---
 
-Subforms have fields in them. For example, go to component and open this(Demo) Admin view. This is a subform(Follow on video). Each of these little fields is a field in the subform. It is only an ID which you need to add to create the subform. [00:01:44](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m44s)  First create a Custom field that grabs values out of the Admin view. This(Icon) is a list field, to create a list field and this is a checkbox, etc.   First, create these fields. 
+## 2. Understanding Subforms
 
-### First Create A New Field 
+**[00:01:13](https://www.youtube.com/watch?v=3j4xPQC4apI&t=73s)**
 
-[00:02:06](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m06s)
+A **subform** in Joomla allows you to group several fields together into a single fieldset that can be repeated.
+Each instance of a subform acts as a mini form inside your main form - ideal for storing related sets of data.
 
-That is the first thing to do, create a field you want to use in the subform. For instance, I am going to use existing fields just as a demonstration. There are Description, Mobile, Name, etc.  [00:02:27](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m27s) First we want to create a new field. First, open it that we have both open to get the IDs. Then click New, then select Subform, and it populates the XML. 
+**Example use case:**
 
-### Look At The Tutorials - YouTube - Joomla Component Builder
+* A "Team Members" section where each member has *Name*, *Email*, and *Website* fields.
 
-[00:02:51](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m51s)
+### In JCB
 
-If you have not looked at all the tutorials that are available on YouTube, then a lot of this will not make sense. For those that may be just seeing this video and not watched any of the other tutorials, please go to YouTube and type in Joomla Component Builder and try to find the playlist. Start at the top working through way down.  I know those tutorials will make you quite able to build amazing things. 
+JCB simplifies this by:
 
-### Formsource
+* Automatically generating the correct XML for the subform.
+* Handling JSON storage automatically.
+* Managing both the loading and saving of subform data through its compiler.
 
-[00:03:51](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m51s)
+---
 
-This formsource(Optional) - it reads as follows: 'You can add a path to an XML file containing the fields'. So a custom  XML file can be added to your component. How to add custom files to a component, is a whole another topic. It is also possible within the Joomla Component to add files and folders, etc. That means this specific source can still be used but you do not need to. If you use the fields option then you need to remove the source option. [00:04:23](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m23s) Either the one or the other of these options should be used. Currently, the fields are set to mandatory. By going to the field types it can be changed to be optional and then you can select other fields or Formsource. The compiler will, in any case, detects a formsource will behave correctly. 
+## 3. Step 1 - Create the Fields for Your Subform
 
-### Adding IDs
+**[00:01:44](https://www.youtube.com/watch?v=3j4xPQC4apI&t=104s)**
 
- [00:04:57](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m57s)
+Each subform requires a set of standard fields (for example: *Name*, *Email*, *Website*, *Description*).
+Before creating the subform field itself, these individual fields must exist in JCB.
 
-IDs need to be added which we find in Fields. It should have 'Name', it is just '199'. [00:05:04](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m04s) Add 199 and a comma and then add something else.A Website '280', an Email '100'. We have that in place. 
+### To Create the Fields
 
-### Adding A Description, Maximum, Filter, Showon
+1. In JCB, go to **Admin → Fields**.
+2. Click **New**.
+3. Choose the appropriate **field type** (e.g., *Text*, *Email*, *Checkbox*, *List*).
+4. Configure each field as desired.
+5. Save each one individually.
 
-[00:05:33](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m33s) 
+**Tip:** Use clear field names and labels - they will appear inside the subform.
 
-Then add a Description, a Maximum, a Filter and a Showon. The validation of these fields, that is an area that I have not looked into. Perhaps they moved away from Repeatable Fields because every field is validated on its own merit. [00:06:05](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m05s) For example, the Name field, if you create a Name field, you want this to be a string and it has this filter string value. Since this is part of the XML it will be validated on this. I have not looked at the code. That is what I suppose it will do. In most cases, I suppose that it does not and try and do some custom scripting but I am not going to illustrate that now. [00:06:44](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m44s) There are many tutorials to show you how to do custom scripting in a component and even to do custom scripting in any area of the component through the custom code area implementation. 
+---
 
- [00:07:15](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m15s)  Save this and give it a Name: Options (test) so that it can be seen. For this (DataType), I would make 'TEXT'. The default means that JCB (the Store method) already will detect that this is a Subform and will add the needed [00:07:39](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m39s) PHP in storing the file and in loading the file into the form again. So that takes care of that. So you don't need to select JSON, it will by default do the correct implementation. In the Data Type so you need to make sure either to click TEXT or MEDIUMTEXT depending on what this value is going to be. Save and close. 
+## 4. Step 2 - Create the Subform Field
 
-### Adding Options(test) Subforms To Any Admin View 
+**[00:02:06](https://www.youtube.com/watch?v=3j4xPQC4apI&t=126s)**
 
-[00:08:19](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m19s) 
- 
-Add this field Options(test) to any admin view, for instance, to Look View, to see it in action. The Look view is part of the Demo component. I am going to dump it here. Look at the above tab, full width, details, description. Let's just add it to details, full width, make it 2nd, and say Options(test). [00:08:49](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m49s)  Save and close. We have added it to a view. Now I am just going to compile this component which the view belongs to. At this stage, it is demo and installs it. Open that Demo component, and open Looks. Enter Name here, enter the website address, enter an email. Click the green plus button and the values are there. [00:09:26](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m26s)  Let's just save one. 'Children'.  (_Please follow on video_) Save. It saved the values and loaded it back, it has done all of that. 'Hi, there' then save and close. [00:10:45](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m45s) If we open it again, it shows it up again. We can shuffle it, put number four on top. Save and close. Open again and so it is loading it also correctly. 
+Once your base fields exist, you can create the subform that will reference them.
+
+### Procedure
+
+1. Go to **Admin → Fields** and click **New**.
+2. Set **Field Type** to `Subform`.
+3. JCB will automatically populate a basic XML structure for the subform.
+4. Give the field a **label** and **name** (for example: `Options` or `options_test`).
+5. Assign a **data type** - usually `TEXT` or `MEDIUMTEXT`.
+
+   * JCB automatically detects that this field is a subform and handles JSON encoding/decoding when storing or loading data.
+6. Save the new field.
+
+---
+
+## 5. Step 3 - Assign the Fields to the Subform
+
+**[00:04:57](https://www.youtube.com/watch?v=3j4xPQC4apI&t=297s)**
+
+Each subform must reference existing field IDs to know which fields to include.
+
+### How to Add Fields by ID
+
+1. Find the **IDs** of the fields you previously created.
+
+   * Go to **Admin → Fields** and note the numerical IDs in the list view.
+2. In your subform field configuration, locate the **"Fields"** input area.
+3. Enter a comma-separated list of field IDs (e.g., `199,280,100`).
+
+   * Example:
+
+     ```
+     Fields: 199,280,100
+     ```
+
+   This will include *Name*, *Website*, and *Email* in your subform.
+
+---
+
+## 6. Step 4 - Configure Additional Options
+
+**[00:05:33](https://www.youtube.com/watch?v=3j4xPQC4apI&t=333s)**
+
+JCB allows you to customize the behavior and validation of your subform fields.
+
+| Option          | Description                                                                 |
+| --------------- | --------------------------------------------------------------------------- |
+| **Description** | Optional text describing what this subform does.                            |
+| **Maximum**     | The maximum number of repeatable entries allowed.                           |
+| **Filter**      | Defines how each field value is validated (e.g., `string`, `email`, `url`). |
+| **Showon**      | Controls conditional display of the subform based on another field's value. |
+
+**Validation Notes:**
+Each field in a subform is validated according to its own field type and filter.
+You do not need to add custom validation unless you want advanced logic.
+JCB automatically integrates Joomla's native field validation when compiling.
+
+---
+
+## 7. Step 5 - Optional: Form Source File
+
+**[00:03:51](https://www.youtube.com/watch?v=3j4xPQC4apI&t=231s)**
+
+The **Formsource** option allows you to load an external XML file defining the subform layout.
+However, this is **optional** in JCB since it already generates XML automatically.
+
+* Use **Formsource** only if you maintain custom XML outside JCB (for example, an XML file in your component's `models/forms` folder).
+* You can use **either** the `Fields` option **or** `Formsource` - not both.
+
+If you include a `Formsource`, JCB's compiler recognizes it and handles it correctly during component compilation.
+
+---
+
+## 8. Step 6 - Add the Subform to a View
+
+**[00:08:19](https://www.youtube.com/watch?v=3j4xPQC4apI&t=499s)**
+
+Once your subform field is created, add it to any **Admin View** in your component.
+
+### Example
+
+To add the subform `Options (test)` to the **Look** view:
+
+1. Open your **Admin Views** in JCB.
+2. Select the **Look** view (from the *Demo* component).
+3. In the *Fields* tab, add the subform field `Options (test)` under the **Details** section.
+4. Set the display width (for example, full width).
+5. Save the view.
+
+---
+
+## 9. Step 7 - Compile and Install the Component
+
+**[00:08:49](https://www.youtube.com/watch?v=3j4xPQC4apI&t=529s)**
+
+Now that your subform is part of a view:
+
+1. Go to **Components → Joomla Component Builder → Compile**.
+2. Compile the component that contains your subform.
+3. Install or update it in Joomla via the **Extensions Installer**.
+
+---
+
+## 10. Step 8 - Test the Subform in Joomla
+
+**[00:09:26](https://www.youtube.com/watch?v=3j4xPQC4apI&t=566s)**
+
+Navigate to your component in the Joomla backend:
+
+1. Open the view that contains your subform (e.g., *Looks* in the Demo component).
+2. Add data in the subform fields (e.g., Name, Website, Email).
+3. Click the **"+" (Add)** button to add another set of fields.
+4. Enter multiple entries and save.
+
+**Result:**
+The subform data is stored as JSON in the database, and when you reopen the record, the values are loaded and displayed correctly.
+
+**[00:10:45](https://www.youtube.com/watch?v=3j4xPQC4apI&t=645s)**
+You can reorder entries (drag and drop or using the ordering arrows), save again, and the order will persist.
+
+---
+
+## 11. Summary
+
+Subforms in Joomla Component Builder allow for powerful, flexible data structures inside your components without writing manual XML or PHP.
+
+### Key Points:
+
+* Create all individual fields first.
+* Use the Subform field type to group them.
+* Assign fields by their IDs.
+* Set data type to `TEXT` or `MEDIUMTEXT`.
+* Add the subform to your desired view.
+* JCB automatically handles saving and loading logic.
+
+---
+
+## 12. Additional Resources
+
+* **Joomla Component Builder Tutorials (YouTube):**
+  [https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+
+* **Official JCB Documentation:**
+  [https://git.vdm.dev/joomla/pkg-component-builder/wiki](https://git.vdm.dev/joomla/pkg-component-builder/wiki)
+
+---
+
+### Helpful Tips
+
+* Always test subforms on a small scale before implementing complex logic.
+* Avoid nesting subforms (they can cause complex data structures).
+* Use **Custom Code Areas** in JCB if you need to manipulate subform data programmatically.

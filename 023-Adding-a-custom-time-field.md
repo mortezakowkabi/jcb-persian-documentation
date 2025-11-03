@@ -1,52 +1,187 @@
-# ADDING A CUSTOM TIME FIELD
+# Adding a Custom Time Field
 
-### Fields
+*Using Joomla Component Builder (JCB)*
+
+### Video Reference
 
 [00:00:00](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+(*Click on these time links to watch the YouTube tutorial.*)
 
-* How to set up a Time Field
+---
 
-In programming, time must always be linked to a date. Since time is stored as an integer, if you want a field where a time is set, (for instance 5:15), a normal text field can be used and a Regex method created. [00:00:21](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m21s) This could be done via a custom form filter. [00:00:51](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m51s)
+## 1. Overview
 
-* How to set up a Custom Form Filter
+In Joomla Component Builder, a **custom time field** allows you to capture specific time values (e.g., `05:15`) in your components. Because time is stored as an integer in databases, you cannot use a standalone time format - it must either be stored as part of a datetime or validated via text input.
 
-To illustrate: Use 'sermondistribitor' component, go to 'modules', and 'rules' can be seen. There a 'rule' can be created. It is used as the filter name. [00:01:23](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m23s) Create a file in Component Builder and place it in the Custom folder and put any name in. (See video) One of these files can be used to illustrate how to include it. 
+This guide walks you through:
 
-### Joomla Form-rule Example
+* Creating a **text field** for time entry
+* Adding a **custom validation rule (Form Rule)**
+* Implementing **server-side and JavaScript validation**
+* Integrating **time fields in repeatable structures**
 
-[00:01:54](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m54s)
+---
 
-Here is some documentation on how to create a rule. Go to Component in Joomla: 'Libraries', 'Form', and 'Rules'. [00:02:21](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m21s) Any of these rules may be opened. See what had been done and follow the same convention. 'JformRule' is extended. Give it a unique name. Make sure it isn't one of these in 'JformRule'. [00:02:43](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m43s)  Component Builder already constructed the XML document used in the construction of 'Form'. 'Component', 'Sermon distributor','Models', and 'Form' are opened, as is series.xml as it already includes the Rule path. [00:03:17](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m17s) That Rule path is this 'Rule.' (See video.) To apply a filter, add 'filter='. In Component Builder there is a way to add this; but it would be the same name, 'Tel', as the filter name. [00:03:48](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m48s) Here is a 'test' that sees whether this is acceptable. (See video.) A Regex may be done to validate whether the input field on the server site is acceptable. [00:04:10](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m10s) This is the server site verification of the input.
+## 2. Setting Up a Time Field
 
-### Component Builder New Text Field
+[00:00:21](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h00m21s)
 
- [00:04:15](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m15s)
+If you want users to enter a time such as `05:15`, you can:
 
-When 'new' in Component Builder Fields is clicked, 'New Fields' will be opened, and 'text' is selected. [00:04:44](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m44s) 'Filter="string"' as well as 'validate' is found there. The 'rule' name is placed in 'validate'. The custom rule name might be, for example, time, and would ensure that only time had been submitted on the server site. 
+1. Create a **text field** in JCB.
+2. Validate it using a **regular expression (Regex)** to ensure proper time format.
 
-### Script JavaScript
+> **Tip:** Regex can be applied via a **custom Joomla form rule**, ensuring server-side validation beyond JavaScript.
 
-[00:05:00](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m00s)
+---
 
-The next step is ensuring the user only types in numbers and a colon, not anything else, and would be able to do JavaScript in the view footer. [00:05:37](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m37s) JavaScript targeting the field by either adding a unique class name or going to the 'form' may be added. For example, This 'name' is a field. (It uses firebug.) It selects the 'name' field and the 'id' may be seen in firebug. With JavaScript, the input of the 'id' can be targeted. [00:06:02](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m02s) If the 'id' has input and it is not what is expected from 'time', the user can be informed or the box may be emptied with a note underneath. That, however, would be a JavaScript implementation on top of the text field. If time is needed and it does not matter that a date is involved, a field like that had already been build. [00:06:36](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m36s) The calendar field can not be used in the repeatable fields.
+## 3. Creating a Custom Form Rule
 
-### Time-Date(Custom Component)
+[00:01:23](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h01m23s)
 
-[00:06:46](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m46s)
+To validate the time format properly, you'll create a custom Joomla Form Rule.
 
-A field had been created making it possible to still do that. For example: If 'Events' is opened on the Registry Dashboard there is a function where dates may be set. [00:06:58](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m58s) There a date can be selected, the time adjusted, before 'Done' is clicked. [00:07:26](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m26s) With that selection the field is updated. If that is the kind of field you're looking for, the implementation is different when this kind of field is used. (See video.) For example, Fields are opened, 'text' selected in the 'Type' column, and a hint is added. (You can pause the video and look at the field XML.) [00:08:08](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m08s) Since the field is used in a repeatable field, the JavaScript is different; you worked with a repeatable field where you could add as many fields as you like. However, you wanted the date field to be active on each of those and you could not target a repeatable field by adding JavaScript in the area unless the field's ID was known. [00:08:41](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m41s) Instead of doing it here, the necessary Javascript has been added to make the field functional in the repeatable fields structure.
+### Steps:
 
-### JavaScript Repeatable Field Time-Date
+1. Go to your **Joomla libraries** folder:
+   `libraries/src/Form/Rule/`
 
-[00:08:46](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m46s) 
+2. Review existing rules (e.g., `EmailRule.php`, `UrlRule.php`) to understand their structure.
+   [00:02:21](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h02m21s)
 
-If Field is opened, select 'Event Dates'. One of the values (in the XML Field Definition), '1196', is the ID of the date field. (You can pause the video and follow what is being done.) [00:09:24](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m24s) In 'Scripts' some styles are included as well as some JavaScript. There is a loop looping 50 times. Looking at the Repeatable Field, only 50 fields are allowed to be added in the loop that is targeted through the dynamic PHP. [00:09:52](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m52s)  Each of those fields is targeted. There is a row added. Check whether the row exists. If it does use the 'jQuery DateTimepicker', which is brought to the page by the script. It has some tweakable options. [00:10:19](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m19s) That's how that kind of date selecting picker method is added in a Repeatable Field. [00:10:43](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m43s)
+3. Create a new file, for example:
+   `/libraries/src/Form/Rule/TimeRule.php`
 
-### Multiple Date Fields
+4. Extend `Joomla\CMS\Form\FormRule`:
 
-[00:10:51](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m51s)
+   ```php
+   class JFormRuleTime extends FormRule
+   {
+       protected $regex = '^(?:[01]\d|2[0-3]):[0-5]\d$';
+   }
+   ```
 
-If you open 'Dates', there is a start and an ending date. In Cost Adjustment, there is also a target date. [00:11:14](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m14s) In the script there is a 'field type' array used to target the different fields in their different pop-ups. If only one field is targeted, the extra iterating method or variable is needed. Instead of retyping it for every field, there is a loop added in the PHP. It is just less code. [00:11:44](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m44s)
+   [00:02:43](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h02m43s)
 
-Further documentation might be necessary but time does not allow. It would be encouraged, however, if it can be done as a community project. [00:12:14](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m14s) Everywhere in Component Builder, in any of its list views, there is a Help Menu that opens a website with a Wiki option. [00:12:39](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m39s) It's a Readme website. Here is the URL for anyone who wants to get involved in in the community to improve the documentation per list view as well as per function. (See video.) As you can see I've done a bit in writing documentation for every list view, explaining the buttons. [00:13:11](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m11s) This help button here; you can add your own help by going to the help documentation. Here is the list of already set up help. If you open one of these, you will see the URL we're using. [00:13:46](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m46s) As we develop this component further we would eventually add more help documentation in the component. It will map to this website because that way everybody can benefit from the improvements. [00:14:10](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m10s) The website URL is [Readme](http//projects.vdm.io/projects/Joomla-component-builder/wiki) You can go there and navigate from there. If you want to get involved in the editing of the tutorial or the documentation, contact me, and I will help you setup documentation. [00:14:40](https://www.youtube.com/watch?v=epA9zv4yWu0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m40s)
+5. In your **component's model XML** (e.g., `models/forms/item.xml`), add:
+
+   ```xml
+   <field name="event_time" type="text" label="Event Time" validate="time" filter="string" />
+   ```
+
+This connects your form field with your new validation rule.
+
+---
+
+## 4. Adding the Field in Component Builder
+
+[00:04:15](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h04m15s)
+
+Within **Component Builder**:
+
+1. Navigate to **Fields → New**.
+2. Choose **Type:** `text`.
+3. Under **Validation**, enter the name of your custom rule (`time`).
+4. Set **Filter** to `string`.
+
+[00:04:44](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h04m44s)
+
+This setup ensures that data is filtered and validated correctly on both the client and server.
+
+---
+
+## 5. Enhancing with JavaScript Validation
+
+[00:05:00](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h05m00s)
+
+To improve user experience, you can add JavaScript validation to the field to restrict invalid characters.
+
+Example steps:
+
+1. Add a **unique class or ID** to your field.
+2. Include JavaScript in your **view's footer script area** (accessible in JCB's View Scripts section).
+3. The script should allow only numbers and a colon (`:`).
+
+[00:05:37](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h05m37s)
+
+You can use the field's ID (e.g., from your browser's Inspector) to target it directly:
+
+```js
+document.getElementById('jform_event_time').addEventListener('input', function() {
+  this.value = this.value.replace(/[^0-9:]/g, '');
+});
+```
+
+If invalid data is entered, the input can be cleared, or a message can be shown.
+
+---
+
+## 6. Using Time-Date Field in Repeatable Fields
+
+[00:06:46](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h06m46s)
+
+When working with **repeatable fields**, standard calendar fields do not work directly because of how dynamic instances are handled.
+To overcome this, JCB includes a **custom DateTime picker** integrated through JavaScript.
+
+[00:08:08](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h08m08s)
+
+### Key Steps:
+
+1. Use a **custom JavaScript file** added in JCB's **Scripts** section.
+2. Loop through each repeatable instance using JavaScript or PHP to attach the picker dynamically.
+3. Example (simplified):
+
+   ```js
+   for (let i = 0; i < 50; i++) {
+       let field = document.getElementById('time_field_' + i);
+       if (field) {
+           jQuery(field).datetimepicker({
+               format: 'H:i',
+               step: 15
+           });
+       }
+   }
+   ```
+
+[00:09:52](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h09m52s)
+
+---
+
+## 7. Handling Multiple Time-Date Fields
+
+[00:10:51](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h10m51s)
+
+When your component includes several time fields (e.g., start, end, or target times), JCB allows you to manage them efficiently by:
+
+* Defining an array of targeted field types.
+* Using a PHP loop to initialize their date-time pickers dynamically, reducing redundant code.
+
+[00:11:44](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h11m44s)
+
+---
+
+## 8. Community Documentation and Help Resources
+
+[00:12:14](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h12m14s)
+
+Joomla Component Builder provides built-in documentation links accessible via the **Help menu** in every list view.
+
+You can access the official **Wiki** and contribute to improving the documentation:
+
+* **URL:** [Readme Documentation](http://projects.vdm.io/projects/Joomla-component-builder/wiki)
+
+If you wish to contribute or request help documentation for your component, contact the project maintainers.
+
+[00:14:40](https://www.youtube.com/watch?v=epA9zv4yWu0&t=00h14m40s)
+
+---
+
+## 9. Summary
+
+* Use **text fields** with custom **form rules** for time input.
+* Implement **Regex-based validation** in PHP and **character restriction** in JavaScript.
+* For **repeatable fields**, ensure dynamic initialization using JavaScript loops.
+* Explore **Component Builder's script integration** for full control.
+* Leverage the **JCB Wiki** for learning and contributing.
+
+---

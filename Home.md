@@ -12,16 +12,16 @@ If you have more questions, [discussions](https://github.com/vdm-io/Joomla-Compo
 
 The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE) that are already available are listed below. We will be editing this soon to correspond with each chapter in the documentation and to be in the same order.
 
-# [Intro](https://youtu.be/9evJkBTnKxE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Intro](https://git.vdm.dev/joomla/Component-Builder/wiki/002-Intro-to-JCB)
 + Basic introduction
 
-# [Installation](https://youtu.be/t6Eux157428?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Installation](https://git.vdm.dev/joomla/Component-Builder/wiki/003-Installation-of-JCB)
 + Basic installation instructions
 
-# [General Planning](https://youtu.be/gEgwiVNj6N0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [General Planning](https://git.vdm.dev/joomla/Component-Builder/wiki/004-General-Planning)
 + Planning your component
 
-# [Field Types](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Field Types](https://git.vdm.dev/joomla/Component-Builder/wiki/005-Field-Types)
 + [01:05](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m5s) **Field types** _Create Field Types Using basic joomla article to explain field types and their relationship within views_
 + [01:57](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m57s) **List view** _Difference between list view and edit view. Plural and single_
 + [05:45](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=5m45s) **Compile error** _Remember to select correct options that suit your build._
@@ -34,7 +34,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [15:15](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=15m15s) **Joomla XML example Text Field** _XML example_
 + [17:43](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=17m43s) **XML string within compilier** _How XML string is build and compilied within component builder._
 
-# [Basic Fields](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Basic Fields](https://git.vdm.dev/joomla/Component-Builder/wiki/006-Basic-Fields)
 + [01:05](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m5s) **New Field Type** _Using text field as example_
 + [01:08](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m8s) **Basic field type** _Using text field as example_
 + [03:16](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m16s) **Data Types** _Basic introduction to data types_
@@ -55,7 +55,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [34:37](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=34m37s) **Notes Field example**
 + [37:20](https://youtu.be/9NO2rKnC6Ug?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=37m20s) **Translation brief overview**
 
-# [Admin Views](https://youtu.be/CdSKSCTzmRA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Admin Views](https://git.vdm.dev/joomla/Component-Builder/wiki/007-Admin-Views)
 + [01:05](https://youtu.be/CdSKSCTzmRA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m5s) **Admin Views/ Naming convention**
 + [03:00](https://youtu.be/CdSKSCTzmRA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m) **Example View Preacher**
 + [04:35](https://youtu.be/CdSKSCTzmRA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=4m35s) **View Icons**
@@ -79,7 +79,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [72:09](https://youtu.be/CdSKSCTzmRA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=72m9s) **Batch Copy - Move Method**
 + [75:07](https://youtu.be/CdSKSCTzmRA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=75m7s) **MySQL Dumps Test Data (insert into table)**
 
-# [Advanced Fields](https://youtu.be/VpzYbifqv0M?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Advanced Fields](https://git.vdm.dev/joomla/Component-Builder/wiki/008-Advanced-Fields)
 + [00:39](https://youtu.be/VpzYbifqv0M?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=39s) **Local file list example**
 + [05:29](https://youtu.be/VpzYbifqv0M?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=5m29s) **Sermon Preacher Custom Field**
 + [07:29](https://youtu.be/VpzYbifqv0M?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=7m29s) **Field Information Guide**
@@ -94,7 +94,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [40:40](https://youtu.be/VpzYbifqv0M?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=40m40s) **Repeatable Custom Fields**
 + [45:21](https://youtu.be/VpzYbifqv0M?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=45m21s) **Joomla Icons Info & Link**
 
-# [Adding Admin Views to a Component](https://youtu.be/39vY66X7GGU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Adding Admin Views to a Component](https://git.vdm.dev/joomla/Component-Builder/wiki/009-Adding-Admin-Views-to-a-Component)
 + [00:54](https://youtu.be/39vY66X7GGU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=54s) **Sermon Component settings as Example**
 + [01:43](https://youtu.be/39vY66X7GGU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m43s) **Adding Views settings icons**
 + [02:45](https://youtu.be/39vY66X7GGU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m45s) **Settings Switch Admin Menu**
@@ -108,7 +108,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [18:14](https://youtu.be/39vY66X7GGU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=18m14s) **Settings Switch Edit - Create - Site Views**
 + [24:38](https://youtu.be/39vY66X7GGU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=24m38s) **Settings Switch Order**
 
-# [Component Settings](https://youtu.be/V2WkTjNFjvo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Component Settings](https://git.vdm.dev/joomla/Component-Builder/wiki/010-Component-Settings)
 + [00:50](https://youtu.be/V2WkTjNFjvo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=50s) **Compiler Info**
 + [04:20](https://youtu.be/V2WkTjNFjvo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=4m20s) **Adding Custom Files - Folders**
 + [04:54](https://youtu.be/V2WkTjNFjvo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=4m54s) **Adding Custom Admin Views**
@@ -122,7 +122,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [20:00](https://youtu.be/V2WkTjNFjvo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=20m) **Site View explanation of above tabs**
 + [20:52](https://youtu.be/V2WkTjNFjvo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=20m52s) **Quick explanation of creating site views**
 
-# [Component Scripts](https://youtu.be/xY9TWQrF8AQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Component Scripts](https://git.vdm.dev/joomla/Component-Builder/wiki/011-Component-Scripts)
 + [00:46](https://youtu.be/xY9TWQrF8AQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=46s) **Create User Helper Methods**
 + [01:45](https://youtu.be/xY9TWQrF8AQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m45s) **Example Helper Method (Create User)**
 + [07:15](https://youtu.be/xY9TWQrF8AQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=7m15s) **Add UiKit**
@@ -133,7 +133,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [13:50](https://youtu.be/xY9TWQrF8AQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m50s) **Add MySQL Dump (Att 2nd place it can be done)**
 + [14:15](https://youtu.be/xY9TWQrF8AQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=14m15s) **Dashboard Methods (With Example)**
 
-# [Component FTP and more](https://youtu.be/hzbZlLl-xlA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Component FTP and more](https://git.vdm.dev/joomla/Component-Builder/wiki/012-Component-FTP-and-more)
 + [00:05](https://youtu.be/hzbZlLl-xlA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=5s) **Adding Readme script**
 + [01:30](https://youtu.be/hzbZlLl-xlA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m30s) **Place Holders**
 + [02:20](https://youtu.be/hzbZlLl-xlA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m20s) **Component-Builder Link Back Info***
@@ -147,7 +147,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [12:20](https://youtu.be/hzbZlLl-xlA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=12m20s) **Component Builder Compiler.PhP FTP Info**
 + [14:15](https://youtu.be/hzbZlLl-xlA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=14m15s) **Update Server extra Info (Versions)**
 
-# [dynamicGet](https://youtu.be/OPuCoxPW35s?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [dynamicGet](https://git.vdm.dev/joomla/Component-Builder/wiki/013-dynamicGet)
 + [00:15](https://youtu.be/OPuCoxPW35s?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=15s) **Sermon - Preacher Get Example**
 + [00:40](https://youtu.be/OPuCoxPW35s?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=40s) **Dynamic Get Source Selection**
 + [03:45](https://youtu.be/OPuCoxPW35s?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m45s) **Dynamic Get Preacher View**
@@ -163,7 +163,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [29:49](https://youtu.be/OPuCoxPW35s?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=29m49s) **Dynamic Get Where**
 + [30:41](https://youtu.be/OPuCoxPW35s?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=30m41s) **Dynamic Get Ordering**
 
-# [Adding dynamicGet to a Site View](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Adding dynamicGet to a Site View](https://git.vdm.dev/joomla/Component-Builder/wiki/014-Adding-dynamicGet-to-a-Site-View)
 + [00:24](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=24s) **Checking the Target Datasets**
 + [00:35](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=35s) **Populate Fields from Get's**
 + [01:38](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m38s) **Dynamic Values**
@@ -175,7 +175,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [11:50](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m50s) **Checking the target datasets**
 + [13:40](https://youtu.be/vEJZe6XqHJE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m40s) **Site Preacher tmpl folder**
 
-# [Adding Templates and Layouts to a Site View](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Adding Templates and Layouts to a Site View](https://git.vdm.dev/joomla/Component-Builder/wiki/015-Adding-Templates-and-Layouts-to-a-Site-View)
 + [00:05](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=5s) **Relationship between templates/layouts in views**
 + [00:47](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=47s) **Preacher View Example**
 + [01:38](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m38s) **Preacher Site View Example**
@@ -184,14 +184,14 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [06:47](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=6m47s) **Quick Layout Example Within View**
 + [08:00](https://youtu.be/6VBbi3Rl2eY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=8m) **Explantation Templates / Layouts within Joomla**
 
-# [Template Setup](https://youtu.be/khxKeeubhiY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Template Setup](https://git.vdm.dev/joomla/Component-Builder/wiki/016-Template-Setup)
 + [00:10](https://youtu.be/khxKeeubhiY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=10s) **Creating Templates**
 + [00:37](https://youtu.be/khxKeeubhiY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=37s) **New - Copying templates**
 + [01:25](https://youtu.be/khxKeeubhiY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m25s) **Language String**
 + [02:20](https://youtu.be/khxKeeubhiY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m20s) **Adding custom script/code to template**
 + [03:10](https://youtu.be/khxKeeubhiY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m10s) **Adding Javascript to template**
 
-# [Layout Setup](https://youtu.be/52OLSZio0F8?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Layout Setup](https://git.vdm.dev/joomla/Component-Builder/wiki/017-Layout-Setup)
 + [00:05](https://youtu.be/52OLSZio0F8?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=5s) **Layouts**
 + [00:40](https://youtu.be/52OLSZio0F8?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=40s) **How layouts work with dynamic gets**
 + [01:53](https://youtu.be/52OLSZio0F8?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m53s) **How Templates call Layouts**
@@ -204,7 +204,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [09:30](https://youtu.be/52OLSZio0F8?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=9m30s) **Layout Concept**
 + [11:05](https://youtu.be/52OLSZio0F8?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m5s) **Layout Custom Script Area**
 
-# [Custom Admin Views](https://youtu.be/gtdQ1lwB9ds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Custom Admin Views](https://git.vdm.dev/joomla/Component-Builder/wiki/018-Custom-Admin-Views)
 + [00:35](https://youtu.be/gtdQ1lwB9ds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=35s) **Example view from other Component**
 + [03:55](https://youtu.be/gtdQ1lwB9ds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m55s) **Component Builder Custom Admin View from above**
 + [04:15](https://youtu.be/gtdQ1lwB9ds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=4m15s) **Add custom button example**
@@ -212,13 +212,13 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [06:20](https://youtu.be/gtdQ1lwB9ds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=6m20s) **Area for Custom Scripting**
 + [07:00](https://youtu.be/gtdQ1lwB9ds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=7m) **Combing multiple data results example**
 
-# [Adding Site Views to a Component](https://youtu.be/zZ_HJeYL8ps?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Adding Site Views to a Component](https://git.vdm.dev/joomla/Component-Builder/wiki/019-Adding-Site-Views-to-a-Component)
 + [00:30](https://youtu.be/zZ_HJeYL8ps?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=30s) **Using Sermon Dist as Example**
 + [00:42](https://youtu.be/zZ_HJeYL8ps?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=42s) **Settings - Views**
 + [01:25](https://youtu.be/zZ_HJeYL8ps?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m25s) **Adding Site Views Important *Glitch***
 + [02:34](https://youtu.be/zZ_HJeYL8ps?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m34s) **Site View Options (Menu-Metadata-Default View-Access)**
 
-# [Adding Custom Admin Views to a Component](https://youtu.be/sPEkbuNXwds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Adding Custom Admin Views to a Component](https://git.vdm.dev/joomla/Component-Builder/wiki/020-Adding-Custom-Admin-Views-to-a-Component)
 + [00:03](https://youtu.be/sPEkbuNXwds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3s) **Example Component not Sermon Dist**
 + [00:16](https://youtu.be/sPEkbuNXwds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=16s) **Settings - Settings - Custom Admin View**
 + [00:34](https://youtu.be/sPEkbuNXwds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=34s) **Multiple Switches due to being dynamic**
@@ -229,12 +229,12 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [03:46](https://youtu.be/sPEkbuNXwds?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m46s) **Order Before Selection**
 + **View rest for how buttons are implemented - *Important***
 
-# [Tweaking MySQL Demo Data](https://youtu.be/wkSLZUEN-RE?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Tweaking MySQL Demo Data](https://git.vdm.dev/joomla/Component-Builder/wiki/021-Tweaking-MySQL-Demo-Data)
 + [00:00](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **MySQL tweaking in the component area**
 + [01:33](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m33s) **Tweaking Feature** 
 + [02:46](https://www.youtube.com/watch?v=wkSLZUEN-RE&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m46s) **ID Based**
 
-# [Global Settings of Component Builder](https://youtu.be/LA2WDi8G79E?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Global Settings of Component Builder](https://git.vdm.dev/joomla/Component-Builder/wiki/022-Global-Settings-of-Component-Builder)
 + [00:25](https://youtu.be/LA2WDi8G79E?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=25s) **Options Button For Global Config**
 + [01:20](https://youtu.be/LA2WDi8G79E?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m20s) **Check in Timer**
 + [01:49](https://youtu.be/LA2WDi8G79E?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m49s) **Enable Versions**
@@ -247,7 +247,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [11:25](https://youtu.be/LA2WDi8G79E?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m25s) **Example Preacher Permissions**
 + [13:15](https://youtu.be/LA2WDi8G79E?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m15s) **Field Permission Switch**
 
-# [Adding a custom time field](https://youtu.be/epA9zv4yWu0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Adding a custom time field](https://git.vdm.dev/joomla/Component-Builder/wiki/023-Adding-a-custom-time-field)
 + [00:06](https://youtu.be/epA9zv4yWu0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=6s) **Fields**
 + [02:25](https://youtu.be/epA9zv4yWu0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m25s) **Joomla Form-rule Example**
 + [04:30](https://youtu.be/epA9zv4yWu0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=4m30s) **Component builder new text field example**
@@ -255,7 +255,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [07:00](https://youtu.be/epA9zv4yWu0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=7m) **Example time-date (custom component)**
 + [08:51](https://youtu.be/epA9zv4yWu0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=8m51s) **JS repeatable field time-date *Important***
 
-# [How to integrate the Create User Helper Method in your Components](https://youtu.be/ckFakaQ90JY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [How to integrate the Create User Helper Method in your Components](https://git.vdm.dev/joomla/Component-Builder/wiki/024-How-to-integrate-the-Create-User-Helper-Method-in-your-Components)
 + [00:32](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m32s) **Helper Class**
 + [03:00](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m00s) **Create User**
 + [04:30](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=04m30s) **Expert Field**
@@ -264,7 +264,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [14:53](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=14m53s)  **Get User Field**
 + [18:01](https://www.youtube.com/watch?v=ckFakaQ90JY&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=18m01s)  **Use Tokens**
 
-# [How to use email helper in your components.](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [How to use email helper in your components.](https://git.vdm.dev/joomla/Component-Builder/wiki/025-How-to-use-email-helper-in-your-components)
 + [00:25](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=25s) **Example of Email Helper Class**
 + [01:10](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m10s) **Setting Up Email Helper Class**
 + [01:20](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m20s) **Libs - Helpers in Component**
@@ -281,13 +281,13 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [11:45](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m45s) **Implementated example**
 + [13:56](https://youtu.be/tp6mMUTOF2Y?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m56s) **Above example in code *Worth Watching***
 
-# [How to setup a store message method along side the email helper class](https://youtu.be/peVNLsAncGY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [How to setup a store message method along side the email helper class](https://git.vdm.dev/joomla/Component-Builder/wiki/026-How-to-setup-a-store-message-method-along-side-the-email-helper-class)
 + [00:03](https://youtu.be/peVNLsAncGY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3s) **Example in Code**
 + [01:31](https://youtu.be/peVNLsAncGY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m31s) **Code Snippet in Method**
 + [02:17](https://youtu.be/peVNLsAncGY?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m17s) **Adding Code to Admin Helper Area**
 + ***Important watch to end***
 
-# [How to ensure that a field is not escaped when added to list views.](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [How to ensure that a field is not escaped when added to list views.](https://git.vdm.dev/joomla/Component-Builder/wiki/027-How-to-ensure-that-a-field-is-not-escaped-when-added-to-list-views)
 + [00:02](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2s) **Example extra styling in fields**
 + [00:37](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=37s) **Settings - Editing View - PhP Area**
 + [01:05](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m5s) **Settings Values in the code - Add PhP Getitems Method**
@@ -295,7 +295,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [03:20](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m20s) **Preventing the escaped info**
 + [04:16](https://youtu.be/bfl0l3AoLKU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=4m16s) **Field adding escape=false to code**
 
-# [How to change exported values and setup custom import options](https://youtu.be/fau5mZ6naLc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [How to change exported values and setup custom import options](https://git.vdm.dev/joomla/Component-Builder/wiki/028-How-to-change-exported-values-and-setup-custom-import-options)
 + [00:25](https://youtu.be/fau5mZ6naLc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=25s) **Example Component**
 + [01:00](https://youtu.be/fau5mZ6naLc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m) **Example IP Tables**
 + [01:39](https://youtu.be/fau5mZ6naLc?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m39s) **Export feature**
@@ -318,7 +318,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [00:45](https://youtu.be/Z8FLifQOjUk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=45s) **Example component with filters**
 + ***Volume to low to fully understand - Will be done over soon***
 
-# [Automatic import of custom code during compilation in JCB](https://youtu.be/DFMfIl-VkSk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Automatic import of custom code during compilation in JCB](https://git.vdm.dev/joomla/Component-Builder/wiki/031-Automatic-import-of-custom-code-during-compilation-in-JCB)
 *Excellent Update to JCB*
 + [00:02](https://youtu.be/DFMfIl-VkSk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2s) **Custom Code**
 + [02:00](https://youtu.be/DFMfIl-VkSk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2m) **Example demo compiled**
@@ -334,7 +334,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 
 [[TIPS: Custom Code]]
 
-# [JCB manual custom code implementation](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [JCB manual custom code implementation](https://git.vdm.dev/joomla/Component-Builder/wiki/032-JCB-manual-custom-code-implementation)
 + [00:02](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=2s) **Brief explanation**
 + [03:18](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=3m18s) **Updating code from JCB in the editor**
 + [06:43](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=6m43s) **Github explanation for update and insert issue 37**
@@ -344,7 +344,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [18:55](https://youtu.be/KiAtJawZ3oo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=18m55s) **Difference between editor changes and custom code changes**
 + ***Imptortant - Watch till end***
 
-# [Export & Import of fully mapped components](https://youtu.be/lkE0ZiSWufg?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Export & Import of fully mapped components](https://git.vdm.dev/joomla/Component-Builder/wiki/033-Export-Import-of-fully-mapped-components)
 + [00:00](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Various Linked Concepts to A component is Exported**
 + [01:09](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m09s) **Two Ways to Export A Component - Encrypted And Non Encrypted**
 + [01:40](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m40s) **Smart Export Builder**
@@ -357,7 +357,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [12:55](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=12m55s) **Warnings - Remapped**
 + [14:55](https://www.youtube.com/watch?v=lkE0ZiSWufg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=14m54s) **Mapped Components**
 
-# [How to add Custom Buttons in JCB to your component Admin Area](https://youtu.be/VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [How to add Custom Buttons in JCB to your component Admin Area](https://git.vdm.dev/joomla/Component-Builder/wiki/034-How-to-add-Custom-Buttons-in-JCB-to-your-component-Admin-Area)
 + [00:38](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m38s) **Joomla Demo Dashboard - Look**
 + [02:05](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m05s) **PHP Controller Method - List View Controller Method**
 + [03:07](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m07s) **Custom Button**
@@ -371,7 +371,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [17:29](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=17m29s) **Demonstrate Button - Both List ans Inside**
 + [19:43](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=19m43s) **Adds A Permissional Switch**
 
-# [Translation Manager in JCB explained](https://youtu.be/zzAcVkn_cWU?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Translation Manager in JCB explained](https://git.vdm.dev/joomla/Component-Builder/wiki/035-Translation-Mananger-in-JCB-explained)
 + [00:49](https://www.youtube.com/watch?v=zzAcVkn_cWU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m49s) **JCB Builds English File**
 + [01:25](https://www.youtube.com/watch?v=zzAcVkn_cWU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m25s) **Placeholder - JText - English Language String**
 + [02:43](https://www.youtube.com/watch?v=zzAcVkn_cWU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m43s) **Adding Of Other Languages**
@@ -386,13 +386,13 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [13:21](https://www.youtube.com/watch?v=zzAcVkn_cWU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m21s) **Via The Component**
 + [14:03](https://www.youtube.com/watch?v=zzAcVkn_cWU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=14m03s) **Go To Language Translation**
 
-# [Setting Site View Permission](https://youtu.be/gWjQjdhYqXI?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Setting Site View Permission](https://git.vdm.dev/joomla/Component-Builder/wiki/036-Setting-Site-View-Permission)
 + [02:40](https://www.youtube.com/watch?v=gWjQjdhYqXI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m40s) **The Default View**
 + [04:48](https://www.youtube.com/watch?v=gWjQjdhYqXI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=04m048s) **Adding Custom Scripting - Showing After Installation**
 + [06:38](https://www.youtube.com/watch?v=gWjQjdhYqXI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=06m38s) **Site Root - In The Code**
 + [09:35](https://www.youtube.com/watch?v=gWjQjdhYqXI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=09m35s) **Custom Code Implementation**
 
-# [Auto create SQL updates for Components in JCB](https://youtu.be/bRPJTRat158?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Auto create SQL updates for Components in JCB](https://git.vdm.dev/joomla/Component-Builder/wiki/037-Auto-create-SQL-updates-for-Componets-in-JCB)
 + [00:38](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m38s) **JCB Builds tables For Views On Installation**
 + [01:47](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m47s) **Manually Adding New SQL Statements** 
 + [02:35](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m35s) **Adding A New View/New Table To Component**
@@ -400,7 +400,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [05:44](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=05m44s) **Adding New Field To Existing View**
 + [07:23](https://www.youtube.com/watch?v=bRPJTRat158&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m23s) **If Building A Component It Have History**
 
-# [Setup Site Edit View in JCB](https://youtu.be/tmB22d9dQ4M?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Setup Site Edit View in JCB](https://git.vdm.dev/joomla/Component-Builder/wiki/038-Setup-Site-Edit-View-in-JCB)
 + [01:50](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m50s) **How To Add Editing Area**
 + [03:30](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m30s) **Two Switches** 
 + [04:21](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=04m21s) **Demo Component - Settings**
@@ -408,7 +408,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [07:51](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m51s) **Manually Add Links**
 + [11:19](https://www.youtube.com/watch?v=tmB22d9dQ4M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m19s) **Add A Button To Create New Looks**
 
-# [Automated backup system in JCB](https://youtu.be/GUWZaODo_IM?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Automated backup system in JCB](https://git.vdm.dev/joomla/Component-Builder/wiki/039-Automated-backup-system-in-JCB)
 + [00:00](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Extension API _ Backup Feature**
 + [01:07](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m07s) **Backup Button**
 + [02:40](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m40s) **New Features - Mail Configuration, DKIM, Encryption Settings, CronJob Tabs Added**
@@ -425,7 +425,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [15:35](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=15m35s) **Testing Backup**
 + [16:48](https://www.youtube.com/watch?v=GUWZaODo_IM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=16m48s) **Package Owner Details**
 
-# [Adding Helper Structures to any JCB component](https://youtu.be/nw9YPu9emws?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Adding Helper Structures to any JCB component](https://git.vdm.dev/joomla/Component-Builder/wiki/040-Adding-Helper-Structures-to-any-JCB-component)
 + [00:00](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Question About Help Menu Integration For JCB Components**
 + [00:39](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m39s) **Purchased Sermon Distributor Key**
 + [02:48](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m48s) **New Admin View - Help Document**
@@ -437,7 +437,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [13:48](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m48s) **What Happens If Component Is No Longer Installed?**
 + [17:51](https://www.youtube.com/watch?v=nw9YPu9emws&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=17m51s)  **JCB Detects If It Is A Help Document** 
 
-# [Upgrade to JCB v2.5.8 and using the new Admin View and Admin Fields](https://youtu.be/YaycQcsMpOs?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Upgrade to JCB v2.5.8 and using the new Admin View and Admin Fields](https://git.vdm.dev/joomla/Component-Builder/wiki/041-Upgrade-to-JCB-v2.5.8-and-using-the-new-Admin-View-and-Admin-Fields)
 + [00:00](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **JCB Removing Repeatable Fields**
 + [01:59](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m59s)  **JCB 2.5.8, Whole Admin View Moved To Subform Layout**
 + [03:13](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m13s) **Heads Up - Moving And Changing Fields**
@@ -456,11 +456,11 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [16:53](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=16m53s) **Shortcut Buttons - First Button, Admin Fields, - Second Button, Conditions**
 + [17:35](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=17m35s) **Create New Admin View: Adding - Single Record Name, Short Description, System Name**
 
-# [How to setup taps after upgrade to v2.5.8 in JCB](https://youtu.be/NFp_CtE0LZI?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [How to setup taps after upgrade to v2.5.8 in JCB](https://git.vdm.dev/joomla/Component-Builder/wiki/042-How-to-setup-tabs-after-upgrade-to-v2.5.8-in-JCB)
 + [00:00](https://www.youtube.com/watch?v=NFp_CtE0LZI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **In Settings - Add Tabs**
 + [00:52](https://www.youtube.com/watch?v=NFp_CtE0LZI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m52s) **Tabs Menu - Dropdown**
 
-# [Major Release of JCB v2.6.0](https://youtu.be/MQrLBYhvGyA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Major Release of JCB v2.6.0](https://git.vdm.dev/joomla/Component-Builder/wiki/043-Major-Release-of-JCB-v2.6.0)
 + [00:00](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Removing All Repeatable Fields In Joomla Component Area**
 + [02:03](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m03s) **Changes Only Affects The Component Area**
 + [02:20](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m20s) **Upgrade: Compiler Import/Export Of JCB Packages**
@@ -476,7 +476,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [10:48](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=10m48s) **Not An Error Only A Miss Configuration**
 + [11:39](https://www.youtube.com/watch?v=MQrLBYhvGyA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=11m39s) **Percentage Of Translation Required Can Be Changed**
 
-# [Hello World Component with Joomla Component Builder/Creator - Extended](https://youtu.be/IQfsLYIeblk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Hello World Component with Joomla Component Builder/Creator - Extended](https://git.vdm.dev/joomla/Component-Builder/wiki/044-Hello-World-Component-with-Joomla-Component-Builder-Creator-Extended)
 + [00:00:00](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s) **Application Of Extenstion**
 + [00:00:41](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m41s) **Changes in one place - Compiled in all Components**
 + [00:01:57](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m57s) **Become A Communinty Project**
@@ -560,7 +560,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [01:43:17](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h43m17s) **Add Option To Create**
 + [01:45:55](https://www.youtube.com/watch?v=IQfsLYIeblk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h45m55s) **Demonstrated - List Items, Open Individual Items, Create New Items**
 
-# [Adding your own rule validation to a field in JCB](https://youtu.be/Z6-ggKtX35o?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Adding your own rule validation to a field in JCB](https://git.vdm.dev/joomla/Component-Builder/wiki/045-Adding-your-own-rule-validation-to-a-field-in-JCB)
 + [01:55](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m55s) **Select Fieldtype To Add Validation - Textarea**
 + [03:03](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m03s) **Custom Validation Rule**
 + [04:14](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=04m14s) **JCB - Already Has Field Path And Rule Path**
@@ -570,7 +570,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [12:33](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=12m33s) **Add A Custom Messages To Validation**
 + [13:45](https://www.youtube.com/watch?v=Z6-ggKtX35o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m45s) **Add Messages In XML Path**
 
-# [General overview of how community snippets work](https://youtu.be/qr4I1jeCp7I?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [General overview of how community snippets work](https://git.vdm.dev/joomla/Component-Builder/wiki/046-General-overview-of-how-community-snippets-work)
 + [00:00](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Added A Community Concept To Snippets In JCB**
 + [00:50](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m50s) **New Snippet Area**
 + [01:29](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m29s) **Local And Community Snippets**
@@ -589,7 +589,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [12:52](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=12m52s) **Snippets Used In Four Key Areas**
 + [13:38](https://www.youtube.com/watch?v=qr4I1jeCp7I&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=13m38s) **When Details Not In Place - Say Dynamic Field**
 
-# [Tutorial on forking JCB snippets so you can share your snippets with the rest of the Cummunity](https://youtu.be/0hgHeQVTLOk?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Tutorial on forking JCB snippets so you can share your snippets with the rest of the Cummunity](https://git.vdm.dev/joomla/Component-Builder/wiki/047-Tutorial-on-forking-JCB-snippets-so-you-can-share-your-snippets-with-the-rest-of-the-Community)
 + [00:18](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m18s) **Fork JCB Community Snippets On GitHub, Export Snippets You Like To Contribute, Make Pull Request**
 + [01:10](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m10s)
    1. Improving Existing Snippet
@@ -617,7 +617,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [32:56](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=32m56s) **Git fetch upstream - Git checkout master - Git merge upstream master**
 + [34:00](https://www.youtube.com/watch?v=0hgHeQVTLOk&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=34m00s) **git push - Everything You've Done Gets Pushed To Your Cloned Version on GitHub**
 
-# [Tutorial on making a pull request at Joomla Component Builder Snippets](https://youtu.be/vQ-yxVtc-Co?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Tutorial on making a pull request at Joomla Component Builder Snippets](https://git.vdm.dev/joomla/Component-Builder/wiki/048-Tutorial-on-making-a-pull-request-at-Joomla-Component-Builder-Snippets)
 + [00:00](https://www.youtube.com/watch?v=vQ-yxVtc-Co&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Process of Taking Committed Changes To The Forked Version**
 + [01:43](https://www.youtube.com/watch?v=vQ-yxVtc-Co&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m43s) **Your Message Was Committed**
 + [02:08](https://www.youtube.com/watch?v=vQ-yxVtc-Co&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m08s) **Identifies If Forked**
@@ -629,7 +629,7 @@ The [list of videos](https://www.youtube.com/playlist?list=PLQRGFI8XZ_wtGvPQZWBf
 + [08:54](https://www.youtube.com/watch?v=vQ-yxVtc-Co&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=08m54s) **Command Line Instructions**
 + [09:52](https://www.youtube.com/watch?v=vQ-yxVtc-Co&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=09m52s) **Focus - Managing Snippets**
 
-# [The New Library Manager Area](https://youtu.be/rDjvgLYOt1o?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [The New Library Manager Area](https://git.vdm.dev/joomla/Component-Builder/wiki/049-The-New-Library-Manager-Area)
 + [00:00](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Libraries Dynamic In JCB**
 + [00:53](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m53s) **How It Used To Work**
 + [01:34](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m34s) **New Feature Added - Dynamic**
@@ -658,7 +658,7 @@ Add Files And Folders From The Same Custom Files**
 + [29:01](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=29m01s) **Old Implementation Still Works**
 + [29:38](https://www.youtube.com/watch?v=rDjvgLYOt1o&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=29m38s) **Need To Link Custom Admin View, Site View, Template, Layout to Spesific Library which is Available**
 
-# [Easy Translation via excel](https://youtu.be/q5NwKGnOHoQ?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Easy Translation via excel](https://git.vdm.dev/joomla/Component-Builder/wiki/050-Easy-Translation-via-excel)
 + [00:00](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **New Implementation Add To JCB To Do Translation Via Excel Spreadsheet**
 + [00:51](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m51s) **Need To Know - JCB Doesn't Work With Placeholders - Works Directly With English String**
 + [02:06](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m06s) **1. Need To Translate Create New Once**
@@ -674,7 +674,7 @@ Add Files And Folders From The Same Custom Files**
 + [12:51](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=12m51s) **Demostration**
 + [15:38](https://www.youtube.com/watch?v=q5NwKGnOHoQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=15m38s) **Changing The Percentage**
 
-# [Dynamic Router Implementation Explained](https://youtu.be/hYycPLbaMos?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Dynamic Router Implementation Explained](https://git.vdm.dev/joomla/Component-Builder/wiki/051-Dynamic-Router-Implementation-Explained)
 + [00:00](https://www.youtube.com/watch?v=hYycPLbaMos&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **New Implementation - Help For Router Complexity**
 + [00:49](https://www.youtube.com/watch?v=hYycPLbaMos&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m49s) **Search Engine URL Is Done With Router - JCB Builds Router**
 + [01:26](https://www.youtube.com/watch?v=hYycPLbaMos&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m26s) **Code - 'com_sermondistributor' - router.php**
@@ -688,7 +688,7 @@ Add Files And Folders From The Same Custom Files**
 + [12:20](https://www.youtube.com/watch?v=hYycPLbaMos&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=12m20s) **Sermon (Preacher id)**
 + [12:39](https://www.youtube.com/watch?v=hYycPLbaMos&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=12m39s) **Resolving Category**
 
-# [Automated database updates in Joomla during development of a component](https://youtu.be/zN2M15fzf_M?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Automated database updates in Joomla during development of a component](https://git.vdm.dev/joomla/Component-Builder/wiki/052-Automated-database-updates-in-Joomla-during-development-of-a-component)
 + [00:00](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Demonstration - Creating, Updating And Adding Database Tables**
 + [01:17](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m17s) **Runs Only On Fresh Install - thereafter It Will Not Run Again**
 + [02:44](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m44s) **Making Changes - JCB Updates**
@@ -697,7 +697,7 @@ Add Files And Folders From The Same Custom Files**
 + [07:24](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m24s) **Some Places That The Behavior May Not Function As Expected**
 + [08:02](https://www.youtube.com/watch?v=zN2M15fzf_M&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=08m02s) **Example - Only Way To Start History - Open It - Save And Close It**
 
-# [Quick Subform Demonstration](https://youtu.be/3j4xPQC4apI?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Quick Subform Demonstration](https://git.vdm.dev/joomla/Component-Builder/wiki/053-Quick-Subform-Demonstration)
 + [00:00](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Request On The Forum**
 + [01:13](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m13s) **Subforms - Create Fields You Want To Use**
 + [02:06](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m06s) **First Create A New Field**
@@ -707,7 +707,7 @@ Add Files And Folders From The Same Custom Files**
 + [05:33](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=05m33s) **Adding A Description, Maximum, Filter, Showon**
 + [08:19](https://www.youtube.com/watch?v=3j4xPQC4apI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=08m19s) **Adding Options(test) Subforms To Any Admin View**
 
-# [VDM Package Import Option](https://youtu.be/OHvawooT67s?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [VDM Package Import Option](https://git.vdm.dev/joomla/Component-Builder/wiki/054-VDM-Package-Import-Option)
 + [00:00](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **VDM Packages**
 + [01:24](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m24s) **If Sermon Distributor is Reset - Everything Gets Reset**
 + [02:22](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m22s) **Istall By Clicking Get Packages - Read All Information That Is Given**
@@ -715,7 +715,7 @@ Add Files And Folders From The Same Custom Files**
 + [04:33](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=04m33s) **Force Local Update - Overwrite Existing Data**
 + [07:39](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m39s) **Suggestion - Community Tab**
 
-# [Dynamic File and Folder Inclusion concept](https://youtu.be/_c7wzW075lA?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Dynamic File and Folder Inclusion concept](https://git.vdm.dev/joomla/Component-Builder/wiki/055-Dynamic-File-and-Folder-Inclusion-concept)
 + [00:00](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Introducing To A Feature - Adding Files, Folders As Code Of File To Your System**
 + [02:24](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m24s) **New Area - Advance**
 + [02:53](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Note - Adding Files**
@@ -730,7 +730,7 @@ Add Files And Folders From The Same Custom Files**
 + [16:16](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=16m16s) **Do As Note Says: Check If It Is The Correct Code**
 + [18:12](https://www.youtube.com/watch?v=_c7wzW075lA&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=18m12s) **Warning Area**
 
-# [How to use the file field type to upload a file in JCB](https://youtu.be/o482sK4DxkM?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [How to use the file field type to upload a file in JCB](https://git.vdm.dev/joomla/Component-Builder/wiki/056-How-to-use-the-file-field-type-to-upload-a-file-in-JCB)
 + [00:00](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Add/Upload A File To A Component** 
 + [01:06](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m06s) **Fieldtypes - File - Shows Attributes, values, some description, info**
 + [02:30](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m30s) **Adding New Attributes**
@@ -763,7 +763,7 @@ Add Files And Folders From The Same Custom Files**
 + [53:30](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=53m30s) **To Know Where The Values Are?**
 + [58:59](https://www.youtube.com/watch?v=o482sK4DxkM&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=58m59s) **Changing Of Image - Won't Remove Old One**
 
-# [Drag and Drop Upload functionality in JCB](https://youtu.be/UvzDyVQyHDI?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Drag and Drop Upload functionality in JCB](https://git.vdm.dev/joomla/Component-Builder/wiki/057-Drag-and-Drop-Upload-functionality-in-JCB)
 + [00:00:00](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s) **Drag And Drop Automated Crop Functionality**
 + [00:01:13](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m13s) **UIKit - Very Nice File Uploading Front-end**
 + [00:03:20](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m20s) **Using Javascript - HTML - Markup For Select - Drag And Drop**
@@ -808,28 +808,28 @@ Add Files And Folders From The Same Custom Files**
 + [01:12:53](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h12m53s) **'removeFile' - Some Point Do Validation**
 + [01:15:06](https://www.youtube.com/watch?v=UvzDyVQyHDI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01h15m06s) **'getFileJS'**
 
-# [The Quick Hello Word with JCB](https://youtu.be/MEKs1c7LfO8?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [The Quick Hello Word with JCB](https://git.vdm.dev/joomla/Component-Builder/wiki/058-The-Quick-Hello-Word-with-JCB)
 + [00:00](https://www.youtube.com/watch?v=MEKs1c7LfO8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Installation Of A Hello World Component For Free**
 
-# [Adding none database fields to an admin view](https://youtu.be/6OTRDIgxgq0?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [Adding none database fields to an admin view](https://git.vdm.dev/joomla/Component-Builder/wiki/059-Adding-none-database-fields-to-an-admin-view)
 + [00:00](https://www.youtube.com/watch?v=6OTRDIgxgq0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **New Function - To Add A Field To A View Without Adding The Field To The Database**
 + [01:34](https://www.youtube.com/watch?v=6OTRDIgxgq0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m34s) **Multiple Implementations Helps To Get A SubForm On The Page**
 + [02:24](https://www.youtube.com/watch?v=6OTRDIgxgq0&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m24s) **New Feature - None DB**
 
-# [The custom dashboard option in JCB](https://youtu.be/tU7TeYn1Djo?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [The custom dashboard option in JCB](https://git.vdm.dev/joomla/Component-Builder/wiki/060-The-custom-dashboard-option-in-JCB)
 + [00:00](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Adding Your Own 
 custom Dashboard To Your Component**
 + [00:43](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m43s) **Adding Tabs**
 + [02:41](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m41s) **Open Hello World Component - Dashboard**
 + [04:34](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=04m34s) **Use A Custom Dashboard - JCB Compiler Dashboard**
 
-# [Add or Remove Prefix to Component Name in Joomla Menu](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s)
+# [Add or Remove Prefix to Component Name in Joomla Menu](https://git.vdm.dev/joomla/Component-Builder/wiki/061-Add-or-Remove-Prefix-to-Component-Name-in-Joomla-Menu)
 + [00:00](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Little Arrow - Prefix In Front Of Component Builder**
 + [00:26](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m26s) **Global Tab - Add Menu Prefix**
 + [00:56](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m56s) **Link To A List Of HTML Character Entities**
 + [01:36](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m36s) **Illustration - Change The Prefix**
 
-# [Add your own JCB packages to the JCB Community Directory](https://www.youtube.com/watch?v=8FplwKKa708&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+# [Add your own JCB packages to the JCB Community Directory](https://git.vdm.dev/joomla/Component-Builder/wiki/062-Add-your-own-JCB-packages-to-the-JCB-Communty-Directory)
 + [00:00](https://www.youtube.com/watch?v=8FplwKKa708&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Import JCB Packages - New Tab Called Community Packages**
 + [01:17](https://www.youtube.com/watch?v=8FplwKKa708&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m17s) **The Clone Feature**
 + [02:00](https://www.youtube.com/watch?v=8FplwKKa708&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m00s) **The Import Feature - Merge Yes Or No**
@@ -850,7 +850,7 @@ Request**
 
 # Proposed Collaborative Workflow in JCB
 
-# [How to install JCB Packages](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s)
+# [How to install JCB Packages](https://git.vdm.dev/joomla/Component-Builder/wiki/064-How-to-install-jcb-packages)
 + [00:00](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Two Ways To Get To The Installing View - Import JCb Packages Icon OR Joomla Component - Import Packages**
 + [01:20](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m20s) **Make Sure Of Integrity Of The Package**
 + [02:28](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m28s) **Tutorial Explaining Why We Will Do Things The Way We Do**
@@ -859,7 +859,7 @@ Request**
 + [07:04](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m04s) **Component Being Imported**
 + [08:04](https://www.youtube.com/watch?v=PGmEoliopv8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=08m04s) **Takes Awhile To Update - Updating IDs, Views, Fields**
 
-# [JAB18 Using Joomla Component Builder](https://youtu.be/S9heClCWJrg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
+# [JAB18 Using Joomla Component Builder](https://git.vdm.dev/joomla/Component-Builder/wiki/065-JAB18-Using-Joomla-Component-Builder)
 + [00:00](https://www.youtube.com/watch?v=S9heClCWJrg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **More Solutions Than Joomla Component**
 + [00:40](https://www.youtube.com/watch?v=S9heClCWJrg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m40s) **Why Use A Tool?**
 + [02:18](https://www.youtube.com/watch?v=S9heClCWJrg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m18s) **Joomla Component Builder Is A Tool**
@@ -887,7 +887,7 @@ Request**
 + [40:29](https://www.youtube.com/watch?v=S9heClCWJrg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=40m29s) **Give Aways**
 + [44:29](https://www.youtube.com/watch?v=S9heClCWJrg&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=44m29s) **Questions**
 
-# [The New Fields Area To Make Things Easier](https://www.youtube.com/watch?v=26x_Sc8jbp8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m08s)
+# [The New Fields Area To Make Things Easier](https://git.vdm.dev/joomla/Component-Builder/wiki/066-The-new-fields-Area-to-make-things-easier)
 + [00:08](https://www.youtube.com/watch?v=26x_Sc8jbp8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m08s) **Explaining Changes In The Field Area**
 + [00:46](https://www.youtube.com/watch?v=26x_Sc8jbp8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m46s) **A Quick Recap How It Used To Look**
 + [01:55](https://www.youtube.com/watch?v=26x_Sc8jbp8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m55s) **Removed The XML Definition Area Replaced It With Sub-form**
@@ -897,12 +897,12 @@ Request**
 + [08:06](https://www.youtube.com/watch?v=26x_Sc8jbp8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=08m06s) **Display Option**
 + [08:53](https://www.youtube.com/watch?v=26x_Sc8jbp8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=08m53s) **Validate Option**
 
-# [Adding Language String To Your Component And Get The Language Placeholder For Dynamic Use](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+# [Adding Language String To Your Component And Get The Language Placeholder For Dynamic Use](https://git.vdm.dev/joomla/Component-Builder/wiki/067-Adding-Language-String-to-your-Component-and-get-the-Language-Placeholder-for-dynamic-use)
 + [00:00](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Quick Tip How To Add String To Your Component**
 + [01:32](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m32s) **Want The Placeholder To Be Generated**
 + [03:11](https://www.youtube.com/watch?v=_mXlbAO79J8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m11s) **Looking In The Code**
 
-# [Library Manager Anticipated Functionality](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+# [Library Manager Anticipated Functionality](https://git.vdm.dev/joomla/Component-Builder/wiki/068-Library-Manager-Anticipated-Functionality)
 + [00:00](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Talk About The Expected or Anticipated New Labrary Feature That Is Being Added To JCB**
 + [02:30](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m30s) **Two Functions - prepareDocument And setDocument**
 + [03:39](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m39s) **Conditional Option**
@@ -910,7 +910,7 @@ Request**
 + [07:03](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m03s) **Creating A File By Clicking Edit, Add New Files**
 + [10:50](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=10m50s) **Condition Options - Global Value And Page Value**
 
-# [Join Fields In The Admin List View With Field Relations](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+# [Join Fields In The Admin List View With Field Relations](https://git.vdm.dev/joomla/Component-Builder/wiki/069-Join-Fields-in-the-admin-list-view-with-field-relations)
 + [00:00](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Feature Effects How JCB Builds**
 + [01:27](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m27s) **What The Feature Is All About?**
 + [02:35](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m35s) **Demonstration - New Feature - Field Relations**
@@ -926,20 +926,20 @@ Request**
 + [21:17](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=21m17s) **Preacher Field - Two Fields - Name And Description**
 + [22:15](https://www.youtube.com/watch?v=hh4IIPmYIY8&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=22m15s) **Demonstration - Combining Preacher With Name Row**
 
-# [How To Change The License Template In JCB](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+# [How To Change The License Template In JCB](https://git.vdm.dev/joomla/Component-Builder/wiki/070-How-to-change-the-License-Template-in-JCB)
 + [00:00](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Talk About Changing The License Template**
 + [00:57](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m57s) **Demonstration - How It Works**
 + [01:50](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m50s) **Changing The Templates**
 + [05:00](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=05m00s) **Placeholders - Helper, Compiler, Infusion**
 + [07:03](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=07m03s) **Suggestion - Save As... - Give Your Name - Save - New File**
 
-# [Reuse Custom Code](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+# [Reuse Custom Code](https://git.vdm.dev/joomla/Component-Builder/wiki/071-Reuse-Custom-Code)
 + [00:00](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **How To Use Code Across JCB By Taking Advantages Of A New Feature**
 + [01:12](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=01m12s) **Pull Up A Docker Image Of Joomla**
 + [03:00](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=03m00s) **Looking At Examples - GetVieweID**
 + [05:55](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=05m55s) **Another Way To Reuse - getFilePath**
 
-# [Setup Local Development Environment With Bitnami](https://www.youtube.com/watch?v=zpS52k89YcI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
+# [Setup Local Development Environment With Bitnami](https://git.vdm.dev/joomla/Component-Builder/wiki/072-Setup-Local-Development-Environment-with-Bitnami)
 + [00:00](https://www.youtube.com/watch?v=zpS52k89YcI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m00s) **Bitnami - Distributor Of Images**
 + [00:43](https://www.youtube.com/watch?v=zpS52k89YcI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00m43s) **Installing Bitnami Joomla Stack**
 + [02:54](https://www.youtube.com/watch?v=zpS52k89YcI&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=02m54s) **Download - Using Windows/Mac/Linux**

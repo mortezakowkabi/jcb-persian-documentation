@@ -1,79 +1,334 @@
-# (work in progress)
+# Building a "Hello World" Component with Joomla Component Builder
 
-### [Video](https://www.youtube.com/watch?v=1KBBtQUxMTc)
+*(Complete Beginner Walkthrough)*
 
-### Introduction
-+ [01:55](https://youtu.be/1KBBtQUxMTc?t=115) **Install Joomla! Component Builder/Creator** _Download and install Joomla Component Builder/Creator_.
+### [Tutorial Video](https://www.youtube.com/watch?v=1KBBtQUxMTc)
 
-You can find the component in the repository on GitHub. Note, these files are not populated with data. The component shows you the very bare essentials of what's required to make a component work in Joomla! But we are going to do much more than the code does in this component. When we are done we will have an application with many lines and we will add structures so it goes way beyond just a wire frame component. The latest release can be downloaded [here](https://github.com/vdm-io/Joomla-Component-Builder). After downloading the file, upload it to the root of the website directory you will be installing it in. For this example, click the Releases link, download and install the file. The first thing to do next is create a field.
+---
 
-### Create Greeting Field
-+ [02:46](https://youtu.be/1KBBtQUxMTc?t=166) **Create a Field** _Create Greeting Field_.
+## Introduction
 
-There are many field types. We need to create a basic custom text field named greeting. You will see there are a lot more fields which I'll leave unchanged. I'm also going to remove a few things but the field will still work even though these lines are removed. Change the type to VARCHAR, save and close.
+[01:55](https://youtu.be/1KBBtQUxMTc?t=115)
 
-### Create Admin View
-[03:51](https://youtu.be/1KBBtQUxMTc?t=263) **Create an admin view** _Create an admin view and link fields to database_. 
+This tutorial teaches you how to build a fully working Joomla component from scratch using **Joomla Component Builder (JCB)**.
+You'll start with the simplest setup - a **"Hello World"** greeting - and end with a dynamic site view where you can list, view, and even edit those greetings from the frontend.
 
-After creating a new field the next thing to do is create an admin view. This is what links fields to the database. Call it greeting for a single record and greetings for a list of records and greetings for a system name so that we can identify this across the system. I am going to add the greetings and a few generic icons. Then link that field we made to show, be the first one, act as a title, be sortable, be searchable and be a link in the first tab and first in that tab. Then give it permissions and save. The rest of the structure could be left as is. We will have a working component with this as an admin view so save and close.
+**What you'll do:**
 
+1. Install JCB
+2. Create a new field (`greeting`)
+3. Build an admin view (`greetings`)
+4. Create and compile a new component (`world`)
+5. Add frontend site views
+6. Link menu items and add edit links
 
-### Create Component Called World and Compile It
-[03:51](https://youtu.be/1KBBtQUxMTc?t=263) **Create Component Called world** _Create an admin view and link fields to database_. 
+Download or explore the latest JCB version from the [VDM GitHub Releases](https://github.com/vdm-io/Joomla-Component-Builder), then install it via **Extensions → Manage → Install**.
 
-Now we need to create a component Click on new and it loads a new Joomla component. I'm going to call it world. For the most part I'm just adding some test data here. I can select an icon. An image can be shown after installation of the component as well as in the admin area. The rest of the features in the settings that we need to change are:
+---
 
-* The link to the admin view
-* Select greetings
-* Add to main menu
-* Allow sub-menu
-* Auto-checking
-* History
-* Has metadata
-* Has access
-* Allow import
-* Allow export
+## 1. Create the Greeting Field
 
-This next one is very important, add a create site view. That way in the site area it will be created for us. For the editing view, it will not create a list view. Edit and create greetings views will be created in the site area. We want this to be the first. There they are linked with the admin view. Click save and close and we are ready to compile our component.
+[02:46](https://youtu.be/1KBBtQUxMTc?t=166)
 
-Compile it and install it into Joomla. For installation, deselect some of the selections as I am doing and then compile. 8000 lines are written and 160 pages get created. That's way more than the hello world component we just looked at. If we open the back end you think you could install it via the normal installer. In fact, let's Let's see if we can get that going. I've pasted the URL here that we find on this page here and we will check it and install. We now have the hello world component installed and we can open it here and go to hello world. We can go to the list and this is where a list of greetings will show. Click new and we can add some text let's say "Hi there James Sable". Close and there is our greeting. Open it and there it has a publishing structure that has permissions plus version control. So if we change this to "Hi there Michael", save and close it you will see that it updated. Open it and you can go to the versions. You can see that it is working. Open the previous version and you can see who changed it.
+Fields define the data columns your component will use. Here you'll create a simple text field that stores greetings.
 
-All of this was done with just a few clicks and the result is a workable component which is now installed. If you look at the code you'll see the installer script of the hello world component. It adds the whole component into the content types and also into all the relevant areas. It also checks to see that we are at version 3.6 of Joomla!. It has also created the greeting table and modules. It has created helper structures. There is a helper class that was set up which has many features, functions and methods. Browse through the helper class in here if you know PHP. There is a very helpful method used in the code that grabs one value from the database. There are many functions in here which you can now use in your component by simply calling the helper class. This is what the application does and there is a MySQL folder with a few MySQL files, and one PHP file. It is very basic but JCB built hello world in a very short time. Look through this folder, learn the structures and what you need to know about the components.
+### Steps
 
-### Add a Front End to this Component
-[12:15](https://youtu.be/1KBBtQUxMTc?t=737) **Create an admin view** _Create an admin view and link fields to database_. 
+1. Go to **JCB → Fields → New**.
+2. Under **Set Properties** tab:
 
-For the next part of the tutorial we will focus on adding a front end to this component and you must remember that We left the front end open because we want to allow developers to be able to express themselves in unique ways and not have a cookie cutter recipe that just gets used over and over. JCB allows diversity and differences between components. Ones built using JCB only look similar in the admin area. The site area can look completely different from anything else. To avoid the sameness means a lot of custom coding is needed for the site area. You need to know PHP at a more advanced level and how Joomla! works to make it work the way you want. I'm going to give you the quickest and shortest path to getting a site area which first can display the items and second, can edit them.
+   * **Name** → `greeting`
+   * **Label** → `Greeting`
+   * **Type** → Select **Text**
+3. Switch to the **Database** tab:
 
-### Build a Dynamic Get
-[12:15](https://youtu.be/1KBBtQUxMTc?t=814) **Build a Dynamic Get** _Build a Dynamic Get to begin setting up the front end_.
+   * **Data Type** → `VARCHAR`
+   * **Length** → `255`
+   * **Null Switch** → `NOT NULL`
+   * **Modelling Method** → `Default`
+4. Leave **Category** and **Publishing** defaults unchanged.
+5. Click **Save & Close**.
 
-The first thing to build when we are setting up the front end is a dynamic get. It is used in JCB to access various tables and combine their data sets. It also delivers them to the front end of any site view. You can reuse them and add multiples of them. For this example I am going to build a very simple one. First I'm going to have it read a list and I'm going to make sure this is a list query. Next I am linking it to an admin area view, greetings. I am going to have it retrieve all the data. I'm going to say no, I don't want pagination and I'm going to have one WHERE filter published here. Copy that and put it in here and say when published equals 1 so we just grab published items and nothing else. There we go, grabbing all the data from this one table and displaying it on the front end. We are filtering it with this option. You can join other tables related with this data but I'm not going into depth here. The reading list is done.
+> **Tip:**
+> The Database tab defines the SQL column JCB will generate.
+>
+> * `VARCHAR(255)` stores short text.
+> * `NOT NULL` makes it required.
+> * `Modelling Method` controls data handling (JSON, base64, etc.) - "Default" is fine here.
 
-We need to have another dynamic get to view one greeting so let's create that and call it greeting and leave it as a get item. Go back into the view and then select greeting and this time use a filter and add ID here and a dot id So that should do it. Save and close so now we have our two Dynamic Gets in place. The second step is adding the site view for the list of items.
+---
 
-To do this, select the get query for the list. If we want to see how it possibly would look I'm in the PHP and we have an area where you can select the same option. I'll give you an idea of how the PHP may look. This may differ depending on how you set up your dynamic get. Most of the time it is correct and you can simply copy and paste some of the snippets into your code here and Immediately start using it. So I'm going t add am ordered list here So we will have a list item. Now we'll just echo greeting as a text and then grab that snippet pasted in there the close the unordered list. 
+## 2. Create an Admin View
 
-Now we want to use an ordered list here so, we are going to use this as the opening tag and then close it and call this reading greetings and greetings again for the greetings initial description. We are all set here but for now there are no links. We will have to come back and add them. For now, I'm just adding an iteration over there of the items and display the greetings then save it and close.
+[03:51](https://youtu.be/1KBBtQUxMTc?t=263)
 
-Now we are going to create one look and one greeting so again we will just select that one greeting get method and you see the greeting looks like this. So, echo it and make it an H2 Header tag. We can't call it greeting because We have an editing View that will be added dynamically to the front end because the editing view on the back is called greeting. We cannot call another front end View greeting. We have to call it something else otherwise it will conflict. So I'm just going to call it greet For now. We can call it greeting here but here we call it greet and then greeting and then greeting on top here as well. We've got all the necessary components lined up for this to function as expected. Save and close. Now we have our two areas to use it in. I'm going now to the component to add them to this component. Go to settings and then site views. It doesn't have a menu it has metadata. It's not the full view. We can add access and then make the default public. The second one is greetings. This must have a menu and also metadata. This is the default View. We can also give it access and make it by default public. Go to site views save and close. Save and close. Go to the compiler and compile the other world component for the second time. Once compiled, you now see that we have nearly 13000 lines of code. Click here to install as it is the easiest instead of going to the installer.
+The **Admin View** connects fields to a database table and creates Joomla's backend management screens.
 
-Now if we go back to the code and we scroll down we see there is now a component on the front end called hello world. It has the models greet, greeting and greetings It has the views greet, greeting and greetings. This one is an edit view. This greeting and this one are display views. This one is where you can look at how it is getting the values from the database using the dynamic get. It built basically this function for us, plus parts inside of this function here. It also added the WHERE filter for us and all the values are here as expected. Here is where their permission is checked so it is going to check whether you have the correct ones. Because we have not installed the component as a blank component as we installed it, then made changes, then installed it again it will not be set to public by default. The way that it sets the view public is during post install. It sets a rule allowing site access to public which usually is the ID Group 1. Then it updates the asset table and since this isn't a new install It actually doesn't do that and so you won't have the expected result of the view being public simply because the component wasn't installed as fresh to show you how it will behave if a user installs this the first time. The computer compiled as it is now so I'll uninstall component quickly and install it again which will then activate this feature.
+### Steps
 
-Now songs you may not understand or life just said that's ok I would just suggest it As you've developed the moment you add the front Side views to the component And you have actually tweaked it success and all those Related parameters It might be best to just uninstall the component and install it completely Fresh To see the fool behaviour working as expected Mum I say but I already created some demo data and now I need to put them punch them Back in again will there is a way to sort of resolve that And that is going to the admin View opening the greeting Going to the MySQL tab Select yes Select Table And then Click add to select the table Then scroll down to that specific table in a database It should be All the world Greeting Then you'll see it loads the specific values from the database And how they will be named in your Backup I usually remove this created by modified by because it May cause conflicts if user ID is changed from one July installed to another And I also sometimes remove The access Value As this may also differ from system to system And the acid ID So I'm only exporting values which I think are consistent across Systems Ok Obviously This one is well And this one Gate safe Now 75
+1. Go to **Admin Views → New**.
+2. Configure basic info:
 
-Now this isn't enough just having a fun up there Sequel table if you wanna retain the data now what what date am I talking about About well we installed it right and so if we open the component We added This greeting so the retained this greeting if you've created quite a few Dummy readings then to retain them so that they get install the Even if it's a fresh install that's the way you do that but you have to compile it The component you have to compile the component before you uninstall it Otherwise it will shout at you and say that it couldn't find the database Because you obviously gonna remove it when you uninstall it So I'm just gonna compile this again And then after it been compiled I'm gonna uninstall it as I said I would So you're in the extension manager I'm gonna click On the hello world And uninstall And it would have set for the uninstalled it Then I'll gonna go back to the compiler page I just click on the install And then if I go back to the component I see that it's added that greeting back in And I haven't lost the beat ok Now let's look at the front end By linking it to a menu item So have greeting selected as the menu item type And I'm gonna just make this the the default page The home page and save and close I'm gonna open the homepage
+   * **Name (Singular)** → `greeting`
+   * **Name (Plural)** → `greetings`
+   * **System Name** → `greetings`
+3. (Optional) Choose an icon.
+4. In the **Fields** tab, click **Add Field** and choose `greeting`.
 
-There we see our greeting is is greeting Hi there Michael So it's actually worked as expected Let's just add another one to see it how it will look when we have more than one greeting Ok I think that we have enough If we go back to the front end And refresh There we go there's like readings now to make them clickable and editable Let's do the opening it and just reviewing it first When the side view area I'm gonna open greetings Power round This Greeting Echo I'm gonna add an eighth ref And a link we gonna build a link using some of the helper methods and And also what is called The Slug Just like wouldn't necessarily this time function because we didn't add an alias to our table But when there is an aliens dislike will dynamically be used within search engine friendly urls I'm not gonna demonstrate or explain too much about this But I'm gonna just quickly at the link in here Now I know You may be wondering where is this Items slow come from It's not showing here on the side Well Like with most of these developing components You need to know a little bit about how To read code and understand code and that's why you would compile the code And then actually go look at the compiled code in your ID so if you were to open the Model Which Is using this Dynamic Gate You see that it actually built a slug in the model So you're in the model you're the get items So it's looping through them here and then it's checking with it as an alias And then ID and if they are there sure then It actually Combines them with this And Create a slug otherwise it just plays as the ID in The Slug And That's how you would know that the Slug is already created and you can just use it
+   * Mark it as:
 
-And so it's always good to Why do you developing a component with JCB Go into the code read the code look at what it's done and I'll help you see it honest And how to extend it We trying to follow the normal way of how Zuma lies able to you know develop and be used so That you can Easily follow along in that it wouldn't get It be not trying to reinvent with the wheel but doing things the way that you would expect if you know How to build to my confidence Beira by hand Ok so Now we friends that link You basically used to a route which is a A common class in building roads in Joomla USB helper out class you can look that up It is in the Site area of the component under the helper folder and it has a function called Greed route And we just passing it The Slug and that will crank out the whole URL for us And so we gonna save and close here I just say for now Now we gonna just compile it again Install it back in
+     * **Show in list**
+     * **First column**
+     * **Title field**
+     * **Sortable**
+     * **Searchable**
+     * **Linked to edit view**
+5. Click **Save & Close**.
 
-Sorry haven't made any changes to permissions or any other things other promotions just A short The format again is only when the related to the site views that we need to maybe just read Stall The whole component do keep in mind that you could go into the backend and set the permissions If that is what you would prefer so in the back and you can just go to options the back and Of the component I mean And there's two permission tab And you can see this is a whole list of permissions just for the greetings and because we install The component a fresh it's set the reading side view access to public As well as the greetings site for us access to public so that's really what we did We just Add that done automatically but you could have come in here and just change that to allowed And save and it will have chief the same thing You'll see that there is a whole lot of features here in allowing You to edit certain parts of the values for a specific groups
+This admin view manages greeting records in the backend.
 
-And so all of this JCB is displaced Uno for you and ready to use Now did we have installed the component let's refresh this homepage I will see that all of these things are now applicable If we click on one of them We see it only displays that specific Greeting you can click back And then click another one and it And so it's working as expected is generating for us the links and it is Actually opening that View And displaying the value as expected Now to add an edit button Which can then edit these Items on the front end of the site I would mind you noticed we just crossed her half an hour barrier so everything we've done now Taking you half an hour to build a hollow world component which is far more advanced and superior it and Any other Homeworld component I've seen And so I think even just if we were to end here JCB is already proven to you that It is actually able to build Very Dynamic and powerful components in a very quick and short amount of time
+---
 
-But now just to Push the boundaries even little further let's link the editing options in for this Items No you might want to have the mission or check here When The user isn't in the correct group that it wouldn't display the edit Hi Tim sorry the edit link Now If you do not know how to do that just a little heads up I can show you where to look Turn the back in the game going to the code we open the Hollywood component We go interviews Run into greetings And then we open this view HTML dot php file I will see that we are pulling a Helper class here And using the get actions method Passing reading to it as saying we want the permissions for the Greeting Now that delivers to us a An object which we then can ask Whether the user has edit rights Whether the user can create create the lead weather can say the state and so That is how we can get You know Into the permissions you can look at this Get actions Method in the front you basically go to hollar World helpers and Open the Helper class And scroll down a little And you'll get The get actions method is right here So you're passing interviews name you could even pass it the record ID because we know That you could set permissions not only the review but even brighter mmmm And so Then this helps you Actually determine the permissions and send back the results now Where was open to improving this this is what I've done so far in in Helping us getting a quick answer on permissions from anywhere in the component And so you could make use of this to determine some of the permissions for actually Being able to edit the items Yet Even if you left out Those used dump the button right on the page
+## 3. Create the Component "World"
 
-The controller actually has a lot of these permissions already in place and So you're shouted you until you don't have permissions to edit this item and so that's what I'll demonstrate So I'm just gonna add it all Link here To actually edit The the item Now again you might not know what that link should be And you could go back to the back end of the component To define the link So you're in the backend I'm just simply opening the templates view and then I'm opening The body File and then hear it it has the link obviously it's in the back end it Actually is related to the admin folder but in the front there and it is related to the site root So you could just grab this Snippet here To build your link Scroll down a little in the page And basically search for this variable And you'll see that we're using that edit variable Adding and ID = and then just adding the ID That's how we building the link in the backend And you could do similar in the front The add some custom PHP to the front of the site there is a PHP tab And Custom view script and it says your add custom PHP script to the head of the file so I'm just go Paste that in there Basically
+[04:55](https://youtu.be/1KBBtQUxMTc?t=295)
 
-We now have an edit variable on the page And so in the default View area I'm just gonna Echo that edit and then again to the and ID Eco CID Around the edit Link And how this click save And then compile This component again and install And now go to the home page and refresh Now we see there is a new edit link here If we click it now It's gonna shout at us and say no you don't have permit you're not permitted to edit this item so I'm just logging here as a user That will have permissions Ok I'm not logged in I'm gonna click on this edit link again And as you can see it's opened and edit view where I can see the publish conserves the permissions And I can change William Do Gemini and save and close And it's edited that value And that's it we have Demonstrated the build of a hello world component From scratch And in just a few Clicks We have successfully set up a component with tremendous advanced features already At its fingertips Ready to go Well I hope this will be helpful to many if you're out there and Enjoy
+Now you tie everything together into a real Joomla component.
+
+### Steps
+
+1. Open **Components → New**.
+2. **Name** → `World` (system name auto-fills as `world`).
+3. (Optional) Select an icon or image.
+4. Under **Admin View Settings**:
+
+   * Link the main admin view to `Greetings`.
+5. Enable the following options (as shown in video):
+
+   * Add to Main Menu
+   * Allow Sub-menu
+   * Auto-checking
+   * History
+   * Has Metadata
+   * Has Access
+   * Allow Import / Export
+6. Under **Site View Options**, enable:
+
+   * **Create Site View** → Yes
+   * **Linked Admin View** → `Greetings`
+   * **Has Edit View** → Yes
+   * **Default View** → `Greetings`
+7. **Save & Close.**
+
+---
+
+## 4. Compile and Install the Component
+
+[07:25](https://youtu.be/1KBBtQUxMTc?t=445)
+
+1. Go to **Compiler** in JCB.
+2. Select your new component (**World**).
+3. Deselect any optional build items not needed.
+4. Click **Compile**.
+
+JCB generates all required PHP, XML, and SQL files (≈ 8 000 lines, 160 files).
+When done, click **Install** to add it directly to Joomla.
+
+### Verify the Admin Area
+
+* Navigate to **Components → Hello World → Greetings**.
+* Click **New**, enter "Hi there James Sable", and **Save & Close**.
+* Reopen, change to "Hi there Michael", save, and check **Versions**.
+  [09:55](https://youtu.be/1KBBtQUxMTc?t=595)
+
+You'll see version control and permissions working automatically.
+
+---
+
+## 5. Add Frontend (Site) Views
+
+[12:15](https://youtu.be/1KBBtQUxMTc?t=737)
+
+JCB lets you quickly build frontend pages (site views) to display data.
+
+---
+
+### 5.1 Create Dynamic Gets
+
+[13:34](https://youtu.be/1KBBtQUxMTc?t=814)
+
+**A. List of Items**
+
+1. **Dynamic Gets → New**
+2. **Type** → List Query
+3. **Admin View** → `Greetings`
+4. **Pagination** → No
+5. Add a WHERE filter:
+
+   ```sql
+   published = 1
+   ```
+6. **Save & Close**
+
+**B. Single Item**
+
+1. **Dynamic Gets → New**
+2. **Type** → Get Item
+3. **Admin View** → `Greetings`
+4. WHERE filter:
+
+   ```sql
+   id = {id}
+   ```
+5. **Save & Close**
+
+---
+
+### 5.2 Create Site Views
+
+[17:05](https://youtu.be/1KBBtQUxMTc?t=1025)
+
+**List View (`greetings`)**
+
+```php
+<ul>
+<?php foreach ($this->items as $item): ?>
+  <li><?php echo $item->greeting; ?></li>
+<?php endforeach; ?>
+</ul>
+```
+
+**Single View (`greet`)**
+
+```php
+<h2><?php echo $this->item->greeting; ?></h2>
+```
+
+> **Tip:**
+> Use `greet` for the single view to avoid conflicts with the edit view `greeting`.
+
+---
+
+### 5.3 Attach Site Views to Component
+
+[20:30](https://youtu.be/1KBBtQUxMTc?t=1230)
+
+1. In **Component → Settings → Site Views**:
+
+   * `greet` → no menu; metadata on
+   * `greetings` → menu on; metadata on; set default
+   * Access → Public for both
+2. **Save & Close**, then **Compile** and **Install** again.
+
+---
+
+## 6. Verify Frontend and Public Access
+
+[24:00](https://youtu.be/1KBBtQUxMTc?t=1440)
+
+If your new views don't appear publicly:
+
+1. Uninstall the component.
+2. Reinstall it fresh - JCB applies public access on first install.
+
+To keep existing data:
+
+* In **Admin View → MySQL Tab**, enable table backup.
+* Exclude volatile fields (`created_by`, `modified_by`, `access`, `asset_id`).
+* Compile before uninstalling.
+
+---
+
+## 7. Link a Menu Item
+
+[27:40](https://youtu.be/1KBBtQUxMTc?t=1660)
+
+1. Joomla → **Menus → Main Menu → New**
+2. **Menu Item Type** → Component → Hello World → `Greeting`
+3. (Optional) Set as **Home**
+4. **Save & Close**, then view the site.
+
+You'll see "Hi there Michael".
+
+---
+
+## 8. Make List Items Clickable (Using Slug & Route Helper)
+
+[31:10](https://youtu.be/1KBBtQUxMTc?t=1870)
+
+```php
+<ul>
+<?php foreach ($this->items as $item): ?>
+  <li>
+    <a href="<?php echo JRoute::_('index.php?option=com_world&view=greet&id=' . $item->slug); ?>">
+      <?php echo $item->greeting; ?>
+    </a>
+  </li>
+<?php endforeach; ?>
+</ul>
+```
+
+> **Note:**
+> JCB creates the `slug` automatically in the model (via `alias` + `id`).
+> You can also use the helper route method:
+> `WorldHelperRoute::getGreetRoute($slug)`
+
+Recompile and install.
+
+---
+
+## 9. Add Edit Links on Frontend
+
+[34:55](https://youtu.be/1KBBtQUxMTc?t=2095)
+
+In the **Custom PHP Tab** of the site view:
+
+```php
+$this->edit = JRoute::_('index.php?option=com_world&task=greeting.edit');
+```
+
+In the template:
+
+```php
+<a href="<?php echo $this->edit . '&id=' . $this->item->id; ?>">Edit</a>
+```
+
+Recompile and Install.
+If you click **Edit** without permission, Joomla shows "Not permitted."
+Login as an authorized user to see the edit form.
+
+---
+
+## 10. Verify Permissions Logic
+
+[38:40](https://youtu.be/1KBBtQUxMTc?t=2320)
+
+The helper class (`/admin/helpers/world.php`) contains:
+
+```php
+getActions($view, $id = 0)
+```
+
+This returns permissions such as:
+
+* `core.create`
+* `core.edit`
+* `core.delete`
+* `core.edit.state`
+
+Use these to show or hide buttons depending on user rights in your templates.
+
+---
+
+## Result
+
+You've now built a Joomla component that supports:
+
+* Admin field definitions and database integration
+* Dynamic Gets and site views
+* Versioning and permissions
+* Public frontend display and editing
+
+Your new **Hello World** component demonstrates how quickly JCB can generate powerful Joomla applications with just a few clicks.
+
+---

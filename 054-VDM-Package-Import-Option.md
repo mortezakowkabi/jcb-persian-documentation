@@ -1,50 +1,190 @@
-# VDM PACKAGE IMPORT OPTION
+# VDM Package Import Option — Joomla Component Builder Documentation
 
-[00:00:00](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+*(Based on video tutorial: “VDM Package Import Option”)*
 
-This **VDM package** option that has been put in place will be great news for those who have purchased some of the JCB packages, like the Advanced Demo Component and the Sermon Distributor Component.
+---
 
-[00:00:20](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m20s)
+## Overview
 
-This is a demonstration of what had been done and also some suggestions for future changes in the import components area. An extra tab has been added by which paid or free components can easily be imported. [00:00:39](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m39s)  It is called the **VDM packages**.
+[00:00:00]
+The **VDM Package Import Option** in Joomla Component Builder (JCB) allows developers to easily import prebuilt component packages—either **free or paid**—from the official JCB GitHub repositories or other authorized sources.
 
- It will take a while to load it since it queries GitHub and checks and gets a list of all the latest packages.  If GitHub is updated it will automatically show the new packages. [00:01:01](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m01s)  At the moment Hello World and the Demo versions are free packages and we are planning to add some more. 
+This feature is especially beneficial for users who have purchased **JCB packages**, such as:
 
-### If Sermon Distributor is Reset - Everything Gets Reset
+* The **Advanced Demo Component**
+* The **Sermon Distributor Component**
 
-[00:01:24](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m24s)
+It simplifies access to these ready-made components and automates importing them directly into your JCB installation.
 
-If you have already purchased the **Sermon Distributor** version, just select it. Since JCB is constantly improving and with it Sermon Distributor, we are making changes to Sermon Distributor and if you want to update yours or even if you have played with it and you want to reset it, but **remember if you have to reset it, it will reset everything including every field and even Field Types.** [00:01:52](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m52s) Do keep that in mind that if you install this package over the existing one, it will revert everything back, what is great though, is that Joomla keeps history. [00:02:07](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m07s) If you put your history on for the JCB component, you could take a step back to some of those areas.
+---
 
-### Install By Clicking Get Package - Read All Information That Is Given 
+## 1. Accessing the VDM Packages Import Tab
 
-[00:02:22](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m22s) 
+[00:00:20]
+A new **tab named "VDM Packages"** has been added under the **Import Components** section in JCB.
 
-Select the package that you would like to install and then click on 'Get Package'. This will take a while as it is downloaded from GitHub. Please make sure to read all these things.  You should end up on the page which usually shows who created the package. If you do not have a key, you could click on this 'sermondistributor' link to buy the key, [00:02:55](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m55s) or get it from any of the other packages as well, there is a link that says 'Buy Packages'. Here it will show the component that is being installed, SERMON DISTRIBUTOR 2.0.2 which is the latest version. You can add your key here. Then click 'Continue'.  Then it gets installed. 
+### Steps
 
-### Quiet Switch Added
+1. Go to **Components → Joomla Component Builder → Import Components**.
+2. Select the **VDM Packages** tab.
 
-[00:03:28](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m28s)
+JCB will now connect to GitHub to retrieve a list of all available packages.
+This process may take a few moments as it fetches live data.
 
-We added this new switch here 'Quiet' . Some of the releases might have a spelling mistake like this one here which is 'Quite'. It has been fixed and a fix for this had been pushed out. This 'typo' will be fixed in JCB 2.7.1. [00:03:50](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m50s)  This 'Quiet' switch gives the option to see exactly everything JCB does when a package gets imported. It shows what IDs were changed but it does not give you the names, only the ID references.  [00:04:19](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m19s)  Usually, it is set to quiet, so that you do not see all that detail except you would like to see if things had been done.
+[00:01:01]
+If GitHub repositories are updated with new packages, they will appear automatically within this list.
 
-### Force Local Update - Overwrite Existing Data
+**Currently available free packages** include:
 
-[00:04:33](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m33s)
+* Hello World
+* Demo Version
 
-If you want to overwrite existing data the 'Force Local Update' may be used. If it finds an item and that item is newer than the one [00:04:48](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m48s) that is being imported then it drops the import option, and it keeps the newer version in your system. It usually worked like this when the Force Local Update had been clicked to 'No'. If you change it to 'Yes', then it will ignore the time stamp completely and update the item irrespective of whether it is newer or older or whatever. [00:05:15](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m15s) Add the ID and then  click 'Continue'. Now you will have a very detailed printout. It will indicate that it has been found, and then updates it. But if it is not found, it will say, that ID so and so, in a certain field was changed to ID so and so, and it has been imported. [00:05:44](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m44s)  There is quite a long list of everything it did and at the bottom, it says 'Great!' 
+> **Tip:** More packages will be added over time. Ensure you have a stable internet connection to allow JCB to fetch the latest packages from GitHub.
 
-Everything was visible because we ticked it not to be Quiet. Sermon Distributor was imported. It should have all the data here. If the licensing might have changed another license (vdm.txt) can be added and then save and close. 
+---
 
-Then you can compile it. [00:06:28](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m28s) Select Sermon Distributor, click Compile, and then once it is compiled, then you have the Joomla package. It also includes the external script which is also a demonstration of the adding external scripts. It grabs it from GitHub. [00:06:54](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m54s) It is simply a script that checks for 'mime_types'. The first time it is very detailed but if it is open again, only this may be seen; (There have been 2 - code 'strings added to this component as EXTERNALCODE. To avoid shipping your component with malicious code'strings always make sure that the correct code'string values were used.).  Only if it changes will you see something like that again. You can click on install. If you go to components there it is Sermon Distributor fully mapped, and all functional. [00:07:17](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m17s)  JCB has built this by importing it first from our GitHub repository. Then you are able to adapt it and use it anywhere. That is the new feature, hope you like it.
+## 2. Resetting Sermon Distributor or Similar Packages
 
-### Suggestion - Community Tab
+[00:01:24]
+If you already have the **Sermon Distributor** component installed and wish to reset or update it:
 
-[00:07:39](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m39s)
+* You may **reinstall** or **import** the package again.
+* This will overwrite the existing component structure, **resetting every field and Field Type** to the original values.
 
-Go back there for a moment to Importing Components. The suggestion is to have a 5th tab. So there will be this tab VDM packages and then a Community tab where members of the community can share free components. We are still thinking about a sharing paid components tab. [00:08:04](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m04s) We want to avoid that it to become too complicated because if you click on anything and then click Get Package, that package has internal variables which decides what that values are going to be. [00:08:28](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m28s)
+[00:01:52]
 
-If we would click this 'googlePlusProfileFeed' value, it takes you to my shop where that specific product may be purchased. That is a value determined by the package which means it should not be that hard for us to include paid components.  [00:09:06](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m06s) Still under discussion is whether JCB should ask a contribution to support a project in this way.   
+> **Warning:** Importing a package over an existing one will **reset all data**, including custom fields, configurations, and field types.
 
-If anyone has suggestions please post it here at the bottom of the video, make comments. At the end of the day, we want to make sure that the community can use this as a nice tool. [00:09:33](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m33s)  I even thinking of moving this option, this  Importing of components, to an actual tab, on the dashboard. So you can get to this page without having to first go to components and then click through here. [00:09:54](https://www.youtube.com/watch?v=OHvawooT67s&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m54s) There is even that kind of discussion. But just for now we wanted to demonstrate the new feature. It has been able to do that already. We just did not have that extra tab but you could have copied the links to those packages on GitHub and have imported them that way. That is what the ReadMe files would have shown you if you purchase any of these keys.
+[00:02:07]
+To protect your previous work, ensure **Joomla’s Version History** is enabled for the JCB component.
+This allows you to roll back changes if necessary.
+
+---
+
+## 3. Installing Packages via "Get Package"
+
+[00:02:22]
+Once the package list loads, follow these steps:
+
+1. Select the desired package (e.g., Sermon Distributor).
+2. Click **Get Package**.
+
+This initiates the download from GitHub. The process might take a few minutes depending on package size and connection speed.
+
+[00:02:55]
+When prompted:
+
+* If the package requires a license key, a **link** to purchase or retrieve it will be displayed.
+* Enter your **license key** if applicable.
+* Click **Continue** to proceed.
+
+JCB will then install the package (for example, “Sermon Distributor 2.0.2”) and display installation details.
+
+> **Tip:** Always review the displayed information to confirm that you are installing the correct version from a trusted source.
+
+---
+
+## 4. The “Quiet” Switch
+
+[00:03:28]
+The **Quiet** switch allows you to toggle between detailed and minimal installation feedback.
+
+* **Quiet = Yes** → Minimal output; hides ID mapping details.
+* **Quiet = No** → Verbose output; displays all ID references and actions.
+
+[00:03:50]
+Note that earlier versions of JCB contained a typo (“Quite”)—this has been fixed in **JCB version 2.7.1**.
+
+[00:04:19]
+
+> **Tip:** Enable “Quiet = No” only when debugging import behavior or verifying data mapping changes.
+
+---
+
+## 5. Force Local Update — Overwriting Existing Data
+
+[00:04:33]
+When importing a component, you may encounter items that already exist locally.
+JCB uses timestamps to decide whether to replace or keep local data.
+
+### Force Local Update Options
+
+* **No (Default):** Keeps newer local data and skips importing older records.
+* **Yes:** Forces overwrite of all existing data, regardless of version or timestamp.
+
+[00:05:15]
+After enabling **Force Local Update**, click **Continue**.
+You’ll see a detailed printout showing which IDs were found, updated, or newly imported.
+
+[00:05:44]
+If you disabled Quiet mode, you’ll see a complete log of the import actions.
+
+---
+
+## 6. Post-Import Actions: Compiling and Installing
+
+After successful import:
+
+1. If the package uses a licensing file (e.g., `vdm.txt`), verify or replace it if necessary.
+2. Save and close the imported component.
+
+[00:06:28]
+
+### Compile the Component
+
+* Go to **Components → Joomla Component Builder → Components**.
+* Select **Sermon Distributor** (or your imported package).
+* Click **Compile**.
+
+Once compiled, JCB generates a **Joomla installable package (.zip)** that includes all external scripts defined in the package.
+
+[00:06:54]
+Some packages, such as the Sermon Distributor, also include **external scripts** (e.g., MIME type checkers).
+These are automatically fetched from GitHub during compilation.
+
+> **Security Note:** Always verify that external code strings (`EXTERNALCODE`) are safe before compiling, to prevent importing malicious code.
+
+[00:07:17]
+Finally, install the compiled package in Joomla via the **Extension Manager**.
+Your component (e.g., Sermon Distributor) will appear in the Components menu, fully functional and ready for use.
+
+---
+
+## 7. Suggested Feature — Community Package Sharing
+
+[00:07:39]
+A proposed future enhancement is a **Community tab** in the Import Components area.
+
+This would allow:
+
+* Community members to share **free JCB packages**.
+* Developers to distribute **paid components** via controlled channels.
+
+[00:08:04]
+Each package determines its own **metadata and purchase links**.
+For example, clicking on a package like `googlePlusProfileFeed` would redirect users to its associated product page.
+
+[00:09:06]
+There are ongoing discussions about whether JCB should include contribution mechanisms to support this ecosystem.
+
+[00:09:33]
+Another idea is integrating the Import Components section directly into the **JCB Dashboard**, improving accessibility.
+
+[00:09:54]
+Until then, developers can manually import any GitHub package using its repository link and package key.
+
+---
+
+## 8. Summary
+
+The **VDM Package Import Option** streamlines how developers access and install JCB components.
+Key takeaways:
+
+* Quickly import **ready-made JCB packages** directly from GitHub.
+* Use **Quiet** and **Force Local Update** options to control import verbosity and overwrite behavior.
+* **Compile and install** your imported component easily through JCB.
+* Expect future enhancements, including community-driven package sharing.
+
+This feature greatly simplifies development and sharing within the Joomla Component Builder ecosystem.
+
+---

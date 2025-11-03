@@ -1,111 +1,202 @@
-# UPGRADING TO JCB v2.5.8 AND USING THE NEW ADMIN VIEW AND ADMIN FIELDS
+# **Upgrading to JCB v2.5.8 and Using the New Admin View and Admin Fields**
 
-### JCB removing Repeatable Fields
+**Video Tutorial Reference:** [Watch on YouTube](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE)
 
-[00:00:00](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+---
 
-For example, Joomla is installed here with JCB Joomla Component Builder 2.5.6. Here is quite a lot of Components that have been imported from another JCB and all of them is functioning. For convenience sake, Joomla has decided to get rid of this Repeatable Field, which pops up into a little model. It is being systemically removed from JCB.[00:00:54](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m54s)  It has already been done in other areas of JCB. Like in the Language Translation area. If any of these Language strings is opened(a'-ZA.ng-NA)Demo-used in 21), it may be seen that we already have the Repeatable Field set up.  
+## **Overview**
 
-[00:01:21](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m21s) This would have been as simple as changing the Field Type within JCB. The reality is that the Compiler, as well as one other feature which is the Joomla Components, can be exported and imported in JCB Packages. These features are mapping into these Component concepts, the Field structures, how data is stored in a 'json' by the Repeatable Fields, are different from how it is stored in the SubForm Fields. 
+With the release of **JCB v2.5.8**, Joomla Component Builder (JCB) introduced a major update replacing the old **Repeatable Field system** with the new **Subform Field layout** throughout the Admin View and Admin Fields.
+This upgrade improves performance, simplifies data management, and aligns with Joomla 4 standards.
 
-### JCB 2.5.8, Whole Admin View Moved To SubForm Layout
- 
-[00:01:59](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m59s)
+This document explains the transition process, what changes to expect, and how to use the new Subform-based Admin View effectively.
 
-There are few issues open on GitHub concerning this. [00:02:10](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m10s) We have taken on the task of supporting it all. With this next release which is JCB 2.5.8, the whole Admin View area will be moved over to the new Sub Form layout. If an Admin View - 'Look' is opened, it has the old Repeatable Field concept as could be seen in all the tutorials that had been given. [00:02:43](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m43s)  Permissions is one of those tabs, the Fields, the Conditions, the Linked Views. Then there is a list of the Fields that are linked to the Admin View and some Custom Buttons that can be set up, and it is also a Repeatable Field, as well as linking MySQL(select 'Table'). This is also a repeatable Field in a model.  
+---
 
-### Heads Up - Moving And Changing Of Fields
+## **1. Removal of Repeatable Fields**
 
-[00:03:13](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m13s)
+[00:00:00](https://www.youtube.com/watch?v=YaycQcsMpOs&t=00h00m00s)
 
-All of these different fields are going to be moved to Sub Fields, because of space and statistics, some of these Fields will be moved into tabs. It will be done in a way that you will not feel lost. Upfront this Fields Button is going to be moved to the Fields Tab and so are the Conditions going to be moved there. [00:03:45](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m45s) There will be a new tab called 'Settings'. The Settings tab will be called Details. The rest of the Repeatable Fields that are remaining on this site will be placed there. That's just a heads up on what is going to happen. There is not much for you to do except to upgrade. 
+In previous JCB versions, Repeatable Fields were used to manage multiple sets of related data across Admin Views, Custom Buttons, and Conditions. Joomla has deprecated these fields due to structural limitations and performance concerns.
 
-### Add Number Of Scripts That Will Convert Fields and Tables etc.
+In JCB 2.5.8:
 
-[00:04:19](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m19s) 
+* All Repeatable Field structures are replaced by **Subform Fields**.
+* The change improves data storage, reliability, and future compatibility.
 
-A number of scripts had been added that can be looked at on GitHub. While this recording had been done this changes could have been seen at the 'Branch: staging',(See video) and if we would go to the script, the script may be seen that will convert the Fields and all the Tables and everything. 
+**Tip:** The pop-up modal Repeatable Fields are gone. Subforms now provide inline editing and a more stable data structure.
 
-### Convert Repeatable Function
+---
 
-[00:04:47](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m47s)
+## **2. Migration of the Admin View to Subform Layout**
 
-Scrolling down to that area a function inside of a method may be seen. It is more like an anonymous function. This is what converts the Repeatable Fields.[00:05:04](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m04s) This function will be used repeatedly as had been done with an upgrade to version 2.5.5 and then there is another upgrade 2.5.7 which was not released because  this change had been made, and we still need to convert the Repeatable Fields. That will continue to run until 2.5.9. [00:05:31](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m31s)(See video) The way it does this, the '$convertRepeatable' function target all these(ajax, custom_button, addtables, etc.) fields inside the Admin View, and it passes it over to '$convertRepeatable', which is going to do the work and '$convertRepeatable' function as may be seen over here. If you are uncertain of doing this you can come and look at '$convertRepeatable' function here. [00:06:07](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m07s) It will be noticed, as with this website that we are working on, that there are thousands of values.  
+[00:01:59](https://www.youtube.com/watch?v=YaycQcsMpOs&t=00h01m59s)
 
-### Model - admin_view.php - Changes Would take Place
+The entire Admin View area has been converted to use the Subform layout.
+This includes:
 
-[00:06:30](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m30s)
+* Permissions
+* Fields
+* Conditions
+* Linked Views
+* Custom Buttons
+* MySQL (Add Tables) connections
 
-I have found that it sometimes does not convert every single value, and because of that, another change was necessary, which goes beyond and ensures that this upgrade will not cause any internal conflicts. That is within the Back end, within the Model. There are a few places where these new Fields will exist. [00:07:02](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m02s) One of them is 'admin_field_conditions.php' and the other one is 'admin_view.php'. If this 'admin_view.php' is opened, these models in which these Field changes will take place is seen. It may be seen that within the 'getItem Method' at the very end of this method in the Admin View, a function was added which would check if this these Fields were updated during the upgrade. [00:07:27](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m27s) If it were not updated, while the field is busy loading and you are opening the page, it will check whether it has been updated. [00:07:52](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m52s) If it is not updated it will do the update, and add it to the update object and then check every Field, all the way down. If it detects that there have been any one of those Fields found ready to be updated, then it will run the update. [00:08:14](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m14s) After that it will never do it again. The way the array is constructed will no longer be seen once it has been moved to a SubForm Storage, seen that the SubForm array structure is different. Once any of the items are opened, it will automatically be converted and ensure that it is converted.
+Each of these previously used repeatable structures. They are now fully integrated into the Subform format, eliminating the need for modal pop-ups.
 
-### Checks - Converts - Updates
+---
 
-[00:08:46](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m46s)
+## **3. Field Organization and New Tabs**
 
-Another thing that had been done, because you most probably will not open every view or every Admin View. Even in the new admin fields, the same had been done. In the Admin fields, it has been ensured that that update is there, and the same with the Admin field conditions, it is there as well. [00:09:09](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m09s)
+[00:03:13](https://www.youtube.com/watch?v=YaycQcsMpOs&t=00h03m13s)
 
-But there is one more place where these checks are added and that is in the Compiler. Even if you did not open any of these views and went straight to the Compiler, and try to compile any of your Components, the Compiler has now been adapted to instead use the new Sub Form Structure within its compilation.  
+The field organization in the Admin View has been improved:
 
-* ### Checking
+* The **Fields** and **Conditions** buttons are now under a unified **Fields Tab**.
+* A new **Settings Tab**, renamed **Details**, holds other previous repeatable elements.
 
-[00:09:38](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m38s)
+These adjustments make the interface cleaner and better organized. The upgrade handles all of this automatically, with no manual input required.
 
-Within the Get file where most of these subforms are now needed, we have in the 'getAdminViewclass' method and it may be seen that we are checking whether it is still in a Repeatable Field. If it is, we convert it. [00:10:04](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m04s) Again store it to the update object while it is getting this one Admin view at the very end. Everywhere it is doing it, it checks if it is not being converted. 
+---
 
-* ### Converts
+## **4. Automatic Conversion Scripts**
 
-[00:10:15](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m15s)
- 
-It converts it and sets it back to the data set, and this string '$objectUpdate->addpermissions=json_encode($bucket);is used to ensure that it gets stored in the database. So it does everywhere where values may have been missed. 
+[00:04:19](https://www.youtube.com/watch?v=YaycQcsMpOs&t=00h04m19s)
 
-* ### Updates- never need to be updated again
+JCB 2.5.8 includes automated scripts that convert all old Repeatable Field data into the new Subform structure.
+These scripts are available on GitHub under the **staging branch**.
 
-[00:10:35](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m35s)
+The conversion process is handled by the **`convertRepeatable`** function, which:
 
-If any updates are found at the very end of this function, an update should be run, and after that view has been updated, it will never need to be updated again. These are the kind of mechanisms that had been put in place if you have a JCB with a huge amount of data which is too much for a normal install. Then all these Admin views will be updated and adapted as you start using JCB and there should not be any conflicts. [00:11:27](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m27s) If you do experience conflicts, open an issue on GitHub, so that I can do the necessary adjustments.   
+* Scans for fields such as `ajax`, `custom_button`, and `addtables`.
+* Converts old JSON data to Subform-compatible arrays.
+* Updates database entries accordingly.
 
-### Installing The Upgrade v2.5.8
+This ensures seamless migration without user intervention.
 
-[00:11:50](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m50s)
+---
 
-Getting back to the Install. Open this Admin View - 'Look', and then install the upgrade.  Select it, it has not been released yet, so this is a pre-demonstration.  A file is selected from my computer(See video). Since it is quite a huge data set it may take a while for the installation to be completed. [00:12:47](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m47s) In this case the upgrade to version 2.5.8 has been successful. 
+## **5. Model Updates for Conversion**
 
-### New Field And Conditions View
+[00:06:30](https://www.youtube.com/watch?v=YaycQcsMpOs&t=00h06m30s)
 
-[00:12:55](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m55s)
+To guarantee that every field is properly converted, updates were made to the following models:
 
-If that Admin View is opened and then refreshed, the changes will be seen(see video). There is now a Settings Field and as may be seen, all the data has been updated and moved to SubForm values. The same with Tabs. Going to Field and Conditions, it may also be seen how the new Field and Conditions View looks like. [00:13:32](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m32s) Due to many reasons it is not advisable to keep the SubForm Fields within the Admin View, especially when there are more than 50 Admin Fields, because it causes a tremendous slow down on page load. Taken into consideration that each of these lines is 1 - 13 fields and the limit is set to 800, which may be a time-consuming process to load all that into the page. 
+* `admin_field_conditions.php`
+* `admin_view.php`
 
-### How The Field And Conditions View Works?
+Within the `getItem()` method of these models:
 
-[00:14:15](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m15s)
+1. The system checks whether fields have been converted.
+2. If not, it converts them during loading.
+3. Once converted, they are flagged so the conversion does not run again.
 
-How does it work? Either click on the Edit button - Linked Fields, or the Edit button - Field Conditions to go and edit these and change their values. If one specific field is edited, click on any of these pencil editing links. For example: If I click on 'Name'  it will ask whether I have saved all the values in this current view and if it has been done; click 'OK'.[00:14:46](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m46s) It will open the Name Field and now any edits may be done in here and then save and close, or just close again, if only some information was needed. 
+These model changes ensure that the upgrade does not cause conflicts and that the process completes automatically.
 
-### How To Edit Custom Fields
+---
 
-[00:15:00](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m00s)
+## **6. Compiler Adaptation**
 
-Back into Editing the Admin View area. The same applies to the Custom Fields. Click on any of those to edit them or click on this Edit button. It will again ask if I have saved all the work, then if it has been, click 'OK' and it opens these values(See video). A nice new tweak which had been added is that it only loads the Fields that are linked to this Admin View(Match Field) so that the specific Fields can be targeted, which makes sense.    Those are the fields that need to be targeted with this conditional option. 
+[00:09:09](https://www.youtube.com/watch?v=YaycQcsMpOs&t=00h09m09s)
 
-### Creating Field - Available
+The JCB compiler has been updated to use the new Subform data structure.
+Even if you do not manually open any Admin Views before compiling, the compiler will automatically check and convert data where necessary. This ensures components compile correctly using the latest field format.
 
-[00:15:42](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m42s)
+---
 
-Then a field can also be created. Creating a field will not necessarily add it to the Admin View, it will just make it available to you, if it was added by going to Admin Fields .[00:15:57](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m57s) The Edit (Linked Fields)button is the same as 'Edit admin fields conditions for this admin view' but it is a shortcut, because sometimes you might have a lot of fields, and it is way down there to get to conditions. Some shortcuts had been added up here(See video). There is also the tutorial on how to use this but the tutorial still was made when we had the old Fields layout. It should still make sense but just keep in mind that things had changed a little. You could click on any of these links to open that area where the fields are now found and make the changes. [00:16:27](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m27s) That is the new Admin Fields.
+## **7. Installing the Upgrade to v2.5.8**
 
-**To move away from Repeatable Fields to start using Sub Forms for all the Repeatable concepts is what this upgrade is all about.** 
- 
+[00:11:50](https://www.youtube.com/watch?v=YaycQcsMpOs&t=00h11m50s)
 
-### Shortcut Buttons - First Button, Admin Fields - Second Button, Conditions
+To install the upgrade:
 
-[00:16:53](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m53s)
+1. Download **JCB v2.5.8** from GitHub or your local source.
+2. Go to **Extensions → Manage → Install** in Joomla.
+3. Upload and install the new JCB package.
+4. Wait for the process to complete.
 
-There is one heads-up concerning something that is a little different to how things were done previously. Close and go out of this Admin View. It may be mentioned that here(buttons below a view) is a shortcut to get to the Admin Fields without opening the Admin View and then the Admin Fields. If the right button is used, it will automatically open the Admin Fields. Changes may be made and it is linked to the Look Admin View and the same applies to the Conditions. The second button is for conditions. 
+After installation, JCB will begin updating its internal data structures automatically.
+Once finished, open any Admin View and refresh to confirm that new tabs and Subform layouts are visible.
 
-### Create New Admin View: Adding - Single Record Name, List Record Name, Short Description, System Name
+---
 
-[00:17:35](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m35s)
+## **8. New Field and Conditions View**
 
-What has changed? If a new Admin View is created, a Single Record Name, the List Record Name, the Short Description, the System Name are added. That is all that should be added to save the Admin View for the first time. [00:17:51](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m51s) The Admin View at this stage, cannot be linked to any fields until it has an ID. At this stage since the Admin field does not have an ID; It is still new because we have not clicked save even once. No Fields can be linked to it. What needs to be done is to add some Name(test), and save it once. If the has been done; go to Fields and Conditions; and will give a 'Create' option. [00:18:57](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h18m57s) The buttons 'Create' and 'Create admin fields for this admin views' is the same button. Click on any of them to Create Fields. If you Create a field, then give an 'OK' to indicate that everything is saved. Then click on the plus '+'. The first field is opened and you can start to add fields and tweak them as you would before. [00:19:22](https://www.youtube.com/watch?v=YaycQcsMpOs&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h19m22s) That is the new Sub Form Fields for Admin Views. That is what this upgrade is all about. This will in future make a transition into Joomla 4 easier. 
+[00:12:55](https://www.youtube.com/watch?v=YaycQcsMpOs&t=00h12m55s)
+
+The Field and Conditions views have been redesigned to use the Subform layout.
+All data has been updated and stored in Subform values.
+
+Performance improvements are noticeable, but large datasets may still take longer to load.
+It is recommended to avoid more than **50 Admin Fields per view**, as each field line can contain up to 13 subfields.
+
+---
+
+## **9. Editing Fields and Conditions**
+
+[00:14:15](https://www.youtube.com/watch?v=YaycQcsMpOs&t=00h14m15s)
+
+Editing is now more direct:
+
+* Use **Edit Linked Fields** or **Edit Field Conditions** buttons.
+* Save your work before proceeding.
+* Make changes and save or close the window when done.
+
+Only the fields linked to the current Admin View are loaded, which makes editing faster and more focused.
+
+---
+
+## **10. Creating New Fields**
+
+[00:15:42](https://www.youtube.com/watch?v=YaycQcsMpOs&t=00h15m42s)
+
+To create a new field:
+
+1. Open **Admin Fields**.
+2. Click **Create** or **Create Admin Fields for This Admin View**.
+3. Confirm the save, then click the plus icon (+) to add a field.
+4. Save and close when done.
+
+Creating a field adds it to the available field list. You can then link it to any Admin View.
+
+There are also shortcut buttons for quick access to **Admin Fields** and **Conditions** directly from the Admin View list.
+
+---
+
+## **11. Creating a New Admin View**
+
+[00:17:35](https://www.youtube.com/watch?v=YaycQcsMpOs&t=00h17m35s)
+
+When creating a new Admin View:
+
+1. Fill in the following fields:
+
+   * Single Record Name
+   * List Record Name
+   * Short Description
+   * System Name
+2. Save once to generate an ID for the view.
+3. Open **Fields and Conditions** to create and link fields.
+
+Saving once is necessary before you can attach fields, as the Admin View must have an ID assigned.
+
+---
+
+## **12. Summary of Key Changes**
+
+| Change                             | Description                                    |
+| ---------------------------------- | ---------------------------------------------- |
+| Repeatable Fields → Subform Fields | Upgraded to a modern, reliable data structure. |
+| New Admin Layout                   | Tabs for Fields, Settings, and Conditions.     |
+| Automatic Migration                | Scripts and compiler handle data conversion.   |
+| Performance Enhancements           | Faster load times, better scalability.         |
+| Joomla 4 Compatibility             | Subforms align with Joomla 4 core standards.   |
+
+---
+
+## **13. Conclusion**
+
+The upgrade to **JCB 2.5.8** marks a significant milestone in improving performance, reliability, and compatibility.
+By fully adopting Subform Fields, JCB becomes more stable and future-ready for Joomla 4 and beyond.
+
+---

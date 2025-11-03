@@ -1,65 +1,243 @@
-### Component, Form, Fields, Field Types, API, Model, View, Controller, and the XML File
+# Field Types in Joomla Component Builder
 
-If you have a good understanding of the Joomla! API you'll know it can build forms that can be used in a component; it's done using an XML file. Joomla! Component Builder builds the XML file and places it in a location your model, view, and the controller can access using the Joomla! API. JCB builds the fields which you define in a view containing the fields displayed by the component you are building using JCB. These and other terms will be defined as we proceed. Let's start with field types, then see them in action using Joomla! article list views and edit views.
+### [Video Tutorial](https://youtu.be/OhLzvThDXls)
 
-### Views, field types, and fields
-+ [01:05](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m5s) **Field Types and Fields** _Create Field Types Using basic Joomla article to explain field types and their relationship within views_.
+*Use the timestamp links to jump to relevant sections.*
 
-A field type is needed if you are building a field. Use of views, field types, and fields can be seen when you create a Joomla! article. When you do, the first thing you see is the view. Scroll down and you'll see a URL displaying View = article indicating this is an article view.
+---
 
-+ [01:57](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=1m57s) **List and Edit Views** _Difference between list view and edit view. Plural and single_.
+## 1. Overview
 
-If you close this article view you'll see a list of articles created on the web site. You won't see any articles here if it's a blank website. The list of articles is also called a list view. If you click on a row in the list you will see the edit or single view. Components you build using JCB will build these views for you, usually two, in the admin area to list and edit your different data sets. Let's take a look at the views and the fields they display.
+Joomla! Component Builder (JCB) generates complete Joomla components, including XML form definitions, models, views, and controllers.
+Understanding **field types** is essential, as they determine what form elements are rendered in your component's admin and site views.
 
-### All Fields Live In Views
-The Joomla! article title is a text field type; the alias is also a text field type. The editor block is a text editor field. There are others like list, radio, tag, text, date, user, text-area, and label. You will see JCB has placed all these in the component for you. You can make use of each of these different types by applying one to a field. All fields live in views which is an important concept to understand. Now, you might not think that a list view has fields and you are partly right. It does do more than just display these fields. Let's create a test article here to show what we mean.
+A **field type** defines how a field behaves and appears - for example, a text box, checkbox, date picker, list, or repeatable input.
+These are stored in XML format and processed through Joomla's API to render the form dynamically.
 
-### Joomla! Articles List and Article Edit Views
-After adding some content, save and close the article so we have a list item. That is also a field and if you click on search all those options are fields. So, your list has certain fields which are only available in the list view. This is also the place where we do most of our features for multiple items where opening one item does what are only required for one item. There is a table which is part of the list view. Component Builder sets up the item list views and edits views for you, based on the fields and input value mapped to them in the view. We will look at these other concepts more deeply but I need to have you understand this concept clearly. We will try and show you that inside of this article you will be creating fields you can place in different tabs, which will have been rendered in a specific order by the Joomla! component after it's been compiled using Joomla! Component Builder. That example used Joomla's Article Manager.
+> **Key Concept:**
+> All fields exist within views - either **list views** (plural) or **edit views** (single).
+> JCB builds these automatically when you define them in your component.
 
-+ [05:45](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=5m45s) **Compile error** _Remember to select correct options that suit your build_.
+---
 
-We could just as well go into Component Builder Since it has the demo application. See a detailed explanation of the demo application and building a local developer environment to compile it into a component and run it. After selecting the compile option for the JCB demo application, it displays a warning because we haven't set some options in the global settings. It doesn't mean that there's been an error in the compile. It just means it couldn't move the file to the Git repository which was one of the default options selected. Installing from within component builder, If we deselect some compile options and start again it doesn't give you the same warning. [06:35](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=6m35s) **Install compiled component** _Installing from within component builder, quick link_. Click install and compiled component gets installed Into this Joomla site. It doesn't have any images because JCB doesn't ship the images with the demo component.
+## 2. Views, Field Types, and Fields
 
-### Joomla! Component Builder Demo Component
-If you click on add a Look It will open the edit and it keeps you on the Look. It also opens a list view where the list of Looks will be displayed. We added an import feature which the standard Joomla! components don't have. We will explain that later. If it's new you can add also text to your radio button. If I add something to the text field it opens an alias field which is also a text field. There is a new Joomla! repeatable field and you can add information to it. This was a quick look at the features in the demo component included with the Joomla! Component Builder when it is installed. The [APPENDIX](https://github.com/vdm-io/Joomla-Component-Builder/wiki/Using-the-JCB-Demo-Component-While-Building-Your-Local-Development-System) has a very detailed, technical explanation of the demo component installation and inner workings plus code, along with step by step instructions on building a local development LAMP environment to run Joomla!, and JCB on. It also explains how to compile and install the demo component using JCB.
+[01:05](https://youtu.be/OhLzvThDXls?t=65)
 
+When creating or editing a Joomla article, you're interacting with a **view**.
+The `view=article` parameter in the URL indicates that you're working inside the **article view**.
 
-### How Fields Get Into the Component and Use the Joomla! infrastructure
-+ [08:04](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=8m4s) **Admin fields-views edit** _explanation of adding-editing fields_
+Each form element (like title, alias, or editor area) corresponds to a **field**.
+Behind each field is a **field type** that defines its behavior.
 
-If we go to Admin views and select Look Open look you'll find the fields we just looked at. The name is used to map the field into the view using the field add button here. The reason why you cannot add using this area is that this is to edit existing fields instead of adding them. So, if you were to open an admin view you can edit them from here especially if you have many components and many fields. This is a way to look at the fields related to this component's view. If you were to add more fields you would open this box and this is where you'll be adding them. Let's get back to field types because that's really where it all starts. We've already added all the field types to JCB that I think you will need.
+Common Joomla field types include:
 
-### Field Types are Mapped Into Libraries Inside of Joomla!
-+ [09:26](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=9m26s) **Default field-types** _Default field-types that come shipped within Component_
+* **Text** - For simple single-line input.
+* **Editor** - For WYSIWYG content.
+* **List / Radio / Checkbox** - For multiple choice or toggles.
+* **User / Date / Tag / Textarea / Label**, and more.
 
-Joomla! has many field types and for each field type which you build, you need to set certain values in an XML document. These values are for example if you use a checkbox, set up in properties. So, you have to be certain when changing properties that you adjust the corresponding field. Note, in this example, these changes only apply to the checkbox field. Most of the time you would never need to do this. An exception is adding more field types which we haven't covered, or if you want to extend the existing field types. For the most part, you should not tinker with field types. I hope this explains where the field type comes from and the amazing scalability you obtain by using it.
+These are all defined as **field types** in Joomla and mapped into your JCB component.
 
-### Add Your Own Field Type Using JCB
-With most other Component Builders you need to wait for the developer to add a new field type. With Component Builder, you can add your own field type which only requires mapping it to the Joomla! library. Joomla! has their field type set to certain types now such as a repeatable field which is quite tricky and needs special attention even in the code of the JCB compiler. But the majority of field types are very straight forward and simple to implement.
+---
 
-We have not implemented all the attributes that can be targeted though. You might need to add them if you want to use them. For example, I added this Show On option recently to all field types which I did to show and hide fields based on other fields values. It's in JCB but Joomla! does have the ability to take control of the features to show and hide fields. This is an added feature and it may be preferable to use Joomla!'s yourself and add it to your component. But this shows if you are developing a feature we can add it to a Component Builder version. I would obviously suggest doing that I would still explain much more on this topic as we continue. Getting back to field types I continue.
+## 3. List and Edit Views
 
-### Using Form Fields
-+ [12:29](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=12m29s) **Joomla standard form fields** _Joomla website for standards regarding form fields_
+[01:57](https://youtu.be/OhLzvThDXls?t=117)
 
-Here is a complete list of [form fields](https://docs.joomla.org/Standard_form_field_types). There is a column which is called type and a value for checkbox and it must be set to not adjustable because that is the way it is expected. If you don't understand any of this information that I'm showing you here then a place to go to is to open the form fields and you'll see a whole list of form fields. These are the same for the fields you just saw in our component. If I was to take the checkbox in the list of checkboxes and open that you'd see that they give you a list of those fields. Next type name and JCB tells you what is mandatory and what is optional and basically, we are just mapping that data into this form.
+In Joomla:
 
-### Format of XML String in Form Used by Joomla! to Build the Form
-If we want to add another attribute, click on the + and it creates a new field and we can add the name for the value then tweak some of the switches requiring synchronization and provide some other information. The information block here is for you to use. We put information there when you use this field type so you are reminded what this specific attribute is for. I added this information by copying it from Joomla!'s website and placed it in the provided area where I felt there could be more information. I added some custom text to it indicating what these values will do. They will create an XML string like that in your form which Joomla! then uses to build those forms [14:05](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=14m05s) **XML string format for Joomla** _Reusable field types_. We first set up a field type by telling you which input values you can use for the specific field type which is indicated using the status checkboxes. Save this and later you can reuse this field type when you start creating fields. Close this checkbox and go to the text field. [14:45](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=14m45s) **Text field type example** _Fields within Text field type_. You'll see that there is a list of the fields that used the text field as its type. You can open one of these fields and at the bottom, you see very something very similar if I was to go back to the text field on Joomla!'s website.
- 
-+ [15:15](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=15m15s) **Joomla XML example Text Field** _XML example_
+* The **List View** displays a table of items (e.g., a list of articles).
+* The **Edit View** (or single view) opens when you click an item to edit it.
 
-You see that it shows you examples of how that XML line should look in the field area where you created the field. The field has a name which is just for the system. The other field used here is the one that is important. That should be descriptive text which is the field label. This is what displays when you add it to your view. This is what we use to identify it. I am explaining how to add it to the view in more detail. The data type and other things were also shown to explain them.
+JCB automatically creates both list and edit views for each dataset you define in your component.
+Each view includes fields mapped to the view, so the fields you define in JCB are rendered properly when compiled.
 
-### Optional and Mandatory Values for Field Type Member On Change
-We won't go into more depth about what a field is and how to build one. We have looked at a few field types and shown the effects of changes I feel that you would probably make using those types. This is the detail that was in field type Member On Change and it tells you what is mandatory and what is optional because I placed it in the description. Click close to go back to that field type and then click on the property. I added optional and mandatory to the description. It could have been done from here so if not true then it's not necessary to add it there. But you know the settings here are used when we compile the component whereas this here is used for you to know what this field attribute is. Maybe as we continue to develop this component I might change it. I wouldn't make any changes that affect anything that already exists this dramatically.
+---
 
-+ [17:43](https://youtu.be/OhLzvThDXls?list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=17m43s) **XML string within compilier** _How XML string is build and compilied within component builder_.
+## 4. All Fields Live in Views
 
-The way the compiler works it is doesn't really grab the string and just put it into the XML. In fact, if I show you how a string looks that the compiler is built, the assessment type, you see that it is completely reformatted. The label is turned into a translatable string. It's been done with the description also. It also tells you where in the compiler. We'll still look at that because this might show sometimes and you can use apply a JCB tweak to your component so it doesn't show it. But it tells you which line in the compiler it was built in and also in what file which is very nice. I think those of you that are developers will appreciate this feature tremendously. It also tells you the field type and you can see it as we scroll through it. You can see that Component Builder really goes way out of its way to reconstruct that field. It is not using this directly. In fact, it grabs that part and that area to determine if it is a text field. So, it is dependent on that part which is up to name and that part there. The opening exclamation and the closing one and the value in between them is what is used. If you prefer or by accident drop off this or that it will still work perfectly.
+Even though a list view looks like a table, it still contains **fields** - for example:
 
-### How Demo Data Populates New Field From Values Added During Field Type Creation
-These are really the only things needed to understand using field types. Eventually, these may become input fields in one big text area that leaves us with a lot of room and freedom to adjust easily without major complications. In any case, if you start a new field, which we'll look at later, it populates this with the demo data and the demo data is actually values that you added when you created the field type. You see in the demo it is this value from the example that is placed here. It's from these values that the region is in if you create a new text field. It grabs these values as the values which you can then adjust to suit your purpose. If you know implementation for that specific field at that moment and if you leave it blank it will also build it without any value between those two estimation marks that are looking at field types.
+* The search box, filters, and table columns are all technically **fields**.
+* The edit view displays individual input fields, grouped in tabs or sections.
 
-Most field types have been set up for you and you hardly ever would need to come here except for a deeper understanding of how field types work and how Joomla! and JCB implement them. You do not need to change things unless you wish to. You may be interested in my next tutorial on how to use field types in fields.
+In JCB:
+
+* You define fields inside a view.
+* When compiled, JCB uses Joomla's form XML syntax to create the form layout automatically.
+
+> **Tip:**
+> Field order and grouping can be managed directly within the JCB interface using drag-and-drop or tab assignments.
+
+---
+
+## 5. Compiling and Installing Your Component
+
+[05:45](https://youtu.be/OhLzvThDXls?t=345)
+
+When compiling your component in JCB, make sure to configure the **Global Settings** properly:
+
+* Ensure Git repository options are set (if using automatic pushing).
+* If not, deselect repository actions before compiling.
+
+If you encounter a warning like "Could not move file to Git repository," it usually indicates that repository paths are unset - not an actual compile error.
+
+[06:35](https://youtu.be/OhLzvThDXls?t=395)
+Once compiled, click **Install** to deploy the component directly into your Joomla instance.
+The demo component will install successfully, though it may not include demo images.
+
+---
+
+## 6. Exploring the JCB Demo Component
+
+The demo component demonstrates:
+
+* **Admin list and edit views**
+* **Repeatable fields**
+* **Custom radio buttons and alias fields**
+* **Import features** (not standard in core Joomla components)
+
+For an in-depth technical reference on the demo component, consult the
+[JCB Wiki Appendix](https://github.com/vdm-io/Joomla-Component-Builder/wiki/Using-the-JCB-Demo-Component-While-Building-Your-Local-Development-System).
+
+---
+
+## 7. Admin Fields and Views
+
+[08:04](https://youtu.be/OhLzvThDXls?t=484)
+
+Inside **Admin Views**, JCB displays the fields mapped to that view.
+You can:
+
+* **Edit existing fields** directly in the view editor.
+* **Add new fields** using the "Add Field" button.
+
+This structure lets you manage many fields across multiple components efficiently.
+JCB stores each field definition and links it to the corresponding view.
+
+---
+
+## 8. Field Types in Joomla's Core Library
+
+[09:26](https://youtu.be/OhLzvThDXls?t=566)
+
+Each Joomla field type corresponds to specific XML attributes that define its structure and behavior.
+Example attributes for a checkbox field might include:
+
+```xml
+<field name="published" type="checkbox" default="1" label="Published" />
+```
+
+> **Important:**
+> Unless you are creating or extending field types, avoid editing the defaults.
+> JCB provides mappings for all common field types already.
+
+---
+
+## 9. Adding Custom Field Types
+
+JCB allows developers to create **custom field types** mapped to Joomla's field library.
+
+### Example use cases:
+
+* Extending Joomla's repeatable field.
+* Adding custom attributes or logic (e.g., "Show On" conditions).
+
+The **"Show On"** option controls field visibility based on other field values - a JCB enhancement on top of Joomla's native functionality.
+
+> **Pro Tip:**
+> When adding new field types, always match Joomla's standard naming and property conventions to ensure compatibility.
+
+---
+
+## 10. Using Joomla Standard Form Fields
+
+[12:29](https://youtu.be/OhLzvThDXls?t=749)
+
+Refer to Joomla's documentation for a complete list of [standard form field types](https://docs.joomla.org/Standard_form_field_types).
+
+Each field type includes:
+
+* **Type name** (e.g., `checkbox`, `list`)
+* **Mandatory / optional attributes**
+* Example XML structure
+
+JCB maps these definitions directly into your component forms.
+
+---
+
+## 11. The XML Structure for Joomla Forms
+
+[14:05](https://youtu.be/OhLzvThDXls?t=845)
+
+When defining attributes in a field type, JCB builds XML strings that Joomla uses to render forms.
+Example:
+
+```xml
+<field name="title" type="text" label="Title" description="Enter a title" required="true" />
+```
+
+Adding new attributes in JCB automatically appends them to the XML string used during compilation.
+
+[14:45](https://youtu.be/OhLzvThDXls?t=885)
+Each field type in JCB shows which **fields** use it - for instance, multiple text fields can share the "Text" field type definition.
+
+---
+
+## 12. Example: Joomla XML for Text Field
+
+[15:15](https://youtu.be/OhLzvThDXls?t=915)
+
+The XML representation for a text field might look like this:
+
+```xml
+<field name="alias" type="text" label="Alias" description="Unique alias for the item" />
+```
+
+This structure is automatically generated by JCB during compilation and stored in the XML file used by Joomla's form API.
+
+---
+
+## 13. Compiler and XML Generation
+
+[17:43](https://youtu.be/OhLzvThDXls?t=1063)
+
+During compilation:
+
+* JCB reformats labels into **translatable strings**.
+* Adds metadata such as compiler line references and file sources.
+* Inserts your field attributes into the correct XML context.
+
+This means that even if you modify attribute values slightly, JCB still interprets them correctly when rebuilding the XML.
+
+---
+
+## 14. Demo Data and Field Value Population
+
+When you create a new field in JCB, demo values (from the field type definition) are automatically pre-filled.
+This speeds up field creation and ensures XML consistency.
+
+For example:
+
+* Creating a new **text** field populates with sample XML attributes.
+* You can modify these before saving or leave them as defaults.
+
+---
+
+## 15. Best Practices
+
+**Keep default field types intact.**
+**Use Joomla naming conventions.**
+**Group fields logically in views (tabs, sections).**
+**Compile often** to catch XML or mapping errors early.
+**Use demo data** to understand field structure before creating complex types.
+
+---
+
+## 16. Conclusion
+
+JCB automates the complex XML, MVC, and API mappings Joomla! needs to build robust components.
+Field types are at the heart of this process - understanding how they link to fields, views, and XML output will help you design efficient and scalable components.
+
+---

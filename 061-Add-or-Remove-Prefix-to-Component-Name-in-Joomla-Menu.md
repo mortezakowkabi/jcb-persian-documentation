@@ -1,27 +1,121 @@
-# ADD OR REMOVE PREFIX TO COMPONENT NAME IN JOOMLA MENU
+# Add or Remove Prefix to Component Name in Joomla Menu
 
+This tutorial explains the new Joomla Component Builder (JCB) feature that allows developers to **add or remove a prefix** from the component name displayed in the Joomla menu. This customization helps you brand or visually distinguish your component entries within the Joomla admin interface.
 
-### Little Arrow - Prefix In Front Of Component Builder
+---
+
+## 1. Understanding the Menu Prefix
 
 [00:00:00](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(Click on these time links to see Youtube video)
 
-I would like to demonstrate to you the new feature of removing and adding a prefix to your Component Name in the Joomla menu. Take a look at the menu there is this little arrow in front of Component Builder. That is the prefix. In the past, it would add that automatically. Now it will still do that but you can change it.
+In earlier versions of JCB, components automatically included a prefix symbol (like a small arrow) before their name in the Joomla admin menu. For example, your component might appear as:
 
-### Global Tab - Add Menu Prefix
+```
+Component Builder
+```
+
+With the new feature, you can now **customize or remove this prefix** entirely.
+
+---
+
+## 2. Accessing the Global Configuration
 
 [00:00:26](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m26s)
 
-Go to the global options of a component and under the Global tab you will see a new area called Add Menu Prefix.   There is a little description. You can say, 'No'. It will not have any prefix. You can change this to any other prefix you want. It is not necessary to add a space. The space is automatically done. You can check out this list. 
+1. In JCB, open your component.
+2. Navigate to the **Global** tab within the component's configuration.
+3. Look for the **Add Menu Prefix** setting.
 
-### Link To A List Of HTML Character Entities
+Here, you can:
 
-[00:00:56](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m56s) 
+* Set **"No"** to remove the prefix completely.
+* Enter a **custom prefix** string or symbol.
+* Leave the field as-is to use the **default arrow (>)**.
 
-There is a link to a list of HTML character entities that you need to use to change that arrow. You need to make sure to use something that can be placed inside of an XML file. That means that if you want to use strange characters like that arrow, you will need to use the HTML. You could also use your company name or you can use anything. It will add that as a prefix to the component name. 
+> **Tip:** You do not need to manually add a space after the prefix - JCB automatically includes one.
 
-### Illustration - Change The Prefix
+---
+
+## 3. Using HTML Character Entities for Symbols
+
+[00:00:56](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m56s)
+
+Because the prefix is stored in an XML file, any special or non-standard characters must be represented as **HTML character entities**.
+
+For example:
+
+* `&#9658;` → ►
+* `&#10003;` → ✓
+* `&#8857;` → ⊙
+
+You can find a full list of HTML entities here:
+[HTML Character Entities Reference (w3schools.com)](https://www.w3schools.com/html/html_entities.asp)
+
+You may also use your **company name** or a short **text prefix** instead of a symbol. For instance:
+
+```
+JCB MyComponent
+```
+
+---
+
+## 4. Example: Changing the Prefix Symbol
 
 [00:01:36](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m36s)
 
-To illustrate this, let me change this a little bit. I am grabbing the value, the one without the x is the one we looking for. This '&#8857' value I am going to grab that little circle with a dot. Well, let's take the one with the circle in a circle that looks nice and add it in. Click Save. It is asking me to add some other info as well. Try again, save and close. Let's go and compile one of the [00:02:19](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m19s) Demo Components. You can say Demo and Compile. Install it. Now it has this little circle next to the demo name. That is the way we can change that little prefix. The option to remove it altogether, [00:02:45](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m45s) is also there. Saying no 'prefix', save and close. Let's do it again. Compile and Install and now it is just the way usual components will look. There is the Demo. This little Prefix can be added or removed. Thanks to this new feature.
+To demonstrate, let's change the prefix to a small circle symbol:
+
+1. Copy the HTML entity:
+
+   ```
+   &#8857;
+   ```
+2. Paste it into the **Add Menu Prefix** field.
+3. Click **Save & Close**.
+4. Compile one of your demo components.
+5. Install the compiled package in Joomla.
+
+**Result:**
+The component name in the Joomla menu now appears as:
+
+```
+⊙ Demo
+```
+
+---
+
+## 5. Removing the Prefix Entirely
+
+[00:02:45](https://www.youtube.com/watch?v=vwZyhKp_L38&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m45s)
+
+If you prefer a clean menu name without any prefix:
+
+1. Set **Add Menu Prefix** to **No**.
+2. Save your settings.
+3. Recompile and install your component.
+
+Now, the component will appear simply as:
+
+```
+Demo
+```
+
+---
+
+## 6. Summary
+
+| Action            | Setting              | Result                                             |
+| ----------------- | -------------------- | -------------------------------------------------- |
+| Add custom symbol | `&#8857;` or similar | Displays a custom prefix before the component name |
+| Remove prefix     | Set to **No**        | Displays the component name only                   |
+| Use company name  | e.g. `MyCo`          | Adds branding before the component name            |
+
+---
+
+### Helpful Tips
+
+* Always use **valid HTML entities** for symbols to avoid XML errors during compile.
+* You can modify this setting anytime without affecting other parts of your component.
+* Recompile and reinstall the component after each change to see updates in the Joomla menu.
+
+---

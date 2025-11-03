@@ -1,74 +1,164 @@
-# ADDING CUSTOM ADMIN VIEWS TO A COMPONENT
+# **Adding Custom Admin Views to a Component**
 
-[00:00:00](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+---
 
-Cost-Benefit projection will be used as our component. 
+## **Overview**
 
-### Settings - Custom Admin View
+In Joomla Component Builder (JCB), *Custom Admin Views* allow developers to create dynamic and flexible administrative views inside their components. These views enhance the backend interface by providing additional dashboard sections, menu links, and functionality such as custom buttons and result displays.
 
-[00:00:14](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m14s)
+In this example, we'll use the **Cost-Benefit Projection** component to demonstrate how to add and configure *Custom Admin Views* in JCB.
 
-Go to 'settings' then to 'Custom Admin Views'. Two 'Custom Admin Views' had been added.
+---
 
-### Multiple Switches Due To Being Dynamic
+## **1. Accessing the Custom Admin Views Section**
 
-[00:00:28](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m28s)
+1. Open **Component Builder** in your Joomla administrator panel.
+2. Navigate to **Settings → Custom Admin Views**.
+3. Click **New** to create a new Custom Admin View.
 
-It has more switches than the Site view because its implementation is more dynamic. You can choose an icon because in the back end you might want an icon when you are on the right of the page. [00:00:45](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m45s) It can be selected where it should show in the main menu.
+You'll notice that a *Custom Admin View* has more configuration options than a *Site View*. This is because the admin side is designed to be more dynamic and integrated into Joomla's administrative interface.
 
-### Icon - Main Menu - Dashboard - Submenu
+---
 
-[00:00:51](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m51s)
+## **2. Understanding the Custom Admin View Options**
 
-The main menu drops down from Joomla's 'menu item list'. This is the dashboard you need to go to every time you start with a component where all the icons are displayed. The 'Sub-menu' is the one on the left; it can be seen when you are in a view. [00:01:14](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m14s) These are all placements where this Custom View could be added. (See video.)
- 
-### Targeting Item
+### **Icons and Menu Placement**
 
-[00:01:29](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m29s)
+Each Custom Admin View can be associated with a **menu icon** and can appear in one or more of the following locations:
 
-The company results hadn't been added to any of the views individually; it was added to items. That's why all of these are set to 'No'. [00:01:41](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m41s) It means an item is targeted in a view.
+* **Main Menu** - The primary menu visible on the Joomla component dashboard.
+* **Dashboard (List of Records)** - The central area displaying key data or quick links.
+* **Submenu** - The vertical sidebar visible when navigating inside component views.
 
-### Select Target View
+These settings control how your view will appear and how users will access it from the backend.
 
-[00:01:47](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m47s)
+> **Tip:**
+> Use distinctive icons for each Custom Admin View to make navigation intuitive. JCB supports Joomla's standard icon classes.
 
-Select the targeted view, which is 'Company'. Use one of these options: 'Has Metadata', 'yes' or 'no', and 'Add Access', 'yes' or 'no'.  [00:02:02](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m02s) By selecting 'Company' it ensures that the correct view is targeted; close this and open that component. (See video.)
- 
-### Showing Within The Component
+---
 
-[00:02:10](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m10s)
+## **3. Targeting Specific Items and Views**
 
-This is an example of what happens with the settings: Open the 'Cost-Benefit Projection Dashboard'. If 'Companies' is opened, there is a button for 'Company results'. [00:02:27](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m27s) When Custom Admin View had been set up, we ensured an 'item id' to be targeted. By selecting 'Company', the companies 'item id' is targeted. That is what makes it work. Click 'Chart' to view these charts showing up in the icon itself. [00:02:55](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m55s). If you click on it, the Custom View shows up and that icon shows up next to it, showing that all works well. (See video.) A 'Combined Results' button shows up in the toolbar because 'Combined Results', which were selected, should have 'Cogs' as an icon. [00:03:25](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m25s) List of records, ('Metadata', 'Access', and 'Company') is set to 'yes'.
+Custom Admin Views can target other views or items inside your component. This allows you to create contextual buttons or data summaries that directly link to related items.
 
-### Order Before Selection
+1. In your new Custom Admin View, find the **Target View** dropdown.
+2. Select the appropriate target (for example, `Company`).
+3. Set **Has Metadata** and **Add Access** to `Yes` if needed.
 
-[00:03:35](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m35s)
+This ensures that the Custom Admin View interacts correctly with the targeted view and has proper access permissions.
 
-These 'Order Before' selections are only necessary when a 'main menu' and 'sub-menu' are selected. Because it may decide before what item this menu should be creating. [00:03:55](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m55s) 'Dashboard (list of records)' had been selected and consequently places it in combined results. The records that you want to look at must be selected; click on 'Combined results'. It will grab those ids. Since the data is modeled in the controller and the model it gives these results back to the view through the custom implementation that has been done. 
- 
-### How Buttons are Implemented - Important
+> **Example:**
+> If your `Company Results` view should display data related to specific companies, set the target view to `Company`.
 
-[00:04:25](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m25s)
+---
 
-* Quick refresher
+## **4. Linking the Custom Admin View Inside the Component**
 
-Go to Component Builder and Custom Admin views; open 'Company Results'. PHP has been added in the Custom Buttons, as was 'Button'. A request has been made to Component Builder as to what kind of buttons are needed. A single item is targeted. It shows 'editCompany' and 'gotoCompany'. These buttons are related to the inside of the view. [00:04:55](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m55s) On exiting 'Editing the Custom Admin Views', it shows in 'Combined results' that 'buttons' had been added. Again these buttons, 'Vcard', 'companies', 'gotocompanies', corresponds to the controller. [00:05:27](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m27s) In the view itself it shows that it is not responding to this button but to the buttons inside called 'Companies' and 'Edit'. (See video.) These are the buttons you were building in the custom view. Whereas the buttons we are looking at in here are related to opening the Custom View itself. (See video.)
+After configuration, open your component's **Dashboard** or **Target View** (for example, *Companies*) and check the new button or icon that appears.
 
- ### The Combined Result Button
+When correctly configured:
 
-[00:05:53](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m53s)
+* The **Company Results** button will appear in the toolbar or dashboard.
+* Clicking it will open the *Custom Admin View* (e.g., charts or combined results).
+* The selected `item_id` from the `Company` view is passed to the new view dynamically.
 
-The same applies to Combined Results. Combined Results is the button set up here. (See video.)  Once the other buttons are combined, and Combined Results clicked, it shows that two buttons had been added: 'Dashboard' and 'Companies'. Those two buttons had been set up in the view itself. It is possible to know what area controls what set of buttons. This area controls the buttons before opening the view. In the view, the buttons you set up there is for when you opened the view. [00:06:38](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m38s)
+This dynamic linking is handled automatically by JCB once the target and placement settings are correctly configured.
 
-If you are uncertain you can undo everything, change it, compile a component, look in the code, and see what has been done; look in the Joomla interface, and see what is being displayed. Do some experimenting until you get that what you wanted. [00:07:10](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m10s)
+---
 
-Note: This 'order before' is only necessary when 'add' is selected to 'Main-menu' or to 'Sub-menu'. If it is used there will be an icon area displayed in the component (Cost Benefit Projection) and the menu items will be shown at the top. Once it is opened the Sub-menu appears on the left. [00:07:34](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m34s) There is 'Main' menu and 'Dashboard (list of records)'. Dashboard (list of records)' needs to be placed at the top of the components toolbar and 'Submenu' to the left. [00:07:58](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m58s)
+## **5. Using "Order Before" Options**
 
-The Custom Admin View needs to be placed in the Sub-menu and is independent of any other data set. The Sub-menu method can be used then. If you want a feature in the main menu, these are the features that can be set. [00:08:25](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m25s) The 'Dashboard (list record)' feature helps to link it to a specific set of data structures. These IDs can be selected. When you click on combined results, the IDs of the selected items is passed to the controller. For example: Look in 'Companies', 'Components', 'Component Builder', 'Custom Admin Views', 'Combined results', and in 'Custom Buttons'. [00:08:54](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m54s) We're using the 'Main get' called 'Companies data' (getlistquery).
+The **Order Before** fields are used when your Custom Admin View is added to a **Main Menu** or **Submenu**.
 
-The implementation of the IDs can be seen in the Data query. Reach into the input object (PHP in Editing the Dynamic get). Get the 'cid', selected 'IDs', and saying 'tt' can be 'CMD' and then 'explode' 'cid'. [00:09:35](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m35s) Make sure it is 'intervals' and place it in 'ids'. This gets 'this' value from the 'post object', and places it into 'ids'.[00:09:59](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m59s)  Validation have to be done to ensure the person who's trying to access the data has the right to do so. Once it is passed, the 'ids' are used to get the data. [00:10:20](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m20s)
+These fields define where your new menu item should appear relative to existing items.
+For example:
 
-In the filter '$ids' is used; it checks whether all the 'ids' are in an 'id' in the code. Look at the code; it's on the models 'Combine Results'. It uses the checking method. It checks the 'ids',  places them in an array; checks if it's in an array then 'implodes' it. It also checks whether it gets those ids. [00:10:45](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m45s) That's how the dataset is filtered with the results of the selection. [00:11:07](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m07s) Some custom scripting was added to the Dynamic get method to take the 'ids' and use them in the way as intended. This is the way I implemented this.
+* If you select *Dashboard (list of records)* as "Order Before", your new view will appear directly before the dashboard link in the admin menu.
 
-If you want to drop it down, pause the video, and copy some of this area. It would be the only part useful to your purpose. Use the 'ids' in your code as it suits you. [00:11:39](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m39s) Keep in mind that this PHP, as seen in the code, runs before the 'Get methods'. It is a filtering option. (See video.) The 'getListQuery' starts, then the code that has been written is entered here then the rest of the code built by Component Builder is done. (See video.) A filter option may be used with what you collected.  [00:12:07](https://www.youtube.com/watch?v=sPEkbuNXwds&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m07s)
+This step ensures your admin interface remains logically organized.
+
+---
+
+## **6. Implementing Custom Buttons**
+
+Custom Admin Views often include **custom buttons** that trigger specific actions or navigate to other views.
+
+1. Go to your Custom Admin View (e.g., *Company Results*).
+2. Scroll to the **Custom Buttons** section.
+3. Define PHP logic for each button as needed (for example: `editCompany`, `gotoCompany`).
+
+These buttons interact with the component's controller logic. You can define whether each button targets a *single item* or operates at a *list level*.
+
+> **Technical Note:**
+> JCB generates the PHP code for these buttons in your component. You can inspect the generated code after compiling to understand or adjust the behavior further.
+
+---
+
+## **7. The "Combined Results" Example**
+
+In the *Cost-Benefit Projection* example:
+
+* The **Combined Results** button was added to the toolbar.
+* It displays results by combining data from multiple selected items.
+* The associated icon (e.g., a gear or chart icon) helps users identify its function quickly.
+
+Inside the **Combined Results** view, additional buttons such as *Dashboard* and *Companies* were added.
+These correspond to the actions available *within* that specific view.
+
+> **Remember:**
+> Buttons defined **before opening the view** appear in the toolbar.
+> Buttons defined **inside the view** appear once the view is opened.
+
+---
+
+## **8. Linking Data Using Dynamic GET and Selected IDs**
+
+When multiple records are selected in a list view, their IDs (`cid`) can be passed to your Custom Admin View dynamically.
+This enables data filtering or aggregation based on user selection.
+
+To achieve this:
+
+1. In your Custom Admin View's **Dynamic GET (Data Query)** section, access the selected IDs using PHP:
+
+   ```php
+   $input = JFactory::getApplication()->input;
+   $ids = $input->get('cid', array(), 'array');
+   ```
+2. Validate that the user has permission to access this data.
+3. Use `$ids` in your SQL query or data model to fetch the relevant dataset.
+
+In JCB, this is typically implemented in the **getListQuery()** method of the model.
+You can modify or extend it via the Dynamic GET builder to suit your component's logic.
+
+---
+
+## **9. Testing and Troubleshooting**
+
+If your view or buttons don't appear as expected:
+
+* Reopen the Custom Admin View and double-check placement options.
+* Ensure the **Target View** is properly set.
+* Recompile the component and install the updated version.
+* Inspect the generated PHP code to verify your logic was included.
+
+Experimenting is part of the learning process. Adjust placements and settings, recompile, and observe the behavior in Joomla until everything works as intended.
+
+---
+
+## **10. Menu Structure and Placement Summary**
+
+When compiled:
+
+* **Main Menu** items appear at the top of your component's admin interface.
+* **Submenu** items appear on the left-hand side when viewing a specific section.
+* **Dashboard (list of records)** items serve as quick-access buttons or reports on the main component page.
+
+Use these strategically to create a clean, user-friendly backend layout for your component.
+
+---
+
+## **Conclusion**
+
+Adding Custom Admin Views in Joomla Component Builder empowers developers to design rich, interactive administrative interfaces. By properly setting menu placement, target views, and dynamic data handling, you can build professional back-end dashboards and management tools without manually writing all the boilerplate code.
+
+---

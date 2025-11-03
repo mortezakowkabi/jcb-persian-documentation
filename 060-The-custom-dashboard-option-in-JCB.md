@@ -1,26 +1,194 @@
-# THE CUSTOM DASHBOARD OPTION IN JCB
+# The Custom Dashboard Option in Joomla Component Builder (JCB)
 
-### Adding Your Own Custom Dashboard To Your Component
+> **Tutorial Reference:** [Video 60 - The Custom Dashboard Option in JCB](https://www.youtube.com/watch?v=tU7TeYn1Djo)
+---
 
-[00:00:00](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(Click on these time links to see Youtube video)
+## Overview
 
-The option to add your own custom dashboard to your component has finally come. I might have mentioned this in some previous tutorials but it is somewhat hidden. In the past, all components layouts ended up as the dashboard that looks like this but obviously with your own icons. You could only do what you see here. This is still the default dashboard. If you do not add your own, they will build this for you. Based on your fields, icons, and layout selection. 
+[00:00:00](https://www.youtube.com/watch?v=tU7TeYn1Djo&t=00h00m00s)
 
-### Adding Tabs
+JCB now offers developers the ability to **add their own custom dashboard** to any Joomla component created with it.
+This enhancement allows for **greater UI flexibility** and a **unique administrative experience**-no longer limited to the default dashboard layout.
 
-[00:00:43](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m43s)
+In previous versions of JCB, all components used the same default dashboard. The layout and icons were auto-generated based on your component's configuration. Now, you can **replace or redesign** that dashboard entirely to match your brand or functionality needs.
 
-You could add tabs as we have here. These tabs are quite powerful. You can add a lot of functionality within that. For some of you, this might be boring and not what you would like. In fact, you do want it to look different and not to look like it was built with JCB. What makes components valuable is that they are unique. That is why JCB exists, it exists because I did not want a cookie-cutter component. [00:01:22](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m22s) I wanted to build my own components that look different from others and yet have similar behavior. None of the others out there could do that for me. We ended up looking like the one we are using. [00:01:42](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m42s) With JCB we constantly are trying to make sure that this is not the case, in fact, that is why the site view area is a bit more difficult. We want to give you the opportunity to express the functionality of your components in a way that is unique to you. This might be a challenge but in the long run believe me, it is the advantage if you are familiar with JavaScript or CSS or HTML. [00:02:13](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m13s)  So there is a little bit of incentive to get your head around some of these technologies.
+---
 
-### Open Hello World Component - Dashboard
+## 1. Default Dashboard Behavior
 
-[00:02:41](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m41s)
+When you create a new component in JCB without defining a custom dashboard, the system automatically generates one based on your:
 
-We have this common known Hello World Component open on the website, this is its dashboard. It does not have a custom dashboard and I am not going to add one at this point, but I am going to take away the dashboard it has, then it behaves like the article manager for example. If we would go in the Joomla Components area there is a tab called Dash & Install. You will see it has a Default, and it has some description of what that means. If you click on Dynamic [00:03:27](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m27s) it gives you a list of all the available Sites Views that are linked to the component. That would be Custom Admin Views as well as normal Admin views. It will show you a list of them all. You can then select any of those. That will become the new dashboard for your component. Save and close. [00:03:52](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m52s) Go to the compiler and compile the Hello World Component, and reinstall. To demonstrate how that changed, our components behavior we are going to install. Go to components and click on Hello World link [00:04:17](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m17s) to see what it does now, as its default dashboard. It loads the list view and the dashboard is gone. From this point forward your Hello World Component looks like this. It does not have a dashboard. 
+* Admin views
+* Icons
+* Field layouts
 
-### Use A Custom Dashboard - JCB Compiler Dashboard
+This is the **default JCB dashboard** - functional, but not customizable.
 
-[00:04:34](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m34s)
+> **Tip:** If you don't add your own dashboard, JCB continues to build this default layout for you.
 
-You could use a custom dashboard, which in our case if you are using a component that has Custom Admin Views. JCB has the compiler and has a snippets area as Custom Admin Views. If we were to do a similar thing with JCB, we could select one of those, [00:05:04](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m04s) say Dynamic and select one of those views, scroll down a bit to the Compiler. We could make the Compiler JCB's Dashboard.  [00:05:20](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m20s) It is going to break a lot of things somehow I suppose. Let's try it out. We have JCB, we switched it to have another dashboard instead of the normal dashboard. We are going to compile it and install. Before I install it, I just want to tell you what I meant by things that may break. We have a bunch of tabs, and all these tabs are getting information and making it available to you, that you could get information from us. [00:05:50](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m50s) We have the version, the last build date, you are going to remove this whole area. We just did. If I click on this install, we will first see it tells us that this language string is no longer here. At first, it seems like it has a broken issue, but if we refresh it, you will see that it removed it. It is just a catch thing there. [00:06:23](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m23s) The dashboard is gone and if I was to go and click on Component Builder, it will from now on opens right at the Compiler, and will be its default page. The behavior is correct. We do not see any issues. If you were to go to the code, Dashboard is completely removed, all its files everything, no trace of it is left. To undo this you could simply say default again, save and close. Compile it again. It will place the dashboard back. No harm was done to the component, but for those of you who want to take the Custom Admin Views [00:07:17](https://www.youtube.com/watch?v=tU7TeYn1Djo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m17s) and design, a much more impressive maybe not a boring dashboard, can do so by simply using this new feature. I am sure it is going to be a lot of fun. We refresh it, the dashboard is back and if you click on it everything is fine again. 
+---
+
+## 2. Adding Tabs (Optional)
+
+[00:00:43](https://www.youtube.com/watch?v=tU7TeYn1Djo&t=00h00m43s)
+
+JCB's default dashboard supports **tabs**, which allow you to structure the admin interface into sections. Tabs are quite powerful, letting you embed lists, stats, or even dynamic content.
+However, for many developers, this still looks *"too JCB-like"* and lacks originality.
+
+[00:01:22](https://www.youtube.com/watch?v=tU7TeYn1Djo&t=00h01m22s)
+
+JCB was designed to help developers **build unique components**, not cookie-cutter ones. If you're comfortable with HTML, CSS, and JavaScript, you can design a completely **custom admin dashboard view**.
+
+> **Tip:** A custom dashboard lets you express your own brand and layout while keeping the same JCB backend logic.
+
+---
+
+## 3. Viewing the Dashboard in the Hello World Component
+
+[00:02:41](https://www.youtube.com/watch?v=tU7TeYn1Djo&t=00h02m41s)
+
+Let's open the well-known **Hello World component** in JCB as an example.
+
+1. Go to **Components → Hello World** in Joomla.
+2. You'll see the default dashboard layout.
+3. We'll now remove or replace this dashboard.
+
+---
+
+## 4. Accessing the Dashboard Settings
+
+[00:03:27](https://www.youtube.com/watch?v=tU7TeYn1Djo&t=00h03m27s)
+
+Inside JCB:
+
+1. Navigate to your component.
+2. Open the **"Dash & Install"** tab in the component configuration.
+3. You'll find two key options under **Dashboard Type**:
+
+   * **Default** - the standard JCB-generated dashboard.
+   * **Dynamic** - allows selecting a custom admin or site view to serve as the new dashboard.
+
+When you select **Dynamic**, JCB displays a list of all available **Admin and Custom Admin Views** associated with your component.
+
+---
+
+## 5. Setting a Custom Dashboard
+
+[00:03:52](https://www.youtube.com/watch?v=tU7TeYn1Djo&t=00h03m52s)
+
+To change the dashboard:
+
+1. Choose **Dynamic** from the dropdown.
+2. Select any available Admin or Custom Admin View (e.g., "Compiler" or "Snippets").
+3. Click **Save & Close**.
+4. Rebuild your component by opening the **Compiler** in JCB and clicking **Compile**.
+5. Install the updated component in Joomla.
+
+[00:04:17](https://www.youtube.com/watch?v=tU7TeYn1Djo&t=00h04m17s)
+
+After reinstalling:
+
+* The old dashboard disappears.
+* The selected view (for example, a list view) becomes the **default admin landing page**.
+
+> **Result:** Your Hello World component now opens directly into the chosen view instead of the default dashboard.
+
+---
+
+## 6. Using a Custom Dashboard (Example: JCB Compiler View)
+
+[00:04:34](https://www.youtube.com/watch?v=tU7TeYn1Djo&t=00h04m34s)
+
+Let's test this feature using JCB itself.
+
+JCB has several **Custom Admin Views**, such as:
+
+* **Compiler**
+* **Snippets**
+* **Fields**
+* **Layouts**
+
+To assign one as the dashboard:
+
+1. Open JCB's component configuration.
+2. In **Dash & Install**, select **Dynamic**.
+3. Choose one of the views (for example, "Compiler").
+4. Click **Save & Close**.
+5. Recompile and reinstall JCB.
+
+---
+
+### Testing the Custom Dashboard
+
+[00:05:20](https://www.youtube.com/watch?v=tU7TeYn1Djo&t=00h05m20s)
+
+After recompiling:
+
+* JCB's dashboard is replaced by the **Compiler view**.
+* Some dashboard elements (like version info, tabs, and updates) are no longer available - because the dashboard files were removed.
+
+If you refresh the admin page:
+
+* The new **Compiler dashboard** appears as the landing screen.
+* All previous dashboard code and files are deleted from the build.
+
+[00:06:23](https://www.youtube.com/watch?v=tU7TeYn1Djo&t=00h06m23s)
+
+The change is **clean and complete** - no residual dashboard files remain in the component structure.
+
+---
+
+## 7. Reverting to the Default Dashboard
+
+[00:07:17](https://www.youtube.com/watch?v=tU7TeYn1Djo&t=00h07m17s)
+
+To restore the original dashboard:
+
+1. Reopen the component in JCB.
+2. In **Dash & Install**, set the dashboard type back to **Default**.
+3. Click **Save & Close**.
+4. Compile and reinstall the component.
+
+Once done:
+
+* The original JCB dashboard is restored.
+* All dashboard files are re-added automatically.
+
+> **Tip:** Switching between dashboards doesn't harm your component.
+> You can safely experiment with different layouts or restore defaults anytime.
+
+---
+
+## 8. Why Use a Custom Dashboard?
+
+Creating a custom dashboard gives your component a **distinct identity** and better **user experience**.
+
+You can design dashboards that:
+
+* Display **custom data summaries**
+* Integrate **graphs, charts, or stats**
+* Provide **quick access buttons**
+* Embed **custom HTML, JavaScript, or modules**
+
+> **Example Use Cases:**
+>
+> * A sales management component could display revenue stats or sales charts.
+> * A content builder might show quick actions to create or publish items.
+
+---
+
+## 9. Summary
+
+| Feature               | Description                                                           |
+| --------------------- | --------------------------------------------------------------------- |
+| **Default Dashboard** | Auto-generated by JCB with standard layout and tabs.                  |
+| **Dynamic Dashboard** | Lets you assign a custom Admin or Custom Admin View as the dashboard. |
+| **Compile & Install** | Required after making changes to reflect them in Joomla.              |
+| **Revert Option**     | Switch back to default anytime without loss of data or structure.     |
+
+---
+
+### Final Thoughts
+
+The **Custom Dashboard** feature is a major step toward flexibility in JCB.
+You now have the power to make your component's backend truly **your own** - blending JCB's automation with your design creativity.

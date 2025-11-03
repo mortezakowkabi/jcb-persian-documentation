@@ -1,28 +1,219 @@
-# REUSE CUSTOM CODE
+# Reusing Custom Code in Joomla Component Builder (JCB)
 
-### How To Use Code Across JCB By Taking Advantages Of A Few Features
+## Overview
 
-[00:00:00](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(Click on these time links to see Youtube video)
+[00:00:00](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&t=00h00m00s)
 
-I would like to show you how to use code across JCB in a very inherent kind of way by taking the advantages of a few features that JCB has that most people may not know is there, or maybe they do but they have not seen it as an advantage. Recently there came up a question on the forum By Alex Dings,  [00:00:33](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m33s), he said that he has admin views but generic code that runs in multiple admin views and then some of it runs only in specific admin views. How I could speed up the maintenance of this kind of thing. His first question had been: Is the Helper Admin class the best way to put this code? Is there a way to keep the generic admin forms functions I wrote separately from these specific ones? Some of you might even be listening and do not understand exactly what we are trying to do. 
+This tutorial demonstrates how to reuse and manage **custom PHP code** across different parts of your Joomla Component Builder (JCB) projects. It highlights how to centralize your scripts, functions, and helpers for efficiency and maintainability.
 
-### Pull Up A Docker Image Of Joomla
+JCB includes several powerful features that make it possible to:
 
-[00:01:12](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m12s) 
+* Write generic helper functions once and use them across multiple components.
+* Insert reusable code snippets dynamically into component templates.
+* Maintain custom logic from a central location instead of editing multiple files.
 
-I am going to pull up a docker image of Joomla. I have a docker file, and quickly going to pull it up. We are going to go and use it. I have it running. Its default is user. I'm going to go to extensions and install. Add the web tab JED [00:01:46](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m46s) JED Then type jcb and underneath we have a description, you can look at that and install. Getting JCB install from GitHub. We're done. Go Joomla Component Builder, we're almost there. Then [00:02:22](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m22s) you could grab a demo component. If you don't know how to get access to these components, follow this 'free keys' link and follow the tutorials. I'm going to get the JCB Get Package. The key that you have received, you can add it here. Maybe Force Local Update. It is always good to have all your fields updated. [00:02:52](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m52s) Continue, within moments we have JCB installed on JCB.
+---
 
-### Looking At Examples - GetViewID
+## Scenario: The Need for Code Reuse
 
-[00:03:00](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m00s)
+[00:00:33](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&t=00h00m33s)
 
-Now we can start looking at the examples. That is really what I wanted to get to because the question is being answered by the demo data already. In JCB there we are already doing a lot of this multi inheritance structure kind of relationship. The best way to demonstrate this is to look at JCB itself. We have JCB and then go to Custom Code, we will see there is a whole lot of custom code. [00:03:40](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m40s) Many of them is this Hash (automation). We want to look at this JCB( manual) option. For example, let's look at the '`getViewID`' which is a custom code, that is its name. This is how you use it. We are having a view [00:04:01](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m01s) called Admin View that is using it. If you click on that it is going to open it for us the Admin View. When we get here, we will see there is the code. I am using this specific `getViewID` all across my components. It's also being used in JCB. It's powerful. [00:04:31](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m31s) That is one way to use a specific snippet which you add by using the JCB manual. Give the function a name. You could pass values to the function(see video). Please read the explanation of how that is done. At the end of the day [00:04:55](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m55s) you can adapt the value structure, for example, if this value(`vdm`) needs to be changed from instance to instance, you can pass it by `value1`, that is `arg0`. You can replace this `vdm` with `[[[[arg0]]]`. You must remember to pass, at least `value1` [00:05:27](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m27s) to update the `[[[[arg0]]]` value wherever you are using it. That is one way to use the reuse of the scripting. 
+A developer (Alex Dings) posed a question on the JCB forum:
 
-### Another Way To Reuse - getFilePath
+> "I have several admin views that share generic code, but some views require specific variations. How can I efficiently maintain this structure?"
 
-[00:05:55](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m55s)
+### Common Challenges:
 
-The other way is the one that actually gets used in the helper class. I have one called `getFilePath`. The `getFilePath` is also a function I am using across my components. It is being included in JCB. Many of my components are using  `getFilePath` and it is a little function I can pass a few parameters to and can consistently give me back a path of where I want to place or have files from. Now in the PHP helper there is a function and in the component itself, there is a function called [00:06:20](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m20s)'Add PHP(Helper classes - Both admin & site)'. Anything that you put in will not be only added to the Admin Helper Class, but also to the Site Helper Class, a way to avoid doing it twice. There is one to put it in the Admin. You could click 'Yes' and target the Admin Helper or you could target the Site Class Helper. In this case I want most of this code to be everywhere. [00:06:52](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m52s) If we were to go down to the bottom is the `getFilePath`. It is forming part of a whole bunch of code that I am adding to the Helper Class of this component. I am also using other components. I do not need to redo this code anytime soon. I do not need to come and open the [00:07:20](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m20s) component when I want to change the code. I can change the code right there in the place that is in the custom area. If we close out and go back to the Custom Code, you can see that the function is being used in Component Builder and in the `php_helper_both`. It is where it is added. [00:07:45](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m45s) If you would need to improve the code, you can always at the bottom see in which areas it is being used. So that is the option for multiple reuse of custom scripting. You could put it anywhere you like in JCB, either in the Component Helper Class or in the component view, php areas. By doing so it gets reused. It gets placed into that code on compilation. That is the answer I suppose, to the power of the Custom Code area.
+* Duplicating PHP helper functions across different admin views.
+* Updating multiple component files whenever logic changes.
+* Managing both **generic** and **specific** functionality within multiple JCB-generated views.
 
-I realize it could be confusing because we are mixing it with the IDE custom code which is [00:08:28](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m28s) this 'Hash' (automation). It's where you edit your code in the IDE as I did here. The JCB is keeping track of it and it is saying this is for the Admin Views template default body php file. On this starting Hash value, we are doing an insert of this code and you cannot maintain the code here. But it's only for one file, one location, one place. [00:08:57](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m57s) Then there's the JCB manual and the JCB manual is the implementation, or the mutated implementation of using custom code snippets, this snippet, all across in custom code areas. I'm using the same word custom code for different implementations. That might have been a mistake because you could miss its possible differences. [00:09:25](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m25s) But there is most certainly a difference, this does not target a file but an area somewhere in that JCB compilation. I hope that helps. 
+JCB solves this through **Custom Code Blocks** and **Helper Class Injections**.
+
+---
+
+## Setting Up the JCB Environment
+
+[00:01:12](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&t=00h01m12s)
+
+To follow along, use a Joomla test environment. You can quickly spin up a **Docker-based Joomla instance** for testing.
+
+### Steps:
+
+1. Pull a Joomla Docker image:
+
+   ```bash
+   docker pull joomla
+   docker run -p 8080:80 joomla
+   ```
+2. Access Joomla at `http://localhost:8080`
+3. Log in as an admin and go to:
+   **Extensions → Install → Web → Search "JCB"**
+4. Install **Joomla Component Builder** from the Joomla Extensions Directory (JED).
+
+[00:02:22](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&t=00h02m22s)
+
+If you have a **JCB package key**, import it via the "Get Package" area to gain access to example components.
+
+> **Tip:** Always click **Force Local Update** to ensure your local JCB fields and structure are up to date.
+
+Once installed, you can explore JCB's internal components and study its **demo data**.
+
+---
+
+## Understanding Custom Code in JCB
+
+[00:03:00](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&t=00h03m00s)
+
+JCB includes a **Custom Code Manager** under:
+
+> **Component → Custom Code**
+
+This area allows you to define reusable PHP code blocks. These snippets can be inserted into multiple areas of your components during compilation.
+
+There are two main types:
+
+1. **Manual Custom Code (Reusable snippets)** - Functions you create and use across many components or views.
+2. **Automated Custom Code (Hash-based)** - Code managed and inserted by JCB automatically into specific file areas.
+
+---
+
+## Example 1: Using the `getViewID()` Custom Code
+
+[00:03:40](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&t=00h03m40s)
+
+A good example from JCB's demo data is the **`getViewID()`** function.
+
+This function is created as a reusable snippet in **Custom Code** and is applied across multiple **Admin Views**.
+
+### Example Workflow:
+
+1. Open **Custom Code → getViewID**
+2. Observe where it is used (e.g., in Admin Views).
+3. The snippet might look like:
+
+   ```php
+   public static function getViewID($view)
+   {
+       // Function logic
+   }
+   ```
+4. In your admin view, call the function like:
+
+   ```php
+   $id = HelperClass::getViewID('myview');
+   ```
+
+[00:04:55](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&t=00h04m55s)
+
+If your function includes variables like `vdm`, you can make them dynamic using argument placeholders.
+
+### Passing Arguments to Custom Code
+
+You can replace variables using the **argument placeholder syntax**:
+
+```php
+[[[[arg0]]]]
+```
+
+Then, pass arguments during use:
+
+* `arg0` → `value1`
+* `arg1` → `value2`
+
+This makes your snippets more flexible across different contexts.
+
+---
+
+## Example 2: Helper Function Reuse - `getFilePath()`
+
+[00:05:55](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&t=00h05m55s)
+
+The second method of code reuse involves adding functions to your **Helper Classes**.
+
+In JCB, you can define code to be automatically added to:
+
+* **Admin Helper Class**
+* **Site Helper Class**
+* **Both simultaneously**
+
+### Example:
+
+The `getFilePath()` function can be defined once and reused in multiple components.
+
+```php
+public static function getFilePath($file)
+{
+    // Return the full path to a given file
+}
+```
+
+[00:06:20](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&t=00h06m20s)
+
+In JCB:
+
+1. Open **Custom Code → PHP Helper (Both Admin & Site)**
+2. Add your reusable function there.
+3. JCB automatically includes this in both helper classes during compilation.
+
+> **Best Practice:** Use the "Both" helper class option when a function applies globally.
+
+You can later view where each custom code block is used at the bottom of its detail page.
+
+---
+
+## Managing Reuse Across Components
+
+[00:07:45](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&t=00h07m45s)
+
+Because custom code snippets are tracked centrally in JCB:
+
+* You can easily modify or update them once.
+* Any components that use the snippet will get the updated code after recompilation.
+
+This is especially useful for maintaining **shared libraries** of logic that appear in multiple JCB-generated components.
+
+---
+
+## Understanding Automation and IDE-Linked Code
+
+[00:08:28](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&t=00h08m28s)
+
+JCB distinguishes between:
+
+* **Hash (Automated) Custom Code:** Managed by JCB and inserted automatically into specific files (linked to IDE edits).
+* **Manual Custom Code:** Standalone snippets created for reuse in different parts of components.
+
+### Key Differences:
+
+| Type                 | Purpose               | Control           |
+| -------------------- | --------------------- | ----------------- |
+| **Automated (Hash)** | One file/one location | IDE-tracked       |
+| **Manual (Snippet)** | Multiple uses         | Developer-managed |
+
+> **Note:** Both use the term "Custom Code," but serve distinct purposes. Don't confuse the two when managing snippets.
+
+---
+
+## Summary
+
+[00:09:25](https://www.youtube.com/watch?v=8Yl4lAAAWMQ&t=00h09m25s)
+
+**Custom Code Reuse** is one of the most powerful time-saving tools in Joomla Component Builder.
+By properly structuring your reusable logic using:
+
+* **Helper Class injections**, and
+* **Manual custom snippets**,
+
+you can dramatically improve efficiency and reduce maintenance overhead.
+
+---
+
+## Key Takeaways
+
+* Use **Custom Code (Manual)** for flexible, multi-use snippets.
+* Use **Helper Class (Both)** for reusable logic shared between admin and site areas.
+* Use **Automated (Hash)** only for one-off inline code.
+* Always **recompile your component** after updating custom code to apply changes.
+
+---

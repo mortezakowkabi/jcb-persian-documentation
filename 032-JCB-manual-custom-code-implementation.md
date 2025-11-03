@@ -1,68 +1,240 @@
-# JCB MANUAL CUSTOM CODE
-
-### Brief Explanation
+# JCB Manual Custom Code
 
 [00:00:01](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m01s)
 (_Click on these time links to see Youtube video_)
 
+## 1. Introduction
 
-Automatic import of custom code during compilation. This is one of the latest features that has been added to the JCB component. Although all its functionality is in place there are currently some limitations which exist that need to be explained. First, what does it accomplish? It actually mutated from that which its original purpose had been and became two things.[00:00:52](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m52s) The first thing is, (and this is obviously what was initially intended) that it will be possible to add code to the component once it has been compiled and installed into that same Joomla website, then to be able to go into that code, with a few placeholders add code,  that once the component is compiled again, JCB would dynamically grab that code, extract it into its database, store it there and from there on forward continue to add it back into the component every time.  [00:01:43](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m43s)The way it has been done was that the line numbers had not been used as the main way of determining where that code must be added. The reality is that the line numbers will always change. It may be Custom code that is added, for instance, line '105', and if it is made to change at line '20', that means all the code moves down of course and it is impossible to know where to add your code  without either writing over or placing it before, there are all kinds of complications. So the only way to resolve that is to create what had been initially called the fingerprint, but later became a hash reference of the code, a few lines of code above the custom script, and a few lines of code below the customs. [00:02:50](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m50s) It varies from how many lines it uses. There is a reason for it. 
+**[00:00:01](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h00m01s)**
 
-### Updating Code From JCB In The Editor
+The *Automatic Import of Custom Code* is one of JCB's most innovative features, designed to make managing and reusing custom code across your component easy and efficient.
 
-[00:03:01](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m01s)
+When enabled, this feature allows JCB to automatically detect and extract custom scripts that you've added directly into your compiled component (inside your Joomla installation), and import those scripts back into the JCB database on the next compilation.
 
-If you want to see how it had been done, the code is open-source, it is possible to go and look at it. There is a function in the 'Aget' file, which is part of the compiler a set of files. The functions name is 'searchfilecontent'. It's in this function that it really goes through every line of the code that is already in the Joomla website. When it finds it, it adds it to an array which eventually gets saved to the database. This is the lines that actually do the work. [00:03:53](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m53s) There are lots of things that work with this function, but this is the center of everything. There are better ways to do this. It will constantly be improved and insured that it remains stable as suggestions are being made.  [00:04:27](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m27s)  It should never use more than 8 lines as it is here where it is packing the fingerprint and takes the line content and place it into an array. Every time it passes, it checks whether that array is greater than 10, and should be cut down to 6. [00:04:54](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m54s)  This continues to happen over and over because this fingerprint array should not become bigger than 10 lines. At some point when a placeholder is found, the fingerprint array is taken, a hash gets created from it, then it is stored into the database. [00:05:24](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m24s) That means that the number of lines is changing. Because the array has been cleared and is at 6 lines. Then a 7th gets added and now we find a placeholder and everything happens. 
+This ensures that any manual edits you've made to your installed component's codebase are preserved and synchronized with your JCB component data.
 
-### Quick Explanation - Insert/Replace
+---
 
-[00:05:43](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m43s)
+## 2. How the Automatic Code Import Works
 
-There are two ways in which the code is added. It has been explained in the previous tutorial and will be explained again.  In that same file, there is a comment way at the top, which gives the explanation of the placeholders. The placeholders, these X's here, must be asterisks. Like this one(///&ast;&ast;&ast;[INSERT<>$$$$]&ast;&ast;&ast;///). [00:06:26](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m26s) This is the one with which you would start either to insert or to replace.
+**[00:00:52](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h00m52s)**
 
-### GitHub Explanation For Update And Insert Issue 37
+Originally, this feature aimed to let you modify generated component code directly inside Joomla, then recompile in JCB without losing those edits.
 
-[00:06:33](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m33s)
- 
-There is also a note on GitHub about this which may be more logical. It's on issue 37 under Joomla Component Builder on GitHub. Basically to start inserting code, this (///&ast;&ast;&ast;[INSERT<>$$$$]&ast;&ast;&ast;///) is used as a placeholder, then your code on a new line, then when finished, this(///&ast;&ast;&ast;[INSERT<>$$$$]&ast;&ast;&ast;///) would close that code block.
+However, it evolved into two complementary systems:
 
- Sometimes you do not want insert code, but want to replace code that was generated by JCB. Then the replace code placeholder(///&ast;&ast;&ast;[REPLACE<>$$$$]&ast;&ast;&ast;///) may be used and again use this one(///&ast;&ast;&ast;[REPLACE<>$$$$]&ast;&ast;&ast;///) to end the code block. [00:07:25](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m25s) Now when Component Builder on compilation discovers these tags(///&ast;&ast;&ast;[INSERT<>$$$$]&ast;&ast;&ast;///)(///&ast;&ast;&ast;[REPLACE<>$$$$]&ast;&ast;&ast;///), they get converted to from insert to inserted and from replace to replaced. It adds it back without this diamond(<>) between those dollar signs and the inserted text or replaced text. [00:07:55](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m55s) It removes it by doing that, it means that this code does not need to be updated. The moment those two are added back between those 2 values when Component Builder compiles. It interprets that this piece of code needs to be checked again and update whatever is in the database because it has been changed. [00:08:25](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m25s) This diamond here indicates it. There is a change that needs to be updated. There is this new number being added next to the code. [00:08:49](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m49s) That number is the ID of the database row in which JCB had stored the code in. If this number is changed, a problem will occur. NB. Do not change this number. JCB had placed this number in, in order to know where to go to update the code in the database.[00:09:18](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m18s) Once any changes had been made to the code, simply add this diamond(<>) back in, that's quite important otherwise it will not be  be parsed, and it will be overwritten by the content in the database.
+1. **Automatic code synchronization using hash references**.
+2. **Manual code management through JCB placeholders**.
 
- The initial purpose of this new feature had been to be able to, create code in the editor and then on the fly, make it part of the JCB infrastructure for your component. Then in the future it will continue adding that code back in without you having to write it, or to remember it.[00:09:47](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m47s) If it is necessary to change the code, just add these diamonds(<>) either for the insert or for the replace depending on what has been done. It will automatically update what is in the database and then store it back into the newly compiled version.  
+---
 
-[00:10:12](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m12s) It is a stunning new feature. There had been some challenges in its implementation. There are some comments to look at. We are at the moment at version 2.3.2 which is not yet released that will include the extra feature which has not been discussed on the forum.  An ideal had been born to develop a very smart function, a custom script, inside of some view or some field or somewhere in JCB and to use it again elsewhere but then it has to be copied, and pasted and then improved.  Then get this(See video) added and get it debugged, improve the whole function, maybe just pieces of script. Then it is a tedious task to copy it back from where it has been taken and then there are variables that need to be considered which need to have different names. [00:11:47](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m47s)  
+### 2.1 Why Line Numbers Aren't Used
 
-### Custom Codes In JCB
+**[00:01:43](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h01m43s)**
 
-[00:11:52](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m52s)
+JCB does **not** rely on line numbers to locate where your custom code should be inserted. Since line numbers shift as code changes, this would cause insertions or overwrites in incorrect positions.
 
-Since I have some knowledge of object orientated concepts, the idea emerged to create with JCB the same kind of functionality. When this new improvement came along, the possibility to make this work for both of these aspects became clear. What has been done?  The option had been created to use the hash automation, which is the one that has just been explained or to use the JCB manual. 
+Instead, JCB uses **hash-based fingerprints**:
 
-### Placeholder
+* A hash is calculated from several lines **above and below** your custom code block.
+* This provides a stable, context-aware reference even if the file structure changes.
 
-[00:12:47](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m47s) 
+**[00:02:50](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h02m50s)**
+The number of surrounding lines used for this fingerprint may vary but typically ranges from **6 to 10 lines** for stability.
 
-If the Custom code is set up, the JCB manual will create the option for you to take this placeholder(customcode). For example: Open this field.  Here is a field with which images are uploaded. 
+---
 
-* ### Example Field
+## 3. Updating Code from JCB in the Editor
 
-[00:13:52](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m52s)
+**[00:03:01](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h03m01s)**
 
-It is a drag and drop field. It is actually a note as may be seen. Some HTML is used in the description and some JavaScript is being added to this footer of wherever this field is being used. [00:14:16](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m16s) This code is part of the process, there is much more code but this is what is needed to reuse quite often. I improve this in many areas and then I would always have to come back here(JavaScript). There is certain text that differs from each place. [00:14:37](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m37s ) For example; The word 'teaser', needs to be different everywhere else and the word 'image', sometimes it must be  'images' and not just 'image'. This code has been taken and added to custom code. Set it as JCB manual, and in all places where dynamic script updates are needed, the 'arg' values are added.  More info about the 'arg' values may be read in this note above. (See video) [00:15:19](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m19s) To make it simply 'arg'. These 'arg' areas are like placeholders. Strings or values may be passed via this Custom code placeholder and it gets updated on the fly during compilation everywhere where it uses this code snippet in JCB. [00:15:44](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m44s) This gives me a bit of that object-orientated feeling where I write a function or a piece of script once, then I can reuse it everywhere else, and simply update the values being passed to it. It is by far not error-proof there, you can not use any commas, and plus signs in these values. [00:16:15](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m15s)  It needs to be one word. It can have a dollar sign if you want to have it place a dollar sign symbol in the code, but it doesn't execute the string that you pass. It will literally just paste it in wherever you've placed this 'arg' placeholder. You can add as many values to this 'arg' values as you want. Always make sure that the number of values that is in the code must correspond to the number of values that you are passing to it. [00:16:54](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m54s) Otherwise you would end up having a certain area of the code, the 'arg' placeholder will not be replaced with anything. It will stay like that if it does not have a value for it. Back in the field, a placeholder is added. [00:17:28](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m28s) Since it is 'id 1', three values gets passed to it, 'image', 'image' and 'teaser'. Which will then correspond to the replacing 'arg' values. So that '0' would be 'image', this '1' value here would be 'image', and this '2' would be 'teaser'. It will actually replace it on compilation. Now it is possible to reuse this code anywhere else in JCB. It had been saved previously, so I am going to close it and open another one. [00:18:03](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h18m03s) Here is one called; 'poster', which is doing the same thing. Now passing 'image', 'image' and then 'poster'. That means in this area it will change that '2 arg' value which is actually the third one. It will update it to 'poster' instead and so there is the functionality to have dynamic code in custom code, which can be reused all over JCB. 
+Inside JCB's compiler system, the function responsible for scanning and syncing custom code is:
 
-### Difference Between Editor Changes And Custom Code Changes
+```php
+searchfilecontent()
+```
 
-[00:18:39](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h18m39s)
+This function is part of the **Aget** compiler file. It:
 
-The only negative thing currently is that this kind of code that has dynamic values past to it, will not be updated by any changes which are made in the editor outside of JCB. [00:18:58](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h18m58s) The two functions do not fully merge at this stage. A snippet of code which has none of these 'arg', for example: If it is only used like this, without any extra values, that code will be replaced, if any changes are been made to it in the editor. [00:19:32](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h19m32s) It will start behaving like the initial implementation. It will be placed back into the component with that inserted tag above it, and if the diamond is placed in like it has been explained, it will get this inserted tag. If you have a custom code to which no values are being passed, it will add this '[inserted$$$]' around it, and then a diamond may be added in the editor. On compilation, it will update that code in JCB and place it back into the new compiled component. [00:20:16](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h20m16s) 
+* Reads your component's PHP or JavaScript source files.
+* Detects placeholder tags.
+* Collects the lines between those placeholders.
+* Stores that code in JCB's database for reuse during recompilation.
 
-Amazingly it still works, but unfortunately, the moment any arguments are passed to it,(see video) then we know that there are 'arg' placeholders in the script like that. Since the script is now being used at multiple areas with multiple values. Say, for instance, one of them is changed, it is not desirable that the database script is being replaced because there would not be any indication as to where these 'arg' placeholders should be placed. [00:20:53](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h20m53s) The code at that stage has no reference whatsoever to these 'arg' values. The ideal is that all the 'arg' values should be moved above the script. (see video)[00:21:14](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h21m14s) Perhaps to put some "convention of arg's", like that and then 'arg' and then 'equal' and then change this to value 'var', in this case, because it's JavaScript and that could possibly resolve the issue. [00:21:45](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h21m45s) 
+**[00:04:27](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h04m27s)**
+To prevent excessive memory usage, JCB ensures that the fingerprint array never exceeds 10 lines.
 
-While it is in the process of improvement, this area should not be updated in the database but the rest should be updated. In that case use 'value' wherever 'arg0' is to be found. (see video) Then only care should be taken of this area and this area can be dynamically updated. [00:22:22](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h22m22s) Development is being done in order to make it possible that if a change is made in the editor, that it should also get updated in the database.
-If there is any change to these limitations, these notes(See video) will change. [00:22:56](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h22m56s) That is the other feature that has been added and that is to create custom code and then to reuse it across multiple areas of your component, without the complexity to update it everywhere again.  You must be familiar with PHP or whatever language you are targeting with this custom code so that by this placeholders and by everything else may determine if that it actually works. [00:23:28](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h23m28s) Unfortunately if it does not work that debugging etc. is your responsibility. 
+---
 
-### The Component placeholder, and the View placeholder
+## 4. Insert and Replace Placeholders
 
-[00:23:43](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h23m43s)
+**[00:05:43](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h05m43s)**
 
-The component placeholder and the view placeholder is still functional. If this specific script is going to end up somewhere under a specific view, because the field script gets added to the view footer, then you have a view placeholder which basically is just also (((view))). So that is how a view dynamic update can be done of anything if you need to use the view string name anywhere in the script. That means you have a component with the uppercase[[[Component]]] [00:24:39](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h24m39s) and all uppercase and all those variations. Unfortunately, only that current view that is being targeted will be added to that placeholder in lowercase. [00:25:11](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h25m11s) I will compile this and then in the code show where it has been added. The component that it is using at the moment is 'registry'. Install it, and look where the code should have been added. [00:25:41](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h25m41s) So in the code we see there the 'image' has been updated with 'image', 'teaser' and 'images' placed there, as well as in all the other areas where those 'arg' placeholders appear, all have been updated. The code itself has been inserted in the correct area. That is custom code in a different implementation which is called the JCB manual option. [00:26:14](https://www.youtube.com/watch?v=KiAtJawZ3oo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h26m14s) If more information is needed about the 'hash' automation option, then watch the previous tutorial on YouTube. 
+JCB uses **placeholders** in code to determine where custom code is inserted or replaced.
+
+Two placeholder types are available:
+
+### Insert Placeholder
+
+```php
+///***[INSERT<>$$$$]***///
+Your custom code here
+///***[INSERT<>$$$$]***///
+```
+
+### Replace Placeholder
+
+```php
+///***[REPLACE<>$$$$]***///
+Code to replace
+///***[REPLACE<>$$$$]***///
+```
+
+**[00:07:25](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h07m25s)**
+After compilation:
+
+* `INSERT<>` becomes `INSERTED$$$`
+* `REPLACE<>` becomes `REPLACED$$$`
+
+This indicates the code has been imported successfully.
+
+---
+
+### Important Note
+
+**[00:08:49](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h08m49s)**
+Do **not** modify the numerical ID following a placeholder. This number identifies the database entry of your stored code. Changing it will cause JCB to lose track of that custom script.
+
+To re-trigger updates manually, **add the diamond symbol (<>)** back into your placeholder - this signals to JCB that the code block has been modified and must be reimported on the next compilation.
+
+---
+
+## 5. JCB Manual Custom Code Option
+
+**[00:11:52](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h11m52s)**
+
+Alongside hash automation, JCB provides a **Manual Mode** for custom code management.
+This option allows developers to define reusable custom code snippets within JCB itself, assign placeholders, and dynamically inject values during compilation.
+
+---
+
+### 5.1 Creating a Manual Custom Code
+
+**[00:12:47](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h12m47s)**
+
+1. Open the **Custom Code** section in JCB.
+2. Create a new custom script and select **"JCB Manual"** as the method.
+3. Copy the provided **placeholder**, for example:
+
+   ```
+   (((customcode)))
+   ```
+4. Paste this placeholder into your **field**, **view**, or **layout** where the code should appear.
+
+---
+
+### 5.2 Example: Reusable JavaScript Code
+
+**[00:13:52](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h13m52s)**
+
+Let's say you have a drag-and-drop field for uploading images, containing JavaScript for UI behavior. Instead of duplicating the script across multiple fields, you can:
+
+* Move the script to JCB's Custom Code area.
+* Replace dynamic text like `image`, `teaser`, etc., with **arg placeholders**.
+* Use `(((customcode)))` to call it wherever needed.
+
+---
+
+### 5.3 Using ARG Placeholders
+
+**[00:15:19](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h15m19s)**
+
+Custom code can include **arg values**, acting as variables passed during compilation.
+
+Example placeholder usage:
+
+```php
+(((customcode|image,image,teaser)))
+```
+
+In your script, JCB replaces `arg0`, `arg1`, `arg2` with these passed values during compilation.
+
+**Rules for ARG placeholders:**
+
+* Arguments must be **single-word** (no commas or plus signs).
+* You can include `$` if needed.
+* The number of arguments must **match** the number of placeholders in the code.
+
+---
+
+## 6. Editor Changes vs Custom Code Updates
+
+**[00:18:39](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h18m39s)**
+
+* **Static custom code** (no arguments): can be edited directly in the Joomla editor, and JCB will reimport those changes.
+* **Dynamic code** (with ARG placeholders): cannot yet sync external edits back into JCB automatically.
+
+To ensure stability, JCB currently avoids reimporting changes from external edits when ARGs are used, as the values may vary across multiple usage points.
+
+**[00:22:22](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h22m22s)**
+Future updates aim to unify both systems - allowing JCB to reimport dynamic code changes from the editor safely.
+
+---
+
+## 7. Component and View Placeholders
+
+**[00:23:43](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h23m43s)**
+
+Additional placeholders for dynamic naming include:
+
+* `(((view)))` → replaced with the current view name (lowercase).
+* `[[[Component]]]` → replaced with your component's name (uppercase).
+
+Example use case:
+
+```js
+console.log('Loaded view: (((view))) for [[[Component]]]');
+```
+
+On compilation, JCB replaces these automatically based on the context.
+
+---
+
+## 8. Compilation and Testing
+
+**[00:25:11](https://www.youtube.com/watch?v=KiAtJawZ3oo&t=00h25m11s)**
+
+After setting up custom code and placeholders:
+
+1. Compile your component.
+2. Install the generated package.
+3. Inspect the code area where your custom code should appear.
+
+   * Confirm that ARGs have been replaced.
+   * Check that the script appears in the intended position.
+
+The example component used in the tutorial was **"Registry"**, demonstrating field-level script injection during compilation.
+
+---
+
+## 9. Summary and Best Practices
+
+* Use **Manual Custom Code** for reusable snippets that require dynamic placeholders.
+* Use **Automatic Hash Import** for direct edits inside compiled components.
+* Always maintain consistent placeholder syntax (`///***[INSERT<>$$$$]***///`).
+* Avoid editing database ID markers.
+* To update stored code manually, **add the diamond symbol (<>)** to trigger re-import.
+* Keep ARG values simple and aligned with your placeholders.
+
+---
+
+### Tip
+
+If you often reuse complex JavaScript or PHP snippets across views, fields, or layouts - store them in JCB's **Custom Code Manager**. It dramatically reduces redundancy and keeps your component consistent during updates.
+
+---
+
+Would you like me to format this as a **publish-ready JCB documentation page** (with front matter, intro, and consistent style used in previous manuals from your project)?
+That would make it ready for inclusion in your JCB Docs series.
+
+---

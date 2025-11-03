@@ -1,35 +1,145 @@
-# HOW TO CHANGE THE LICENSE TEMPLATE IN JCB
+# How to Change the License Template in Joomla Component Builder (JCB)
 
-### Talk About Changing The License Template
+This guide explains how to modify, create, and apply a custom license template within **Joomla Component Builder (JCB)**. It is ideal for developers who have customized existing components (such as Sermon Distributor) and want to properly manage license text across compiled files.
+
+---
+
+## Introduction
 
 [00:00:00](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(Click on these time links to see Youtube video)
 
-I would like to talk to you about changing the licence template For your component. This would be expected that you've made at least 40 % change To any of the demo components. Let's say you've changed Sermon Distributor component quite considerably. There is this place called Licensing Template. It tells you there what you should do. [00:00:34](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m34s) 'Select the file that should be used for license all files (files found in: administrator/components/com_ componentbuilder/compiler).  What I should do is add to the note the txt files. You could put any txt file in there. Then select it as a License Template. 
+When you've modified one of JCB's demo components significantly (about 40% or more), it is appropriate to update its **license template**.
+This determines what license text appears in the headers of your component's generated files.
 
-### Demonstration - How It Works
+The license template is managed inside the JCB compiler system and can be easily customized with your own `.txt` file.
 
-[00:00:57](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m57s) 
+---
 
-Now let me show you how that works. First of all, It must be done when the Joomla Component Builder is already installed on your website. I have a website Joomla Mount. In administrator, components, com_componentbuilder. There is a folder called compiler [00:01:21](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m21s) and in it, there are 5 txt files. Going back to the component, there are 5 files. I see it's also using the HTML. That one will not turn out right. These ones with the .txt's, the one that you would select, any one of those to be the template that you are going to use. 
+## Step 1 - Locate the License Template Files
 
-### Changing The Templates
+[00:00:34](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m34s)
+
+All available license templates are stored within:
+
+```
+administrator/components/com_componentbuilder/compiler/
+```
+
+This folder contains several `.txt` template files.
+Each file defines a different license format that JCB can apply across your component files.
+
+You can add your own `.txt` file here and select it as a license template within JCB.
+
+---
+
+## Step 2 - Viewing the Available Templates
+
+[00:00:57](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m57s)
+
+Inside the `compiler` folder, you'll typically find about five `.txt` templates. Avoid using `.html` templates, as those are not suitable for license use.
+
+Choose one `.txt` file to serve as your current template, or create a new one based on an existing file.
+
+---
+
+## Step 3 - Editing an Existing Template
 
 [00:01:50](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m50s)
 
-If you are using one of the existing templates and change it, then with the next update your changes will be overwritten. You want to do it in a way that preserves your changes. The way you do that is you go back to the compiler area and then select [00:02:13](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m13s) select the default one. And maybe you don't like this(see video). You want to take that out. Maybe you don't want to support or show that you use JCB. Take that out. I really don't mind. I'm a supporter of open-source that [00:02:36](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m36s) I don't mind you changing anything except `@copyright` and `@license`, that I want you to leave. These placeholders are being replaced by the settings of your component. [00:02:58](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m58s) You could still tweak this, but do it in the component. But leave the license and copyright notice that people can know how to use your program. Having said all that, you should realize that a lot of the code between all the components that JCB built is more or less the same. It's little names here and there. That's really the only thing you are copyrighting. [00:03:26](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m26s) Just keep that in mind. You're not copyrighting every little line, you are copyrighting the changes. The idea of how builds is already been copyrighted either by Joomla or by JCB. Keep that in the back of your head. You are copyrighting the changes you've made and that which you have done. When someone uses your component they won't think about it that way. I don't mind and I don't think [00:04:00](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m00s) anyone would because we are an open-source community. If you do change your program to proprietary software, you might have to look at what would be the implication. I think there's a possibility that some areas cannot be made proprietary, because of the Open Source license already is on JCB [00:04:28](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m28s) and on everything that it has done. I'm not sure I'm not a lawyer. I don't know how all that works out. I want to give many people so much freedom and I'm not going to check people up. Someone else may, there are places that might feel obligated to do so. I want to be busy with code. Writing programs. [00:04:58](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m58s)
-This is how you change the template more or less. 
+You can edit a default template directly; however, this is **not recommended** because your changes will be overwritten during a JCB update.
 
-### Placeholders - Helper, Compiler, Infusion
+Instead:
+
+1. Open the default license file in the compiler folder.
+2. Modify it as needed - for example, remove lines or adjust credits.
+3. **Leave the following placeholders intact:**
+
+   * `@copyright`
+   * `@license`
+
+These placeholders are dynamically replaced during compilation with the values from your component's configuration (author, version, license, etc.).
+
+> **Tip:** Only change what's unique to your project. The overall codebase remains shared between JCB and Joomla, so your copyright applies mainly to your modifications.
+
+---
+
+## Step 4 - Understanding Placeholder Variables
 
 [00:05:00](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m00s)
 
-You could leave things in. You can check between them, you will see the way to know what is all the placeholders that are available, is to go to the helper, compiler. It's that infusion is one.  You should look at the infusion. You will see the `COMPANYNAME , CREATIONDATE,  BUILDDATE, AUTHOR, AUTHOREMIAL, AUTHORWEBSITE, COPYRIGHT, LICENSE, VERSION, ACTUALVERSION, Component_names, SHORT_DESCRIPTION, DESCRIPTION, COMP_IMAGES_TYPE, ACCESS_SECTION,` most of these static content placeholders could be used. Some of them won't make sense, like custom helper [00:06:01](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m01s) script. It's going to add the custom helper script in that lines. It's not going to turn out right. These placeholders are really from where the content is being updated in the file. You'll see it is the same. This is a new method we are using to put it in the >hhh, ###. The `CREATIONDATE` is the one it [00:06:31](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m31s) gets from the infusion which is found in helper, compiler. You can check out these and use any of those as you like. The point is it's best to leave this in. At least tell people who did it, that someone can be blamed. If you save now, it'll still work. The default template will be updated. 
+JCB's compiler supports many **placeholder variables** that can be inserted into your license template.
+These are found in the helper compiler's "infusion" section.
 
-### Suggestion - Save As... - Give Your Name - Save - New File
+Common placeholders include:
 
-[00:07:03](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m03s) 
+| Placeholder                              | Description                     |
+| ---------------------------------------- | ------------------------------- |
+| `COMPANYNAME`                            | Your company name               |
+| `CREATIONDATE`                           | Original creation date          |
+| `BUILDDATE`                              | Date the component was compiled |
+| `AUTHOR`, `AUTHOREMAIL`, `AUTHORWEBSITE` | Developer information           |
+| `COPYRIGHT`                              | Copyright notice                |
+| `LICENSE`                                | License name and text           |
+| `VERSION`, `ACTUALVERSION`               | Component version numbers       |
+| `COMPONENT_NAMES`                        | Component name list             |
+| `SHORT_DESCRIPTION`, `DESCRIPTION`       | Component descriptions          |
 
-But the problem is if we are going to release a new update for JCB and you install that update, it is going to override this. What we would suggest is by saying Save As... Give it your name, I'm going to say `default_q.txt`. Save now and we have a new file. We can go back to JCB. [00:07:32](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m32s) Refresh the component area, we'll see that there it is the new template. If I save and compile this component, it will use the new template. Let me show you that. In the code we go down to sermon distributor, we open any of its files. And that's how it's current template looks like (see video). [00:08:03](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m03s) There is the current template all the way down to there. Let's compile and see. It'll update every file across the spectrum. We are going to say Sermon Distributor and compile and install it. Let's go check out our template. If we scroll up we will see it have the new [00:08:36](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m36s) template and it is being used, no longer the old one. It's the same file, but it refreshed it in the background. 
+> ⚙️ **Note:** Avoid using placeholders meant for scripts (e.g., custom helper scripts).
+> They are not suitable for license text and will break formatting.
 
-That how it works. Easy To change the license and that really means you can make it a small or is big as you like, any shape and size. Just keep in mind that you need to escape it and unescape it [00:09:02](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m02s) because otherwise, it will mess up the code. That is how you can change the license template. Make wise decisions and how you deal with this area. I don't want to say much more and put restraints up, because the initial desire was to give everybody as much freedom as they need.
+---
+
+## Step 5 - Saving a New Template (Recommended Method)
+
+[00:07:03](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m03s)
+
+To preserve your edits across updates:
+
+1. Open your preferred `.txt` license file.
+2. Select **"Save As…"** and rename it (for example, `default_q.txt`).
+3. Save the new file in the same `compiler` directory.
+
+Return to JCB, refresh the component configuration, and your new license template will appear as an option in the "License Template" dropdown.
+
+When you select it and recompile your component, JCB will use your new license template across all files.
+
+---
+
+## Step 6 - Verify the License Update
+
+[00:08:03](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m03s)
+
+After recompiling:
+
+1. Open one of your component's generated files (e.g., from the Sermon Distributor component).
+2. Scroll to the file header.
+3. Confirm that the license text now reflects your new template.
+
+JCB automatically replaces the license content during compilation, applying your new template to every file.
+
+---
+
+## Step 7 - Final Notes and Good Practices
+
+[00:09:02](https://www.youtube.com/watch?v=AveBf6YZzmo&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m02s)
+
+* **Escaping and Unescaping:** Ensure proper escaping in your template text to avoid code formatting issues.
+* **Keep the Copyright & License Tags:** These help users and developers understand how your component may be used.
+* **Open Source Compatibility:**
+  While you have freedom to customize, remember that JCB and Joomla are open-source projects. Some parts may not legally be relicensed as proprietary.
+
+> **Best Practice:** Always maintain transparency about which parts of your component are your original work and which are derived from open-source code.
+
+---
+
+## Summary
+
+Changing the license template in Joomla Component Builder allows you to:
+
+* Customize license headers for your components.
+* Add your own branding or wording.
+* Keep updates safe by saving under a new filename.
+
+With careful editing and by respecting placeholder variables, you can tailor your license template without disrupting future JCB updates.
+
+---

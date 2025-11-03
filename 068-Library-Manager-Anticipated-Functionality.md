@@ -1,48 +1,198 @@
-# LIBRARY MANAGER ANTICIPATED FUNCTIONALITY
+# Library Manager - Anticipated Functionality
 
-### Talk About The Expected Or Anticipated New Library Feature That Is Being Added To JCB
+## Overview
 
 [00:00:00](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(Click on these time links to see Youtube video)
 
-I would like to talk about the expected or anticipated new Library feature that has being added to JCB. I am still in the development phase of this. I have been working on the UI which really is how I anticipate it should function. It is not yet set in stone. I have not yet started adapting the compiler to make use of this new feature. But it is anticipated to eventually become more fixed and steady.[00:00:34](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m34s)  I want to illustrate two things. One is we have this Bootstrap library set up. This Bootstrap library, the specific name, is linked to many snippets and it can never change. [00:00:53](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m53s) I have made it that, even if you try to change it, and you click save, it will revert back to the correct name. That is only with regards to libraries that already become part of the Joomla Component Builder Community Snippets libraries. Every time we have new libraries contributed to the community then that library's name will become fixed.[00:01:19](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m19s)  It cannot be changed. That is a way of protecting the system from collapsing on itself. If people could change these things in their own JCB, then it could end up making so many confused results. What they still can change is the way the library is added to Components.[00:01:46](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m46s)  Currently I set it up that it links to this two URLs 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js and https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'. It has this 'Always Add'. That means on every page where Bootstrap 4 is being used, it will always add these files. You might later see when Joomla 4 is released that there are some local Joomla 4 [00:02:12](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m12s) libraries we would rather use like you have for jQuery at this stage. If you want to use jQuery on a page you would not do this kind of inclusion. You would rather use the internal Joomla API to get those libraries on the page and for that I added this custom script option.
+The **Library Manager** is a forthcoming feature in Joomla Component Builder (JCB), designed to dynamically handle external and internal library integrations such as Bootstrap, UIkit, and FooTable. This tutorial outlines the **anticipated structure and behavior** of the Library Manager, how developers will configure libraries, and how they will interact with component options.
 
-### Two Functions - prepareDocument And setDocument
+The feature is currently under development. The user interface (UI) has been prototyped, and its foundational principles are being refined before compiler integration.
+
+---
+
+## 1. Introduction to Library Configuration
+
+[00:00:34](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m34s)
+
+Each library in JCB, such as **Bootstrap**, is represented as an entity that connects to multiple snippets and cannot have its base name changed once added to the **Community Snippets Repository**.
+
+* Once a library becomes part of the community repository, its name becomes **immutable** to prevent inconsistencies.
+* Even if you edit the name and click "Save," it will automatically revert to the original.
+
+This ensures that shared libraries remain consistent across developers' environments.
+
+---
+
+## 2. Adding External Library Resources
+
+[00:01:46](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m46s)
+
+For example, the **Bootstrap 4** library uses these external URLs by default:
+
+```text
+https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js
+https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css
+```
+
+The "Always Add" option ensures these assets are automatically included wherever the library is applied.
+
+In the future, when **Joomla 4** is released, developers may prefer using **native Joomla libraries** through its internal API instead of remote URLs. To accommodate this, a **Custom Script** option has been introduced.
+
+---
+
+## 3. Two Key Functions: `prepareDocument` and `setDocument`
 
 [00:02:30](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m30s)
 
-There are two places in every view, there are two types of functions used to add the specific library to the page. The one function is this 'prepareDocument' function and the other one is 'setDocument'. The one function uses the document directly variable naming and then add script because it adds document to the document variable. The other one grabs upon a global document variable. It is based on which class it is inheriting and so forth. They are basically there for two methods being used to adding the custom or the library to any page. So when you [00:03:19](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m19s) use this custom script option, You would target these two functions or class methods, which will then adequately be available for every page that makes use of this library. 
+There are two main functions responsible for adding libraries to views:
 
-### Conditional Option
+1. **`prepareDocument()`** - Uses the document variable directly to attach scripts and styles.
+2. **`setDocument()`** - Uses a global document variable, depending on class inheritance.
+
+When using the **Custom Script** option, you can target these methods to add the required assets dynamically.
+
+---
+
+## 4. Conditional Library Loading
 
 [00:03:39](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m39s)
 
-The other one is a conditional option. The conditional option is the better option because this one would adapt the code on the basis of the implementation per view. You would select the files whether it is 'Include' or 'Exclude'. If you select 'Exclude' it means it will always 'Include' it unless these behaviors that you are going to set over here, is valid.[00:04:08](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m08s)  Those of you who know the conditional concept within the fields. I have taken that same conditional concept and I am applying it on adding or not adding a file. It is much the same. You still have this 'Isolate' or 'Chain' option. The reality is[00:04:36](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m36s) there are no config fields yet, you need to first go and create a config field. Config field is really an existing field that you have already created before coming here. I have not saved this as a condition. I am going to save that. I am going to edit. You will see [00:05:02](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m02s) the config library, if I click on it here. I can select any field out of my whole list of fields. I have already made one just for our illustration. 'Bootstrap v4(Radio)'. That is the field I wanted to be in the library tab. This again is very much similar to the Component Config options area, except we are selecting fields for the library which will then in effect be added to the Components Global Options area. Save and close. 
+The **Conditional Option** introduces a dynamic approach to file inclusion:
 
-### Option Field Drop Down
+* You can set rules such as **Include** or **Exclude** based on field conditions.
+* The conditional logic mirrors JCB's **field conditional system**, using **Isolate** or **Chain** logic.
+* Conditions rely on **config fields**, which are pre-created in your component.
+
+For example, linking a radio field named `Bootstrap v4` allows toggling whether Bootstrap assets should be included.
+
+---
+
+## 5. Linking Option Fields
 
 [00:05:40](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m40s)
 
-We will see in 'Option Field' drop down that the field comes up here(follow on video). If we select it that fields have two options, 'Yes' or 'No'. So if this '(Url) bootstrap.min.css - link' library and '(url) bootstrap.min.js - link' library file we want to include it when the Add Bootstrap button is set to 'Yes'. [00:05:57](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m57s) That's the conditional way of doing it. At this stage we will have 3 to 4 ways of adding the fields onto the page. The reason why this conditional one is not being shipped this way at the moment [00:06:18](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m18s) is because I am not shipping these fields. The whole idea of creating a field in all the systems of those who used JCB, I am still pondering whether I should write a script to do that. The issue is actually that if we ship this as the standard way of including the Bootstrap libraries, [00:06:43](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m43s) then I will need to create this Add Bootstrap v4 field on every system, and then link it in with correct IDs and stuff. I have not done that. We are looking at how this can be done. We want to make this dynamic.
+When selecting an **Option Field**, such as a Yes/No toggle:
 
-### Creating A File By Clicking Edit, Add New Files
+* If the field "Add Bootstrap" is set to **Yes**, the linked Bootstrap CSS and JS files will load.
+* This offers a **conditional method** for including assets.
+
+However, as of now, JCB does not automatically create these conditional fields in all systems. The developer may choose to manually add or script their generation.
+
+---
+
+## 6. Creating and Linking Local Files
 
 [00:07:03](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m03s)
 
-Let's say someone has a specific file which if someone is using Bootstrap and they want to add a specific extra feature and need more more JavaScript on the page, they could create that file by clicking 'Edit', going to 'Add New Files'. Say for instance it is a local file, they could click the green plus button [00:07:31](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m31s) and they can collect any file. I am going to make it any file. Just like with a component 'Include' when you add custom files to your component, you have that same feature, except you can also use URLs. It is the same custom adding of files or folders. Now if you want to have this bootstrap.min.js in the /media/bootstrap4 [00:07:58](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m58s) and want in that folder /media/bootstrap4/js/. That is really where you want to put this file. You do not want the file itself to be updated. The filename you want to keep and want to have it available to the library. Click save and close. [00:08:23](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m23s) If we look in 'Target File Linked'. We will see there are a file called (file)Bootstrap.min.js. but you do not want it to be always be included, you want it to be included only if there is a specific switch tripped on this use of this file.
+To include custom or local files:
 
- The idea is now that you would go to the Config Library, and create a new field. [00:08:51](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m51s) Let's say this new field, I'm going to use a generic one, 'Add More'(Radio). It should be more related to Bootstrap but just for explanation. Then you would say that specific field which is in this case '(file)bootstrap.min.js'. When 'Add More' is set to 'Yes', [00:09:15](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m15s) then it should be added. 
+1. Click **Edit** in the library.
+2. Select **Add New Files**.
+3. Use the green plus icon to attach a file or URL.
+4. Example local path:
 
-That is as far as I have come to think about implementing these kinds of features dynamically. You will see previously I wrote all this hardcoded right into the compiler, [00:09:33](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m33s) based on its own automated observation of the UIkit v2. If it found specific classes it dynamically added files or did not add files. I am thinking that if you want to be so customized and dynamic then you will not use the conditional option. You will rather use the custom script option. You still have these two buttons(Library Files, Folders & URLs and Library Config) you can use the global values of. [00:10:02](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m02s)  You can still get those values in the scripture and can act upon it and load it in the libraries with custom scripting. I did some prep on that kind of approach in FooTable. It says ($this->fooTableStyle). [00:10:25](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m25s) You will need to line up a field value with ($this->fooTableStyle). It will dynamically add the specific CSS classes to the page. For both this `preparedDocument` and for `setDocument`.  You have 'Add Always', Conditions and Custom Script. 
+   ```
+   /media/bootstrap4/js/bootstrap.min.js
+   ```
 
-### Condition Options - Global Value And Page Value
+These files can be conditionally added using custom fields. For example, create a new field `Add More` (radio), and when set to **Yes**, the corresponding file (e.g., `bootstrap.min.js`) will load.
+
+---
+
+## 7. Dynamic Integration and Custom Scripts
+
+[00:09:33](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m33s)
+
+Previously, such functionality was **hardcoded in the compiler**-for instance, automatically detecting UIkit v2 usage. The new system aims to make this behavior **dynamic and developer-driven**.
+
+You can still leverage global library buttons such as:
+
+* **Library Files, Folders & URLs**
+* **Library Config**
+
+These can be referenced inside your scripts using global variables like:
+
+```php
+$this->fooTableStyle
+```
+
+This allows conditional or custom inclusion through both `prepareDocument` and `setDocument`.
+
+---
+
+## 8. Global vs. Page-Level Conditions
 
 [00:10:50](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m50s)
 
-Let me just say another thing about the condition option, I am pondering whether this condition option should have a global value and a page value. If it has a page value, then you can override the global value with the page value. It is almost as if we detect [00:11:13](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m13s) let's say bootstrap4 is being used in a specific view, and that view has a menu. Dynamically it will add it to that menu, the function of these buttons. As well as having it added up into the global options of the component itself. It will be global options and the page will fall back on to the global options unless someone will manually override that. It is the case when they have another library or another component [00:11:47](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m47s) that already loads the files and they want to exclude it from the page because it is already there. That is why I am thinking about having it on the page as well as globally. If you feel you do not want the user to decide whether these Libraries should ever be on the page. Then, in that case, Add Always. Then the Library files will include bootstrap.mn.js. will always be added to the page. [00:12:15](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m15s) 
+A planned enhancement is **dual-level conditional logic**:
 
-We will take care of the script or the code to achieve that. I was also thinking if we want to have some files only be added always, then the files that you do not, if you want for example if you want these two files(http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.j and http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css) to be always added. Then within Conditions, you will only create a condition [00:12:43](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m43s) for the files you want to have a condition for. The files that is not being targeted by conditions will automatically always be added. That is at this stage some of the thoughts I have. If any of you want to give more ideas, then grab your screen recorder open this page [00:13:09](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m09s) and talk it through and explain some things in a little tutorial and post it on YouTube as a response to this tutorial or go to our GitHub discussion area. We are busy with this discussion on GitHub. It is issue 92 [00:13:29](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m29s) UIkit v3 or Bootstrap Option. It is in this issue that this long discussion is going on and where this whole library idea is forming and expanding. You will see I am already typing a little response on what I want to post with this tutorial that I am making as a URL.
+* **Global Value** - Applies library inclusion rules across the entire component.
+* **Page Value** - Allows per-view overrides.
 
-What I would like to say is I am busy [00:13:57](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m57s) trying to answer this new functionality and this is the way I have gone about doing it at this stage. I know that these Libraries that are already in our a component Bootstrap, UIkit and fooTable. I am going to end up adding enough information for these libraries that they all just work out of the box. [00:14:22](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m22s) That is going to be my responsibility to put all the necessary code and scripting and everything in place, that this option will work. All of them. When someone wants to expand on them they need to do so. It is a once-off situation. Once I have implemented this new feature and set these functions and properties in place, [00:14:48](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m48s) and people make adaptations to it, I cannot update it again. Having enough input to think about all possible angles, to approach this in a way that really makes it dynamic and really does not over complicate things is really what I am trying to achieve although that seems difficult. 
+This is especially useful when a specific view already loads the same library, and you wish to exclude it to prevent duplication.
 
-This is just a heads up tutorial. Looking at how to use the new Libraries area and if you want a specific functionality in Bootstrap 4. [00:15:21](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m21s) You cannot create a new Bootstrap 4 library with new files. You will need to expand on the existing one. That is the whole point. We want to make it that the existing library can be adapted and changed an improved. At this stage, that adaptation in those improvements will only be relevant to the one who is doing it. That might be something we are going to think about. We should talk about. We want everybody to share their adaptations or we will just set the stage with your regional adaptation and then whatever changes they make is up to them. [00:16:04](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m04s) This is again a tutorial I just made in the outset of this new functionality. Looking and asking, please give me feedback and let me know what you think, thank you.
+For instance, a menu item might require Bootstrap globally, but an individual view could override it if another component already includes Bootstrap.
+
+---
+
+## 9. Always Add vs. Conditional Add
+
+[00:12:15](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m15s)
+
+* **Always Add** ensures the file is included on all pages using the library.
+* **Conditional Add** only includes specified files when defined conditions are met.
+* Files without explicit conditions are always added automatically.
+
+Example default Bootstrap URLs:
+
+```text
+http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js
+http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css
+```
+
+---
+
+## 10. Community Collaboration and Ongoing Development
+
+[00:13:09](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m09s)
+
+Development discussions for this feature are ongoing in **GitHub Issue #92: UIkit v3 or Bootstrap Option**.
+
+Developers are encouraged to:
+
+* Record short tutorials explaining ideas or improvements.
+* Contribute to the GitHub discussion threads.
+
+---
+
+## 11. Implementation Outlook
+
+[00:13:57](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m57s)
+
+When released, this feature will include:
+
+* Predefined configurations for **Bootstrap**, **UIkit**, and **FooTable**.
+* Support for dynamic library loading without compiler modifications.
+* Clear separation between global and per-view inclusion behavior.
+
+Once implemented, users will be able to adapt and extend these libraries locally without disrupting community consistency.
+
+---
+
+## 12. Final Notes
+
+[00:16:04](https://www.youtube.com/watch?v=joT8weuPcwU&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m04s)
+
+This tutorial introduces the anticipated direction of the new Library Manager. The aim is to make library handling in JCB **dynamic, modular, and extensible**, empowering developers to integrate frameworks efficiently while maintaining structural integrity.
+
+---
+
+### Key Takeaways
+
+* Libraries will have **immutable names** for community stability.
+* **Conditional logic** allows smart inclusion/exclusion of files.
+* **Global and per-view control** ensures flexibility in resource management.
+* **Custom scripts** provide ultimate control for advanced users.
+* **Community feedback** continues to shape the design and implementation.
+
+---

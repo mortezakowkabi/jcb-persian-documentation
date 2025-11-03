@@ -1,79 +1,285 @@
-# HOW TO ADD CUSTOM BUTTONS IN JCB TO THE COMPONENT ADMIN AREA
+# How to Add Custom Buttons in JCB to Your Component Admin Area
 
-[00:00:00](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m00s)
-(_Click on these time links to see Youtube video_)
+This guide explains how to **add custom buttons** to your Joomla Component Builder (JCB) components - both in **List Views** and **Edit Views** - using JCB's interface without custom PHP overrides.
+You'll also learn how these buttons integrate with **controllers, models**, and Joomla's **permission system**, following MVC principles.
 
-How to add a button to the Components Admin List area or in the Edit area of the view. Possibly this had been touched on in previous tutorials but this tutorial will specifically deal with it. Here is a blank install of JCB, and this demo component had been installed or mapped.  It had been installed into this website. 
+> *Based on the video tutorial: [How to Add Custom Buttons in JCB to Your Component Admin Area](https://www.youtube.com/watch?v=VyBxWpJWb40)*
+> (*Click on timestamps to jump to that moment in the video.*)
 
-### Joomla Demo Dashboard - Look
- 
-[00:00:38](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h00m38s)
- 
-If 'Looks' is opened; it seems that everything is as it should, so an item can be created. (See video) (In Description;  'Give it some details'). Click save and close, and we have an item. There is a whole bunch of buttons and if you go into the test, there is also a bunch of buttons. [00:01:19](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h01m19s) All of them are usually there, those are the default buttons. The aim is to create buttons in these areas without custom coding, of course, it could be done with custom coding, but there is a way to do it in JCB. Go back to the Admin Views and open the Admin View called 'Look'. When the Custom Buttons area may be seen, click on that, and say 'yes' to 'Add Custom Button'. 
+---
 
-### PHP Controller Method - List View Controller Method
+## Overview
 
-[00:02:05](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m05s)
- 
-You would see that it opens PHP (Controller Methods), and also PHP List View (Controller Methods). It is necessary to understand the MVC, the controller, the model, again the controller and the model. Each view has two controllers and two models. Because it has a List view and Edit view. [00:02:32](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h02m32s) The List view has its own controller and model. The Edit view has his own controller and model, so depending on where the button is placed. It will affect which model and which controller is needed. Assuming that you are familiar with Joomla API, not much will be explained about the PHP being placed in these blocks
+[00:00:00](https://www.youtube.com/watch?v=VyBxWpJWb40&t=00h00m00s)
 
-### Custom Button
+This tutorial demonstrates how to add buttons to either:
 
-[00:03:07](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m07s)
+* The **Admin List View** toolbar, or
+* The **Edit View** toolbar.
 
-At the Custom Button option, click on 'add'. At 'Icon'-(Joomla Standard Icomoom Fonts) any of the default Joomla icons may be selected and be used. Then the 'Name' of the button, call it 'test' for now. Then the 'name' of the Controller method may be called 'getTested'.[00:03:39](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h03m39s)  
-To set the Target View Type: Decide whether this going to be an edit view, a single view target, a list view or both, where this button should show up. In this instance, 'list' is selected. If it is a List view, then it could be decided whether this is only a function. [00:04:02](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m02s) When it is a 'Selection', it means that it is necessary to select some items. Then click the button for it to submit those IDs of the selected items. If it is only 'function' it is not necessary to select anything. If the button is clicked, a function will be triggered, which does not require that any information should be given to it. [00:04:30](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h04m30s) Whatever the result, you need to be able to code that. 'Default' will be used. The 'Default' is very much like 'Selection' but it behaves differently.  The best way to do this is to select one of the options, compile the component and go look at the code. 
+These buttons allow you to trigger custom controller methods - e.g., redirect users, run custom logic, or modify data - directly from the Joomla admin interface, without manual code edits.
 
-### PHP (Controller Method)
+---
 
-[00:05:05](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m05s)
+## 1. Preparing the Environment
 
-To demonstrate where the code ends up. Save this as a selection in a Listview and save. At this stage, if no values are added to these blocks it will not work. [00:05:31](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m31s) In order to satisfy its requirement to have information, two forward slashes are added. A little method, called 'getTested', is added to redirect us to the dashboard. That is a Controller Method. It must be public. [00:05:58](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h05m58s) It may be verified whether it was submitted from the current website and then it can be redirected to the components dashboard.  A method is not necessary now since it gets redirected. Save and close. Compile this component. Select the demo component, compile it, then re-install it to see the changes. [00:06:29](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h06m29s) Go to the Component, then to 'Looks' and a new button called 'test' may be seen. If it is clicked, it will redirect us to the dashboard. So its function is to redirect, and in this way, anything can be redirected. That is the first way of implementing a button in the List view.  
+[00:00:38](https://www.youtube.com/watch?v=VyBxWpJWb40&t=00h00m38s)
 
-### More Options
+1. Open a **clean Joomla site** with JCB installed.
+2. Ensure your **demo component** is already mapped and installed.
+3. Open your component from the **Joomla Administrator** panel.
+4. Navigate to any view (e.g., `Looks`) to confirm it displays the standard Joomla buttons (`New`, `Edit`, `Publish`, `Unpublish`, etc.).
 
-[00:07:05](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m05s)
+Your goal will be to add **new custom buttons** here using JCB.
 
-Now let us go back to editing that functionality there, and show some more options('Look'). Go to Custom Buttons. Add another button. (See video) Target - call it 'single'. Name - call it 'Work'. The Controller method - 'getDone', and leave Type to 'Default' and then save. [00:07:50](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h07m50s)  In the Controller method there is a function called 'getDone'. In the(PHP controller method) a public function is placed. This time we will get the model and do something in the model. You can also get the item values. When this button is clicked, the item opens and it automatically submits the form. It is possible to grab the item's values. The values may differ from those in the database.  [00:08:36](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h08m36s) The values could be changed, by clicking that button, and it will submit these changed values. Yet those values have not been saved to the database. If those values need to be in the database, you have to put it there. The model has a save method, and you should do the necessary sanitation, and trigger the save method, and it should store the data.  For this purpose the data need to be grabbed, a verification is done and then return either an 'error' or a 'success'. 
+---
 
-### Checking Within Controller Before Trigger The Model
+## 2. Navigating to Custom Buttons in JCB
 
-[00:09:33](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m33s)
+[00:01:19](https://www.youtube.com/watch?v=VyBxWpJWb40&t=00h01m19s)
 
-First thing is to get the values. Having the data, check whether the values that are needed are there and available to be used. It is necessary to make sure that this is already a saved item. [00:09:51](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h09m51s) Then check whether the ID is more than 0. It is necessary to have a name, and then check for that. Some checking should be done within the controller before the model gets triggered, and run the intended function. Then the model needs to be triggered, then it should be decided what to call the method in the model. Something random is chosen and then a method can be created in the model area, then do whatever you prefer. 
+1. In JCB, go to **Admin Views**.
+2. Open the desired view (e.g., `Look`).
+3. Locate the **Custom Buttons** section.
+4. Click **"Yes"** when asked to add a custom button.
 
-### Logic In The Model Methods
+---
 
-[00:10:39](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m39s)
+## 3. Understanding the MVC Relationship
 
-What is being done in the Model area? Do keep in mind that if the Model is unsuccessful, something needs to be done, if the data is set, but the Model is not being successful, something needs to be done, and if the data is not set, something needs to be done.[00:10:55](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h10m55s) Those are the areas in which some messages can be added that needs to be returned to the user, to inform them what is happening. In the Model, the task gets performed, and when the goal is achieved, return 'true', if it failed, return 'false', and then that would trigger the messages in the controller. This is just giving a basic overview of setting up some Model Controller connected with a button. 
+[00:02:05](https://www.youtube.com/watch?v=VyBxWpJWb40&t=00h02m05s)
 
-### Adding Code
+Each Admin View in JCB is backed by:
 
-[00:11:30](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h11m30s)
+* A **List view** controller and model, and
+* An **Edit view** controller and model.
 
-Some of this code is going to be added in here, (It will be beneficial to study some more tutorials on how to create Model and Controller relationships in Joomla using its API, or you can open this Model and Controller of the specific view in your IDE and in there you can see how the code is added, and what is happening, and how is it done). [00:12:11](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m11s)   I have added some code that may be reused. If the work has been done, but if it has not been done the user will be informed that it has not been done. If the required values had not even being detected, then a major error is passed and quit out.[00:12:51](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h12m51s)  That is the Controller. Not much of the model is populated since the design is left to your logic. Return 'true' so to give this first message.
+Depending on where your button appears, JCB will automatically place the PHP method in the correct controller and model files:
 
-### Demonstration of Adding A-List Button
+* Buttons in the **list view** affect multiple records.
+* Buttons in the **edit view** act on a single item.
 
-[00:13:08](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h13m08s)
+> **Tip:** Familiarity with Joomla's MVC API helps you understand how the generated PHP logic fits together.
 
-Then the IDE is changed to false again to demonstrate the response. Play around with the code in the IDE to get the feel of how to approach it from that direction. Save this(See video), then go and compile it and install the newly compiled version. Open the component. Go to 'Looks'. The test button is still here, if it gets clicked, it still returns us to the dashboard. [00:14:01](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m01s) Let's open the test. Here is a new button  'Worked'. If it gets clicked, it will indicate that the work was done, because the method returns 'true'. Open the IDE. Look at the controller in the back end. [00:14:32](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h14m32s) First, open the list one(looks.php) which is the plural version. It may be seen that 'getTested' has been added, and there the little method may be seen. Then go to the edit singular one(look.php), and getdone. [00:15:00](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m00s)  Here is the method and all the functions.  JCB has added the script to the translation text. Everything here(See video) looks fine. Go to the model, open the 'Look' model, it may be seen that it has a new method added. [00:15:22](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m22s) So just after 'getTable', is the little method added.  So add this to 'false', and save. [00:15:47](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h15m47s) Go back to Joomla and then click that 'Work' button again and it says work was not done because the method returned false. So if that is changed to 'true' again, and saved then it should work. 
+---
 
-### Demonstration Adding A Button Inside Of Edit View
+## 4. Creating a Custom Button
 
-[00:16:10](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h16m10s)
+[00:03:07](https://www.youtube.com/watch?v=VyBxWpJWb40&t=00h03m07s)
 
-Now let's test out another one. Make this to not execute, save this(see video), so we can get this 'error'. Go back to Joomla and click the 'Worked' button. Now it even kicks us out of the item and indicates that a major error has occurred. The reason is that it did not check it in, which is not ideal, but that need to be fixed by looking at some of the other controllers and see what is happening when this problem occurs. This is what has been expected. Change this back, and save. Go back to the view. Open that view again. Click the button. All is done and good. That is a quick demonstration of adding a List button, as well as adding a button inside of the edit view. 
+Follow these steps to add your first custom button:
 
-### Demonstrate Button - Both List and Inside
+1. In **Custom Buttons**, click **"Add"**.
+2. Set:
 
-[00:17:29](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m29s) 
+   * **Icon:** Choose from Joomla's default *Icomoon* icons.
+   * **Name:** For example, `Test`.
+   * **Controller Method Name:** For example, `getTested`.
+3. **Target View Type:** Choose where the button appears:
 
-As mentioned before one button could be added, both as a 'list' and an 'inside'. It can be demonstrated when going to that specific button. Open it and then instead of saying 'list in Target', say both. Click Save. [00:17:58](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h17m58s) It is important to add this method 'getTested', also to the single view like that, then save. [00:18:22](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h18m22s) Close out of editing the Admin view, compile and install it. First, go and look at the code to see where the button has been added, If 'Look' is opened in the 'View', a 'view.html.php' is opened, and you go to 'Add Toolbar'. It can be seen that it has added a custom button 'getDone' and 'getTested' to the view. [00:19:22](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h19m22s) It is the 'getDone' method that is going to be called by this specific button. It is going to look in the 'Look' controller and get this 'getTested' method.
+   * `list`
+   * `single`
+   * `both`
+4. **Type:**
 
-### Adds A Permissional Switch
+   * `Function` - runs directly when clicked.
+   * `Selection` - requires selected rows to pass IDs.
+   * `Default` - similar to selection but with flexible behavior.
 
-[00:19:43](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h19m43s)
+Save your button.
 
-It also adds a permissional switch to the button. If this specific user does not have the right to use the 'Worked' button, then it will not show the button. If those permission structures are carried through to the controller, it will stop it even from being executed, manually via URL. It is necessary to be familiar with this kind of security and implementation. [00:20:14](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h20m14s) Look at Joomla's way of implementation because it is important to check in the controller whether this user has the permission. It is necessary to know how to check that permission as well. (See Video) That is showing how the button gets added into the view, and where that code is. If in Joomla a component has been opened and 'Looks' were opened, 'Tested' will be seen to be still there. If 'Edit' is opened 'Tested' may be seen there as well, and if it is clicked, it will take us to the dashboard and perform the same function as it would have if we had clicked 'The Test'.[00:20:53](https://www.youtube.com/watch?v=VyBxWpJWb40&list=PLQRGFI8XZ_wtGvPQZWBfDzzlERLQgpMRE&t=00h20m53s) That is to show that one button can be added to both the List view as well as the Edit view of the back end Admin area. 
+---
+
+## 5. Writing the Controller Method
+
+[00:05:05](https://www.youtube.com/watch?v=VyBxWpJWb40&t=00h05m05s)
+
+When compiled, JCB automatically creates the PHP method in the correct controller file.
+
+Example:
+
+```php
+public function getTested()
+{
+    // Verify request origin
+    if (!JSession::checkToken()) {
+        jexit('Invalid Token');
+    }
+
+    // Redirect to dashboard
+    $this->setRedirect(JRoute::_('index.php?option=com_demo', false));
+}
+```
+
+> **How JCB handles empty blocks:**
+> If no code is added, JCB inserts placeholder slashes `//` to maintain structure.
+
+Compile and install your component.
+Go to **Components → Demo → Looks** - your new **Test** button appears.
+Clicking it will redirect to the dashboard.
+
+---
+
+## 6. Adding a Button to the Edit View
+
+[00:07:05](https://www.youtube.com/watch?v=VyBxWpJWb40&t=00h07m05s)
+
+To create a button inside the **Edit View**:
+
+1. Add another custom button.
+
+   * **Target:** `single`
+   * **Name:** `Work`
+   * **Controller Method:** `getDone`
+   * **Type:** `Default`
+2. In your controller method, JCB inserts:
+
+```php
+public function getDone()
+{
+    // Access the model
+    $model = $this->getModel();
+    $data  = $model->getData();
+
+    // Perform your logic, then redirect or return status
+}
+```
+
+You can:
+
+* Validate item data,
+* Perform operations on it,
+* Use `$model->save($data)` to store updated values.
+
+---
+
+## 7. Validating and Triggering the Model
+
+[00:09:33](https://www.youtube.com/watch?v=VyBxWpJWb40&t=00h09m33s)
+
+Within your controller:
+
+1. Check that the item is **saved** (`$data->id > 0`).
+2. Verify necessary fields are set (e.g., `$data->name`).
+3. Only then call a custom model method.
+
+Example:
+
+```php
+if ($data->id > 0 && !empty($data->name)) {
+    $model->performWork($data);
+} else {
+    $this->setMessage('Missing required data', 'error');
+}
+```
+
+---
+
+## 8. Handling Logic in the Model
+
+[00:10:39](https://www.youtube.com/watch?v=VyBxWpJWb40&t=00h10m39s)
+
+Inside the model:
+
+```php
+public function performWork($data)
+{
+    // Perform logic and return success or failure
+    if ($this->save($data)) {
+        return true;
+    }
+    return false;
+}
+```
+
+Return `true` or `false` to trigger Joomla messages in the controller.
+
+> **Best practice:** Use Joomla's `enqueueMessage()` to show feedback to users.
+
+---
+
+## 9. Compiling and Testing
+
+[00:13:08](https://www.youtube.com/watch?v=VyBxWpJWb40&t=00h13m08s)
+
+1. Save your Admin View in JCB.
+2. Compile and install the component.
+3. Test:
+
+   * **List View:** "Test" button redirects correctly.
+   * **Edit View:** "Work" button triggers your model method.
+4. Inspect the generated files:
+
+   * `controllers/looks.php` → list view controller
+   * `controllers/look.php` → edit view controller
+   * `models/look.php` → corresponding model
+
+---
+
+## 10. Adding the Same Button to Both List and Edit Views
+
+[00:17:29](https://www.youtube.com/watch?v=VyBxWpJWb40&t=00h17m29s)
+
+You can assign a button to appear in **both** areas:
+
+1. Edit your button in JCB.
+2. Change **Target View Type** to `Both`.
+3. Save and compile again.
+
+After installation:
+
+* The button appears in both views.
+* JCB automatically adds the necessary code to `view.html.php` in the toolbar generation method.
+
+---
+
+## 11. Permissions Integration
+
+[00:19:43](https://www.youtube.com/watch?v=VyBxWpJWb40&t=00h19m43s)
+
+JCB integrates permission checks automatically.
+Each custom button has an **ACL switch** that respects Joomla's permission settings.
+
+If a user lacks permission:
+
+* The button is hidden from the toolbar.
+* Even direct URL execution is blocked at the controller level.
+
+> Always use Joomla's ACL check:
+
+```php
+if (!JFactory::getUser()->authorise('core.edit', 'com_demo'))
+{
+    throw new Exception('Not permitted', 403);
+}
+```
+
+---
+
+## 12. Summary and Best Practices
+
+[00:20:53](https://www.youtube.com/watch?v=VyBxWpJWb40&t=00h20m53s)
+
+You have now learned how to:
+
+* Add **custom buttons** to list and edit views in JCB.
+* Define **controller and model logic** for them.
+* Manage **permissions** securely.
+* Reuse this feature for automations, validations, and shortcuts.
+
+> **Tip:**
+> Experiment with different button types and methods - JCB handles the Joomla MVC integration, letting you focus purely on your custom logic.
+
+---
+
+### Key Takeaways
+
+| Step | Description                                 |
+| ---- | ------------------------------------------- |
+| 1    | Choose your target view and button behavior |
+| 2    | Define the controller method in JCB         |
+| 3    | Add logic inside the controller and model   |
+| 4    | Compile and test in Joomla                  |
+| 5    | Implement permission checks                 |
+
+---
